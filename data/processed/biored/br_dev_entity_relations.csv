@@ -1,0 +1,1163 @@
+pmid,entity_1,entity_1_type,entity_1_identifier,relation,entity_2,entity_2_type,entity_2_identifier,split
+14510914,deletion of the coding sequence (nt 1314 through nt 1328),SequenceVariant,c|DEL|1314_1328|,Positive_Correlation,Congenital hypothyroidism,DiseaseOrPhenotypicFeature,D003409,dev
+14510914,inability of the thyroid,DiseaseOrPhenotypicFeature,D050033,Association,iodide,ChemicalEntity,D007454,dev
+14510914,lacking the five terminal amino acids of exon XI (439-443),SequenceVariant,p|DEL|439_443|,Positive_Correlation,Iodide transport defect,DiseaseOrPhenotypicFeature,C564766,dev
+14510914,lacking the five terminal amino acids of exon XI (439-443),SequenceVariant,p|DEL|439_443|,Positive_Correlation,Congenital hypothyroidism,DiseaseOrPhenotypicFeature,D003409,dev
+14510914,Iodide transport defect,DiseaseOrPhenotypicFeature,C564766,Association,iodide,ChemicalEntity,D007454,dev
+14510914,Iodide transport defect,DiseaseOrPhenotypicFeature,C564766,Negative_Correlation,sodium/iodide symporter,GeneOrGeneProduct,6528,dev
+14510914,L-thyroxine,ChemicalEntity,D013974,Negative_Correlation,hypothyroidism,DiseaseOrPhenotypicFeature,D007037,dev
+14510914,iodide,ChemicalEntity,D007454,Negative_Correlation,lacking the five terminal amino acids of exon XI (439-443),SequenceVariant,p|DEL|439_443|,dev
+14510914,iodide,ChemicalEntity,D007454,Association,sodium/iodide symporter,GeneOrGeneProduct,6528,dev
+14510914,hypothyroidism,DiseaseOrPhenotypicFeature,D007037,Negative_Correlation,iodide,ChemicalEntity,D007454,dev
+14510914,Congenital hypothyroidism,DiseaseOrPhenotypicFeature,D003409,Positive_Correlation,insertion of 15 nt duplicating the first 15,SequenceVariant,c|DUP||15,dev
+14510914,Congenital hypothyroidism,DiseaseOrPhenotypicFeature,D003409,Association,sodium/iodide symporter,GeneOrGeneProduct,6528,dev
+15096016,levodopa,ChemicalEntity,D007980,Positive_Correlation,dyskinesias,DiseaseOrPhenotypicFeature,D004409,dev
+16152606,cancer,DiseaseOrPhenotypicFeature,D009369,Association,657del5,SequenceVariant,c|DEL|657|5,dev
+16152606,acute lymphoblastic leukemia,DiseaseOrPhenotypicFeature,D054198,Association,R215W,SequenceVariant,p|SUB|R|215|W,dev
+16152606,acute lymphoblastic leukemia,DiseaseOrPhenotypicFeature,D054198,Association,643C>T,SequenceVariant,c|SUB|C|643|T,dev
+16152606,acute lymphoblastic leukemia,DiseaseOrPhenotypicFeature,D054198,Association,657del5,SequenceVariant,c|DEL|657|5,dev
+16152606,NBS1,GeneOrGeneProduct,4683,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+16152606,NBS1,GeneOrGeneProduct,4683,Association,non-Hodgkin lymphoma,DiseaseOrPhenotypicFeature,D008228,dev
+16152606,NBS1,GeneOrGeneProduct,4683,Association,acute lymphoblastic leukemia,DiseaseOrPhenotypicFeature,D054198,dev
+16152606,NBS1,GeneOrGeneProduct,4683,Association,sporadic lymphoid malignancies,DiseaseOrPhenotypicFeature,D008223,dev
+16152606,657del5,SequenceVariant,c|DEL|657|5,Association,non-Hodgkin lymphoma,DiseaseOrPhenotypicFeature,D008228,dev
+16152606,sporadic lymphoid malignancies,DiseaseOrPhenotypicFeature,D008223,Association,657del5,SequenceVariant,c|DEL|657|5,dev
+16277682,p62,GeneOrGeneProduct,8878,Association,polyostotic disease,DiseaseOrPhenotypicFeature,D005357,dev
+16277682,p62,GeneOrGeneProduct,8878,Association,Paget's disease of bone,DiseaseOrPhenotypicFeature,C538098,dev
+16277682,M404V,SequenceVariant,rs771966860,Association,polyostotic disease,DiseaseOrPhenotypicFeature,D005357,dev
+16277682,Paget's disease of bone,DiseaseOrPhenotypicFeature,C538098,Positive_Correlation,M404V,SequenceVariant,rs771966860,dev
+1671881,phenylketonuria,DiseaseOrPhenotypicFeature,D010661,Positive_Correlation,272gly----stop,SequenceVariant,rs62514952,dev
+1671881,phenylketonuria,DiseaseOrPhenotypicFeature,D010661,Positive_Correlation,273ser----phe,SequenceVariant,rs62514953,dev
+1671881,PAH,GeneOrGeneProduct,5053,Association,phenylketonuria,DiseaseOrPhenotypicFeature,D010661,dev
+1671881,PAH,GeneOrGeneProduct,5053,Negative_Correlation,deficiency of hepatic phenylalanine hydroxylase,DiseaseOrPhenotypicFeature,OMIM:261600,dev
+1671881,272gly----stop,SequenceVariant,rs62514952,Positive_Correlation,deficiency of hepatic phenylalanine hydroxylase,DiseaseOrPhenotypicFeature,OMIM:261600,dev
+1671881,273ser----phe,SequenceVariant,rs62514953,Positive_Correlation,deficiency of hepatic phenylalanine hydroxylase,DiseaseOrPhenotypicFeature,OMIM:261600,dev
+16867246,DRD2,GeneOrGeneProduct,1813,Association,schizophrenic,DiseaseOrPhenotypicFeature,D012559,dev
+16867246,antipsychotic drugs,ChemicalEntity,D014150,Association,DRD2,GeneOrGeneProduct,1813,dev
+16867246,schizophrenic,DiseaseOrPhenotypicFeature,D012559,Negative_Correlation,chlorpromazine,ChemicalEntity,D002746,dev
+16867246,extrapyramidal syndrome,DiseaseOrPhenotypicFeature,D001480,Association,DRD2,GeneOrGeneProduct,1813,dev
+16867246,extrapyramidal syndrome,DiseaseOrPhenotypicFeature,D001480,Positive_Correlation,antipsychotic drugs,ChemicalEntity,D014150,dev
+16867246,chlorpromazine,ChemicalEntity,D002746,Positive_Correlation,extrapyramidal syndrome,DiseaseOrPhenotypicFeature,D001480,dev
+17549393,IRF6,GeneOrGeneProduct,3664,Bind,Smad,GeneOrGeneProduct,4086,dev
+17549393,IRF6,GeneOrGeneProduct,3664,Association,Van der Woude syndrome,DiseaseOrPhenotypicFeature,C536528,dev
+17549393,Van der Woude syndrome,DiseaseOrPhenotypicFeature,C536528,Positive_Correlation,c.201C>A,SequenceVariant,c|SUB|C|201|A,dev
+17549393,Y67X,SequenceVariant,p|SUB|Y|67|X,Positive_Correlation,Van der Woude syndrome,DiseaseOrPhenotypicFeature,C536528,dev
+17962394,X linked nystagmus,DiseaseOrPhenotypicFeature,C580539,Association,FRMD7,GeneOrGeneProduct,90167,dev
+17962394,X linked nystagmus,DiseaseOrPhenotypicFeature,C580539,Positive_Correlation,p.R229G,SequenceVariant,rs137852212,dev
+18046082,G to C point mutation in exon 4 (base 308),SequenceVariant,c|SUB|G|308|C,Association,lipids,ChemicalEntity,D008055,dev
+18046082,apolipoprotein E,GeneOrGeneProduct,348,Bind,lipids,ChemicalEntity,D008055,dev
+18046082,apolipoprotein E,GeneOrGeneProduct,348,Association,lipoprotein glomerulopathy,DiseaseOrPhenotypicFeature,C567089,dev
+18046082,arginine 150 proline,SequenceVariant,p|SUB|R|150|P,Association,lipids,ChemicalEntity,D008055,dev
+18046082,arginine 150 proline,SequenceVariant,p|SUB|R|150|P,Association,lipoprotein glomerulopathy,DiseaseOrPhenotypicFeature,C567089,dev
+21054465,CYP2C8,GeneOrGeneProduct,1558,Association,hypertensive,DiseaseOrPhenotypicFeature,D006973,dev
+21054465,Arachidonic acid,ChemicalEntity,D016718,Association,hypertensive,DiseaseOrPhenotypicFeature,D006973,dev
+21054465,C35322T,SequenceVariant,c|SUB|C|35322|T,Positive_Correlation,hypertensive,DiseaseOrPhenotypicFeature,D006973,dev
+21054465,C to T at 33468,SequenceVariant,c|SUB|C|33468|T,Association,hypertensive,DiseaseOrPhenotypicFeature,D006973,dev
+21054465,hypertensive,DiseaseOrPhenotypicFeature,D006973,Association,C35322C,SequenceVariant,c|SUB|C|35322|C,dev
+21054465,T deletion at 5063,SequenceVariant,c|DEL|5063|T,Association,hypertensive,DiseaseOrPhenotypicFeature,D006973,dev
+22711886,BCL-2,GeneOrGeneProduct,596,Association,X-linked inhibitor of apoptosis,GeneOrGeneProduct,11798,dev
+22711886,BCL-2,GeneOrGeneProduct,596,Association,chronic lymphocytic leukemia,DiseaseOrPhenotypicFeature,D015451,dev
+22711886,BCR,GeneOrGeneProduct,12518,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+22711886,CD40,GeneOrGeneProduct,21939,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+22711886,ERK,GeneOrGeneProduct,26413,Association,CD40,GeneOrGeneProduct,21939,dev
+22711886,JNK,GeneOrGeneProduct,26419,Association,CD40,GeneOrGeneProduct,21939,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Association,B cell activating factor,GeneOrGeneProduct,24099,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Negative_Correlation,X-linked inhibitor of apoptosis,GeneOrGeneProduct,11798,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Association,BCL-2,GeneOrGeneProduct,596,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Positive_Correlation,p38 MAPK,GeneOrGeneProduct,26416,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Association,BCR,GeneOrGeneProduct,12518,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Association,CD40,GeneOrGeneProduct,21939,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Positive_Correlation,ERK,GeneOrGeneProduct,26413,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Positive_Correlation,JNK,GeneOrGeneProduct,26419,dev
+22711886,TNFR-associated factor 2,GeneOrGeneProduct,22030,Negative_Correlation,chronic lymphocytic leukemia,DiseaseOrPhenotypicFeature,D015451,dev
+24036311,Setd2,GeneOrGeneProduct,235626,Association,histone H3,GeneOrGeneProduct,260423,dev
+24036311,PAF1c,GeneOrGeneProduct,76246,Association,histone H3,GeneOrGeneProduct,260423,dev
+24036311,PAF1c,GeneOrGeneProduct,54624,Association,histone H3,GeneOrGeneProduct,260423,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Meg3,GeneOrGeneProduct,17263,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Snrpn,GeneOrGeneProduct,20646,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Peg3,GeneOrGeneProduct,18616,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Mest,GeneOrGeneProduct,17294,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Sox17,GeneOrGeneProduct,20671,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Fgf4,GeneOrGeneProduct,14175,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Association,Gata6,GeneOrGeneProduct,14465,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Nanog,GeneOrGeneProduct,71950,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Negative_Correlation,Oct4,GeneOrGeneProduct,18999,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Positive_Correlation,Sox2,GeneOrGeneProduct,20674,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Positive_Correlation,Elf5,GeneOrGeneProduct,13711,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Positive_Correlation,Eomes,GeneOrGeneProduct,13813,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Association,histone H3,GeneOrGeneProduct,260423,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Bind,PAF1c,GeneOrGeneProduct,76246,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Bind,PAF1c,GeneOrGeneProduct,54624,dev
+24036311,CTR9,GeneOrGeneProduct,22083,Bind,CTR9,GeneOrGeneProduct,22083,dev
+25080425,myocardial ischemia,DiseaseOrPhenotypicFeature,D017202,Positive_Correlation,isoproterenol,ChemicalEntity,D007545,dev
+25080425,myocardial ischemia,DiseaseOrPhenotypicFeature,D017202,Association,signal transducer and activator of transcription 3,GeneOrGeneProduct,25125,dev
+25080425,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,myocardial injury,DiseaseOrPhenotypicFeature,D009202,dev
+25080425,isoproterenol,ChemicalEntity,D007545,Association,signal transducer and activator of transcription 3,GeneOrGeneProduct,25125,dev
+25080425,myocardial injury,DiseaseOrPhenotypicFeature,D009202,Association,signal transducer and activator of transcription 3,GeneOrGeneProduct,25125,dev
+25080425,betaine,ChemicalEntity,D001622,Negative_Correlation,Bax,GeneOrGeneProduct,24887,dev
+25080425,betaine,ChemicalEntity,D001622,Positive_Correlation,Bcl-2,GeneOrGeneProduct,24224,dev
+25080425,betaine,ChemicalEntity,D001622,Negative_Correlation,ventricular remodeling,DiseaseOrPhenotypicFeature,D020257,dev
+25080425,betaine,ChemicalEntity,D001622,Negative_Correlation,myocardial ischemia,DiseaseOrPhenotypicFeature,D017202,dev
+25080425,betaine,ChemicalEntity,D001622,Negative_Correlation,isoproterenol,ChemicalEntity,D007545,dev
+25080425,betaine,ChemicalEntity,D001622,Negative_Correlation,myocardial injury,DiseaseOrPhenotypicFeature,D009202,dev
+25080425,betaine,ChemicalEntity,D001622,Association,signal transducer and activator of transcription 3,GeneOrGeneProduct,25125,dev
+27509880,polysaccharide,ChemicalEntity,D011134,Association,major histocompatibility complex (MHC) class,GeneOrGeneProduct,3123,dev
+27509880,histone deacetylase,GeneOrGeneProduct,3065,Negative_Correlation,depsipeptide,ChemicalEntity,D047630,dev
+27509880,5-fluorouracil,ChemicalEntity,D005472,Negative_Correlation,colon cancer,DiseaseOrPhenotypicFeature,D003110,dev
+27509880,5-fluorouracil,ChemicalEntity,D005472,Association,CIITA,GeneOrGeneProduct,4261,dev
+27509880,5-fluorouracil,ChemicalEntity,D005472,Association,PCAF,GeneOrGeneProduct,8850,dev
+27509880,5-fluorouracil,ChemicalEntity,D005472,Positive_Correlation,p21,GeneOrGeneProduct,1026,dev
+27509880,caspase-3/7,GeneOrGeneProduct,840,Positive_Correlation,5-fluorouracil,ChemicalEntity,D005472,dev
+27509880,caspase-3/7,GeneOrGeneProduct,840,Positive_Correlation,depsipeptide,ChemicalEntity,D047630,dev
+27509880,caspase-3/7,GeneOrGeneProduct,836,Positive_Correlation,5-fluorouracil,ChemicalEntity,D005472,dev
+27509880,caspase-3/7,GeneOrGeneProduct,836,Positive_Correlation,depsipeptide,ChemicalEntity,D047630,dev
+27509880,depsipeptide,ChemicalEntity,D047630,Negative_Correlation,colon cancer,DiseaseOrPhenotypicFeature,D003110,dev
+27509880,depsipeptide,ChemicalEntity,D047630,Association,CIITA,GeneOrGeneProduct,4261,dev
+27509880,depsipeptide,ChemicalEntity,D047630,Association,PCAF,GeneOrGeneProduct,8850,dev
+27509880,depsipeptide,ChemicalEntity,D047630,Cotreatment,5-fluorouracil,ChemicalEntity,D005472,dev
+27509880,depsipeptide,ChemicalEntity,D047630,Positive_Correlation,p21,GeneOrGeneProduct,1026,dev
+27509880,major histocompatibility complex class II,GeneOrGeneProduct,3119,Positive_Correlation,5-fluorouracil,ChemicalEntity,D005472,dev
+27509880,major histocompatibility complex class II,GeneOrGeneProduct,3119,Positive_Correlation,depsipeptide,ChemicalEntity,D047630,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.1483-1G>C,SequenceVariant,c|SUB|G|1483-1|C,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.304G>A,SequenceVariant,c|SUB|G|304|A,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.229T>C,SequenceVariant,c|SUB|T|229|C,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.824T>C,SequenceVariant,c|SUB|T|284|C,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.436_436+1delAG,SequenceVariant,c|DEL|436_436+1|AG,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,p.Ser412ValfsX12,SequenceVariant,p|SUB|S|412|V|12,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.1234delA,SequenceVariant,c|DEL|1234|A,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,p.Glu177LysfsX44,SequenceVariant,p|SUB|E|177|K|44,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,c.528delT,SequenceVariant,c|DEL|528|T,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,p.Leu275Pro,SequenceVariant,p|SUB|L|275|P,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,p.Cys77Arg,SequenceVariant,p|SUB|C|77|R,dev
+27840894,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,Positive_Correlation,p.Gly102Arg,SequenceVariant,p|SUB|G|102|R,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.1483-1G>C,SequenceVariant,c|SUB|G|1483-1|C,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.304G>A,SequenceVariant,c|SUB|G|304|A,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.229T>C,SequenceVariant,c|SUB|T|229|C,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.824T>C,SequenceVariant,c|SUB|T|284|C,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.436_436+1delAG,SequenceVariant,c|DEL|436_436+1|AG,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,p.Ser412ValfsX12,SequenceVariant,p|SUB|S|412|V|12,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.1234delA,SequenceVariant,c|DEL|1234|A,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,p.Glu177LysfsX44,SequenceVariant,p|SUB|E|177|K|44,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,c.528delT,SequenceVariant,c|DEL|528|T,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,p.Leu275Pro,SequenceVariant,p|SUB|L|275|P,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,p.Cys77Arg,SequenceVariant,p|SUB|C|77|R,dev
+27840894,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,Positive_Correlation,p.Gly102Arg,SequenceVariant,p|SUB|G|102|R,dev
+27840894,PHEX,GeneOrGeneProduct,5251,Negative_Correlation,X-linked hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D053098,dev
+27840894,PHEX,GeneOrGeneProduct,5251,Association,hypophosphatemic rickets,DiseaseOrPhenotypicFeature,D063730,dev
+6086495,Becker muscular dystrophy gene,GeneOrGeneProduct,1756,Association,Becker muscular dystrophy,DiseaseOrPhenotypicFeature,D020388,dev
+7811247,ALD,GeneOrGeneProduct,215,Association,Addison,DiseaseOrPhenotypicFeature,D000224,dev
+7811247,X-linked adrenoleukodystrophy,DiseaseOrPhenotypicFeature,D000326,Association,ALD,GeneOrGeneProduct,215,dev
+7811247,cytosine to guanine transversion at nucleotide 1451,SequenceVariant,rs128624214,Positive_Correlation,X-linked adrenoleukodystrophy,DiseaseOrPhenotypicFeature,D000326,dev
+7811247,cytosine to guanine transversion at nucleotide 1451,SequenceVariant,rs128624214,Positive_Correlation,Addison,DiseaseOrPhenotypicFeature,D000224,dev
+16838170,rs2071197,SequenceVariant,rs2071197,Association,rs3818247,SequenceVariant,rs3818247,dev
+16838170,rs4810424,SequenceVariant,rs4810424,Association,rs3818247,SequenceVariant,rs3818247,dev
+16838170,rs4810424,SequenceVariant,rs4810424,Association,rs2071197,SequenceVariant,rs2071197,dev
+16838170,rs4810424,SequenceVariant,rs4810424,Positive_Correlation,diabetes,DiseaseOrPhenotypicFeature,D003920,dev
+16838170,diabetes,DiseaseOrPhenotypicFeature,D003920,Association,rs2144908,SequenceVariant,rs2144908,dev
+16838170,diabetes,DiseaseOrPhenotypicFeature,D003920,Association,rs1884614,SequenceVariant,rs1884614,dev
+16838170,rs2144908,SequenceVariant,rs2144908,Association,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,dev
+16838170,rs1884614,SequenceVariant,rs1884614,Association,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,dev
+16838170,acarbose,ChemicalEntity,D020909,Negative_Correlation,impaired glucose tolerance,DiseaseOrPhenotypicFeature,D018149,dev
+16838170,acarbose,ChemicalEntity,D020909,Negative_Correlation,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,dev
+16838170,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,Positive_Correlation,rs3818247,SequenceVariant,rs3818247,dev
+16838170,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,Positive_Correlation,rs2071197,SequenceVariant,rs2071197,dev
+16838170,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,Positive_Correlation,rs4810424,SequenceVariant,rs4810424,dev
+16838170,HNF4alpha,GeneOrGeneProduct,3172,Association,type 2 diabetes mellitus,DiseaseOrPhenotypicFeature,D003924,dev
+20801540,hepcidin,GeneOrGeneProduct,57817,Negative_Correlation,iron overload,DiseaseOrPhenotypicFeature,D019190,dev
+20801540,iron overload,DiseaseOrPhenotypicFeature,D019190,Negative_Correlation,deferasirox,ChemicalEntity,D000077588,dev
+20801540,iron overload,DiseaseOrPhenotypicFeature,D019190,Positive_Correlation,iron,ChemicalEntity,D007501,dev
+20801540,c.2554+1G>T,SequenceVariant,c|SUB|G|2554+1|T,Association,diabetes mellitus,DiseaseOrPhenotypicFeature,D003920,dev
+20801540,c.2554+1G>T,SequenceVariant,c|SUB|G|2554+1|T,Association,movement disorders,DiseaseOrPhenotypicFeature,D009069,dev
+20801540,c.2554+1G>T,SequenceVariant,c|SUB|G|2554+1|T,Positive_Correlation,aceruloplasminemia,DiseaseOrPhenotypicFeature,C536004,dev
+20801540,Ceruloplasmin,GeneOrGeneProduct,1356,Association,diabetes mellitus,DiseaseOrPhenotypicFeature,D003920,dev
+20801540,Ceruloplasmin,GeneOrGeneProduct,1356,Association,movement disorders,DiseaseOrPhenotypicFeature,D009069,dev
+20801540,Ceruloplasmin,GeneOrGeneProduct,1356,Association,aceruloplasminemia,DiseaseOrPhenotypicFeature,C536004,dev
+20801540,Ceruloplasmin,GeneOrGeneProduct,1356,Association,iron,ChemicalEntity,D007501,dev
+20801540,aceruloplasminemia,DiseaseOrPhenotypicFeature,C536004,Association,hepcidin,GeneOrGeneProduct,57817,dev
+20801540,aceruloplasminemia,DiseaseOrPhenotypicFeature,C536004,Positive_Correlation,iron,ChemicalEntity,D007501,dev
+20801540,deferasirox,ChemicalEntity,D000077588,Negative_Correlation,insulin,GeneOrGeneProduct,3630,dev
+20801540,deferasirox,ChemicalEntity,D000077588,Negative_Correlation,aceruloplasminemia,DiseaseOrPhenotypicFeature,C536004,dev
+20801540,iron,ChemicalEntity,D007501,Positive_Correlation,retinal degeneration,DiseaseOrPhenotypicFeature,D012162,dev
+20801540,iron,ChemicalEntity,D007501,Positive_Correlation,diabetes mellitus,DiseaseOrPhenotypicFeature,D003920,dev
+20801540,iron,ChemicalEntity,D007501,Positive_Correlation,movement disorders,DiseaseOrPhenotypicFeature,D009069,dev
+20801540,iron,ChemicalEntity,D007501,Bind,transferrin,GeneOrGeneProduct,7018,dev
+20801540,iron,ChemicalEntity,D007501,Bind,deferasirox,ChemicalEntity,D000077588,dev
+25550469,dihydrotestosterone,ChemicalEntity,D013196,Negative_Correlation,lipid,ChemicalEntity,D008055,dev
+25550469,dihydrotestosterone,ChemicalEntity,D013196,Negative_Correlation,cholesterol,ChemicalEntity,D002784,dev
+25550469,dihydrotestosterone,ChemicalEntity,D013196,Negative_Correlation,atherosclerosis,DiseaseOrPhenotypicFeature,D050197,dev
+25550469,atherosclerosis,DiseaseOrPhenotypicFeature,D050197,Association,lipid,ChemicalEntity,D008055,dev
+25550469,atherosclerosis,DiseaseOrPhenotypicFeature,D050197,Positive_Correlation,cholesterol,ChemicalEntity,D002784,dev
+25550469,dyslipidemia,DiseaseOrPhenotypicFeature,D050171,Positive_Correlation,cholesterol,ChemicalEntity,D002784,dev
+25550469,dyslipidemia,DiseaseOrPhenotypicFeature,D050171,Negative_Correlation,androgen receptor,GeneOrGeneProduct,11835,dev
+25550469,triglyceride,GeneOrGeneProduct,100035834,Negative_Correlation,androgen receptor,GeneOrGeneProduct,11835,dev
+25550469,androgen receptor,GeneOrGeneProduct,11835,Positive_Correlation,dihydrotestosterone,ChemicalEntity,D013196,dev
+25550469,androgen receptor,GeneOrGeneProduct,11835,Bind,Androgens,ChemicalEntity,D000728,dev
+25550469,androgen receptor,GeneOrGeneProduct,11835,Negative_Correlation,atherosclerosis,DiseaseOrPhenotypicFeature,D050197,dev
+25550469,androgen receptor,GeneOrGeneProduct,11835,Positive_Correlation,insulin,GeneOrGeneProduct,16334,dev
+25550469,androgen receptor,GeneOrGeneProduct,11835,Negative_Correlation,obesity,DiseaseOrPhenotypicFeature,D009765,dev
+27090298,Fatty Acid Synthase,GeneOrGeneProduct,2194,Association,metabolic dysfunction,DiseaseOrPhenotypicFeature,D008659,dev
+27090298,Fatty Acid Synthase,GeneOrGeneProduct,2194,Association,hypertension,DiseaseOrPhenotypicFeature,D006973,dev
+27090298,Fatty Acid Synthase,GeneOrGeneProduct,2194,Negative_Correlation,C-peptide,ChemicalEntity,D002096,dev
+27090298,Fatty Acid Synthase,GeneOrGeneProduct,2194,Negative_Correlation,HbAc1,GeneOrGeneProduct,3043,dev
+27090298,Fatty Acid Synthase,GeneOrGeneProduct,2194,Negative_Correlation,insulin,GeneOrGeneProduct,3630,dev
+27090298,Fatty Acid Synthase,GeneOrGeneProduct,2194,Negative_Correlation,glucose,ChemicalEntity,D005947,dev
+27090298,HMW,GeneOrGeneProduct,57587,Association,adiponectin,GeneOrGeneProduct,9370,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Negative_Correlation,pulmonary hypertension,DiseaseOrPhenotypicFeature,D006976,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Negative_Correlation,hypoxic pulmonary remodelling,DiseaseOrPhenotypicFeature,D066253,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Negative_Correlation,CXCR4,GeneOrGeneProduct,60628,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Negative_Correlation,inflammation,DiseaseOrPhenotypicFeature,D007249,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Association,CD68,GeneOrGeneProduct,287435,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Association,tyrosine kinase receptor 2,GeneOrGeneProduct,25589,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Negative_Correlation,right ventricular hypertrophy,DiseaseOrPhenotypicFeature,D017380,dev
+27860185,Sildenafil,ChemicalEntity,D000068677,Negative_Correlation,hypoxia,DiseaseOrPhenotypicFeature,D000860,dev
+15867855,T-cell immunoglobulin mucin 3,GeneOrGeneProduct,84868,Association,allergic diseases,DiseaseOrPhenotypicFeature,D004342,dev
+15867855,157delMTTTVP,SequenceVariant,p|DEL|157|MTTTVP,Positive_Correlation,asthma,DiseaseOrPhenotypicFeature,D001249,dev
+15867855,rs2277025,SequenceVariant,rs2277025,Positive_Correlation,asthma,DiseaseOrPhenotypicFeature,D001249,dev
+15867855,T-cell immunoglobulin mucin 1,GeneOrGeneProduct,26762,Association,allergic diseases,DiseaseOrPhenotypicFeature,D004342,dev
+15867855,T-cell immunoglobulin mucin 1,GeneOrGeneProduct,26762,Association,asthma,DiseaseOrPhenotypicFeature,D001249,dev
+26684240,G593S,SequenceVariant,p.G593S,Association,NET,DiseaseOrPhenotypicFeature,D018358,dev
+26684240,intestine NETs,DiseaseOrPhenotypicFeature,D007414,Negative_Correlation,pazopanib,ChemicalEntity,C516667,dev
+26684240,intestine NETs,DiseaseOrPhenotypicFeature,D007414,Association,V600E,SequenceVariant,rs113488022,dev
+26684240,intestine NETs,DiseaseOrPhenotypicFeature,D007414,Association,BRAF,GeneOrGeneProduct,673,dev
+26684240,VHL,GeneOrGeneProduct,7428,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,TBC1D12,GeneOrGeneProduct,23232,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,SPEN,GeneOrGeneProduct,23013,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,SMARCB1,GeneOrGeneProduct,6598,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,RASA1,GeneOrGeneProduct,5921,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,PTEN,GeneOrGeneProduct,5728,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,MLL3,GeneOrGeneProduct,58508,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,MGA,GeneOrGeneProduct,23269,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,KRAS,GeneOrGeneProduct,3845,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,KDM6A,GeneOrGeneProduct,7403,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,EP300,GeneOrGeneProduct,2033,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,EGFR,GeneOrGeneProduct,1956,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,CTNNB1,GeneOrGeneProduct,1499,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,BCOR,GeneOrGeneProduct,54880,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,APC,GeneOrGeneProduct,324,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,RB1,GeneOrGeneProduct,5925,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,CNBD1,GeneOrGeneProduct,168975,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,cancer,DiseaseOrPhenotypicFeature,D009369,Association,ERBB3,GeneOrGeneProduct,2065,dev
+26684240,TP53,GeneOrGeneProduct,7157,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,V600E,SequenceVariant,rs113488022,Association,NET,DiseaseOrPhenotypicFeature,D018358,dev
+26684240,V600E,SequenceVariant,rs113488022,Negative_Correlation,pazopanib,ChemicalEntity,C516667,dev
+26684240,V600E,SequenceVariant,rs113488022,Association,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,G593S,SequenceVariant,p.G593S,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Negative_Correlation,pazopanib,ChemicalEntity,C516667,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,VHL,GeneOrGeneProduct,7428,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,TBC1D12,GeneOrGeneProduct,23232,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,SPEN,GeneOrGeneProduct,23013,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,SMARCB1,GeneOrGeneProduct,6598,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,RASA1,GeneOrGeneProduct,5921,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,PTEN,GeneOrGeneProduct,5728,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,MLL3,GeneOrGeneProduct,58508,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,MGA,GeneOrGeneProduct,23269,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,KRAS,GeneOrGeneProduct,3845,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,KDM6A,GeneOrGeneProduct,7403,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,ERBB3,GeneOrGeneProduct,2065,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,EP300,GeneOrGeneProduct,2033,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,EGFR,GeneOrGeneProduct,1956,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,CTNNB1,GeneOrGeneProduct,1499,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,BCOR,GeneOrGeneProduct,54880,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,APC,GeneOrGeneProduct,324,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,RB1,GeneOrGeneProduct,5925,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,CNBD1,GeneOrGeneProduct,168975,dev
+26684240,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,Association,TP53,GeneOrGeneProduct,7157,dev
+26684240,BRAF,GeneOrGeneProduct,673,Association,NET,DiseaseOrPhenotypicFeature,D018358,dev
+26684240,BRAF,GeneOrGeneProduct,673,Negative_Correlation,pazopanib,ChemicalEntity,C516667,dev
+26684240,BRAF,GeneOrGeneProduct,673,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+26684240,BRAF,GeneOrGeneProduct,673,Association,gastroenteropancreatic neuroendocrine tumors,DiseaseOrPhenotypicFeature,C535650,dev
+27707793,cardiotoxin,ChemicalEntity,D054715,Positive_Correlation,muscle injury,DiseaseOrPhenotypicFeature,D009135,dev
+27707793,miR-501,GeneOrGeneProduct,751560,Association,"chloride channel, voltage-sensitive 5",GeneOrGeneProduct,12728,dev
+27707793,miR-501,GeneOrGeneProduct,751560,Association,muscle injury,DiseaseOrPhenotypicFeature,D009135,dev
+27707793,miR-501,GeneOrGeneProduct,751560,Negative_Correlation,myosin heavy chain,GeneOrGeneProduct,17883,dev
+27707793,gigaxonin,GeneOrGeneProduct,209239,Negative_Correlation,miR-501,GeneOrGeneProduct,751560,dev
+21799811,677 C>T,SequenceVariant,rs1801133,Positive_Correlation,male infertility,DiseaseOrPhenotypicFeature,D007248,dev
+21799811,MTHFR,GeneOrGeneProduct,4524,Association,methionine,ChemicalEntity,D008715,dev
+21799811,MTHFR,GeneOrGeneProduct,4524,Association,folate,ChemicalEntity,D005492,dev
+21799811,MTHFR,GeneOrGeneProduct,4524,Association,male infertility,DiseaseOrPhenotypicFeature,D007248,dev
+15951966,MLH1,GeneOrGeneProduct,4292,Association,HNPCC,DiseaseOrPhenotypicFeature,D003123,dev
+15951966,MSH2,GeneOrGeneProduct,4436,Association,HNPCC,DiseaseOrPhenotypicFeature,D003123,dev
+17968299,IL-10,GeneOrGeneProduct,3586,Association,Periodontitis,DiseaseOrPhenotypicFeature,D010518,dev
+20126413,PTEN,GeneOrGeneProduct,5728,Association,cancer,DiseaseOrPhenotypicFeature,D009369,dev
+27866394,L- and T-type Ca(2+) channels,GeneOrGeneProduct,83810,Association,irritable bowel syndrome,DiseaseOrPhenotypicFeature,D043183,dev
+27866394,L- and T-type Ca(2+) channels,GeneOrGeneProduct,83810,Negative_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,L- and T-type Ca(2+) channels,GeneOrGeneProduct,24239,Association,irritable bowel syndrome,DiseaseOrPhenotypicFeature,D043183,dev
+27866394,L- and T-type Ca(2+) channels,GeneOrGeneProduct,24239,Negative_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,muscarinic and tachykinin receptors,GeneOrGeneProduct,6869,Association,irritable bowel syndrome,DiseaseOrPhenotypicFeature,D043183,dev
+27866394,muscarinic and tachykinin receptors,GeneOrGeneProduct,6869,Negative_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,muscarinic and tachykinin receptors,GeneOrGeneProduct,1128,Association,irritable bowel syndrome,DiseaseOrPhenotypicFeature,D043183,dev
+27866394,muscarinic and tachykinin receptors,GeneOrGeneProduct,1128,Negative_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,CRF1r,GeneOrGeneProduct,58959,Negative_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,CGRP,GeneOrGeneProduct,24241,Negative_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,S100b,GeneOrGeneProduct,25742,Positive_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,VIP,GeneOrGeneProduct,117064,Positive_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,nNOS,GeneOrGeneProduct,24598,Positive_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,NK1r,GeneOrGeneProduct,24807,Positive_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+27866394,otilonium bromide,ChemicalEntity,C013934,Association,neurotransmitter,ChemicalEntity,D018377,dev
+27866394,otilonium bromide,ChemicalEntity,C013934,Negative_Correlation,irritable bowel syndrome,DiseaseOrPhenotypicFeature,D043183,dev
+27866394,otilonium bromide,ChemicalEntity,C013934,Negative_Correlation,ChAT,GeneOrGeneProduct,290567,dev
+27866394,otilonium bromide,ChemicalEntity,C013934,Positive_Correlation,Mr2,GeneOrGeneProduct,81645,dev
+27866394,SP,GeneOrGeneProduct,24806,Positive_Correlation,otilonium bromide,ChemicalEntity,C013934,dev
+29049388,NPHS2,GeneOrGeneProduct,7827,Association,renal disease,DiseaseOrPhenotypicFeature,D007674,dev
+29049388,NPHS2,GeneOrGeneProduct,7827,Association,nephrotic syndrome,DiseaseOrPhenotypicFeature,D009404,dev
+29049388,NPHS2,GeneOrGeneProduct,7827,Association,proteinuria,DiseaseOrPhenotypicFeature,D011507,dev
+29049388,NPHS2,GeneOrGeneProduct,7827,Association,renal failure,DiseaseOrPhenotypicFeature,D051437,dev
+29049388,podocin,GeneOrGeneProduct,170484,Association,nephrotic syndrome,DiseaseOrPhenotypicFeature,D009404,dev
+29049388,podocin,GeneOrGeneProduct,170484,Association,proteinuria,DiseaseOrPhenotypicFeature,D011507,dev
+29049388,podocin,GeneOrGeneProduct,170484,Association,renal failure,DiseaseOrPhenotypicFeature,D051437,dev
+29049388,R138Q,SequenceVariant,rs74315342,Positive_Correlation,renal disease,DiseaseOrPhenotypicFeature,D007674,dev
+29049388,R138Q,SequenceVariant,rs74315342,Positive_Correlation,renal failure,DiseaseOrPhenotypicFeature,D051437,dev
+29049388,R140Q,SequenceVariant,p|SUB|R|140|Q,Positive_Correlation,nephrotic syndrome,DiseaseOrPhenotypicFeature,D009404,dev
+29049388,R140Q,SequenceVariant,p|SUB|R|140|Q,Positive_Correlation,proteinuria,DiseaseOrPhenotypicFeature,D011507,dev
+29049388,R140Q,SequenceVariant,p|SUB|R|140|Q,Positive_Correlation,renal failure,DiseaseOrPhenotypicFeature,D051437,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D002357,Association,Bone morphogenetic proteins,GeneOrGeneProduct,650,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D002357,Association,Bone morphogenetic proteins,GeneOrGeneProduct,649,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D002357,Association,BMP5,GeneOrGeneProduct,653,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D002357,Association,BMP4,GeneOrGeneProduct,652,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D001847,Association,Bone morphogenetic proteins,GeneOrGeneProduct,650,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D001847,Association,Bone morphogenetic proteins,GeneOrGeneProduct,649,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D001847,Association,BMP5,GeneOrGeneProduct,653,dev
+17345627,ectopic cartilage and bone formation,DiseaseOrPhenotypicFeature,D001847,Association,BMP4,GeneOrGeneProduct,652,dev
+17345627,BMP5,GeneOrGeneProduct,653,Association,fibrodysplasia ossificans progressiva,DiseaseOrPhenotypicFeature,D009221,dev
+17345627,BMP5,GeneOrGeneProduct,653,Association,short ear syndrome,DiseaseOrPhenotypicFeature,D004427,dev
+17345627,heterotopic ossification,DiseaseOrPhenotypicFeature,D009999,Association,BMP5,GeneOrGeneProduct,653,dev
+17345627,heterotopic ossification,DiseaseOrPhenotypicFeature,D009999,Association,BMP4,GeneOrGeneProduct,652,dev
+17345627,BMP4,GeneOrGeneProduct,652,Association,fibrodysplasia ossificans progressiva,DiseaseOrPhenotypicFeature,D009221,dev
+17345627,BMP4,GeneOrGeneProduct,652,Association,short ear syndrome,DiseaseOrPhenotypicFeature,D004427,dev
+17345627,axial skeletal malformations,DiseaseOrPhenotypicFeature,D001848,Association,BMP5,GeneOrGeneProduct,653,dev
+17345627,axial skeletal malformations,DiseaseOrPhenotypicFeature,D001848,Association,BMP4,GeneOrGeneProduct,652,dev
+20540798,atherogenic,DiseaseOrPhenotypicFeature,D050197,Association,Rs702553,SequenceVariant,rs702553,dev
+20540798,Rs702553,SequenceVariant,rs702553,Positive_Correlation,stroke,DiseaseOrPhenotypicFeature,D020521,dev
+20540798,phosphodiesterase 4D,GeneOrGeneProduct,5144,Association,atherogenic,DiseaseOrPhenotypicFeature,D050197,dev
+20540798,phosphodiesterase 4D,GeneOrGeneProduct,5144,Association,stroke,DiseaseOrPhenotypicFeature,D020521,dev
+20540798,phosphodiesterase 4D,GeneOrGeneProduct,5144,Association,carotid atherosclerosis,DiseaseOrPhenotypicFeature,D002340,dev
+21130517,L858R,SequenceVariant,rs121434568,Association,tumor,DiseaseOrPhenotypicFeature,D009369,dev
+21130517,erlotinib,ChemicalEntity,D000069347,Association,L858R,SequenceVariant,rs121434568,dev
+21130517,erlotinib,ChemicalEntity,D000069347,Negative_Correlation,tumor,DiseaseOrPhenotypicFeature,D009369,dev
+21130517,erlotinib,ChemicalEntity,D000069347,Association,EGFR,GeneOrGeneProduct,1956,dev
+21130517,EGFR,GeneOrGeneProduct,1956,Association,lung cancer,DiseaseOrPhenotypicFeature,D008175,dev
+21130517,EGFR,GeneOrGeneProduct,1956,Association,tumor,DiseaseOrPhenotypicFeature,D009369,dev
+28393239,pancreatic cancer,DiseaseOrPhenotypicFeature,D010190,Positive_Correlation,MMP-9,GeneOrGeneProduct,4318,dev
+28393239,pancreatic cancer,DiseaseOrPhenotypicFeature,D010190,Positive_Correlation,matrix metalloproteinase-2,GeneOrGeneProduct,4313,dev
+28393239,Psoriasin,GeneOrGeneProduct,6278,Association,cancers,DiseaseOrPhenotypicFeature,D009369,dev
+28393239,Psoriasin,GeneOrGeneProduct,6278,Positive_Correlation,MMP-9,GeneOrGeneProduct,4318,dev
+28393239,Psoriasin,GeneOrGeneProduct,6278,Positive_Correlation,matrix metalloproteinase-2,GeneOrGeneProduct,4313,dev
+28393239,Psoriasin,GeneOrGeneProduct,6278,Association,psoriatic skin lesions,DiseaseOrPhenotypicFeature,D011565,dev
+28393239,Psoriasin,GeneOrGeneProduct,6278,Positive_Correlation,pancreatic cancer,DiseaseOrPhenotypicFeature,D010190,dev
+16018252,sex reversal XY,DiseaseOrPhenotypicFeature,OMIM:400044,Positive_Correlation,A was replaced by a G in codon 38,SequenceVariant,c|SUB|A|CODON38|G,dev
+16018252,sex reversal XY,DiseaseOrPhenotypicFeature,OMIM:400044,Association,SRY,GeneOrGeneProduct,6736,dev
+16018252,sex reversal XY,DiseaseOrPhenotypicFeature,OMIM:400044,Positive_Correlation,Tyrosine (Tyr) instead of a Term,SequenceVariant,c|SUB|Y||X,dev
+16018252,sex reversal XY,DiseaseOrPhenotypicFeature,OMIM:400044,Positive_Correlation,T to A transition at the nucleotide position +387,SequenceVariant,c|SUB|T|387|A,dev
+16018252,sex reversal XY,DiseaseOrPhenotypicFeature,OMIM:400044,Positive_Correlation,glutamate by glycine,SequenceVariant,p|SUB|E||G,dev
+16419642,S810L,SequenceVariant,rs41511344,Positive_Correlation,hypertensives,DiseaseOrPhenotypicFeature,D006973,dev
+16419642,essential hypertension,DiseaseOrPhenotypicFeature,D000075222,Association,L809L,SequenceVariant,rs145670736,dev
+16419642,mineralocorticoid receptor,GeneOrGeneProduct,4306,Association,hypertensives,DiseaseOrPhenotypicFeature,D006973,dev
+16419642,F826Y,SequenceVariant,rs13306592,Association,hypertensives,DiseaseOrPhenotypicFeature,D006973,dev
+17943461,caspase 3,GeneOrGeneProduct,12367,Positive_Correlation,AZT,ChemicalEntity,D015215,dev
+17943461,FasL,GeneOrGeneProduct,14103,Association,depressed cardiac function,DiseaseOrPhenotypicFeature,D000275,dev
+17943461,FasL,GeneOrGeneProduct,14103,Association,Dilated cardiomyopathy,DiseaseOrPhenotypicFeature,D002311,dev
+17943461,depressed cardiac function,DiseaseOrPhenotypicFeature,D000275,Association,calpain 1,GeneOrGeneProduct,12333,dev
+17943461,depressed cardiac function,DiseaseOrPhenotypicFeature,D000275,Association,caspase 3,GeneOrGeneProduct,12367,dev
+17943461,depressed cardiac function,DiseaseOrPhenotypicFeature,D000275,Association,Fas,GeneOrGeneProduct,355,dev
+17943461,Dilated cardiomyopathy,DiseaseOrPhenotypicFeature,D002311,Association,calpain 1,GeneOrGeneProduct,12333,dev
+17943461,Dilated cardiomyopathy,DiseaseOrPhenotypicFeature,D002311,Association,caspase 3,GeneOrGeneProduct,12367,dev
+17943461,Dilated cardiomyopathy,DiseaseOrPhenotypicFeature,D002311,Association,Fas,GeneOrGeneProduct,355,dev
+17943461,AZT,ChemicalEntity,D015215,Association,calpain 1,GeneOrGeneProduct,12333,dev
+17943461,AZT,ChemicalEntity,D015215,Association,FasL,GeneOrGeneProduct,14103,dev
+17943461,AZT,ChemicalEntity,D015215,Positive_Correlation,depressed cardiac function,DiseaseOrPhenotypicFeature,D000275,dev
+17943461,AZT,ChemicalEntity,D015215,Positive_Correlation,Dilated cardiomyopathy,DiseaseOrPhenotypicFeature,D002311,dev
+17943461,AZT,ChemicalEntity,D015215,Positive_Correlation,Fas,GeneOrGeneProduct,355,dev
+17943461,AZT,ChemicalEntity,D015215,Positive_Correlation,cardiomyopathy,DiseaseOrPhenotypicFeature,D009202,dev
+17943461,Fas ligand,GeneOrGeneProduct,356,Association,cardiac dilation and dysfunction,DiseaseOrPhenotypicFeature,D006331,dev
+17943461,Fas ligand,GeneOrGeneProduct,356,Association,Dilated cardiomyopathy,DiseaseOrPhenotypicFeature,D002311,dev
+17943461,Fas ligand,GeneOrGeneProduct,356,Association,cardiomyopathy,DiseaseOrPhenotypicFeature,D009202,dev
+17943461,Fas ligand,GeneOrGeneProduct,356,Positive_Correlation,AZT,ChemicalEntity,D015215,dev
+21042587,glucocorticoid resistance,DiseaseOrPhenotypicFeature,C564221,Association,glucocorticoid,ChemicalEntity,D005938,dev
+21042587,11b-hydroxysteroid dehydrogenase type 2,GeneOrGeneProduct,3291,Association,glucocorticoid receptor,GeneOrGeneProduct,2908,dev
+21042587,mineralocorticoid receptor,GeneOrGeneProduct,4306,Association,cortisol,ChemicalEntity,D006854,dev
+21042587,glucocorticoid,ChemicalEntity,D005938,Association,hypercortisolism,DiseaseOrPhenotypicFeature,D003480,dev
+21042587,glucocorticoid,ChemicalEntity,D005938,Positive_Correlation,11b-hydroxysteroid dehydrogenase type 2,GeneOrGeneProduct,3291,dev
+21042587,glucocorticoid,ChemicalEntity,D005938,Positive_Correlation,FKBP5,GeneOrGeneProduct,2289,dev
+21042587,adrenal hyperplasia,DiseaseOrPhenotypicFeature,D000312,Association,glucocorticoid,ChemicalEntity,D005938,dev
+21042587,hypertension,DiseaseOrPhenotypicFeature,D006973,Association,cortisol,ChemicalEntity,D006854,dev
+21042587,hypertension,DiseaseOrPhenotypicFeature,D006973,Association,mineralocorticoid receptor,GeneOrGeneProduct,4306,dev
+21042587,"p.R469[R,X]",SequenceVariant,p|SUB|R|469|X,Association,adrenal hyperplasia,DiseaseOrPhenotypicFeature,D000312,dev
+21042587,"p.R469[R,X]",SequenceVariant,p|SUB|R|469|X,Association,adrenal incidentalomas,DiseaseOrPhenotypicFeature,C538238,dev
+21042587,"p.R469[R,X]",SequenceVariant,p|SUB|R|469|X,Association,cortisol resistance,DiseaseOrPhenotypicFeature,C535280,dev
+21042587,"p.R469[R,X]",SequenceVariant,p|SUB|R|469|X,Association,hypokalemia,DiseaseOrPhenotypicFeature,D007008,dev
+21042587,"p.R469[R,X]",SequenceVariant,p|SUB|R|469|X,Association,hypertension,DiseaseOrPhenotypicFeature,D006973,dev
+21042587,apparent mineralocorticoid excess,DiseaseOrPhenotypicFeature,C537422,Association,tetrahydrocortisol,ChemicalEntity,D013760,dev
+21042587,apparent mineralocorticoid excess,DiseaseOrPhenotypicFeature,C537422,Association,tetrahydrocortisone,ChemicalEntity,D013761,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,glucocorticoid resistance,DiseaseOrPhenotypicFeature,C564221,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,hypercortisolism,DiseaseOrPhenotypicFeature,D003480,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,mineralocorticoid receptor,GeneOrGeneProduct,4306,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Bind,glucocorticoid,ChemicalEntity,D005938,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Positive_Correlation,FKBP5,GeneOrGeneProduct,2289,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,adrenal hyperplasia,DiseaseOrPhenotypicFeature,D000312,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,adrenal incidentalomas,DiseaseOrPhenotypicFeature,C538238,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,cortisol resistance,DiseaseOrPhenotypicFeature,C535280,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,hypokalemia,DiseaseOrPhenotypicFeature,D007008,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,hypertension,DiseaseOrPhenotypicFeature,D006973,dev
+21042587,glucocorticoid receptor,GeneOrGeneProduct,2908,Association,apparent mineralocorticoid excess,DiseaseOrPhenotypicFeature,C537422,dev
+16051693,PEMT,GeneOrGeneProduct,18618,Negative_Correlation,fatty livers,DiseaseOrPhenotypicFeature,D005234,dev
+16051693,PEMT,GeneOrGeneProduct,25511,Association,nonalcoholic fatty liver disease,DiseaseOrPhenotypicFeature,D065626,dev
+16051693,nonalcoholic fatty liver disease,DiseaseOrPhenotypicFeature,D065626,Positive_Correlation,V175M,SequenceVariant,rs7946,dev
+16051693,PEMT,GeneOrGeneProduct,10400,Positive_Correlation,phosphatidylcholine,ChemicalEntity,D010713,dev
+16051693,PEMT,GeneOrGeneProduct,10400,Association,nonalcoholic fatty liver disease,DiseaseOrPhenotypicFeature,D065626,dev
+19880293,IVS9+459 GA+GG,SequenceVariant,c|Allele|GA|IVS9+459,Positive_Correlation,psoriasis,DiseaseOrPhenotypicFeature,D011565,dev
+19880293,-3279 AC+AA,SequenceVariant,c|Allele|AC|-3279,Association,psoriasis,DiseaseOrPhenotypicFeature,D011565,dev
+19880293,psoriasis,DiseaseOrPhenotypicFeature,D011565,Positive_Correlation,IVS9+459 GG,SequenceVariant,c|Allele|GG|IVS9+459,dev
+19880293,psoriasis,DiseaseOrPhenotypicFeature,D011565,Positive_Correlation,-3279 AC,SequenceVariant,c|Allele|AC|-3297,dev
+19880293,FOXP3,GeneOrGeneProduct,50943,Association,psoriasis,DiseaseOrPhenotypicFeature,D011565,dev
+19880293,FOXP3,GeneOrGeneProduct,50943,Association,autoimmune diseases,DiseaseOrPhenotypicFeature,D001327,dev
+21903317,tryptophan to arginine substitution at amino acid 10,SequenceVariant,p|SUB|W|10|R,Positive_Correlation,CKD,DiseaseOrPhenotypicFeature,D051436,dev
+21903317,tryptophan to arginine substitution at amino acid 10,SequenceVariant,p|SUB|W|10|R,Positive_Correlation,anemia,DiseaseOrPhenotypicFeature,D000740,dev
+21903317,tryptophan to arginine substitution at amino acid 10,SequenceVariant,p|SUB|W|10|R,Positive_Correlation,hyperuricemia,DiseaseOrPhenotypicFeature,D033461,dev
+21903317,thymidine to cytosine mutation at position 28,SequenceVariant,c|SUB|T|28|C,Positive_Correlation,CKD,DiseaseOrPhenotypicFeature,D051436,dev
+21903317,thymidine to cytosine mutation at position 28,SequenceVariant,c|SUB|T|28|C,Positive_Correlation,anemia,DiseaseOrPhenotypicFeature,D000740,dev
+21903317,thymidine to cytosine mutation at position 28,SequenceVariant,c|SUB|T|28|C,Positive_Correlation,hyperuricemia,DiseaseOrPhenotypicFeature,D033461,dev
+21903317,renin,GeneOrGeneProduct,5972,Association,renal tubular dysgenesis,DiseaseOrPhenotypicFeature,C537048,dev
+21903317,renin,GeneOrGeneProduct,5972,Association,CKD,DiseaseOrPhenotypicFeature,D051436,dev
+21903317,renin,GeneOrGeneProduct,5972,Association,anemia,DiseaseOrPhenotypicFeature,D000740,dev
+21903317,renin,GeneOrGeneProduct,5972,Association,hyperuricemia,DiseaseOrPhenotypicFeature,D033461,dev
+21903317,fetopathy,DiseaseOrPhenotypicFeature,C576203,Positive_Correlation,angiotensin receptor blocker,ChemicalEntity,D057911,dev
+21903317,fetopathy,DiseaseOrPhenotypicFeature,C576203,Positive_Correlation,angiotensin-converting enzyme inhibitor,ChemicalEntity,D000806,dev
+27103577,mitochondrial uncoupling protein 3,GeneOrGeneProduct,22229,Association,ATP,ChemicalEntity,D000255,dev
+27103577,fatty acid,ChemicalEntity,D005227,Association,ATP,ChemicalEntity,D000255,dev
+27103577,PPARa,GeneOrGeneProduct,19013,Association,ATP,ChemicalEntity,D000255,dev
+27103577,hypoxia,DiseaseOrPhenotypicFeature,D000860,Negative_Correlation,ATP,ChemicalEntity,D000255,dev
+27103577,hypoxia,DiseaseOrPhenotypicFeature,D000860,Negative_Correlation,mitochondrial uncoupling protein 3,GeneOrGeneProduct,22229,dev
+27103577,hypoxia,DiseaseOrPhenotypicFeature,D000860,Negative_Correlation,fatty acid,ChemicalEntity,D005227,dev
+27103577,hypoxia,DiseaseOrPhenotypicFeature,D000860,Negative_Correlation,PPARa,GeneOrGeneProduct,19013,dev
+27491646,cyclin-dependent kinase,GeneOrGeneProduct,983,Negative_Correlation,p27Kip1,GeneOrGeneProduct,1027,dev
+27491646,xanthone,ChemicalEntity,C009689,Association,glioma,DiseaseOrPhenotypicFeature,D005910,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,chloroquine,ChemicalEntity,D002738,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,3-methyladenine,ChemicalEntity,C025946,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,p62,GeneOrGeneProduct,8878,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Positive_Correlation,LC3,GeneOrGeneProduct,84557,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Positive_Correlation,Beclin 1,GeneOrGeneProduct,8678,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,matrix metalloproteinases 2/9,GeneOrGeneProduct,4318,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,matrix metalloproteinases 2/9,GeneOrGeneProduct,4313,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Positive_Correlation,p27Kip1,GeneOrGeneProduct,1027,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,cyclin D1,GeneOrGeneProduct,595,dev
+27491646,Gartanin,ChemicalEntity,C000605798,Negative_Correlation,glioma,DiseaseOrPhenotypicFeature,D005910,dev
+27491646,Akt,GeneOrGeneProduct,207,Association,mTOR,GeneOrGeneProduct,2475,dev
+27491646,PI3K,GeneOrGeneProduct,5291,Association,mTOR,GeneOrGeneProduct,2475,dev
+27491646,PI3K,GeneOrGeneProduct,5291,Association,Akt,GeneOrGeneProduct,207,dev
+16611040,cystic fibrosis transmembrane conductance regulator,GeneOrGeneProduct,1080,Association,cystic fibrosis,DiseaseOrPhenotypicFeature,D003550,dev
+17033974,Cacna2d4,GeneOrGeneProduct,319734,Association,l-type calcium-channel auxiliary subunit of the alpha (2) delta type,GeneOrGeneProduct,781,dev
+17033974,c.2406C-->A,SequenceVariant,rs71454844,Association,night blindness,DiseaseOrPhenotypicFeature,D009755,dev
+17033974,c.2406C-->A,SequenceVariant,rs71454844,Positive_Correlation,cone dystrophy,DiseaseOrPhenotypicFeature,D000077765,dev
+17033974,CACNA2D4,GeneOrGeneProduct,93589,Association,night blindness,DiseaseOrPhenotypicFeature,D009755,dev
+17033974,CACNA2D4,GeneOrGeneProduct,93589,Association,cone dystrophy,DiseaseOrPhenotypicFeature,D000077765,dev
+17033974,calcium,ChemicalEntity,D002118,Association,CACNA2D4,GeneOrGeneProduct,93589,dev
+24014394,c.73G>A,SequenceVariant,rs587777433,Association,oxygen,ChemicalEntity,D010100,dev
+24014394,c.73G>A,SequenceVariant,rs587777433,Positive_Correlation,respiratory growth defect,DiseaseOrPhenotypicFeature,D012131,dev
+24014394,c.73G>A,SequenceVariant,rs587777433,Positive_Correlation,encephalopathy,DiseaseOrPhenotypicFeature,D001927,dev
+24014394,respiratory growth defect,DiseaseOrPhenotypicFeature,D012131,Association,LYRM7,GeneOrGeneProduct,90624,dev
+24014394,MZM1,GeneOrGeneProduct,852104,Negative_Correlation,cIII,GeneOrGeneProduct,617,dev
+24014394,MZM1,GeneOrGeneProduct,852104,Association,oxygen,ChemicalEntity,D010100,dev
+24014394,MZM1,GeneOrGeneProduct,852104,Association,Rieske Fe-S protein,GeneOrGeneProduct,856689,dev
+24014394,MZM1,GeneOrGeneProduct,852104,Association,respiratory growth defect,DiseaseOrPhenotypicFeature,D012131,dev
+24014394,lactic acidosis,DiseaseOrPhenotypicFeature,D000140,Positive_Correlation,c.73G>A,SequenceVariant,rs587777433,dev
+24014394,reduction of mitochondrial complex III,DiseaseOrPhenotypicFeature,C565128,Positive_Correlation,c.73G>A,SequenceVariant,rs587777433,dev
+24014394,reduction of mitochondrial complex III,DiseaseOrPhenotypicFeature,C565128,Negative_Correlation,cIII,GeneOrGeneProduct,617,dev
+24014394,LYRM7,GeneOrGeneProduct,90624,Association,mitochondrial encephalopathy,DiseaseOrPhenotypicFeature,C538525,dev
+24014394,LYRM7,GeneOrGeneProduct,90624,Association,cIII,GeneOrGeneProduct,617,dev
+24014394,LYRM7,GeneOrGeneProduct,90624,Association,lactic acidosis,DiseaseOrPhenotypicFeature,D000140,dev
+24014394,LYRM7,GeneOrGeneProduct,90624,Association,reduction of mitochondrial complex III,DiseaseOrPhenotypicFeature,C565128,dev
+24014394,LYRM7,GeneOrGeneProduct,90624,Association,encephalopathy,DiseaseOrPhenotypicFeature,D001927,dev
+15018851,UL97 protein kinase,GeneOrGeneProduct,3077517,Association,foscarnet,ChemicalEntity,D017245,dev
+15018851,UL97 protein kinase,GeneOrGeneProduct,3077517,Association,cidofovir,ChemicalEntity,D000077404,dev
+15018851,UL97 protein kinase,GeneOrGeneProduct,3077517,Association,ganciclovir,ChemicalEntity,D015774,dev
+15018851,foscarnet,ChemicalEntity,D017245,Negative_Correlation,N495K,SequenceVariant,p|SUB|N|495|K,dev
+15018851,cidofovir,ChemicalEntity,D000077404,Negative_Correlation,L501I,SequenceVariant,p|SUB|L|501|I,dev
+15018851,ganciclovir,ChemicalEntity,D015774,Negative_Correlation,L501I,SequenceVariant,p|SUB|L|501|I,dev
+15018851,Long-term anti-cytomegalovirus,DiseaseOrPhenotypicFeature,D003586,Negative_Correlation,foscarnet,ChemicalEntity,D017245,dev
+15018851,Long-term anti-cytomegalovirus,DiseaseOrPhenotypicFeature,D003586,Negative_Correlation,cidofovir,ChemicalEntity,D000077404,dev
+15018851,Long-term anti-cytomegalovirus,DiseaseOrPhenotypicFeature,D003586,Negative_Correlation,ganciclovir,ChemicalEntity,D015774,dev
+15018851,glycoprotein B,GeneOrGeneProduct,2813,Association,Long-term anti-cytomegalovirus,DiseaseOrPhenotypicFeature,D003586,dev
+17671735,c.35delG,SequenceVariant,rs80338939,Positive_Correlation,sensorineural hearing impairment,DiseaseOrPhenotypicFeature,D034381,dev
+17671735,-3170G>A,SequenceVariant,c|SUB|G|-3170|A,Positive_Correlation,sensorineural hearing impairment,DiseaseOrPhenotypicFeature,D034381,dev
+17671735,GJB2,GeneOrGeneProduct,2706,Association,sensorineural hearing impairment,DiseaseOrPhenotypicFeature,D034381,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,Drp1,GeneOrGeneProduct,114114,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,Fis1,GeneOrGeneProduct,288584,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,ATP,ChemicalEntity,D000255,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,Cx43,GeneOrGeneProduct,24392,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,Mfn2,GeneOrGeneProduct,64476,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,Mfn1,GeneOrGeneProduct,192647,dev
+28518143,gp78,GeneOrGeneProduct,361367,Association,myocardial energy metabolism disorder,DiseaseOrPhenotypicFeature,D009202,dev
+28518143,ATP,ChemicalEntity,D000255,Association,myocardial energy metabolism disorder,DiseaseOrPhenotypicFeature,D009202,dev
+28518143,calcium,ChemicalEntity,D002118,Negative_Correlation,DCM,DiseaseOrPhenotypicFeature,D002311,dev
+28518143,glucose,ChemicalEntity,D005947,Positive_Correlation,Drp1,GeneOrGeneProduct,114114,dev
+28518143,glucose,ChemicalEntity,D005947,Positive_Correlation,Fis1,GeneOrGeneProduct,288584,dev
+28518143,glucose,ChemicalEntity,D005947,Positive_Correlation,gp78,GeneOrGeneProduct,361367,dev
+28518143,glucose,ChemicalEntity,D005947,Association,ATP,ChemicalEntity,D000255,dev
+28518143,glucose,ChemicalEntity,D005947,Negative_Correlation,N-cadherin,GeneOrGeneProduct,83501,dev
+28518143,glucose,ChemicalEntity,D005947,Negative_Correlation,beta-catenin,GeneOrGeneProduct,84353,dev
+28518143,glucose,ChemicalEntity,D005947,Negative_Correlation,Cx43,GeneOrGeneProduct,24392,dev
+28518143,glucose,ChemicalEntity,D005947,Negative_Correlation,Mfn2,GeneOrGeneProduct,64476,dev
+28518143,glucose,ChemicalEntity,D005947,Negative_Correlation,Mfn1,GeneOrGeneProduct,192647,dev
+28518143,glucose,ChemicalEntity,D005947,Positive_Correlation,myocardial energy metabolism disorder,DiseaseOrPhenotypicFeature,D009202,dev
+28518143,glucose,ChemicalEntity,D005947,Positive_Correlation,metabolism disorder,DiseaseOrPhenotypicFeature,D008659,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,Drp1,GeneOrGeneProduct,114114,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,Fis1,GeneOrGeneProduct,288584,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,ATP,ChemicalEntity,D000255,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,Cx43,GeneOrGeneProduct,24392,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,Mfn2,GeneOrGeneProduct,64476,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,Mfn1,GeneOrGeneProduct,192647,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,myocardial energy metabolism disorder,DiseaseOrPhenotypicFeature,D009202,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Negative_Correlation,DCM,DiseaseOrPhenotypicFeature,D002311,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,calcium,ChemicalEntity,D002118,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Negative_Correlation,glucose,ChemicalEntity,D005947,dev
+28518143,Calcium sensing receptor,GeneOrGeneProduct,24247,Association,metabolism disorder,DiseaseOrPhenotypicFeature,D008659,dev
+17600377,maltol,ChemicalEntity,C008316,Association,p-coumaric acid,ChemicalEntity,C495469,dev
+17600377,cognitive deficits,DiseaseOrPhenotypicFeature,D003072,Positive_Correlation,scopolamine,ChemicalEntity,D012601,dev
+17600377,cognitive deficits,DiseaseOrPhenotypicFeature,D003072,Positive_Correlation,amyloid beta peptide(1-42),ChemicalEntity,C544092,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Association,p-coumaric acid,ChemicalEntity,C495469,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Association,maltol,ChemicalEntity,C008316,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Negative_Correlation,neuronal death,DiseaseOrPhenotypicFeature,D009410,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Negative_Correlation,Alzheimer's disease,DiseaseOrPhenotypicFeature,D000544,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Negative_Correlation,cytochrome c,ChemicalEntity,D045304,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Negative_Correlation,caspase 3,GeneOrGeneProduct,25402,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Negative_Correlation,reactive oxygen species,ChemicalEntity,D017382,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Association,amyloid beta peptide(1-42),ChemicalEntity,C544092,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Association,dementia,DiseaseOrPhenotypicFeature,D003704,dev
+17600377,maltolyl p-coumarate,ChemicalEntity,C524754,Negative_Correlation,cognitive deficits,DiseaseOrPhenotypicFeature,D003072,dev
+16181814,Alpers syndrome,DiseaseOrPhenotypicFeature,D002549,Association,A467T,SequenceVariant,rs113994095,dev
+16181814,Alpers syndrome,DiseaseOrPhenotypicFeature,D002549,Association,E873stop,SequenceVariant,rs121918047,dev
+16181814,Alpers syndrome,DiseaseOrPhenotypicFeature,D002549,Association,POLG,GeneOrGeneProduct,5428,dev
+20143913,g.99367-102002del,SequenceVariant,g|DEL|99367_102002|,Association,mucopolysaccharidosis type VI,DiseaseOrPhenotypicFeature,D009087,dev
+20143913,mucopolysaccharidosis type VI,DiseaseOrPhenotypicFeature,D009087,Association,arylsulfatase B,GeneOrGeneProduct,411,dev
+20143913,mucopolysaccharidosis type VI,DiseaseOrPhenotypicFeature,D009087,Association,p.R315X,SequenceVariant,p|SUB|R|315|X,dev
+20143913,mucopolysaccharidosis type VI,DiseaseOrPhenotypicFeature,D009087,Association,c.899-1142del,SequenceVariant,c|DEL|899_1142|,dev
+15579441,ED-1,GeneOrGeneProduct,302424,Association,Hypoxia,DiseaseOrPhenotypicFeature,D000860,dev
+15579441,dUTP,ChemicalEntity,C027078,Association,Hypoxia,DiseaseOrPhenotypicFeature,D000860,dev
+15579441,puromycin aminonucleoside,ChemicalEntity,D011692,Positive_Correlation,nephrotic syndrome,DiseaseOrPhenotypicFeature,D009404,dev
+15579441,Hypoxia,DiseaseOrPhenotypicFeature,D000860,Association,vascular endothelial growth factor,GeneOrGeneProduct,83785,dev
+15579441,Hypoxia,DiseaseOrPhenotypicFeature,D000860,Association,puromycin aminonucleoside,ChemicalEntity,D011692,dev
+15754732,D418D,SequenceVariant,rs2071313,Association,tumors,DiseaseOrPhenotypicFeature,D009369,dev
+15754732,R171Q,SequenceVariant,rs607969,Association,tumors,DiseaseOrPhenotypicFeature,D009369,dev
+15754732,Q536X,SequenceVariant,p|SUB|Q|536|X,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,Q536X,SequenceVariant,p|SUB|Q|536|X,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,L89R,SequenceVariant,p|SUB|L|89|R,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,L89R,SequenceVariant,p|SUB|L|89|R,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,P291A,SequenceVariant,p|SUB|P|291|A,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,P291A,SequenceVariant,p|SUB|P|291|A,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,835del18,SequenceVariant,c|DEL|835|18,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,835del18,SequenceVariant,c|DEL|835|18,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,912delTA,SequenceVariant,c|DEL|912|TA,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,912delTA,SequenceVariant,c|DEL|912|TA,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,222insT,SequenceVariant,c|INS|222|T,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,222insT,SequenceVariant,c|INS|222|T,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,carcinoma,DiseaseOrPhenotypicFeature,D002277,Association,MEN1,GeneOrGeneProduct,4221,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,D418D,SequenceVariant,rs2071313,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,R171Q,SequenceVariant,rs607969,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,Q536X,SequenceVariant,p|SUB|Q|536|X,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,L89R,SequenceVariant,p|SUB|L|89|R,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,P291A,SequenceVariant,p|SUB|P|291|A,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,835del18,SequenceVariant,c|DEL|835|18,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,912delTA,SequenceVariant,c|DEL|912|TA,dev
+15754732,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,Association,222insT,SequenceVariant,c|INS|222|T,dev
+15754732,MEN1,GeneOrGeneProduct,4221,Association,tumors,DiseaseOrPhenotypicFeature,D009369,dev
+15754732,MEN1,GeneOrGeneProduct,4221,Association,parathyroid tumors,DiseaseOrPhenotypicFeature,D010282,dev
+15754732,MEN1,GeneOrGeneProduct,4221,Association,benign parathyroid lesion,DiseaseOrPhenotypicFeature,D010279,dev
+15754732,MEN1,GeneOrGeneProduct,4221,Association,primary hyperparathyroidism,DiseaseOrPhenotypicFeature,D049950,dev
+18385794,CHX10,GeneOrGeneProduct,338917,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,CHX10,GeneOrGeneProduct,338917,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,SOX2,GeneOrGeneProduct,6657,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,SOX2,GeneOrGeneProduct,6657,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,SOX2,GeneOrGeneProduct,6657,Negative_Correlation,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+18385794,c. *469 C>A,SequenceVariant,rs11915160,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,c. *469 C>A,SequenceVariant,rs11915160,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,c. *469 C>A,SequenceVariant,rs11915160,Association,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+18385794,c.*557G>A,SequenceVariant,rs77677339,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,c.*557G>A,SequenceVariant,rs77677339,Association,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+18385794,c.549delC,SequenceVariant,rs587776776,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,c.549delC,SequenceVariant,rs587776776,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,c.549delC,SequenceVariant,rs587776776,Positive_Correlation,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+18385794,glutamic acid to a stop codon,SequenceVariant,p|SUB|E||X,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,glutamic acid to a stop codon,SequenceVariant,p|SUB|E||X,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,glutamic acid to a stop codon,SequenceVariant,p|SUB|E||X,Positive_Correlation,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+18385794,p. Glu104X,SequenceVariant,p|SUB|E|104|X,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,p. Glu104X,SequenceVariant,p|SUB|E|104|X,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,p. Glu104X,SequenceVariant,p|SUB|E|104|X,Positive_Correlation,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+18385794,microphthalmia,DiseaseOrPhenotypicFeature,D008850,Association,c.*557G>A,SequenceVariant,rs77677339,dev
+18385794,c.310 G>T,SequenceVariant,c|SUB|G|310|T,Association,microphthalmia,DiseaseOrPhenotypicFeature,D008850,dev
+18385794,c.310 G>T,SequenceVariant,c|SUB|G|310|T,Association,anophthalmia,DiseaseOrPhenotypicFeature,D000853,dev
+18385794,c.310 G>T,SequenceVariant,c|SUB|G|310|T,Positive_Correlation,eye malformation,DiseaseOrPhenotypicFeature,D005124,dev
+25589620,-251A/A,SequenceVariant,rs4073,Association,5-FU,ChemicalEntity,D005472,dev
+25589620,Ile105Val,SequenceVariant,rs1695,Association,Rectal Cancer,DiseaseOrPhenotypicFeature,D012004,dev
+25589620,H472Q,SequenceVariant,rs1870377,Positive_Correlation,mucositis,DiseaseOrPhenotypicFeature,D052016,dev
+25589620,H472Q,SequenceVariant,rs1870377,Association,5-FU,ChemicalEntity,D005472,dev
+25589620,VEGFR2,GeneOrGeneProduct,3791,Association,mucositis,DiseaseOrPhenotypicFeature,D052016,dev
+25589620,VEGFR2,GeneOrGeneProduct,3791,Association,5-FU,ChemicalEntity,D005472,dev
+25589620,IL8,GeneOrGeneProduct,3576,Association,5-FU,ChemicalEntity,D005472,dev
+25589620,Rectal Cancer,DiseaseOrPhenotypicFeature,D012004,Association,GSTP1,GeneOrGeneProduct,2950,dev
+25589620,5-FU,ChemicalEntity,D005472,Negative_Correlation,Rectal Cancer,DiseaseOrPhenotypicFeature,D012004,dev
+15086325,G6410 by T,SequenceVariant,g|SUB|G|6410|T,Association,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,dev
+15086325,2238-9del AG,SequenceVariant,c|DEL|2238_2239|AG,Association,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,dev
+15086325,IVS8 -2A>G,SequenceVariant,c|SUB|A|IVS8-2|G,Association,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,dev
+15086325,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,Association,insertion introduced eight additional amino acids,SequenceVariant,p|INS||8,dev
+15086325,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,Association,689 AA,SequenceVariant,c|Allele|A|689,dev
+15086325,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,Association,Gly2079Val,SequenceVariant,p|SUB|G|2079|V,dev
+15086325,F5,GeneOrGeneProduct,2153,Association,inherited coagulation factor V deficiency,DiseaseOrPhenotypicFeature,D005166,dev
+19300402,constitutive NO synthase,GeneOrGeneProduct,24600,Negative_Correlation,nitric oxide synthase inhibitors,ChemicalEntity,D019335,dev
+19300402,Bradykinin receptors antagonists,ChemicalEntity,D065168,Negative_Correlation,neuropathic pain,DiseaseOrPhenotypicFeature,D009437,dev
+19300402,bradykinin,GeneOrGeneProduct,3827,Association,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,D019335,Negative_Correlation,neuropathic pain,DiseaseOrPhenotypicFeature,D009437,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,D019335,Association,diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy,DiseaseOrPhenotypicFeature,D010523,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,D019335,Positive_Correlation,des Arg10 HOE 140,ChemicalEntity,C078665,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,D019335,Positive_Correlation,"D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin",ChemicalEntity,C065679,dev
+19300402,diabetic hyperalgesia,DiseaseOrPhenotypicFeature,D003920,Association,B2 and B1 receptors,GeneOrGeneProduct,81509,dev
+19300402,diabetic hyperalgesia,DiseaseOrPhenotypicFeature,D003920,Association,B2 and B1 receptors,GeneOrGeneProduct,25245,dev
+19300402,des Arg10 HOE 140,ChemicalEntity,C078665,Association,diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy,DiseaseOrPhenotypicFeature,D010523,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,81509,Association,diabetic neuropathy,DiseaseOrPhenotypicFeature,D003929,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,81509,Association,diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy,DiseaseOrPhenotypicFeature,D010523,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,81509,Negative_Correlation,des Arg10 HOE 140,ChemicalEntity,C078665,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,81509,Negative_Correlation,"D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin",ChemicalEntity,C065679,dev
+19300402,"D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin",ChemicalEntity,C065679,Association,diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy,DiseaseOrPhenotypicFeature,D010523,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,25245,Association,diabetic neuropathy,DiseaseOrPhenotypicFeature,D003929,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,25245,Association,diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy,DiseaseOrPhenotypicFeature,D010523,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,25245,Negative_Correlation,des Arg10 HOE 140,ChemicalEntity,C078665,dev
+19300402,B2 and B1 receptors,GeneOrGeneProduct,25245,Negative_Correlation,"D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin",ChemicalEntity,C065679,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C080122,Negative_Correlation,neuropathic pain,DiseaseOrPhenotypicFeature,D009437,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C080122,Association,diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy,DiseaseOrPhenotypicFeature,D010523,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C080122,Association,des Arg10 HOE 140,ChemicalEntity,C078665,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C080122,Association,"D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin",ChemicalEntity,C065679,dev
+19300402,neuronal NO synthase,GeneOrGeneProduct,24598,Negative_Correlation,nitric oxide synthase inhibitors,ChemicalEntity,C080122,dev
+19300402,neuronal NO synthase,GeneOrGeneProduct,24598,Association,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C090663,Negative_Correlation,neuropathic pain,DiseaseOrPhenotypicFeature,D009437,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C090663,Positive_Correlation,des Arg10 HOE 140,ChemicalEntity,C078665,dev
+19300402,nitric oxide synthase inhibitors,ChemicalEntity,C090663,Positive_Correlation,"D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin",ChemicalEntity,C065679,dev
+19300402,inducible NO synthase,GeneOrGeneProduct,24599,Association,bradykinin,GeneOrGeneProduct,3827,dev
+19300402,inducible NO synthase,GeneOrGeneProduct,24599,Association,diabetic hyperalgesia,DiseaseOrPhenotypicFeature,D003920,dev
+19300402,inducible NO synthase,GeneOrGeneProduct,24599,Negative_Correlation,nitric oxide synthase inhibitors,ChemicalEntity,C090663,dev
+19300402,inducible NO synthase,GeneOrGeneProduct,24599,Association,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,dev
+19300402,streptozotocin,ChemicalEntity,D013311,Positive_Correlation,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,dev
+19300402,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,Association,B2 and B1 receptors,GeneOrGeneProduct,81509,dev
+19300402,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,Association,B2 and B1 receptors,GeneOrGeneProduct,25245,dev
+19300402,vincristine,ChemicalEntity,D014750,Positive_Correlation,hyperalgesia,DiseaseOrPhenotypicFeature,D006930,dev
+24288432,rs1966265,SequenceVariant,rs1966265,Positive_Correlation,alveolar diseases,DiseaseOrPhenotypicFeature,D002282,dev
+24288432,rs1966265,SequenceVariant,rs1966265,Positive_Correlation,bronchopulmonary dysplasia,DiseaseOrPhenotypicFeature,D001997,dev
+24288432,rs1966265,SequenceVariant,rs1966265,Positive_Correlation,neonatal respiratory distress,DiseaseOrPhenotypicFeature,D012127,dev
+24288432,matrix metalloproteinases,GeneOrGeneProduct,4321,Association,neonatal respiratory distress,DiseaseOrPhenotypicFeature,D012127,dev
+24288432,matrix metalloproteinases,GeneOrGeneProduct,4318,Association,neonatal respiratory distress,DiseaseOrPhenotypicFeature,D012127,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,8817,Bind,FGFR,GeneOrGeneProduct,2263,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,8817,Bind,FGFR-4,GeneOrGeneProduct,2264,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2252,Bind,FGFR,GeneOrGeneProduct,2263,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2252,Association,neonatal respiratory distress,DiseaseOrPhenotypicFeature,D012127,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2252,Bind,FGFR-4,GeneOrGeneProduct,2264,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2249,Bind,FGFR,GeneOrGeneProduct,2263,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2249,Bind,FGFR-4,GeneOrGeneProduct,2264,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2248,Bind,FGFR,GeneOrGeneProduct,2263,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2248,Association,neonatal respiratory distress,DiseaseOrPhenotypicFeature,D012127,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2248,Bind,FGFR-4,GeneOrGeneProduct,2264,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2247,Bind,FGFR,GeneOrGeneProduct,2263,dev
+24288432,fibroblast growth factors,GeneOrGeneProduct,2247,Bind,FGFR-4,GeneOrGeneProduct,2264,dev
+24288432,FGFR-4,GeneOrGeneProduct,2264,Association,alveolar diseases,DiseaseOrPhenotypicFeature,D002282,dev
+24288432,FGFR-4,GeneOrGeneProduct,2264,Association,bronchopulmonary dysplasia,DiseaseOrPhenotypicFeature,D001997,dev
+24288432,FGFR-4,GeneOrGeneProduct,2264,Association,neonatal respiratory distress,DiseaseOrPhenotypicFeature,D012127,dev
+28259923,paraffin,ChemicalEntity,D010232,Association,colorectal adenocarcinoma,DiseaseOrPhenotypicFeature,D015179,dev
+28259923,b-catenin,GeneOrGeneProduct,1499,Association,colorectal adenocarcinoma,DiseaseOrPhenotypicFeature,D015179,dev
+28259923,Wnt,GeneOrGeneProduct,7474,Association,colorectal adenocarcinoma,DiseaseOrPhenotypicFeature,D015179,dev
+28259923,Wnt,GeneOrGeneProduct,7474,Association,b-catenin,GeneOrGeneProduct,1499,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Negative_Correlation,E-cadherin,GeneOrGeneProduct,999,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Positive_Correlation,vimentin,GeneOrGeneProduct,7431,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Positive_Correlation,N-cadherin,GeneOrGeneProduct,1000,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Association,paraffin,ChemicalEntity,D010232,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Association,tumor,DiseaseOrPhenotypicFeature,D009369,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Association,colorectal adenocarcinoma,DiseaseOrPhenotypicFeature,D015179,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Positive_Correlation,b-catenin,GeneOrGeneProduct,1499,dev
+28259923,Pleomorphic adenoma gene like-2,GeneOrGeneProduct,5326,Association,Wnt,GeneOrGeneProduct,7474,dev
+16000134,thrombin,GeneOrGeneProduct,2147,Negative_Correlation,argatroban,ChemicalEntity,C031942,dev
+16000134,vein thrombosis,DiseaseOrPhenotypicFeature,D020246,Association,antithrombin,GeneOrGeneProduct,462,dev
+16000134,argatroban,ChemicalEntity,C031942,Negative_Correlation,vein thrombosis,DiseaseOrPhenotypicFeature,D020246,dev
+16000134,argatroban,ChemicalEntity,C031942,Negative_Correlation,congenital antithrombin deficiency,DiseaseOrPhenotypicFeature,D020152,dev
+16000134,type I congenital antithrombin deficiency,DiseaseOrPhenotypicFeature,D025861,Association,Glu 272 to stop,SequenceVariant,p|SUB|E|272|X,dev
+16000134,type I congenital antithrombin deficiency,DiseaseOrPhenotypicFeature,D025861,Association,nucleotide T insertion at 7916 and 7917,SequenceVariant,c|INS|7916_7917|T,dev
+16000134,antithrombin,GeneOrGeneProduct,462,Association,type I congenital antithrombin deficiency,DiseaseOrPhenotypicFeature,D025861,dev
+16225977,Tic disorders,DiseaseOrPhenotypicFeature,D013981,Negative_Correlation,ziprasidone,ChemicalEntity,C092292,dev
+16225977,Tic disorders,DiseaseOrPhenotypicFeature,D013981,Negative_Correlation,olanzapine,ChemicalEntity,D000077152,dev
+16225977,Tic disorders,DiseaseOrPhenotypicFeature,D013981,Negative_Correlation,risperidone,ChemicalEntity,D018967,dev
+16225977,Tic disorders,DiseaseOrPhenotypicFeature,D013981,Negative_Correlation,antipsychotics,ChemicalEntity,D014150,dev
+16225977,psychosis,DiseaseOrPhenotypicFeature,D011605,Negative_Correlation,quetiapine,ChemicalEntity,D000069348,dev
+16225977,involuntary eye-blinking movements,DiseaseOrPhenotypicFeature,D020820,Positive_Correlation,Amisulpride,ChemicalEntity,D000077582,dev
+16225977,Amisulpride,ChemicalEntity,D000077582,Cotreatment,quetiapine,ChemicalEntity,D000069348,dev
+16225977,Amisulpride,ChemicalEntity,D000077582,Negative_Correlation,psychosis,DiseaseOrPhenotypicFeature,D011605,dev
+16225977,Amisulpride,ChemicalEntity,D000077582,Negative_Correlation,schizophrenic,DiseaseOrPhenotypicFeature,D012559,dev
+20859899,ARB,ChemicalEntity,D057911,Association,renal disturbance,DiseaseOrPhenotypicFeature,D007674,dev
+20859899,ARB,ChemicalEntity,D057911,Cotreatment,potassium,ChemicalEntity,D011188,dev
+20859899,ARB,ChemicalEntity,D057911,Association,hyperkalemia,DiseaseOrPhenotypicFeature,D006947,dev
+20859899,potassium,ChemicalEntity,D011188,Association,renal disturbance,DiseaseOrPhenotypicFeature,D007674,dev
+20859899,potassium,ChemicalEntity,D011188,Positive_Correlation,hyperkalemia,DiseaseOrPhenotypicFeature,D006947,dev
+20859899,ACE,GeneOrGeneProduct,1636,Association,renal disturbance,DiseaseOrPhenotypicFeature,D007674,dev
+20859899,ACE,GeneOrGeneProduct,1636,Cotreatment,ARB,ChemicalEntity,D057911,dev
+20859899,ACE,GeneOrGeneProduct,1636,Cotreatment,potassium,ChemicalEntity,D011188,dev
+20859899,ACE,GeneOrGeneProduct,1636,Association,hyperkalemia,DiseaseOrPhenotypicFeature,D006947,dev
+20859899,aldosterone,ChemicalEntity,D000450,Negative_Correlation,spironolactone,ChemicalEntity,D013148,dev
+20859899,ramipril,ChemicalEntity,D017257,Negative_Correlation,ACE,GeneOrGeneProduct,1636,dev
+20859899,hyperkalemia,DiseaseOrPhenotypicFeature,D006947,Positive_Correlation,ramipril,ChemicalEntity,D017257,dev
+20859899,hyperkalemia,DiseaseOrPhenotypicFeature,D006947,Negative_Correlation,spironolactone,ChemicalEntity,D013148,dev
+20859899,hyperkalemia,DiseaseOrPhenotypicFeature,D006947,Negative_Correlation,angiotensin-converting enzyme inhibitor,ChemicalEntity,D000806,dev
+20859899,angiotensin-converting enzyme inhibitor,ChemicalEntity,D000806,Cotreatment,spironolactone,ChemicalEntity,D013148,dev
+20859899,Syncope,DiseaseOrPhenotypicFeature,D013575,Positive_Correlation,spironolactone,ChemicalEntity,D013148,dev
+20859899,Syncope,DiseaseOrPhenotypicFeature,D013575,Positive_Correlation,angiotensin-converting enzyme inhibitor,ChemicalEntity,D000806,dev
+15041272,type 2B von Willebrand disease,DiseaseOrPhenotypicFeature,D056728,Association,R1306W,SequenceVariant,rs61749384,dev
+15041272,type 2B von Willebrand disease,DiseaseOrPhenotypicFeature,D056728,Association,von Willebrand factor,GeneOrGeneProduct,7450,dev
+15041272,glycoprotein Ib,GeneOrGeneProduct,2811,Association,thrombocytopenia,DiseaseOrPhenotypicFeature,D013921,dev
+15041272,glycoprotein Ib,GeneOrGeneProduct,2811,Association,von Willebrand factor,GeneOrGeneProduct,7450,dev
+15041272,R1306W,SequenceVariant,rs61749384,Positive_Correlation,thrombocytopenia,DiseaseOrPhenotypicFeature,D013921,dev
+15041272,ristocetin-induced platelet aggregation,DiseaseOrPhenotypicFeature,D001791,Positive_Correlation,ristocetin,ChemicalEntity,D012310,dev
+15041272,von Willebrand factor,GeneOrGeneProduct,7450,Association,thrombocytopenia,DiseaseOrPhenotypicFeature,D013921,dev
+15041272,von Willebrand factor,GeneOrGeneProduct,7450,Association,ristocetin,ChemicalEntity,D012310,dev
+17395743,rs2648875,SequenceVariant,rs2648875,Positive_Correlation,end-stage renal disease,DiseaseOrPhenotypicFeature,D007676,dev
+17395743,rs2720709,SequenceVariant,rs2720709,Positive_Correlation,end-stage renal disease,DiseaseOrPhenotypicFeature,D007676,dev
+17395743,type 2 diabetes,DiseaseOrPhenotypicFeature,D003924,Association,rs2648875,SequenceVariant,rs2648875,dev
+17395743,type 2 diabetes,DiseaseOrPhenotypicFeature,D003924,Association,rs2720709,SequenceVariant,rs2720709,dev
+17395743,PVT1,GeneOrGeneProduct,5820,Association,diabetes,DiseaseOrPhenotypicFeature,D003920,dev
+17395743,PVT1,GeneOrGeneProduct,5820,Association,type 2 diabetes,DiseaseOrPhenotypicFeature,D003924,dev
+17395743,PVT1,GeneOrGeneProduct,5820,Association,end-stage renal disease,DiseaseOrPhenotypicFeature,D007676,dev
+27729412,retinoic acid receptor,GeneOrGeneProduct,20181,Positive_Correlation,retinoic acid,ChemicalEntity,D014212,dev
+27729412,retinoic acid receptor,GeneOrGeneProduct,20181,Negative_Correlation,adiponectin,GeneOrGeneProduct,11450,dev
+27729412,retinoic acid receptor,GeneOrGeneProduct,19411,Positive_Correlation,retinoic acid,ChemicalEntity,D014212,dev
+27729412,retinoic acid receptor,GeneOrGeneProduct,19411,Negative_Correlation,adiponectin,GeneOrGeneProduct,11450,dev
+27729412,retinoic acid receptor,GeneOrGeneProduct,19401,Positive_Correlation,retinoic acid,ChemicalEntity,D014212,dev
+27729412,retinoic acid receptor,GeneOrGeneProduct,19401,Negative_Correlation,adiponectin,GeneOrGeneProduct,11450,dev
+27729412,retinoic acid,ChemicalEntity,D014212,Association,Vitamin A,ChemicalEntity,D014801,dev
+27729412,ALDH1A1,GeneOrGeneProduct,11668,Positive_Correlation,retinoic acid receptor,GeneOrGeneProduct,20181,dev
+27729412,ALDH1A1,GeneOrGeneProduct,11668,Positive_Correlation,retinoic acid receptor,GeneOrGeneProduct,19411,dev
+27729412,ALDH1A1,GeneOrGeneProduct,11668,Positive_Correlation,retinoic acid receptor,GeneOrGeneProduct,19401,dev
+27729412,ALDH1A1,GeneOrGeneProduct,11668,Positive_Correlation,Vitamin A,ChemicalEntity,D014801,dev
+27729412,adiponectin,GeneOrGeneProduct,11450,Negative_Correlation,inflammatory,DiseaseOrPhenotypicFeature,D007249,dev
+27729412,adiponectin,GeneOrGeneProduct,11450,Negative_Correlation,retinoic acid,ChemicalEntity,D014212,dev
+27729412,adiponectin,GeneOrGeneProduct,11450,Negative_Correlation,ALDH1A1,GeneOrGeneProduct,11668,dev
+27729412,adiponectin,GeneOrGeneProduct,11450,Negative_Correlation,Vitamin A,ChemicalEntity,D014801,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Muc5ac,GeneOrGeneProduct,17833,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Clca3,GeneOrGeneProduct,23844,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Ifng,GeneOrGeneProduct,15978,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Ccl11,GeneOrGeneProduct,20292,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Ccl2,GeneOrGeneProduct,20296,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Il13,GeneOrGeneProduct,16163,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Il5,GeneOrGeneProduct,16191,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Il4,GeneOrGeneProduct,16189,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Slc7a7,GeneOrGeneProduct,20540,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Slc7a2,GeneOrGeneProduct,11988,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Slc7a1,GeneOrGeneProduct,11987,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Nos2,GeneOrGeneProduct,18126,dev
+29183288,ovalbumin,GeneOrGeneProduct,66222,Positive_Correlation,Arg2,GeneOrGeneProduct,11847,dev
+29183288,IgE,GeneOrGeneProduct,629822,Positive_Correlation,ovalbumin,GeneOrGeneProduct,66222,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Association,nitric oxide,ChemicalEntity,D009569,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,ovalbumin,GeneOrGeneProduct,66222,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Negative_Correlation,IL-10,GeneOrGeneProduct,16153,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,IgE,GeneOrGeneProduct,629822,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Muc5ac,GeneOrGeneProduct,17833,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Clca3,GeneOrGeneProduct,23844,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Ifng,GeneOrGeneProduct,15978,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Ccl11,GeneOrGeneProduct,20292,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Ccl2,GeneOrGeneProduct,20296,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Il13,GeneOrGeneProduct,16163,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Il5,GeneOrGeneProduct,16191,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Il4,GeneOrGeneProduct,16189,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Slc7a7,GeneOrGeneProduct,20540,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Slc7a2,GeneOrGeneProduct,11988,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Slc7a1,GeneOrGeneProduct,11987,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Nos2,GeneOrGeneProduct,18126,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Positive_Correlation,Arg2,GeneOrGeneProduct,11847,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Association,asthma,DiseaseOrPhenotypicFeature,D001249,dev
+29183288,Arginase 1,GeneOrGeneProduct,11846,Association,inflammatory,DiseaseOrPhenotypicFeature,D007249,dev
+20959502,antibiotic,ChemicalEntity,D000900,Negative_Correlation,pneumonia,DiseaseOrPhenotypicFeature,D011014,dev
+20959502,nafcillin,ChemicalEntity,D009254,Positive_Correlation,interstitial nephritis,DiseaseOrPhenotypicFeature,D009395,dev
+20959502,nafcillin,ChemicalEntity,D009254,Positive_Correlation,bacteremia,DiseaseOrPhenotypicFeature,D016470,dev
+20959502,methicillin,ChemicalEntity,D008712,Association,bacteremia,DiseaseOrPhenotypicFeature,D016470,dev
+20959502,daptomycin,ChemicalEntity,D017576,Negative_Correlation,interstitial nephritis,DiseaseOrPhenotypicFeature,D009395,dev
+20959502,daptomycin,ChemicalEntity,D017576,Negative_Correlation,bacteremia,DiseaseOrPhenotypicFeature,D016470,dev
+20959502,daptomycin,ChemicalEntity,D017576,Negative_Correlation,meningitis,DiseaseOrPhenotypicFeature,D008581,dev
+20959502,acute renal failure,DiseaseOrPhenotypicFeature,D058186,Positive_Correlation,creatinine,ChemicalEntity,D003404,dev
+20959502,pneumonia,DiseaseOrPhenotypicFeature,D011014,Negative_Correlation,piperacillin/tazobactam,ChemicalEntity,D000077725,dev
+20959502,pneumonia,DiseaseOrPhenotypicFeature,D011014,Negative_Correlation,levofloxacin,ChemicalEntity,D064704,dev
+20959502,pneumonia,DiseaseOrPhenotypicFeature,D011014,Negative_Correlation,vancomycin,ChemicalEntity,D014640,dev
+20959502,weakness,DiseaseOrPhenotypicFeature,D018908,Negative_Correlation,piperacillin/tazobactam,ChemicalEntity,D000077725,dev
+20959502,weakness,DiseaseOrPhenotypicFeature,D018908,Negative_Correlation,levofloxacin,ChemicalEntity,D064704,dev
+20959502,weakness,DiseaseOrPhenotypicFeature,D018908,Negative_Correlation,vancomycin,ChemicalEntity,D014640,dev
+20959502,levofloxacin,ChemicalEntity,D064704,Cotreatment,piperacillin/tazobactam,ChemicalEntity,D000077725,dev
+20959502,vancomycin,ChemicalEntity,D014640,Cotreatment,piperacillin/tazobactam,ChemicalEntity,D000077725,dev
+20959502,vancomycin,ChemicalEntity,D014640,Cotreatment,levofloxacin,ChemicalEntity,D064704,dev
+20682662,C-C chemokine receptor 5,GeneOrGeneProduct,1234,Association,inflammation,DiseaseOrPhenotypicFeature,D007249,dev
+20682662,C-C chemokine receptor 5,GeneOrGeneProduct,1234,Positive_Correlation,autoimmune diseases,DiseaseOrPhenotypicFeature,D001327,dev
+20682662,DD32 deletion,SequenceVariant,c|DEL||32,Negative_Correlation,autoimmune diseases,DiseaseOrPhenotypicFeature,D001327,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,CD3,GeneOrGeneProduct,12501,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,B220,GeneOrGeneProduct,19264,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Negative_Correlation,CD11b,GeneOrGeneProduct,16409,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Association,Akt,GeneOrGeneProduct,11651,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Association,tumor,DiseaseOrPhenotypicFeature,D009369,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Association,Notch,GeneOrGeneProduct,18128,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,CSF2,GeneOrGeneProduct,12981,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,FGF1,GeneOrGeneProduct,14164,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,VEGF-A,GeneOrGeneProduct,22339,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,DHH,GeneOrGeneProduct,13363,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,Angpt2,GeneOrGeneProduct,11601,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,IGFbp3,GeneOrGeneProduct,16009,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Positive_Correlation,IGFbp2,GeneOrGeneProduct,16008,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Association,c-kit,GeneOrGeneProduct,16590,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Association,VE-Cadherin,GeneOrGeneProduct,12562,dev
+23285048,Delta-like 4,GeneOrGeneProduct,54485,Association,CD31,GeneOrGeneProduct,18613,dev
+27663860,Hydralazine,ChemicalEntity,D006830,Negative_Correlation,renal injury,DiseaseOrPhenotypicFeature,D007674,dev
+27663860,liver-type fatty acid binding protein,GeneOrGeneProduct,2168,Negative_Correlation,angiotensin II type 1a receptor,GeneOrGeneProduct,11607,dev
+27663860,liver-type fatty acid binding protein,GeneOrGeneProduct,2168,Association,renal injury,DiseaseOrPhenotypicFeature,D007674,dev
+27663860,angiotensin II type 1a receptor,GeneOrGeneProduct,11607,Association,renal injury,DiseaseOrPhenotypicFeature,D007674,dev
+27663860,deoxycorticosterone acetate,ChemicalEntity,D064791,Association,liver-type fatty acid binding protein,GeneOrGeneProduct,2168,dev
+27663860,deoxycorticosterone acetate,ChemicalEntity,D064791,Association,angiotensin II type 1a receptor,GeneOrGeneProduct,11607,dev
+27663860,deoxycorticosterone acetate,ChemicalEntity,D064791,Positive_Correlation,hypertension,DiseaseOrPhenotypicFeature,D006973,dev
+27663860,renal injury,DiseaseOrPhenotypicFeature,D007674,Positive_Correlation,deoxycorticosterone acetate,ChemicalEntity,D064791,dev
+27807193,thioglycollate,ChemicalEntity,D013864,Positive_Correlation,peritonitis,DiseaseOrPhenotypicFeature,D010538,dev
+27807193,Syk,GeneOrGeneProduct,20963,Association,PTPN22,GeneOrGeneProduct,19260,dev
+27807193,Lyn,GeneOrGeneProduct,17096,Association,PTPN22,GeneOrGeneProduct,19260,dev
+27807193,PTPN22,GeneOrGeneProduct,19260,Association,rheumatoid arthritis,DiseaseOrPhenotypicFeature,D001172,dev
+27807193,PTPN22,GeneOrGeneProduct,19260,Association,autoimmune disease,DiseaseOrPhenotypicFeature,D001327,dev
+27807193,PTPN22,GeneOrGeneProduct,19260,Association,arthritis,DiseaseOrPhenotypicFeature,D001168,dev
+27807193,PTPN22,GeneOrGeneProduct,19260,Negative_Correlation,reactive oxygen species,ChemicalEntity,D017382,dev
+27807193,PTPN22,GeneOrGeneProduct,19260,Association,Fcg Receptor,GeneOrGeneProduct,14130,dev
+15069170,thiazide,ChemicalEntity,D049971,Positive_Correlation,Na-Cl co-transporter,GeneOrGeneProduct,6559,dev
+15069170,Na-Cl co-transporter,GeneOrGeneProduct,6559,Association,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,dev
+15069170,c.1932delC,SequenceVariant,c|DEL|1932|C,Positive_Correlation,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,dev
+15069170,c.2552T>A,SequenceVariant,rs185927948,Positive_Correlation,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,dev
+15069170,c.1930C>T,SequenceVariant,rs200697179,Positive_Correlation,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,dev
+15069170,c.1712C>T,SequenceVariant,rs79351185,Positive_Correlation,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,dev
+15069170,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,Positive_Correlation,96 bp insertion,SequenceVariant,c|INS||96,dev
+15069170,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,Positive_Correlation,IVS16+1G>A,SequenceVariant,c|SUB|G|IVS16+1|A,dev
+15069170,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,Positive_Correlation,c.1811_1812delAT,SequenceVariant,c|DEL|1811_1812|AT,dev
+15069170,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,Positive_Correlation,c.1181_1186+20del26,SequenceVariant,c|DEL|1181_1186+20|26,dev
+15069170,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,Positive_Correlation,Met1Leu,SequenceVariant,p|SUB|M|1|L,dev
+15069170,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,Positive_Correlation,c.7A>T,SequenceVariant,c|SUB|A|7|T,dev
+15069170,c.185C>T,SequenceVariant,rs371443644,Positive_Correlation,Gitelman's syndrome,DiseaseOrPhenotypicFeature,D053579,dev
+17397547,dcnt1,GeneOrGeneProduct,13426,Association,proteinase-activated receptors,GeneOrGeneProduct,14063,dev
+17397547,dcnt1,GeneOrGeneProduct,13426,Association,proteinase-activated receptors,GeneOrGeneProduct,14062,dev
+17397547,arf6,GeneOrGeneProduct,11845,Association,proteinase-activated receptors,GeneOrGeneProduct,14063,dev
+17397547,arf6,GeneOrGeneProduct,11845,Association,proteinase-activated receptors,GeneOrGeneProduct,14062,dev
+17397547,nfkbia,GeneOrGeneProduct,18035,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+17397547,nfkbia,GeneOrGeneProduct,18035,Association,proteinase-activated receptors,GeneOrGeneProduct,14063,dev
+17397547,dusp1,GeneOrGeneProduct,19252,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+17397547,dusp1,GeneOrGeneProduct,19252,Association,proteinase-activated receptors,GeneOrGeneProduct,14063,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14063,Association,edema,DiseaseOrPhenotypicFeature,D004487,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14063,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14063,Positive_Correlation,substance P,ChemicalEntity,D013373,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14063,Positive_Correlation,lipopolysaccharide,ChemicalEntity,D008070,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,edema,DiseaseOrPhenotypicFeature,D004487,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,bladder inflammation,DiseaseOrPhenotypicFeature,D003556,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,tnfaip2,GeneOrGeneProduct,21928,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,sim2,GeneOrGeneProduct,20465,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,s100a10,GeneOrGeneProduct,20194,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,ptprcap,GeneOrGeneProduct,19265,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,ptpn1,GeneOrGeneProduct,19246,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,ppia,GeneOrGeneProduct,268373,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,plaur,GeneOrGeneProduct,18793,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,pax1,GeneOrGeneProduct,18503,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,nfkbia,GeneOrGeneProduct,18035,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,myo5a,GeneOrGeneProduct,17918,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,mmp2,GeneOrGeneProduct,17390,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,marcksl1,GeneOrGeneProduct,17357,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,hspb1,GeneOrGeneProduct,15507,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,fth1,GeneOrGeneProduct,14319,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,fkbp1a,GeneOrGeneProduct,14225,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,dusp1,GeneOrGeneProduct,19252,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,cfl1,GeneOrGeneProduct,12631,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,cd63,GeneOrGeneProduct,12512,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,cd200,GeneOrGeneProduct,17470,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,ccl7,GeneOrGeneProduct,20306,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Association,b2m,GeneOrGeneProduct,12010,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Positive_Correlation,substance P,ChemicalEntity,D013373,dev
+17397547,proteinase-activated receptors,GeneOrGeneProduct,14062,Positive_Correlation,lipopolysaccharide,ChemicalEntity,D008070,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,dcnt1,GeneOrGeneProduct,13426,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,arf6,GeneOrGeneProduct,11845,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,p38 MAPK,GeneOrGeneProduct,26416,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,tnfaip2,GeneOrGeneProduct,21928,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,sim2,GeneOrGeneProduct,20465,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,s100a10,GeneOrGeneProduct,20194,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,ptprcap,GeneOrGeneProduct,19265,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,ptpn1,GeneOrGeneProduct,19246,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,ppia,GeneOrGeneProduct,268373,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,plaur,GeneOrGeneProduct,18793,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,pax1,GeneOrGeneProduct,18503,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,nfkbia,GeneOrGeneProduct,18035,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,myo5a,GeneOrGeneProduct,17918,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,mmp2,GeneOrGeneProduct,17390,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,marcksl1,GeneOrGeneProduct,17357,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,hspb1,GeneOrGeneProduct,15507,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,fth1,GeneOrGeneProduct,14319,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,fkbp1a,GeneOrGeneProduct,14225,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,dusp1,GeneOrGeneProduct,19252,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,cfl1,GeneOrGeneProduct,12631,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,cd63,GeneOrGeneProduct,12512,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,cd200,GeneOrGeneProduct,17470,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,ccl7,GeneOrGeneProduct,20306,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,b2m,GeneOrGeneProduct,12010,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Positive_Correlation,substance P,ChemicalEntity,D013373,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Positive_Correlation,lipopolysaccharide,ChemicalEntity,D008070,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,proteinase-activated receptors,GeneOrGeneProduct,14063,dev
+17397547,inflammation,DiseaseOrPhenotypicFeature,D007249,Association,proteinase-activated receptors,GeneOrGeneProduct,14062,dev
+17445520,panic disorder,DiseaseOrPhenotypicFeature,D016584,Association,Caffeine,ChemicalEntity,D002110,dev
+17445520,major depression,DiseaseOrPhenotypicFeature,D003865,Association,Caffeine,ChemicalEntity,D002110,dev
+23651211,JAG1,GeneOrGeneProduct,182,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,CD24,GeneOrGeneProduct,100133941,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,GPR56,GeneOrGeneProduct,9289,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,ASPH,GeneOrGeneProduct,444,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,CAMK2N1,GeneOrGeneProduct,55450,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,ANXA1,GeneOrGeneProduct,301,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,MMP7,GeneOrGeneProduct,4316,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,WISP2,GeneOrGeneProduct,8839,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,AXIN2,GeneOrGeneProduct,8313,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,SPP1,GeneOrGeneProduct,6696,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,STK17B,GeneOrGeneProduct,9262,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,CLDN2,GeneOrGeneProduct,9075,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Association,tumour,DiseaseOrPhenotypicFeature,D009369,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,JAG1,GeneOrGeneProduct,182,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,CD24,GeneOrGeneProduct,100133941,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,GPR56,GeneOrGeneProduct,9289,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,ASPH,GeneOrGeneProduct,444,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,CAMK2N1,GeneOrGeneProduct,55450,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,ANXA1,GeneOrGeneProduct,301,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,MMP7,GeneOrGeneProduct,4316,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,WISP2,GeneOrGeneProduct,8839,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,AXIN2,GeneOrGeneProduct,8313,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,SPP1,GeneOrGeneProduct,6696,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,STK17B,GeneOrGeneProduct,9262,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,CLDN2,GeneOrGeneProduct,9075,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,Notch,GeneOrGeneProduct,4851,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,IRS1,GeneOrGeneProduct,3667,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,IGF-1,GeneOrGeneProduct,3479,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,insulin,GeneOrGeneProduct,3630,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,beta-catenin,GeneOrGeneProduct,1499,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,T-cell factor-4,GeneOrGeneProduct,6934,Positive_Correlation,Wnt,GeneOrGeneProduct,7474,dev
+23651211,Notch,GeneOrGeneProduct,4851,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,IRS1,GeneOrGeneProduct,3667,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,IGF-1,GeneOrGeneProduct,3479,Association,IRS1,GeneOrGeneProduct,3667,dev
+23651211,IGF-1,GeneOrGeneProduct,3479,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,insulin,GeneOrGeneProduct,3630,Association,IRS1,GeneOrGeneProduct,3667,dev
+23651211,insulin,GeneOrGeneProduct,3630,Association,IGF-1,GeneOrGeneProduct,3479,dev
+23651211,insulin,GeneOrGeneProduct,3630,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,beta-catenin,GeneOrGeneProduct,1499,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+23651211,Wnt,GeneOrGeneProduct,7474,Association,beta-catenin,GeneOrGeneProduct,1499,dev
+23651211,Wnt,GeneOrGeneProduct,7474,Association,hepatocellular carcinoma,DiseaseOrPhenotypicFeature,D006528,dev
+15991002,pentylenetetrazole,ChemicalEntity,D010433,Positive_Correlation,anxiogenic effect,DiseaseOrPhenotypicFeature,D001008,dev
+15991002,caffeine,ChemicalEntity,D002110,Positive_Correlation,anxiogenic effect,DiseaseOrPhenotypicFeature,D001008,dev
+15991002,Nicotine,ChemicalEntity,D009538,Negative_Correlation,anxiogenic effect,DiseaseOrPhenotypicFeature,D001008,dev
+15991002,Nicotine,ChemicalEntity,D009538,Negative_Correlation,caffeine,ChemicalEntity,D002110,dev
+16565833,iron,ChemicalEntity,D007501,Association,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+16565833,iron,ChemicalEntity,D007501,Association,doxorubicin,ChemicalEntity,D004317,dev
+16565833,monoHER,ChemicalEntity,C522803,Association,iron,ChemicalEntity,D007501,dev
+16565833,monoHER,ChemicalEntity,C522803,Negative_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+16565833,monoHER,ChemicalEntity,C522803,Negative_Correlation,doxorubicin,ChemicalEntity,D004317,dev
+16565833,flavonoid,ChemicalEntity,D005419,Negative_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+16565833,flavonoid,ChemicalEntity,D005419,Negative_Correlation,doxorubicin,ChemicalEntity,D004317,dev
+16565833,doxorubicin,ChemicalEntity,D004317,Positive_Correlation,cardiac damage,DiseaseOrPhenotypicFeature,D006331,dev
+16565833,doxorubicin,ChemicalEntity,D004317,Positive_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+16680561,cinacalcet HCl,ChemicalEntity,C476217,Positive_Correlation,headache,DiseaseOrPhenotypicFeature,D006261,dev
+16680561,cinacalcet HCl,ChemicalEntity,C476217,Negative_Correlation,cytochrome P450 isoenzyme (CYP) 2D6,GeneOrGeneProduct,1565,dev
+16680561,cinacalcet HCl,ChemicalEntity,C476217,Positive_Correlation,nausea,DiseaseOrPhenotypicFeature,D009325,dev
+16680561,desipramine HCl,ChemicalEntity,D003891,Positive_Correlation,headache,DiseaseOrPhenotypicFeature,D006261,dev
+16680561,desipramine HCl,ChemicalEntity,D003891,Positive_Correlation,nausea,DiseaseOrPhenotypicFeature,D009325,dev
+16680561,desipramine HCl,ChemicalEntity,D003891,Cotreatment,cinacalcet HCl,ChemicalEntity,C476217,dev
+16867021,H(3)-receptor antagonists,ChemicalEntity,D054828,Negative_Correlation,schizophrenia,DiseaseOrPhenotypicFeature,D012559,dev
+16867021,Antipsychotic,ChemicalEntity,D014150,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+16867021,haloperidol,ChemicalEntity,D006220,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+16867021,amphetamine,ChemicalEntity,D000661,Positive_Correlation,hyperactivity,DiseaseOrPhenotypicFeature,D006948,dev
+16867021,(R)-alpha-methylhistamine,ChemicalEntity,C069357,Negative_Correlation,thioperamide,ChemicalEntity,C052075,dev
+16867021,(R)-alpha-methylhistamine,ChemicalEntity,C069357,Association,H3-receptor,GeneOrGeneProduct,99296,dev
+16867021,thioperamide,ChemicalEntity,C052075,Negative_Correlation,apomorphine,ChemicalEntity,D001058,dev
+16867021,thioperamide,ChemicalEntity,C052075,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+16867021,thioperamide,ChemicalEntity,C052075,Positive_Correlation,haloperidol,ChemicalEntity,D006220,dev
+16867021,thioperamide,ChemicalEntity,C052075,Negative_Correlation,hyperactivity,DiseaseOrPhenotypicFeature,D006948,dev
+16867021,thioperamide,ChemicalEntity,C052075,Negative_Correlation,amphetamine,ChemicalEntity,D000661,dev
+16867021,H3-receptor,GeneOrGeneProduct,99296,Negative_Correlation,thioperamide,ChemicalEntity,C052075,dev
+17042884,tremor,DiseaseOrPhenotypicFeature,D014202,Positive_Correlation,lithium,ChemicalEntity,D008094,dev
+17042884,haloperidol,ChemicalEntity,D006220,Positive_Correlation,akathisia,DiseaseOrPhenotypicFeature,D017109,dev
+17042884,haloperidol,ChemicalEntity,D006220,Positive_Correlation,tremor,DiseaseOrPhenotypicFeature,D014202,dev
+17042884,extrapyramidal symptoms,DiseaseOrPhenotypicFeature,D001480,Positive_Correlation,lithium,ChemicalEntity,D008094,dev
+17042884,extrapyramidal symptoms,DiseaseOrPhenotypicFeature,D001480,Positive_Correlation,haloperidol,ChemicalEntity,D006220,dev
+17151160,weight gain,DiseaseOrPhenotypicFeature,D015430,Positive_Correlation,olanzapine,ChemicalEntity,C076029,dev
+17151160,Extrapyramidal symptom,DiseaseOrPhenotypicFeature,D001480,Association,risperidone,ChemicalEntity,D018967,dev
+17151160,Extrapyramidal symptom,DiseaseOrPhenotypicFeature,D001480,Association,olanzapine,ChemicalEntity,C076029,dev
+17151160,schizophreniform disorder,DiseaseOrPhenotypicFeature,D011618,Negative_Correlation,risperidone,ChemicalEntity,D018967,dev
+17151160,schizophreniform disorder,DiseaseOrPhenotypicFeature,D011618,Negative_Correlation,olanzapine,ChemicalEntity,C076029,dev
+17151160,schizophrenia,DiseaseOrPhenotypicFeature,D012559,Negative_Correlation,risperidone,ChemicalEntity,D018967,dev
+17151160,schizophrenia,DiseaseOrPhenotypicFeature,D012559,Negative_Correlation,olanzapine,ChemicalEntity,C076029,dev
+17151160,risperidone,ChemicalEntity,D018967,Positive_Correlation,weight gain,DiseaseOrPhenotypicFeature,D015430,dev
+17151160,olanzapine,ChemicalEntity,C076029,Comparison,risperidone,ChemicalEntity,D018967,dev
+17255138,GI toxicity,DiseaseOrPhenotypicFeature,D005767,Association,celecoxib,ChemicalEntity,C105934,dev
+17255138,GI toxicity,DiseaseOrPhenotypicFeature,D005767,Association,rofecoxib,ChemicalEntity,C116926,dev
+17255138,GI toxicity,DiseaseOrPhenotypicFeature,D005767,Association,acetaminophen,ChemicalEntity,D000082,dev
+17255138,GI toxicity,DiseaseOrPhenotypicFeature,D005767,Association,NSAIDs,ChemicalEntity,D000894,dev
+17255138,naproxen,ChemicalEntity,D009288,Positive_Correlation,GI bleeding,DiseaseOrPhenotypicFeature,D006471,dev
+17255138,naproxen,ChemicalEntity,D009288,Positive_Correlation,acute myocardial infarction,DiseaseOrPhenotypicFeature,D009203,dev
+17255138,acute myocardial infarction,DiseaseOrPhenotypicFeature,D009203,Positive_Correlation,COX-2 inhibitors,ChemicalEntity,D052246,dev
+17255138,celecoxib,ChemicalEntity,C105934,Association,GI bleeding,DiseaseOrPhenotypicFeature,D006471,dev
+17255138,celecoxib,ChemicalEntity,C105934,Association,acute myocardial infarction,DiseaseOrPhenotypicFeature,D009203,dev
+17255138,rofecoxib,ChemicalEntity,C116926,Association,GI bleeding,DiseaseOrPhenotypicFeature,D006471,dev
+17255138,rofecoxib,ChemicalEntity,C116926,Association,acute myocardial infarction,DiseaseOrPhenotypicFeature,D009203,dev
+17255138,acetaminophen,ChemicalEntity,D000082,Association,GI bleeding,DiseaseOrPhenotypicFeature,D006471,dev
+17255138,acetaminophen,ChemicalEntity,D000082,Association,acute myocardial infarction,DiseaseOrPhenotypicFeature,D009203,dev
+17255138,aspirin,ChemicalEntity,D001241,Negative_Correlation,celecoxib,ChemicalEntity,C105934,dev
+17255138,aspirin,ChemicalEntity,D001241,Negative_Correlation,rofecoxib,ChemicalEntity,C116926,dev
+17255138,aspirin,ChemicalEntity,D001241,Negative_Correlation,acetaminophen,ChemicalEntity,D000082,dev
+17255138,aspirin,ChemicalEntity,D001241,Negative_Correlation,NSAIDs,ChemicalEntity,D000894,dev
+17255138,NSAIDs,ChemicalEntity,D000894,Association,acute myocardial infarction,DiseaseOrPhenotypicFeature,D009203,dev
+17255138,NSAIDs,ChemicalEntity,D000894,Comparison,acetaminophen,ChemicalEntity,D000082,dev
+17255138,COX-2 inhibitors,ChemicalEntity,D052246,Comparison,acetaminophen,ChemicalEntity,D000082,dev
+17255138,COX-2 inhibitors,ChemicalEntity,D052246,Comparison,NSAIDs,ChemicalEntity,D000894,dev
+17297207,premature ventricular contraction,DiseaseOrPhenotypicFeature,D018879,Negative_Correlation,potassium aspartate,ChemicalEntity,D001224,dev
+17297207,premature ventricular contraction,DiseaseOrPhenotypicFeature,D018879,Negative_Correlation,lidocaine,ChemicalEntity,D008012,dev
+17297207,jaundice,DiseaseOrPhenotypicFeature,D007565,Negative_Correlation,Quinine,ChemicalEntity,D011803,dev
+17297207,Quinine,ChemicalEntity,D011803,Negative_Correlation,severe malaria,DiseaseOrPhenotypicFeature,D016778,dev
+17297207,Quinine,ChemicalEntity,D011803,Positive_Correlation,sinoatrial block,DiseaseOrPhenotypicFeature,D012848,dev
+17297207,Quinine,ChemicalEntity,D011803,Positive_Correlation,premature ventricular contraction,DiseaseOrPhenotypicFeature,D018879,dev
+17297207,Quinine,ChemicalEntity,D011803,Positive_Correlation,palpitation,DiseaseOrPhenotypicFeature,D006331,dev
+17297207,Quinine,ChemicalEntity,D011803,Positive_Correlation,arrhythmia,DiseaseOrPhenotypicFeature,D001145,dev
+17384765,lead,ChemicalEntity,D007854,Positive_Correlation,cognitive and affective dysfunction,DiseaseOrPhenotypicFeature,D019964,dev
+17384765,lead,ChemicalEntity,D007854,Positive_Correlation,cognitive impairment,DiseaseOrPhenotypicFeature,D003072,dev
+17384765,lead,ChemicalEntity,D007854,Positive_Correlation,"impairments in learning, attention, inhibitory control, and arousal regulation",DiseaseOrPhenotypicFeature,D019958,dev
+17384765,lead,ChemicalEntity,D007854,Positive_Correlation,"impairments in learning, attention, inhibitory control, and arousal regulation",DiseaseOrPhenotypicFeature,D007859,dev
+17384765,lead,ChemicalEntity,D007854,Positive_Correlation,Pb poisoning,DiseaseOrPhenotypicFeature,D007855,dev
+17384765,Succimer,ChemicalEntity,D004113,Positive_Correlation,cognitive and affective dysfunction,DiseaseOrPhenotypicFeature,D019964,dev
+17384765,Succimer,ChemicalEntity,D004113,Positive_Correlation,cognitive impairment,DiseaseOrPhenotypicFeature,D003072,dev
+17384765,Succimer,ChemicalEntity,D004113,Negative_Correlation,Pb poisoning,DiseaseOrPhenotypicFeature,D007855,dev
+17384765,Succimer,ChemicalEntity,D004113,Negative_Correlation,lead,ChemicalEntity,D007854,dev
+17608141,dopaminergic,ChemicalEntity,D004298,Positive_Correlation,neurotoxicity,DiseaseOrPhenotypicFeature,D020258,dev
+17608141,lipopolysaccharide,ChemicalEntity,D008070,Association,inflammatory,DiseaseOrPhenotypicFeature,D007249,dev
+17608141,lipopolysaccharide,ChemicalEntity,D008070,Negative_Correlation,neurotoxicity,DiseaseOrPhenotypicFeature,D020258,dev
+17608141,lipopolysaccharide,ChemicalEntity,D008070,Association,"3,4-dihydroxyphenylacetic acid",ChemicalEntity,D015102,dev
+17608141,lipopolysaccharide,ChemicalEntity,D008070,Association,dopaminergic,ChemicalEntity,D004298,dev
+17608141,lipopolysaccharide,ChemicalEntity,D008070,Negative_Correlation,methamphetamine,ChemicalEntity,D008694,dev
+17608141,methamphetamine,ChemicalEntity,D008694,Positive_Correlation,dopaminergic terminal damage,DiseaseOrPhenotypicFeature,D009422,dev
+17608141,methamphetamine,ChemicalEntity,D008694,Positive_Correlation,neurotoxicity,DiseaseOrPhenotypicFeature,D020258,dev
+17608141,methamphetamine,ChemicalEntity,D008694,Association,"3,4-dihydroxyphenylacetic acid",ChemicalEntity,D015102,dev
+17608141,methamphetamine,ChemicalEntity,D008694,Association,dopaminergic,ChemicalEntity,D004298,dev
+17608141,methamphetamine,ChemicalEntity,D008694,Positive_Correlation,hyperthermia,DiseaseOrPhenotypicFeature,D005334,dev
+18162529,suppressor of cytokine signaling,GeneOrGeneProduct,83681,Association,prolactin,GeneOrGeneProduct,24683,dev
+18162529,suppressor of cytokine signaling,GeneOrGeneProduct,89829,Association,prolactin,GeneOrGeneProduct,24683,dev
+18162529,suppressor of cytokine signaling,GeneOrGeneProduct,252971,Association,prolactin,GeneOrGeneProduct,24683,dev
+18162529,prolactin,GeneOrGeneProduct,24683,Positive_Correlation,STAT5,GeneOrGeneProduct,24918,dev
+18162529,estrogen,ChemicalEntity,D004967,Association,prolactin,GeneOrGeneProduct,24683,dev
+18162529,estrogen,ChemicalEntity,D004967,Positive_Correlation,prolactin receptor,GeneOrGeneProduct,24684,dev
+18162529,estrogen,ChemicalEntity,D004967,Association,luteinizing hormone,ChemicalEntity,D007986,dev
+18162529,estradiol,ChemicalEntity,D004958,Positive_Correlation,suppressor of cytokine signaling,GeneOrGeneProduct,83681,dev
+18162529,estradiol,ChemicalEntity,D004958,Positive_Correlation,suppressor of cytokine signaling,GeneOrGeneProduct,89829,dev
+18162529,estradiol,ChemicalEntity,D004958,Positive_Correlation,STAT5,GeneOrGeneProduct,24918,dev
+18162529,estradiol,ChemicalEntity,D004958,Positive_Correlation,prolactin,GeneOrGeneProduct,24683,dev
+18162529,estradiol,ChemicalEntity,D004958,Positive_Correlation,prolactin receptor,GeneOrGeneProduct,24684,dev
+18162529,steroid,ChemicalEntity,D013256,Association,luteinizing hormone,ChemicalEntity,D007986,dev
+18162529,hyperprolactinemic,DiseaseOrPhenotypicFeature,D006966,Association,steroid,ChemicalEntity,D013256,dev
+18162529,hyperprolactinemic,DiseaseOrPhenotypicFeature,D006966,Positive_Correlation,sulpiride,ChemicalEntity,D013469,dev
+18162529,sulpiride,ChemicalEntity,D013469,Positive_Correlation,suppressor of cytokine signaling,GeneOrGeneProduct,83681,dev
+18162529,sulpiride,ChemicalEntity,D013469,Positive_Correlation,suppressor of cytokine signaling,GeneOrGeneProduct,89829,dev
+18162529,sulpiride,ChemicalEntity,D013469,Positive_Correlation,suppressor of cytokine signaling,GeneOrGeneProduct,252971,dev
+18162529,sulpiride,ChemicalEntity,D013469,Positive_Correlation,prolactin receptor,GeneOrGeneProduct,24684,dev
+18162529,sulpiride,ChemicalEntity,D013469,Negative_Correlation,luteinizing hormone,ChemicalEntity,D007986,dev
+18162529,dopamine,ChemicalEntity,D004298,Negative_Correlation,sulpiride,ChemicalEntity,D013469,dev
+18308784,N-methyl-D-aspartate (NMDA) receptor,GeneOrGeneProduct,24408,Negative_Correlation,MK801,ChemicalEntity,D016291,dev
+18308784,Ginsenoside Rg1,ChemicalEntity,C035054,Association,N-methyl-D-aspartate (NMDA) receptor,GeneOrGeneProduct,24408,dev
+18308784,Ginsenoside Rg1,ChemicalEntity,C035054,Negative_Correlation,morphine,ChemicalEntity,D009020,dev
+18308784,Ginsenoside Rg1,ChemicalEntity,C035054,Negative_Correlation,impairment of learning,DiseaseOrPhenotypicFeature,D007859,dev
+18308784,MK801,ChemicalEntity,D016291,Negative_Correlation,Ginsenoside Rg1,ChemicalEntity,C035054,dev
+18308784,impairment of learning,DiseaseOrPhenotypicFeature,D007859,Positive_Correlation,morphine,ChemicalEntity,D009020,dev
+18951540,levodopa,ChemicalEntity,D007980,Positive_Correlation,dyskinesias,DiseaseOrPhenotypicFeature,D004409,dev
+19759529,aripiprazole,ChemicalEntity,C094645,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+19759529,aripiprazole,ChemicalEntity,C094645,Negative_Correlation,hyperactivity,DiseaseOrPhenotypicFeature,D006948,dev
+19759529,clozapine,ChemicalEntity,D003024,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+19759529,clozapine,ChemicalEntity,D003024,Negative_Correlation,hyperactivity,DiseaseOrPhenotypicFeature,D006948,dev
+19759529,olanzapine,ChemicalEntity,C076029,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+19759529,olanzapine,ChemicalEntity,C076029,Negative_Correlation,hyperactivity,DiseaseOrPhenotypicFeature,D006948,dev
+19759529,haloperidol,ChemicalEntity,D006220,Positive_Correlation,catalepsy,DiseaseOrPhenotypicFeature,D002375,dev
+19759529,haloperidol,ChemicalEntity,D006220,Negative_Correlation,hyperactivity,DiseaseOrPhenotypicFeature,D006948,dev
+19759529,Schizophrenia,DiseaseOrPhenotypicFeature,D012559,Association,dopamine,ChemicalEntity,D004298,dev
+19759529,hyperactivity,DiseaseOrPhenotypicFeature,D006948,Positive_Correlation,amphetamine,ChemicalEntity,D000661,dev
+19759529,hyperactivity,DiseaseOrPhenotypicFeature,D006948,Positive_Correlation,MK-801,ChemicalEntity,D016291,dev
+19759529,hyperactivity,DiseaseOrPhenotypicFeature,D006948,Association,glutamate N-methyl-D-aspartate (NMDA) receptor,GeneOrGeneProduct,14810,dev
+19759529,glutamate N-methyl-D-aspartate (NMDA) receptor,GeneOrGeneProduct,14810,Association,Schizophrenia,DiseaseOrPhenotypicFeature,D012559,dev
+19759529,glutamate N-methyl-D-aspartate (NMDA) receptor,GeneOrGeneProduct,14810,Negative_Correlation,MK-801,ChemicalEntity,D016291,dev
+19759529,glycine,ChemicalEntity,D005998,Positive_Correlation,glutamate N-methyl-D-aspartate (NMDA) receptor,GeneOrGeneProduct,14810,dev
+19914299,5-fluorouracil,ChemicalEntity,D005472,Negative_Correlation,Cancer,DiseaseOrPhenotypicFeature,D009369,dev
+19914299,memory deficits,DiseaseOrPhenotypicFeature,D008569,Positive_Correlation,5-fluorouracil,ChemicalEntity,D005472,dev
+19914299,Fluoxetine,ChemicalEntity,D005473,Negative_Correlation,5-fluorouracil,ChemicalEntity,D005472,dev
+19914299,Fluoxetine,ChemicalEntity,D005473,Negative_Correlation,memory deficits,DiseaseOrPhenotypicFeature,D008569,dev
+20195852,iopromide,ChemicalEntity,C038192,Positive_Correlation,Injury to the kidney,DiseaseOrPhenotypicFeature,D058186,dev
+20195852,contrast media,ChemicalEntity,D003287,Association,cyanosis,DiseaseOrPhenotypicFeature,D003490,dev
+20195852,contrast media,ChemicalEntity,D003287,Positive_Correlation,nephropathy,DiseaseOrPhenotypicFeature,D007674,dev
+20195852,iohexol,ChemicalEntity,D007472,Positive_Correlation,Injury to the kidney,DiseaseOrPhenotypicFeature,D058186,dev
+20195852,nephropathy,DiseaseOrPhenotypicFeature,D007674,Positive_Correlation,iopromide,ChemicalEntity,C038192,dev
+20195852,nephropathy,DiseaseOrPhenotypicFeature,D007674,Positive_Correlation,iohexol,ChemicalEntity,D007472,dev
+20621845,CaCl2,ChemicalEntity,D002122,Positive_Correlation,arterial injury,DiseaseOrPhenotypicFeature,D014652,dev
+20621845,CaCl2,ChemicalEntity,D002122,Positive_Correlation,thoracic aortic aneurysm,DiseaseOrPhenotypicFeature,D017545,dev
+20621845,MMP-9,GeneOrGeneProduct,81687,Positive_Correlation,CaCl2,ChemicalEntity,D002122,dev
+20621845,MMP-9,GeneOrGeneProduct,81687,Association,thoracic aortic aneurysm,DiseaseOrPhenotypicFeature,D017545,dev
+20621845,MMP-2,GeneOrGeneProduct,81686,Positive_Correlation,CaCl2,ChemicalEntity,D002122,dev
+20621845,MMP-2,GeneOrGeneProduct,81686,Association,thoracic aortic aneurysm,DiseaseOrPhenotypicFeature,D017545,dev
+20621845,ADAM17,GeneOrGeneProduct,57027,Positive_Correlation,CaCl2,ChemicalEntity,D002122,dev
+20621845,ADAM17,GeneOrGeneProduct,57027,Association,thoracic aortic aneurysm,DiseaseOrPhenotypicFeature,D017545,dev
+20621845,ADAM10,GeneOrGeneProduct,29650,Positive_Correlation,CaCl2,ChemicalEntity,D002122,dev
+20621845,ADAM10,GeneOrGeneProduct,29650,Association,thoracic aortic aneurysm,DiseaseOrPhenotypicFeature,D017545,dev
+23872883,Captopril,ChemicalEntity,D002216,Negative_Correlation,angiotensin-converting enzyme,GeneOrGeneProduct,24310,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Negative_Correlation,superoxide dismutase,GeneOrGeneProduct,24786,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,lactate dehydrogenase,GeneOrGeneProduct,24533,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,creatine phosphokinase,GeneOrGeneProduct,24264,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,alanine transaminase,GeneOrGeneProduct,81670,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,aspartate transaminase,GeneOrGeneProduct,25721,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,angiotensin-converting enzyme,GeneOrGeneProduct,24310,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Negative_Correlation,glutathione,ChemicalEntity,D005978,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,nitric oxide,ChemicalEntity,D009569,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,malondialdehyde,ChemicalEntity,D008315,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,fatty acid,ChemicalEntity,D005227,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,triglycerides,ChemicalEntity,D014280,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,cholesterol,ChemicalEntity,D002784,dev
+23872883,isoproterenol,ChemicalEntity,D007545,Positive_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+23872883,Solidago virgaurea extract,ChemicalEntity,D010936,Negative_Correlation,malondialdehyde,ChemicalEntity,D008315,dev
+23872883,Solidago virgaurea extract,ChemicalEntity,D010936,Negative_Correlation,isoproterenol,ChemicalEntity,D007545,dev
+23872883,Solidago virgaurea extract,ChemicalEntity,D010936,Negative_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+24333387,Ibuprofen,ChemicalEntity,D007052,Negative_Correlation,neurotoxicity,DiseaseOrPhenotypicFeature,D020258,dev
+24333387,Memantine,ChemicalEntity,D008559,Negative_Correlation,neurotoxicity,DiseaseOrPhenotypicFeature,D020258,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Negative_Correlation,Ibuprofen,ChemicalEntity,D007052,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,neurotoxicity,DiseaseOrPhenotypicFeature,D020258,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Negative_Correlation,Memantine,ChemicalEntity,D008559,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Negative_Correlation,CaMKIIa,GeneOrGeneProduct,25400,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Negative_Correlation,PSD-95,GeneOrGeneProduct,29495,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,Caspase-3,GeneOrGeneProduct,25402,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,Ca(2+),ChemicalEntity,D002118,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,ROS,ChemicalEntity,D017382,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,nitrite,ChemicalEntity,D009573,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,TNF-a,GeneOrGeneProduct,24835,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,neuroinflammation,DiseaseOrPhenotypicFeature,D007249,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,CD11b,GeneOrGeneProduct,25021,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,GFAP,GeneOrGeneProduct,24387,dev
+24333387,Streptozotocin,ChemicalEntity,D013311,Positive_Correlation,memory impairment,DiseaseOrPhenotypicFeature,D008569,dev
+24438483,lipid emulsions,ChemicalEntity,D005217,Association,bupivacaine,ChemicalEntity,D002045,dev
+24438483,lipid,ChemicalEntity,D008055,Negative_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+24438483,lipid,ChemicalEntity,D008055,Negative_Correlation,bupivacaine,ChemicalEntity,D002045,dev
+24438483,intralipid,ChemicalEntity,C545823,Negative_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+24438483,intralipid,ChemicalEntity,C545823,Comparison,lipid,ChemicalEntity,D008055,dev
+24438483,intralipid,ChemicalEntity,C545823,Negative_Correlation,bupivacaine,ChemicalEntity,D002045,dev
+24438483,propofol,ChemicalEntity,D015742,Negative_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+24438483,propofol,ChemicalEntity,D015742,Association,lipid,ChemicalEntity,D008055,dev
+24438483,propofol,ChemicalEntity,D015742,Association,intralipid,ChemicalEntity,C545823,dev
+24438483,propofol,ChemicalEntity,D015742,Negative_Correlation,cardiovascular depression,DiseaseOrPhenotypicFeature,D002318,dev
+24438483,propofol,ChemicalEntity,D015742,Negative_Correlation,bupivacaine,ChemicalEntity,D002045,dev
+24438483,bupivacaine,ChemicalEntity,D002045,Positive_Correlation,cardiotoxicity,DiseaseOrPhenotypicFeature,D066126,dev
+24438483,bupivacaine,ChemicalEntity,D002045,Positive_Correlation,cardiovascular depression,DiseaseOrPhenotypicFeature,D002318,dev
+25119790,proteinuria,DiseaseOrPhenotypicFeature,D011507,Positive_Correlation,maleate,ChemicalEntity,C030272,dev
+25119790,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,Positive_Correlation,kidney injury molecule (KIM)-1,GeneOrGeneProduct,286934,dev
+25119790,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,Negative_Correlation,claudin-2,GeneOrGeneProduct,733684,dev
+25119790,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,Association,neutrophil gelatinase-associated lipocalin,GeneOrGeneProduct,170496,dev
+25119790,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,Association,sodium,ChemicalEntity,D012964,dev
+25119790,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,Association,glucose,ChemicalEntity,D005947,dev
+25119790,maleate,ChemicalEntity,C030272,Negative_Correlation,aconitase,GeneOrGeneProduct,50655,dev
+25119790,maleate,ChemicalEntity,C030272,Association,oxygen,ChemicalEntity,D010100,dev
+25119790,maleate,ChemicalEntity,C030272,Positive_Correlation,reactive oxygen species,ChemicalEntity,D017382,dev
+25119790,maleate,ChemicalEntity,C030272,Positive_Correlation,kidney injury molecule (KIM)-1,GeneOrGeneProduct,286934,dev
+25119790,maleate,ChemicalEntity,C030272,Negative_Correlation,claudin-2,GeneOrGeneProduct,733684,dev
+25119790,maleate,ChemicalEntity,C030272,Association,neutrophil gelatinase-associated lipocalin,GeneOrGeneProduct,170496,dev
+25119790,maleate,ChemicalEntity,C030272,Association,sodium,ChemicalEntity,D012964,dev
+25119790,maleate,ChemicalEntity,C030272,Association,glucose,ChemicalEntity,D005947,dev
+25119790,maleate,ChemicalEntity,C030272,Positive_Correlation,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,dev
+25119790,Curcumin,ChemicalEntity,D003474,Negative_Correlation,nephrotoxicity,DiseaseOrPhenotypicFeature,D007674,dev
+25119790,Curcumin,ChemicalEntity,D003474,Negative_Correlation,maleate,ChemicalEntity,C030272,dev

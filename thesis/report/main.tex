@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[acronym]{glossaries}
+\usepackage{setspace}
+
+\onehalfspacing
+
+\newcommand{\pref}{\textbf{[REFERENCE]}}
+
+\newacronym{llm}{LLM}{Large Language Model}
+\newacronym{kg}{KG}{Knowledge Graph}
+\newacronym{ie}{IE}{Information Extraction}
+\newacronym{ner}{NER}{Named Entity Recognition}
+\newacronym{re}{RE}{Relation Extraction}
+
+\title{Biomedical Knowledge Graph Construction Using Large Language Models: Evaluating Generalisation Beyond Benchmark Datasets}
+\author{Wesley Roots}
+\date{September 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\include{chapters/01_introduction.tex}
+\include{chapters/02_literature_review.tex}
+\include{chapters/03_methodology.tex}
+\include{chapters/04_results.tex}
+\include{chapters/05_discussion.tex}
+\include{chapters/06_conclusion.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}

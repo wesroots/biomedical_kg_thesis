@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}{}%
+\contentsline {chapter}{\numberline {2}Literature Review}{3}{}%
+\contentsline {subsection}{\numberline {2.0.1}Definition}{3}{}%
+\contentsline {subsection}{\numberline {2.0.2}Motivation}{3}{}%
+\contentsline {subsection}{\numberline {2.0.3}Tasks}{3}{}%
+\contentsline {subsection}{\numberline {2.0.4}Challenges}{3}{}%
+\contentsline {subsection}{\numberline {2.0.5}Traditional Methods}{3}{}%
+\contentsline {subsection}{\numberline {2.0.6}Transition to LLMs}{3}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{4}{}%
+\contentsline {subsection}{\numberline {3.0.1}Research Design}{4}{}%
+\contentsline {subsection}{\numberline {3.0.2}Datasets}{4}{}%
+\contentsline {subsection}{\numberline {3.0.3}System Architecture}{4}{}%
+\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{4}{}%
+\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{4}{}%
+\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{4}{}%
+\contentsline {subsection}{\numberline {3.0.7}Evaluation}{4}{}%
+\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{4}{}%
+\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{4}{}%
+\contentsline {chapter}{\numberline {4}Results}{5}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{6}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{7}{}%

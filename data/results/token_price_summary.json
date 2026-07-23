@@ -1,0 +1,35 @@
+{
+    "train_downsampled": {
+        "abstracts": 35,
+        "num_tokens": 14625,
+        "mean_input_tokens": 417.9,
+        "median_input_tokens": 414.0,
+        "max_input_tokens": 707,
+        "mean_output_tokens": 1598.5,
+        "median_output_tokens": 1540.0,
+        "max_output_tokens": 3037,
+        "input_cost": 0.01,
+        "output_cost": 0.25,
+        "total_cost": 0.26
+    },
+    "train_full": {
+        "abstracts": 400,
+        "num_tokens": 139554,
+        "total_cost": 2.94
+    },
+    "test_full": {
+        "abstracts": 100,
+        "num_tokens": 36105,
+        "total_cost": 0.74
+    },
+    "dev_full": {
+        "abstracts": 100,
+        "num_tokens": 36662,
+        "total_cost": 0.74
+    },
+    "contemporary_full": {
+        "abstracts": 987,
+        "num_tokens": 340837,
+        "total_cost": 7.26
+    }
+}

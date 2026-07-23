@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{perera2020_ie_introduction}
+Nadeesha Perera, Matthias Dehmer, and Frank Emmert-Streib.
+\newblock Named entity recognition and relation detection for biomedical information extraction.
+\newblock {\em Frontiers in cell and developmental biology}, 8:673, 2020.
+
+\bibitem{lu2011_pubmed_publicationrate}
+Zhiyong Lu.
+\newblock Pubmed and beyond: a survey of web tools for searching biomedical literature.
+\newblock {\em Database}, 2011:baq036, 2011.
+
+\bibitem{gonzalez2024_biomed_landscape}
+Rita Gonz{\'a}lez-M{\'a}rquez, Luca Schmidt, Benjamin~M Schmidt, Philipp Berens, and Dmitry Kobak.
+\newblock The landscape of biomedical research.
+\newblock {\em Patterns}, 5(6), 2024.
+
+\bibitem{islamaj2009_firstpage}
+Rezarta Islamaj~Dogan, G~Craig Murray, Aur{\'e}lie N{\'e}v{\'e}ol, and Zhiyong Lu.
+\newblock Understanding pubmed{\textregistered} user search behavior through log analysis.
+\newblock {\em Database}, 2009:bap018, 2009.
+
+\end{thebibliography}

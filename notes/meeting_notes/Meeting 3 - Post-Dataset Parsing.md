@@ -1,0 +1,34 @@
+# ---- Status Summary ----
+- **BioRED parsed & abstract DataFrame constructed**
+- **Contemporary abstract DataFrame constructed**
+- **`biored_train.csv` subsample cost calculated for input + output - extrapolation done**
+	- `train_downsampled`
+		- *nAbstracts:* 35
+		- *Total tokens:* 14,625
+		- *Actual total cost:* £0.26
+	- `train_full`
+		- *nAbstracts:* 400
+		- *Total tokens:* 13,9554
+		- *Est. total cost:* £2.72
+	- `test_full`
+		- *nAbstracts:* 100
+		- *Total tokens:* 36,105
+		- *Est. total cost:* £0.73
+	- `dev_full`
+		- *nAbstracts:* 100
+		- *Total tokens:* 36,662
+		- *Est. total cost:* £0.73
+	- `contemporary_full`
+		- *nAbstracts:* 987
+		- *Total tokens:* 340,837
+		- *Est. total cost:* £7.20
+- **Total cost estimation (£38.80):**
+	- *Total estimated (£32.33):*
+		- 10 runs on `train_downsampled`: £2.60
+		- 8 runs on broader train sample (`n = 105`): £6.24
+		- 2 runs on `train_full`: £5.44
+		- 4 runs on `dev_full`: £2.92
+		- 1 run on `test_full`: £0.73
+		- 2 runs on `contemporary_full`: £14.40
+	- *+ contingency (20%):*
+		- £38.80

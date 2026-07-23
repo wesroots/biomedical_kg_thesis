@@ -1,0 +1,6 @@
+Dataset,Abstracts,Number of Tokens,Basis,Total (actual / extrapolated) cost
+BioRED train sample,35,14625,Actual API run,£0.26
+BioRED train,400,139554,Extrapolated,£2.94
+BioRED dev,100,36662,Extrapolated,£0.74
+BioRED test,100,36105,Extrapolated,£0.74
+Contemporary,987,340837,Extrapolated,£7.26
