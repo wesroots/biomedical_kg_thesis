@@ -1,0 +1,277 @@
+## EXAMPLE 1:
+
+### Abstract:
+
+A prospective, randomized, double-blind pilot study to compare the results of stereotactic unilateral pallidotomy and subthalamotomy in advanced idiopathic Parkinson's disease (PD) refractory to medical treatment was designed. Ten consecutive patients (mean age, 58.4 +/- 6.8 years; 7 men, 3 women) with similar characteristics at the duration of disease (mean disease time, 8.4 +/- 3.5 years), disabling motor fluctuations (Hoehn _ Yahr stage 3-5 in off-drug phases) and levodopa-induced dyskinesias were selected. All patients had bilateral symptoms and their levodopa equivalent dosing were analysed. Six patients were operated on in the globus pallidus interna (GPi) and four in the subthalamic nucleus (STN). Clinical evaluation included the use of the Unified Parkinson's Disease Rating Scale (UPDRS), Hoehn_Yahr score and Schwab England activities of daily living (ADL) score in 'on'- and 'off'-drug conditions before surgery and 6 months after surgery. There was statistically significant improvement in all contralateral major parkinsonian motor signs in all patients followed for 6 months. Levodopa equivalent daily intake was significantly reduced in the STN group. Changes in UPDRS, Hoehn _ Yahr and Schwab England ADL scores were similar in both groups. Cognitive functions were unchanged in both groups. Complications were observed in two patients: one had a left homonymous hemianopsia after pallidotomy and another one developed left hemiballistic movements 3 days after subthalamotomy which partly improved within 1 month with Valproate 1000 mg/day. The findings of this study suggest that lesions of the unilateral STN and GPi are equally effective treatment for patients with advanced PD refractory to medical treatment.
+
+### Correct BioRED annotation:
+
+{
+  "entities": [
+    {
+      "text": "dyskinesias",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "levodopa",
+      "type": "ChemicalEntity"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "levodopa",
+      "relation": "Positive_Correlation",
+      "target": "dyskinesias"
+    }
+  ]
+}
+
+## EXAMPLE 2:
+
+### Abstract:
+
+To determine the incidence of clinically significant adverse events after long-term, fixed-dose, generic highly active antiretroviral therapy (HAART) use among HIV-infected individuals in South India, we examined the experiences of 3154 HIV-infected individuals who received a minimum of 3 months of generic HAART between February 1996 and December 2006 at a tertiary HIV care referral center in South India. The most common regimens were 3TC + d4T + nevirapine (NVP) (54.8%), zidovudine (AZT) + 3TC + NVP (14.5%), 3TC + d4T + efavirenz (EFV) (20.1%), and AZT + 3TC + EFV (5.4%). The most common adverse events and median CD4 at time of event were rash (15.2%; CD4, 285 cells/microL) and peripheral neuropathy (9.0% and 348 cells/microL). Clinically significant anemia (hemoglobin <7 g/dL) was observed in 5.4% of patients (CD4, 165 cells/microL) and hepatitis (clinical jaundice with alanine aminotransferase > 5 times upper limits of normal) in 3.5% of patients (CD4, 260 cells/microL). Women were significantly more likely to experience lactic acidosis, while men were significantly more likely to experience immune reconstitution syndrome (p < 0.05). Among the patients with 1 year of follow-up, NVP therapy was significantly associated with developing rash and d4T therapy with developing peripheral neuropathy (p < 0.05). Anemia and hepatitis often occur within 12 weeks of initiating generic HAART. Frequent and early monitoring for these toxicities is warranted in developing countries where generic HAART is increasingly available.
+
+### Correct BioRED annotation:
+
+{
+  "entities": [
+    {
+      "text": "d4T",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "efavirenz",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "alanine aminotransferase",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "jaundice",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "peripheral neuropathy",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "nevirapine",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "HIV-infected",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "zidovudine",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "3TC",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "rash",
+      "type": "DiseaseOrPhenotypicFeature"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "jaundice",
+      "relation": "Positive_Correlation",
+      "target": "alanine aminotransferase"
+    },
+    {
+      "source": "HIV-infected",
+      "relation": "Negative_Correlation",
+      "target": "efavirenz"
+    },
+    {
+      "source": "HIV-infected",
+      "relation": "Negative_Correlation",
+      "target": "d4T"
+    },
+    {
+      "source": "HIV-infected",
+      "relation": "Negative_Correlation",
+      "target": "3TC"
+    },
+    {
+      "source": "HIV-infected",
+      "relation": "Negative_Correlation",
+      "target": "nevirapine"
+    },
+    {
+      "source": "HIV-infected",
+      "relation": "Negative_Correlation",
+      "target": "zidovudine"
+    },
+    {
+      "source": "d4T",
+      "relation": "Positive_Correlation",
+      "target": "peripheral neuropathy"
+    },
+    {
+      "source": "d4T",
+      "relation": "Cotreatment",
+      "target": "efavirenz"
+    },
+    {
+      "source": "d4T",
+      "relation": "Cotreatment",
+      "target": "nevirapine"
+    },
+    {
+      "source": "3TC",
+      "relation": "Cotreatment",
+      "target": "efavirenz"
+    },
+    {
+      "source": "3TC",
+      "relation": "Cotreatment",
+      "target": "d4T"
+    },
+    {
+      "source": "3TC",
+      "relation": "Cotreatment",
+      "target": "nevirapine"
+    },
+    {
+      "source": "nevirapine",
+      "relation": "Positive_Correlation",
+      "target": "rash"
+    },
+    {
+      "source": "zidovudine",
+      "relation": "Cotreatment",
+      "target": "efavirenz"
+    },
+    {
+      "source": "zidovudine",
+      "relation": "Cotreatment",
+      "target": "3TC"
+    },
+    {
+      "source": "zidovudine",
+      "relation": "Cotreatment",
+      "target": "nevirapine"
+    }
+  ]
+}
+
+## EXAMPLE 3:
+
+### Abstract:
+
+Loss of endothelial cell-derived nitric oxide (NO) in hypertension is a hallmark of arterial dysfunction. Experimental hypertension created by the removal of NO, however, involves mechanisms in addition to decreased arterial vasodilator activity. These include augmented endothelin-1 (ET-1) release, increased sympathetic nervous system activity, and elevated tissue oxidative stress. We hypothesized that increased venous smooth muscle (venomotor) tone plays a role in Nomega-nitro-L-arginine (LNNA) hypertension through these mechanisms. Rats were treated with the NO synthase inhibitor LNNA (0.5 g/L in drinking water) for 2 weeks. Mean arterial pressure of conscious rats was 119 +/- 2 mm Hg in control and 194 +/- 5 mm Hg in LNNA rats (P<0.05). Carotid arteries and vena cava were removed for measurement of isometric contraction. Maximal contraction to norepinephrine was modestly reduced in arteries from LNNA compared with control rats whereas the maximum contraction to ET-1 was significantly reduced (54% control). Maximum contraction of vena cava to norepinephrine (37% control) also was reduced but no change in response to ET-1 was observed. Mean circulatory filling pressure, an in vivo measure of venomotor tone, was not elevated in LNNA hypertension at 1 or 2 weeks after LNNA. The superoxide scavenger tempol (30, 100, and 300 micromol kg(-1), IV) did not change arterial pressure in control rats but caused a dose-dependent decrease in LNNA rats (-18 +/- 8, -26 +/- 15, and -54 +/- 11 mm Hg). Similarly, ganglionic blockade with hexamethonium caused a significantly greater fall in LNNA hypertensive rats (76 +/- 9 mm Hg) compared with control rats (35 +/- 10 mm Hg). Carotid arteries, vena cava, and sympathetic ganglia from LNNA rats had higher basal levels of superoxide compared with those from control rats. These data suggest that while NO deficiency increases oxidative stress and sympathetic activity in both arterial and venous vessels, the impact on veins does not make a major contribution to this form of hypertension.
+
+### Correct BioRED annotation:
+
+{
+  "entities": [
+    {
+      "text": "nitric oxide",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "arterial dysfunction",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "endothelin-1",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "superoxide",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "tempol",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "hexamethonium",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "Nomega-nitro-L-arginine",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "NO synthase",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "norepinephrine",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "hypertension",
+      "type": "DiseaseOrPhenotypicFeature"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "hexamethonium",
+      "relation": "Association",
+      "target": "Nomega-nitro-L-arginine"
+    },
+    {
+      "source": "hexamethonium",
+      "relation": "Association",
+      "target": "hypertension"
+    },
+    {
+      "source": "tempol",
+      "relation": "Negative_Correlation",
+      "target": "Nomega-nitro-L-arginine"
+    },
+    {
+      "source": "superoxide",
+      "relation": "Negative_Correlation",
+      "target": "tempol"
+    },
+    {
+      "source": "norepinephrine",
+      "relation": "Negative_Correlation",
+      "target": "Nomega-nitro-L-arginine"
+    },
+    {
+      "source": "NO synthase",
+      "relation": "Negative_Correlation",
+      "target": "Nomega-nitro-L-arginine"
+    },
+    {
+      "source": "Nomega-nitro-L-arginine",
+      "relation": "Positive_Correlation",
+      "target": "superoxide"
+    },
+    {
+      "source": "Nomega-nitro-L-arginine",
+      "relation": "Negative_Correlation",
+      "target": "endothelin-1"
+    },
+    {
+      "source": "Nomega-nitro-L-arginine",
+      "relation": "Positive_Correlation",
+      "target": "hypertension"
+    },
+    {
+      "source": "nitric oxide",
+      "relation": "Negative_Correlation",
+      "target": "arterial dysfunction"
+    },
+    {
+      "source": "hypertension",
+      "relation": "Association",
+      "target": "endothelin-1"
+    },
+    {
+      "source": "hypertension",
+      "relation": "Negative_Correlation",
+      "target": "nitric oxide"
+    }
+  ]
+}

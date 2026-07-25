@@ -1,5 +1,51 @@
 {
 	"nodes":[
+		{"id":"fab4eaae54bc23a2","type":"group","x":-840,"y":-960,"width":700,"height":240,"label":"Initial Loading + Parsing"},
+		{"id":"6eb758b9f3a15bd4","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/LLM Output Exploration.md","x":-100,"y":-780,"width":400,"height":200,"color":"#ffffff"},
+		{
+			"id":"7c6542db0843da54",
+			"type":"text",
+			"text":"Schema following BioRED annotations MUST be passed to LLM\n- This allows P/R/F1 to be evaluated against BioRED GT in training & contemporary manual annotations in final frozen pipeline",
+			"styleAttributes":{},
+			"x":-100,
+			"y":-520,
+			"width":340,
+			"height":240,
+			"color":"1"
+		},
+		{
+			"id":"9daf154ece0938ed",
+			"type":"text",
+			"text":"Initial LLM response parsed\n- `response` object from cost estimation exported as JSON\n- JSON parsed into sets of tuples format for evaluation with BioRED ground truth",
+			"styleAttributes":{},
+			"x":-500,
+			"y":-680,
+			"width":340,
+			"height":200,
+			"color":"#3769cd"
+		},
+		{
+			"id":"f60c4df193ba8fbf",
+			"type":"text",
+			"text":"BioRED GT parsed\n- BioRED GT CSV parsed into matching \"sets of tuples format\" for eval.\n",
+			"styleAttributes":{},
+			"x":-900,
+			"y":-680,
+			"width":340,
+			"height":200,
+			"color":"#3769cd"
+		},
+		{
+			"id":"99ad9f1da04bbcfc",
+			"type":"text",
+			"text":"Consolidation of parsing of both extractions\n- BR GT annotations & LLM output into one notebook\n- Initial `response` JSON used to consolidate parsing logic",
+			"styleAttributes":{},
+			"x":-1300,
+			"y":-680,
+			"width":340,
+			"height":200,
+			"color":"#3769cd"
+		},
 		{
 			"id":"18b8cf19c98792a4",
 			"type":"text",
@@ -23,63 +69,41 @@
 			"color":"#3769cd"
 		},
 		{
-			"id":"9daf154ece0938ed",
+			"id":"a29d9ee8480b8569",
 			"type":"text",
-			"text":"Initial response parsed\n- `response` object from cost estimation exported as JSON\n- JSON parsed into tabular format for evaluation with BioRED ground truth",
+			"text":"New \"first proper LLM call\" added to start of consolidated parsing notebook\n- Acts as \"first proper LLM call\" benchmark\n- First run stored",
 			"styleAttributes":{},
-			"x":-500,
-			"y":-680,
+			"x":-1300,
+			"y":-420,
 			"width":340,
 			"height":200,
 			"color":"#3769cd"
 		},
 		{
-			"id":"99ad9f1da04bbcfc",
+			"id":"4fff05a2a2a1a472",
 			"type":"text",
-			"text":"Evaluation stage building\n- P/R/F1 stage built",
+			"text":"Prompt refinement begins\n- BioRED train set\n",
 			"styleAttributes":{},
-			"x":-820,
-			"y":-680,
-			"width":260,
+			"x":-900,
+			"y":-420,
+			"width":340,
 			"height":200,
 			"color":"#3769cd"
 		},
-		{"id":"6eb758b9f3a15bd4","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/LLM Output Exploration.md","x":-100,"y":-780,"width":400,"height":200,"color":"#ffffff"},
 		{
-			"id":"7c6542db0843da54",
+			"id":"83a566d1f24340b4",
 			"type":"text",
-			"text":"Schema following BioRED annotations MUST be passed to LLM\n- This allows P/R/F1 to be evaluated against BioRED GT in training & contemporary manual annotations in final frozen pipeline",
+			"text":"",
 			"styleAttributes":{},
-			"x":-100,
-			"y":-520,
+			"x":-900,
+			"y":-160,
 			"width":340,
-			"height":240,
-			"color":"1"
-		}
+			"height":200,
+			"color":"#3769cd"
+		},
+		{"id":"a1038be4923a189e","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Prompt Refinement Notes.md","x":-500,"y":-420,"width":340,"height":200,"color":"#ffffff"}
 	],
 	"edges":[
-		{
-			"id":"c3899c2779dee57f",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"ae9beabf22c6dee0",
-			"fromSide":"right",
-			"toNode":"18b8cf19c98792a4",
-			"toSide":"left",
-			"color":"3"
-		},
-		{
-			"id":"1687ad73d93d7145",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"18b8cf19c98792a4",
-			"fromSide":"bottom",
-			"toNode":"9daf154ece0938ed",
-			"toSide":"top",
-			"color":"3"
-		},
 		{
 			"id":"ce5a71cdd09acab1",
 			"styleAttributes":{"pathfindingMethod":"a-star","path":"dotted"},
@@ -91,17 +115,6 @@
 			"toSide":"right"
 		},
 		{
-			"id":"9087c57b25dba0a7",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"9daf154ece0938ed",
-			"fromSide":"left",
-			"toNode":"99ad9f1da04bbcfc",
-			"toSide":"right",
-			"color":"3"
-		},
-		{
 			"id":"4c2ef72b4f8b4313",
 			"styleAttributes":{"pathfindingMethod":"a-star","path":"dotted"},
 			"toFloating":false,
@@ -109,6 +122,89 @@
 			"fromNode":"7c6542db0843da54",
 			"fromSide":"top",
 			"toNode":"9daf154ece0938ed",
+			"toSide":"right"
+		},
+		{
+			"id":"ff8804f2864126b5",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"9daf154ece0938ed",
+			"fromSide":"left",
+			"toNode":"f60c4df193ba8fbf",
+			"toSide":"right",
+			"color":"3"
+		},
+		{
+			"id":"6419ea69383832ff",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromNode":"f60c4df193ba8fbf",
+			"fromSide":"left",
+			"toNode":"99ad9f1da04bbcfc",
+			"toSide":"right",
+			"color":"3"
+		},
+		{
+			"id":"c39cf30276d86a18",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromNode":"99ad9f1da04bbcfc",
+			"fromSide":"bottom",
+			"toNode":"a29d9ee8480b8569",
+			"toSide":"top",
+			"color":"3"
+		},
+		{
+			"id":"c3899c2779dee57f",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"ae9beabf22c6dee0",
+			"fromSide":"right",
+			"toNode":"18b8cf19c98792a4",
+			"toSide":"left",
+			"color":"3"
+		},
+		{
+			"id":"1687ad73d93d7145",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"18b8cf19c98792a4",
+			"fromSide":"bottom",
+			"toNode":"9daf154ece0938ed",
+			"toSide":"top",
+			"color":"3"
+		},
+		{
+			"id":"afa926b209659112",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromNode":"a29d9ee8480b8569",
+			"fromSide":"right",
+			"toNode":"4fff05a2a2a1a472",
+			"toSide":"left",
+			"color":"3"
+		},
+		{
+			"id":"a6fe8257b4b913ba",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromNode":"4fff05a2a2a1a472",
+			"fromSide":"bottom",
+			"toNode":"83a566d1f24340b4",
+			"toSide":"top",
+			"color":"3"
+		},
+		{
+			"id":"3a0d7f7f9510a095",
+			"styleAttributes":{"pathfindingMethod":"a-star","path":"long-dashed"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"a1038be4923a189e",
+			"fromSide":"left",
+			"toNode":"4fff05a2a2a1a472",
 			"toSide":"right"
 		}
 	],
