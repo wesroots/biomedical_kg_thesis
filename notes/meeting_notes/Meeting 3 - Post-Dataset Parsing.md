@@ -1,6 +1,4 @@
 # ---- Status Summary ----
-- **BioRED parsed & abstract DataFrame constructed**
-- **Contemporary abstract DataFrame constructed**
 - **`biored_train.csv` subsample cost calculated for input + output - extrapolation done**
 	- `train_downsampled`
 		- *nAbstracts:* 35
@@ -32,3 +30,6 @@
 		- 2 runs on `contemporary_full`: £14.40
 	- *+ contingency (20%):*
 		- £38.80
+- **Current focus:**
+	- *Developing parsing stage of extraction pipeline*
+		- ==Converting LLM's structured JSON responses into tabular== format compatible with BioRED annotations ==in order to evaluate extraction performance== with P, R, F1
