@@ -3,17 +3,6 @@
 		{"id":"fab4eaae54bc23a2","type":"group","x":-840,"y":-960,"width":700,"height":240,"label":"Initial Loading + Parsing"},
 		{"id":"6eb758b9f3a15bd4","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/LLM Output Exploration.md","x":-100,"y":-780,"width":400,"height":200,"color":"#ffffff"},
 		{
-			"id":"7c6542db0843da54",
-			"type":"text",
-			"text":"Schema following BioRED annotations MUST be passed to LLM\n- This allows P/R/F1 to be evaluated against BioRED GT in training & contemporary manual annotations in final frozen pipeline",
-			"styleAttributes":{},
-			"x":-100,
-			"y":-520,
-			"width":340,
-			"height":240,
-			"color":"1"
-		},
-		{
 			"id":"9daf154ece0938ed",
 			"type":"text",
 			"text":"Initial LLM response parsed\n- `response` object from cost estimation exported as JSON\n- JSON parsed into sets of tuples format for evaluation with BioRED ground truth",
@@ -91,17 +80,28 @@
 			"color":"#3769cd"
 		},
 		{
+			"id":"7c6542db0843da54",
+			"type":"text",
+			"text":"Schema following BioRED annotations MUST be passed to LLM\n- This allows P/R/F1 to be evaluated against BioRED GT in training & contemporary manual annotations in final frozen pipeline",
+			"styleAttributes":{},
+			"x":-100,
+			"y":-520,
+			"width":340,
+			"height":240,
+			"color":"1"
+		},
+		{"id":"a1038be4923a189e","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Run Refinement Notes.md","x":-500,"y":-420,"width":340,"height":200,"color":"#ffffff"},
+		{
 			"id":"83a566d1f24340b4",
 			"type":"text",
 			"text":"",
 			"styleAttributes":{},
-			"x":-900,
+			"x":-1300,
 			"y":-160,
 			"width":340,
 			"height":200,
 			"color":"#3769cd"
-		},
-		{"id":"a1038be4923a189e","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Prompt Refinement Notes.md","x":-500,"y":-420,"width":340,"height":200,"color":"#ffffff"}
+		}
 	],
 	"edges":[
 		{
