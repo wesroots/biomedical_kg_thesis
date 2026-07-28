@@ -91,17 +91,19 @@
 			"color":"1"
 		},
 		{"id":"a1038be4923a189e","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Run Refinement Notes.md","x":-500,"y":-420,"width":340,"height":200,"color":"#ffffff"},
+		{"id":"861dc19db08a3785","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Run Version Control Approach.md","x":-500,"y":-160,"width":340,"height":200,"color":"#fafafa"},
 		{
 			"id":"83a566d1f24340b4",
 			"type":"text",
 			"text":"",
 			"styleAttributes":{},
-			"x":-1300,
+			"x":-900,
 			"y":-160,
 			"width":340,
 			"height":200,
 			"color":"#3769cd"
-		}
+		},
+		{"id":"60564b86a551a986","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Embedding Choice.md","x":-100,"y":-160,"width":340,"height":200,"color":"#ffffff"}
 	],
 	"edges":[
 		{
@@ -203,6 +205,25 @@
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"a1038be4923a189e",
+			"fromSide":"left",
+			"toNode":"4fff05a2a2a1a472",
+			"toSide":"right"
+		},
+		{
+			"id":"dc66e218f8bd18df",
+			"styleAttributes":{"pathfindingMethod":"a-star","path":"long-dashed"},
+			"toFloating":false,
+			"fromNode":"861dc19db08a3785",
+			"fromSide":"left",
+			"toNode":"4fff05a2a2a1a472",
+			"toSide":"right"
+		},
+		{
+			"id":"6e6baea606f7a343",
+			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"60564b86a551a986",
 			"fromSide":"left",
 			"toNode":"4fff05a2a2a1a472",
 			"toSide":"right"
