@@ -2,31 +2,37 @@
   "run001": {
     "prompt_version": "v1",
     "eval_version": "v1",
+    "reuse_api_call": "n",
     "notes": "Baseline extraction benchmark - does not follow BioRED annotation schema."
   },
   "run002": {
     "prompt_version": "v2",
     "eval_version": "v1",
-    "notes": "Implemented BioRED entity and relation schema and rules."
+    "reuse_api_call": "n",
+    "notes": "Implemented BioRED extraction guidelines and entity and relation type rules."
   },
   "run003": {
     "prompt_version": "v2",
     "eval_version": "v2",
+    "reuse_api_call": "y",
     "notes": "Introduces relaxed matches in addition to strict."
   },
   "run004": {
     "prompt_version": "v3",
     "eval_version": "v2",
+    "reuse_api_call": "n",
     "notes": "Implements few-shot prompting."
   },
   "run005": {
     "prompt_version": "v3",
     "eval_version": "v3",
+    "reuse_api_call": "y",
     "notes": "Adds cosine similarity to performance eval."
   },
   "run006": {
     "prompt_version": "v3",
     "eval_version": "v4",
+    "reuse_api_call": "y",
     "notes": "Relationship matching now order-invariant across strict/relaxed/cosine."
   }
 }
