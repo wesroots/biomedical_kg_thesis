@@ -5,7 +5,7 @@ import re
 
 from datetime import date
 
-def export_run(run_dict, eval_results, time_taken, dataset="biored_train", prompt=None, run_dir="../prompt_runs"):
+def export_run(run_dict, eval_results, time_taken, eval_version, prompt_version, dataset="biored_train", prompt=None, run_dir="../prompt_runs"):
 
     """
     Save the results of an extraction pipeline run as a JSON log.
@@ -25,7 +25,7 @@ def export_run(run_dict, eval_results, time_taken, dataset="biored_train", promp
             "dataset": dataset,
             "num_abstracts": len(run_dict["extractions"]),
             "prompt_version": run_dict["prompt_version"],
-            "parser_version": run_dict["parser_version"]
+            "eval_version": run_dict["eval_version"]
         },
         "metrics": eval_results,
         "notes": run_dict["run_notes"],

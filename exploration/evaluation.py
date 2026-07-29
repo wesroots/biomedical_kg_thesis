@@ -1,4 +1,5 @@
-
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 
 def evaluation_v1(run_dict, ground_truths):
@@ -14,8 +15,7 @@ def evaluation_v1(run_dict, ground_truths):
 
     return {
         "entity": {"strict": entity_metrics_strict},
-        "relation": {"strict": relationship_metrics_strict},
-        "eval_version": "v1"
+        "relation": {"strict": relationship_metrics_strict}
     }
 
 
@@ -35,13 +35,8 @@ def evaluation_v2(run_dict, ground_truths):
 
     return {
         "entity": {"strict": entity_metrics_strict, "relaxed": entity_metrics_relaxed},
-        "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed},
-        "eval_version": "v2"
+        "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed}
     }
-
-
-import numpy as np
-from sentence_transformers import SentenceTransformer
 
 _MODEL = None
 COSINE_THRESHOLD = 0.85
@@ -72,8 +67,41 @@ def evaluation_v3(run_dict, ground_truths):
 
     return {
         "entity": {"strict": entity_metrics_strict, "relaxed": entity_metrics_relaxed, "cosine": entity_metrics_cosine},
+        "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed, "cosine": relationship_metrics_cosine}
+    }
+
+def evaluation_v4(run_dict, ground_truths):
+
+    ground_truths_entities = ground_truths["entities"]
+    ground_truths_relationships = ground_truths["relationships"]
+
+    predictions_entities = run_dict["predictions_entities"]
+    predictions_relationships = run_dict["predictions_relationships"]
+
+    entity_metrics_strict = compute_prf_strict(predictions_entities, ground_truths_entities)
+    entity_metrics_relaxed = compute_prf_relaxed(predictions_entities, ground_truths_entities, entity_match)
+
+    relationship_metrics_strict = compute_prf_relaxed(
+        predictions_relationships, ground_truths_relationships, relationship_match_strict_symmetric
+    )
+    relationship_metrics_relaxed = compute_prf_relaxed(
+        predictions_relationships, ground_truths_relationships, relationship_match_symmetric
+    )
+
+    entity_embeddings = build_embedding_lookup(predictions_entities, ground_truths_entities, text_indices=[1])
+    relationship_embeddings = build_embedding_lookup(predictions_relationships, ground_truths_relationships, text_indices=[1, 3])
+
+    entity_metrics_cosine = compute_prf_cosine(
+        predictions_entities, ground_truths_entities, entity_match_cosine, entity_embeddings, COSINE_THRESHOLD
+    )
+    relationship_metrics_cosine = compute_prf_cosine(
+        predictions_relationships, ground_truths_relationships, relationship_match_cosine_symmetric, relationship_embeddings, COSINE_THRESHOLD
+    )
+
+    return {
+        "entity": {"strict": entity_metrics_strict, "relaxed": entity_metrics_relaxed, "cosine": entity_metrics_cosine},
         "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed, "cosine": relationship_metrics_cosine},
-        "eval_version": "v3"
+        "eval_version": "v4"
     }
 
 def get_embedding_model():
@@ -228,3 +256,38 @@ def compute_prf_relaxed(predictions, ground_truth, match_fn):
         "fp": fp,
         "fn": fn
     }
+
+
+def relationship_match_strict_symmetric(pred, gt):
+    if pred[0] != gt[0] or pred[2] != gt[2]:
+        return False
+    same_order = pred[1] == gt[1] and pred[3] == gt[3]
+    swapped_order = pred[1] == gt[3] and pred[3] == gt[1]
+    return same_order or swapped_order
+
+
+def relationship_match_symmetric(pred, gt):
+    if pred[0] != gt[0] or pred[2] != gt[2]:
+        return False
+    same_order = span_matches(pred[1], gt[1]) and span_matches(pred[3], gt[3])
+    swapped_order = span_matches(pred[1], gt[3]) and span_matches(pred[3], gt[1])
+    return same_order or swapped_order
+
+
+def relationship_match_cosine_symmetric(pred, gt, embeddings, threshold):
+    if pred[0] != gt[0] or pred[2] != gt[2]:
+        return False, 0.0
+
+    same_source = cosine_similarity(embeddings[pred[1]], embeddings[gt[1]])
+    same_target = cosine_similarity(embeddings[pred[3]], embeddings[gt[3]])
+    same_ok = same_source >= threshold and same_target >= threshold
+    same_score = min(same_source, same_target)
+
+    swap_source = cosine_similarity(embeddings[pred[1]], embeddings[gt[3]])
+    swap_target = cosine_similarity(embeddings[pred[3]], embeddings[gt[1]])
+    swap_ok = swap_source >= threshold and swap_target >= threshold
+    swap_score = min(swap_source, swap_target)
+
+    is_match = same_ok or swap_ok
+    best_score = max(same_score, swap_score)
+    return is_match, best_score

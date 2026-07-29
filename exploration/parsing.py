@@ -4,6 +4,7 @@ def parse_output(output_dict):
     outputs = output_dict["outputs"]
     run_notes = output_dict["run_notes"]
     prompt_version = output_dict["prompt_version"]
+    eval_version = output_dict["eval_version"]
 
     extractions, parse_failures = outputs_to_extractions(outputs)
 
@@ -16,7 +17,7 @@ def parse_output(output_dict):
         "parse_failures": parse_failures,
         "run_notes": run_notes,
         "prompt_version": prompt_version,
-        "parser_version": "v1"
+        "eval_version": eval_version
     }
 
 def outputs_to_extractions(outputs):

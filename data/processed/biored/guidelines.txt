@@ -1,0 +1,60 @@
+## Guideline of the entities
+
+### General rules
+- Annotate all the spans of all the six concept types.
+- The full text can be accessed to clarify the concept spans and identifiers.
+- The abbreviation and its long form should be annotated separately if possible. prostaglandin E2 (PGE2) in the text, “prostaglandin E2” and “PGE2” should be both annotated to chemicals with the same identifier (D015232).
+- Annotate both the full name and abbreviation in one entity, if the boundary of the entity covers both of them. For instance, annotate “Deoxyguanosine kinase (dGK) deficiency” entirely to a disease (PMID:19394258).
+- Annotate the composite entity spans (e.g., “MMP-1, -2”) entirely. The identifiers of the multiple concepts should
+be entered separated by ‘‘,” with no space (e.g., “4312,4313”).
+- Annotate any concept identifier span (e.g., “OMIM 307800” and “rs729302”).
+- Annotate the concept spans with misspelling (“HLRRC” in PMID:18366737).
+
+### Gene
+- The gene spans should be linked to NCBI Gene ID (https://www.ncbi.nlm.nih.gov/gene/). Specify the corresponding species and the identifiers to the gene spans.
+- Annotate the gene families including paralogs/orthologs (e.g., bone morphogenetic protein(bmp)), but DO NOT annotate the functional based families (e.g., tumor suppressor gene, protein kinase).
+- Following the previous rule, if at least one of the gene family members mentioned in the text, the identifiers of those members are assigned to the family name (e.g., in “Cytochrome P-450 genes (CYP1A1, CYP2A6, CYP2D6, and CYP2E1)”, Cytochrome P-450 genes should be assigned with NCBI Gene: 1543,1548,1565,1571). If no family member is in the text, the first gene reached in the gene family should be assigned (e.g., matrix metalloproteinases to NCBI Gene:4312(MMP1)).
+- In experimental studies, annotate the gene identifier corresponding to the organism/species that is the source of the
+gene (for example mouse gene transfected into human cells is annotated to record for mouse gene).
+- DO NOT annotate the genes, if they are named for cells and pathways.
+
+### Disease
+- The diseases refer to MEDIC which is a combination of MESH (https://meshb.nlm.nih.gov/search) and OMIM (https://omim.org/). We annotate the MESH identifier, if a disease has both the MESH and OMIM identifiers.
+- If no specific disease concept can be reached in MEDIC by the annotated span, we annotate the closest hypernym concept that logically describes the disease span(e.g., X-linked retinitis pigmentosa to D012174 (retinitis pigmentosa) in PMID:17935240). Otherwise, “-” is assigned to the mismatched diseases.
+- Annotate the diseased-related phenotypes but not other (e.g., short ear in PMID:17345627).
+- DO NOT annotate the high-level diseases (e.g., “genetic disorder”).
+Excludes:
+❏ Cis-acting disease (PMID:12442272)
+❏ genetic disorders (PMID:18046082)
+❏ familial disorder (PMID:20806042)
+❏ Annotate “drug addiction” to “disease”.
+❏ Annotate the symptoms to diseases.
+❏ DO NOT annotate overdose.
+❏ DO NOT annotate the mental status and phenotypes to diseases unless the term is exactly recorded in MEDIC. e.g., decline in sympathetic tone (PMID:19067809)
+❏ DO NOT annotate references to biological processes such as “tumorigenesis” or “cancerogenesis”.
+❏ Annotate minimum necessary text spans for a disease. For example, select “hypertension” instead of “sustained hypertension.”, unless the span covers the prefix or the suffix can exactly match a specific concept identifier (e.g., “chronic bronchitis” to D029481).
+
+### Chemical
+❏ Chemical spans should be linked to MESH (https://meshb.nlm.nih.gov/search). “-” is assigned to the mismatched chemicals.
+❏ Annotate the chemical abbreviation with the dose. For example “In addition, GABA content of mice hippocampus treated with GFC75 plus P400 showed an increase of 46.90% when compared with seized mice.”, 75 and 400 suffixes are the doses. In this case, we annotate GFC75 and P400 as chemical spans. (PMID:24911645).
+❏ Annotate the chemical resource for extracts, e.g., “ethanolic extract of Daucus carota seeds (DCE)” in PMID:16755009; “grape seed proanthocyanidin extract” in PMID:11334364.
+❏ DO NOT annotate antibodies to chemicals. (PMID:17595233) (PMID:20648600)
+❏ DO NOT annotate saline, placebo, water, and juice.
+❏ DO NOT annotate residue, free radicals.
+❏ DO NOT annotate staining chemical (e.g., hematoxylin in PMID:24442316)
+❏ DO NOT annotate vaccines.
+
+### Species
+❏ The species spans should be linked to NCBI Taxonomy ID (https://www.ncbi.nlm.nih.gov/taxonomy/)
+❏ DO NOT annotate beyond species rank (e.g., annotate homo sapiens but do not annotate mammalian which is a taxonomy class)
+
+### Variant
+❏ The annotation of the variants follows tmVar annotation guidelines, the variants should be linked to dbSNP (https://www.ncbi.nlm.nih.gov/snp) accession number (RS#) when possible. Otherwise, we annotate the variant components (e.g., wild type, location, and mutant) following the tmVar component format (e.g., V600E to “p|SUB|V|600|E”).
+❏ DO NOT annotate residue of the gene modification.
+❏ For those variants that cannot be normalized: In our observations on the variant recognition/normalization dataset, around 50-60% of the variants cannot be normalized to the specific concept identifiers in dbSNP. For those, we enumerate the components of the variants.
+
+### Normalized components of the curated variant types:
+
+#### Variant on DNA Sequence
+- Example(s):
+Normalized component or identifier
