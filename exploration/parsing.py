@@ -2,6 +2,8 @@ import json
 
 def parse_output(output_dict):
     outputs = output_dict["outputs"]
+    time_taken = output_dict["time_taken"]
+    raw_prompt = output_dict["raw_prompt"]
     run_notes = output_dict["run_notes"]
     prompt_version = output_dict["prompt_version"]
     eval_version = output_dict["eval_version"]
@@ -17,7 +19,10 @@ def parse_output(output_dict):
         "parse_failures": parse_failures,
         "run_notes": run_notes,
         "prompt_version": prompt_version,
-        "eval_version": eval_version
+        "eval_version": eval_version,
+        "time_taken": time_taken,
+        "raw_prompt": raw_prompt,
+        "outputs": outputs
     }
 
 def outputs_to_extractions(outputs):

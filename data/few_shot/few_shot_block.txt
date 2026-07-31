@@ -1,0 +1,264 @@
+## EXAMPLE 1:
+
+### Abstract:
+
+Massive urinary protein excretion has been observed after conversion from calcineurin inhibitors to mammalian target of rapamycin (mToR) inhibitors, especially sirolimus, in renal transplant recipients with chronic allograft nephropathy. Because proteinuria is a major predictive factor of poor transplantation outcome, many studies focused on this adverse event during the past years. Whether proteinuria was due to sirolimus or only a consequence of calcineurin inhibitors withdrawal remained unsolved until high range proteinuria has been observed during sirolimus therapy in islet transplantation and in patients who received sirolimus de novo. Podocyte injury and focal segmental glomerulosclerosis have been related to mToR inhibition in some patients, but the pathways underlying these lesions remain hypothetic. We discuss herein the possible mechanisms and the significance of mToR blockade-induced proteinuria.
+
+### Correct BioRED annotation:
+
+{
+  "entities": [
+    {
+      "text": "chronic allograft nephropathy",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "mToR",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "calcineurin inhibitors",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "glomerulosclerosis",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "proteinuria",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "sirolimus",
+      "type": "ChemicalEntity"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "sirolimus",
+      "relation": "Negative_Correlation",
+      "target": "chronic allograft nephropathy"
+    },
+    {
+      "source": "calcineurin inhibitors",
+      "relation": "Association",
+      "target": "chronic allograft nephropathy"
+    },
+    {
+      "source": "calcineurin inhibitors",
+      "relation": "Comparison",
+      "target": "sirolimus"
+    },
+    {
+      "source": "calcineurin inhibitors",
+      "relation": "Association",
+      "target": "proteinuria"
+    },
+    {
+      "source": "mToR",
+      "relation": "Association",
+      "target": "proteinuria"
+    },
+    {
+      "source": "glomerulosclerosis",
+      "relation": "Association",
+      "target": "mToR"
+    },
+    {
+      "source": "proteinuria",
+      "relation": "Positive_Correlation",
+      "target": "sirolimus"
+    }
+  ]
+}
+
+## EXAMPLE 2:
+
+### Abstract:
+
+Current knowledge of genetic alterations in glioblastomas is based largely on genetic analyses of tumors from mainly caucasian patients in the United States and Europe. In the present study, screening for several key genetic alterations was performed on 77 primary (de novo) glioblastomas in Japanese patients. SSCP followed by DNA sequencing revealed TP53 mutations in 16 of 73 (22%) glioblastomas and PTEN mutations in 13 of 63 (21%) cases analyzed. Polymerase chain reaction (PCR) showed EGFR amplification in 25 of 77 (32%) cases and p16 homozygous deletion in 32 of 77 (42%) cases. Quantitative microsatellite analysis revealed LOH 10q in 41 of 59 (69%) glioblastomas. The frequencies of these genetic alterations were similar to those reported for primary glioblastomas at the population level in Switzerland. As previously observed for glioblastomas in Europe, there was a positive association between EGFR amplification and p16 deletion (p=0.009), whereas there was an inverse association between TP53 mutations and p16 deletion (p=0.049) in glioblastomas in Japan. Multivariate analyses showed that radiotherapy was significantly predictive for longer survival of glioblastoma patients (p=0.002). SSCP followed by DNA sequencing of the kinase domain (exons 18-21) of the EGFR gene revealed mutations in 2 ou of 69 (3%) glioblastomas in Japan and in 4 of 81 (5%) glioblastomas in Switzerland. The allele frequencies of polymorphisms at codon 787 CAG/CAA (Gln/Gln) in glioblastomas in Japan were G/G (82.4%), G/A (10.8%), A/A (6.8%), corresponding to G 0.878 versus A 0.122, significantly different from those in glioblastomas in Switzerland: G/G (27.2%), G/A (28.4%), A/A (44.4%), corresponding to G 0.414 versus A 0.586 (p < 0.0001). These results suggest that primary glioblastomas in Japan show genetic alterations similar to those in Switzerland, suggesting a similar molecular basis in caucasians and Asians, despite different genetic backgrounds, including different status of a polymorphism in the EGFR gene.
+
+### Correct BioRED annotation:
+
+{
+  "entities": [
+    {
+      "text": "EGFR",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "codon 787 CAG/CAA",
+      "type": "SequenceVariant"
+    },
+    {
+      "text": "p16",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "Gln/Gln",
+      "type": "SequenceVariant"
+    },
+    {
+      "text": "glioblastomas",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "TP53",
+      "type": "GeneOrGeneProduct"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Gln/Gln",
+      "relation": "Association",
+      "target": "glioblastomas"
+    },
+    {
+      "source": "codon 787 CAG/CAA",
+      "relation": "Association",
+      "target": "glioblastomas"
+    },
+    {
+      "source": "TP53",
+      "relation": "Positive_Correlation",
+      "target": "p16"
+    },
+    {
+      "source": "TP53",
+      "relation": "Association",
+      "target": "glioblastomas"
+    },
+    {
+      "source": "EGFR",
+      "relation": "Negative_Correlation",
+      "target": "p16"
+    },
+    {
+      "source": "glioblastomas",
+      "relation": "Association",
+      "target": "p16"
+    },
+    {
+      "source": "glioblastomas",
+      "relation": "Association",
+      "target": "EGFR"
+    }
+  ]
+}
+
+## EXAMPLE 3:
+
+### Abstract:
+
+Cyclooxygenase-2 activity is required for the development of lithium-induced polyuria. However, the involvement of a specific, terminal prostaglandin (PG) isomerase has not been evaluated. The present study was undertaken to assess lithium-induced polyuria in mice deficient in microsomal prostaglandin E synthase-1 (mPGES-1). A 2-wk administration of LiCl (4 mmol.kg(-1).day(-1) ip) in mPGES-1 +/+ mice led to a marked polyuria with hyposmotic urine. This was associated with elevated renal mPGES-1 protein expression and increased urine PGE(2) excretion. In contrast, mPGES-1 -/- mice were largely resistant to lithium-induced polyuria and a urine concentrating defect, accompanied by nearly complete blockade of high urine PGE(2) and cAMP output. Immunoblotting, immunohistochemistry, and quantitative (q) RT-PCR consistently detected a significant decrease in aquaporin-2 (AQP2) protein expression in both the renal cortex and medulla of lithium-treated +/+ mice. This decrease was significantly attenuated in the -/- mice. qRT-PCR detected similar patterns of changes in AQP2 mRNA in the medulla but not in the cortex. Similarly, the total protein abundance of the Na-K-2Cl cotransporter (NKCC2) in the medulla but not in the cortex of the +/+ mice was significantly reduced by lithium treatment. In contrast, the dowregulation of renal medullary NKCC2 expression was significantly attenuated in the -/- mice. We conclude that mPGES-1-derived PGE(2) mediates lithium-induced polyuria likely via inhibition of AQP2 and NKCC2 expression.
+
+### Correct BioRED annotation:
+
+{
+  "entities": [
+    {
+      "text": "polyuria",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    {
+      "text": "Cyclooxygenase-2",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "mPGES-1",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "aquaporin-2",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "PGE(2)",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "Na-K-2Cl cotransporter",
+      "type": "GeneOrGeneProduct"
+    },
+    {
+      "text": "LiCl",
+      "type": "ChemicalEntity"
+    },
+    {
+      "text": "lithium",
+      "type": "ChemicalEntity"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Cyclooxygenase-2",
+      "relation": "Association",
+      "target": "polyuria"
+    },
+    {
+      "source": "aquaporin-2",
+      "relation": "Negative_Correlation",
+      "target": "lithium"
+    },
+    {
+      "source": "PGE(2)",
+      "relation": "Negative_Correlation",
+      "target": "Na-K-2Cl cotransporter"
+    },
+    {
+      "source": "PGE(2)",
+      "relation": "Negative_Correlation",
+      "target": "aquaporin-2"
+    },
+    {
+      "source": "PGE(2)",
+      "relation": "Association",
+      "target": "polyuria"
+    },
+    {
+      "source": "PGE(2)",
+      "relation": "Association",
+      "target": "lithium"
+    },
+    {
+      "source": "LiCl",
+      "relation": "Positive_Correlation",
+      "target": "PGE(2)"
+    },
+    {
+      "source": "LiCl",
+      "relation": "Positive_Correlation",
+      "target": "polyuria"
+    },
+    {
+      "source": "LiCl",
+      "relation": "Positive_Correlation",
+      "target": "mPGES-1"
+    },
+    {
+      "source": "lithium",
+      "relation": "Negative_Correlation",
+      "target": "Na-K-2Cl cotransporter"
+    },
+    {
+      "source": "lithium",
+      "relation": "Positive_Correlation",
+      "target": "polyuria"
+    },
+    {
+      "source": "mPGES-1",
+      "relation": "Association",
+      "target": "PGE(2)"
+    },
+    {
+      "source": "mPGES-1",
+      "relation": "Positive_Correlation",
+      "target": "polyuria"
+    },
+    {
+      "source": "mPGES-1",
+      "relation": "Positive_Correlation",
+      "target": "lithium"
+    }
+  ]
+}

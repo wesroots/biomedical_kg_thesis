@@ -100,8 +100,7 @@ def evaluation_v4(run_dict, ground_truths):
 
     return {
         "entity": {"strict": entity_metrics_strict, "relaxed": entity_metrics_relaxed, "cosine": entity_metrics_cosine},
-        "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed, "cosine": relationship_metrics_cosine},
-        "eval_version": "v4"
+        "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed, "cosine": relationship_metrics_cosine}
     }
 
 def get_embedding_model():

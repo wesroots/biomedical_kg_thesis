@@ -5,14 +5,9 @@ import re
 
 from datetime import date
 
-def export_run(run_dict, eval_results, time_taken, eval_version, prompt_version, dataset="biored_train", prompt=None, run_dir="../prompt_runs"):
-
+def export_run(run_dict, eval_results, dataset="biored_train", run_dir="../prompt_runs"):
     """
     Save the results of an extraction pipeline run as a JSON log.
-
-    The exported run log includes metadata about the run, evaluation metrics,
-    pipeline configuration, prompt text, and all extracted entities and
-    relationships. Each run is assigned a unique sequential run ID.
     """
 
     run_id = get_next_run_id(run_dir)
@@ -20,7 +15,7 @@ def export_run(run_dict, eval_results, time_taken, eval_version, prompt_version,
     run_log = {
         "run_id": run_id,
         "date": str(date.today()),
-        "time_taken": time_taken,
+        "time_taken": run_dict["time_taken"],
         "config": {
             "dataset": dataset,
             "num_abstracts": len(run_dict["extractions"]),
@@ -29,7 +24,8 @@ def export_run(run_dict, eval_results, time_taken, eval_version, prompt_version,
         },
         "metrics": eval_results,
         "notes": run_dict["run_notes"],
-        "prompt": prompt,
+        "prompt": run_dict["raw_prompt"],
+        "outputs": run_dict["outputs"],
         "extractions": {
             "entities": list(run_dict["predictions_entities"]),
             "relations": list(run_dict["predictions_relationships"])
