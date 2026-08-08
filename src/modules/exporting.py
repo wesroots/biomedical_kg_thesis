@@ -21,9 +21,9 @@ def export_run(epi_dict, eval_results, dataset, epi_dir, errors=None):
             "prompt_version": epi_dict["prompt_version"],
             "eval_version": epi_dict["eval_version"]
         },
+        "notes": epi_dict["epi_notes"],
         "metrics": eval_results,
         "errors": errors,
-        "notes": epi_dict["epi_notes"],
         "prompt": epi_dict["raw_prompt"],
         "outputs": epi_dict["outputs"],
         "extractions": {

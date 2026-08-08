@@ -8,6 +8,7 @@
     "prompt_version": "v1",
     "eval_version": "v1"
   },
+  "notes": "Baseline extraction benchmark - does not follow BioRED annotation schema.",
   "metrics": {
     "entity": {
       "strict": {
@@ -13220,7 +13221,6 @@
       }
     }
   },
-  "notes": "Baseline extraction benchmark - does not follow BioRED annotation schema.",
   "prompt": "You are a biomedical information extraction system.\n\nExtract all biomedical entities and relationships from the following abstract.\n\nReturn ONLY valid JSON.\n\nSchema:\n\n{\n\t\"entities\": [\n\t\t{\n\t\t\t\"text\": \"entity text\",\n\t\t\t\"type\": \"entity type\"\n\t\t}\n\t],\n\t\"relationships\": [\n\t\t{\n\t\t\t\"source\": \"entity 1\",\n\t\t\t\"relation\": \"relation type\",\n\t\t\t\"target\": \"entity 2\"\n\t\t}\n\t]\n}\n\nAbstract:\n\n{abstract}",
   "outputs": [
     {
