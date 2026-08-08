@@ -1,0 +1,32 @@
+{
+  "epi_001": {
+    "prompt_version": "v1",
+    "eval_version": "v1",
+    "notes": "Baseline extraction benchmark - does not follow BioRED annotation schema."
+  },
+  "epi_002": {
+    "prompt_version": "v2",
+    "eval_version": "v1",
+    "notes": "Implemented BioRED extraction guidelines and entity and relation type rules."
+  },
+  "epi_003": {
+    "prompt_version": "v2",
+    "eval_version": "v2",
+    "notes": "Introduces relaxed matches in addition to strict."
+  },
+  "epi_004": {
+    "prompt_version": "v3",
+    "eval_version": "v2",
+    "notes": "Implements few-shot prompting."
+  },
+  "epi_005": {
+    "prompt_version": "v3",
+    "eval_version": "v3",
+    "notes": "Adds cosine similarity to performance eval."
+  },
+  "epi_006": {
+    "prompt_version": "v3",
+    "eval_version": "v4",
+    "notes": "Relationship matching now order-invariant across strict/relaxed/cosine."
+  }
+}

@@ -45,8 +45,6 @@
 >- Exact spans are an issue
 >	- Model often chooses abbreviations
 >	- Suggest same as above?
->- 
-
 
 ### Run 005
 - **Prompt v3**

@@ -80,6 +80,17 @@
 			"color":"#3769cd"
 		},
 		{
+			"id":"83a566d1f24340b4",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-900,
+			"y":-160,
+			"width":340,
+			"height":200,
+			"color":"#3769cd"
+		},
+		{
 			"id":"7c6542db0843da54",
 			"type":"text",
 			"text":"Schema following BioRED annotations MUST be passed to LLM\n- This allows P/R/F1 to be evaluated against BioRED GT in training & contemporary manual annotations in final frozen pipeline",
@@ -91,17 +102,6 @@
 			"color":"1"
 		},
 		{"id":"a1038be4923a189e","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Run Refinement Notes.md","x":-500,"y":-420,"width":340,"height":200,"color":"#ffffff"},
-		{
-			"id":"83a566d1f24340b4",
-			"type":"text",
-			"text":"",
-			"styleAttributes":{},
-			"x":-900,
-			"y":-160,
-			"width":340,
-			"height":200,
-			"color":"#3769cd"
-		},
 		{"id":"60564b86a551a986","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Embedding Choice.md","x":-100,"y":-160,"width":340,"height":200,"color":"#ffffff"},
 		{"id":"861dc19db08a3785","type":"file","file":"MAST7865 - Data Science Project/biomedical_kg_thesis/notes/methodology_map/Run Version Control Approach.md","x":-500,"y":-160,"width":340,"height":200,"color":"#fafafa"}
 	],
@@ -220,7 +220,7 @@
 		},
 		{
 			"id":"6e6baea606f7a343",
-			"styleAttributes":{"pathfindingMethod":"a-star"},
+			"styleAttributes":{"pathfindingMethod":"a-star","path":"long-dashed"},
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"60564b86a551a986",
