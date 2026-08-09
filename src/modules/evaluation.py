@@ -2,13 +2,13 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 
-def evaluation_v1(run_dict, ground_truths):
+def evaluation_v1(epi_dict, ground_truths):
 
     ground_truths_entities = ground_truths["entities"]
     ground_truths_relations = ground_truths["relations"]
 
-    predictions_entities = run_dict["predictions_entities"]
-    predictions_relationships = run_dict["predictions_relationships"]
+    predictions_entities = epi_dict["predictions_entities"]
+    predictions_relationships = epi_dict["predictions_relationships"]
 
     entity_metrics_strict = compute_prf_strict(predictions_entities, ground_truths_entities)
     relationship_metrics_strict = compute_prf_strict(predictions_relationships, ground_truths_relations)
@@ -19,13 +19,13 @@ def evaluation_v1(run_dict, ground_truths):
     }
 
 
-def evaluation_v2(run_dict, ground_truths):
+def evaluation_v2(epi_dict, ground_truths):
 
     ground_truths_entities = ground_truths["entities"]
     ground_truths_relations = ground_truths["relations"]
 
-    predictions_entities = run_dict["predictions_entities"]
-    predictions_relationships = run_dict["predictions_relationships"]
+    predictions_entities = epi_dict["predictions_entities"]
+    predictions_relationships = epi_dict["predictions_relationships"]
 
     entity_metrics_strict = compute_prf_strict(predictions_entities, ground_truths_entities)
     relationship_metrics_strict = compute_prf_strict(predictions_relationships, ground_truths_relations)
@@ -43,13 +43,13 @@ _MODEL = None
 COSINE_THRESHOLD = 0.85
 
 
-def evaluation_v3(run_dict, ground_truths):
+def evaluation_v3(epi_dict, ground_truths):
 
     ground_truths_entities = ground_truths["entities"]
     ground_truths_relationships = ground_truths["relations"]
 
-    predictions_entities = run_dict["predictions_entities"]
-    predictions_relationships = run_dict["predictions_relationships"]
+    predictions_entities = epi_dict["predictions_entities"]
+    predictions_relationships = epi_dict["predictions_relationships"]
 
     entity_metrics_strict = compute_prf_strict(predictions_entities, ground_truths_entities)
     relationship_metrics_strict = compute_prf_strict(predictions_relationships, ground_truths_relationships)
@@ -73,13 +73,13 @@ def evaluation_v3(run_dict, ground_truths):
     }
 
 
-def evaluation_v4(run_dict, ground_truths):
+def evaluation_v4(epi_dict, ground_truths):
 
     ground_truths_entities = ground_truths["entities"]
     ground_truths_relationships = ground_truths["relations"]
 
-    predictions_entities = run_dict["predictions_entities"]
-    predictions_relationships = run_dict["predictions_relationships"]
+    predictions_entities = epi_dict["predictions_entities"]
+    predictions_relationships = epi_dict["predictions_relationships"]
 
     entity_metrics_strict = compute_prf_strict(predictions_entities, ground_truths_entities)
     entity_metrics_relaxed = compute_prf_relaxed(predictions_entities, ground_truths_entities, entity_match)
@@ -88,7 +88,7 @@ def evaluation_v4(run_dict, ground_truths):
         predictions_relationships, ground_truths_relationships, relationship_match_strict_symmetric
     )
     relationship_metrics_relaxed = compute_prf_relaxed(
-        predictions_relationships, ground_truths_relationships, relationship_match_symmetric
+        predictions_relationships, ground_truths_relationships, relationship_match_relaxed_symmetric
     )
 
     entity_embeddings = build_embedding_lookup(predictions_entities, ground_truths_entities, text_indices=[1])
@@ -269,7 +269,7 @@ def relationship_match_strict_symmetric(pred, gt):
     return same_order or swapped_order
 
 
-def relationship_match_symmetric(pred, gt):
+def relationship_match_relaxed_symmetric(pred, gt):
     if pred[0] != gt[0] or pred[2] != gt[2]:
         return False
     same_order = span_matches(pred[1], gt[1]) and span_matches(pred[3], gt[3])

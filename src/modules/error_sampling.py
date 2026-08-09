@@ -1,6 +1,7 @@
 import json
 import os
 import random
+import pandas as pd
 
 from evaluation import (
     COSINE_THRESHOLD,
@@ -131,3 +132,32 @@ def get_errors(
 
     return errors, approach
 
+
+def error_summary(epi_log) -> pd.DataFrame:
+
+    print(f"`{epi_log["epi_id"]}` Error Summary:")
+
+    metrics = epi_log["metrics"]
+    m_labels = ["Precision", "Recall", "F1"]
+    m_approaches = ["cosine", "relaxed", "strict"]
+
+    for appr in m_approaches:
+        if appr in metrics["entity"]:
+            approach = appr
+            break
+
+    entity_precision = round(metrics["entity"][approach]["precision"], 3)
+    entity_recall = round(metrics["entity"][approach]["recall"], 3)
+    entity_f1 = round(metrics["entity"][approach]["f1"], 3)
+
+    relation_precision = round(metrics["relation"][approach]["precision"], 3)
+    relation_recall = round(metrics["relation"][approach]["recall"], 3)
+    relation_f1 = round(metrics["relation"][approach]["f1"], 3)
+
+    summary = pd.DataFrame({
+        "Metric": m_labels,
+        "Entity": [entity_precision, entity_recall, entity_f1],
+        "Relation": [relation_precision, relation_recall, relation_f1]
+    })
+
+    return summary.set_index("Metric").T
