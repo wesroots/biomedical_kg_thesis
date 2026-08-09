@@ -2,7 +2,7 @@ DATA_CONFIG = {
     "train": {
         "paths": {
             "abstracts": "../../data/processed/biored/br_train.csv",
-            "ground_truths": "../../data/processed/biored/br_train_entity_relations.csv",
+            "ground_truths": "../../data/processed/biored/br_train_gt.csv",
             "epis": "../../data/results/epis/biored_train"
         },
         "sample_size": 35,
@@ -10,7 +10,7 @@ DATA_CONFIG = {
     "dev": {
         "paths": {
             "abstracts": "../../data/processed/biored/br_dev.csv",
-            "ground_truths": "../../data/processed/biored/br_dev_entity_relations.csv",
+            "ground_truths": "../../data/processed/biored/br_dev_gt.csv",
             "epi_dir": "../../data/results/epis/biored_dev"
         },
         "sample_size": None,
@@ -18,7 +18,7 @@ DATA_CONFIG = {
     "test": {
         "paths": {
             "abstracts": "../../data/processed/biored/br_test.csv",
-            "ground_truths": "../../data/processed/biored/br_test_entity_relations.csv",
+            "ground_truths": "../../data/processed/biored/br_test_gt.csv",
             "epi_dir": "../../data/results/epis/biored_test"
         },
         "sample_size": None,
