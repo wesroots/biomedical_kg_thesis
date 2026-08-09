@@ -2,6 +2,7 @@ import json
 import os
 import random
 import pandas as pd
+from IPython.display import display
 
 from evaluation import (
     COSINE_THRESHOLD,
@@ -131,6 +132,17 @@ def get_errors(
     }
 
     return errors, approach
+
+
+ERROR_SAMPLE_SIZE = 20
+
+def sample_errors(errors, sample_size=ERROR_SAMPLE_SIZE) -> None:
+
+    if ERROR_SAMPLE_SIZE < len(errors):
+        print(f"Sample size: {ERROR_SAMPLE_SIZE}")
+        display(random.sample(errors, ERROR_SAMPLE_SIZE))
+    else:
+        display(errors)
 
 
 def error_summary(epi_log) -> pd.DataFrame:
