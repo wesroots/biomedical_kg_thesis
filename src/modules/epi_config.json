@@ -28,5 +28,10 @@
     "prompt_version": "v3",
     "eval_version": "v4",
     "notes": "Relationship matching now order-invariant across strict/relaxed/cosine."
+  },
+  "epi_00x": {
+    "prompt_version": "",
+    "eval_version": "",
+    "notes": ""
   }
 }
