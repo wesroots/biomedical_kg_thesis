@@ -33,5 +33,10 @@
     "prompt_version": "v4",
     "eval_version": "v4",
     "notes": "Refined prompt to avoid use of background biomedical knowledge, co-occurence rules & included explicit formatting."
+  },
+  "epi_008": {
+    "prompt_version": "v5",
+    "eval_version": "v4",
+    "notes": "Refined prompt for explicit prevention of unsupported specific relationship inference."
   }
 }

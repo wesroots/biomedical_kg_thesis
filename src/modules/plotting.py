@@ -78,7 +78,7 @@ def plot_dist_comparison(epi_log, ground_truths, save=False) -> None:
 
     plt.tight_layout()
     if save:
-        save_path = f"../../img/{epi_log["epi_id"]}_gt_ext_dist"
+        save_path = f"../../img/extraction_sampling/{epi_log["epi_id"]}_gt_ext_dist.png"
         fig.savefig(save_path, dpi=100)
         print(f"Saved figure to `{save_path}` successfully.")
 
