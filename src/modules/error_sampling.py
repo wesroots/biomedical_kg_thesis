@@ -139,13 +139,13 @@ ERROR_SAMPLE_SIZE = 20
 def sample_errors(
         errors,
         sample_size=ERROR_SAMPLE_SIZE
-    ) -> None:
+    ):
 
     if sample_size < len(errors):
         print(f"Sample size: {sample_size}")
-        display(random.sample(errors, sample_size))
+        return random.sample(errors, sample_size)
     else:
-        display(errors)
+        return errors
 
 def error_summary(epi_log) -> pd.DataFrame:
 

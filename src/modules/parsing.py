@@ -27,7 +27,7 @@ def parse_output(output_dict):
         "epi_id": epi_id
     }
 
-def outputs_to_extractions(outputs):
+def outputs_to_extractions(outputs, confirmation=True) -> tuple[list, int]:
     extractions = []
     parse_failures = 0
 
@@ -44,7 +44,8 @@ def outputs_to_extractions(outputs):
             "relationships": parsed.get("relationships", [])
         })
 
-    print(f"Parsed {len(extractions)} extractions, {parse_failures} failed to parse as JSON")
+    if confirmation:
+        print(f"Parsed {len(extractions)} extractions, {parse_failures} failed to parse as JSON")
 
     return extractions, parse_failures
 
