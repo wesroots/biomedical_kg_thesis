@@ -1,0 +1,1002 @@
+[
+    {
+        "error_type": "fp",
+        "error": [
+            24309294,
+            "cck-8",
+            "Bind",
+            "cck2 receptor"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19918264,
+            "fgfr4",
+            "Association",
+            "single nucleotide polymorphism at position 388"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "slco1b1*5",
+            "Negative_Correlation",
+            "pravastatin"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28512644,
+            "ccl5",
+            "Association",
+            "t2734c"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            17192049,
+            "a to g transition in exon7",
+            "Association",
+            "prostate cancer"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20510337,
+            "cisplatin",
+            "Positive_Correlation",
+            "platinum ion"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            24477591,
+            "ros",
+            "Positive_Correlation",
+            "cad"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16574712,
+            "3,4-methylenedioxymethamphetamine",
+            "Positive_Correlation",
+            "working memory deficits"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16574712,
+            "ecstasy",
+            "Positive_Correlation",
+            "social and emotional judgement processes"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19108278,
+            "(+)-propranolol",
+            "Negative_Correlation",
+            "lactate"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19521089,
+            "slc6a4",
+            "Association",
+            "5-httlpr"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "oatp1b1",
+            "Association",
+            "estrone-3-sulfate"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20510337,
+            "cisplatin",
+            "Positive_Correlation",
+            "acute renal injury"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19521089,
+            "slc6a4",
+            "Association",
+            "a-->g"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            24309294,
+            "l-364,718",
+            "Bind",
+            "cck1 receptor"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16120104,
+            "c111g",
+            "Association",
+            "hper2"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            21163864,
+            "agt",
+            "Association",
+            "shcm"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            24914936,
+            "pv/+",
+            "Positive_Correlation",
+            "short stature"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15099351,
+            "d374y",
+            "Association",
+            "hypercholesterolemia"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16574712,
+            "3,4-methylenedioxymethamphetamine",
+            "Positive_Correlation",
+            "social and emotional judgement processes"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16574712,
+            "3,4-methylenedioxymethamphetamine",
+            "Positive_Correlation",
+            "set shifting"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "slco1b1*5",
+            "Negative_Correlation",
+            "estradiol-17beta-d-glucuronide"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            17192049,
+            "ile/val genotype (w2/m2)",
+            "Negative_Correlation",
+            "prostate cancer"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28428256,
+            "lps",
+            "Positive_Correlation",
+            "barrier dysfunction"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28348168,
+            "fgfr2",
+            "Positive_Correlation",
+            "sox2"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19319147,
+            "human prothrombin complex concentrate",
+            "Negative_Correlation",
+            "warfarin-associated intracerebral hemorrhage"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            17192049,
+            "w1/m1 genotype",
+            "Positive_Correlation",
+            "prostate cancer"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19108278,
+            "(+)-propranolol",
+            "Negative_Correlation",
+            "adrenaline"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19108278,
+            "(-)-propranolol",
+            "Negative_Correlation",
+            "glucose"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19108278,
+            "(+)-propranolol",
+            "Comparison",
+            "(-)-propranolol"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            18768591,
+            "sgk1",
+            "Negative_Correlation",
+            "uremia"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            21163864,
+            "t704c",
+            "Association",
+            "shcm"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19521089,
+            "slc6a4",
+            "Association",
+            "insertion/deletion (long allele-l/short allele-s)"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "oatp1b1",
+            "Association",
+            "cerivastatin"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            17192049,
+            "cyp1a1",
+            "Association",
+            "ile462val"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "slco1b1*15",
+            "Negative_Correlation",
+            "pravastatin"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            24341598,
+            "isotonic sodium chloride",
+            "Comparison",
+            "diltiazem"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            24914936,
+            "t4",
+            "Negative_Correlation",
+            "tsh"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            17192049,
+            "ile462val",
+            "Negative_Correlation",
+            "prostate cancer"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16574712,
+            "3,4-methylenedioxymethamphetamine",
+            "Positive_Correlation",
+            "memory updating"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            18768591,
+            "sgk1",
+            "Positive_Correlation",
+            "renal fibrosis"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19521089,
+            "pd",
+            "Association",
+            "muscular rigidity"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            18827003,
+            "hgr",
+            "Association",
+            "metabolic syndrome"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28411266,
+            "p.a1369s",
+            "Positive_Correlation",
+            "bmi"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28428256,
+            "pga2",
+            "Positive_Correlation",
+            "rap1/rac1 gtpase"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            21771880,
+            "snps",
+            "Association",
+            "obesity"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20431083,
+            "warfarin",
+            "Positive_Correlation",
+            "mb"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16288197,
+            "q48h",
+            "Association",
+            "glaucoma"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19918264,
+            "fgfr4",
+            "Association",
+            "arggly genotype"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20431083,
+            "antiplatelet",
+            "Positive_Correlation",
+            "mb"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            16200390,
+            "5-hydroxytryptamine",
+            "Positive_Correlation",
+            "migraine"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18808529,
+            "dystrophin",
+            "Positive_Correlation",
+            "beta1-integrin"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24914936,
+            "developmental delay",
+            "Negative_Correlation",
+            "thyroxine"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            16120104,
+            "111g",
+            "Positive_Correlation",
+            "advanced sleep phase syndrome"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24914936,
+            "thyroid hormone receptor a",
+            "Association",
+            "short stature"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28512644,
+            "g7958",
+            "Association",
+            "erysipelas"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24743235,
+            "csf-1",
+            "Positive_Correlation",
+            "c-fos"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            19108278,
+            "isoprenaline",
+            "Positive_Correlation",
+            "glucose"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24309294,
+            "l-365,260",
+            "Negative_Correlation",
+            "cholecystokinin-octapeptide"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28411266,
+            "sulfonylurea receptor",
+            "Association",
+            "coronary heart disease"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18768591,
+            "serum- and glucocorticoid-inducible kinase 1",
+            "Association",
+            "volume retention"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28512644,
+            "g7958a",
+            "Association",
+            "erysipelas"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24477591,
+            "reactive oxygen species",
+            "Association",
+            "coronary artery disease"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            20683499,
+            "crocin",
+            "Negative_Correlation",
+            "neurodegenerative diseases"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28512644,
+            "pdgf-bb",
+            "Association",
+            "erysipelas"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28411266,
+            "insulin",
+            "Positive_Correlation",
+            "sulfonylurea"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            29222418,
+            "heb",
+            "Association",
+            "il-17"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18768591,
+            "weight gain",
+            "Association",
+            "serum- and glucocorticoid-inducible kinase 1"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24477591,
+            "overweight",
+            "Association",
+            "cyba"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            15099351,
+            "pcsk9",
+            "Association",
+            "cholesterol"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            15686794,
+            "antiarrhythmic drug",
+            "Negative_Correlation",
+            "atrial fibrillation"
+        ],
+        "category": "Duplicate/coreference"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28348168,
+            "fgfr2",
+            "Association",
+            "sox2"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            16288197,
+            "congenital microcoria",
+            "Association",
+            "mcor"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            29222418,
+            "vg4",
+            "Association",
+            "ifng"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24341598,
+            "diltiazem",
+            "Negative_Correlation",
+            "nephropathy"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            25305591,
+            "pituitary adenylyl cyclase-activating polypeptide",
+            "Association",
+            "experimental autoimmune encephalomyelitis"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            15099351,
+            "n157k",
+            "Positive_Correlation",
+            "autosomal dominant hypercholesterolemia"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            16288197,
+            "optineurin",
+            "Association",
+            "glaucoma"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            19108278,
+            "isoprenaline",
+            "Positive_Correlation",
+            "lactate"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28428256,
+            "acute lung injury",
+            "Association",
+            "thrombin receptor"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            15099351,
+            "autosomal dominant hypercholesterolemia",
+            "Association",
+            "pcsk9"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24309294,
+            "cholecystokinin-octapeptide",
+            "Association",
+            "cck2 receptor"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28348168,
+            "degenerative disease",
+            "Association",
+            "fgfr2"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18827003,
+            "glucocorticoid receptor",
+            "Association",
+            "glucocorticoid receptor-interacting protein 1"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            15970799,
+            "simvastatin",
+            "Association",
+            "c1007g"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18808529,
+            "oxygen",
+            "Association",
+            "hypotension"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            20510337,
+            "coenzyme q10",
+            "Negative_Correlation",
+            "superoxide dismutase"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28512644,
+            "il-2ralpha",
+            "Association",
+            "erysipelas"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18827003,
+            "glucocorticoid",
+            "Association",
+            "cortisol"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24309294,
+            "cck1 receptor",
+            "Negative_Correlation",
+            "l-364,718"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28411266,
+            "sulfonylurea receptor",
+            "Association",
+            "type 2 diabetes"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24743235,
+            "csf-1",
+            "Association",
+            "il-3"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24309294,
+            "morphine",
+            "Association",
+            "cck2 receptor"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            18768591,
+            "doxorubicin",
+            "Positive_Correlation",
+            "lipidemia"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24914936,
+            "thra",
+            "Association",
+            "intellectual deficit"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            15970799,
+            "cerivastatin",
+            "Association",
+            "c1007g"
+        ],
+        "category": "Evaluation artefact"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            19319147,
+            "warfarin",
+            "Association",
+            "intracerebral hemorrhage"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            28512644,
+            "ccl4",
+            "Association",
+            "erysipelas"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            20431083,
+            "antithrombotic drug",
+            "Association",
+            "cerebral microbleeds"
+        ],
+        "category": "Missing relation"
+    },
+    {
+        "error_type": "fn",
+        "error": [
+            24914936,
+            "thra",
+            "Association",
+            "constipation"
+        ],
+        "category": "Missing relation"
+    }
+]
