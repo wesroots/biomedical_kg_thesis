@@ -3,7 +3,7 @@ DATA_CONFIG = {
         "paths": {
             "abstracts": "../../data/processed/biored/br_train.csv",
             "ground_truths": "../../data/processed/biored/br_train_gt.csv",
-            "epis": "../../data/results/epis/biored_train"
+            "epi_dir": "../../data/results/epis/biored_train"
         },
         "sample_size": 35,
     },

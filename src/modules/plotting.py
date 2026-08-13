@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from parsing import outputs_to_extractions, extractions_to_tuples
@@ -77,9 +79,13 @@ def plot_dist_comparison(epi_log, ground_truths, save=False) -> None:
     axes[1].get_legend().remove()
 
     plt.tight_layout()
+
     if save:
-        save_path = f"../../img/extraction_sampling/{epi_log["epi_id"]}_gt_ext_dist.png"
-        fig.savefig(save_path, dpi=100)
+        save_path = f"../../img/extraction_distribution/{epi_log["config"]["dataset"]}"
+
+        os.makedirs(save_path, exist_ok=True)
+
+        fig.savefig(f"{save_path}/{epi_log["epi_id"]}_gt_ext_dist.png", dpi=100)
         print(f"Saved figure to `{save_path}` successfully.")
 
 def format_axes(ax, label):

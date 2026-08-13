@@ -38,5 +38,20 @@
     "prompt_version": "v5",
     "eval_version": "v4",
     "notes": "Refined prompt for explicit prevention of unsupported specific relationship inference."
+  },
+  "epi_009": {
+    "prompt_version": "v6",
+    "eval_version": "v4",
+    "notes": "Stricter relation evidence requirements to reduce over-extraction."
+  },
+  "epi_010": {
+    "prompt_version": "v7",
+    "eval_version": "v4",
+    "notes": "Precision-focused conservative extraction to reduce over-extraction."
+  },
+  "epi_011": {
+    "prompt_version": "v8",
+    "eval_version": "v4",
+    "notes": "Targeted suppression of residual relation over-extraction through entity-pair evidence constraints."
   }
 }

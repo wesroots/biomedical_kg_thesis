@@ -1,9 +1,8 @@
 from openai import OpenAI
 import os
 
-def create_client():
+def create_client(timeout=60):
 
-    timeout = 60
     max_retries = 0
 
     print(
