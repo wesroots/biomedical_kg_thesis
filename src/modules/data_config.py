@@ -1,5 +1,6 @@
 DATA_CONFIG = {
     "train": {
+        "name": "biored_train",
         "paths": {
             "abstracts": "../../data/processed/biored/br_train.csv",
             "ground_truths": "../../data/processed/biored/br_train_gt.csv",
@@ -8,6 +9,7 @@ DATA_CONFIG = {
         "sample_size": 35,
     },
     "dev": {
+        "name": "biored_dev",
         "paths": {
             "abstracts": "../../data/processed/biored/br_dev.csv",
             "ground_truths": "../../data/processed/biored/br_dev_gt.csv",
@@ -16,6 +18,7 @@ DATA_CONFIG = {
         "sample_size": None,
     },
     "test": {
+        "name": "biored_test",
         "paths": {
             "abstracts": "../../data/processed/biored/br_test.csv",
             "ground_truths": "../../data/processed/biored/br_test_gt.csv",
@@ -24,6 +27,7 @@ DATA_CONFIG = {
         "sample_size": None,
     },
     "contemporary": {
+        "name": "contemporary",
         "paths": {
             "abstracts": "../../data/processed/contemporary/contemporary_corpus.csv",
             "ground_truths": "../../data/processed/contemporary/[NULL].csv", # <--- NEEDS FIXING

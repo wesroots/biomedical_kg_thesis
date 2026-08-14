@@ -1,0 +1,242 @@
+[
+    {
+        "error_type": "fp",
+        "error": [
+            17192049,
+            "a to g transition in exon7",
+            "Association",
+            "cyp1a1"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16120104,
+            "111g allele",
+            "Positive_Correlation",
+            "morning preference"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16288197,
+            "congenital microcoria",
+            "Positive_Correlation",
+            "glaucoma"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19521089,
+            "5-httlpr",
+            "Association",
+            "slc6a4"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            24914936,
+            "pv/+",
+            "Association",
+            "abnormal bone morphology"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19891556,
+            "variant allele",
+            "Negative_Correlation",
+            "clopidogrel"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20431083,
+            "antiplatelet",
+            "Positive_Correlation",
+            "mb"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            21771880,
+            "snp 10510452_139",
+            "Association",
+            "body composition"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20510337,
+            "cisplatin",
+            "Positive_Correlation",
+            "nitric oxide"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "slco1b1*15",
+            "Association",
+            "estradiol-17beta-d-glucuronide"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "slco1b1*15",
+            "Association",
+            "cerivastatin"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16288197,
+            "q48h",
+            "Association",
+            "glaucoma"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16200390,
+            "5-hydroxytryptamine",
+            "Association",
+            "migraine"
+        ],
+        "category": "Wrong relation type"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            21771880,
+            "snp 10510452_139",
+            "Association",
+            "bmi"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28512644,
+            "cat",
+            "Association",
+            "cat c262t"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            15970799,
+            "oatp1b1",
+            "Association",
+            "simvastatin"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            19108278,
+            "(+)-propranolol",
+            "Comparison",
+            "procaine"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            18808529,
+            "isoproterenol",
+            "Negative_Correlation",
+            "beta-dystroglycan"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28428256,
+            "lps",
+            "Positive_Correlation",
+            "icam1"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            18808529,
+            "isoproterenol",
+            "Negative_Correlation",
+            "beta1-integrin"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28512644,
+            "sod2",
+            "Association",
+            "t2734"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            28428256,
+            "pga2",
+            "Positive_Correlation",
+            "vasp"
+        ],
+        "category": "Unsupported relation"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            16574712,
+            "mdma",
+            "Positive_Correlation",
+            "social and emotional judgement processes"
+        ],
+        "category": "Entity boundary/synonyms mismatch"
+    },
+    {
+        "error_type": "fp",
+        "error": [
+            20510337,
+            "cisplatin",
+            "Negative_Correlation",
+            "selenium"
+        ],
+        "category": "Evaluation artefact"
+    }
+]
