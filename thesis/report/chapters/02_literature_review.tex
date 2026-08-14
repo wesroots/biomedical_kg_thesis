@@ -4,7 +4,7 @@
 
 \subsection{Definition}
 \label{subsec:lit:definition}
-Biomedical \gls{ie} is the process of automatically identifying structured information - entities such as genes, diseases, chemicals and species, and the relationships between them - from unstructured biomedical text such as journal abstracts and full-text articles. In this project, \gls{ie} is treated as the first stage of a larger system: extracted entities and relations are later assembled into a knowledge graph and validated against biomedical ontologies [ ----- SECTION REFERENCE ----- ]
+Biomedical \gls{ie} is the process of automatically identifying structured information - entities such as genes, diseases, chemicals and species, and the relationships between them - from unstructured biomedical text such as journal abstracts and full-text articles. In this project, \gls{ie} is treated as the first stage of a larger system: extracted entities and relations are later assembled into a knowledge graph and validated against biomedical ontologies \pref{} (section)
 
 \subsection{Motivation}
 \label{subsec:lit:motivation}
@@ -14,10 +14,11 @@ Together, these findings motivate the need for automated \gls{ie} for two reason
 
 \subsection{Tasks}
 \label{subsec:lit:tasks}
-Biomedical \gls{ie} is usually comprised of two sub-tasks: \gls{ner} and \gls{re}.
+Biomedical \gls{ie} is usually comprised of several sub-tasks: \gls{ner}, which identifies and stores types of spans of text referring to biomedical concepts, and \gls{re}, which identifies semantic relationships between recognised entities and \gls{en}, which maps extracted mentions to pre-defined identifiers from an existing ontology \cite{perera2020_ie_introduction, li2017cnn}. Long or complex sentences, which are common in biomedical abstracts, summarising multiple findings into a single sentence, can cause a significant challenge for these tasks \cite{segura2011linguistic}.
 
 \subsection{Challenges}
 \label{subsec:lit:challenges}
+Beyond task complexity, biomedical text includes domain-specific challenges that separate it from general \gls{ie}: dense and evolving terminology \cite{krauthammer2004term,da2015management}, high rates of entity name ambiguity \cite{zhao2021recent} (e.g.: synonymy such as "cerebral hemorrhage" and "intra-cerebral micro-bleeds" or, less-commonly, polysemy), and frequent use of abbreviations, many of which are ambiguous, defined within that paper, or polysemous.
 
 \subsection{Traditional Methods}
 \label{subsec:lit:traditional_methods}

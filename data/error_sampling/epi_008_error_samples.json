@@ -2,1112 +2,1112 @@
   "relations": {
     "fp": [
       [
-        22711886,
-        "bcl-2",
-        "Positive_Correlation",
-        "chronic lymphocytic leukemia"
+        25006961,
+        "aqp2",
+        "Negative_Correlation",
+        "nephrogenic diabetes insipidus"
       ],
       [
-        19300402,
-        "hoe 140",
+        17003923,
+        "methylenetetrahydrofolate reductase",
+        "Association",
+        "677c>t"
+      ],
+      [
+        25277705,
+        "mavs",
+        "Positive_Correlation",
+        "il-22"
+      ],
+      [
+        20534762,
+        "silent change at codon 34",
+        "Association",
+        "tsh-beta subunit gene"
+      ],
+      [
+        19207031,
+        "igf-1",
+        "Association",
+        "rs1019731"
+      ],
+      [
+        20648600,
+        "rtm204v",
+        "Association",
+        "vaccine escape phenotype"
+      ],
+      [
+        15811908,
+        "hypertensive crisis",
+        "Association",
+        "pheochromocytoma"
+      ],
+      [
+        28068934,
+        "pik3ca",
+        "Association",
+        "h1047l"
+      ],
+      [
+        16330669,
+        "14q32.33",
+        "Association",
+        "pcfcl"
+      ],
+      [
+        26615423,
+        "cep55",
+        "Positive_Correlation",
+        "intraperitoneal metastasis"
+      ],
+      [
+        25277705,
+        "rig-i",
+        "Positive_Correlation",
+        "rsv infection"
+      ],
+      [
+        24442316,
+        "cmcs",
+        "Negative_Correlation",
+        "peroxidative injury"
+      ],
+      [
+        21405999,
+        "c.171t>c",
+        "Association",
+        "cone rod dystrophy"
+      ],
+      [
+        18257781,
+        "p.f482c",
+        "Negative_Correlation",
+        "polycystin-2 channel"
+      ],
+      [
+        25277705,
+        "rsv infection",
+        "Positive_Correlation",
+        "scf"
+      ],
+      [
+        25006961,
+        "pkc-alpha",
+        "Negative_Correlation",
+        "aqp2"
+      ],
+      [
+        26110643,
+        "gbt insertion",
+        "Association",
+        "nrg2a"
+      ],
+      [
+        23069675,
+        "np1",
         "Bind",
-        "b2 receptors"
+        "bax"
       ],
       [
-        19300402,
-        "des arg10 hoe 140",
-        "Negative_Correlation",
-        "toxic neuropathy"
-      ],
-      [
-        27663860,
-        "at1a receptor",
-        "Negative_Correlation",
-        "glomerular damage"
-      ],
-      [
-        17671735,
-        "p.r127h",
+        21126715,
+        "ile262fs mutation",
         "Association",
-        "hearing impairment"
+        "cgl"
       ],
       [
-        27866394,
-        "ob",
-        "Bind",
-        "l- and t-type ca(2+) channels"
-      ],
-      [
-        15754732,
-        "primary hyperparathyroidism",
+        15111599,
+        "deletion of glycine-91",
         "Association",
-        "multiple endocrine neoplasia"
+        "congenital nuclear lactescent cataract"
       ],
       [
-        17384765,
-        "succimer",
-        "Negative_Correlation",
-        "attention"
-      ],
-      [
-        15096016,
-        "pd",
+        21684788,
+        "sjogren-larsson syndrome",
         "Association",
-        "bradykinesia"
+        "mental retardation"
       ],
       [
-        16225977,
-        "clozapine",
-        "Positive_Correlation",
-        "tic-like symptoms"
-      ],
-      [
-        27860185,
-        "chronic hypoxia",
-        "Positive_Correlation",
-        "right ventricular hypertrophy"
-      ],
-      [
-        17042884,
-        "haloperidol",
+        24442316,
+        "cmcs",
         "Negative_Correlation",
-        "bipolar mania"
+        "liver injury"
       ],
       [
-        27860185,
-        "c-kit",
+        17935240,
+        "g.orf15 + 652-653delag",
         "Association",
-        "tyrosine kinase receptor 2"
+        "x-linked retinitis pigmentosa"
       ],
       [
-        22711886,
-        "traf2dn",
+        25277705,
+        "mavs",
         "Positive_Correlation",
-        "small lymphocytic lymphoma"
+        "ifn-g"
       ],
       [
-        25119790,
-        "curcumin",
-        "Negative_Correlation",
-        "nephropathy"
-      ],
-      [
-        27663860,
-        "doca",
-        "Positive_Correlation",
-        "tubulointerstitial damage"
-      ],
-      [
-        17549393,
-        "van der woude syndrome",
+        19353688,
+        "monosomy for the inserted segment",
         "Association",
-        "cleft palate"
+        "deafness"
       ],
       [
-        27707793,
-        "mir-501",
+        15036754,
+        "dfp",
         "Positive_Correlation",
-        "chloride channel, voltage-sensitive 5"
+        "toxicity"
       ],
       [
-        20801540,
-        "aceruloplasminemia",
+        24442316,
+        "superoxide dismutase",
+        "Negative_Correlation",
+        "hepatic lipid peroxidation"
+      ],
+      [
+        21750150,
+        "dach1",
+        "Negative_Correlation",
+        "glioma"
+      ],
+      [
+        25277705,
+        "rsv infection",
+        "Positive_Correlation",
+        "scgf-b"
+      ],
+      [
+        16186368,
+        "15-bp deletion",
         "Association",
-        "iron overload"
+        "cyp4v2"
       ],
       [
-        17384765,
-        "succimer",
-        "Negative_Correlation",
-        "arousal regulation"
-      ],
-      [
-        16867021,
-        "apomorphine",
-        "Positive_Correlation",
-        "climbing behavior"
-      ],
-      [
-        25119790,
-        "curcumin",
-        "Positive_Correlation",
-        "aconitase"
-      ],
-      [
-        17600377,
-        "p-coumaric acid",
-        "Conversion",
-        "maltolyl p-coumarate"
-      ],
-      [
-        20540798,
-        "pde4d",
-        "Positive_Correlation",
-        "plaque index"
-      ],
-      [
-        17151160,
-        "risperidone",
-        "Negative_Correlation",
-        "schizophrenia"
-      ],
-      [
-        17397547,
-        "nfkbia",
-        "Negative_Correlation",
-        "p38 mapk"
-      ],
-      [
-        24014394,
-        "c.73g>a",
+        15818664,
+        "c-terminal gag deletion",
         "Association",
-        "lyrm7"
+        "type x collagen"
       ],
       [
-        15754732,
+        19565319,
+        "rs35320474",
+        "Association",
+        "autism spectrum disorders"
+      ],
+      [
+        15820770,
+        "asp/glu",
+        "Positive_Correlation",
+        "type 1 diabetes"
+      ],
+      [
+        21219851,
+        "c.2992c>t",
+        "Association",
+        "ehlers-danlos syndrome, vascular type"
+      ],
+      [
+        19484664,
+        "dd genotype",
+        "Positive_Correlation",
+        "asthma"
+      ],
+      [
+        21750150,
+        "doxycycline",
+        "Positive_Correlation",
+        "dach1"
+      ],
+      [
+        25277705,
+        "rsv infection",
+        "Positive_Correlation",
+        "ccl2"
+      ],
+      [
+        21219851,
+        "rs1800255:g>a",
+        "Association",
+        "col3a1"
+      ],
+      [
+        25277705,
+        "lif",
+        "Negative_Correlation",
+        "airway hyperresponsiveness"
+      ],
+      [
+        17003923,
+        "factor xiii",
+        "Association",
+        "val34leu"
+      ],
+      [
+        16731636,
+        "beta-ar kinase-1",
+        "Positive_Correlation",
+        "lv hypertrophy"
+      ],
+      [
+        19565319,
+        "rs5751876",
+        "Association",
+        "autism spectrum disorders"
+      ],
+      [
+        19394258,
+        "deoxyguanosine kinase (dgk) deficiency",
+        "Positive_Correlation",
+        "mitochondrial dna depletion"
+      ],
+      [
+        21126715,
+        "bscl2",
+        "Positive_Correlation",
+        "cgl2"
+      ],
+      [
+        16840830,
+        "mutation at codon 418 of exon 9 (gac-->tat)",
+        "Association",
+        "men1"
+      ],
+      [
+        21126715,
+        "cgl",
+        "Association",
+        "lack of subcutaneous fat"
+      ],
+      [
+        23069675,
+        "np1",
+        "Positive_Correlation",
+        "cyt c"
+      ],
+      [
+        16840830,
         "men1",
         "Association",
-        "q536x"
+        "pancreatic islet cell tumor"
       ],
       [
-        28518143,
-        "casr",
+        22369755,
+        "rslurp-1",
         "Negative_Correlation",
-        "myocardial energy metabolism disorder"
+        "ets1"
       ],
       [
-        20540798,
-        "rs702553",
-        "Positive_Correlation",
-        "stroke"
-      ],
-      [
-        15754732,
-        "men1",
-        "Association",
-        "835del18"
-      ],
-      [
-        18162529,
-        "hyperprolactinemia",
+        15036754,
+        "organophosphorus",
         "Negative_Correlation",
-        "lh"
-      ],
-      [
-        15951966,
-        "exonic deletions",
-        "Association",
-        "hnpcc"
-      ],
-      [
-        15041272,
-        "c to t transition at nucleotide 3916",
-        "Association",
-        "type 2b von willebrand disease"
-      ],
-      [
-        27860185,
-        "chronic hypoxia",
-        "Positive_Correlation",
-        "pulmonary remodelling"
-      ],
-      [
-        24333387,
-        "ibuprofen",
-        "Negative_Correlation",
-        "post synaptic neurotoxicity"
-      ],
-      [
-        15069170,
-        "c.1712c>t (ala569val)",
-        "Association",
-        "gitelman's syndrome"
-      ],
-      [
-        29049388,
-        "r140q",
-        "Positive_Correlation",
-        "effacement"
-      ],
-      [
-        25119790,
-        "maleate",
-        "Positive_Correlation",
-        "nephropathy"
-      ],
-      [
-        16152606,
-        "nbs1",
-        "Association",
-        "657del5"
-      ],
-      [
-        19300402,
-        "streptozotocin",
-        "Positive_Correlation",
-        "diabetic neuropathy"
-      ],
-      [
-        16419642,
-        "s810l",
-        "Association",
-        "nr3c2"
-      ],
-      [
-        16277682,
-        "m404v",
-        "Positive_Correlation",
-        "pdb"
-      ],
-      [
-        19759529,
-        "ssr103800",
-        "Comparison",
-        "haloperidol"
-      ],
-      [
-        16419642,
-        "l809l",
-        "Association",
-        "nr3c2"
-      ],
-      [
-        23285048,
-        "dll4",
-        "Negative_Correlation",
-        "cd11b"
-      ],
-      [
-        24333387,
-        "ibuprofen",
-        "Negative_Correlation",
-        "stz"
-      ],
-      [
-        28518143,
-        "atp",
-        "Negative_Correlation",
-        "myocardial energy metabolism disorder"
-      ],
-      [
-        19300402,
-        "l-nil",
-        "Negative_Correlation",
-        "hoe 140"
-      ],
-      [
-        24288432,
-        "fgf-3",
-        "Association",
-        "rds"
+        "butyrylcholinesterases"
       ]
     ],
     "fn": [
       [
-        25119790,
-        "maleate",
+        24442316,
+        "liver injured",
         "Association",
-        "oxygen"
+        "vascular cell adhesion molecule-1"
       ],
       [
-        21042587,
-        "p.r469[r,x]",
+        22729903,
+        "scl-70",
         "Association",
-        "hypokalemia"
+        "stat4"
       ],
       [
-        16419642,
-        "mineralocorticoid receptor",
+        27798239,
+        "membrane type i matrix metalloproteinase",
         "Association",
-        "hypertensives"
+        "rab8"
       ],
       [
-        15069170,
-        "gitelman's syndrome",
+        26449539,
+        "lipid",
+        "Association",
+        "agpat9"
+      ],
+      [
+        26937641,
+        "nf-kappab",
+        "Association",
+        "caspase 3"
+      ],
+      [
+        19276632,
+        "c.262g>a",
+        "Association",
+        "cleft palate"
+      ],
+      [
+        17003923,
+        "venous and arterial thromboembolism",
+        "Association",
+        "methylenetetrahydrofolate reductase"
+      ],
+      [
+        27384305,
+        "fructose",
         "Positive_Correlation",
-        "c.1181_1186+20del26"
+        "metabolic syndrome"
       ],
       [
-        24036311,
-        "ctr9",
+        28481876,
+        "miniature chromosome maintenance 8",
+        "Association",
+        "prostate cancer"
+      ],
+      [
+        15233872,
+        "tincture of crataegus",
         "Negative_Correlation",
-        "snrpn"
+        "isoproterenol"
       ],
       [
-        24014394,
-        "lactic acidosis",
+        16844102,
+        "deferoxamine",
+        "Association",
+        "glutathione"
+      ],
+      [
+        28481876,
+        "miniature chromosome maintenance 8",
+        "Association",
+        "immunodeficiency"
+      ],
+      [
+        21976953,
+        "marfan syndrome",
         "Positive_Correlation",
-        "c.73g>a"
+        "c.3703t>c"
       ],
       [
-        16152606,
-        "nbs1",
-        "Association",
-        "cancer"
-      ],
-      [
-        23285048,
-        "delta-like 4",
-        "Association",
-        "c-kit"
-      ],
-      [
-        23651211,
-        "insulin",
-        "Association",
-        "irs1"
-      ],
-      [
-        23651211,
-        "gpr56",
-        "Association",
-        "hepatocellular carcinoma"
-      ],
-      [
-        26684240,
-        "gastroenteropancreatic neuroendocrine tumors",
-        "Negative_Correlation",
-        "pazopanib"
-      ],
-      [
-        25080425,
-        "isoproterenol",
-        "Association",
-        "signal transducer and activator of transcription 3"
-      ],
-      [
-        27509880,
-        "polysaccharide",
-        "Association",
-        "major histocompatibility complex (mhc) class"
-      ],
-      [
-        23651211,
-        "stk17b",
-        "Association",
-        "hepatocellular carcinoma"
-      ],
-      [
-        23651211,
-        "irs1",
-        "Association",
-        "hepatocellular carcinoma"
-      ],
-      [
-        17600377,
-        "maltolyl p-coumarate",
-        "Association",
-        "p-coumaric acid"
-      ],
-      [
-        17671735,
-        "c.35delg",
+        8829135,
+        "scopolamine",
         "Positive_Correlation",
-        "sensorineural hearing impairment"
+        "learning and post-training consolidation deficits"
       ],
       [
-        17608141,
-        "lipopolysaccharide",
+        25277705,
+        "il-4",
         "Association",
-        "3,4-dihydroxyphenylacetic acid"
+        "mitochondrial antiviral-signaling protein"
       ],
       [
-        15754732,
-        "q536x",
-        "Association",
-        "parathyroid tumors"
-      ],
-      [
-        23285048,
-        "delta-like 4",
+        26449539,
+        "interferon g",
         "Positive_Correlation",
-        "csf2"
+        "ifitm1"
       ],
       [
-        20195852,
-        "iohexol",
+        25277705,
+        "leukemia inhibitory factor",
+        "Association",
+        "respiratory syncytial viral infection"
+      ],
+      [
+        26110643,
+        "skin disorders",
+        "Association",
+        "col4a4"
+      ],
+      [
+        18507837,
+        "rs2479717",
+        "Association",
+        "breast cancer"
+      ],
+      [
+        27959387,
+        "pgr",
+        "Association",
+        "malignancy"
+      ],
+      [
+        24442316,
+        "liver injured",
+        "Association",
+        "matrix metalloproteinase-2 and 9"
+      ],
+      [
+        26449539,
+        "interferon g",
         "Positive_Correlation",
-        "injury to the kidney"
+        "ifit3"
       ],
       [
-        17397547,
-        "inflammation",
-        "Association",
-        "dusp1"
-      ],
-      [
-        27491646,
-        "pi3k",
-        "Association",
-        "akt"
-      ],
-      [
-        18046082,
-        "apolipoprotein e",
-        "Bind",
-        "lipids"
-      ],
-      [
-        14510914,
-        "deletion of the coding sequence (nt 1314 through nt 1328)",
-        "Positive_Correlation",
-        "congenital hypothyroidism"
-      ],
-      [
-        20682662,
-        "c-c chemokine receptor 5",
-        "Positive_Correlation",
-        "autoimmune diseases"
-      ],
-      [
-        20540798,
-        "phosphodiesterase 4d",
-        "Association",
-        "atherogenic"
-      ],
-      [
-        20859899,
-        "arb",
-        "Association",
-        "hyperkalemia"
-      ],
-      [
-        15579441,
-        "hypoxia",
-        "Association",
-        "vascular endothelial growth factor"
-      ],
-      [
-        15069170,
-        "c.185c>t",
-        "Positive_Correlation",
-        "gitelman's syndrome"
-      ],
-      [
-        17397547,
-        "inflammation",
-        "Association",
-        "proteinase-activated receptors"
-      ],
-      [
-        23285048,
-        "delta-like 4",
-        "Association",
-        "akt"
-      ],
-      [
-        27729412,
-        "retinoic acid receptor",
-        "Positive_Correlation",
-        "retinoic acid"
-      ],
-      [
-        20621845,
-        "mmp-2",
-        "Association",
-        "thoracic aortic aneurysm"
-      ],
-      [
-        27866394,
-        "otilonium bromide",
-        "Association",
-        "neurotransmitter"
-      ],
-      [
-        20859899,
-        "ramipril",
-        "Negative_Correlation",
-        "ace"
-      ],
-      [
-        20801540,
-        "iron",
-        "Bind",
-        "transferrin"
-      ],
-      [
-        17384765,
-        "succimer",
-        "Negative_Correlation",
-        "lead"
-      ],
-      [
-        19759529,
-        "clozapine",
-        "Positive_Correlation",
-        "catalepsy"
-      ],
-      [
-        16867246,
-        "drd2",
-        "Association",
-        "schizophrenic"
-      ],
-      [
-        23651211,
+        19207031,
         "igf-1",
         "Association",
-        "irs1"
+        "growth hormone"
       ],
       [
-        16867246,
-        "extrapyramidal syndrome",
-        "Positive_Correlation",
-        "antipsychotic drugs"
-      ],
-      [
-        15069170,
-        "thiazide",
-        "Positive_Correlation",
-        "na-cl co-transporter"
-      ],
-      [
-        20801540,
-        "iron",
-        "Bind",
-        "deferasirox"
-      ],
-      [
-        19300402,
-        "bradykinin receptors antagonists",
-        "Negative_Correlation",
-        "neuropathic pain"
-      ],
-      [
-        18308784,
-        "ginsenoside rg1",
+        28846666,
+        "tumor necrosis factor alpha",
         "Association",
-        "n-methyl-d-aspartate (nmda) receptor"
+        "disordered lipid and glucose metabolisms"
       ],
       [
-        27707793,
-        "gigaxonin",
-        "Negative_Correlation",
-        "mir-501"
+        16844102,
+        "dopaminergic",
+        "Positive_Correlation",
+        "neurotoxicity"
       ],
       [
-        17397547,
-        "arf6",
+        25277705,
+        "retinoic acid-inducible gene-1",
         "Association",
-        "proteinase-activated receptors"
+        "cxcl12"
       ],
       [
-        27103577,
-        "hypoxia",
-        "Negative_Correlation",
-        "atp"
+        15811908,
+        "vomiting",
+        "Positive_Correlation",
+        "amisulpride"
       ],
       [
-        19300402,
-        "b2 and b1 receptors",
+        18439803,
+        "n-(2-propylpentanoyl)urea",
+        "Association",
+        "glycine"
+      ],
+      [
+        19276632,
+        "cleft palate",
+        "Association",
+        "foxf2"
+      ],
+      [
+        16252083,
+        "mismatch repair",
+        "Association",
+        "breast cancer"
+      ],
+      [
+        25277705,
+        "retinoic acid-inducible gene-1",
+        "Association",
+        "stem cell factor"
+      ],
+      [
+        20705401,
+        "serotonin 6 receptor",
+        "Association",
+        "antipsychotics"
+      ],
+      [
+        26110643,
+        "neuregulin 2a",
+        "Association",
+        "akt"
+      ],
+      [
+        15987266,
+        "pilocarpine",
+        "Association",
+        "growth-associated protein 43"
+      ],
+      [
+        26615423,
+        "centrosomal protein 55",
+        "Association",
+        "epithelial ovarian carcinoma"
+      ],
+      [
+        15485686,
+        "arrhythmias",
         "Negative_Correlation",
-        "d-arg-[hyp3,thi5,d-tic7,oic8] bradykinin"
+        "lidocaine"
+      ],
+      [
+        26991973,
+        "mol1",
+        "Association",
+        "ethylene"
+      ],
+      [
+        15811908,
+        "benzamide drugs",
+        "Association",
+        "pheochromocytoma"
+      ],
+      [
+        21879313,
+        "hcv genotype 1b infection",
+        "Association",
+        "rs8099917"
+      ],
+      [
+        25006961,
+        "pkc-alpha",
+        "Positive_Correlation",
+        "lithium"
+      ],
+      [
+        17511042,
+        "ribavirin",
+        "Positive_Correlation",
+        "depression"
+      ],
+      [
+        15036754,
+        "organophosphate",
+        "Association",
+        "acetylcholine"
+      ],
+      [
+        26937641,
+        "rantes",
+        "Association",
+        "nf-kappab"
+      ],
+      [
+        15233872,
+        "tincture of crataegus",
+        "Positive_Correlation",
+        "adp"
+      ],
+      [
+        25277705,
+        "mif",
+        "Association",
+        "mitochondrial antiviral-signaling protein"
+      ],
+      [
+        27959387,
+        "oct4",
+        "Positive_Correlation",
+        "alcohol"
+      ],
+      [
+        28068934,
+        "e545k",
+        "Association",
+        "esophageal squamous cell carcinoma"
+      ],
+      [
+        15818664,
+        "ankh",
+        "Association",
+        "hypertrophy"
+      ],
+      [
+        21405999,
+        "macular dystrophy",
+        "Association",
+        "guca1a"
+      ],
+      [
+        22729903,
+        "systemic lupus erythematosus",
+        "Association",
+        "stat4"
       ]
     ]
   },
   "entities": {
     "fp": [
       [
-        20682662,
-        "inflammation",
+        18257781,
+        "autosomal dominant polycystic kidney disease",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        7811247,
-        "adrenoleukodystrophy",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        22711886,
-        "p38 mapk",
-        "GeneOrGeneProduct"
-      ],
-      [
-        26684240,
-        "g3 nets",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        27840894,
-        "xlh",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        17297207,
-        "jaundice",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        27491646,
-        "gfp-lc3",
-        "GeneOrGeneProduct"
-      ],
-      [
-        25119790,
-        "claudin-2",
-        "GeneOrGeneProduct"
-      ],
-      [
-        20195852,
-        "renal failure",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        17397547,
-        "ptpn1",
-        "GeneOrGeneProduct"
-      ],
-      [
-        20195852,
-        "potassium",
-        "ChemicalEntity"
-      ],
-      [
-        24288432,
-        "thyroid transcription factor-1",
-        "GeneOrGeneProduct"
-      ],
-      [
-        25119790,
-        "cell damage",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        7811247,
-        "very long chain fatty acids",
-        "ChemicalEntity"
-      ],
-      [
-        17345627,
-        "bmp4",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17395743,
-        "esrd",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        25589620,
-        "g/a",
+        17003923,
+        "intron h deletion/insertion",
         "SequenceVariant"
       ],
       [
-        25589620,
-        "cox2",
-        "GeneOrGeneProduct"
-      ],
-      [
-        21054465,
-        "cytochrome p450",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17384765,
-        "pb",
-        "ChemicalEntity"
-      ],
-      [
-        16051693,
-        "nafld",
+        17059986,
+        "bartter syndrome",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        23872883,
-        "solidago virgaurea extract",
-        "ChemicalEntity"
-      ],
-      [
-        16565833,
-        "anthracyclin",
-        "ChemicalEntity"
-      ],
-      [
-        17943461,
-        "acquired immunodeficiency syndrome",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        21799811,
-        "t",
+        17059986,
+        "p.ser555leu",
         "SequenceVariant"
       ],
       [
-        21903317,
-        "pulmonary hypoplasia",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        17943461,
-        "zidovudine",
+        17562951,
+        "serum creatinine",
         "ChemicalEntity"
       ],
       [
-        20621845,
-        "adam17",
+        27464336,
+        "caspase-1",
         "GeneOrGeneProduct"
       ],
       [
-        18046082,
-        "apolipoprotein e",
+        18503483,
+        "neurotoxicity",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        17935240,
+        "xlrp",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        20705401,
+        "serotonin 6",
         "GeneOrGeneProduct"
       ],
       [
-        27663860,
-        "doca",
+        17879945,
+        "ritonavir",
         "ChemicalEntity"
       ],
       [
-        17968299,
-        "generalized aggressive periodontitis",
+        18507837,
+        "ccnd2",
+        "GeneOrGeneProduct"
+      ],
+      [
+        17059986,
+        "familial cavernomatosis",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        27663860,
-        "glomerular damage",
-        "DiseaseOrPhenotypicFeature"
+        18507837,
+        "cdkn2b",
+        "GeneOrGeneProduct"
       ],
       [
-        20126413,
-        "small (<21 bp) insertions and deletions (indels)",
+        17511042,
+        "ribavirin",
+        "ChemicalEntity"
+      ],
+      [
+        17003923,
+        "intron 16 insertion/deletion",
         "SequenceVariant"
       ],
       [
-        27729412,
-        "rara",
-        "GeneOrGeneProduct"
+        28481876,
+        "cancer",
+        "DiseaseOrPhenotypicFeature"
       ],
       [
-        24036311,
-        "ctr9",
-        "GeneOrGeneProduct"
+        19789368,
+        "colon cancer",
+        "DiseaseOrPhenotypicFeature"
       ],
       [
-        20195852,
-        "creatinine",
-        "ChemicalEntity"
-      ],
-      [
-        17943461,
-        "calpain 1",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17297207,
-        "conjugated bilirubin",
-        "ChemicalEntity"
-      ],
-      [
-        19880293,
-        "-6054, deletion/att",
+        15464247,
+        "a/c",
         "SequenceVariant"
       ],
       [
-        17445520,
-        "pd",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        27663860,
-        "at1a receptor",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17549393,
-        "vws",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        27866394,
-        "ob",
+        22369755,
+        "nnk",
         "ChemicalEntity"
       ],
       [
-        15041272,
-        "c to t transition at nucleotide 3916",
-        "SequenceVariant"
+        15036754,
+        "bches",
+        "GeneOrGeneProduct"
       ],
       [
-        17671735,
-        "hearing impairment",
+        17059986,
+        "hypomagnesemia",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        27807193,
-        "ptpn22",
-        "GeneOrGeneProduct"
-      ],
-      [
-        18162529,
-        "prl-r",
-        "GeneOrGeneProduct"
-      ],
-      [
-        24333387,
-        "neuroinflammation",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        16867246,
-        "ser311cys",
+        15824163,
+        "somatic mutations",
         "SequenceVariant"
       ],
       [
-        17671735,
-        "gjb3",
+        16046395,
+        "n40d",
+        "SequenceVariant"
+      ],
+      [
+        20534762,
+        "congenital central hypothyroidism",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        18257781,
+        "p.f482c",
+        "SequenceVariant"
+      ],
+      [
+        19207031,
+        "growth hormone",
+        "ChemicalEntity"
+      ],
+      [
+        25874935,
+        "erk2",
         "GeneOrGeneProduct"
+      ],
+      [
+        17059986,
+        "idiopathic intracranial hypertension",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        18179903,
+        "fetal akinesia sequence",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        25277705,
+        "ccl27",
+        "GeneOrGeneProduct"
+      ],
+      [
+        16849419,
+        "sodium-phosphate cotransporter type iic",
+        "GeneOrGeneProduct"
+      ],
+      [
+        17511042,
+        "interferon",
+        "ChemicalEntity"
+      ],
+      [
+        28846666,
+        "-857ct",
+        "SequenceVariant"
+      ],
+      [
+        18507837,
+        "cdk2",
+        "GeneOrGeneProduct"
+      ],
+      [
+        22369755,
+        "rb1",
+        "GeneOrGeneProduct"
+      ],
+      [
+        19484664,
+        "dd genotype",
+        "SequenceVariant"
+      ],
+      [
+        21126715,
+        "cgl1",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        27798239,
+        "pi4kiia",
+        "GeneOrGeneProduct"
+      ],
+      [
+        20705401,
+        "5-ht6 gene",
+        "GeneOrGeneProduct"
+      ],
+      [
+        21684788,
+        "sls",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        16046395,
+        "mu opioid receptor",
+        "GeneOrGeneProduct"
+      ],
+      [
+        17562951,
+        "iopamidol",
+        "ChemicalEntity"
+      ],
+      [
+        21126715,
+        "generalized eruptive xanthomas",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        27993978,
+        "mpf",
+        "GeneOrGeneProduct"
+      ],
+      [
+        19789368,
+        "igf2",
+        "GeneOrGeneProduct"
+      ],
+      [
+        15233872,
+        "rats",
+        "Species"
+      ],
+      [
+        20709368,
+        "fgb",
+        "GeneOrGeneProduct"
+      ],
+      [
+        18257781,
+        "pc1",
+        "GeneOrGeneProduct"
+      ],
+      [
+        16844102,
+        "serotonin",
+        "ChemicalEntity"
+      ],
+      [
+        16046395,
+        "a118g",
+        "SequenceVariant"
       ]
     ],
     "fn": [
       [
-        18162529,
-        "steroid",
-        "ChemicalEntity"
-      ],
-      [
-        15041272,
-        "ristocetin-induced platelet aggregation",
+        22369755,
+        "carcinogenic",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        17255138,
-        "gi toxicity",
+        16112787,
+        "desquamation",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        25550469,
-        "obesity",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        23651211,
-        "notch",
-        "GeneOrGeneProduct"
-      ],
-      [
-        25119790,
-        "reactive oxygen species",
-        "ChemicalEntity"
-      ],
-      [
-        27090298,
-        "hbac1",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17608141,
-        "inflammatory",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        18951540,
-        "levodopa",
-        "ChemicalEntity"
-      ],
-      [
-        17033974,
+        21405999,
         "calcium",
         "ChemicalEntity"
       ],
       [
-        16000134,
-        "thrombin",
+        18441470,
+        "adverse cardiovascular effects",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        19276632,
+        "androgen",
+        "ChemicalEntity"
+      ],
+      [
+        15673851,
+        "neurotoxic",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        26937641,
+        "annexin v",
         "GeneOrGeneProduct"
       ],
       [
-        27090298,
+        9672936,
+        "postoperative pain",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        22729903,
+        "scl-70",
+        "GeneOrGeneProduct"
+      ],
+      [
+        16629641,
+        "pegylated interferon",
+        "GeneOrGeneProduct"
+      ],
+      [
+        16112787,
+        "superoxide dismutase",
+        "ChemicalEntity"
+      ],
+      [
+        26110643,
+        "tumor",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        16629641,
+        "erythropoietin",
+        "GeneOrGeneProduct"
+      ],
+      [
+        16731636,
+        "hypertrophy",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        17491223,
+        "ischemia",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        16629641,
+        "hemoglobin",
+        "GeneOrGeneProduct"
+      ],
+      [
+        16252083,
+        "cancer initiation",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        17059986,
+        "magnesium",
+        "ChemicalEntity"
+      ],
+      [
+        15036754,
+        "neuropathological damages",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        21879313,
+        "pegylated interferon",
+        "GeneOrGeneProduct"
+      ],
+      [
+        17059986,
+        "potassium",
+        "ChemicalEntity"
+      ],
+      [
+        8829135,
+        "dopaminergic agonism",
+        "ChemicalEntity"
+      ],
+      [
+        27798239,
+        "clathrin",
+        "GeneOrGeneProduct"
+      ],
+      [
+        15820770,
+        "threonine for lysine",
+        "SequenceVariant"
+      ],
+      [
+        18507837,
+        "death",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        15820770,
+        "diabetic",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        8829135,
+        "learning and post-training consolidation deficits",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        21879313,
+        "chronic hepatitis",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        22729903,
+        "snrnp",
+        "GeneOrGeneProduct"
+      ],
+      [
+        26847345,
+        "cytoskeletal proteins",
+        "GeneOrGeneProduct"
+      ],
+      [
+        19531695,
+        "sodium",
+        "ChemicalEntity"
+      ],
+      [
+        28684635,
         "insulin",
         "GeneOrGeneProduct"
       ],
       [
-        15086325,
-        "insertion introduced eight additional amino acids",
+        26449539,
+        "lipid",
+        "ChemicalEntity"
+      ],
+      [
+        27959387,
+        "malignancy",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        21879313,
+        "hcv genotype 1b infection",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        18457324,
+        "cancer",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        26449539,
+        "inflammation",
+        "DiseaseOrPhenotypicFeature"
+      ],
+      [
+        20705401,
+        "antipsychotics",
+        "ChemicalEntity"
+      ],
+      [
+        17511042,
+        "pegylated interferon alpha-2b",
+        "GeneOrGeneProduct"
+      ],
+      [
+        15811908,
+        "benzamide drugs",
+        "ChemicalEntity"
+      ],
+      [
+        17562951,
+        "contrast",
+        "ChemicalEntity"
+      ],
+      [
+        27798239,
+        "actin",
+        "GeneOrGeneProduct"
+      ],
+      [
+        15233872,
+        "lipid",
+        "ChemicalEntity"
+      ],
+      [
+        27993978,
+        "morpholino",
+        "ChemicalEntity"
+      ],
+      [
+        17059986,
+        "guanine to cytosine",
         "SequenceVariant"
       ],
       [
-        17549393,
-        "smad",
-        "GeneOrGeneProduct"
-      ],
-      [
-        25119790,
-        "oxygen",
+        24671324,
+        "rituximab",
         "ChemicalEntity"
       ],
       [
-        21042587,
-        "tetrahydrocortisol",
-        "ChemicalEntity"
-      ],
-      [
-        27103577,
-        "fatty acid",
-        "ChemicalEntity"
-      ],
-      [
-        24014394,
-        "ciii",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17600377,
-        "cytochrome c",
-        "ChemicalEntity"
-      ],
-      [
-        16867021,
-        "h(3)-receptor antagonists",
-        "ChemicalEntity"
-      ],
-      [
-        23651211,
-        "wnt",
-        "GeneOrGeneProduct"
-      ],
-      [
-        28259923,
-        "wnt",
-        "GeneOrGeneProduct"
-      ],
-      [
-        20859899,
-        "ace",
-        "GeneOrGeneProduct"
-      ],
-      [
-        18162529,
-        "luteinizing hormone",
-        "ChemicalEntity"
-      ],
-      [
-        18385794,
-        "eye malformation",
+        25874935,
+        "ischemic",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        27509880,
-        "polysaccharide",
-        "ChemicalEntity"
-      ],
-      [
-        15018851,
-        "long-term anti-cytomegalovirus",
+        24671324,
+        "malignancies",
         "DiseaseOrPhenotypicFeature"
       ],
       [
-        24036311,
-        "paf1c",
-        "GeneOrGeneProduct"
-      ],
-      [
-        15579441,
-        "ed-1",
-        "GeneOrGeneProduct"
-      ],
-      [
-        27509880,
-        "p21",
-        "GeneOrGeneProduct"
-      ],
-      [
-        18308784,
-        "n-methyl-d-aspartate (nmda) receptor",
-        "GeneOrGeneProduct"
-      ],
-      [
-        17033974,
-        "l-type calcium-channel auxiliary subunit of the alpha (2) delta type",
-        "GeneOrGeneProduct"
-      ],
-      [
-        25080425,
-        "ventricular remodeling",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        21042587,
-        "tetrahydrocortisone",
-        "ChemicalEntity"
-      ],
-      [
-        19880293,
-        "autoimmune diseases",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        15579441,
-        "dutp",
-        "ChemicalEntity"
-      ],
-      [
-        27807193,
-        "reactive oxygen species",
-        "ChemicalEntity"
-      ],
-      [
-        25119790,
+        28684635,
         "glucose",
         "ChemicalEntity"
       ],
       [
-        20801540,
-        "iron",
+        24840785,
+        "na(+)",
         "ChemicalEntity"
-      ],
-      [
-        21130517,
-        "tumor",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        23285048,
-        "tumor",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        18162529,
-        "estrogen",
-        "ChemicalEntity"
-      ],
-      [
-        23651211,
-        "insulin",
-        "GeneOrGeneProduct"
-      ],
-      [
-        15069170,
-        "thiazide",
-        "ChemicalEntity"
-      ],
-      [
-        27866394,
-        "sp",
-        "GeneOrGeneProduct"
-      ],
-      [
-        24036311,
-        "histone h3",
-        "GeneOrGeneProduct"
-      ],
-      [
-        27090298,
-        "adiponectin",
-        "GeneOrGeneProduct"
-      ],
-      [
-        14510914,
-        "lacking the five terminal amino acids of exon xi (439-443)",
-        "SequenceVariant"
-      ],
-      [
-        19300402,
-        "diabetic hyperalgesia",
-        "DiseaseOrPhenotypicFeature"
-      ],
-      [
-        15867855,
-        "allergic diseases",
-        "DiseaseOrPhenotypicFeature"
       ]
     ]
   }

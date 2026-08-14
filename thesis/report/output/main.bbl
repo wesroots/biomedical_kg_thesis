@@ -15,4 +15,34 @@ Rezarta Islamaj~Dogan, G~Craig Murray, Aur{\'e}lie N{\'e}v{\'e}ol, and Zhiyong L
 \newblock Understanding pubmed{\textregistered} user search behavior through log analysis.
 \newblock {\em Database}, 2009:bap018, 2009.
 
+\bibitem{perera2020_ie_introduction}
+Nadeesha Perera, Matthias Dehmer, and Frank Emmert-Streib.
+\newblock Named entity recognition and relation detection for biomedical information extraction.
+\newblock {\em Frontiers in cell and developmental biology}, 8:673, 2020.
+
+\bibitem{li2017cnn}
+Haodi Li, Qingcai Chen, Buzhou Tang, Xiaolong Wang, Hua Xu, Baohua Wang, and Dong Huang.
+\newblock Cnn-based ranking for biomedical entity normalization.
+\newblock {\em BMC bioinformatics}, 18(Suppl 11):385, 2017.
+
+\bibitem{segura2011linguistic}
+Isabel Segura-Bedmar, Paloma Mart{\'\i}nez, and C{\'e}sar de~Pablo-S{\'a}nchez.
+\newblock A linguistic rule-based approach to extract drug-drug interactions from pharmacological documents.
+\newblock {\em BMC bioinformatics}, 12(Suppl 2):S1, 2011.
+
+\bibitem{krauthammer2004term}
+Michael Krauthammer and Goran Nenadic.
+\newblock Term identification in the biomedical literature.
+\newblock {\em Journal of biomedical informatics}, 37(6):512--526, 2004.
+
+\bibitem{da2015management}
+Marcos Da~Silveira, Julio~Cesar Dos~Reis, and C{\'e}dric Pruski.
+\newblock Management of dynamic biomedical terminologies: current status and future challenges.
+\newblock {\em Yearbook of Medical informatics}, 24(01):125--133, 2015.
+
+\bibitem{zhao2021recent}
+Sendong Zhao, Chang Su, Zhiyong Lu, and Fei Wang.
+\newblock Recent advances in biomedical literature mining.
+\newblock {\em Briefings in Bioinformatics}, 22(3):bbaa057, 2021.
+
 \end{thebibliography}
