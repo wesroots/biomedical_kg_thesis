@@ -20,8 +20,13 @@ Biomedical \gls{ie} is usually comprised of several sub-tasks: \gls{ner}, which 
 \label{subsec:lit:challenges}
 Beyond task complexity, biomedical text includes domain-specific challenges that separate it from general \gls{ie}: dense and evolving terminology \cite{krauthammer2004term,da2015management}, high rates of entity name ambiguity \cite{zhao2021recent} (e.g.: synonymy such as "cerebral hemorrhage" and "intra-cerebral micro-bleeds" or, less-commonly, polysemy), and frequent use of abbreviations, many of which are ambiguous, defined within that paper, or polysemous.
 
-\subsection{Traditional Methods}
+In addition to these domain-specific challenges, significant methodological limitations compound the difficulty of relation extraction evaluation. Firstly, meaningful comparison between biomedical IE systems requires consistent evaluation frameworks, while strong generalisation across literature distributions requires models to perform reliably across heterogeneous data \pref.
+
+\subsection{Traditional Methods and Evaluation}
 \label{subsec:lit:traditional_methods}
+Biomedical \gls{ie} has progressed from rule-based systems towards feature-based machine learning and deep learning approaches built on pretrained transformer models. Benchmark-built systems have been at the core of this progression, with biomedical relation extraction models being commonly developed and evaluated using fixed, established benchmark corpora. . Recent exploration by Sanger et al. (2025) compares multiple pretrained language models before evaluating knowledge extraction of the best-performing model across five datasets with a consistent evaluation framework \cite{sanger2025_fixed_dataset_eval_2}. Both of these
+
+Biomedical IE has progressed from rule-based systems towards feature-based machine learning and deep learning approaches built on pretrained transformer models. Throughout this progression, development and evaluation have remained largely benchmark-driven, with models commonly trained and evaluated on fixed, established corpora. However, reliance on individual benchmarks introduces the comparability and generalisability limitations outlined above. Recent work has therefore sought to address these limitations through more consistent evaluation frameworks and broader, heterogeneous training data. Sanger et al. (2025), for example, compare multiple pretrained language models before evaluating knowledge augmentation of the best-performing model across five datasets within a consistent evaluation framework \cite{sanger2025_fixed_dataset_eval_2}. Similarly, Lai et al. (2023) introduce BioREx, which harmonises heterogeneous biomedical RE datasets to support broader training and improve generalisation \pref.
 
 \subsection{Transition to LLMs}
 \label{subsec:lit:transition_to_llms}

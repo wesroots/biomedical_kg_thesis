@@ -4,18 +4,18 @@
 \contentsline {subsection}{\numberline {2.0.2}Motivation}{3}{}%
 \contentsline {subsection}{\numberline {2.0.3}Tasks}{4}{}%
 \contentsline {subsection}{\numberline {2.0.4}Challenges}{4}{}%
-\contentsline {subsection}{\numberline {2.0.5}Traditional Methods}{4}{}%
-\contentsline {subsection}{\numberline {2.0.6}Transition to LLMs}{4}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{5}{}%
-\contentsline {subsection}{\numberline {3.0.1}Research Design}{5}{}%
-\contentsline {subsection}{\numberline {3.0.2}Datasets}{5}{}%
-\contentsline {subsection}{\numberline {3.0.3}System Architecture}{5}{}%
-\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{5}{}%
-\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{5}{}%
-\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{5}{}%
-\contentsline {subsection}{\numberline {3.0.7}Evaluation}{5}{}%
-\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{5}{}%
-\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{5}{}%
-\contentsline {chapter}{\numberline {4}Results}{6}{}%
-\contentsline {chapter}{\numberline {5}Discussion}{7}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{8}{}%
+\contentsline {subsection}{\numberline {2.0.5}Traditional Methods and Evaluation}{4}{}%
+\contentsline {subsection}{\numberline {2.0.6}Transition to LLMs}{5}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{6}{}%
+\contentsline {subsection}{\numberline {3.0.1}Research Design}{6}{}%
+\contentsline {subsection}{\numberline {3.0.2}Datasets}{6}{}%
+\contentsline {subsection}{\numberline {3.0.3}System Architecture}{6}{}%
+\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{6}{}%
+\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{6}{}%
+\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{6}{}%
+\contentsline {subsection}{\numberline {3.0.7}Evaluation}{6}{}%
+\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{6}{}%
+\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{6}{}%
+\contentsline {chapter}{\numberline {4}Results}{7}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{8}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{9}{}%

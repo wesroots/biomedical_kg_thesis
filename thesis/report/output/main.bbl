@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{lu2011_pubmed_publicationrate}
 Zhiyong Lu.
@@ -44,5 +44,10 @@ Marcos Da~Silveira, Julio~Cesar Dos~Reis, and C{\'e}dric Pruski.
 Sendong Zhao, Chang Su, Zhiyong Lu, and Fei Wang.
 \newblock Recent advances in biomedical literature mining.
 \newblock {\em Briefings in Bioinformatics}, 22(3):bbaa057, 2021.
+
+\bibitem{sanger2025_fixed_dataset_eval_2}
+Mario S{\"a}nger and Ulf Leser.
+\newblock Knowledge-augmented pre-trained language models for biomedical relation extraction.
+\newblock {\em BMC bioinformatics}, 26(1):240, 2025.
 
 \end{thebibliography}
