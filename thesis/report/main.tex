@@ -1,6 +1,8 @@
 \documentclass[12pt,a4paper]{report}
 
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{setspace}
+\setstretch{1}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -12,18 +14,39 @@
 \usepackage{float}
 \usepackage{tabularx}
 \usepackage[acronym]{glossaries}
-\usepackage{setspace}
+\usepackage{etoolbox}
 
-\onehalfspacing
+\makeatletter
+\patchcmd{\@makechapterhead}
+  {\vspace*{50\p@}}
+  {\vspace*{00\p@}}
+  {}{}
 
-\newcommand{\pref}{\textbf{[REFERENCE]}}
+\patchcmd{\@makechapterhead}
+  {\vskip 40\p@}
+  {\vskip 25\p@}
+\makeatother
+
+\newcommand{\pref}{\textbf{[NEED REFERENCE]}}
+\newcommand{\dep}{\textbf{[MORE DEPTH]}}
 
 \newacronym{llm}{LLM}{Large Language Model}
 \newacronym{kg}{KG}{Knowledge Graph}
 \newacronym{ie}{IE}{Information Extraction}
 \newacronym{ner}{NER}{Named Entity Recognition}
 \newacronym{re}{RE}{Relation Extraction}
-\newacronym{en}{EN}{Entity Normalisation}
+\newacronym{nen}{NEN}{Named Entity Normalisation}
+\newacronym{plm}{PLM}{Pretrained Language Model}
+\newacronym{gad}{GAD}{Genetic Association Database}
+
+\newacronym{fp}{FP}{False Positive}
+\newacronym{fn}{FN}{False Negative}
+\newacronym{tp}{TP}{True Positive}
+
+\newacronym{epi}{EPI}{Extraction Pipeline Iterations}
+
+\newacronym{rq1}{RQ1}{Research Question 1}
+\newacronym{rq2}{RQ2}{Research Question 2}
 
 \title{Biomedical Knowledge Graph Construction Using Large Language Models: Evaluating Generalisation Beyond Benchmark Datasets}
 \author{Wesley Roots}

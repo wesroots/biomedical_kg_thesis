@@ -18,6 +18,8 @@ INPUT /usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsopn.sty
@@ -129,8 +131,6 @@ INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
@@ -263,7 +263,12 @@ OUTPUT output/chapters/02_literature_review.aux
 INPUT ./chapters/02_literature_review.tex
 INPUT ./chapters/02_literature_review.tex
 INPUT chapters/02_literature_review.tex
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm

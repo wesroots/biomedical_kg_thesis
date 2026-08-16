@@ -1,21 +1,29 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{}%
 \contentsline {chapter}{\numberline {2}Literature Review}{3}{}%
-\contentsline {subsection}{\numberline {2.0.1}Definition}{3}{}%
-\contentsline {subsection}{\numberline {2.0.2}Motivation}{3}{}%
-\contentsline {subsection}{\numberline {2.0.3}Tasks}{4}{}%
-\contentsline {subsection}{\numberline {2.0.4}Challenges}{4}{}%
-\contentsline {subsection}{\numberline {2.0.5}Traditional Methods and Evaluation}{4}{}%
-\contentsline {subsection}{\numberline {2.0.6}Transition to LLMs}{5}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{6}{}%
-\contentsline {subsection}{\numberline {3.0.1}Research Design}{6}{}%
-\contentsline {subsection}{\numberline {3.0.2}Datasets}{6}{}%
-\contentsline {subsection}{\numberline {3.0.3}System Architecture}{6}{}%
-\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{6}{}%
-\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{6}{}%
-\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{6}{}%
-\contentsline {subsection}{\numberline {3.0.7}Evaluation}{6}{}%
-\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{6}{}%
-\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{6}{}%
-\contentsline {chapter}{\numberline {4}Results}{7}{}%
-\contentsline {chapter}{\numberline {5}Discussion}{8}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{9}{}%
+\contentsline {section}{\numberline {2.1}Biomedical Information Extraction}{3}{}%
+\contentsline {subsection}{\numberline {2.1.1}Definition}{3}{}%
+\contentsline {subsection}{\numberline {2.1.2}Motivation}{3}{}%
+\contentsline {subsection}{\numberline {2.1.3}Tasks}{4}{}%
+\contentsline {subsection}{\numberline {2.1.4}Challenges}{4}{}%
+\contentsline {subsection}{\numberline {2.1.5}Traditional Methods and Evaluation}{5}{}%
+\contentsline {section}{\numberline {2.2}Large Language Models for Biomedical Information Extraction}{5}{}%
+\contentsline {subsection}{\numberline {2.2.1}Transition from Specialised Models to LLMs}{5}{}%
+\contentsline {subsection}{\numberline {2.2.2}Prompt-Based and Few-Shot Extraction}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Performance and Limitations}{7}{}%
+\contentsline {subsection}{\numberline {2.2.4}Implications for Biomedical Information Extraction}{7}{}%
+\contentsline {section}{\numberline {2.3}Knowledge Graph Construction Using Large Language Models}{7}{}%
+\contentsline {section}{\numberline {2.4}Benchmark Datasets and Evaluation}{7}{}%
+\contentsline {section}{\numberline {2.5}Generalisation to Contemporary Biomedical Literature}{7}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{8}{}%
+\contentsline {subsection}{\numberline {3.0.1}Research Design}{8}{}%
+\contentsline {subsection}{\numberline {3.0.2}Datasets}{8}{}%
+\contentsline {subsection}{\numberline {3.0.3}System Architecture}{8}{}%
+\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{8}{}%
+\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{8}{}%
+\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{8}{}%
+\contentsline {subsection}{\numberline {3.0.7}Evaluation}{8}{}%
+\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{8}{}%
+\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{8}{}%
+\contentsline {chapter}{\numberline {4}Results}{9}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{10}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{11}{}%
