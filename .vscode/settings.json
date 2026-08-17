@@ -1,0 +1,42 @@
+{
+    "folder-path-color.folders": [
+        {
+            "path": "data",
+            "color": "custom4",
+            "symbol": "Da"
+        },
+        {
+            "path": "exploration",
+            "color": "custom2",
+            "symbol": "Ex"
+        },
+        {
+            "path": "src",
+            "color": "white",
+            "symbol": "{}"
+        },
+        {
+            "path": "thesis",
+            "color": "custom5",
+            "symbol": "Th"
+        }
+    ],
+    "workbench.colorCustomizations": {
+        "folderPathColor.custom1": "#e86464",
+        "folderPathColor.custom2": "#e08a43",
+        "folderPathColor.custom3": "#F1C40F",
+        "folderPathColor.custom4": "#85ed85",
+        "folderPathColor.custom5": "#43a4e0",
+        "folderPathColor.custom6": "#b864e8"
+    },
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/thesis/report/output",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.texcount.autorun": "onSave",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "ltex.disabledRules": {
+    "en-GB": [
+        "OXFORD_SPELLING_Z_NOT_S"
+    ]
+}
+}

@@ -2,7 +2,7 @@
 .env
 
 # VS Code
-.vscode
+# .vscode
 
 # macOS Finder metadata
 .DS_Store
