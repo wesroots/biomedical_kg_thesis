@@ -2,48 +2,58 @@
 
 \bibitem{lu2011_pubmed_publicationrate}
 Zhiyong Lu.
-\newblock Pubmed and beyond: a survey of web tools for searching biomedical literature.
+\newblock Pubmed and beyond: a survey of web tools for searching biomedical
+  literature.
 \newblock {\em Database}, 2011:baq036, 2011.
 
 \bibitem{gonzalez2024_biomed_landscape}
-Rita Gonz{\'a}lez-M{\'a}rquez, Luca Schmidt, Benjamin~M Schmidt, Philipp Berens, and Dmitry Kobak.
+Rita Gonz{\'a}lez-M{\'a}rquez, Luca Schmidt, Benjamin~M Schmidt, Philipp
+  Berens, and Dmitry Kobak.
 \newblock The landscape of biomedical research.
 \newblock {\em Patterns}, 5(6), 2024.
 
 \bibitem{islamaj2009_firstpage}
-Rezarta Islamaj~Dogan, G~Craig Murray, Aur{\'e}lie N{\'e}v{\'e}ol, and Zhiyong Lu.
-\newblock Understanding pubmed{\textregistered} user search behavior through log analysis.
+Rezarta Islamaj~Dogan, G~Craig Murray, Aur{\'e}lie N{\'e}v{\'e}ol, and Zhiyong
+  Lu.
+\newblock Understanding pubmed{\textregistered} user search behavior through
+  log analysis.
 \newblock {\em Database}, 2009:bap018, 2009.
 
 \bibitem{perera2020_ie_introduction}
 Nadeesha Perera, Matthias Dehmer, and Frank Emmert-Streib.
-\newblock Named entity recognition and relation detection for biomedical information extraction.
+\newblock Named entity recognition and relation detection for biomedical
+  information extraction.
 \newblock {\em Frontiers in cell and developmental biology}, 8:673, 2020.
 
 \bibitem{li2017cnn}
-Haodi Li, Qingcai Chen, Buzhou Tang, Xiaolong Wang, Hua Xu, Baohua Wang, and Dong Huang.
+Haodi Li, Qingcai Chen, Buzhou Tang, Xiaolong Wang, Hua Xu, Baohua Wang, and
+  Dong Huang.
 \newblock Cnn-based ranking for biomedical entity normalization.
 \newblock {\em BMC bioinformatics}, 18(Suppl 11):385, 2017.
 
 \bibitem{segura2011linguistic}
 Isabel Segura-Bedmar, Paloma Mart{\'\i}nez, and C{\'e}sar de~Pablo-S{\'a}nchez.
-\newblock A linguistic rule-based approach to extract drug-drug interactions from pharmacological documents.
+\newblock A linguistic rule-based approach to extract drug-drug interactions
+  from pharmacological documents.
 \newblock {\em BMC bioinformatics}, 12(Suppl 2):S1, 2011.
 
 \bibitem{hu2024hierarchical}
 Ying Hu, Yanping Chen, Ruizhang Huang, Yongbin Qin, and Qinghua Zheng.
-\newblock A hierarchical convolutional model for biomedical relation extraction.
+\newblock A hierarchical convolutional model for biomedical relation
+  extraction.
 \newblock {\em Information Processing \& Management}, 61(1):103560, 2024.
 
 \bibitem{fei2021span}
 Hao Fei, Yue Zhang, Yafeng Ren, and Donghong Ji.
-\newblock A span-graph neural model for overlapping entity relation extraction in biomedical texts.
+\newblock A span-graph neural model for overlapping entity relation extraction
+  in biomedical texts.
 \newblock {\em Bioinformatics}, 37(11):1581--1589, 2021.
 
 \bibitem{flanagin2024aspects}
 Annette Flanagin.
 \newblock Aspects of scientific writing.
-\newblock {\em Principles of Scientific Writing and Biomedical Publication: A JAMA Editors Guide for Authors}, page~64, 2024.
+\newblock {\em Principles of Scientific Writing and Biomedical Publication: A
+  JAMA Editors Guide for Authors}, page~64, 2024.
 
 \bibitem{krauthammer2004term}
 Michael Krauthammer and Goran Nenadic.
@@ -52,7 +62,8 @@ Michael Krauthammer and Goran Nenadic.
 
 \bibitem{da2015management}
 Marcos Da~Silveira, Julio~Cesar Dos~Reis, and C{\'e}dric Pruski.
-\newblock Management of dynamic biomedical terminologies: current status and future challenges.
+\newblock Management of dynamic biomedical terminologies: current status and
+  future challenges.
 \newblock {\em Yearbook of Medical informatics}, 24(01):125--133, 2015.
 
 \bibitem{zhao2021recent}
@@ -62,12 +73,14 @@ Sendong Zhao, Chang Su, Zhiyong Lu, and Fei Wang.
 
 \bibitem{sanger2025_fixed_dataset_eval_2}
 Mario S{\"a}nger and Ulf Leser.
-\newblock Knowledge-augmented pre-trained language models for biomedical relation extraction.
+\newblock Knowledge-augmented pre-trained language models for biomedical
+  relation extraction.
 \newblock {\em BMC bioinformatics}, 26(1):240, 2025.
 
 \bibitem{lai2023_fixed_dataset_eval}
 Po-Ting Lai, Chih-Hsuan Wei, Ling Luo, Qingyu Chen, and Zhiyong Lu.
-\newblock Biorex: improving biomedical relation extraction by leveraging heterogeneous datasets.
+\newblock Biorex: improving biomedical relation extraction by leveraging
+  heterogeneous datasets.
 \newblock {\em Journal of Biomedical Informatics}, 146:104487, 2023.
 
 \bibitem{bian2025_llm_automation_shift}
@@ -76,13 +89,16 @@ Haonan Bian.
 \newblock {\em arXiv preprint arXiv:2510.20345}, 2025.
 
 \bibitem{zhang2024study}
-Jeffrey Zhang, Maxwell Wibert, Huixue Zhou, Xueqing Peng, Qingyu Chen, Vipina~K Keloth, Yan Hu, Rui Zhang, Hua Xu, and Kalpana Raja.
+Jeffrey Zhang, Maxwell Wibert, Huixue Zhou, Xueqing Peng, Qingyu Chen, Vipina~K
+  Keloth, Yan Hu, Rui Zhang, Hua Xu, and Kalpana Raja.
 \newblock A study of biomedical relation extraction using gpt models.
-\newblock {\em AMIA Summits on Translational Science Proceedings}, 2024:391, 2024.
+\newblock {\em AMIA Summits on Translational Science Proceedings}, 2024:391,
+  2024.
 
 \bibitem{martin2026_llm_performance}
 Ioana~Ramona Martin, Tudor Cioara, Ionut Anghel, and Gabriel Arcas.
-\newblock Performance evaluation of large language models for automated knowledge graph generation.
+\newblock Performance evaluation of large language models for automated
+  knowledge graph generation.
 \newblock {\em Machine Learning with Applications}, page 100923, 2026.
 
 \bibitem{luo2022_biored}
@@ -91,33 +107,48 @@ Ling Luo, Po-Ting Lai, Chih-Hsuan Wei, Cecilia~N Arighi, and Zhiyong Lu.
 \newblock {\em Briefings in Bioinformatics}, 23(5):bbac282, 2022.
 
 \bibitem{brown2020llm_fewshot_learners}
-Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et~al.
+Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D Kaplan, Prafulla
+  Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell,
+  et~al.
 \newblock Language models are few-shot learners.
-\newblock {\em Advances in neural information processing systems}, 33:1877--1901, 2020.
+\newblock {\em Advances in neural information processing systems},
+  33:1877--1901, 2020.
 
 \bibitem{labrak2024zero}
 Yanis Labrak, Mickael Rouvier, and Richard Dufour.
-\newblock A zero-shot and few-shot study of instruction-finetuned large language models applied to clinical and biomedical tasks.
-\newblock In {\em Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)}, pages 2049--2066, 2024.
+\newblock A zero-shot and few-shot study of instruction-finetuned large
+  language models applied to clinical and biomedical tasks.
+\newblock In {\em Proceedings of the 2024 Joint International Conference on
+  Computational Linguistics, Language Resources and Evaluation (LREC-COLING
+  2024)}, pages 2049--2066, 2024.
 
 \bibitem{ge2026improving}
 Yao Ge, Yuting Guo, Sudeshna Das, and Abeed Sarker.
-\newblock Improving few-shot named entity recognition for large language models using structured dynamic prompting with retrieval augmented generation.
+\newblock Improving few-shot named entity recognition for large language models
+  using structured dynamic prompting with retrieval augmented generation.
 \newblock {\em NPJ Artificial Intelligence}, 2(1):39, 2026.
 
 \bibitem{brokman2025benchmark}
 Aviv Brokman, Xuguang Ai, Yuhang Jiang, Shashank Gupta, and Ramakanth Kavuluru.
-\newblock A benchmark for end-to-end zero-shot biomedical relation extraction with llms: experiments with openai models.
-\newblock In {\em Proceedings of the Third Workshop for Artificial Intelligence for Scientific Publications}, pages 44--55, 2025.
+\newblock A benchmark for end-to-end zero-shot biomedical relation extraction
+  with llms: experiments with openai models.
+\newblock In {\em Proceedings of the Third Workshop for Artificial Intelligence
+  for Scientific Publications}, pages 44--55, 2025.
 
 \bibitem{krallinger2017overview}
-Martin Krallinger, Obdulia Rabal, Saber~A Akhondi, Mart{\i}n~P{\'e}rez P{\'e}rez, Jes{\'u}s Santamar{\'\i}a, Gael~P{\'e}rez Rodr{\'\i}guez, Georgios Tsatsaronis, Ander Intxaurrondo, Jos{\'e}~Antonio L{\'o}pez, Umesh Nandal, et~al.
+Martin Krallinger, Obdulia Rabal, Saber~A Akhondi, Mart{\i}n~P{\'e}rez
+  P{\'e}rez, Jes{\'u}s Santamar{\'\i}a, Gael~P{\'e}rez Rodr{\'\i}guez, Georgios
+  Tsatsaronis, Ander Intxaurrondo, Jos{\'e}~Antonio L{\'o}pez, Umesh Nandal,
+  et~al.
 \newblock Overview of the biocreative vi chemical-protein interaction track.
-\newblock In {\em Proceedings of the sixth BioCreative challenge evaluation workshop}, volume~1, pages 141--146, 2017.
+\newblock In {\em Proceedings of the sixth BioCreative challenge evaluation
+  workshop}, volume~1, pages 141--146, 2017.
 
 \bibitem{labonte2026structured}
 Frederik Labont{\'e}, Suraj Giri, Claudius Herbrik, and Lucie Flek.
-\newblock Structured multi-extraction prompting improves llm-based biomedical relation extraction without fine-tuning.
-\newblock In {\em Nordic Conference on Digital Health and Wireless Solutions}, pages 608--643. Springer, 2026.
+\newblock Structured multi-extraction prompting improves llm-based biomedical
+  relation extraction without fine-tuning.
+\newblock In {\em Nordic Conference on Digital Health and Wireless Solutions},
+  pages 608--643. Springer, 2026.
 
 \end{thebibliography}
