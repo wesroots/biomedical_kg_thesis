@@ -12,7 +12,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Performance and Limitations}{8}{}%
 \contentsline {subsection}{\numberline {2.2.4}Structured Output}{9}{}%
 \contentsline {subsection}{\numberline {2.2.5}Implications for Biomedical Information Extraction}{9}{}%
-\contentsline {section}{\numberline {2.3}Knowledge Graph Construction Using Large Language Models}{10}{}%
+\contentsline {section}{\numberline {2.3}Knowledge Graph Construction Using \glspl {llm}}{9}{}%
+\contentsline {subsection}{\numberline {2.3.1}Knowledge Graph Representation}{9}{}%
+\contentsline {subsection}{\numberline {2.3.2}LLM-Based Knowledge Graph Construction}{10}{}%
+\contentsline {subsection}{\numberline {2.3.3}Ontology Integration and Entity Normalisation}{10}{}%
+\contentsline {subsection}{\numberline {2.3.4}Challenges and Quality of \gls {llm}-Constructed Knowledge Graphs}{10}{}%
 \contentsline {section}{\numberline {2.4}Benchmark Datasets and Evaluation}{10}{}%
 \contentsline {section}{\numberline {2.5}Generalisation to Contemporary Biomedical Literature}{10}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{11}{}%

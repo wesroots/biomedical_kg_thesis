@@ -307,6 +307,12 @@ INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-ot1r.tfm
 INPUT D:\MikTeX\fonts\vf\public\newtx\ntx-Bold-tlf-ot1.vf
 INPUT D:\MikTeX\fonts\tfm\public\newtx\txbmiaX.tfm
 INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-ot1r.tfm
+INPUT D:\MikTeX\fonts\vf\public\newtx\ntxsy.vf
+INPUT D:\MikTeX\fonts\tfm\public\newtx\txsys.tfm
+INPUT D:\MikTeX\fonts\tfm\public\newtx\txex-bar.tfm
+INPUT D:\MikTeX\fonts\vf\public\newtx\ntxmi.vf
+INPUT D:\MikTeX\fonts\tfm\public\newtx\NewTXMI.tfm
+INPUT D:\MikTeX\fonts\tfm\public\newtx\stxscr.tfm
 INPUT .\chapters\03_methodology.tex
 INPUT .\chapters\03_methodology.tex
 OUTPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\03_methodology.aux
@@ -340,7 +346,6 @@ INPUT D:\MikTeX\tex\latex\newtx\ts1ntxtlf.fd
 INPUT D:\MikTeX\tex\latex\newtx\ts1ntxtlf.fd
 INPUT D:\MikTeX\fonts\tfm\public\tex-gyre\ts1-qtmr.tfm
 INPUT D:\MikTeX\fonts\vf\public\newtx\ntx-Italic-tlf-ot1.vf
-INPUT D:\MikTeX\fonts\tfm\public\newtx\NewTXMI.tfm
 INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Italic-tlf-ot1r.tfm
 INPUT D:\MikTeX\fonts\enc\dvips\tex-gyre\q-ts1.enc
 INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux
@@ -362,8 +367,12 @@ INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\05_discu
 INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\06_conclusion.aux
 INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\06_conclusion.aux
 INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\06_conclusion.aux
+INPUT D:\MikTeX\fonts\type1\public\newtx\NewTXMI.pfb
+INPUT D:\MikTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT D:\MikTeX\fonts\type1\public\tex-gyre\qtmr.pfb
 INPUT D:\MikTeX\fonts\type1\public\tex-gyre\qtmr.pfb
+INPUT D:\MikTeX\fonts\type1\public\newtx\txsys.pfb
+INPUT D:\MikTeX\fonts\type1\public\newtx\txsys.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\ztmb.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\ztmb.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\ztmr.pfb
