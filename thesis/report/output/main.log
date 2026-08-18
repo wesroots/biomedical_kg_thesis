@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  17 AUG 2026 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  18 AUG 2026 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,20 +737,20 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 
 ] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 85.
+(Font)              scaled to size 8.8pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 85.
-
-Overfull \hbox (10.98721pt too wide) in paragraph at lines 105--105
+(Font)              scaled to size 6.6pt on input line 84.
+ [10] [11]
+Overfull \hbox (10.98721pt too wide) in paragraph at lines 135--135
 []\OT1/ntxtlf/b/n/17.28 Generalisation to Con-tem-po-rary Biomed-i-cal Lit-
  []
 
-) [10]
+) [12]
 \openout2 = `chapters/03_methodology.aux'.
 
  (chapters/03_methodology.tex
 Chapter 3.
-) [11
+) [13
 
 
 
@@ -760,7 +760,7 @@ Chapter 3.
 
  (chapters/04_results.tex
 Chapter 4.
-) [12
+) [14
 
 
 
@@ -770,7 +770,7 @@ Chapter 4.
 
  (chapters/05_discussion.tex
 Chapter 5.
-) [13
+) [15
 
 
 
@@ -780,7 +780,7 @@ Chapter 5.
 
  (chapters/06_conclusion.tex
 Chapter 6.
-) [14
+) [16
 
 
 
@@ -794,28 +794,28 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
- [15
+ [17
 
 
 
-{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [16]) [17] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
+{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [18]) [19] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15153 strings out of 467870
- 284694 string characters out of 5435190
+ 15155 strings out of 467870
+ 284731 string characters out of 5435190
  741453 words of memory out of 5000000
- 43774 multiletter control sequences out of 15000+600000
- 670555 words of font info for 129 fonts, out of 8000000 for 9000
+ 43776 multiletter control sequences out of 15000+600000
+ 671995 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,6n,77p,2543b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (18 pages, 178567 bytes).
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (20 pages, 185132 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

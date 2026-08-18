@@ -38,8 +38,6 @@ Development and evaluation throughout this progression have mainly been driven b
 
 Both of these approaches, however, rely on \glspl{plm} tuned on labelled benchmark data, with performance assessed against fixed, in-distribution, annotated datasets. This highlights an important methodological limitation for practical application, where extraction systems must perform robustly on dynamic, contemporary literature, rather than a static benchmark corpus. Therefore, the extent to which performance established on benchmark data transfers to unseen contemporary literature remains an important question and a motivator for \gls{rq2}.
 
-
-
 % ---------- Sec. 2.2 - LLMs for Biomedical IE ----------
 \section{Large Language Models for Biomedical Information Extraction}
 \label{sec:lit:llms_for_biomedical_ie}
@@ -79,10 +77,14 @@ In summation, the current literature provides a more nuanced view than the concl
 \label{sec:lit:kg_construction_using_llms}
 
 \subsection{Knowledge Graph Representation}
-\label{subsec:lit:kg_represntation}
+\label{subsec:lit:kg_representation}
 A \gls{kg} represents information as a set of entities, or nodes, connected by relations, or edges, with both nodes and edges, sometimes including additional information such as a confidence score, or source identifier \pref. The fundamental unit of a \gls{kg} is the triple, which represents a single relationship between two entities. For example, the finding that warfarin is associated with intracranial haemorrhage can be represented as the triple:
 
-\[(\text{Warfarin}, \text{Association}, \text{Intracranial Haemorrhage}).\]
+\[
+(\text{Warfarin},
+\text{Association},
+\text{Intracranial Haemorrhage}).
+\]
 
 \noindent A \gls{kg} is fundamentally a collection of triples, with shared entities linking separate triples into a connected structure rather than a set of isolated relations.
 
@@ -92,12 +94,40 @@ This representation maps naturally onto the information extraction tasks introdu
 
 \subsection{LLM-Based Knowledge Graph Construction}
 \label{subsec:lit:llm_based_kg_construction}
+Section~\ref{subsec:lit:transition_to_llms} outlined how the recent \gls{llm}-driven work represents a broader shift in knowledge extraction from rule-based and modular pipelines towards adaptive generative frameworks \cite{bian2025_llm_automation_shift}. In the context of \gls{kg} construction, this shift changes the overall architecture of the entire extraction-to-graph system. A traditional, modular architecture treats \gls{nen}, \gls{ner}, and \gls{re} as separate stages, each performed by a distinct model or tool, before the resulting entities and relations are assembled into a graph \pref. Although the exact ordering of these steps may differ, an example module workflow is:
+
+\[
+\text{Text} \rightarrow \text{RE} \rightarrow \text{NER} \rightarrow \text{NEN} \rightarrow \text{KG} \ \pref.
+\]
+
+An \gls{llm}-driven approach instead allows a single model to conduct \gls{re} and \gls{ner} directly from text within one pipeline step, with a separate subsequent step conducting \gls{nen} before \gls{kg} construction:
+
+\[
+\text{Text} \rightarrow \boxed{\text{LLM joint NER} + \text{RE}} \rightarrow \text{NEN} \rightarrow \text{KG}.
+\]
+
+This consolidation is possible as an \gls{llm} with a single adequate prompt can both recognise entity spans and the relations between them in text. Recent work evaluating end-to-end biomedical relation extraction using \glspl{llm} demonstrates the potential of joint-extraction \cite{brokman2025benchmark} (?) and multi-extraction prompting has also been shown to support this within a single framework without requiring additional fine-tuning \cite{labonte2026structured}.
+
+Furthermore, because the \gls{llm}'s output is constrained to an easily-parsable schema, rather than free text, the extracted entities and relations are already in a form that does not require extra parsing or interpretation to be mapped onto graph triples. This is what allows the \gls{llm}-driven architecture to abstract several traditionally separate pipeline stages into fewer steps.
+
+It is worth noting that \glspl{llm} can support \gls{kg} construction beyond direct entity and relation extraction, including schema and ontology generation or refinement \cite{bian2025_llm_automation_shift} \pref. This project primarily uses an \gls{llm}-based approach for structured information extraction, while also implementing \gls{llm}-assisted error analysis during iterative development of the extraction system. The graph schema and ontology itself, however, remain predefined, rather than being generated or refined by the \gls{llm}.
 
 \subsection{Ontology Integration and Entity Normalisation}
 \label{subsec:lit:ontology_integration_and_en}
+Within \gls{kg} construction, \gls{nen} provides the connection between entity mentions extracted from free text and established biomedical concepts. As discussed in \ref{subsec:lit:challenges}, relying on separate nodes formed by unmapped string would fragment mentions of the same biomedical concepts across the graph. Mapping these mentions to ontology identifiers instead allows references to the same underlying concepts to be consolidated.
+
+Biomedical ontologies and vocabularies address this by providing a fixed set of biomedical concepts, each associated with an established identifier, that extracted mentions can be mapped to \pref. \gls{nen} therefore acts as the step that allows a free-text span to be represented by an identifiable graph node.
+
+Beyond identifier assignment, the ontology can also constrain the \gls{kg} more broadly, restricting the extracted entities and relations to respective predefined, established sets \pref. This introduces a distinction between normalisation and ontology-based validation. While \gls{nen} maps an extracted span of text to a consolidated, established concept, validation can assess whether extracted entities and relations align with existing ontologies. Ontology integration can therefore support the consolidation and validation of the resulting \gls{kg} \pref.
 
 \subsection{Challenges and Quality of \gls{llm}-Constructed Knowledge Graphs}
 \label{subsec:lit:challenges_and_quality_of_llm_kgs}
+Because a \gls{kg} is assembled directly from the outputs of the extraction pipeline, errors made in the \gls{ner}, \gls{re}, and \gls{nen} stages are not isolated from other stages, but pass into the resulting graph. For example, a false-positive entity or relation will become an incorrect node or edge, while false negatives would become missing edges. False-positive relations may be the more detrimental of the two errors, as the graph explicitly states them as knowledge rather than just excluding them \pref. Errors at the \gls{nen} stage, discussed in Section~\ref{subsec:lit:ontology_integration_and_en}, have a similar effect: false-negative normalisation results in mentions of the same concept separated across duplicate nodes, while false-positive normalisation consolidates distinct concepts into a single node \pref.
+
+% ---------- Clean up the following: ----------
+Of these failure modes, hallucinated or background-knowledge-derived content, introduced in Section~\ref{subsec:lit:performance_and_limitations}, is particularly consequential for \gls{kg} construction. Whereas a hallucinated span in an isolated extraction output is a single erroneous prediction, once incorporated into a \gls{kg} it becomes a persistent, structurally embedded assertion rather than an isolated model error \pref.
+
+This propagation of error means that \gls{kg} quality is dependent on, but not equivalent to, the quality of the underlying extraction. A \gls{kg} can additionally be evaluated on properties that only emerge once individual extractions are assembled into a graph structure, including overall validity and internal consistency, completeness, connectivity, duplication, and compliance with the underlying ontology or schema \pref. These graph-level properties, and the specific metrics used to assess them in this project, are addressed in the Evaluation section of the Methodology %(Section~\ref{}).
 
 \section{Benchmark Datasets and Evaluation}
 \label{sec:lit:Benchmark Datasets and Evaluation}

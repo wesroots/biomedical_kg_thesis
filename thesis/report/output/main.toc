@@ -15,20 +15,20 @@
 \contentsline {section}{\numberline {2.3}Knowledge Graph Construction Using \glspl {llm}}{9}{}%
 \contentsline {subsection}{\numberline {2.3.1}Knowledge Graph Representation}{9}{}%
 \contentsline {subsection}{\numberline {2.3.2}LLM-Based Knowledge Graph Construction}{10}{}%
-\contentsline {subsection}{\numberline {2.3.3}Ontology Integration and Entity Normalisation}{10}{}%
-\contentsline {subsection}{\numberline {2.3.4}Challenges and Quality of \gls {llm}-Constructed Knowledge Graphs}{10}{}%
-\contentsline {section}{\numberline {2.4}Benchmark Datasets and Evaluation}{10}{}%
-\contentsline {section}{\numberline {2.5}Generalisation to Contemporary Biomedical Literature}{10}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{11}{}%
-\contentsline {subsection}{\numberline {3.0.1}Research Design}{11}{}%
-\contentsline {subsection}{\numberline {3.0.2}Datasets}{11}{}%
-\contentsline {subsection}{\numberline {3.0.3}System Architecture}{11}{}%
-\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{11}{}%
-\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{11}{}%
-\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{11}{}%
-\contentsline {subsection}{\numberline {3.0.7}Evaluation}{11}{}%
-\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{11}{}%
-\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{11}{}%
-\contentsline {chapter}{\numberline {4}Results}{12}{}%
-\contentsline {chapter}{\numberline {5}Discussion}{13}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{14}{}%
+\contentsline {subsection}{\numberline {2.3.3}Ontology Integration and Entity Normalisation}{11}{}%
+\contentsline {subsection}{\numberline {2.3.4}Challenges and Quality of \gls {llm}-Constructed Knowledge Graphs}{12}{}%
+\contentsline {section}{\numberline {2.4}Benchmark Datasets and Evaluation}{12}{}%
+\contentsline {section}{\numberline {2.5}Generalisation to Contemporary Biomedical Literature}{12}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{13}{}%
+\contentsline {subsection}{\numberline {3.0.1}Research Design}{13}{}%
+\contentsline {subsection}{\numberline {3.0.2}Datasets}{13}{}%
+\contentsline {subsection}{\numberline {3.0.3}System Architecture}{13}{}%
+\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{13}{}%
+\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{13}{}%
+\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{13}{}%
+\contentsline {subsection}{\numberline {3.0.7}Evaluation}{13}{}%
+\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{13}{}%
+\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{13}{}%
+\contentsline {chapter}{\numberline {4}Results}{14}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{15}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{16}{}%
