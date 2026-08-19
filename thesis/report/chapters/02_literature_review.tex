@@ -122,15 +122,56 @@ Beyond identifier assignment, the ontology can also constrain the \gls{kg} more 
 
 \subsection{Challenges and Quality of \gls{llm}-Constructed Knowledge Graphs}
 \label{subsec:lit:challenges_and_quality_of_llm_kgs}
-Because a \gls{kg} is assembled directly from the outputs of the extraction pipeline, errors made in the \gls{ner}, \gls{re}, and \gls{nen} stages are not isolated from other stages, but pass into the resulting graph. For example, a false-positive entity or relation will become an incorrect node or edge, while false negatives would become missing edges. False-positive relations may be the more detrimental of the two errors, as the graph explicitly states them as knowledge rather than just excluding them \pref. Errors at the \gls{nen} stage, discussed in Section~\ref{subsec:lit:ontology_integration_and_en}, have a similar effect: false-negative normalisation results in mentions of the same concept separated across duplicate nodes, while false-positive normalisation consolidates distinct concepts into a single node \pref.
+Because a \gls{kg} is assembled directly from the outputs of the extraction pipeline, errors made in the \gls{ner}, \gls{re}, and \gls{nen} stages are not isolated from other stages, but instead pass into the resulting graph. For example, a false-positive entity or relation will become an incorrect node or edge, while false negatives would become missing edges. False-positive relations may be the more detrimental of the two errors, as the graph explicitly states them as knowledge rather than just excluding them \pref. Errors at the \gls{nen} stage, discussed in Section~\ref{subsec:lit:ontology_integration_and_en}, have a similar effect: false-negative normalisation results in mentions of the same concept separated across duplicate nodes, while false-positive normalisation consolidates separate concepts into a single node \pref.
 
-% ---------- Clean up the following: ----------
-Of these failure modes, hallucinated or background-knowledge-derived content, introduced in Section~\ref{subsec:lit:performance_and_limitations}, is particularly consequential for \gls{kg} construction. Whereas a hallucinated span in an isolated extraction output is a single erroneous prediction, once incorporated into a \gls{kg} it becomes a persistent, structurally embedded assertion rather than an isolated model error \pref.
-
-This propagation of error means that \gls{kg} quality is dependent on, but not equivalent to, the quality of the underlying extraction. A \gls{kg} can additionally be evaluated on properties that only emerge once individual extractions are assembled into a graph structure, including overall validity and internal consistency, completeness, connectivity, duplication, and compliance with the underlying ontology or schema \pref. These graph-level properties, and the specific metrics used to assess them in this project, are addressed in the Evaluation section of the Methodology %(Section~\ref{}).
+Because of the connected nature of steps in an extraction pipeline system, \gls{kg} quality is dependent on the quality of the original extraction. A \gls{kg} can also be evaluated at the graph level for properties such as consistency, completeness, duplication, and compliance with its ontology or schema \pref.
 
 \section{Benchmark Datasets and Evaluation}
 \label{sec:lit:Benchmark Datasets and Evaluation}
+
+\subsection{Biomedical \gls{ie} Benchmark Datasets}
+\label{subsec:lit:biomed_ie_benchmark_datasets}
+Progress in biomedical \gls{ie}, has largeley been measured against manually annotated benchmark corpora, which provide the ground truth against which \gls{ner} and \gls{re} systems are trained and evaluated \pref. As annotation is costly and requires domain expertise, researchers typically constrain their annotations to particular biomedical entities, relations, or domains \pref, targeting a specific set of entity and relation types, rather than biomedical text in general \pref. Because of this, different benchmarks are not directly interchangeable as an extraction system's reported performance reflects the entities, relations, and schema of the specific benchmark it was evaluated on, rather than a measure of their general biomedical extraction ability. This benchmark heterogeneity was discussed in Section~\ref{subsec:lit:transition_to_llms}, where performance was shown to vary significantly between the \gls{gad} and ChemProt datasets.
+
+This heterogeneity is stated briefly in table \pref, comparing the domain and entity/relation scopes of three benchmark datasets previously mentioned in this report.
+
+\begin{table}[H]
+    \centering
+    \caption{Performance of biomedical relation extraction models}
+    \label{tab:re-performance}
+    \begin{tabularx}{\textwidth}{l Y Y Y}
+        \toprule
+        Dataset & Subdomain & Entity/Relation Type & Project Relevance \\
+        \midrule
+        GAD \cite{bravo2015extraction}
+        & Genetic association
+        & Gene-disease association pairs: single binary relation type
+        & Narrow, single-relation benchmark \\
+        ChemProt \cite{krallinger2017overview}
+        & Chemical-protein interaction
+        & Chemical and protein entities: multiple interaction subtypes
+        & Benchmark with a more complex relation schema \\
+        BioRED \cite{luo2022_biored}
+        & General biomedical abstracts
+        & Multiple entity types (e.g., gene, disease, chemical, species) and multiple relation types
+        & Broader biomedical coverage \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+This comparison demonstrates that the interpretation of a strongly-performing extraction system is dependent on the dataset it is built on: a model exhibiting strong results on the \gls{gad} dataset demonstrates a narrower scope of extraction strength than that of the BioRED dataset as the two differ substantially in terms of how many entity and relation types must be extracted and, therefore, understanding of context from biomedical literature. This difference motivates the choice of BioRED as the benchmark dataset used to develop the extraction pipeline in this project as a benchmark covering multiple entity and relation types is more representative of the broader task of general-purpose \gls{kg} construction.
+
+\subsection{BioRED}
+\label{subsec:lit:biored}
+BioRED, introduced in Section~\ref{subsec:lit:transition_to_llms}, is a manually annotated corpus of 600 PubMed abstracts, constructed to support document-level, multi-entry, multi-relation biomedical relation extraction \pref.
+
+The corpus comprises six entity types: chemical entity (\verb|ChemicalEntity|), disease or phenotypic feature (\verb|DiseaseOrPhenotypicFeature|), gene or gene product (\verb|GeneOrGeneProduct|), sequence variant (\verb|SequenceVariant|), organism taxon (\verb|OrganismTaxon|) connected by eight relation types: association (\verb|Association|), bind (\verb|bind|), comparison (\verb|Comparison|), conversion (\verb|Conversion|), cotreatment (\verb|Cotreatment|), drug interaction (\verb|Drug_Interaction|), negative correlation (\verb|Negative_Correlation|) and positive correlation (\verb|Positive_Correlation|).
+
+\subsection{Extraction-Level Evaluation}
+\label{subsec:lit:extraction_level_eval}
+
+\subsection{Limitations of Benchmark Evaluation}
+\label{subsec:lit:limitations_of_benchmark_eval}
 
 \section{Generalisation to Contemporary Biomedical Literature}
 \label{sec:lit:Generalisation to Contemporary Biomedical Literature}

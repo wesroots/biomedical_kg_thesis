@@ -10,11 +10,17 @@
 \usepackage{newtxtext}
 \usepackage{newtxmath}
 
+\usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{tabularx}
 \usepackage[acronym]{glossaries}
 \usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{caption}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\captionsetup[table]{skip=8pt}
 
 \makeatletter
 \patchcmd{\@makechapterhead}

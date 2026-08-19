@@ -151,4 +151,11 @@ Frederik Labont{\'e}, Suraj Giri, Claudius Herbrik, and Lucie Flek.
 \newblock In {\em Nordic Conference on Digital Health and Wireless Solutions},
   pages 608--643. Springer, 2026.
 
+\bibitem{bravo2015extraction}
+{\`A}lex Bravo, Janet Pi{\~n}ero, N{\'u}ria Queralt-Rosinach, Michael
+  Rautschka, and Laura~I Furlong.
+\newblock Extraction of relations between genes and diseases from text and
+  large-scale data analysis: implications for translational research.
+\newblock {\em BMC bioinformatics}, 16(1):55, 2015.
+
 \end{thebibliography}

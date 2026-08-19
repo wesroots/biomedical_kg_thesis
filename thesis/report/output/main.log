@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  18 AUG 2026 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  19 AUG 2026 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,6 +310,31 @@ LaTeX Font Info:    Redeclaring math accent \ddot on input line 992.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 2057.
 LaTeX Info: Redefining \Bbbk on input line 2847.
 LaTeX Info: Redefining \not on input line 2995.
+) (D:\MikTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks29
+\MT@tempbox=\box55
+\MT@count=\count309
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks30
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen180
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count310
+ (D:\MikTeX\tex/latex/microtype\microtype-pdftex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip54
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (D:\MikTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
 ) (D:\MikTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (D:\MikTeX\tex/latex/graphics\graphics.sty
@@ -321,40 +346,40 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 )
-\Gin@req@height=\dimen180
-\Gin@req@width=\dimen181
+\Gin@req@height=\dimen181
+\Gin@req@width=\dimen182
 ) (D:\MikTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count309
-\float@exts=\toks29
-\float@box=\box55
-\@float@everytoks=\toks30
-\@floatcapt=\box56
+\c@float@type=\count311
+\float@exts=\toks31
+\float@box=\box56
+\@float@everytoks=\toks32
+\@floatcapt=\box57
 ) (D:\MikTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
  (D:\MikTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen182
-\ar@mcellbox=\box57
-\extrarowheight=\dimen183
-\NC@list=\toks31
-\extratabsurround=\skip54
-\backup@length=\skip55
-\ar@cellbox=\box58
+\col@sep=\dimen183
+\ar@mcellbox=\box58
+\extrarowheight=\dimen184
+\NC@list=\toks33
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box59
 )
-\TX@col@width=\dimen184
-\TX@old@table=\dimen185
-\TX@old@col=\dimen186
-\TX@target=\dimen187
-\TX@delta=\dimen188
-\TX@cols=\count310
-\TX@ftn=\toks32
+\TX@col@width=\dimen185
+\TX@old@table=\dimen186
+\TX@old@col=\dimen187
+\TX@target=\dimen188
+\TX@delta=\dimen189
+\TX@cols=\count312
+\TX@ftn=\toks34
 ) (D:\MikTeX\tex/latex/glossaries/base\glossaries.sty
 Package: glossaries 2026/04/21 v5.1 (NLCT)
  (D:\MikTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks33
-\@glsmrest=\toks34
+\@glsmfirst=\toks35
+\@glsmrest=\toks36
 ) (D:\MikTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (D:\MikTeX\tex/latex/datatool\datatool-base.sty
@@ -362,157 +387,198 @@ Package: datatool-base 2026/07/31 v3.4.4 (NLCT)
  (D:\MikTeX\tex/latex/tracklang\tracklang.sty
 Package: tracklang 2026/05/24 v1.6.8 (NLCT) Track Languages
  (D:\MikTeX\tex/generic/tracklang\tracklang.tex))
-\l__datatool_tmpa_int=\count311
-\l__datatool_tmpb_int=\count312
-\l__datatool_tmpc_int=\count313
-\l__datatool_tmpd_int=\count314
-\l__datatool_count_int=\count315
-\l__datatool_tmp_datatype_int=\count316
-\l__datatool_tmpa_dim=\dimen189
-\l__datatool_tmpb_dim=\dimen190
+\l__datatool_tmpa_int=\count313
+\l__datatool_tmpb_int=\count314
+\l__datatool_tmpc_int=\count315
+\l__datatool_tmpd_int=\count316
+\l__datatool_count_int=\count317
+\l__datatool_tmp_datatype_int=\count318
+\l__datatool_tmpa_dim=\dimen190
+\l__datatool_tmpb_dim=\dimen191
  (D:\MikTeX\tex/latex/datatool\datatool-l3fp.def
 File: datatool-l3fp.def 2026/07/31 v3.4.4 (NLCT)
 )
-\@dtl@toks=\toks35
-\@dtl@tmpcount=\count317
-\dtl@tmplength=\skip56
-\l__datatool_measure_box=\box59
-\dtl@sortresult=\count318
+\@dtl@toks=\toks37
+\@dtl@tmpcount=\count319
+\dtl@tmplength=\skip57
+\l__datatool_measure_box=\box60
+\dtl@sortresult=\count320
  (D:\MikTeX\tex/latex/datatool\datatool-utf8.ldf
 File: datatool-utf8.ldf 2026/07/31 v3.4.4 (NLCT)
 )
-\@dtl@datatype=\count319
-\c_datatool_unknown_int=\count320
-\l__datatool_year_int=\count321
-\l__datatool_month_int=\count322
-\l__datatool_day_int=\count323
-\l__datatool_hour_int=\count324
-\l__datatool_minute_int=\count325
-\l__datatool_second_int=\count326
-\l__datatool_tzhour_int=\count327
-\l__datatool_tzminute_int=\count328
-\l__datatool_julian_int=\count329
-\l__datatool_local_julian_int=\count330
-\l__datatool_prefix_int=\count331
-\l__datatool_suffix_int=\count332
-\@dtl@foreach@level=\count333
-\dtl@codeA=\count334
-\dtl@codeB=\count335
+\@dtl@datatype=\count321
+\c_datatool_unknown_int=\count322
+\l__datatool_year_int=\count323
+\l__datatool_month_int=\count324
+\l__datatool_day_int=\count325
+\l__datatool_hour_int=\count326
+\l__datatool_minute_int=\count327
+\l__datatool_second_int=\count328
+\l__datatool_tzhour_int=\count329
+\l__datatool_tzminute_int=\count330
+\l__datatool_julian_int=\count331
+\l__datatool_local_julian_int=\count332
+\l__datatool_prefix_int=\count333
+\l__datatool_suffix_int=\count334
+\@dtl@foreach@level=\count335
+\dtl@codeA=\count336
+\dtl@codeB=\count337
 )
-\gls@level=\count336
-\@gls@tmpb=\toks36
-\gls@tmplen=\skip57
-\l__glossaries_tmpa_dim=\dimen191
-\l__glossaries_tmpb_dim=\dimen192
-\glskeylisttok=\toks37
-\glslabeltok=\toks38
-\glsshorttok=\toks39
-\glslongtok=\toks40
+\gls@level=\count338
+\@gls@tmpb=\toks38
+\gls@tmplen=\skip58
+\l__glossaries_tmpa_dim=\dimen192
+\l__glossaries_tmpb_dim=\dimen193
+\glskeylisttok=\toks39
+\glslabeltok=\toks40
+\glsshorttok=\toks41
+\glslongtok=\toks42
  (D:\MikTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
 Package: glossary-hypernav 2026/04/21 v5.1 (NLCT)
 ) (D:\MikTeX\tex/latex/glossaries/styles\glossary-list.sty
 Package: glossary-list 2026/04/21 v5.1 (NLCT)
-\glslistdottedwidth=\skip58
+\glslistdottedwidth=\skip59
 ) (D:\MikTeX\tex/latex/glossaries/styles\glossary-long.sty
 Package: glossary-long 2026/04/21 v5.1 (NLCT)
  (D:\MikTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip59
-\LTright=\skip60
-\LTpre=\skip61
-\LTpost=\skip62
-\LTchunksize=\count337
-\LTcapwidth=\dimen193
-\LT@head=\box60
-\LT@firsthead=\box61
-\LT@foot=\box62
-\LT@lastfoot=\box63
-\LT@gbox=\box64
-\LT@cols=\count338
-\LT@rows=\count339
-\c@LT@tables=\count340
-\c@LT@chunks=\count341
-\LT@p@ftn=\toks41
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count339
+\LTcapwidth=\dimen194
+\LT@head=\box61
+\LT@firsthead=\box62
+\LT@foot=\box63
+\LT@lastfoot=\box64
+\LT@gbox=\box65
+\LT@cols=\count340
+\LT@rows=\count341
+\c@LT@tables=\count342
+\c@LT@chunks=\count343
+\LT@p@ftn=\toks43
 )
-\glsdescwidth=\skip63
-\glspagelistwidth=\skip64
+\glsdescwidth=\skip64
+\glspagelistwidth=\skip65
 ) (D:\MikTeX\tex/latex/glossaries/styles\glossary-super.sty
 Package: glossary-super 2026/04/21 v5.1 (NLCT)
  (D:\MikTeX\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count342
-\ST@wd=\dimen194
-\ST@rightskip=\skip65
-\ST@leftskip=\skip66
-\ST@parfillskip=\skip67
-\ST@pageleft=\dimen195
-\ST@headht=\dimen196
-\ST@tailht=\dimen197
-\ST@pagesofar=\dimen198
-\ST@pboxht=\dimen199
-\ST@rowht=\dimen256
-\ST@prevht=\dimen257
-\ST@toadd=\dimen258
-\ST@dimen=\dimen259
-\ST@pbox=\box65
+\c@tracingst=\count344
+\ST@wd=\dimen195
+\ST@rightskip=\skip66
+\ST@leftskip=\skip67
+\ST@parfillskip=\skip68
+\ST@pageleft=\dimen196
+\ST@headht=\dimen197
+\ST@tailht=\dimen198
+\ST@pagesofar=\dimen199
+\ST@pboxht=\dimen256
+\ST@rowht=\dimen257
+\ST@prevht=\dimen258
+\ST@toadd=\dimen259
+\ST@dimen=\dimen260
+\ST@pbox=\box66
 )) (D:\MikTeX\tex/latex/glossaries/styles\glossary-tree.sty
 Package: glossary-tree 2026/04/21 v5.1 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count343
-\l__glossaries_tree_offset_dim=\dimen260
-\l__glossaries_tree_namewidth_dim=\dimen261
-\l__glossaries_tree_symbolwidth_dim=\dimen262
-\l__glossaries_tree_prenamesym_width_dim=\dimen263
-\l__glossaries_tree_presubnamesym_width_dim=\dimen264
-\l__glossaries_tree_namewidth_padding_dim=\dimen265
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen266
-\l__glossaries_tree_namesymbolwidth_dim=\dimen267
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen268
-\l__glossaries_tree_level_int=\count344
-\glstreeindent=\skip68
-))
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 55.
+\l__glossaries_tree_max_known_level_int=\count345
+\l__glossaries_tree_offset_dim=\dimen261
+\l__glossaries_tree_namewidth_dim=\dimen262
+\l__glossaries_tree_symbolwidth_dim=\dimen263
+\l__glossaries_tree_prenamesym_width_dim=\dimen264
+\l__glossaries_tree_presubnamesym_width_dim=\dimen265
+\l__glossaries_tree_namewidth_padding_dim=\dimen266
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen267
+\l__glossaries_tree_namesymbolwidth_dim=\dimen268
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen269
+\l__glossaries_tree_level_int=\count346
+\glstreeindent=\skip69
+)) (D:\MikTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen270
+\lightrulewidth=\dimen271
+\cmidrulewidth=\dimen272
+\belowrulesep=\dimen273
+\belowbottomsep=\dimen274
+\aboverulesep=\dimen275
+\abovetopsep=\dimen276
+\cmidrulesep=\dimen277
+\cmidrulekern=\dimen278
+\defaultaddspace=\dimen279
+\@cmidla=\count347
+\@cmidlb=\count348
+\@aboverulesep=\dimen280
+\@belowrulesep=\dimen281
+\@thisruleclass=\count349
+\@lastruleclass=\count350
+\@thisrulewidth=\dimen282
+) (D:\MikTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (D:\MikTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen283
+\captionmargin=\dimen284
+\caption@leftmargin=\dimen285
+\caption@rightmargin=\dimen286
+\caption@width=\dimen287
+\caption@indent=\dimen288
+\caption@parindent=\dimen289
+\caption@hangindent=\dimen290
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count351
+\c@continuedfloat=\count352
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+ (D:\MikTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 61.
  (D:\MikTeX\tex/latex/newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 55.
+(Font)              scaled to size 12.0pt on input line 61.
  (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 55.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 55.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 61.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 61.
  (D:\MikTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 55.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 55.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 61.
  (D:\MikTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 55.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 55.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 61.
  (D:\MikTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 55.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 55.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 61.
  (D:\MikTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -548,112 +614,142 @@ LaTeX Font Info:    ... okay on input line 55.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 55.
-LaTeX Info: Command `\ddddot' is already robust on input line 55.
+LaTeX Info: Command `\dddot' is already robust on input line 61.
+LaTeX Info: Command `\ddddot' is already robust on input line 61.
 (D:\MikTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen269
-\scratchbox=\box66
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen270
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count353
+\scratchdimen=\dimen291
+\scratchbox=\box67
+\nofMPsegments=\count354
+\nofMParguments=\count355
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count356
+\MPscratchDim=\dimen292
+\MPnumerator=\count357
+\makeMPintoPDFobject=\count358
+\everyMPtoPDFconversion=\toks45
 ) (D:\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (D:\MikTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@mv@tabular=\count351
-\c@mv@boldtabular=\count352
+\c@mv@tabular=\count359
+\c@mv@boldtabular=\count360
+LaTeX Info: Redefining \microtypecontext on input line 61.
+Package microtype Info: Applying patch `item' on input line 61.
+Package microtype Info: Applying patch `toc' on input line 61.
+Package microtype Info: Applying patch `eqnum' on input line 61.
+Package microtype Info: Applying patch `footnote' on input line 61.
+Package microtype Info: Applying patch `verbatim' on input line 61.
+LaTeX Info: Redefining \microtypesetup on input line 61.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (D:\MikTeX\tex/latex/microtype\mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 57.
+(Font)              scaled to size 20.74pt on input line 63.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 63.
  (D:\MikTeX\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `minntx' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.9pt on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.9pt on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 57.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
  (D:\MikTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (D:\MikTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
  (D:\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (D:\MikTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 57.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 63.
  (D:\MikTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.9pt on input line 57.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 63.
  (D:\MikTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.9pt on input line 57.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 63.
  (D:\MikTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.9pt on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 14.4pt on input line 57.
+(Font)              scaled to size 14.4pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.5pt on input line 57.
+(Font)              scaled to size 10.5pt on input line 63.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.9pt on input line 57.
+(Font)              scaled to size 7.9pt on input line 63.
  [1
 
 {C:/Users/wesle/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/MikTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 58.
+(Font)              scaled to size 24.88pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 58.
+(Font)              scaled to size 24.88pt on input line 64.
  (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.toc
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -705,7 +801,12 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 8.8pt on input line 3.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.6pt on input line 3.
- [1
+
+Overfull \hbox (2.86562pt too wide) in paragraph at lines 21--21
+ [][] []\OT1/ntxtlf/m/n/12 (-20) Biomedical In-for-ma-tion Ex-trac-tion (IE) Bench-mark Datasets [][]  
+ []
+
+[1
 
 ])
 \tf@toc=\write3
@@ -740,17 +841,29 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 84.
- [10] [11]
-Overfull \hbox (10.98721pt too wide) in paragraph at lines 135--135
-[]\OT1/ntxtlf/b/n/17.28 Generalisation to Con-tem-po-rary Biomed-i-cal Lit-
+ [10] [11] [12]
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 168.
+ (D:\MikTeX\tex/latex/newtx\ot1ntxtt.fd
+File: ot1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 168.
+
+Overfull \hbox (19.91432pt too wide) in paragraph at lines 168--169
+\OT1/ntxtlf/m/n/12 (-20) ([][]\OT1/ntxtt/m/n/12 Conversion[]\OT1/ntxtlf/m/n/12 (-20) ), cotreat-ment ([][]\OT1/ntxtt/m/n/12 Cotreatment[]\OT1/ntxtlf/m/n/12 (-20) ), drug in-ter-ac-tion ([][]\OT1/ntxtt/m/n/12 Drug_Interaction[]\OT1/ntxtlf/m/n/12 (-20) ),
  []
 
-) [12]
+
+Overfull \hbox (94.08228pt too wide) in paragraph at lines 168--169
+\OT1/ntxtlf/m/n/12 (-20) neg-a-tive cor-re-la-tion ([][]\OT1/ntxtt/m/n/12 Negative_Correlation[]\OT1/ntxtlf/m/n/12 (-20) ) and pos-i-tive cor-re-la-tion ([][]\OT1/ntxtt/m/n/12 Positive_Correlation[]\OT1/ntxtlf/m/n/12 (-20) ). 
+ []
+
+) [13] [14]
 \openout2 = `chapters/03_methodology.aux'.
 
  (chapters/03_methodology.tex
 Chapter 3.
-) [13
+) [15
 
 
 
@@ -760,7 +873,7 @@ Chapter 3.
 
  (chapters/04_results.tex
 Chapter 4.
-) [14
+) [16
 
 
 
@@ -770,7 +883,7 @@ Chapter 4.
 
  (chapters/05_discussion.tex
 Chapter 5.
-) [15
+) [17
 
 
 
@@ -780,7 +893,7 @@ Chapter 5.
 
  (chapters/06_conclusion.tex
 Chapter 6.
-) [16
+) [18
 
 
 
@@ -794,28 +907,28 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
- [17
+ [19
 
 
 
-{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [18]) [19] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
+{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [20]) [21] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15155 strings out of 467870
- 284731 string characters out of 5435190
- 741453 words of memory out of 5000000
- 43776 multiletter control sequences out of 15000+600000
- 671995 words of font info for 131 fonts, out of 8000000 for 9000
+ 19028 strings out of 467870
+ 354731 string characters out of 5435190
+ 818274 words of memory out of 5000000
+ 47250 multiletter control sequences out of 15000+600000
+ 693864 words of font info for 380 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,77p,2543b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (20 pages, 185132 bytes).
+ 74i,10n,117p,2543b,403s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (22 pages, 200573 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66049 words of extra memory for PDF output out of 74296 (max. 10000000)
 
