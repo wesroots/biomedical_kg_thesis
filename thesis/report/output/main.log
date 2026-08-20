@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  19 AUG 2026 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  20 AUG 2026 10:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -859,12 +859,12 @@ Overfull \hbox (5.65572pt too wide) in paragraph at lines 174--175
 []\OT1/ntxtlf/m/n/12 (-20) However, BioRED re-mains as fixed, man-u-ally an-no-tated, benchmark-distributed
  []
 
-) [14]
+[14]) [15]
 \openout2 = `chapters/03_methodology.aux'.
 
  (chapters/03_methodology.tex
 Chapter 3.
-) [15
+) [16
 
 
 
@@ -874,7 +874,7 @@ Chapter 3.
 
  (chapters/04_results.tex
 Chapter 4.
-) [16
+) [17
 
 
 
@@ -884,7 +884,7 @@ Chapter 4.
 
  (chapters/05_discussion.tex
 Chapter 5.
-) [17
+) [18
 
 
 
@@ -894,7 +894,7 @@ Chapter 5.
 
  (chapters/06_conclusion.tex
 Chapter 6.
-) [18
+) [19
 
 
 
@@ -908,11 +908,11 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
- [19
+ [20
 
 
 
-{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [20]) [21] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
+{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [21]) [22] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -923,17 +923,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19060 strings out of 467870
- 355422 string characters out of 5435190
+ 19069 strings out of 467870
+ 355563 string characters out of 5435190
  818516 words of memory out of 5000000
  47278 multiletter control sequences out of 15000+600000
- 693864 words of font info for 380 fonts, out of 8000000 for 9000
+ 694532 words of font info for 387 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,117p,2543b,403s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (22 pages, 202980 bytes).
+<D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txmiaX.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (23 pages, 219609 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66049 words of extra memory for PDF output out of 74296 (max. 10000000)
 

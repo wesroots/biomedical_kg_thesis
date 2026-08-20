@@ -175,6 +175,23 @@ However, BioRED remains as fixed, manually annotated, benchmark-distributed corp
 
 \subsection{Extraction-Level Evaluation}
 \label{subsec:lit:extraction_level_eval}
+Comparing biomedical \gls{ie} systems, whether between the benchmark datasets in Section~\ref{subsec:lit:biomed_ie_benchmark_datasets} or traditional and \gls{llm}-based approaches discussed in Sections~\ref{subsec:lit:traditional_methods} and \ref{sec:lit:llms_for_biomedical_ie}, requires a consistent way of quantifying extraction quality. This is typically done by comparing a system's predicted entities or relations against a benchmark's manually annotated ground truth, classifying each prediction as a \gls{tp}, a correct prediction matching an annotations, a False Positive (\gls{fp}), a predicted instance with no associated annotation, or a False Negative (\gls{fn}), an annotation that the system failed to extract \pref.
+
+Three derived metrics are then calculated from these counts: precision, the proportion of extractions that are correct, recall, the proportion of annotations that were correctly identified from the source text, and F1 score, the harmonic mean of precision and recall, commonly reported as a standalone summary figure, previously mentioned in Section~\ref{subsec:lit:transition_to_llms} \pref.
+
+Accuracy measures the proportion of predictions that are correct:
+
+\[
+\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}.
+\]
+
+\vspace{1em}
+
+\noindent However, biomedical extraction tasks usually involve many possible entity or relation candidates where true negatives can dominate. Accuracy can therefore be misleadingly high when a system extracts very little. In contrast, precision, recall, and F1 better represent the balance between over- and under-extraction discussed in Section~\ref{subsec:lit:performance_and_limitations} \pref. This framework applies both at the entity and relation levels. At the entity level, predictions are evaluated as span-type pairs, whereas relation-level predictions are made up of a pair of entities and the relation connecting them. Relation-level performance therefore also depends on the correctness of the underlying entity predictions \pref.
+
+Additionally, the matching criteria used to determine whether an extracted entity or relation is correct should be noted. Under strict matching, a predicted entity span, type, or relation must exactly match an annotation to be counted as a true positive, with any boundary or string mismatch classifying the extraction as an \gls{fp} and the ground truth annotation as an \gls{fn} \pref. Using relaxed matching, some variation in the span, type, or relation is allowed, given the extraction still identifies the correct underlying concept \pref.
+
+This distinction is imperative for \gls{llm}-bsed extraction specifically. As \gls{llm} outputs are generated rather than selected from a fixed set of labels, a predicted entity or relation may be semantically equivalent to an annotated instance while differing in exact expression -- whether that is variation in exact string or its span boundary. Strict matching incorrectly classifies this variation as a genuine false negative, even when the underlying concept is correct. This motivates using a more relaxed or flexible matching approach when evaluating \gls{llm}-based extractions, illustrating the general limitations of strict matching for generative extractions. This project introduces supplementary evaluation approaches given the generative, variable nature of \gls{llm}-based extractions. The implementation of this approach is discussed in Section~\dep.
 
 \subsection{Limitations of Benchmark Evaluation}
 \label{subsec:lit:limitations_of_benchmark_eval}

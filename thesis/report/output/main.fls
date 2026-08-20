@@ -348,6 +348,8 @@ INPUT D:\MikTeX\tex\latex\newtx\ot1ntxtt.fd
 INPUT D:\MikTeX\tex\latex\newtx\ot1ntxtt.fd
 INPUT D:\MikTeX\tex\latex\newtx\ot1ntxtt.fd
 INPUT D:\MikTeX\fonts\tfm\public\txfonts\txtt.tfm
+INPUT D:\MikTeX\fonts\vf\public\newtx\ntxmia.vf
+INPUT D:\MikTeX\fonts\tfm\public\newtx\txmiaSTbb.tfm
 INPUT .\chapters\03_methodology.tex
 INPUT .\chapters\03_methodology.tex
 OUTPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\03_methodology.aux
@@ -406,6 +408,8 @@ INPUT D:\MikTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT D:\MikTeX\fonts\type1\public\tex-gyre\qtmr.pfb
 INPUT D:\MikTeX\fonts\type1\public\tex-gyre\qtmr.pfb
+INPUT D:\MikTeX\fonts\type1\public\newtx\txmiaX.pfb
+INPUT D:\MikTeX\fonts\type1\public\newtx\txmiaX.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\txsys.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\txsys.pfb
 INPUT D:\MikTeX\fonts\type1\public\txfonts\txtt.pfb
