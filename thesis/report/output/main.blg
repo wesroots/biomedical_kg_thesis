@@ -18,45 +18,45 @@ The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
 Warning--can't use both volume and number fields in krallinger2017overview
-You've used 25 entries,
+You've used 29 entries,
             1791 wiz_defined-function locations,
-            605 strings with 9420 characters,
-and the built_in function-call counts, 6682 in all, are:
-= -- 547
-> -- 383
-< -- 7
-+ -- 137
-- -- 112
-* -- 510
-:= -- 1081
-add.period$ -- 76
-call.type$ -- 25
-change.case$ -- 25
+            623 strings with 10281 characters,
+and the built_in function-call counts, 7836 in all, are:
+= -- 644
+> -- 442
+< -- 10
++ -- 158
+- -- 129
+* -- 581
+:= -- 1250
+add.period$ -- 88
+call.type$ -- 29
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 289
-empty$ -- 595
-format.name$ -- 112
-if$ -- 1470
+cite$ -- 30
+duplicate$ -- 350
+empty$ -- 701
+format.name$ -- 129
+if$ -- 1740
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 25
-newline$ -- 128
-num.names$ -- 25
-pop$ -- 51
+int.to.str$ -- 29
+missing$ -- 29
+newline$ -- 148
+num.names$ -- 29
+pop$ -- 67
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 150
+skip$ -- 191
 stack$ -- 0
-substring$ -- 424
-swap$ -- 85
-text.length$ -- 7
+substring$ -- 487
+swap$ -- 112
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 60
-width$ -- 27
-write$ -- 278
+while$ -- 69
+width$ -- 31
+write$ -- 322
 (There was 1 warning)

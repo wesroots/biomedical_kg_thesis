@@ -144,6 +144,12 @@ Martin Krallinger, Obdulia Rabal, Saber~A Akhondi, Mart{\i}n~P{\'e}rez
 \newblock In {\em Proceedings of the sixth BioCreative challenge evaluation
   workshop}, volume~1, pages 141--146, 2017.
 
+\bibitem{kim2026refining}
+Kon~Woo Kim, Jin-Dong Kim, and Akiko Aizawa.
+\newblock Refining and reusing annotation guidelines for llm annotation.
+\newblock In {\em Proceedings of the 64th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 37951--37964, 2026.
+
 \bibitem{labonte2026structured}
 Frederik Labont{\'e}, Suraj Giri, Claudius Herbrik, and Lucie Flek.
 \newblock Structured multi-extraction prompting improves llm-based biomedical
@@ -157,5 +163,25 @@ Frederik Labont{\'e}, Suraj Giri, Claudius Herbrik, and Lucie Flek.
 \newblock Extraction of relations between genes and diseases from text and
   large-scale data analysis: implications for translational research.
 \newblock {\em BMC bioinformatics}, 16(1):55, 2015.
+
+\bibitem{acevedo2024fairness}
+Nicolas Acevedo, Carmen Cortez, Chris Brooks, Rene Kizilcec, and Renzhe Yu.
+\newblock Fairness hub technical briefs: Definition and detection of
+  distribution shift.
+\newblock {\em arXiv preprint arXiv:2405.14186}, 2024.
+
+\bibitem{liu2025time}
+Weisi Liu, Zhe He, and Xiaolei Huang.
+\newblock Time matters: Examine temporal effects on biomedical language models.
+\newblock In {\em AMIA Annual Symposium Proceedings}, volume 2024, page 723,
+  2025.
+
+\bibitem{purpura2024investigating}
+Alberto Purpura, Natasha Mulligan, Uri Kartoun, Eileen Koski, Vibha Anand, and
+  Joao Bettencourt-Silva.
+\newblock Investigating cross-domain binary relation classification in
+  biomedical natural language processing.
+\newblock {\em AMIA Summits on Translational Science Proceedings}, 2024:384,
+  2024.
 
 \end{thebibliography}

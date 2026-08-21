@@ -9,30 +9,49 @@
 \contentsline {section}{\numberline {2.2}Large Language Models for Biomedical Information Extraction}{7}{}%
 \contentsline {subsection}{\numberline {2.2.1}Transition from Specialised Models to LLMs}{7}{}%
 \contentsline {subsection}{\numberline {2.2.2}Prompt-Based and Few-Shot Extraction}{7}{}%
-\contentsline {subsection}{\numberline {2.2.3}Performance and Limitations}{8}{}%
+\contentsline {subsection}{\numberline {2.2.3}Performance and Limitations}{9}{}%
 \contentsline {subsection}{\numberline {2.2.4}Structured Output}{9}{}%
-\contentsline {subsection}{\numberline {2.2.5}Implications for Biomedical Information Extraction}{9}{}%
-\contentsline {section}{\numberline {2.3}Knowledge Graph Construction Using \glspl {llm}}{9}{}%
-\contentsline {subsection}{\numberline {2.3.1}Knowledge Graph Representation}{9}{}%
-\contentsline {subsection}{\numberline {2.3.2}LLM-Based Knowledge Graph Construction}{10}{}%
-\contentsline {subsection}{\numberline {2.3.3}Ontology Integration and Entity Normalisation}{11}{}%
+\contentsline {subsection}{\numberline {2.2.5}Implications for Biomedical Information Extraction}{10}{}%
+\contentsline {section}{\numberline {2.3}Knowledge Graph Construction Using \glspl {llm}}{10}{}%
+\contentsline {subsection}{\numberline {2.3.1}Knowledge Graph Representation}{10}{}%
+\contentsline {subsection}{\numberline {2.3.2}LLM-Based Knowledge Graph Construction}{11}{}%
+\contentsline {subsection}{\numberline {2.3.3}Ontology Integration and Entity Normalisation}{12}{}%
 \contentsline {subsection}{\numberline {2.3.4}Challenges and Quality of \gls {llm}-Constructed Knowledge Graphs}{12}{}%
-\contentsline {section}{\numberline {2.4}Benchmark Datasets and Evaluation}{12}{}%
-\contentsline {subsection}{\numberline {2.4.1}Biomedical \gls {ie} Benchmark Datasets}{12}{}%
-\contentsline {subsection}{\numberline {2.4.2}BioRED}{13}{}%
-\contentsline {subsection}{\numberline {2.4.3}Extraction-Level Evaluation}{14}{}%
-\contentsline {subsection}{\numberline {2.4.4}Limitations of Benchmark Evaluation}{15}{}%
-\contentsline {section}{\numberline {2.5}Generalisation to Contemporary Biomedical Literature}{15}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{16}{}%
-\contentsline {subsection}{\numberline {3.0.1}Research Design}{16}{}%
-\contentsline {subsection}{\numberline {3.0.2}Datasets}{16}{}%
-\contentsline {subsection}{\numberline {3.0.3}System Architecture}{16}{}%
-\contentsline {subsection}{\numberline {3.0.4}Information Extraction Pipeline}{16}{}%
-\contentsline {subsection}{\numberline {3.0.5}Pipeline Development}{16}{}%
-\contentsline {subsection}{\numberline {3.0.6}Contemporary Knowledge Graph Construction}{16}{}%
-\contentsline {subsection}{\numberline {3.0.7}Evaluation}{16}{}%
-\contentsline {subsection}{\numberline {3.0.8}Cost Analysis}{16}{}%
-\contentsline {subsection}{\numberline {3.0.9}Software Implementation}{16}{}%
-\contentsline {chapter}{\numberline {4}Results}{17}{}%
-\contentsline {chapter}{\numberline {5}Discussion}{18}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{19}{}%
+\contentsline {section}{\numberline {2.4}Benchmark Datasets and Evaluation}{13}{}%
+\contentsline {subsection}{\numberline {2.4.1}Biomedical \gls {ie} Benchmark Datasets}{13}{}%
+\contentsline {subsection}{\numberline {2.4.2}BioRED}{14}{}%
+\contentsline {subsection}{\numberline {2.4.3}Extraction-Level Evaluation}{15}{}%
+\contentsline {subsection}{\numberline {2.4.4}Limitations of Benchmark Evaluation}{16}{}%
+\contentsline {section}{\numberline {2.5}Generalisation to Contemporary Biomedical Literature}{17}{}%
+\contentsline {subsection}{\numberline {2.5.1}Distribution Shift in Biomedical Literature}{17}{}%
+\contentsline {subsection}{\numberline {2.5.2}Generalisation of Biomedical Extraction Systems}{18}{}%
+\contentsline {subsection}{\numberline {2.5.3}Research Gap and Implications}{19}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{21}{}%
+\contentsline {section}{\numberline {3.1}Research Design}{22}{}%
+\contentsline {section}{\numberline {3.2}Datasets}{22}{}%
+\contentsline {subsection}{\numberline {3.2.1}BioRED Benchmark Corpus}{22}{}%
+\contentsline {subsection}{\numberline {3.2.2}Contemporary Biomedical Corpus}{22}{}%
+\contentsline {subsection}{\numberline {3.2.3}Data Preparation}{22}{}%
+\contentsline {section}{\numberline {3.3}System Architecture}{22}{}%
+\contentsline {section}{\numberline {3.4}Information Extraction Pipeline}{22}{}%
+\contentsline {subsection}{\numberline {3.4.1}LLM Configuration}{22}{}%
+\contentsline {subsection}{\numberline {3.4.2}Prompt and Extraction Schema}{22}{}%
+\contentsline {subsection}{\numberline {3.4.3}Structured Output and Parsing}{22}{}%
+\contentsline {subsection}{\numberline {3.4.4}Entity Normalisation}{22}{}%
+\contentsline {section}{\numberline {3.5}Pipeline Development}{22}{}%
+\contentsline {subsection}{\numberline {3.5.1}Extraction Pipeline Iterations}{22}{}%
+\contentsline {subsection}{\numberline {3.5.2}Development and Model Selection}{22}{}%
+\contentsline {subsection}{\numberline {3.5.3}Final Pipeline}{22}{}%
+\contentsline {section}{\numberline {3.6}Contemporary Knowledge Graph Construction}{22}{}%
+\contentsline {subsection}{\numberline {3.6.1}Contemporary Corpus Extraction}{22}{}%
+\contentsline {subsection}{\numberline {3.6.2}Graph Construction}{22}{}%
+\contentsline {subsection}{\numberline {3.6.3}Ontology-Based Validation}{22}{}%
+\contentsline {section}{\numberline {3.7}Evaluation}{22}{}%
+\contentsline {subsection}{\numberline {3.7.1}Entity Evaluation}{22}{}%
+\contentsline {subsection}{\numberline {3.7.2}Relation Evaluation}{22}{}%
+\contentsline {subsection}{\numberline {3.7.3}Knowledge Graph Evaluation}{22}{}%
+\contentsline {subsection}{\numberline {3.7.4}Generalisation Evaluation}{22}{}%
+\contentsline {section}{\numberline {3.8}Cost Analysis}{22}{}%
+\contentsline {chapter}{\numberline {4}Results}{23}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{24}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{25}{}%
