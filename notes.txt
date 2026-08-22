@@ -1,122 +1,117 @@
-For 3.1 Research Design, I'd keep it short — probably ~300–450 words. Its job is to give the reader the experimental logic of Chapter 3, not explain any component in detail.
+3.2.1 BioRED Benchmark Corpus
+Paragraph 1 — Dataset identification and acquisition
 
-Your literature review has already established the rationale: develop against BioRED, freeze the resulting extraction system, then test it on independently assembled contemporary literature to investigate generalisation. Research Design should state how you operationalise that idea.
+Very briefly identify the dataset:
 
-3.1 Research Design
-Paragraph 1 — Overall design
+BioRED benchmark corpus.
+600 PubMed abstracts.
+manually annotated entities and relations.
+source/version and how you obtained it, if relevant.
+state that the official dataset partitions were retained.
 
-State what kind of study this is and its high-level structure.
+You only need perhaps 2–3 sentences of descriptive material.
 
-Something conceptually like:
+You could explicitly signpost backwards:
 
-This study adopts an experimental pipeline-development design in which an LLM-based biomedical information extraction system is iteratively developed against an established benchmark corpus before being frozen and evaluated on independently sampled contemporary biomedical literature.
+BioRED, described in Section 2.4.2, was used as the benchmark corpus for extraction-system development and evaluation.
 
-Then briefly identify the major stages:
+That gives you permission not to repeat the literature review.
 
-BioRED development → final pipeline selection → contemporary evaluation → KG construction/evaluation
+Paragraph 2 — Dataset partitions
 
-A simple methodology overview figure would work particularly well here.
+This is much more important methodologically.
 
-Do not re-explain:
+State the exact:
 
-why biomedical IE is necessary;
-why LLMs are useful;
-what distribution shift is;
-why BioRED is broader than ChemProt/GAD.
+training set size;
+development set size;
+test set size;
+role assigned to each.
 
-Chapter 2 has already done all of that.
+Then explain your separation:
 
-Paragraph 2 — Development vs evaluation separation
+Train→development resources/few-shot examples
+Development→EPI development and selection
+Test→final held-out benchmark evaluation
 
-This is probably the most important methodological principle to establish here.
+assuming that accurately reflects your final procedure.
 
-Explain that BioRED has distinct train/development/test data and that your iterative EPI development is separated from final evaluation.
+This is where you establish data leakage prevention. Don't explain the whole EPI development process—that's 3.5—but clearly state which partitions were allowed to influence development decisions.
 
-At a high level:
+Paragraph 3 — Data actually used by the extraction system
 
-EPIs are developed and compared using the designated development data.
-Prompt/schema changes are informed by development performance/error analysis.
-A final EPI is selected.
-The final configuration is then frozen.
-Subsequent evaluation does not involve further prompt refinement.
+Describe the relevant fields/annotations you loaded from BioRED.
 
-Don't describe each EPI, prompts, metrics, few-shot construction, etc. Those belong in 3.5 Pipeline Development.
+For example:
 
-The point here is experimental validity:
+PMID/document identifier;
+abstract text;
+entity annotations;
+entity types;
+entity spans/text;
+normalised identifiers;
+relation annotations;
+relation types;
+novel/background relation labels, if you actually use them.
 
-development data informs decisions; final evaluation data does not.
+This is methodology-specific and therefore worth stating even though Chapter 2 introduced the annotation schema.
 
-Paragraph 3 — Two evaluation settings
+You could potentially use a compact table if there are enough fields:
 
-This is where I'd explicitly connect the design to your research questions.
+BioRED component	Use in this study
+Abstract text	LLM input
+Entity annotations	NER ground truth
+Entity identifiers	NEN ground truth
+Relation annotations	RE ground truth
+Train split	Few-shot/development resources
+Development split	EPI development
+Test split	Final evaluation
 
-You effectively have:
+That would be very effective.
 
-Benchmark evaluation:
-How well does the final extraction system perform against established BioRED ground truth?
+Paragraph 4 — Preprocessing
 
-Generalisation evaluation:
-How does that same unchanged system perform against independently sampled contemporary literature?
+Only include this if you actually performed meaningful preprocessing.
 
-This is crucial because the comparison is only meaningful if you don't alter the extraction system after seeing contemporary-corpus performance.
+State things like:
 
-Again, don't re-explain why benchmark performance might fail to generalise. You spent the end of Chapter 2 establishing exactly that.
+how BioRED files were parsed;
+conversion into your internal Python representation/dataframe;
+whether titles + abstracts or abstracts alone were used;
+whether annotations were transformed;
+whether any documents/annotations were excluded;
+preservation of original text/spans.
 
-One sentence such as:
+Don't invent a preprocessing stage just to have something to write about. If you basically parsed BioRED into Python objects and passed the text to the LLM, say exactly that.
 
-This separation allows benchmark performance and performance on unseen contemporary literature to be compared without further adaptation of the extraction system.
+What not to repeat
 
-is enough.
+Avoid re-explaining:
 
-Paragraph 4 — KG stage
+why BioRED is broader than GAD/ChemProt;
+why benchmark datasets are useful;
+what its six entity/eight relation types mean;
+why BioRED is suitable for KG construction;
+limitations of benchmark evaluation;
+distribution shift;
+why contemporary evaluation is necessary.
 
-Briefly establish where KG construction fits:
+You already spent an entire literature-review subsection establishing BioRED's characteristics and suitability.
 
-After extraction and normalisation, the resulting entities and relations are assembled into the contemporary biomedical KG, followed by graph-level evaluation.
+If necessary, one sentence is enough:
 
-Don't explain:
+BioRED was selected for the reasons outlined in Section 2.4.2.
 
-triples;
-nodes/edges;
-why NEN matters;
-ontology integration;
-graph metrics.
+Then move immediately into what you did with it.
 
-Those belong in 3.6 and 3.7, and you've already established their conceptual rationale in Chapter 2.
+The key distinction
 
-What 3.1 should not contain
+2.4.2 BioRED:
 
-This is the easiest way to avoid repetition. 3.1 should answer only:
+What is this dataset, what does the literature say about it, and why is it appropriate?
 
-What did the overall experiment do, in what order, and how were development and evaluation kept separate?
+3.2.1 BioRED Benchmark Corpus:
 
-It should not answer how any individual stage works.
+Which version/data did I use, how did I partition/process it, and what role did each component play in my experiment?
 
-So I'd avoid detailed discussion of:
-
-BioRED composition → 3.2
-contemporary corpus acquisition → 3.2
-model/API/settings → 3.4
-prompts/JSON schema → 3.4
-individual EPIs → 3.5
-error-analysis procedure → 3.5
-NEN implementation → 3.4/3.6
-KG assembly → 3.6
-P/R/F1, strict/relaxed/cosine → 3.7
-KG metrics → 3.7
-costs → 3.8
-The ideal shape
-
-I'd aim for something roughly this compact:
-
-P1: overall experimental design + stages
-P2: controlled iterative development on BioRED
-P3: freeze final system → benchmark/contemporary evaluation
-P4: construct/evaluate KG + point reader toward following sections
-
-The key difference from Chapter 2 is:
-
-Literature review: Why is benchmark-to-contemporary generalisation worth investigating?
-3.1 Research Design: What experimental structure did I use to investigate it?
-
-If you maintain that distinction, there should be very little genuine repetition, even though naturally some terms such as BioRED, contemporary corpus and frozen pipeline will appear again.
+If you stick rigidly to that distinction, you should have almost no problematic repetition between the two chapters.

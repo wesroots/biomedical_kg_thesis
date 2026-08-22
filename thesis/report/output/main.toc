@@ -28,8 +28,8 @@
 \contentsline {subsection}{\numberline {2.5.3}Research Gap and Implications}{19}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{21}{}%
 \contentsline {section}{\numberline {3.1}Research Design}{21}{}%
-\contentsline {section}{\numberline {3.2}Datasets}{23}{}%
-\contentsline {subsection}{\numberline {3.2.1}BioRED Benchmark Corpus}{23}{}%
+\contentsline {section}{\numberline {3.2}Datasets}{22}{}%
+\contentsline {subsection}{\numberline {3.2.1}BioRED Benchmark Corpus}{22}{}%
 \contentsline {subsection}{\numberline {3.2.2}Contemporary Biomedical Corpus}{23}{}%
 \contentsline {subsection}{\numberline {3.2.3}Data Preparation}{23}{}%
 \contentsline {section}{\numberline {3.3}System Architecture}{23}{}%
