@@ -15,7 +15,26 @@ The final \gls{epi} was then evaluated under two distinct stages. The first is b
 \label{subsec:meth:biored_benchmark_corpus}
 The original BioRED corpus, as described in Section~\ref{subsec:lit:biored}, was used as the benchmark corpus for extraction pipeline development and evaluation in this project. The corpus consists of 600 manually annotated PubMed abstracts, assembled and released by the \gls{ncbi} and was obtained directly from the dataset's public GitHub repository. The BioRED-BC8 extension was also considered as it provides a more recent expert-annotated evaluation set: however, the original BioRED corpus was retained as the controlled benchmark as the study separately evaluates generalisation using literature independently retrieved through the PubMed API, better reflecting the intended deployment pathway. BioRED-BC8 therefore represents a valuable alternative external evaluation dataset for future work.
 
-BioRED's
+The original version of the BioRED dataset divides 600 abstracts into a training split of 400 abstracts, a development split of 100 abstracts, and a test split of 100 abstracts. Each split was used for a distinct role in this study. The training split was used throughout iterative \gls{epi} development, providing the abstracts observed by the \gls{llm} in which all \gls{epi} configurations were developed on, the development split was then used to evaluate all frozen \gls{epi} configurations against one another, and the test spit was used exclusively for the final benchmark evaluation of the best-performing pipeline configuration and played no role in either pipeline development or \gls{epi} selection.
+
+For each abstract, this project used the associated \gls{pmid}, title, and abstract text as the input passed to the extraction pipeline, together with the corresponding gold-standard annotations used as ground truth. These annotations consisted of each entity's type and text span and each relation's type. The following table summarises how each component of the BioRED dataset was used in this study:
+
+\begin{table}[H]
+    \centering
+    \caption{BioRED Component Summary}
+    \label{tab:}
+    \begin{tabularx}{\textwidth}{l Y Y Y}
+        \toprule
+        BioRED Component & No. of Abstracts & Purpose \\
+        \midrule
+        Training spit & 400 & EPI development and performance estimate \\
+        Development split & 100 & Held-out generalisation check / EPI selection \\
+        Test split & 100 & \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+It should be noted that \gls{epi} refinement was conducted using a fixed 35-abstract subsample of the BioRED training split, with each final \gls{epi} then evaluated across the full 400-abstract training split. Section~\pref \ discusses this methodological decision further.
 
 \subsection{Contemporary Biomedical Corpus}
 \label{subsec:meth:contemporary_biomedical_corpus}

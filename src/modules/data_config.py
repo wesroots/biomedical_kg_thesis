@@ -7,7 +7,7 @@ DATA_CONFIG = {
             "entities_ground_truths": "../../data/processed/biored/br_train_entities.csv",
             "epi_dir": "../../data/results/epis/biored_train"
         },
-        "sample_size": 35,
+        "sample_size": None,
     },
     "dev": {
         "name": "biored_dev",
