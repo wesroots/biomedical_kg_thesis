@@ -1,9 +1,15 @@
 \chapter{Methodology}
+
 \section{Research Design}
-\label{sec:methodology:research_design}
+\label{sec:meth:research_design}
+This study uses an experimental pipeline development design in which an \gls{llm}-based biomedical information extraction system is developed iteratively against a fixed benchmark corpus before being frozen and evaluated on independently sampled, contemporary biomedical literature. The study consists of four main stages: development of the extraction pipeline against BioRED, selection of a pipeline iteration, evaluation of the chosen iteration, and construction and evaluation of a knowledge graph from the resulting contemporary extractions.
+
+The main methodological idea of this design was the separation between development and evaluation. BioRED served as a basis for training, development, and test splits where this project's iterative pipeline development, made up of a set of Extraction Pipeline Iterations (\glspl{epi}), was conducted solely against the training and development splits. Each \gls{epi}'s prompt design and configuration was based on the previous \gls{epi}'s performance and optional further error analysis -- this approach began with an initial configuration (EPI 001), discussed further in Section~\ref{sec:meth:pipeline_development}, that established a baseline extraction pipeline using generic biomedical extraction instructions without BioRED-specific schema guidance. Pipeline development continued against the BioRED training split until performance plateaued, at which point the \gls{epi} configurations were frozen and no further prompt refinement or schema adjustment was performed. The frozen iterations were then evaluated against the BioRED development split, where their performance was compared with one another and the best performing \gls{epi} was selected. This distinction allows subsequent evaluation to be treated as a measure of the pipeline's performance, rather than further development.
+
+The final \gls{epi} was then evaluated under two distinct stages. The first is benchmark evaluation, which measures the final \gls{epi}'s extraction performance against BiORED's held-out ground truth, establishing its performance within the distribution it was developed on. The second stage was generalisation evaluation, which applies the same pipeline to an independently assembled corpus of contemporary PubMed literature that the pipeline was not iteratively developed on. As the pipeline was not adapted to perform specifically on the contemporary corpus, any significant degradation in performance between them can be attributed to a change in the dataset's literature distribution, rather than to any changes in the pipeline's configuration, allowing benchmark and contemporary corpus performance to be compared. Following extraction and normalisation on the contemporary corpus, the extracted entities and relations were assembled into a \gls{kg}.
 
 \section{Datasets}
-\label{sec:methodology:datasets}
+\label{sec:meth:datasets}
 
 \subsection{BioRED Benchmark Corpus}
 \label{subsec:meth:biored_benchmark_corpus}
@@ -15,10 +21,10 @@
 \label{subsec:meth:data_preparation}
 
 \section{System Architecture}
-\label{sec:methodology:system_architecture}
+\label{sec:meth:system_architecture}
 
 \section{Information Extraction Pipeline}
-\label{sec:methodology:info_extraction_pipeline}
+\label{sec:meth:info_extraction_pipeline}
 
 \subsection{LLM Configuration}
 \label{subsec:meth:llm_config}
@@ -33,7 +39,7 @@
 \label{subsec:meth:entity_normalisation}
 
 \section{Pipeline Development}
-\label{sec:methodology:pipeline_development}
+\label{sec:meth:pipeline_development}
 
 \subsection{Extraction Pipeline Iterations}
 \label{subsec:meth:extraction_pipeline_iterations}
@@ -45,7 +51,7 @@
 \label{subsec:meth:final_pipeline}
 
 \section{Contemporary Knowledge Graph Construction}
-\label{sec:methodology:contemporary_kg_construction}
+\label{sec:meth:contemporary_kg_construction}
 
 \subsection{Contemporary Corpus Extraction}
 \label{subsec:meth:contemporary_corpus_extraction}
@@ -57,7 +63,7 @@
 \label{subsec:meth:ontology_based_validation}
 
 \section{Evaluation}
-\label{sec:methodology:evaluation}
+\label{sec:meth:evaluation}
 
 \subsection{Entity Evaluation}
 \label{subsec:meth:entity_evaluation}
@@ -72,4 +78,4 @@
 \label{subsec:meth:generalisation_evaluation}
 
 \section{Cost Analysis}
-\label{sec:methodology:cost_analysis}
+\label{sec:meth:cost_analysis}

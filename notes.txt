@@ -1,0 +1,122 @@
+For 3.1 Research Design, I'd keep it short — probably ~300–450 words. Its job is to give the reader the experimental logic of Chapter 3, not explain any component in detail.
+
+Your literature review has already established the rationale: develop against BioRED, freeze the resulting extraction system, then test it on independently assembled contemporary literature to investigate generalisation. Research Design should state how you operationalise that idea.
+
+3.1 Research Design
+Paragraph 1 — Overall design
+
+State what kind of study this is and its high-level structure.
+
+Something conceptually like:
+
+This study adopts an experimental pipeline-development design in which an LLM-based biomedical information extraction system is iteratively developed against an established benchmark corpus before being frozen and evaluated on independently sampled contemporary biomedical literature.
+
+Then briefly identify the major stages:
+
+BioRED development → final pipeline selection → contemporary evaluation → KG construction/evaluation
+
+A simple methodology overview figure would work particularly well here.
+
+Do not re-explain:
+
+why biomedical IE is necessary;
+why LLMs are useful;
+what distribution shift is;
+why BioRED is broader than ChemProt/GAD.
+
+Chapter 2 has already done all of that.
+
+Paragraph 2 — Development vs evaluation separation
+
+This is probably the most important methodological principle to establish here.
+
+Explain that BioRED has distinct train/development/test data and that your iterative EPI development is separated from final evaluation.
+
+At a high level:
+
+EPIs are developed and compared using the designated development data.
+Prompt/schema changes are informed by development performance/error analysis.
+A final EPI is selected.
+The final configuration is then frozen.
+Subsequent evaluation does not involve further prompt refinement.
+
+Don't describe each EPI, prompts, metrics, few-shot construction, etc. Those belong in 3.5 Pipeline Development.
+
+The point here is experimental validity:
+
+development data informs decisions; final evaluation data does not.
+
+Paragraph 3 — Two evaluation settings
+
+This is where I'd explicitly connect the design to your research questions.
+
+You effectively have:
+
+Benchmark evaluation:
+How well does the final extraction system perform against established BioRED ground truth?
+
+Generalisation evaluation:
+How does that same unchanged system perform against independently sampled contemporary literature?
+
+This is crucial because the comparison is only meaningful if you don't alter the extraction system after seeing contemporary-corpus performance.
+
+Again, don't re-explain why benchmark performance might fail to generalise. You spent the end of Chapter 2 establishing exactly that.
+
+One sentence such as:
+
+This separation allows benchmark performance and performance on unseen contemporary literature to be compared without further adaptation of the extraction system.
+
+is enough.
+
+Paragraph 4 — KG stage
+
+Briefly establish where KG construction fits:
+
+After extraction and normalisation, the resulting entities and relations are assembled into the contemporary biomedical KG, followed by graph-level evaluation.
+
+Don't explain:
+
+triples;
+nodes/edges;
+why NEN matters;
+ontology integration;
+graph metrics.
+
+Those belong in 3.6 and 3.7, and you've already established their conceptual rationale in Chapter 2.
+
+What 3.1 should not contain
+
+This is the easiest way to avoid repetition. 3.1 should answer only:
+
+What did the overall experiment do, in what order, and how were development and evaluation kept separate?
+
+It should not answer how any individual stage works.
+
+So I'd avoid detailed discussion of:
+
+BioRED composition → 3.2
+contemporary corpus acquisition → 3.2
+model/API/settings → 3.4
+prompts/JSON schema → 3.4
+individual EPIs → 3.5
+error-analysis procedure → 3.5
+NEN implementation → 3.4/3.6
+KG assembly → 3.6
+P/R/F1, strict/relaxed/cosine → 3.7
+KG metrics → 3.7
+costs → 3.8
+The ideal shape
+
+I'd aim for something roughly this compact:
+
+P1: overall experimental design + stages
+P2: controlled iterative development on BioRED
+P3: freeze final system → benchmark/contemporary evaluation
+P4: construct/evaluate KG + point reader toward following sections
+
+The key difference from Chapter 2 is:
+
+Literature review: Why is benchmark-to-contemporary generalisation worth investigating?
+3.1 Research Design: What experimental structure did I use to investigate it?
+
+If you maintain that distinction, there should be very little genuine repetition, even though naturally some terms such as BioRED, contemporary corpus and frozen pipeline will appear again.
