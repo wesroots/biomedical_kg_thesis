@@ -1,0 +1,19 @@
+name: thesis
+channels:
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.13
+  - ipykernel
+  - biopython
+  - pandas
+  - python-dotenv
+  - xmltodict
+  - tiktoken
+  - openai
+  - rapidfuzz
+  - sentence-transformers
+  - ipywidgets
+  - seaborn
+prefix: /Users/wes/miniconda3/envs/thesis
