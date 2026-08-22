@@ -1,4 +1,15 @@
+import pandas as pd
 import json
+
+def entities_to_df(predictions_entities) -> pd.DataFrame:
+    """Matches br_{split}_entities.csv structure (minus identifier/offsets,
+    which require entity normalisation the LLM doesn't do)."""
+    return pd.DataFrame(predictions_entities, columns=["pmid", "text", "entity_type"])
+
+
+def relationships_to_df(predictions_relationships) -> pd.DataFrame:
+    """Matches br_{split}_entity_relations.csv structure (minus identifiers)."""
+    return pd.DataFrame(predictions_relationships, columns=["pmid", "entity_1", "relation", "entity_2"])
 
 def parse_output(output_dict):
     epi_id = output_dict["epi_id"]
@@ -13,10 +24,15 @@ def parse_output(output_dict):
 
     predictions_entities, predictions_relationships = extractions_to_tuples(extractions)
 
+    predictions_entities_df = entities_to_df(predictions_entities)
+    predictions_relations_df = relationships_to_df(predictions_relationships)
+
     return {
         "extractions": extractions,
         "predictions_entities": predictions_entities,
         "predictions_relationships": predictions_relationships,
+        "predictions_entities_df": predictions_entities_df,
+        "predictions_relations_df": predictions_relations_df,
         "parse_failures": parse_failures,
         "epi_notes": epi_notes,
         "prompt_version": prompt_version,
