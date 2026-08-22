@@ -36,8 +36,11 @@ For each abstract, this project used the associated \gls{pmid}, title, and abstr
 
 It should be noted that \gls{epi} refinement was conducted using a fixed 35-abstract subsample of the BioRED training split, with each final \gls{epi} then evaluated across the full 400-abstract training split. Section~\pref \ discusses this methodological decision further.
 
+BioRED's train, development, and test splits were each retrieved from the official BioRED GitHub repository as separate BioC-XML files. Each file was parsed into a Python dictionary using the \verb|xmltodict| library before being converted into three separate pandas DataFrames: the first containing the split's papers, each one consisting of the paper's \gls{pmid}, title, and abstract text, the second containing ground truth entity extractions, with one row per entity mention, including its text span from the abstract, entity type and normalised identifier, and the third containing ground truth entity relations linking entities' normalised identifiers with a single relation type. All three DataFrames were then exported as separate CSV files.
+
 \subsection{Contemporary Biomedical Corpus}
 \label{subsec:meth:contemporary_biomedical_corpus}
+
 
 \subsection{Data Preparation}
 \label{subsec:meth:data_preparation}
