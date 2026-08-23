@@ -36,17 +36,19 @@ For each abstract, this project used the associated \gls{pmid}, title, and abstr
 
 It should be noted that \gls{epi} refinement was conducted using a fixed 35-abstract subsample of the BioRED training split, with each final \gls{epi} then evaluated across the full 400-abstract training split. Section~\pref \ discusses this methodological decision further.
 
-BioRED's train, development, and test splits were each retrieved from the official BioRED GitHub repository as separate BioC-XML files. Each file was parsed into a Python dictionary using the \verb|xmltodict| library before being converted into three separate pandas DataFrames: the first containing the split's papers, each one consisting of the paper's \gls{pmid}, title, and abstract text, the second containing ground truth entity extractions, with one row per entity mention, including its text span from the abstract, entity type and normalised identifier, and the third containing ground truth entity relations linking entities' normalised identifiers with a single relation type. All three DataFrames were then exported as separate CSV files.
+BioRED's train, development, and test splits were each retrieved from the official BioRED GitHub repository as separate BioC-XML files. This process is discussed in Section~\ref{subsec:meth:data_preparation}.
+
+% Each file was parsed into a Python dictionary using the \verb|xmltodict| library before being converted into three separate pandas DataFrames: the first containing the split's papers, each one consisting of the paper's \gls{pmid}, title, and abstract text, the second containing ground truth entity extractions, with one row per entity mention, including its text span from the abstract, entity type and normalised identifier, and the third containing ground truth entity relations linking entities' normalised identifiers with a single relation type. All three DataFrames were then exported as separate CSV files.
 
 \subsection{Contemporary Biomedical Corpus}
 \label{subsec:meth:contemporary_biomedical_corpus}
-An independently-assembled corpus of contemporary PubMed abstracts was constructed as the external evaluation set used to investigate generalisation to out-of-distribution data, as mentioned in Section~\ref{sec:lit:generalisation_to_contemporary_biomed_lit}. The corpus includes abstracts from papers published across 2024, 2025, and 2026 making up 282 total abstracts after duplication removal by \gls{pmid} and removal of entries with missing abstract texts. It should be explicitly noted that this corpus was assembled entirely independently of BioRED and played no role in \gls{epi} development or selection.
+An independently-assembled corpus of contemporary biomedical PubMed abstracts was constructed as the external evaluation set used to investigate generalisation to out-of-distribution data, as mentioned in Section~\ref{sec:lit:generalisation_to_contemporary_biomed_lit}. This \gls{cbc} included abstracts from papers published across 2024, 2025, and 2026 making up 282 total abstracts after duplication removal by \gls{pmid} and removal of entries with missing abstract texts. It should be explicitly noted that this corpus was assembled entirely independently of BioRED and played no role in \gls{epi} development or selection.
 
 "Contemporary biomedical literature" was defined through a fixed set of either PubMed research queries, designed to give broad coverage of the wider field of general biomedicine, rather than a single subdomain. Four of the eight related to individual biomedical entity categories, generally mirroring BioRED's own entity type (gene/protein, disease/disorder, drug/chemical, and variant/mutation), while the remaining four combined two entity categories within a single query (gene and disease, drug and disease, gene and drug, variant and disease). This query configuration was chosen to feasibly maximise the likelihood of retrieving abstracts that include entity relationships, rather than only single entity mentions. Each of the eight queries were combined with a publication year filter for all three publication years, giving 24 distinct query-year combinations with 15 articles requested per combination. The table below summarises each query category and associated term.
 
 \begin{table}[H]
     \centering
-    \caption{Contemporary Corpus Retrieval Query Summary}
+    \caption{Contemporary Biomedical Corpus Retrieval Query Summary}
     \label{tab:contemporary_corpus_query_summary}
     \begin{tabularx}{\textwidth}{l l}
         \toprule
@@ -66,10 +68,35 @@ An independently-assembled corpus of contemporary PubMed abstracts was construct
 
 Abstracts were retrieved from PubMed using the \gls{ncbi} Entrez E-utilities, accessed through Biopython's \verb|Bio.Entrez| module under a registered email address, as required by \gls{ncbi}'s usage policy. For each of the 24 query-year combinations an \verb|esearch| request was used to return 15 matching \glspl{pmid}, article title, abstract text, journal title, and publication year were extracted. Author names, \glspl{doi}, and keywords were not stored.
 
-Across all query-year combinations, up to 360 records were requested in total: 15 results per query-year combination. After consolidating all returned results, duplicates were removed where \glspl{pmid} matched, along with any records with absent abstract text, leaving a final corpus of 282 abstracts. Beyond publication year, no sampling constraints were applied at this stage. A subset of this contemporary corpus was selected for manual annotation, in order to provide ground-truth entity and relation labels which the frozen extraction pipeline could be evaluated against. This subset comprised 50 randomly sampled abstracts from the 282 total entries. The annotation procedure and resulting metrics are discussed in Section~\ref{subsec:meth:generalisation_evaluation}.
+Across all query-year combinations, up to 360 records were requested in total: 15 results per query-year combination. After consolidating all returned results, duplicates were removed where \glspl{pmid} matched, along with any records with absent abstract text, leaving a final corpus of 282 abstracts. Beyond publication year, no sampling constraints were applied at this stage. A subset of the \gls{cbc} was selected for manual annotation, in order to provide ground-truth entity and relation labels which the frozen extraction pipeline could be evaluated against. This subset comprised 50 randomly sampled abstracts from the 282 total entries. The annotation procedure and resulting metrics are discussed in Section~\ref{subsec:meth:generalisation_evaluation}.
 
 \subsection{Data Preparation}
 \label{subsec:meth:data_preparation}
+Although BioRED and the \gls{cbc} were retrieved from different sources and through different processes, both required conversion into a structured, tabular representation before use by the rest of the pipeline. \verb|pandas| DataFrames were used for both datasets, allowing later extraction and evaluation to be conducted easily over a tabular data, regardless of which dataset was used. BioRED was retrieved as raw BioC-XML and was parsed directly using \verb|xmltodict|, whereas the \gls{cbc} was retrieved via Biopython's \verb|Bio.Entrez| module, which returns PubMed records already parsed into Python dictionaries, requiring no further XML-parsing step.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% For BioRED, each of the three official partition files was parsed with \verb|xmltodict| into a nested Python dictionary before being converted into three separate tables per split: a document-level table containing each abstract's \gls{pmid}, title, and abstract text; an entity-level table containing one row per annotated entity mention, with its text span, character offsets, entity type, and normalised identifier; and a relation-level table containing one row per document-level relation, referencing the normalised identifiers of the two entities involved. Because a small number of entity annotations carried a composite identifier -- multiple concept identifiers joined by a comma, used where a single mention refers to more than one underlying concept -- these composite identifiers were split and exploded to build a representative entity lookup, allowing relations referencing an individual component identifier to still be resolved back to their corresponding mention text and entity type. This lookup was used to merge the relation-level table with entity text and type on both sides of each relation, producing a combined entity-relation table. The document, entity, and entity-relation tables for each split were exported to separate CSV files, with the official training, development, and test partitions preserved throughout as an explicit split label.
+
+% For the contemporary corpus, each retrieved PubMed record was iterated over to extract its \gls{pmid}, title, abstract text, journal title, and publication year. Where an abstract was distributed across multiple text segments, these were concatenated into a single string; where a given field was absent from a record, it was recorded as missing rather than causing the conversion to fail. Duplicate records, arising where the same abstract satisfied more than one of the query-year combinations described in Section~\ref{subsec:meth:contemporary_biomedical_corpus}, were identified and removed by \gls{pmid} using \verb|pandas|' built-in deduplication functionality, retaining the first occurrence encountered; records with a missing \gls{pmid} or abstract text were removed in the same step. The resulting table was exported to a single CSV file, indexed by \gls{pmid}.
+
+% Relatively little additional cleaning was required beyond this point. For BioRED, no records were excluded during conversion. For the contemporary corpus, no exclusions were applied beyond the deduplication and missing-data removal described above. In both cases, abstract and title text were preserved exactly as distributed, with no linguistic preprocessing, such as tokenisation, stemming, stop-word removal, or sentence simplification, applied at any stage. This was a deliberate choice, since the extraction pipeline supplies this text directly to the \gls{llm} as natural, unmodified language rather than as a preprocessed token sequence.
+
+% The output of this stage was therefore a set of standardised, pipeline-ready CSV files rather than any extracted entities or relations themselves. These outputs are not structurally identical between the two datasets: BioRED's per-split tables additionally contain manually annotated entity and relation information used as ground truth, whereas the contemporary corpus table at this stage contains only document text and metadata, since it had not yet been passed through the extraction pipeline or manually annotated. This asymmetry reflects each dataset's distinct role, established in Sections~\ref{subsec:meth:biored_benchmark_corpus} and~\ref{subsec:meth:contemporary_biomedical_corpus}, rather than any inconsistency in processing.
 
 \section{System Architecture}
 \label{sec:meth:system_architecture}

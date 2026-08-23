@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {3.2}Datasets}{22}{}%
 \contentsline {subsection}{\numberline {3.2.1}BioRED Benchmark Corpus}{22}{}%
 \contentsline {subsection}{\numberline {3.2.2}Contemporary Biomedical Corpus}{23}{}%
-\contentsline {subsection}{\numberline {3.2.3}Data Preparation}{25}{}%
+\contentsline {subsection}{\numberline {3.2.3}Data Preparation}{24}{}%
 \contentsline {section}{\numberline {3.3}System Architecture}{25}{}%
 \contentsline {section}{\numberline {3.4}Information Extraction Pipeline}{25}{}%
 \contentsline {subsection}{\numberline {3.4.1}LLM Configuration}{25}{}%
