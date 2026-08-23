@@ -1,117 +1,80 @@
-3.2.1 BioRED Benchmark Corpus
-Paragraph 1 — Dataset identification and acquisition
+3.2.3 Data Preparation
 
-Very briefly identify the dataset:
+Purpose:
+Describe how the raw BioRED and contemporary corpus data were transformed into the consistent, pipeline-ready format consumed by the extraction system. Focus on reproducibility and actual processing steps. Do not re-describe the datasets themselves or explain the extraction process.
 
-BioRED benchmark corpus.
-600 PubMed abstracts.
-manually annotated entities and relations.
-source/version and how you obtained it, if relevant.
-state that the official dataset partitions were retained.
+Paragraph 1 - Common data preparation approach:
 
-You only need perhaps 2–3 sentences of descriptive material.
+State that BioRED and the contemporary PubMed corpus originated in XML format and required parsing before use by the extraction system, if true for both.
+Explain that both datasets were converted into structured tabular representations.
+State the main Python tools/packages used for parsing and manipulation, such as xmltodict and pandas.
+Explain that a consistent representation was used where possible so that downstream components could process the datasets using the same interface.
+Keep implementation details proportionate; the goal is reproducibility, not explaining basic Python operations.
 
-You could explicitly signpost backwards:
+Paragraph 2 - BioRED preparation:
 
-BioRED, described in Section 2.4.2, was used as the benchmark corpus for extraction-system development and evaluation.
+Explain how the BioRED XML files were parsed.
+State which information was extracted from each document.
+Include the fields actually required by the project, such as PMID/document ID, abstract text, entity annotations, entity types, entity identifiers, relation annotations, and relation types.
+Explain how nested XML annotations were converted into Python dictionaries/DataFrames.
+State that the official train, development, and test partitions were preserved during conversion.
+State that each partition was exported to its own CSV file, if that is what the implementation does.
+Do not repeat the purpose of each BioRED split; that belongs in Section 3.2.1.
 
-That gives you permission not to repeat the literature review.
+Paragraph 3 - Contemporary corpus preparation:
 
-Paragraph 2 — Dataset partitions
+Explain how the retrieved PubMed XML was parsed into the corresponding tabular representation.
+State the fields retained, such as PMID, title, abstract, journal, publication year, authors, DOI, keywords, and query tag, where applicable.
+Explain how records without usable abstracts were handled.
+Explain how duplicate articles were identified, particularly where the same PMID was returned by multiple biomedical engineering queries.
+State what happened to query tags when an article appeared in multiple searches, if relevant.
+State that the resulting records were exported to CSV or whatever intermediate format was actually used.
+Do not repeat the PubMed query strategy or retrieval process; those belong in Section 3.2.2.
 
-This is much more important methodologically.
+Paragraph 4 - Consistency and validation checks:
 
-State the exact:
+Describe any checks performed after parsing.
+Examples should only be included if actually performed:
+checking for missing PMIDs or abstracts;
+checking duplicate PMIDs;
+verifying expected BioRED annotation fields were present;
+confirming document counts after conversion;
+checking that official BioRED partitions remained separate;
+validating expected column names/data types.
+If very little cleaning was necessary, say so rather than inventing an elaborate preprocessing procedure.
+Mention whether the original abstract text was deliberately preserved without linguistic preprocessing such as tokenisation, stemming, stop-word removal, or sentence simplification, if this is true. This is potentially methodologically relevant because the LLM receives natural text directly.
 
-training set size;
-development set size;
-test set size;
-role assigned to each.
+Paragraph 5 - Final pipeline-ready representation:
 
-Then explain your separation:
+Briefly state what the output of data preparation looked like.
+Explain that the resulting CSVs/DataFrames provided the standardised input used by subsequent extraction modules.
+Make clear that this stage changes the representation/storage of the data rather than performing biomedical information extraction.
+If BioRED necessarily contains additional ground-truth columns that the contemporary corpus does not contain, acknowledge this rather than implying the two datasets are structurally identical.
+Explain that BioRED annotation fields are retained for evaluation, whereas the contemporary corpus primarily contains document text and metadata before extraction/manual annotation, if that reflects the implementation.
 
-Train→development resources/few-shot examples
-Development→EPI development and selection
-Test→final held-out benchmark evaluation
+Avoid repeating:
 
-assuming that accurately reflects your final procedure.
+What BioRED is.
+Why BioRED was selected.
+What the BioRED train/dev/test splits are for.
+Why contemporary literature was collected.
+PubMed search queries and corpus sampling strategy.
+Why generalisation evaluation is necessary.
+How the LLM prompt works.
+How entities and relations are extracted.
+How NEN is performed.
+How EPIs differ.
+Evaluation metrics.
 
-This is where you establish data leakage prevention. Don't explain the whole EPI development process—that's 3.5—but clearly state which partitions were allowed to influence development decisions.
+Important distinction:
 
-Paragraph 3 — Data actually used by the extraction system
+3.2.1 BioRED Benchmark Corpus should answer:
+"What benchmark data was used and what role did its partitions play?"
 
-Describe the relevant fields/annotations you loaded from BioRED.
+3.2.2 Contemporary Biomedical Corpus should answer:
+"What contemporary data was collected and how was that corpus constructed?"
 
-For example:
+3.2.3 Data Preparation should answer:
+"How were the raw datasets converted into the formats required by the extraction and evaluation code?"
 
-PMID/document identifier;
-abstract text;
-entity annotations;
-entity types;
-entity spans/text;
-normalised identifiers;
-relation annotations;
-relation types;
-novel/background relation labels, if you actually use them.
-
-This is methodology-specific and therefore worth stating even though Chapter 2 introduced the annotation schema.
-
-You could potentially use a compact table if there are enough fields:
-
-BioRED component	Use in this study
-Abstract text	LLM input
-Entity annotations	NER ground truth
-Entity identifiers	NEN ground truth
-Relation annotations	RE ground truth
-Train split	Few-shot/development resources
-Development split	EPI development
-Test split	Final evaluation
-
-That would be very effective.
-
-Paragraph 4 — Preprocessing
-
-Only include this if you actually performed meaningful preprocessing.
-
-State things like:
-
-how BioRED files were parsed;
-conversion into your internal Python representation/dataframe;
-whether titles + abstracts or abstracts alone were used;
-whether annotations were transformed;
-whether any documents/annotations were excluded;
-preservation of original text/spans.
-
-Don't invent a preprocessing stage just to have something to write about. If you basically parsed BioRED into Python objects and passed the text to the LLM, say exactly that.
-
-What not to repeat
-
-Avoid re-explaining:
-
-why BioRED is broader than GAD/ChemProt;
-why benchmark datasets are useful;
-what its six entity/eight relation types mean;
-why BioRED is suitable for KG construction;
-limitations of benchmark evaluation;
-distribution shift;
-why contemporary evaluation is necessary.
-
-You already spent an entire literature-review subsection establishing BioRED's characteristics and suitability.
-
-If necessary, one sentence is enough:
-
-BioRED was selected for the reasons outlined in Section 2.4.2.
-
-Then move immediately into what you did with it.
-
-The key distinction
-
-2.4.2 BioRED:
-
-What is this dataset, what does the literature say about it, and why is it appropriate?
-
-3.2.1 BioRED Benchmark Corpus:
-
-Which version/data did I use, how did I partition/process it, and what role did each component play in my experiment?
-
-If you stick rigidly to that distinction, you should have almost no problematic repetition between the two chapters.
+The section should probably be relatively short. If the preparation really is essentially XML -> dictionaries -> DataFrames -> CSV, followed by a few checks, there is no need to inflate it into a complicated preprocessing pipeline. The important thing is that another researcher could understand exactly how the raw data became the inputs used by the rest of the methodology.

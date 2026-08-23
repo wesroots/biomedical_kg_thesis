@@ -21,15 +21,15 @@ For each abstract, this project used the associated \gls{pmid}, title, and abstr
 
 \begin{table}[H]
     \centering
-    \caption{BioRED Component Summary}
-    \label{tab:}
+    \caption{BioRED Split Summary}
+    \label{tab:biored_split_summary}
     \begin{tabularx}{\textwidth}{l Y Y Y}
         \toprule
         BioRED Component & No. of Abstracts & Purpose \\
         \midrule
         Training spit & 400 & EPI development and performance estimate \\
         Development split & 100 & Held-out generalisation check / EPI selection \\
-        Test split & 100 & \\
+        Test split & 100 & Final benchmark evaluation \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -40,7 +40,33 @@ BioRED's train, development, and test splits were each retrieved from the offici
 
 \subsection{Contemporary Biomedical Corpus}
 \label{subsec:meth:contemporary_biomedical_corpus}
+An independently-assembled corpus of contemporary PubMed abstracts was constructed as the external evaluation set used to investigate generalisation to out-of-distribution data, as mentioned in Section~\ref{sec:lit:generalisation_to_contemporary_biomed_lit}. The corpus includes abstracts from papers published across 2024, 2025, and 2026 making up 282 total abstracts after duplication removal by \gls{pmid} and removal of entries with missing abstract texts. It should be explicitly noted that this corpus was assembled entirely independently of BioRED and played no role in \gls{epi} development or selection.
 
+"Contemporary biomedical literature" was defined through a fixed set of either PubMed research queries, designed to give broad coverage of the wider field of general biomedicine, rather than a single subdomain. Four of the eight related to individual biomedical entity categories, generally mirroring BioRED's own entity type (gene/protein, disease/disorder, drug/chemical, and variant/mutation), while the remaining four combined two entity categories within a single query (gene and disease, drug and disease, gene and drug, variant and disease). This query configuration was chosen to feasibly maximise the likelihood of retrieving abstracts that include entity relationships, rather than only single entity mentions. Each of the eight queries were combined with a publication year filter for all three publication years, giving 24 distinct query-year combinations with 15 articles requested per combination. The table below summarises each query category and associated term.
+
+\begin{table}[H]
+    \centering
+    \caption{Contemporary Corpus Retrieval Query Summary}
+    \label{tab:contemporary_corpus_query_summary}
+    \begin{tabularx}{\textwidth}{l l}
+        \toprule
+        Query category & Query terms \\
+        \midrule
+        Gene/protein entity mention & \verb|"gene" OR "protein"| \\
+        Disease/disorder entity mention & \verb|"disease" OR "disorder"| \\
+        Drug/chemical entity mention & \verb|"drug" OR "chemical"| \\
+        Variant/mutation entity mention & \verb|"variant" OR "mutation"| \\
+        Gene-disease relation & \verb|"gene" AND "disease"| \\
+        Drug-disease relation & \verb|"drug" AND "disease"| \\
+        Gene-drug relation & \verb|"gene" AND "drug"| \\
+        Variant-disease relation & \verb|"variant" AND "disease"| \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+Abstracts were retrieved from PubMed using the \gls{ncbi} Entrez E-utilities, accessed through Biopython's \verb|Bio.Entrez| module under a registered email address, as required by \gls{ncbi}'s usage policy. For each of the 24 query-year combinations an \verb|esearch| request was used to return 15 matching \glspl{pmid}, article title, abstract text, journal title, and publication year were extracted. Author names, \glspl{doi}, and keywords were not stored.
+
+Across all query-year combinations, up to 360 records were requested in total: 15 results per query-year combination. After consolidating all returned results, duplicates were removed where \glspl{pmid} matched, along with any records with absent abstract text, leaving a final corpus of 282 abstracts. Beyond publication year, no sampling constraints were applied at this stage. A subset of this contemporary corpus was selected for manual annotation, in order to provide ground-truth entity and relation labels which the frozen extraction pipeline could be evaluated against. This subset comprised 50 randomly sampled abstracts from the 282 total entries. The annotation procedure and resulting metrics are discussed in Section~\ref{subsec:meth:generalisation_evaluation}.
 
 \subsection{Data Preparation}
 \label{subsec:meth:data_preparation}
