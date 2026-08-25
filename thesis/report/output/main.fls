@@ -362,6 +362,7 @@ INPUT ..\img\system_architecture.pdf
 INPUT ..\img\system_architecture.pdf
 INPUT ..\img\system_architecture.pdf
 INPUT ..\img\system_architecture.pdf
+INPUT D:\MikTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT .\chapters\04_results.tex
 INPUT .\chapters\04_results.tex
 OUTPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\04_results.aux
@@ -412,6 +413,8 @@ INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\06_concl
 INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\06_conclusion.aux
 INPUT D:\MikTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\NewTXMI.pfb
+INPUT D:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\MikTeX\fonts\type1\public\tex-gyre\qtmr.pfb
 INPUT D:\MikTeX\fonts\type1\public\tex-gyre\qtmr.pfb
 INPUT D:\MikTeX\fonts\type1\public\newtx\txmiaX.pfb

@@ -96,9 +96,15 @@ The same extraction architecture was used across both BioRED and the \gls{cbc}, 
 
 \section{Information Extraction Pipeline}
 \label{sec:meth:info_extraction_pipeline}
+Prepared title and abstract text produced in Section~\ref{subsec:meth:data_preparation}, was used as the input to a pretrained \gls{llm} accessed through an \gls{api}. \gls{ner} and \gls{re} were performed together within a single \gls{api} request per abstract, with the model instructed to return entities and relationships following the BioRED extraction schema. The raw response was parsed into structured entity and relation predictions and stored for subsequent evaluation and processing.
 
 \subsection{LLM Configuration}
 \label{subsec:meth:llm_config}
+All extraction was performed using a single model, OpenAI's \verb|gpt-5.6-luna|, accessed via the OpenAI Python \gls{sdk}'s Responses \gls{api} (\verb|client.responses.create|). This pretrained model was used, without any parameter fine-tuning, across every \gls{epi} configuration, ensuring that any performance difference observed across \glspl{epi} resulted from changes to the pipeline's prompt and extraction setup rather than a change in the model's configuration. Higher-cost models, geared more towards complex reasoning over budget-consciousness, were considered for this project, such as \verb|gpt-5.6-sol| or \verb|gpt-5.6-sol|, however, they were deemed infeasible for this project given the number of \gls{api} calls required across iterative \gls{epi} development and the full extraction runs on all four splits: the BioRED training, development and test splits, and the full \gls{cbc}. No additional generation parameters were set for temperature or generation seed as \verb|gpt-5.6-luna| did not allow either as a tuneable parameter to any of their reasoning models.
+
+\verb|gpt-5.6-luna|'s reasoning effort parameter (\verb|reasoning| $\in$ \{\verb|low|, \verb|high|, \verb|medium|\}), controlling the magnitude of internal reasoning before a response output, was also left at its default setting throughout this project, rather than being specifically tuned. Unlike model temperature, this was not a constraint of the model, but a deliberate choice made without deeper investigation into its effect on extraction quality and reasoning effort was not treated as a variable between \glspl{epi}. Increasing reasoning effort typically increases both time and cost demand per request, and investigating its effect on extraction precision, recall, and consistency was concluded to be out of the scope given the time and budget constraints discussed in Section~\ref{sec:meth:cost_analysis}. This parameter is one that a larger-budget project with longer timeframe allowance could reasonably investigate.
+
+However, the absence of a temperature parameter and omission of fine-tuned reasoning parameter has a direct methodological consequence. Without fixed temperature, seed generation or
 
 \subsection{Prompt and Extraction Schema}
 \label{subsec:meth:prompt_and_extraction_schema}
