@@ -141,7 +141,7 @@ This heterogeneity is stated briefly in table \pref, comparing the domain and en
 
 \begin{table}[H]
     \centering
-    \caption{Performance of biomedical relation extraction models}
+    \caption{Comparison of biomedical relation extraction benchmark datasets.}
     \label{tab:re-performance}
     \begin{tabularx}{\textwidth}{l Y Y Y}
         \toprule
@@ -169,7 +169,7 @@ This comparison demonstrates that the interpretation of a strongly-performing ex
 \label{subsec:lit:biored}
 BioRED, introduced in Section~\ref{subsec:lit:transition_to_llms}, is a manually annotated corpus of 600 PubMed abstracts, constructed to support document-level, multi-entry, multi-relation biomedical relation extraction \pref.
 
-The corpus comprises six entity types: chemical entity (\verb|ChemicalEntity|), disease or phenotypic feature (\verb|DiseaseOrPhenotypicFeature|), gene or gene product (\verb|GeneOrGeneProduct|), sequence variant (\verb|SequenceVariant|), and organism taxon (\verb|OrganismTaxon|). Eight relationship types connect these entities: association (\verb|Association|), bind (\verb|Bind|), comparison (\verb|Comparison|), conversion (\verb|Conversion|), cotreatment (\verb|Cotreatment|), drug interaction (\texttt{\seqsplit{Drug\_\linebreak~Interaction}}), negative correlation (\verb|Negative_Correlation|) and positive correlation (\verb|Positive_Correlation|) \cite{luo2022_biored}.
+The corpus comprises six entity types: chemical entity (\verb|ChemicalEntity|), disease or phenotypic feature (\verb|DiseaseOrPhenotypicFeature|), gene or gene product (\verb|GeneOrGeneProduct|), sequence variant (\verb|SequenceVariant|), organism taxon (\verb|OrganismTaxon|), and cell line \verb|CellLine|. Eight relationship types connect these entities: association (\verb|Association|), bind (\verb|Bind|), comparison (\verb|Comparison|), conversion (\verb|Conversion|), cotreatment (\verb|Cotreatment|), drug interaction (\texttt{\seqsplit{Drug\_\linebreak~Interaction}}), negative correlation (\verb|Negative_Correlation|) and positive correlation (\verb|Positive_Correlation|) \cite{luo2022_biored}.
 
 In total, the corpus contains 20,419 entity annotations, mapped to 3,869 identifiers \ck, where, each entity mention is normalised to an established identifier in the annotation itself \cite{luo2022_biored}. Relations are also labelled as describing either a new finding or existing background knowledge, allowing systems to distinguish novel findings from existing background information. As with the other benchmark corpora discussing in this review, BioRED is split into training, development, and test splits, enabling consistent comparison between systems evaluated on the dataset \cite{luo2022_biored}.
 

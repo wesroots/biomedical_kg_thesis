@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  24 AUG 2026 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  25 AUG 2026 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,49 +538,49 @@ Package caption Info: supertabular package is loaded.
 ) (D:\MikTeX\tex/latex/seqsplit\seqsplit.sty
 Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins, etc.) 
 )
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 76.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 78.
  (D:\MikTeX\tex/latex/newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 76.
+(Font)              scaled to size 12.0pt on input line 78.
  (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_conclusion.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 76.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 76.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 78.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 78.
  (D:\MikTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 76.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 78.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 78.
  (D:\MikTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 76.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 78.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 78.
  (D:\MikTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 76.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 78.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 78.
  (D:\MikTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -616,8 +616,8 @@ LaTeX Font Info:    ... okay on input line 76.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 76.
-LaTeX Info: Command `\ddddot' is already robust on input line 76.
+LaTeX Info: Command `\dddot' is already robust on input line 78.
+LaTeX Info: Command `\ddddot' is already robust on input line 78.
 (D:\MikTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
@@ -639,13 +639,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@mv@tabular=\count359
 \c@mv@boldtabular=\count360
-LaTeX Info: Redefining \microtypecontext on input line 76.
-Package microtype Info: Applying patch `item' on input line 76.
-Package microtype Info: Applying patch `toc' on input line 76.
-Package microtype Info: Applying patch `eqnum' on input line 76.
-Package microtype Info: Applying patch `footnote' on input line 76.
-Package microtype Info: Applying patch `verbatim' on input line 76.
-LaTeX Info: Redefining \microtypesetup on input line 76.
+LaTeX Info: Redefining \microtypecontext on input line 78.
+Package microtype Info: Applying patch `item' on input line 78.
+Package microtype Info: Applying patch `toc' on input line 78.
+Package microtype Info: Applying patch `eqnum' on input line 78.
+Package microtype Info: Applying patch `footnote' on input line 78.
+Package microtype Info: Applying patch `verbatim' on input line 78.
+LaTeX Info: Redefining \microtypesetup on input line 78.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -662,96 +662,96 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 78.
+(Font)              scaled to size 20.74pt on input line 80.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 80.
  (D:\MikTeX\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minntx' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.9pt on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.9pt on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 78.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
  (D:\MikTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (D:\MikTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
  (D:\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (D:\MikTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 78.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 80.
  (D:\MikTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.9pt on input line 78.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 80.
  (D:\MikTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.9pt on input line 78.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 80.
  (D:\MikTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.9pt on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 14.4pt on input line 78.
+(Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.5pt on input line 78.
+(Font)              scaled to size 10.5pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.9pt on input line 78.
+(Font)              scaled to size 7.9pt on input line 80.
  [1
 
 {C:/Users/wesle/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/MikTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 79.
+(Font)              scaled to size 24.88pt on input line 81.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 79.
+(Font)              scaled to size 24.88pt on input line 81.
  (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.toc
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -850,7 +850,12 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 172.
- [14]
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\OT1/ntxtlf/m/n/12 (+20) ter-ac-tion (\OT1/ntxtt/m/n/12 D r u g []
+ []
+
+[14]
 Overfull \hbox (5.65572pt too wide) in paragraph at lines 178--179
 []\OT1/ntxtlf/m/n/12 (-20) However, BioRED re-mains as fixed, man-u-ally an-no-tated, benchmark-distributed
  []
@@ -880,7 +885,7 @@ pdfTeX warning: pdflatex (file ../img/system_architecture.pdf): PDF inclusion: f
 <../img/system_architecture.pdf, id=87, 421.575pt x 406.3983pt>
 File: ../img/system_architecture.pdf Graphic file (type pdf)
 <use ../img/system_architecture.pdf>
-Package pdftex.def Info: ../img/system_architecture.pdf  used on input line 94.
+Package pdftex.def Info: ../img/system_architecture.pdf  used on input line 92.
 (pdftex.def)             Requested size: 380.69788pt x 367.00151pt.
 [25]) [26 <../img/system_architecture.pdf>] [27]
 \openout2 = `chapters/04_results.aux'.
@@ -932,15 +937,15 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 19352 strings out of 467870
- 360334 string characters out of 5435190
- 821739 words of memory out of 5000000
- 47555 multiletter control sequences out of 15000+600000
- 695021 words of font info for 392 fonts, out of 8000000 for 9000
+ 19421 strings out of 467870
+ 361384 string characters out of 5435190
+ 822291 words of memory out of 5000000
+ 47616 multiletter control sequences out of 15000+600000
+ 695659 words of font info for 398 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,117p,2543b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txmiaX.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (34 pages, 317542 bytes).
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (34 pages, 322899 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

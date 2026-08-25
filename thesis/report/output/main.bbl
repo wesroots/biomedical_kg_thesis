@@ -184,4 +184,11 @@ Alberto Purpura, Natasha Mulligan, Uri Kartoun, Eileen Koski, Vibha Anand, and
 \newblock {\em AMIA Summits on Translational Science Proceedings}, 2024:384,
   2024.
 
+\bibitem{liu2021sapbert}
+Fangyu Liu, Ehsan Shareghi, Zaiqiao Meng, Marco Basaldella, and Nigel Collier.
+\newblock Self-alignment pretraining for biomedical entity representations.
+\newblock In {\em Proceedings of the 2021 conference of the North American
+  chapter of the association for computational linguistics: human language
+  technologies}, pages 4228--4238, 2021.
+
 \end{thebibliography}

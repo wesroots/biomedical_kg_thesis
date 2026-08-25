@@ -28,7 +28,7 @@ For each abstract, this project used the associated \gls{pmid}, title, and abstr
         BioRED Component & No. of Abstracts & Purpose \\
         \midrule
         Training spit & 400 & EPI development and performance estimate \\
-        Development split & 100 & Held-out generalisation check / EPI selection \\
+        Development split & 100 & EPI selection (held-out within BioRED) \\
         Test split & 100 & Final benchmark evaluation \\
         \bottomrule
     \end{tabularx}
@@ -83,9 +83,7 @@ Relatively little additional preprocessing was conducted beyond this stage. For 
 
 The processed datasets discussed in Section~\ref{subsec:meth:data_preparation} formed the inputs to the extraction stage of the system. For BioRED, the resulting extractions were used for benchmark evaluation, whereas \gls{cbc} predictions were subsequently passed through normalisation, validation, and \gls{kg} construction. For each abstract, its title and text were passed to an \gls{llm}-based extraction step, which performed \gls{ner} and \gls{re} jointly rather than as separate \gls{llm} \gls{api} calls, returning structured entity and relation predictions. These predictions were parsed into the same tabular format used for BioRED's own annotations, allowing predicted and ground-truth extractions to be compared directly for subsequent evaluation. Figure~\pref \ below summarises this data flow across the implemented pipeline architecture.
 
-Extracted entity mentions then underwent entity normalisation, mapping each mention to an established biomedical identifier, drawn from \pref \ \dep.\
-% [State here, at a high level only, whether ontology-based validation was applied as a distinct step following normalisation, or incorporated within the normalisation step itself -- reflect your actual implementation rather than the generic three-step split assumed here.]
-The resulting normalised, validated entities and relations are subsequently converted into nodes and edges and assembled into the final \gls{kg}.
+Extracted entity mentions then underwent entity normalisation, mapping each mention to its corresponding \gls{cui} in the \gls{umls}, using SapBERT \cite{liu2021sapbert} to encode each mention and retrieve its nearest neighbour among \gls{umls} concept vector embeddings by cosine similarity, before undergoing ontology-based validation, described in Section~\ref{subsec:meth:ontology_based_validation}. The resulting normalised, validated entities and relations were subsequently converted into nodes and edges and assembled into the final \gls{kg}.
 
 The same extraction architecture was used across both BioRED and the \gls{cbc}, differing only in the input data supplied and presence of gold-standard annotations, with BioRED additionally providing ground truth against which extraction-level performance could be measured, and the \gls{cbc} providing only a manually annotated subset for this purpose, as described in Section~\ref{subsec:meth:contemporary_biomedical_corpus}. Although the pipeline's specific configuration changed across the \gls{epi} development process, the overall architecture described above remained consistent throughout.
 

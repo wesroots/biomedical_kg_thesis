@@ -1,125 +1,254 @@
-3.3 System Architecture
+3.4 Information Extraction Pipeline
 
 Purpose:
-Provide a high-level technical overview of how the major components of the implemented system connect and how data moves through them. This section should act as the bridge between the datasets described in Section 3.2 and the detailed component descriptions beginning in Section 3.4. It should answer "What does the complete system look like?" rather than explaining how each component works.
+Describe the actual implemented extraction component that converts prepared abstract text into structured entity and relation predictions. This section should move from the high-level architecture in Section 3.3 to the technical details required to reproduce the extraction process. It should answer: "Given a prepared abstract, exactly how did the system produce structured biomedical entities and relations?"
 
-This section should be relatively short, probably around 250-400 words plus an architecture diagram. Much of the conceptual rationale for the architecture has already been established in the Literature Review, while Section 3.1 has already described the experimental design. Avoid repeating either.
+Do not repeat the rationale for using LLMs, prompting, few-shot learning, structured output, or NER/RE. Those concepts have already been established in the Literature Review. Here, state what was actually implemented and why specific implementation choices were made only where necessary.
 
-Paragraph 1 - Overall architecture:
+Important structural point:
+Based on the current methodology, I would consider moving Entity Normalisation OUT of Section 3.4. Your System Architecture currently describes extraction -> normalisation -> ontology validation -> KG construction, and Section 3.6 is already titled Contemporary Knowledge Graph Construction. Since NEN is only applied to CBC extractions rather than BioRED during EPI development/evaluation, it is arguably cleaner to place Entity Normalisation alongside Ontology-Based Validation in Section 3.6.
 
-State that the implemented system consists of several sequential components connecting the prepared input corpora to structured biomedical extractions and ultimately the knowledge graph.
-Introduce the overall data flow at a high level.
-A suitable representation of the final system may be approximately:
+That would give:
 
-Prepared abstract -> LLM-based joint NER + RE -> structured extraction -> entity normalisation -> ontology-based validation -> knowledge graph construction -> evaluation
+3.4 Information Extraction Pipeline
+3.4.1 LLM Configuration
+3.4.2 Prompt and Extraction Schema
+3.4.3 Structured Output and Parsing
 
-Be precise about the actual ordering used by the final implementation.
-If ontology validation occurs after NEN and before graph insertion, show that explicitly.
-If some validation occurs during NEN itself, reflect the actual implementation rather than forcing these into artificial separate stages.
-Do not explain what NER, RE, NEN, or a KG are. These have already been established extensively in Chapter 2.
+3.5 Pipeline Development
+...
 
-Paragraph 2 - Input and extraction flow:
+3.6 Contemporary Knowledge Graph Construction
+3.6.1 Contemporary Corpus Extraction
+3.6.2 Entity Normalisation
+3.6.3 Ontology-Based Validation
+3.6.4 Graph Construction
 
-Briefly explain that the standardised representations produced in Section 3.2.3 provide the input to the extraction system.
-State that title/abstract text is passed to the LLM extraction component.
-State that NER and RE are performed jointly by the LLM rather than as separate sequential models, if this accurately reflects the implementation.
-State that the model returns structured entity and relation predictions.
-State that these outputs are parsed into the internal/tabular representation required by later stages.
-Do not describe the model, API parameters, prompt wording, JSON schema, or parsing logic. These belong in Section 3.4.
+This better reflects the architecture you have now described in Section 3.3. Your current Section 3.3 explicitly says CBC predictions pass through normalisation, validation and KG construction after extraction.
 
-Paragraph 3 - Normalisation and graph flow:
+3.4 opening paragraph:
 
-State that extracted entity mentions subsequently undergo entity normalisation to map them to canonical identifiers.
-State what ontology/terminology resources are involved at a high level, but leave the actual mapping procedure for Section 3.4.4.
-Briefly state that ontology-based validation is used before/during graph construction, if this reflects the final implementation.
-State that validated entities and relations are then converted into graph nodes and edges.
-Do not re-explain why normalisation prevents duplicate nodes or why ontologies improve KG consistency. That conceptual rationale has already been established in Section 2.3.
+Give a very brief overview of the extraction component.
+State that prepared title and abstract text were supplied to a pretrained LLM through an API.
+State that NER and RE were performed jointly in a single request.
+State that the model was instructed to return entities and relationships according to the BioRED-derived extraction schema.
+State that the returned structured output was parsed and stored for subsequent evaluation/downstream processing.
+Keep this to perhaps one short paragraph because Section 3.3 already establishes the overall flow.
 
-Paragraph 4 - Architecture across experimental stages:
+3.4.1 LLM Configuration
 
-Briefly clarify that the same underlying extraction architecture is used across BioRED and the CBC.
-The input dataset and availability of ground-truth annotations differ, but the extraction components themselves remain consistent.
-If relevant, state that pipeline configurations changed during EPI development, but that the overall architecture remained stable.
-Make clear that after final EPI selection the configuration was frozen before final benchmark and contemporary evaluation.
-Keep this extremely brief because Section 3.1 already explains the development/evaluation separation and Section 3.5 will explain EPI development.
+Purpose:
+Document the model and API configuration independently of the prompt itself.
 
-Architecture figure:
+Cover:
 
-I strongly recommend making the main contribution of this section a system architecture figure.
-The figure should show actual implemented data flow rather than another conceptual IE diagram.
-A possible structure is:
+Exact LLM/model used.
+Provider/API/SDK used.
+Model identifier/version if available.
+State that a pretrained model was used without parameter fine-tuning.
+Relevant API parameters actually controlled, such as temperature, seed, maximum output tokens, reasoning effort, response format, etc., depending on what your implementation uses.
+State which parameters remained at provider defaults where this is important for reproducibility.
+Explain how credentials/API keys were supplied without exposing the actual key.
+Mention retry/error-handling behaviour only if it materially affects extraction.
+If model configuration changed between EPIs, do NOT describe every configuration here. Define the available/configurable parameters and defer iteration-specific changes to Section 3.5.
+If the same model was used for every EPI, say so clearly. This establishes that observed changes across EPIs resulted from pipeline/prompt changes rather than switching underlying models.
+If stochasticity remained possible despite fixed settings, simply document the settings here; discussion of variability belongs elsewhere.
 
-BioRED / CBC
-|
-Prepared tabular data
-|
-LLM extraction
-(NER + RE)
-|
-Structured entities + relations
-|
-Entity normalisation
-|
-Ontology validation
-|
-KG construction
-|
-Final biomedical KG
+Potential small configuration table:
 
-Evaluation can be shown as branches rather than necessarily as another sequential processing stage.
-For example, BioRED predictions can branch to extraction-level evaluation against BioRED ground truth.
-CBC predictions can branch to generalisation evaluation against the manually annotated 50-abstract subset.
-The completed KG can branch to graph-level evaluation.
-This would make the architecture figure more informative than simply showing a straight pipeline.
+Parameter | Value
+Model | ...
+Temperature | ...
+Maximum output tokens | ...
+Response format | JSON/structured output
+Fine-tuning | None
+...
 
-Avoid repeating:
+Avoid:
 
-The four-stage experimental design from Section 3.1.
-Why development and evaluation were separated.
-BioRED train/dev/test roles.
-How the CBC was sampled.
-PubMed queries.
-XML/CSV/DataFrame preparation.
-Why LLMs were selected over specialised models.
-Definitions of NER, RE, NEN, ontologies, or KGs.
-Literature supporting joint extraction.
-Specific LLM model/API configuration.
-Prompt design.
-JSON schema details.
-Individual EPI configurations.
-Detailed entity-normalisation procedure.
-Detailed graph construction procedure.
-Evaluation metrics.
+Re-explaining what an LLM is.
+Defending LLMs against PubMedBERT.
+Literature discussion about zero-shot/few-shot performance.
+EPI-by-EPI results.
+Cost analysis.
 
-Important distinctions:
+3.4.2 Prompt and Extraction Schema
 
-Section 3.1 Research Design should answer:
-"What experiment was conducted, and how were development and evaluation organised?"
+Purpose:
+Explain what information the LLM was given and exactly what it was instructed to extract.
 
-Section 3.2 Datasets should answer:
-"What data was used and how was it prepared?"
+Start with prompt architecture:
 
-Section 3.3 System Architecture should answer:
-"What are the major implemented components, and how does data flow between them?"
+State that prompts were stored externally from the Python extraction code if that remains true.
+Explain the major components of the prompt rather than reproducing pages of prompt text in the body.
+For example:
+task/instruction definition;
+BioRED annotation guidelines;
+entity schema;
+relation schema;
+restrictions against using external/background knowledge;
+few-shot examples, where applicable;
+output-format instructions.
+If the complete final prompt is long, put it in an appendix and reference it here.
 
-Section 3.4 Information Extraction Pipeline should answer:
-"Exactly how does the extraction and normalisation system operate?"
+Entity schema:
 
-Section 3.5 Pipeline Development should answer:
-"How was that system iteratively modified and how was the final EPI selected?"
+Give the exact entity classes extracted by your final system.
+These should correspond to the BioRED classes actually retained in your project.
+Briefly define what the model is expected to return for an entity: text/span and entity type.
+State whether exact surface spans from the supplied text were required.
+Mention important constraints such as requiring entities to be explicitly present in the title/abstract if this was part of your final prompt.
 
-Section 3.6 Contemporary Knowledge Graph Construction should answer:
-"How were the frozen system's contemporary extractions transformed into the final KG?"
+Relation schema:
 
-Section 3.7 Evaluation should answer:
-"How was performance measured at extraction, generalisation, and graph levels?"
+Give the exact relation classes.
+State that relationships were represented using source entity, relation type and target entity.
+State whether source and target were required to correspond to extracted entities.
+Explain any directional/symmetric treatment only if this is imposed during extraction itself. If order invariance exists only in evaluation, leave it for Section 3.7.
+Do not explain what each BioRED relation means at excessive length if this is already covered elsewhere; a table may be enough.
 
-Specific repetition concern based on the current Methodology:
+Few-shot prompting:
 
-Section 3.1 already states that the study consists of extraction development, EPI selection, evaluation, and KG construction. Do not list these four experimental stages again in 3.3.
-Section 3.2.3 already explains that BioRED and CBC data become standardised pipeline-ready CSV files. In 3.3, simply begin from "prepared input data" or refer back to Section 3.2.3.
-Section 3.1 already explains that the final EPI is frozen before contemporary evaluation. Mention this only if necessary to interpret the architecture.
-The purpose of 3.3 should therefore be primarily technical/visual rather than another narrative overview of the project.
+Explain how examples were incorporated into configurations that used few-shot prompting.
+State where examples came from.
+Crucially, document that examples used for development/evaluation were drawn only from the appropriate BioRED training material and not from dev/test, if that reflects your implementation.
+Explain how examples were inserted into the prompt at runtime.
+Do not discuss whether few-shot improved performance here; that's Pipeline Development/Results.
+
+Schema table could be useful:
+
+Output component | Fields
+Entity | text, type
+Relationship | source, relation, target
+
+Then separately list allowed entity and relation types.
+
+3.4.3 Structured Output and Parsing
+
+Purpose:
+Explain how the raw API response became the prediction data used by the rest of the project.
+
+Cover:
+
+State that the LLM was instructed/constrained to return machine-readable JSON.
+Give the basic structure, for example:
+
+{
+"entities": [...],
+"relationships": [...]
+}
+
+Explain that each entity contains text and type.
+Explain that each relationship contains source, relation and target.
+State how the response was obtained from the API and parsed in Python.
+Explain validation/checks applied before accepting the response.
+Examples, only if actually implemented:
+valid JSON;
+required top-level keys present;
+entity types belong to permitted schema;
+relation types belong to permitted schema;
+required fields are present;
+relation source/target correspond to extracted entities.
+Explain what happened when parsing/API extraction failed: retry, record error, skip, etc. Use the actual implementation.
+State how predictions were transformed into the tabular representation used by the evaluation functions.
+Explain that PMID/document identifiers were retained so predictions remained linked to their source abstracts.
+
+EPI logging:
+This is also the most natural place for a SHORT introduction to your epi_log structure because it is generated by the extraction process.
+
+Mention that each run recorded:
+
+run/configuration identifier;
+dataset/split;
+prompt/configuration information;
+predictions by PMID;
+runtime;
+errors/API failures;
+other reproducibility metadata you actually record.
+
+However, do not explain the experimental comparison between EPI runs here. Section 3.5 should explain how these logged runs were used during iterative development and selection.
+
+Your actual epi_log["outputs"] structure is particularly relevant here because it establishes that every document's structured entities and relationships remain associated with its PMID. This subsequently allows the same extraction representation to feed either BioRED evaluation or CBC downstream processing.
+
+Avoid:
+
+Repeating the Literature Review's argument for why JSON is preferable to free text.
+Explaining NEN.
+Discussing UMLS.
+Calculating evaluation metrics.
+Describing which EPI performed best.
+Discussing KG nodes/edges.
+
+3.4.4 Entity Normalisation — recommendation
+
+I would remove this subsection from 3.4.
+
+Your current architecture says:
+
+BioRED -> extraction -> evaluation
+
+CBC -> extraction -> normalisation -> validation -> KG
+
+Therefore NEN is not really part of the extraction pipeline that you are developing/evaluating on BioRED. It is a downstream component specifically involved in constructing the contemporary KG.
+
+I would restructure Section 3.6 as:
+
+3.6 Contemporary Knowledge Graph Construction
+
+3.6.1 Contemporary Corpus Extraction
+
+Run frozen final EPI across the complete CBC.
+Produce the same entities/relations structure established in 3.4.
+Do not re-explain extraction mechanics.
+
+3.6.2 Entity Normalisation
+
+UMLS Metathesaurus.
+UTS/API candidate retrieval, depending on your final implementation.
+SapBERT candidate/synonym encoding and cosine similarity.
+Selection of best candidate.
+Similarity threshold.
+CUI and preferred/canonical name assignment.
+Unresolved entity handling.
+Caching repeated entity mentions.
+Creation of the normalised entity lookup table.
+
+3.6.3 Ontology-Based/Semantic Validation
+
+Retrieve UMLS semantic type(s) for candidate CUI.
+Map extraction entity classes to acceptable UMLS semantic categories.
+Accept/reject/flag incompatible mappings.
+Explain handling of unresolved/invalid entities.
+Be precise that the UMLS Metathesaurus itself is not being presented as a single ontology.
+You may want to rename this "Ontology-Guided Semantic Validation" or "Semantic Validation" depending on the final implementation.
+
+3.6.4 Graph Construction
+
+Convert validated CUIs into unique nodes.
+Resolve relation source/target mentions through the normalised entity lookup.
+Ensure relation endpoints exist.
+Create edges using extracted relation types.
+Store provenance such as PMID as attributes.
+Construct NetworkX MultiDiGraph.
+Export final graph as GraphML.
+Export supporting normalised entity/relation tables if used.
+
+Important distinction across the methodology:
+
+3.3 System Architecture:
+"What components exist and how does information move between them?"
+
+3.4 Information Extraction Pipeline:
+"How does text become structured entity and relation predictions?"
+
+3.5 Pipeline Development:
+"How was that extractor iteratively changed, tested and selected?"
+
+3.6 Contemporary KG Construction:
+"How were final CBC predictions normalised, validated and converted into the KG?"
+
+3.7 Evaluation:
+"How was the quality/performance of those outputs measured?"
 
 Overall recommendation:
-Keep 3.3 lean. A strong architecture diagram plus approximately three concise paragraphs would probably be better than a full page of prose. The reader has already been told what the study does; this section should now let them visually understand how the actual software components fit together before Section 3.4 starts opening those components up individually.
+Keep 3.4 focused very tightly on the part you have actually spent your EPI experiments developing: LLM-based NER + RE. Moving NEN into 3.6 will make the methodology correspond much more cleanly to your actual experimental design and prevent the reader from mistakenly assuming that every BioRED EPI also underwent entity normalisation.
