@@ -82,7 +82,8 @@ def process_epi(output_dict, ground_truths, dataset=None):
         eval_results,
         epi_dir=epi_dir,
         dataset=dataset,
-        errors={"matching_approach": error_approach, "errors": errors}
+        errors={"matching_approach": error_approach, "errors": errors},
+        save_log=True
     )
 
     return epi_log

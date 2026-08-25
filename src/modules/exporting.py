@@ -3,7 +3,7 @@ import json
 
 from datetime import date
 
-def export_run(epi_dict, eval_results, dataset, epi_dir, errors=None):
+def export_run(epi_dict, eval_results, dataset, epi_dir, errors=None, save_log=True):
     """
     """
 
@@ -20,6 +20,7 @@ def export_run(epi_dict, eval_results, dataset, epi_dir, errors=None):
             "eval_version": epi_dict["eval_version"]
         },
         "notes": epi_dict["epi_notes"],
+        "parse_failures": epi_dict["parse_failures"],
         "metrics": eval_results,
         "errors": errors,
         "prompt": epi_dict["raw_prompt"],
@@ -30,9 +31,10 @@ def export_run(epi_dict, eval_results, dataset, epi_dir, errors=None):
         }
     }
 
-    os.makedirs(epi_dir, exist_ok=True)
-    with open(os.path.join(epi_dir, f"{epi_id}.json"), "w") as f:
-        json.dump(epi_log, f, indent=2, default=list)
+    if save_log:
+        os.makedirs(epi_dir, exist_ok=True)
+        with open(os.path.join(epi_dir, f"{epi_id}.json"), "w") as f:
+            json.dump(epi_log, f, indent=2, default=list)
 
     print(f"Saved {epi_id} to {epi_dir}")
     return epi_log

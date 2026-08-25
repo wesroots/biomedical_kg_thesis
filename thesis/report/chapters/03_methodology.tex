@@ -13,7 +13,7 @@ The final \gls{epi} was then evaluated under two distinct stages. The first is b
 
 \subsection{BioRED Benchmark Corpus}
 \label{subsec:meth:biored_benchmark_corpus}
-The original BioRED corpus, as described in Section~\ref{subsec:lit:biored}, was used as the benchmark corpus for extraction pipeline development and evaluation in this project. The corpus consists of 600 manually annotated PubMed abstracts, assembled and released by the \gls{ncbi} and was obtained directly from the dataset's public GitHub repository. The BioRED-BC8 extension was also considered as it provides a more recent expert-annotated evaluation set: however, the original BioRED corpus was retained as the controlled benchmark as the study separately evaluates generalisation using literature independently retrieved through the PubMed API, better reflecting the intended deployment pathway. BioRED-BC8 therefore represents a valuable alternative external evaluation dataset for future work.
+The original BioRED corpus, as described in Section~\ref{subsec:lit:biored}, was used as the benchmark corpus for extraction pipeline development and evaluation in this project. The corpus consists of 600 manually annotated PubMed abstracts, assembled and released by the \gls{ncbi} and was obtained directly from the dataset's public GitHub repository. The BioRED-BC8 extension was also considered as it provides a more recent expert-annotated evaluation set: however, the original BioRED corpus was retained as the controlled benchmark as the study separately evaluates generalisation using literature independently retrieved through the PubMed \gls{api}, better reflecting the intended deployment pathway. BioRED-BC8 therefore represents a valuable alternative external evaluation dataset for future work.
 
 The original version of the BioRED dataset divides 600 abstracts into a training split of 400 abstracts, a development split of 100 abstracts, and a test split of 100 abstracts. Each split was used for a distinct role in this study. The training split was used throughout iterative \gls{epi} development, providing the abstracts observed by the \gls{llm} in which all \gls{epi} configurations were developed on, the development split was then used to evaluate all frozen \gls{epi} configurations against one another, and the test spit was used exclusively for the final benchmark evaluation of the best-performing pipeline configuration and played no role in either pipeline development or \gls{epi} selection.
 
@@ -37,8 +37,6 @@ For each abstract, this project used the associated \gls{pmid}, title, and abstr
 It should be noted that \gls{epi} refinement was conducted using a fixed 35-abstract subsample of the BioRED training split, with each final \gls{epi} then evaluated across the full 400-abstract training split. Section~\pref \ discusses this methodological decision further.
 
 BioRED's train, development, and test splits were each retrieved from the official BioRED GitHub repository as separate BioC-XML files. This process is discussed in Section~\ref{subsec:meth:data_preparation}.
-
-% Each file was parsed into a Python dictionary using the \verb|xmltodict| library before being converted into three separate pandas DataFrames: the first containing the split's papers, each one consisting of the paper's \gls{pmid}, title, and abstract text, the second containing ground truth entity extractions, with one row per entity mention, including its text span from the abstract, entity type and normalised identifier, and the third containing ground truth entity relations linking entities' normalised identifiers with a single relation type. All three DataFrames were then exported as separate CSV files.
 
 \subsection{Contemporary Biomedical Corpus}
 \label{subsec:meth:contemporary_biomedical_corpus}
@@ -74,32 +72,29 @@ Across all query-year combinations, up to 360 records were requested in total: 1
 \label{subsec:meth:data_preparation}
 Although BioRED and the \gls{cbc} were retrieved from different sources and through different processes, both required conversion into a structured, tabular representation before use by the rest of the pipeline. \verb|pandas| DataFrames were used for both datasets, allowing later extraction and evaluation to be conducted easily over a tabular data, regardless of which dataset was used. BioRED was retrieved as raw BioC-XML and was parsed directly using \verb|xmltodict|, whereas the \gls{cbc} was retrieved via Biopython's \verb|Bio.Entrez| module, which returns PubMed records already parsed into Python dictionaries, requiring no further XML-parsing step.
 
+For BioRED, each of the three split's files was parsed with \verb|xmltodict| into a Python dictionary before being converted into three separate \verb|pandas| DataFrames per split: a DataFrame containing each abstract's \gls{pmid}, title, and abstract text, an entity DataFrame containing one row per annotated entity mention, including its text span, entity type, and normalised identifier, and finally an entity relation DataFrame containing one row per annotated entity relation, including normalised identifiers of the two entities and their relation type.
 
+For the \gls{cbc}, the entire returned dictionary was iterated over to extract each paper's \gls{pmid}, title, abstract text, and publication year. Where a paper had its abstract split into multiple segments, all segments were concatenated into a single string and duplicate records.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% For BioRED, each of the three official partition files was parsed with \verb|xmltodict| into a nested Python dictionary before being converted into three separate tables per split: a document-level table containing each abstract's \gls{pmid}, title, and abstract text; an entity-level table containing one row per annotated entity mention, with its text span, character offsets, entity type, and normalised identifier; and a relation-level table containing one row per document-level relation, referencing the normalised identifiers of the two entities involved. Because a small number of entity annotations carried a composite identifier -- multiple concept identifiers joined by a comma, used where a single mention refers to more than one underlying concept -- these composite identifiers were split and exploded to build a representative entity lookup, allowing relations referencing an individual component identifier to still be resolved back to their corresponding mention text and entity type. This lookup was used to merge the relation-level table with entity text and type on both sides of each relation, producing a combined entity-relation table. The document, entity, and entity-relation tables for each split were exported to separate CSV files, with the official training, development, and test partitions preserved throughout as an explicit split label.
-
-% For the contemporary corpus, each retrieved PubMed record was iterated over to extract its \gls{pmid}, title, abstract text, journal title, and publication year. Where an abstract was distributed across multiple text segments, these were concatenated into a single string; where a given field was absent from a record, it was recorded as missing rather than causing the conversion to fail. Duplicate records, arising where the same abstract satisfied more than one of the query-year combinations described in Section~\ref{subsec:meth:contemporary_biomedical_corpus}, were identified and removed by \gls{pmid} using \verb|pandas|' built-in deduplication functionality, retaining the first occurrence encountered; records with a missing \gls{pmid} or abstract text were removed in the same step. The resulting table was exported to a single CSV file, indexed by \gls{pmid}.
-
-% Relatively little additional cleaning was required beyond this point. For BioRED, no records were excluded during conversion. For the contemporary corpus, no exclusions were applied beyond the deduplication and missing-data removal described above. In both cases, abstract and title text were preserved exactly as distributed, with no linguistic preprocessing, such as tokenisation, stemming, stop-word removal, or sentence simplification, applied at any stage. This was a deliberate choice, since the extraction pipeline supplies this text directly to the \gls{llm} as natural, unmodified language rather than as a preprocessed token sequence.
-
-% The output of this stage was therefore a set of standardised, pipeline-ready CSV files rather than any extracted entities or relations themselves. These outputs are not structurally identical between the two datasets: BioRED's per-split tables additionally contain manually annotated entity and relation information used as ground truth, whereas the contemporary corpus table at this stage contains only document text and metadata, since it had not yet been passed through the extraction pipeline or manually annotated. This asymmetry reflects each dataset's distinct role, established in Sections~\ref{subsec:meth:biored_benchmark_corpus} and~\ref{subsec:meth:contemporary_biomedical_corpus}, rather than any inconsistency in processing.
+Relatively little additional preprocessing was conducted beyond this stage. For BioRED, no records were excluded during parsing and for the \gls{cbc}, no records were excluded beyond removal of duplicates and papers that had missing abstracts. For both corpora, all abstracts and corresponding title text string remained untouched as retrieved as the extraction pipeline provides abstract and title text directly to the \gls{llm} as natural language, rather than preprocessed text. The output of this stage was therefore a set of standardised, pipeline-ready CSV files.
 
 \section{System Architecture}
 \label{sec:meth:system_architecture}
+
+The processed datasets discussed in Section~\ref{subsec:meth:data_preparation} formed the inputs to the extraction stage of the system. For BioRED, the resulting extractions were used for benchmark evaluation, whereas \gls{cbc} predictions were subsequently passed through normalisation, validation, and \gls{kg} construction. For each abstract, its title and text were passed to an \gls{llm}-based extraction step, which performed \gls{ner} and \gls{re} jointly rather than as separate \gls{llm} \gls{api} calls, returning structured entity and relation predictions. These predictions were parsed into the same tabular format used for BioRED's own annotations, allowing predicted and ground-truth extractions to be compared directly for subsequent evaluation. Figure~\pref \ below summarises this data flow across the implemented pipeline architecture.
+
+Extracted entity mentions then underwent entity normalisation, mapping each mention to an established biomedical identifier, drawn from \pref \ \dep.\
+% [State here, at a high level only, whether ontology-based validation was applied as a distinct step following normalisation, or incorporated within the normalisation step itself -- reflect your actual implementation rather than the generic three-step split assumed here.]
+The resulting normalised, validated entities and relations are subsequently converted into nodes and edges and assembled into the final \gls{kg}.
+
+The same extraction architecture was used across both BioRED and the \gls{cbc}, differing only in the input data supplied and presence of gold-standard annotations, with BioRED additionally providing ground truth against which extraction-level performance could be measured, and the \gls{cbc} providing only a manually annotated subset for this purpose, as described in Section~\ref{subsec:meth:contemporary_biomedical_corpus}. Although the pipeline's specific configuration changed across the \gls{epi} development process, the overall architecture described above remained consistent throughout.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{../img/system_architecture.pdf}
+    \caption{System architecture and data flow, from prepared corpus input through extraction, normalisation, and \gls{kg} construction, to the three evaluation branches described in Section~\ref{sec:meth:evaluation}. Grey shading highlights key inputs, final stages, and outputs.}
+    \label{fig:system_architecture}
+\end{figure}
 
 \section{Information Extraction Pipeline}
 \label{sec:meth:info_extraction_pipeline}
@@ -149,11 +144,11 @@ Although BioRED and the \gls{cbc} were retrieved from different sources and thro
 \subsection{Relation Evaluation}
 \label{subsec:meth:relation_evaluation}
 
-\subsection{Knowledge Graph Evaluation}
-\label{subsec:meth:knowledge_graph_evaluation}
-
 \subsection{Generalisation Evaluation}
 \label{subsec:meth:generalisation_evaluation}
+
+\subsection{Knowledge Graph Evaluation}
+\label{subsec:meth:knowledge_graph_evaluation}
 
 \section{Cost Analysis}
 \label{sec:meth:cost_analysis}

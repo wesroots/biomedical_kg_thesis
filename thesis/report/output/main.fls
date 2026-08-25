@@ -356,6 +356,12 @@ OUTPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\03_meth
 INPUT .\chapters\03_methodology.tex
 INPUT .\chapters\03_methodology.tex
 INPUT chapters\03_methodology.tex
+INPUT ..\img\system_architecture.pdf
+INPUT ..\img\system_architecture.pdf
+INPUT ..\img\system_architecture.pdf
+INPUT ..\img\system_architecture.pdf
+INPUT ..\img\system_architecture.pdf
+INPUT ..\img\system_architecture.pdf
 INPUT .\chapters\04_results.tex
 INPUT .\chapters\04_results.tex
 OUTPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\04_results.aux

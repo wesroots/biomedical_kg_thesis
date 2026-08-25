@@ -1,80 +1,125 @@
-3.2.3 Data Preparation
+3.3 System Architecture
 
 Purpose:
-Describe how the raw BioRED and contemporary corpus data were transformed into the consistent, pipeline-ready format consumed by the extraction system. Focus on reproducibility and actual processing steps. Do not re-describe the datasets themselves or explain the extraction process.
+Provide a high-level technical overview of how the major components of the implemented system connect and how data moves through them. This section should act as the bridge between the datasets described in Section 3.2 and the detailed component descriptions beginning in Section 3.4. It should answer "What does the complete system look like?" rather than explaining how each component works.
 
-Paragraph 1 - Common data preparation approach:
+This section should be relatively short, probably around 250-400 words plus an architecture diagram. Much of the conceptual rationale for the architecture has already been established in the Literature Review, while Section 3.1 has already described the experimental design. Avoid repeating either.
 
-State that BioRED and the contemporary PubMed corpus originated in XML format and required parsing before use by the extraction system, if true for both.
-Explain that both datasets were converted into structured tabular representations.
-State the main Python tools/packages used for parsing and manipulation, such as xmltodict and pandas.
-Explain that a consistent representation was used where possible so that downstream components could process the datasets using the same interface.
-Keep implementation details proportionate; the goal is reproducibility, not explaining basic Python operations.
+Paragraph 1 - Overall architecture:
 
-Paragraph 2 - BioRED preparation:
+State that the implemented system consists of several sequential components connecting the prepared input corpora to structured biomedical extractions and ultimately the knowledge graph.
+Introduce the overall data flow at a high level.
+A suitable representation of the final system may be approximately:
 
-Explain how the BioRED XML files were parsed.
-State which information was extracted from each document.
-Include the fields actually required by the project, such as PMID/document ID, abstract text, entity annotations, entity types, entity identifiers, relation annotations, and relation types.
-Explain how nested XML annotations were converted into Python dictionaries/DataFrames.
-State that the official train, development, and test partitions were preserved during conversion.
-State that each partition was exported to its own CSV file, if that is what the implementation does.
-Do not repeat the purpose of each BioRED split; that belongs in Section 3.2.1.
+Prepared abstract -> LLM-based joint NER + RE -> structured extraction -> entity normalisation -> ontology-based validation -> knowledge graph construction -> evaluation
 
-Paragraph 3 - Contemporary corpus preparation:
+Be precise about the actual ordering used by the final implementation.
+If ontology validation occurs after NEN and before graph insertion, show that explicitly.
+If some validation occurs during NEN itself, reflect the actual implementation rather than forcing these into artificial separate stages.
+Do not explain what NER, RE, NEN, or a KG are. These have already been established extensively in Chapter 2.
 
-Explain how the retrieved PubMed XML was parsed into the corresponding tabular representation.
-State the fields retained, such as PMID, title, abstract, journal, publication year, authors, DOI, keywords, and query tag, where applicable.
-Explain how records without usable abstracts were handled.
-Explain how duplicate articles were identified, particularly where the same PMID was returned by multiple biomedical engineering queries.
-State what happened to query tags when an article appeared in multiple searches, if relevant.
-State that the resulting records were exported to CSV or whatever intermediate format was actually used.
-Do not repeat the PubMed query strategy or retrieval process; those belong in Section 3.2.2.
+Paragraph 2 - Input and extraction flow:
 
-Paragraph 4 - Consistency and validation checks:
+Briefly explain that the standardised representations produced in Section 3.2.3 provide the input to the extraction system.
+State that title/abstract text is passed to the LLM extraction component.
+State that NER and RE are performed jointly by the LLM rather than as separate sequential models, if this accurately reflects the implementation.
+State that the model returns structured entity and relation predictions.
+State that these outputs are parsed into the internal/tabular representation required by later stages.
+Do not describe the model, API parameters, prompt wording, JSON schema, or parsing logic. These belong in Section 3.4.
 
-Describe any checks performed after parsing.
-Examples should only be included if actually performed:
-checking for missing PMIDs or abstracts;
-checking duplicate PMIDs;
-verifying expected BioRED annotation fields were present;
-confirming document counts after conversion;
-checking that official BioRED partitions remained separate;
-validating expected column names/data types.
-If very little cleaning was necessary, say so rather than inventing an elaborate preprocessing procedure.
-Mention whether the original abstract text was deliberately preserved without linguistic preprocessing such as tokenisation, stemming, stop-word removal, or sentence simplification, if this is true. This is potentially methodologically relevant because the LLM receives natural text directly.
+Paragraph 3 - Normalisation and graph flow:
 
-Paragraph 5 - Final pipeline-ready representation:
+State that extracted entity mentions subsequently undergo entity normalisation to map them to canonical identifiers.
+State what ontology/terminology resources are involved at a high level, but leave the actual mapping procedure for Section 3.4.4.
+Briefly state that ontology-based validation is used before/during graph construction, if this reflects the final implementation.
+State that validated entities and relations are then converted into graph nodes and edges.
+Do not re-explain why normalisation prevents duplicate nodes or why ontologies improve KG consistency. That conceptual rationale has already been established in Section 2.3.
 
-Briefly state what the output of data preparation looked like.
-Explain that the resulting CSVs/DataFrames provided the standardised input used by subsequent extraction modules.
-Make clear that this stage changes the representation/storage of the data rather than performing biomedical information extraction.
-If BioRED necessarily contains additional ground-truth columns that the contemporary corpus does not contain, acknowledge this rather than implying the two datasets are structurally identical.
-Explain that BioRED annotation fields are retained for evaluation, whereas the contemporary corpus primarily contains document text and metadata before extraction/manual annotation, if that reflects the implementation.
+Paragraph 4 - Architecture across experimental stages:
+
+Briefly clarify that the same underlying extraction architecture is used across BioRED and the CBC.
+The input dataset and availability of ground-truth annotations differ, but the extraction components themselves remain consistent.
+If relevant, state that pipeline configurations changed during EPI development, but that the overall architecture remained stable.
+Make clear that after final EPI selection the configuration was frozen before final benchmark and contemporary evaluation.
+Keep this extremely brief because Section 3.1 already explains the development/evaluation separation and Section 3.5 will explain EPI development.
+
+Architecture figure:
+
+I strongly recommend making the main contribution of this section a system architecture figure.
+The figure should show actual implemented data flow rather than another conceptual IE diagram.
+A possible structure is:
+
+BioRED / CBC
+|
+Prepared tabular data
+|
+LLM extraction
+(NER + RE)
+|
+Structured entities + relations
+|
+Entity normalisation
+|
+Ontology validation
+|
+KG construction
+|
+Final biomedical KG
+
+Evaluation can be shown as branches rather than necessarily as another sequential processing stage.
+For example, BioRED predictions can branch to extraction-level evaluation against BioRED ground truth.
+CBC predictions can branch to generalisation evaluation against the manually annotated 50-abstract subset.
+The completed KG can branch to graph-level evaluation.
+This would make the architecture figure more informative than simply showing a straight pipeline.
 
 Avoid repeating:
 
-What BioRED is.
-Why BioRED was selected.
-What the BioRED train/dev/test splits are for.
-Why contemporary literature was collected.
-PubMed search queries and corpus sampling strategy.
-Why generalisation evaluation is necessary.
-How the LLM prompt works.
-How entities and relations are extracted.
-How NEN is performed.
-How EPIs differ.
+The four-stage experimental design from Section 3.1.
+Why development and evaluation were separated.
+BioRED train/dev/test roles.
+How the CBC was sampled.
+PubMed queries.
+XML/CSV/DataFrame preparation.
+Why LLMs were selected over specialised models.
+Definitions of NER, RE, NEN, ontologies, or KGs.
+Literature supporting joint extraction.
+Specific LLM model/API configuration.
+Prompt design.
+JSON schema details.
+Individual EPI configurations.
+Detailed entity-normalisation procedure.
+Detailed graph construction procedure.
 Evaluation metrics.
 
-Important distinction:
+Important distinctions:
 
-3.2.1 BioRED Benchmark Corpus should answer:
-"What benchmark data was used and what role did its partitions play?"
+Section 3.1 Research Design should answer:
+"What experiment was conducted, and how were development and evaluation organised?"
 
-3.2.2 Contemporary Biomedical Corpus should answer:
-"What contemporary data was collected and how was that corpus constructed?"
+Section 3.2 Datasets should answer:
+"What data was used and how was it prepared?"
 
-3.2.3 Data Preparation should answer:
-"How were the raw datasets converted into the formats required by the extraction and evaluation code?"
+Section 3.3 System Architecture should answer:
+"What are the major implemented components, and how does data flow between them?"
 
-The section should probably be relatively short. If the preparation really is essentially XML -> dictionaries -> DataFrames -> CSV, followed by a few checks, there is no need to inflate it into a complicated preprocessing pipeline. The important thing is that another researcher could understand exactly how the raw data became the inputs used by the rest of the methodology.
+Section 3.4 Information Extraction Pipeline should answer:
+"Exactly how does the extraction and normalisation system operate?"
+
+Section 3.5 Pipeline Development should answer:
+"How was that system iteratively modified and how was the final EPI selected?"
+
+Section 3.6 Contemporary Knowledge Graph Construction should answer:
+"How were the frozen system's contemporary extractions transformed into the final KG?"
+
+Section 3.7 Evaluation should answer:
+"How was performance measured at extraction, generalisation, and graph levels?"
+
+Specific repetition concern based on the current Methodology:
+
+Section 3.1 already states that the study consists of extraction development, EPI selection, evaluation, and KG construction. Do not list these four experimental stages again in 3.3.
+Section 3.2.3 already explains that BioRED and CBC data become standardised pipeline-ready CSV files. In 3.3, simply begin from "prepared input data" or refer back to Section 3.2.3.
+Section 3.1 already explains that the final EPI is frozen before contemporary evaluation. Mention this only if necessary to interpret the architecture.
+The purpose of 3.3 should therefore be primarily technical/visual rather than another narrative overview of the project.
+
+Overall recommendation:
+Keep 3.3 lean. A strong architecture diagram plus approximately three concise paragraphs would probably be better than a full page of prose. The reader has already been told what the study does; this section should now let them visually understand how the actual software components fit together before Section 3.4 starts opening those components up individually.
