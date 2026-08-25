@@ -104,16 +104,72 @@ All extraction was performed using a single model, OpenAI's \verb|gpt-5.6-luna|,
 
 \verb|gpt-5.6-luna|'s reasoning effort parameter (\verb|reasoning| $\in$ \{\verb|low|, \verb|high|, \verb|medium|\}), controlling the magnitude of internal reasoning before a response output, was also left at its default setting throughout this project, rather than being specifically tuned. Unlike model temperature, this was not a constraint of the model, but a deliberate choice made without deeper investigation into its effect on extraction quality and reasoning effort was not treated as a variable between \glspl{epi}. Increasing reasoning effort typically increases both time and cost demand per request, and investigating its effect on extraction precision, recall, and consistency was concluded to be out of the scope given the time and budget constraints discussed in Section~\ref{sec:meth:cost_analysis}. This parameter is one that a larger-budget project with longer timeframe allowance could reasonably investigate.
 
-However, the absence of a temperature parameter and omission of fine-tuned reasoning parameter has a direct methodological consequence. Without fixed temperature, seed generation or
+However, the absence of a temperature parameter and omission of fine-tuned reasoning parameter has a direct methodological consequence. Without these parameters, the model's output for a given prompt and abstract is not guaranteed to be identical across repeated calls, even when all else remains constant. This results in two distinct consequences: firstly, as the reproducibility of an \gls{epi}'s outputs across multiple identical calls is not guaranteed, any \gls{epi} that reuses its previous \gls{epi}'s prompt reuses its stored outputs, rather than calling the model again. Secondly, an observed change in extraction performance between two \gls{epi}s using different prompt or extraction pipeline configurations cannot be attributed with complete certainty to the \gls{epi} refinement alone, as variation in performance may reflect natural variation in the model's generation, rather than just the effects of the update. This is partially mitigated by the fact that each \gls{epi} during the development stage was evaluated across the full BioRED training split ($n = 400$), rather than a small subsample of abstracts, which reduces the effects of variability of individual responses on performance metrics. Table \ref{tab:extraction_model_config_summary} summarises the chosen model's extraction pipeline configuration.
+
+\begin{table}[H]
+    \centering
+    \caption{Extraction Model Configuration Summary}
+    \label{tab:extraction_model_config_summary}
+    \begin{tabularx}{\textwidth}{l l}
+        \toprule
+        Parameter & Value \\
+        \midrule
+        Model & \verb|gpt-5.6-luna| \\
+        Provider / \gls{sdk} & OpenAI Python \gls{sdk}, Responses \gls{api} \\
+        Fine-tuning & None \\
+        Temperature & Default (not explicitly set) \\
+        Reasoning & Default (not explicitly set) \\
+        Maximum output tokens & Default (not explicitly set) \\
+        Generation seed & Not set \\
+        Request timeout & 120s \\
+        Maximum automatic retries & 2 \\
+        Same model used across all \glspl{epi} & Yes \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 \subsection{Prompt and Extraction Schema}
 \label{subsec:meth:prompt_and_extraction_schema}
+\gls{epi} configurations were stored in externally from the project's main Python code as a set of dictionaries in JSON format including the \gls{epi}'s name, prompt version -- also stored externally in a prompt configuration JSON file: rather than embedding text directly into the extraction code, evaluation version -- discussed in Section~\ref{subsec:meth:structured_output_and_parsing}, and additional notes.
+
+The prompt used by the project's \glspl{epi} was structured around several main components: a task definition instructing the model to extract entities and relationships exactly as they would be annotated under the official BioRED annotation guidelines, the BioRED guidelines themselves \cite{luo2022_biored}, an explicit list of the allowed entity and relationship types, evidence requirements, few-shot examples, and explicit output format instructions specifying the required JSON output. Each prompt version sequentially introduced one or more new components, initialised with the baseline prompt, including only explicit general instructions of the extraction task and the structured JSON output.
+
+The permitted entity and relation types instructed in the prompt corresponded exactly to BioRED's own schema, given in Table~\ref{tab:permitted_entity_and_relation_types}.
+
+\pref
+% paragraph on the biored guidelines being edited
+
+\begin{table}[H]
+    \centering
+    \caption{Permitted Entity and Relation Types}
+    \label{tab:permitted_entity_and_relation_types}
+    \begin{tabularx}{\textwidth}{l l}
+        \toprule
+        Entity types & Relation Types \\
+        \midrule
+        ChemicalEntity & Association \\
+        DiseaseOrPhenotypic Feature & Bind \\
+        GeneOrGeneProduct & Comparison \\
+        SequenceVariant & Conversion \\
+        OrganismTaxon & Cotreatment \\
+        CellLine & Drug\_Interaction \\
+         & Negative\_Correlation \\
+         & Positive\_Correlation \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+The evidence requirements instructed the model to base extractions only on information explicitly supported by the given abstract to avoid inferring entities or relationships from background biomedical knowledge rather than the abstract text itself, to avoid treating multiple entity mentions in the same sentence or context as automatically associated, and to avoid inferring a more specific relation type such as \verb|Positive_Correlation| or \verb|Negative_Correlation| than what the text explicitly included. The model was also instructed to exclude a relationship where it was uncertain if it satisfied these criteria. For each entity, the model was required to return its text and entity type, and for each relationship triple, two entities and a relation type.
+
+Few-shot examples constructed directly from BioRED's own training split ground truth annotations, with each example including an abstract's text and its correct entity and relationship annotations in the same JSON structure the model was instructed to output. Three constant few-shot examples were included in each prompt by default. Once generated in its first inclusion in a prompt, the few shot block was exported and stored for subsequent inclusion, sharing the same configuration, rather than being resampled on every execution.
 
 \subsection{Structured Output and Parsing}
 \label{subsec:meth:structured_output_and_parsing}
+The \gls{llm} was instructed through the prompt to return its extractions as a single JSON object cntaining two top-level keys: \texttt{entities} and \texttt{relationships}, each a list of extractions. No \gls{api}-level constraint existed to enforce this structure, how closely the outputs adhered to the specified JSON output depended entirely on how well the model followed the prompt's explicit instructions.
 
-\subsection{Entity Normalisation}
-\label{subsec:meth:entity_normalisation}
+Each abstract's raw response text was parsed as JSON in Python. Where a response failed to parse from JSON-structured string to valid JSON, this was recorded as a parse failure and the abstract was treated as having produced no entities and no relationships, rather than causing the run to fail. No further validation, such as checking that returned entity or relation types belonged to the allowed schema, was conducted beyond this JSON-validity check. Successfully parsed entities and relationships were converted into tuples following the form \texttt{(PMID, entity text, type)} for entities and \texttt{(PMID, entity 1, relation, entity 2)} for relationships. Entity text was stripped of any excess whitespace and stored in lowercase. These predictions sets were then converted into the same tabular structure used for BiORED's own ground-truth entities and relations, described in Section~\ref{subsec:meth:data_preparation}, allowing predicted and ground-truth extractions to be compared directly during evaluation.
+
+Finally, after each \gls{epi}'s final extraction run on the entire BioRED train set, the run was exported as its own run in full, storing the \gls{epi}'s identifier (e.g.: \texttt{epi\_001}), the dataset split it was evaluated on, the prompt and evaluation version used, the number of abstracts processed, the count of failed JSON parses, the raw prompt template, each abstract's raw total model output, the parsed entity and relation predictions, and the evaluation metrics and errors resulting from that run. The raw and parsed extractions were stored as, as previously mentioned, when a new \gls{epi} reused the previous \gls{epi}'s prompt version and only updated the evaluation approach, the previous \gls{epi}'s outputs were used -- storing outputs allowed for the importing of previous \gls{epi} outputs when necessary. How these logged runs were compared and used to select a final \gls{epi} is described in Section~\ref{sec:meth:pipeline_development}.
 
 \section{Pipeline Development}
 \label{sec:meth:pipeline_development}

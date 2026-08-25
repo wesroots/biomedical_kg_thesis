@@ -1,0 +1,593 @@
+\chapter{Extraction Prompts}
+\label{app:extraction_prompts}
+Note: \dep
+
+\section{Prompt Version 1}
+\begin{lstlisting}
+You are a biomedical information extraction system.
+
+Extract all biomedical entities and relationships from the following abstract.
+
+Return ONLY valid JSON in the following form:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relation type",
+			"target": "entity 2"
+		}
+	]
+}
+
+Title:
+
+{title}
+
+Abstract:
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 2}
+Baseline + BioRED annotation schema
+\begin{lstlisting}
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+{biored_ext_guidelines}
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+Title:
+
+{title}
+
+Abstract:
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 3}
+Baseline + BioRED annotation schema + few-shot prompting
+\begin{lstlisting}
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+{biored_ext_guidelines}
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+Below are examples of correctly annotated BioRED abstracts - follow the same annotation policy demonstrated in the examples.
+
+{few_shot_block}
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+Title:
+
+{title}
+
+Abstract:
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 4}
+Explicit exclusion of background biomedical knowledge, co-occurrence rule \& explicit formatting
+\begin{lstlisting}
+# TASK
+
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+# BioRED Annotation Guidelines
+
+{biored_ext_guidelines}
+
+# Allowed Entity Types
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+# Allowed Relationship Types
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+# Evidence requirements
+
+- Base all extractions only on information explicitly supported by the provided abstract.
+DO NOT infer entities or relationships from background biomedical knowledge.
+- Entity co-occurence alone does not establish a relationship.
+
+# Examples
+
+Below are examples of correctly annotated BioRED abstracts - follow the same annotation policy demonstrated in the examples.
+
+{few_shot_block}
+
+# Output Format
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+# Title:
+
+{title}
+
+# Abstract
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 5}
+Explicit prevention of unsupported specific relationship inference
+\begin{lstlisting}
+# TASK
+
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+# BioRED Annotation Guidelines
+
+{biored_ext_guidelines}
+
+# Allowed Entity Types
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+# Allowed Relationship Types
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+# Evidence requirements
+
+- Base all extractions only on information explicitly supported by the provided abstract.
+- Do not infer a more specific relationship type than is explicitly supported by the abstract and BioRED annotation guidelines.
+- In particular, do not classify an association as Positive_Correlation or Negative_Correlation unless the text provides evidence supporting that specific relationship type.
+- DO NOT infer entities or relationships from background biomedical knowledge.
+- Entity co-occurence alone does not establish a relationship.
+
+# Examples
+
+Below are examples of correctly annotated BioRED abstracts - follow the same annotation policy demonstrated in the examples.
+
+{few_shot_block}
+
+# Output Format
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+# Title:
+
+{title}
+
+# Abstract
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 6}
+Stricter relation evidence requirements to reduce over-extraction.
+\begin{lstlisting}
+# TASK
+
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+# BioRED Annotation Guidelines
+
+{biored_ext_guidelines}
+
+# Allowed Entity Types
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+# Allowed Relationship Types
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+# Evidence requirements
+
+- Base all extractions only on information explicitly supported by the provided abstract.
+Extract only entities and relationships that would be explicitly annotated under the BioRED annotation guidelines.
+- Do not exhaustively generate relationships between entities merely because they are affected by the same intervention, participate in the same experimental context, or are discussed together.
+- A relationship must correspond to a specific relationship expressed or clearly asserted in the abstract.
+- Do not infer a more specific relationship type than is explicitly supported by the abstract and BioRED annotation guidelines.
+- In particular, do not classify an association as Positive_Correlation or Negative_Correlation unless the text provides evidence supporting that specific relationship type.
+- DO NOT infer entities or relationships from background biomedical knowledge.
+- Entity co-occurence alone does not establish a relationship.
+
+# Examples
+
+Below are examples of correctly annotated BioRED abstracts - follow the same annotation policy demonstrated in the examples.
+
+{few_shot_block}
+
+# Output Format
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+# Title:
+
+{title}
+
+# Abstract
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 7}
+Precision-focused conservative extraction to reduce over-extraction.
+\begin{lstlisting}
+# TASK
+
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+# BioRED Annotation Guidelines
+
+{biored_ext_guidelines}
+
+# Allowed Entity Types
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+# Allowed Relationship Types
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+# Evidence requirements
+
+- When uncertain whether an entity or relationship meets the BioRED annotation criteria, DO NOT extract it. Prioritise annotation precision over exhaustive extraction.
+- Base all extractions only on information explicitly supported by the provided abstract.
+- Extract only entities and relationships that would be annotated under the BioRED annotation guidelines.
+- Do not exhaustively generate relationships between entities merely because they are affected by the same intervention, participate in the same experimental context, or are discussed together.
+- A relationship must correspond to a specific relationship expressed or clearly asserted in the abstract.
+- Do not infer a more specific relationship type than is supported by the abstract and BioRED annotation guidelines.
+- In particular, do not classify an association as Positive_Correlation or Negative_Correlation unless the text provides evidence supporting that specific relationship type.
+- DO NOT infer entities or relationships from background biomedical knowledge.
+- Entity co-occurrence alone does not establish a relationship.
+
+# Examples
+
+Below are examples of correctly annotated BioRED abstracts - follow the same annotation policy demonstrated in the examples.
+
+{few_shot_block}
+
+# Output Format
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+# Title:
+
+{title}
+
+# Abstract
+
+{abstract}
+\end{lstlisting}
+
+\section{Prompt Version 8}
+Targeted suppression of residual relation over-extraction through entity-pair evidence constraints
+\begin{lstlisting}
+# TASK
+
+You are an expert biomedical information extraction system.
+
+Your task is to extract biomedical entities and relationships from the abstract below exactly as they would be annotated under the official BioRED annotation guidelines.
+
+The official BioRED annotation guidelines are provided below.
+
+# BioRED Annotation Guidelines
+
+{biored_ext_guidelines}
+
+# Allowed Entity Types
+
+Output ONLY the following entity types:
+
+- ChemicalEntity
+- DiseaseOrPhenotypicFeature
+- GeneOrGeneProduct
+- SequenceVariant
+
+- OrganismTaxon
+
+- CellLine
+
+# Allowed Relationship Types
+
+Output ONLY the following relationship types:
+
+- Association
+- Bind
+- Comparison
+- Conversion
+- Cotreatment
+- Drug_Interaction
+- Negative_Correlation
+- Positive_Correlation
+
+# Evidence requirements
+
+- When uncertain whether an entity or relationship meets the BioRED annotation criteria, DO NOT extract it. Prioritise annotation precision over exhaustive extraction.
+- Base all extractions only on information explicitly supported by the provided abstract.
+- Extract only entities and relationships that would be annotated under the BioRED annotation guidelines.
+- Do not exhaustively generate relationships between entities merely because they are affected by the same intervention, participate in the same experimental context, or are discussed together.
+- A relationship must correspond to a specific relationship expressed or clearly asserted in the abstract.
+- Do not infer a relationship merely because one entity is a symptom, characteristic, measurement, component, subtype, consequence, or contextual feature of another entity. Such semantic relatedness does not by itself constitute a BioRED relationship.
+- Do not generate relationships simply because two entities are mentioned as part of the same disease, phenotype, treatment, pathway, experiment, comparison, or study outcome. The abstract must specifically support a BioRED relationship between those entities.
+- Do not generate multiple relationships from a shared experimental result unless each individual entity pair is itself explicitly supported as a relationship under the BioRED annotation guidelines.
+- Before extracting each relationship, verify that the abstract provides evidence for that specific entity pair and that the relationship satisfies the BioRED annotation criteria. If either condition is uncertain, omit the relationship.
+- Do not infer a more specific relationship type than is supported by the abstract and BioRED annotation guidelines.
+- In particular, do not classify an association as Positive_Correlation or Negative_Correlation unless the text provides evidence supporting that specific relationship type.
+- DO NOT infer entities or relationships from background biomedical knowledge.
+- Entity co-occurrence alone does not establish a relationship.
+
+# Examples
+
+Below are examples of correctly annotated BioRED abstracts - follow the same annotation policy demonstrated in the examples.
+
+{few_shot_block}
+
+# Output Format
+
+Return JSON in exactly this format:
+
+{
+	"entities": [
+		{
+			"text": "entity text",
+			"type": "entity type"
+		}
+	],
+	"relationships": [
+		{
+			"source": "entity 1",
+			"relation": "relationship type",
+			"target": "entity 2"
+		}
+	]
+}
+
+# Title:
+
+{title}
+
+# Abstract
+
+{abstract}
+\end{lstlisting}

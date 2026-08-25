@@ -21,6 +21,18 @@
 
 \usepackage{seqsplit}
 
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    breakatwhitespace=false,
+    columns=fullflexible,
+    frame=single,
+    xleftmargin=0pt,
+    xrightmargin=0pt
+}
+
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \captionsetup[table]{skip=8pt}
 
@@ -91,5 +103,10 @@
 
 \bibliographystyle{unsrt}
 \bibliography{bibliography}
+
+\appendix
+
+\input{appendices/appendices}
+% \input{appendices/appendix_b}
 
 \end{document}
