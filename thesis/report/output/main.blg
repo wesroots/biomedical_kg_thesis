@@ -1,26 +1,30 @@
 This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: chapters/01_abstract.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
-A level-1 auxiliary file: chapters/01_introduction.aux
+A level-1 auxiliary file: chapters/02_introduction.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
-A level-1 auxiliary file: chapters/02_literature_review.aux
+A level-1 auxiliary file: chapters/03_literature_review.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
-A level-1 auxiliary file: chapters/03_methodology.aux
+A level-1 auxiliary file: chapters/04_methodology.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: chapters/04_results.aux
+A level-1 auxiliary file: chapters/05_results.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
-A level-1 auxiliary file: chapters/05_discussion.aux
+A level-1 auxiliary file: chapters/06_discussion.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
-A level-1 auxiliary file: chapters/06_conclusion.aux
+A level-1 auxiliary file: chapters/07_conclusion.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: chapters/08_appendices.aux
 Database file #1: bibliography.bib
 Warning--can't use both volume and number fields in krallinger2017overview
 You've used 30 entries,
             1791 wiz_defined-function locations,
-            628 strings with 10601 characters,
+            630 strings with 10651 characters,
 and the built_in function-call counts, 8271 in all, are:
 = -- 685
 > -- 459

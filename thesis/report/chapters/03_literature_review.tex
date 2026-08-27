@@ -8,19 +8,19 @@
 
 \subsection{Definition}
 \label{subsec:lit:definition}
-Biomedical \gls{ie} is the process of automatically identifying structured information - entities such as genes, diseases, chemicals and species, and the relationships between them - from unstructured biomedical text such as journal abstracts and full-text articles. In this project, \gls{ie} is treated as the first stage of a larger system: extracted entities and relations are later assembled into a \gls{kg} and validated against biomedical ontologies \pref.
+Biomedical \gls{ie} is the process of automatically identifying structured information - entities such as genes, diseases, chemicals and species, and the relationships between them - from unstructured biomedical text such as journal abstracts and full-text articles. In this project, \gls{ie} is treated as the first stage of a larger system in which extracted entities and relations are later assembled into a \gls{kg} and validated against biomedical ontologies \pref.
 
 \subsection{Motivation}
 \label{subsec:lit:motivation}
-The volume of biomedical literature has expanded at a rate that exceeds the capacity of manual review, with an analysis by Lu et al. (2011) demonstrating an exponential growth in the number of biomedical publications \cite{lu2011_pubmed_publicationrate}. This growth is supported by more recent data - a 2024 study mapping over 20 million PubMed abstracts has demonstrated the magnitude of contemporary biomedical literature to a level where the volume of biomedical  publications has made it difficult for researchers to keep track of new literature \cite{gonzalez2024_biomed_landscape}. Literary analysis is not only a volume issue, but also an issue with discovery - log analysis of PubMed search behaviour shows that over 80\% of views fall within the first page (top 20 results) of returned literature \cite{islamaj2009_firstpage}, meaning a substantial majority of literature goes largely unseen by researchers relying on manual review of ranked results.
+The volume of biomedical literature has expanded at a rate that exceeds the capacity of manual review, with an analysis by Lu et al. (2011) demonstrating an exponential growth in the number of biomedical publications \cite{lu2011_pubmed_publicationrate}. This growth is supported by more recent data -- a 2024 study mapping over 20 million PubMed abstracts has demonstrated the magnitude of contemporary biomedical literature to a level where the volume of biomedical  publications has made it difficult for researchers to keep track of new literature \cite{gonzalez2024_biomed_landscape}. Literary analysis is not only a volume issue, but also an issue with discovery -- log analysis of PubMed search behaviour shows that over 80\% of views fall within the first page (top 20 results) of returned literature \cite{islamaj2009_firstpage}, meaning a substantial majority of literature goes largely unseen by researchers relying on manual review of ranked results.
 
-Together, these findings motivate the need for automated \gls{ie} for two reasons: the breadth of literature is growing faster than it can be analysed \cite{lu2011_pubmed_publicationrate,gonzalez2024_biomed_landscape} and a substantial majority of literature goes unseen that automated extraction and structuring could help mitigate \cite{islamaj2009_firstpage}. This motivation supports the choice of PubMed as the source of the contemporary corpus for this thesis, as a corpus that is both large and continuously updated is exactly the setting in which static benchmark-trained pipelines are most likely to be used.
+Together, these findings motivate the need for automated \gls{ie} for two reasons: the breadth of literature is growing faster than it can be analysed \cite{lu2011_pubmed_publicationrate,gonzalez2024_biomed_landscape} and a substantial majority of literature goes unseen that automated extraction and structuring could help mitigate \cite{islamaj2009_firstpage}. This motivation supports the choice of PubMed as the source of the contemporary corpus for this project, as its large and continuously updated collection of recent literature reflects the exact setting in which static benchmark-trained pipelines are most likely to be used.
 
 \subsection{Tasks}
 \label{subsec:lit:tasks}
-Biomedical \gls{ie} is usually comprised of several sub-tasks: \gls{ner}, which identifies and stores types of spans of text referring to biomedical concepts, and \gls{re}, which identifies semantic relationships between recognised entities, and \gls{nen}, which maps extracted mentions to pre-defined identifiers from an existing ontology \cite{perera2020_ie_introduction, li2017cnn}.
+Biomedical \gls{ie} is usually comprised of several sub-tasks: \gls{ner}, which identifies and stores spans of text referring to biomedical concepts and assigns them entity types, \gls{re}, which identifies semantic relationships between recognised entities, and \gls{nen}, which maps extracted mentions to pre-defined identifiers from an existing ontology \cite{perera2020_ie_introduction, li2017cnn}.
 
-Unlike \gls{ner}, which only labels a span of text as belonging to a given entity type, \gls{nen} maps that span to an established identifier from a pre-defined ontology or controlled vocabulary, storing which specific concept the span is referring to, rather than what kind of concept it is. This resolves terminology ambiguity challenges discussed in the following section.
+Unlike \gls{ner}, which only labels a span of text as belonging to a given entity type, \gls{nen} maps that span to an established identifier from a pre-defined ontology or vocabulary, storing which specific concept the span is referring to, rather than what kind of concept it is. This resolves terminology ambiguity challenges discussed in the following section.
 
 \subsection{Challenges}
 \label{subsec:lit:challenges}
@@ -77,7 +77,7 @@ An important design consideration is the format in which extracted information i
 In summation, the current literature provides a more nuanced view than the conclusion that \glspl{llm} perform interchangeably with specialised biomedical extraction models. \glspl{llm} reduce the dependence on task- and subdomain-specific fine-tuning and offer flexible, adaptable extraction across entity and relation types, which is an important practical advantage over supervised \gls{plm} pipelines discussed in Section~\ref{subsec:lit:transition_to_llms}. However, this flexibility comes with significant caveats: extraction performance that is sensitive to prompt construction and appears to vary across datasets and specific tasks while the generative aspect of these models comes with reliability concerns such generation of information not grounded in the source text, variable outputs, and schema non-compliance. For a pipeline intended to generalise from a benchmark corpus to unseen contemporary literature, this distinction is important: benchmark-evaluated precision and recall capture extraction accuracy on in-distribution text, but do not directly capture whether a frozen prompt-based pipeline remains robust when applied to literature it was not developed against. This motivates evaluating not only whether extraction quality transfers from BioRED to contemporary PubMed abstracts, but whether the specific points of failure discussed become more or less significant during generalisation.
 
 % ---------- Sec. 2.3 - KG Construction Using LLMs ----------
-\section{Knowledge Graph Construction Using \glspl{llm}}
+\section{Knowledge Graph Construction Using LLMs}
 \label{sec:lit:kg_construction_using_llms}
 
 \subsection{Knowledge Graph Representation}
@@ -85,30 +85,38 @@ In summation, the current literature provides a more nuanced view than the concl
 A \gls{kg} represents information as a set of entities, or nodes, connected by relations, or edges, with both nodes and edges, sometimes including additional information such as a confidence score, or source identifier \pref. The fundamental unit of a \gls{kg} is the triple, which represents a single relationship between two entities. For example, the finding that warfarin is associated with intracranial haemorrhage can be represented as the triple:
 
 \[
-(\text{Warfarin},
-\text{Association},
-\text{Intracranial Haemorrhage}).
+(
+    \text{Warfarin},
+    \text{Association},
+    \text{Intracranial Haemorrhage}
+).
 \]
+
+\vspace{0.5em}
 
 \noindent A \gls{kg} is fundamentally a collection of triples, with shared entities linking separate triples into a connected structure rather than a set of isolated relations.
 
 This structure is well suited to biomedical information where individual findings are often reported in isolation within a single abstract but gain insight when connected across the literature. Representing extracted findings as a knowledge graph connects mentioned of the same entity across different papers into a single queryable structure. This can reveal clusters of relations and indirect connections that would not be apparent from a single abstract in isolation. For example, identifying an indirect association between two entities that are never mentioned together in the same source text, but are connected to each other through a mutual entity \pref.
 
-This representation maps naturally onto the information extraction tasks introduced in Section~\ref{sec:lit:biomedical_ie}. \gls{ner} identifies the spans of text that become candidate nodes in the graph and \gls{nen} maps those candidate nodes to shared predefined identifiers, ensuring that semantically separate mentions of the same concept are consolidated into a single node rather than represented as duplicates. Finally, \gls{re} identifies the edges connecting these nodes. The insights \glspl{kg} provide are precisely why \gls{nen} is a key component of the extraction pipeline: if duplicate mentions of a single concept were not resolved, biomedical concepts would become fragmented across several nodes, undermining the purpose that \glspl{kg} are intended to provide.
+This representation maps naturally onto the information extraction tasks introduced in Section~\ref{sec:lit:biomedical_ie}: \gls{ner} identifies the spans of text that become candidate nodes in the graph and \gls{nen} maps those candidate nodes to shared predefined identifiers, ensuring that semantically separate mentions of the same concept are consolidated into a single node rather than represented as duplicates. Finally, \gls{re} identifies the edges connecting these nodes. The insights \glspl{kg} provide are precisely why \gls{nen} is a key component of the extraction pipeline: if duplicate mentions of a single concept were not resolved, biomedical concepts would become fragmented across several nodes, undermining the purpose that \glspl{kg} are intended to provide.
 
 \subsection{LLM-Based Knowledge Graph Construction}
 \label{subsec:lit:llm_based_kg_construction}
-Section~\ref{subsec:lit:transition_to_llms} outlined how the recent \gls{llm}-driven work represents a broader shift in knowledge extraction from rule-based and modular pipelines towards adaptive generative frameworks \cite{bian2025_llm_automation_shift}. In the context of \gls{kg} construction, this shift changes the overall architecture of the entire extraction-to-graph system. A traditional, modular architecture treats \gls{nen}, \gls{ner}, and \gls{re} as separate stages, each performed by a distinct model or tool, before the resulting entities and relations are assembled into a graph \pref. Although the exact ordering of these steps may differ, an example module workflow is:
-
+Section~\ref{subsec:lit:transition_to_llms} outlined how the recent \gls{llm}-driven work represents a broader shift in knowledge extraction from rule-based and modular pipelines towards adaptive generative frameworks \cite{bian2025_llm_automation_shift}. In the context of \gls{kg} construction, this shift changes the overall architecture of the entire extraction-to-graph system. A traditional, modular architecture treats \gls{nen}, \gls{ner}, and \gls{re} as separate stages, each performed by a distinct model or tool, before the resulting entities and relations are assembled into a graph \pref. Although the exact ordering of these steps may differ between models, an example module workflow is:
+\vspace{0.5em}
 \[
 \text{Text} \rightarrow \text{RE} \rightarrow \text{NER} \rightarrow \text{NEN} \rightarrow \text{KG} \ \pref.
 \]
 
-An \gls{llm}-driven approach instead allows a single model to conduct \gls{re} and \gls{ner} directly from text within one pipeline step, with a separate subsequent step conducting \gls{nen} before \gls{kg} construction:
+\vspace{0.5em}
 
+An \gls{llm}-driven approach instead allows a single model to conduct \gls{re} and \gls{ner} directly from text within one pipeline step, with a separate subsequent step conducting \gls{nen} before \gls{kg} construction:
+\vspace{0.5em}
 \[
 \text{Text} \rightarrow \boxed{\text{LLM joint NER} + \text{RE}} \rightarrow \text{NEN} \rightarrow \text{KG}.
 \]
+
+\vspace{0.5em}
 
 This consolidation is possible as an \gls{llm} with a single adequate prompt can both recognise entity spans and the relations between them in text. Recent work evaluating end-to-end biomedical relation extraction using \glspl{llm} demonstrates the potential of joint-extraction \cite{brokman2025benchmark} (?) and multi-extraction prompting has also been shown to support this within a single framework without requiring additional fine-tuning \cite{labonte2026structured}.
 
@@ -124,7 +132,7 @@ Biomedical ontologies and vocabularies address this by providing a fixed set of 
 
 Beyond identifier assignment, the ontology can also constrain the \gls{kg} more broadly, restricting the extracted entities and relations to respective predefined, established sets \pref. This introduces a distinction between normalisation and ontology-based validation. While \gls{nen} maps an extracted span of text to a consolidated, established concept, validation can assess whether extracted entities and relations align with existing ontologies. Ontology integration can therefore support the consolidation and validation of the resulting \gls{kg} \pref.
 
-\subsection{Challenges and Quality of \gls{llm}-Constructed Knowledge Graphs}
+\subsection{Challenges and Quality of LLM-Constructed Knowledge Graphs}
 \label{subsec:lit:challenges_and_quality_of_llm_kgs}
 Because a \gls{kg} is assembled directly from the outputs of the extraction pipeline, errors made in the \gls{ner}, \gls{re}, and \gls{nen} stages are not isolated from other stages, but instead pass into the resulting graph. For example, a false-positive entity or relation will become an incorrect node or edge, while false negatives would become missing edges. False-positive relations may be the more detrimental of the two errors, as the graph explicitly states them as knowledge rather than just excluding them \pref. Errors at the \gls{nen} stage, discussed in Section~\ref{subsec:lit:ontology_integration_and_en}, have a similar effect: false-negative normalisation results in mentions of the same concept separated across duplicate nodes, while false-positive normalisation consolidates separate concepts into a single node \pref.
 
@@ -133,7 +141,7 @@ Because of the connected nature of steps in an extraction pipeline system, \gls{
 \section{Benchmark Datasets and Evaluation}
 \label{sec:lit:Benchmark Datasets and Evaluation}
 
-\subsection{Biomedical \gls{ie} Benchmark Datasets}
+\subsection{Biomedical Information Extraction Benchmark Datasets}
 \label{subsec:lit:biomed_ie_benchmark_datasets}
 Progress in biomedical \gls{ie}, has largely been measured against manually annotated benchmark corpora, which provide the ground truth against which \gls{ner} and \gls{re} systems are trained and evaluated \pref. As annotation is costly and requires domain expertise, researchers typically constrain their annotations to particular biomedical entities, relations, or domains \pref, targeting a specific set of entity and relation types, rather than biomedical text in general \pref. Because of this, different benchmarks are not directly interchangeable as an extraction system's reported performance reflects the entities, relations, and schema of the specific benchmark it was evaluated on, rather than a measure of their general biomedical extraction ability. This benchmark heterogeneity was discussed in Section~\ref{subsec:lit:transition_to_llms}, where performance was shown to vary significantly between the \gls{gad} and ChemProt datasets.
 
@@ -167,9 +175,9 @@ This comparison demonstrates that the interpretation of a strongly-performing ex
 
 \subsection{BioRED}
 \label{subsec:lit:biored}
-BioRED, introduced in Section~\ref{subsec:lit:transition_to_llms}, is a manually annotated corpus of 600 PubMed abstracts, constructed to support document-level, multi-entry, multi-relation biomedical relation extraction \pref.
+BioRED, introduced in Section~\ref{subsec:lit:transition_to_llms}, is a manually annotated corpus of 600 PubMed abstracts, constructed to support document-level, multi-entry, multi-relation biomedical relation extraction \pref. % ADD NOTE FOR LICENSING
 
-The corpus comprises six entity types: chemical entity (\verb|ChemicalEntity|), disease or phenotypic feature (\verb|DiseaseOrPhenotypicFeature|), gene or gene product (\verb|GeneOrGeneProduct|), sequence variant (\verb|SequenceVariant|), organism taxon (\verb|OrganismTaxon|), and cell line \verb|CellLine|. Eight relationship types connect these entities: association (\verb|Association|), bind (\verb|Bind|), comparison (\verb|Comparison|), conversion (\verb|Conversion|), cotreatment (\verb|Cotreatment|), drug interaction (\texttt{\seqsplit{Drug\_\linebreak~Interaction}}), negative correlation (\verb|Negative_Correlation|) and positive correlation (\verb|Positive_Correlation|) \cite{luo2022_biored}.
+The corpus comprises six entity types: chemical entity (\verb|ChemicalEntity|), disease or phenotypic feature (\verb|DiseaseOrPhenotypicFeature|), gene or gene product (\verb|GeneOrGeneProduct|), sequence variant (\verb|SequenceVariant|), organism taxon (\verb|OrganismTaxon|), and cell line \verb|CellLine|. Eight relationship types connect these entities: association (\verb|Association|), bind (\verb|Bind|), comparison (\verb|Comparison|), conversion (\verb|Conversion|), cotreatment (\verb|Cotreatment|), drug interaction (\texttt{Drug\_Interaction}), negative correlation (\verb|Negative_Correlation|) and positive correlation (\verb|Positive_Correlation|) \cite{luo2022_biored}.
 
 In total, the corpus contains 20,419 entity annotations, mapped to 3,869 identifiers \ck, where, each entity mention is normalised to an established identifier in the annotation itself \cite{luo2022_biored}. Relations are also labelled as describing either a new finding or existing background knowledge, allowing systems to distinguish novel findings from existing background information. As with the other benchmark corpora discussing in this review, BioRED is split into training, development, and test splits, enabling consistent comparison between systems evaluated on the dataset \cite{luo2022_biored}.
 
@@ -181,9 +189,10 @@ However, BioRED remains as fixed, manually annotated, benchmark-distributed corp
 \label{subsec:lit:extraction_level_eval}
 Comparing biomedical \gls{ie} systems, whether between the benchmark datasets in Section~\ref{subsec:lit:biomed_ie_benchmark_datasets} or traditional and \gls{llm}-based approaches discussed in Sections~\ref{subsec:lit:traditional_methods} and \ref{sec:lit:llms_for_biomedical_ie}, requires a consistent way of quantifying extraction quality. This is typically done by comparing a system's predicted entities or relations against a benchmark's manually annotated ground truth, classifying each prediction as a \gls{tp}, a correct prediction matching an annotation, a False Positive (\gls{fp}), a predicted instance with no associated annotation, or a False Negative (\gls{fn}), an annotation that the system failed to extract \pref.
 
-Three derived metrics are then calculated from these counts: precision, the proportion of extractions that are correct, recall, the proportion of annotations that were correctly identified from the source text, and F1 score, the harmonic mean of precision and recall, commonly reported as a standalone summary figure, previously mentioned in Section~\ref{subsec:lit:transition_to_llms} \pref.
+Three derived metrics are then calculated from these counts: precision, the proportion of all predicted extractions that are correct, recall, the proportion of all ground truth annotations that were correctly identified from the source text, and F1 score, the harmonic mean of precision and recall, commonly reported as a standalone summary figure, previously mentioned in Section~\ref{subsec:lit:transition_to_llms} \pref.
 
 Accuracy measures the proportion of predictions that are correct:
+\vspace{0.5em}
 
 \[
 \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}.

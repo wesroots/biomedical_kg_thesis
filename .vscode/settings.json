@@ -6,25 +6,40 @@
             "symbol": "Da"
         },
         {
-            "path": "exploration",
-            "color": "custom2",
-            "symbol": "Ex"
+            "path": "img",
+            "color": "custom3",
+            "symbol": "{}"
+        },
+        {
+            "path": "notes",
+            "color": "custom3",
+            "symbol": "{}"
+        },
+        {
+            "path": "configs",
+            "color": "custom3",
+            "symbol": "{}"
+        },
+        {
+            "path": ".obsidian",
+            "color": "custom3",
+            "symbol": "{}"
         },
         {
             "path": "src",
-            "color": "white",
+            "color": "custom5",
             "symbol": "{}"
         },
         {
             "path": "thesis",
-            "color": "custom5",
+            "color": "custom6",
             "symbol": "Th"
         }
     ],
     "workbench.colorCustomizations": {
         "folderPathColor.custom1": "#e86464",
         "folderPathColor.custom2": "#e08a43",
-        "folderPathColor.custom3": "#F1C40F",
+        "folderPathColor.custom3": "#686868",
         "folderPathColor.custom4": "#85ed85",
         "folderPathColor.custom5": "#43a4e0",
         "folderPathColor.custom6": "#b864e8"

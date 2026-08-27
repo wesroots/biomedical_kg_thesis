@@ -1,254 +1,348 @@
-3.4 Information Extraction Pipeline
+4.5 Pipeline Development
 
 Purpose:
-Describe the actual implemented extraction component that converts prepared abstract text into structured entity and relation predictions. This section should move from the high-level architecture in Section 3.3 to the technical details required to reproduce the extraction process. It should answer: "Given a prepared abstract, exactly how did the system produce structured biomedical entities and relations?"
+Describe how the extraction pipeline was iteratively refined, how changes between EPIs were tracked and evaluated, and how the final EPI was selected. This section should explain the experimental development process rather than re-describing the extraction pipeline itself.
 
-Do not repeat the rationale for using LLMs, prompting, few-shot learning, structured output, or NER/RE. Those concepts have already been established in the Literature Review. Here, state what was actually implemented and why specific implementation choices were made only where necessary.
+The section should answer:
+“How did the pipeline evolve from the baseline configuration to the final selected configuration, and what evidence was used to make development and selection decisions?”
 
-Important structural point:
-Based on the current methodology, I would consider moving Entity Normalisation OUT of Section 3.4. Your System Architecture currently describes extraction -> normalisation -> ontology validation -> KG construction, and Section 3.6 is already titled Contemporary Knowledge Graph Construction. Since NEN is only applied to CBC extractions rather than BioRED during EPI development/evaluation, it is arguably cleaner to place Entity Normalisation alongside Ontology-Based Validation in Section 3.6.
+Recommended structure:
 
-That would give:
+4.5 Pipeline Development
 
-3.4 Information Extraction Pipeline
-3.4.1 LLM Configuration
-3.4.2 Prompt and Extraction Schema
-3.4.3 Structured Output and Parsing
+4.5.1 Extraction Pipeline Iterations
 
-3.5 Pipeline Development
-...
+4.5.2 Development and Model Selection
 
-3.6 Contemporary Knowledge Graph Construction
-3.6.1 Contemporary Corpus Extraction
-3.6.2 Entity Normalisation
-3.6.3 Ontology-Based Validation
-3.6.4 Graph Construction
+4.5.3 Final Pipeline
 
-This better reflects the architecture you have now described in Section 3.3. Your current Section 3.3 explicitly says CBC predictions pass through normalisation, validation and KG construction after extraction.
-
-3.4 opening paragraph:
-
-Give a very brief overview of the extraction component.
-State that prepared title and abstract text were supplied to a pretrained LLM through an API.
-State that NER and RE were performed jointly in a single request.
-State that the model was instructed to return entities and relationships according to the BioRED-derived extraction schema.
-State that the returned structured output was parsed and stored for subsequent evaluation/downstream processing.
-Keep this to perhaps one short paragraph because Section 3.3 already establishes the overall flow.
-
-3.4.1 LLM Configuration
+4.5 opening paragraph
 
 Purpose:
-Document the model and API configuration independently of the prompt itself.
+Briefly introduce the iterative development strategy.
 
 Cover:
 
-Exact LLM/model used.
-Provider/API/SDK used.
-Model identifier/version if available.
-State that a pretrained model was used without parameter fine-tuning.
-Relevant API parameters actually controlled, such as temperature, seed, maximum output tokens, reasoning effort, response format, etc., depending on what your implementation uses.
-State which parameters remained at provider defaults where this is important for reproducibility.
-Explain how credentials/API keys were supplied without exposing the actual key.
-Mention retry/error-handling behaviour only if it materially affects extraction.
-If model configuration changed between EPIs, do NOT describe every configuration here. Define the available/configurable parameters and defer iteration-specific changes to Section 3.5.
-If the same model was used for every EPI, say so clearly. This establishes that observed changes across EPIs resulted from pipeline/prompt changes rather than switching underlying models.
-If stochasticity remained possible despite fixed settings, simply document the settings here; discussion of variability belongs elsewhere.
+State that development was organised into a sequence of Extraction Pipeline Iterations (EPIs).
+Each EPI represented a defined combination of:
+prompt version;
+evaluation version;
+any other relevant extraction/evaluation configuration.
+State that changes were introduced incrementally so that the effect of individual methodological changes could be observed.
+Explain that development used BioRED training data only, with the development split reserved for comparison of frozen candidate EPIs.
+Refer back to Section 4.1 for the broader train/dev/test separation rather than explaining it again.
+State that full EPI configurations and outputs were logged as described in Section 4.4.3.
 
-Potential small configuration table:
+Do not:
 
-Parameter | Value
-Model | ...
-Temperature | ...
-Maximum output tokens | ...
-Response format | JSON/structured output
-Fine-tuning | None
-...
+Re-explain the OpenAI model configuration.
+Reproduce prompts.
+Re-explain JSON parsing.
+Re-explain what BioRED is.
 
-Avoid:
-
-Re-explaining what an LLM is.
-Defending LLMs against PubMedBERT.
-Literature discussion about zero-shot/few-shot performance.
-EPI-by-EPI results.
-Cost analysis.
-
-3.4.2 Prompt and Extraction Schema
+4.5.1 Extraction Pipeline Iterations
 
 Purpose:
-Explain what information the LLM was given and exactly what it was instructed to extract.
+Document the sequence of methodological changes made during development.
 
-Start with prompt architecture:
+This is the best place for your EPI configuration table.
 
-State that prompts were stored externally from the Python extraction code if that remains true.
-Explain the major components of the prompt rather than reproducing pages of prompt text in the body.
+Recommended table:
+
+EPI | Prompt version | Evaluation version | Main change / purpose
+
 For example:
-task/instruction definition;
-BioRED annotation guidelines;
-entity schema;
-relation schema;
-restrictions against using external/background knowledge;
-few-shot examples, where applicable;
-output-format instructions.
-If the complete final prompt is long, put it in an appendix and reference it here.
 
-Entity schema:
+epi_001 | v1 | v1 | Initial baseline
+epi_002 | v2 | v1 | Added BioRED schema guidance
+epi_003 | v3 | v2 | Added few-shot prompting
+...
+epi_009 | vX | vY | Final refinement
 
-Give the exact entity classes extracted by your final system.
-These should correspond to the BioRED classes actually retained in your project.
-Briefly define what the model is expected to return for an entity: text/span and entity type.
-State whether exact surface spans from the supplied text were required.
-Mention important constraints such as requiring entities to be explicitly present in the title/abstract if this was part of your final prompt.
+Use your actual configuration history rather than these example descriptions.
 
-Relation schema:
+The “notes” column should be short and methodological. It should answer:
+“What changed relative to the previous relevant EPI?”
 
-Give the exact relation classes.
-State that relationships were represented using source entity, relation type and target entity.
-State whether source and target were required to correspond to extracted entities.
-Explain any directional/symmetric treatment only if this is imposed during extraction itself. If order invariance exists only in evaluation, leave it for Section 3.7.
-Do not explain what each BioRED relation means at excessive length if this is already covered elsewhere; a table may be enough.
+Avoid putting performance results in the notes column unless a result directly motivated the next iteration.
 
-Few-shot prompting:
+For example, better:
+“Added explicit grounding instructions to discourage unsupported relations.”
 
-Explain how examples were incorporated into configurations that used few-shot prompting.
-State where examples came from.
-Crucially, document that examples used for development/evaluation were drawn only from the appropriate BioRED training material and not from dev/test, if that reflects your implementation.
-Explain how examples were inserted into the prompt at runtime.
-Do not discuss whether few-shot improved performance here; that's Pipeline Development/Results.
+Rather than:
+“Relation F1 dropped to 0.48.”
 
-Schema table could be useful:
+The latter belongs in the development discussion/results.
 
-Output component | Fields
-Entity | text, type
-Relationship | source, relation, target
+Explain that not every new EPI necessarily changed both prompt and evaluation logic. Some iterations may hold extraction outputs constant while changing only the evaluation approach. This is particularly important because Section 4.4.3 already explains that stored outputs were reused where the prompt/extraction configuration itself had not changed.
 
-Then separately list allowed entity and relation types.
+A short paragraph after the table can identify the broad development phases, for example:
 
-3.4.3 Structured Output and Parsing
+baseline extraction;
+BioRED schema alignment;
+few-shot prompting;
+relaxed evaluation;
+cosine-based matching;
+relation-specific prompt refinement;
+grounding / unsupported-relation refinement.
+
+This will make the sequence easier to understand than narrating nine EPIs one by one in full prose.
+
+Evaluation logic: strict -> relaxed -> cosine
+
+Yes, this absolutely belongs in 4.5.1, because the evaluation policy itself changed during iterative development.
+
+However, distinguish between:
+
+Section 4.5: why and when the evaluation logic changed during development;
+Section 4.7: exact formal definitions and implementation of strict, relaxed, and cosine evaluation.
+
+In 4.5, explain the development story.
+
+Something like:
+
+Initial EPIs were assessed using strict matching, requiring exact agreement between predicted and ground-truth entity representations. Inspection of resulting errors showed that some predictions represented the correct biomedical concept but differed in span boundaries or synonymous wording, meaning strict matching could classify semantically correct predictions as errors.
+
+This motivated introduction of relaxed matching.
+
+Then explain why relaxed matching was still insufficient:
+
+rule-based relaxation can capture boundary overlap or predefined equivalence;
+it cannot reliably identify semantically equivalent expressions with substantially different surface forms.
+
+This then motivated cosine similarity matching using your embedding model and threshold.
+
+The progression is therefore:
+
+strict matching
+-> identify boundary/synonym artefacts
+-> relaxed matching
+-> remaining semantic-equivalence problem
+-> cosine similarity matching
+
+That is a strong methodological development narrative because the evaluation changes are not arbitrary; they arose from observed limitations of the previous evaluation method.
+
+Do not fully define formulas/threshold calculation here if 4.7 will do that.
+
+Error sampling
+
+I would include it, but only briefly.
+
+The attached error distributions are useful because they demonstrate that your changes were driven by actual error inspection rather than only watching aggregate F1.
+
+You do not need to include all three error-distribution figures in the main methodology.
+
+Instead explain the procedure:
+
+At selected development points, a sample of FP and FN relation errors was manually inspected.
+Errors were assigned to predefined categories.
+Example FP categories included:
+unsupported relation;
+wrong relation type;
+entity boundary/synonym mismatch;
+duplicate/coreference;
+evaluation artefact.
+FN categories included:
+missing relation;
+evaluation artefact.
+These distributions were used diagnostically to identify whether poor measured performance reflected extraction failure, evaluation mismatch, or prompt behaviour.
+
+The figures you attached show why this was useful:
+
+unsupported relations remain a major FP category;
+boundary/synonym mismatches are prominent in earlier/mid-stage sampling;
+a substantial number of apparent FNs were evaluation artefacts;
+missing relations remain the dominant genuine FN category.
+
+That directly supports two major refinements:
+
+improving grounding / reducing unsupported relation extraction;
+improving evaluation from strict/relaxed matching toward semantic cosine matching.
+
+If space is tight, I would not put all three figures in the main report. Instead:
+
+describe the sampling method in 4.5.1;
+perhaps include one representative error-distribution figure if it materially explains an important refinement;
+place the remaining error-analysis plots in an appendix, or use them later in Results/Discussion.
+
+The methodology needs to explain that error sampling occurred. It does not need to visually document every sample.
+
+4.5.2 Development and Model Selection
 
 Purpose:
-Explain how the raw API response became the prediction data used by the rest of the project.
+Explain how frozen candidate EPIs were compared and how the final EPI was selected.
+
+This is exactly where your two performance figures belong.
+
+First figure:
+The line chart showing precision, recall, and F1 across all EPIs for entities and relations.
+
+Use it to show the overall development trajectory.
+
+The important narrative from the chart is:
+
+very large improvement from the baseline to the early refined configurations;
+entity performance becomes comparatively strong and then broadly plateaus;
+relation performance remains substantially lower than entity performance;
+later EPIs produce smaller, incremental changes rather than the major gains seen early in development.
+
+Do not overanalyse every point here. The figure is mainly there to show development progression.
+
+The vertical lines marking important methodological changes are useful if they correspond to specific transitions such as:
+
+introduction of few-shot prompting;
+change to cosine evaluation;
+important prompt revisions.
+
+Explain those markers in the figure caption or surrounding text.
+
+Second figure:
+The bar chart comparing the top candidate EPIs.
+
+This fits particularly well in 4.5.2 because it narrows the comparison to the configurations considered for final selection.
+
+Your chart compares epi_005, epi_006, and epi_007 using relation precision, recall, and F1.
+
+That is sensible because relation extraction appears to be the limiting component of the system, whereas entity extraction is already comparatively strong.
+
+You should explicitly justify why relation performance played a major role in selection.
+
+For example:
+
+“Because entity-level performance had largely plateaued across the leading configurations, final selection placed greater emphasis on relation-level F1, while ensuring that entity performance remained stable.”
+
+That is a defensible selection principle.
+
+Do not simply say:
+“EPI X had the highest score so it was selected.”
+
+Explain the selection criterion:
+
+primary metric;
+whether entity performance was also considered;
+whether precision/recall balance mattered;
+whether error analysis influenced the decision.
+
+If two EPIs are extremely close, acknowledge that rather than pretending there is a huge difference.
+
+Also distinguish:
+
+training-set development performance;
+development-set candidate comparison.
+
+The final selection must be based on the held-out BioRED development split according to the design you described earlier.
+
+If the attached line chart is based on training-set development performance, label it clearly as such.
+
+Then the top-candidate comparison should ideally show the development-set comparison if that is the actual basis of final selection.
+
+This distinction is important.
+
+Suggested 4.5.2 flow:
+
+Paragraph 1:
+
+Explain when development stopped.
+State that candidate configurations were frozen once iterative gains had plateaued / predefined development was complete.
+
+Paragraph 2:
+
+Introduce the all-EPI performance figure.
+Explain broad development trajectory.
+
+Paragraph 3:
+
+State which configurations were retained as candidate final EPIs and why.
+
+Paragraph 4:
+
+Introduce the top-candidate comparison figure.
+Explain final selection criterion.
+State which EPI was selected.
+
+Paragraph 5:
+
+Confirm that no further changes were made after selection before BioRED test/CBC evaluation.
+
+4.5.3 Final Pipeline
+
+Yes — I agree with you. This should be short.
+
+Purpose:
+Freeze the methodological state of the system before final evaluation.
+
+Probably around 150–250 words plus possibly a compact configuration table.
 
 Cover:
 
-State that the LLM was instructed/constrained to return machine-readable JSON.
-Give the basic structure, for example:
+Name of selected EPI.
+Prompt version.
+Evaluation version.
+Model.
+Few-shot configuration.
+Final entity and relation schema.
+Final matching/evaluation policy used during development if relevant.
+State explicitly that this configuration was frozen.
+State that no subsequent prompt/schema changes were made after selection.
+State that the same frozen extraction configuration was subsequently used for:
+final BioRED test evaluation;
+CBC extraction;
+CBC generalisation evaluation;
+downstream NEN/KG construction.
 
-{
-"entities": [...],
-"relationships": [...]
-}
+You could use a tiny summary table:
 
-Explain that each entity contains text and type.
-Explain that each relationship contains source, relation and target.
-State how the response was obtained from the API and parsed in Python.
-Explain validation/checks applied before accepting the response.
-Examples, only if actually implemented:
-valid JSON;
-required top-level keys present;
-entity types belong to permitted schema;
-relation types belong to permitted schema;
-required fields are present;
-relation source/target correspond to extracted entities.
-Explain what happened when parsing/API extraction failed: retry, record error, skip, etc. Use the actual implementation.
-State how predictions were transformed into the tabular representation used by the evaluation functions.
-Explain that PMID/document identifiers were retained so predictions remained linked to their source abstracts.
+Component | Final configuration
 
-EPI logging:
-This is also the most natural place for a SHORT introduction to your epi_log structure because it is generated by the extraction process.
+EPI | epi_XXX
+Prompt version | vX
+Evaluation version | vX
+LLM | gpt-5.6-luna
+Few-shot examples | 3 fixed BioRED training examples
+Entity schema | BioRED six types
+Relation schema | BioRED eight types
+Output | JSON entities + relationships
 
-Mention that each run recorded:
+Then perhaps one final sentence:
 
-run/configuration identifier;
-dataset/split;
-prompt/configuration information;
-predictions by PMID;
-runtime;
-errors/API failures;
-other reproducibility metadata you actually record.
+“This configuration therefore represents the final extraction system evaluated in all subsequent experiments.”
 
-However, do not explain the experimental comparison between EPI runs here. Section 3.5 should explain how these logged runs were used during iterative development and selection.
+Do not:
 
-Your actual epi_log["outputs"] structure is particularly relevant here because it establishes that every document's structured entities and relationships remain associated with its PMID. This subsequently allows the same extraction representation to feed either BioRED evaluation or CBC downstream processing.
+repeat the whole prompt;
+repeat model API details;
+repeat how parsing works;
+repeat the full EPI history;
+include test-set results here.
 
-Avoid:
+The test-set performance belongs in Results / 4.7 methodology only insofar as you explain how it will be evaluated.
 
-Repeating the Literature Review's argument for why JSON is preferable to free text.
-Explaining NEN.
-Discussing UMLS.
-Calculating evaluation metrics.
-Describing which EPI performed best.
-Discussing KG nodes/edges.
+Important distinction between the three subsections
 
-3.4.4 Entity Normalisation — recommendation
+4.5.1 Extraction Pipeline Iterations:
+“What changes were made during development, and why?”
 
-I would remove this subsection from 3.4.
+4.5.2 Development and Model Selection:
+“How did performance evolve, which candidate EPIs were compared, and how was the final one chosen?”
 
-Your current architecture says:
+4.5.3 Final Pipeline:
+“What exact configuration was frozen and carried forward?”
 
-BioRED -> extraction -> evaluation
+That is a very natural structure for what you have actually done.
 
-CBC -> extraction -> normalisation -> validation -> KG
+My recommendation on the figures
 
-Therefore NEN is not really part of the extraction pipeline that you are developing/evaluating on BioRED. It is a downstream component specifically involved in constructing the contemporary KG.
+Main body:
 
-I would restructure Section 3.6 as:
+EPI performance line chart: yes.
+Top-three candidate bar chart: yes.
 
-3.6 Contemporary Knowledge Graph Construction
+Error distributions:
 
-3.6.1 Contemporary Corpus Extraction
+mention the error-sampling procedure in 4.5.1;
+include at most one representative plot in the main methodology if it directly motivates a major change;
+otherwise move the detailed error plots to an appendix or Results/Discussion.
 
-Run frozen final EPI across the complete CBC.
-Produce the same entities/relations structure established in 3.4.
-Do not re-explain extraction mechanics.
+The two performance figures tell the main experimental-development story much more efficiently than three additional error-category figures.
 
-3.6.2 Entity Normalisation
-
-UMLS Metathesaurus.
-UTS/API candidate retrieval, depending on your final implementation.
-SapBERT candidate/synonym encoding and cosine similarity.
-Selection of best candidate.
-Similarity threshold.
-CUI and preferred/canonical name assignment.
-Unresolved entity handling.
-Caching repeated entity mentions.
-Creation of the normalised entity lookup table.
-
-3.6.3 Ontology-Based/Semantic Validation
-
-Retrieve UMLS semantic type(s) for candidate CUI.
-Map extraction entity classes to acceptable UMLS semantic categories.
-Accept/reject/flag incompatible mappings.
-Explain handling of unresolved/invalid entities.
-Be precise that the UMLS Metathesaurus itself is not being presented as a single ontology.
-You may want to rename this "Ontology-Guided Semantic Validation" or "Semantic Validation" depending on the final implementation.
-
-3.6.4 Graph Construction
-
-Convert validated CUIs into unique nodes.
-Resolve relation source/target mentions through the normalised entity lookup.
-Ensure relation endpoints exist.
-Create edges using extracted relation types.
-Store provenance such as PMID as attributes.
-Construct NetworkX MultiDiGraph.
-Export final graph as GraphML.
-Export supporting normalised entity/relation tables if used.
-
-Important distinction across the methodology:
-
-3.3 System Architecture:
-"What components exist and how does information move between them?"
-
-3.4 Information Extraction Pipeline:
-"How does text become structured entity and relation predictions?"
-
-3.5 Pipeline Development:
-"How was that extractor iteratively changed, tested and selected?"
-
-3.6 Contemporary KG Construction:
-"How were final CBC predictions normalised, validated and converted into the KG?"
-
-3.7 Evaluation:
-"How was the quality/performance of those outputs measured?"
-
-Overall recommendation:
-Keep 3.4 focused very tightly on the part you have actually spent your EPI experiments developing: LLM-based NER + RE. Moving NEN into 3.6 will make the methodology correspond much more cleanly to your actual experimental design and prevent the reader from mistakenly assuming that every BioRED EPI also underwent entity normalisation.
+Overall, Section 4.5 is likely to be one of the more important methodology sections because this is where your project stops looking like “I wrote a prompt and ran GPT” and starts looking like a controlled iterative development experiment. The combination of a configuration table, explicit evaluation evolution, targeted error analysis, and held-out EPI selection gives you a strong methodological narrative.
