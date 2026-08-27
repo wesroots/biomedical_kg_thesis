@@ -202,10 +202,54 @@ Table~\ref{tab:epi_summary} summarises the configuration of all \glspl{epi} prod
     \end{tabularx}
 \end{table}
 
+Together, this sequence of pipeline iterations reflects several broad stages of development, rather than a linear progression of independent changes: an initial baseline extraction stage (\texttt{epi\_001}), alignment of the prompt with BioRED's own entity and relation schema (\texttt{epi\_002}), introduction of few-shot prompting (\texttt{epi\_003}), concurrent evaluation logic progression (\texttt{epi\_001}--\texttt{003}), tightening of evidence requirements (\texttt{epi\_005}--\texttt{006}), and a final stage of prompt refinement targeting over-extraction (\texttt{epi\_007}--\texttt{009}).
 
+As mentioned above, evaluation methodology applied to each \gls{epi}'s outputs also evolve over the course of development, concurrently with prompt refinement. The baseline \gls{epi} was assessed using strict matching, where only exact string matching between an extraction and a ground-truth counted as a success. Manual inspection of errors --- recorded in each \gls{epi}'s stored log --- 
 
 \subsection{Development and Model Selection}
 \label{subsec:meth:development_and_model_selection}
+
+\begin{table}[H]
+    \centering
+    \caption{Entity Extraction Performance}
+    \label{tab:entity_results}
+    \begin{tabularx}{\textwidth}{l l r r r}
+        \toprule
+        EPI & Reported matching approach & Precision & Recall & F1 \\
+        \midrule
+        \texttt{epi\_001} & Strict & 0 & 0 & 0 \\
+        \texttt{epi\_002} & Relaxed & 0.865 & 0.774 & 0.817 \\
+        \texttt{epi\_003} & Cosine & 0.930 & 0.736 & 0.821 \\
+        \texttt{epi\_004} & Cosine + relation order invariance & 0.930 & 0.736 & 0.821 \\
+        \texttt{epi\_005} & Cosine + relation order invariance & 0.918 & 0.762 & 0.833 \\
+        \texttt{epi\_006} & Cosine + relation order invariance & 0.901 & 0.765 & 0.828 \\
+        \texttt{epi\_007} & Cosine + relation order invariance & 0.935 & 0.761 & 0.839 \\
+        \texttt{epi\_008} & Cosine + relation order invariance & 0.941 & 0.754 & 0.837 \\
+        \texttt{epi\_009} & Cosine + relation order invariance & 0.932 & 0.738 & 0.824 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Relation Extraction Performance}
+    \label{tab:relation_results}
+    \begin{tabularx}{\textwidth}{l l r r r}
+        \toprule
+        EPI & Reported matching approach & Precision & Recall & F1 \\
+        \midrule
+        \texttt{epi\_001} & Strict & 0 & 0 & 0 \\
+        \texttt{epi\_002} & Relaxed & 0.192 & 0.189 & 0.190 \\
+        \texttt{epi\_003} & Cosine & 0.392 & 0.419 & 0.405 \\
+        \texttt{epi\_004} & Cosine + relation order invariance & 0.478 & 0.511 & 0.494 \\
+        \texttt{epi\_005} & Cosine + relation order invariance & 0.495 & 0.524 & 0.509 \\
+        \texttt{epi\_006} & Cosine + relation order invariance & 0.487 & 0.516 & 0.501 \\
+        \texttt{epi\_007} & Cosine + relation order invariance & 0.502 & 0.516 & 0.509 \\
+        \texttt{epi\_008} & Cosine + relation order invariance & 0.501 & 0.488 & 0.494 \\
+        \texttt{epi\_009} & Cosine + relation order invariance & 0.501 & 0.456 & 0.478 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 \subsection{Final Pipeline}
 \label{subsec:meth:final_pipeline}

@@ -41,24 +41,24 @@
 \contentsline {section}{\numberline {4.5}Pipeline Development}{31}{}%
 \contentsline {subsection}{\numberline {4.5.1}Extraction Pipeline Iterations}{32}{}%
 \contentsline {subsection}{\numberline {4.5.2}Development and Model Selection}{33}{}%
-\contentsline {subsection}{\numberline {4.5.3}Final Pipeline}{33}{}%
-\contentsline {section}{\numberline {4.6}Contemporary Knowledge Graph Construction}{33}{}%
-\contentsline {subsection}{\numberline {4.6.1}Contemporary Corpus Extraction}{33}{}%
-\contentsline {subsection}{\numberline {4.6.2}Graph Construction}{33}{}%
-\contentsline {subsection}{\numberline {4.6.3}Ontology-Based Validation}{33}{}%
-\contentsline {section}{\numberline {4.7}Evaluation}{33}{}%
-\contentsline {subsection}{\numberline {4.7.1}Entity Evaluation}{33}{}%
-\contentsline {subsection}{\numberline {4.7.2}Relation Evaluation}{33}{}%
-\contentsline {subsection}{\numberline {4.7.3}Generalisation Evaluation}{33}{}%
-\contentsline {subsection}{\numberline {4.7.4}Knowledge Graph Evaluation}{33}{}%
-\contentsline {section}{\numberline {4.8}Cost Analysis}{33}{}%
-\contentsline {chapter}{\numberline {A}Filtered BioRED Annotation Guidelines Used For Prompting}{37}{}%
-\contentsline {chapter}{\numberline {B}Extraction Prompts}{51}{}%
-\contentsline {section}{\numberline {B.1}Prompt Version 1}{51}{}%
-\contentsline {section}{\numberline {B.2}Prompt Version 2}{52}{}%
-\contentsline {section}{\numberline {B.3}Prompt Version 3}{53}{}%
-\contentsline {section}{\numberline {B.4}Prompt Version 4}{54}{}%
-\contentsline {section}{\numberline {B.5}Prompt Version 5}{56}{}%
-\contentsline {section}{\numberline {B.6}Prompt Version 6}{58}{}%
-\contentsline {section}{\numberline {B.7}Prompt Version 7}{61}{}%
-\contentsline {section}{\numberline {B.8}Prompt Version 8}{63}{}%
+\contentsline {subsection}{\numberline {4.5.3}Final Pipeline}{34}{}%
+\contentsline {section}{\numberline {4.6}Contemporary Knowledge Graph Construction}{34}{}%
+\contentsline {subsection}{\numberline {4.6.1}Contemporary Corpus Extraction}{34}{}%
+\contentsline {subsection}{\numberline {4.6.2}Graph Construction}{34}{}%
+\contentsline {subsection}{\numberline {4.6.3}Ontology-Based Validation}{34}{}%
+\contentsline {section}{\numberline {4.7}Evaluation}{34}{}%
+\contentsline {subsection}{\numberline {4.7.1}Entity Evaluation}{34}{}%
+\contentsline {subsection}{\numberline {4.7.2}Relation Evaluation}{34}{}%
+\contentsline {subsection}{\numberline {4.7.3}Generalisation Evaluation}{34}{}%
+\contentsline {subsection}{\numberline {4.7.4}Knowledge Graph Evaluation}{34}{}%
+\contentsline {section}{\numberline {4.8}Cost Analysis}{34}{}%
+\contentsline {chapter}{\numberline {A}Filtered BioRED Annotation Guidelines Used For Prompting}{38}{}%
+\contentsline {chapter}{\numberline {B}Extraction Prompts}{52}{}%
+\contentsline {section}{\numberline {B.1}Prompt Version 1}{52}{}%
+\contentsline {section}{\numberline {B.2}Prompt Version 2}{53}{}%
+\contentsline {section}{\numberline {B.3}Prompt Version 3}{54}{}%
+\contentsline {section}{\numberline {B.4}Prompt Version 4}{55}{}%
+\contentsline {section}{\numberline {B.5}Prompt Version 5}{57}{}%
+\contentsline {section}{\numberline {B.6}Prompt Version 6}{59}{}%
+\contentsline {section}{\numberline {B.7}Prompt Version 7}{62}{}%
+\contentsline {section}{\numberline {B.8}Prompt Version 8}{64}{}%
