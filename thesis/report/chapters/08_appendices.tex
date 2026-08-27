@@ -986,3 +986,59 @@ Return JSON in exactly this format:
 
 {abstract}
 \end{lstlisting}
+
+\chapter{EPI Error Analysis}
+\label{app:error_dist_analysis}
+
+\section{Error Categorisation Prompt}
+\label{app:sec:error_categorisation_prompt}
+\begin{lstlisting}
+You are reviewing a relation-extraction error made by an NLP system.
+
+Error type: {error_type}
+- fp: a predicted relation that did not match the BioRED ground truth under the evaluation procedure.
+- fn: a BioRED ground-truth relation that was not matched by a prediction.
+
+Relation being analysed:
+{error}
+
+Abstract:{abstracts.set_index("pmid").loc[pmid]}
+
+Ground-truth relations for this abstract:
+{chr(10).join(str(gt) for gt in matching_gts)}
+
+Categorise the primary cause of this error into exactly one of the categories below. Each category has a name and a description explaining when it applies - use the descriptions to guide your decision.
+
+{category_list_str}
+
+Use the abstract and BioRED ground truth as the reference when making your decision.
+If multiple categories could apply, select the category that best explains why the prediction and ground truth did not match.
+
+Respond with ONLY the category number, nothing else.
+\end{lstlisting}
+
+\section{EPI Error Distribution Figures}
+\label{app:epi_error_dist_figures}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{../../../img/error_analysis/biored_train/epi_003.png}
+    \caption{\texttt{epi\_003} relation error distribution.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{../../../img/error_analysis/biored_train/epi_006.png}
+    \caption{\texttt{epi\_006} relation error distribution.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{../../../img/error_analysis/biored_train/epi_009.png}
+    \caption{\texttt{epi\_009} relation error distribution.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{../../../img/error_analysis/biored_train/epi_011.png}
+    \caption{\texttt{epi\_011} relation error distribution.}
+\end{figure}

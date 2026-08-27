@@ -138,8 +138,7 @@ The prompt used by the project's \glspl{epi} was structured around several main 
 
 The permitted entity and relation types instructed in the prompt corresponded exactly to BioRED's own schema, given in Table~\ref{tab:permitted_entity_and_relation_types}.
 
-\pref \ (LaTeX comment)
-The official BioRED annotation guidelines \cite{luo2022_biored}, retrieved from the corpus's public GitHub repository in PDF form, provides information of the corpus's own construction that are not relevant to instructing an \gls{llm}'s extraction, such as the corpus's data sampling methodology, tools used in its ground truth construction, and its full reference list. Before incorporating the guidelines into the prompt, the document was therefore condensed to contain only the entity and relation annotation rules relevant to the extraction task itself. No semantic content within the filtered guidelines was altered --- only its structure was changed, converting the document's bullet formatting into a consistently headed, nested bullet-point structure intended to be more easily parsed by the \gls{llm} when called. This condensed guideline version was stored in \texttt{.txt} format and embedded directly into the prompt as \texttt{\{biored\_ext\_duidelines\}}. The complete filtered BioRED extraction guidelines are provided in Appendix~\ref{app:filtered_biored_guidelines}.
+The official BioRED annotation guidelines \cite{luo2022_biored}, retrieved from the corpus's public GitHub repository in PDF form, provides information of the corpus's own construction that are not relevant to instructing an \gls{llm}'s extraction, such as the corpus's data sampling methodology, tools used in its ground truth construction, and its full reference list. Before incorporating the guidelines into the prompt, the document was therefore condensed to contain only the entity and relation annotation rules relevant to the extraction task itself. No semantic content within the filtered guidelines was altered --- only its structure was changed, converting the document's bullet formatting into a consistently headed, nested bullet-point structure intended to be more easily parsed by the \gls{llm} when called. This condensed guideline version was stored in \texttt{.txt} format and embedded directly into the prompt as \texttt{\{biored\_ext\_guidelines\}}. The complete filtered BioRED extraction guidelines are provided in Appendix~\ref{app:filtered_biored_guidelines}.
 
 \begin{table}[H]
     \centering
@@ -167,7 +166,7 @@ Few-shot examples constructed directly from BioRED's own training split ground t
 
 \subsection{Structured Output and Parsing}
 \label{subsec:meth:structured_output_and_parsing}
-The \gls{llm} was instructed through the prompt to return its extractions as a single JSON object cntaining two top-level keys: \texttt{entities} and \texttt{relationships}, each a list of extractions. No \gls{api}-level constraint existed to enforce this structure, how closely the outputs adhered to the specified JSON output depended entirely on how well the model followed the prompt's explicit instructions.
+The \gls{llm} was instructed through the prompt to return its extractions as a single JSON object containing two top-level keys: \texttt{entities} and \texttt{relationships}, each a list of extractions. No \gls{api}-level constraint existed to enforce this structure, how closely the outputs adhered to the specified JSON output depended entirely on how well the model followed the prompt's explicit instructions.
 
 Each abstract's raw response text was parsed as JSON in Python. Where a response failed to parse from JSON-structured string to valid JSON, this was recorded as a parse failure and the abstract was treated as having produced no entities and no relationships, rather than causing the run to fail. No further validation, such as checking that returned entity or relation types belonged to the allowed schema, was conducted beyond this JSON-validity check. Successfully parsed entities and relationships were converted into tuples following the form \texttt{(PMID, entity text, type)} for entities and \texttt{(PMID, entity 1, relation, entity 2)} for relationships. Entity text was stripped of any excess whitespace and stored in lowercase. These predictions sets were then converted into the same tabular structure used for BiORED's own ground-truth entities and relations, described in Section~\ref{subsec:meth:data_preparation}, allowing predicted and ground-truth extractions to be compared directly during evaluation.
 
@@ -183,82 +182,124 @@ Table~\ref{tab:epi_summary} summarises the configuration of all \glspl{epi} prod
 
 \begin{table}[H]
     \centering
-    \caption{Extraction Pipeline Iteration Summary}
+    \caption{Extraction Pipeline Iteration summary}
     \label{tab:epi_summary}
     \begin{tabularx}{\textwidth}{@{} l p{2.4cm} p{4.0cm} X @{}}
         \toprule
-        EPI & Prompt & Evaluation & Main change/purpose \\
+        EPI & Prompt & Evaluation & Main addition/purpose \\
         \midrule
         \texttt{epi\_001} & \texttt{v1} & \texttt{v1} (strict matching) & Baseline configuration \\
-        \texttt{epi\_002} & \texttt{v1} & \texttt{v2} (relaxed matching) & Added relaxed matching to baseline prompt \\
-        \texttt{epi\_003} & \texttt{v2} & \texttt{v2} & Added filtered BioRED guidelines and allowed entity and relation types \\
-        \texttt{epi\_004} & \texttt{v2} & \texttt{v3} (cosine matching) & Added cosine matching to \texttt{epi\_003}'s prompt output \\
-        \texttt{epi\_005} & \texttt{v3} & \texttt{v3} (cosine matching) & Added few-shot examples \\
-        \texttt{epi\_006} & \texttt{v3} & \texttt{v4} (relation order invariance) & Prompt unchanged --- added relation order invariant evaluation \\
-        \texttt{epi\_007} & \texttt{v4} & \texttt{v4} & Added targeted suppression of background biomedical knowledge \\
-        \texttt{epi\_008} & \texttt{v5} & \texttt{v4} & Added explicit instructions preventing inference of an unsupported extraction \\
-        \texttt{epi\_009} & \texttt{v6} & \texttt{v4} & Added explicit precision-over-recall instructions \\
-        \texttt{epi\_010} & \texttt{v7} & \texttt{v4} & Added precision-focussed conservative extraction instructions \\
-        \texttt{epi\_011} & \texttt{v8} & \texttt{v4} & Added targeted suppression of excessive relation over-extraction \\
+        \texttt{epi\_002} & \texttt{v1} & \texttt{v2} (relaxed matching) & Relaxed matching to baseline prompt \\
+        \texttt{epi\_003} & \texttt{v2} & \texttt{v2} & Filtered BioRED guidelines and allowed entity and relation types \\
+        \texttt{epi\_004} & \texttt{v2} & \texttt{v3} (cosine matching) & Cosine matching \\
+        \texttt{epi\_005} & \texttt{v3} & \texttt{v3} (cosine matching) & Few-shot examples \\
+        \texttt{epi\_006} & \texttt{v3} & \texttt{v4} (relation order invariance) & Relation order invariant evaluation \\
+        \texttt{epi\_007} & \texttt{v4} & \texttt{v4} & Targeted suppression of background biomedical knowledge \\
+        \texttt{epi\_008} & \texttt{v5} & \texttt{v4} & Explicit instructions preventing inference of an unsupported extraction \\
+        \texttt{epi\_009} & \texttt{v6} & \texttt{v4} & Explicit precision-over-recall instructions \\
+        \texttt{epi\_010} & \texttt{v7} & \texttt{v4} & Precision-focussed conservative extraction instructions \\
+        \texttt{epi\_011} & \texttt{v8} & \texttt{v4} & Targeted suppression of excessive relation over-extraction \\
         \bottomrule
     \end{tabularx}
 \end{table}
 
-Together, this sequence of pipeline iterations reflects several broad stages of development, rather than a linear progression of independent changes: an initial baseline extraction stage (\texttt{epi\_001}-\texttt{002}), alignment of the prompt with BioRED's own entity and relation schema (\texttt{epi\_003}-\texttt{004}), introduction of few-shot prompting (\texttt{epi\_005}), concurrent evaluation logic progression (\texttt{epi\_001}--\texttt{006}), tightening of evidence requirements (\texttt{epi\_007}--\texttt{008}), and a final stage of prompt refinement targeting over-extraction (\texttt{epi\_009}--\texttt{011}).
+Together, this sequence of pipeline iterations reflects several broad stages of development, rather than a linear progression of independent changes: an initial baseline extraction stage (\texttt{epi\_001}-\texttt{002}), alignment of the prompt with BioRED's own entity and relation schema (\texttt{epi\_003}-\texttt{004}), introduction of few-shot prompting (\texttt{epi\_005}), concurrent evaluation logic progression (\texttt{epi\_001}--\texttt{006}), tightening of evidence requirements (\texttt{epi\_007}--\texttt{008}), and a final stage of prompt refinement targeting over-extraction (\texttt{epi\_009}--\texttt{011}). It should be noted that, for each \gls{epi} where evaluation methodology was updated, the previous \gls{epi}'s prompt outputs were used. This allowed direct analysis of the evaluation refinement's effects on extraction performance metrics.
 
-As mentioned above, evaluation methodology applied to each \gls{epi}'s outputs also evolve over the course of development, concurrently with prompt refinement. The baseline \gls{epi} was assessed using strict matching, where only exact string matching between an extraction and a ground-truth counted as a success. Manual inspection of errors --- automatically recorded in each \gls{epi}'s stored log --- indicated that numerous extractions represented the correct biomedical concept, yet differed from the ground-truth annotation in span boundary or surface wording 
+As mentioned above, evaluation methodology applied to each \gls{epi}'s outputs also evolve over the course of development, concurrently with prompt refinement. As summarised in Table~\ref{tab:epi_summary}, the baseline \gls{epi} was assessed using strict matching, where only exact string matching between an extraction and a ground-truth counted as a success. Manual inspection of errors --- automatically recorded in each \gls{epi}'s stored log, including \glspl{fp} and \glspl{fn} --- indicated that numerous extractions represented the correct biomedical concept, yet differed from the ground-truth annotation in span boundary or string representation, meaning strict matching classified some semantically correct predictions as errors. This motivated the introduction of relaxed matching, which allowed correct-match classification where the string representation of the extracted entity differed slightly from that of its corresponding ground truth. However, this implementation was found to be insufficient where an extraction and its ground truth were semantically equivalent but expressed using disparate string representations, exceeding solely a mismatch between entity name boundaries. As a result, subsequent cosine-similarity-based matching was introduced, which compared the vector embeddings of extracted and ground truth entity mentions using a fixed threshold. The exact configuration and implementation of strict, relaxed, cosine, and relation order invariance evaluation approaches are described in Section~\ref{sec:meth:evaluation}.
+
+% Put in Sec. 4.7
+% Embeddings were generated using \texttt{S-PubMedBert-MS-MARCO} \pref, a Sentence-BERT model pretrained on PubMed abstracts and fined tuned for semantic search on the Microsoft Machine Reading Comprehension (MS MARCO) dataset. This model was selected over general-purpose alternatives, such as OpenAI's \texttt{text-embedding-3-large}, as the fine-tuned, domain specific model was expected to produce more accurate representations of biomedical terminology, where subtle differences between distinct concepts are captured, where general-purpose embedding models are not trained to.
+
+% For each extraction--ground truth comparison, cosine similarity was computed between embedding vectors, and a match was recorded where this similarity met or exceeded a pre-defined threshold of 0.85. Matching was performed in a greedy approach, where for each predicted mention, the highest-scoring unmatched ground truth mention was selected as a match and removed from evaluation of subsequent extractions. This prevented evaluation where a single ground truth annotation counted as a match for multiple extractions.
+
+% Include strict, relaxed, and how relation order invariance applies to all evaluation methods for relations
+
+% After analysis of initial cosine evaluation implemented in \texttt{epi\_005}'s extraction performance, errors indicated that a few relation extractions were marked as non-matches where the extracted relation's entities appeared in the opposite order of their corresponding ground truth. As a result, relation order invariance matching was introduced where both orders of a relationship triple's entities were evaluated, where a match of either order counted as a correct extraction for that extraction--ground truth pair:
+
+% \vspace{0.75em}
+% \newcommand{\triple}[3]{(\text{#1},\, \text{#2},\, \text{#3})}
+
+% \noindent\textbf{Before relation order invariance:}
+% \vspace{0.25em}
+% \[
+% \triple{warfarin}{Positive\_Correlation}{ICH}
+% \;\neq\;
+% \triple{ICH}{Positive\_Correlation}{warfarin}
+% \]
+
+% \noindent\textbf{After relation order invariance:}
+% \vspace{0.25em}
+% \[
+% \triple{warfarin}{Positive\_Correlation}{ICH}
+% \;\equiv\;
+% \triple{ICH}{Positive\_Correlation}{warfarin}
+% \]
+
+When necessary, to understand the nature of extraction errors, false positive (\gls{fp}) and false negative (\gls{fn}) relation errors produced by the current \gls{epi} were sampled and analysed. This analysis was restricted to relations, rather than entities, as relation extraction exhibited significantly weaker performance throughout development and was therefore the main focus of this investigation. For the selected \gls{epi}, up to 50 false positive \gls{fp} and 50 false negative \gls{fn} errors were randomly sampled, using a fixed random seed for reproducibility, and assigned one of a set of pre-defined error categories.
+
+Given the volume of errors sampled, manual assignment of each error to a pre-defined error category was not feasible. Instead, categorisation was performed automatically using the same \gls{llm} used for the extraction process. For each sampled error, the model was provided with the incorrect relation, the error type (\gls{fn} or \gls{fp}), the source abstract, and the corresponding BioRED ground truth relations for that abstract. The model was then instructed to assign the error to exactly one of seven predefined error categories (Table~\ref{tab:error_categories}), each including a description of the conditions of when the error category is true. The complete prompt supplied to the \gls{llm} during error analysis is provided in Appendix~\ref{app:sec:error_categorisation_prompt}.
+
+\begin{table}[H]
+    \centering
+    \caption{Error category summary}
+    \label{tab:error_categories}
+    \begin{tabularx}{\textwidth}{l X}
+        \toprule
+        Category & Description \\
+        \midrule
+        Wrong relation type & "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth." \\
+        Duplicate/coreference & "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity." \\
+        Unsupported relation & "The predicted relation is not supported by the abstract or BioRED annotation policy." \\
+        Entity boundary/synonyms mismatch & "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation." \\
+        Missing relation & "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system." \\
+        Evaluation artefact & "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure." \\
+        Other/unclear & "The primary cause cannot be confidently assigned to any other category." \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+These category distributions were used diagnostically, precision, recall, and F1 to establish whether an \gls{epi}'s performance reflected true extraction failure, evaluation artefacts, or specific prompt configuration issues. Analysis showed that unsupported relations was a significant false-positive category through much of development, directly motivating the evidence requirement prompt refinements in \texttt{epi\_007}--\texttt{epi\_011}. A significant proportion of false negatives were also categorised as evaluation artefacts, supporting the introduction of cosine-based matching. Figure~\ref{fig:epi_003_train_error_distribution} shows a representative error distribution figure from one stage of this analysis (\text{epi\_009}) --- the remaining error distribution figures are shown in Appendix~\ref{app:epi_error_dist_figures}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{../../../img/error_analysis/biored_train/epi_009.png}
+    \caption{\texttt{epi\_003} relation error distribution.}
+    \label{fig:epi_003_train_error_distribution}
+\end{figure}
 
 \subsection{Development and Model Selection}
 \label{subsec:meth:development_and_model_selection}
+Iterative \gls{epi} development against the BioRED training split contiued until further prompt or evaluation refinements produced only marginal changes in extraction performance metrics. At this point, all candidate \gls{epi} configurations were frozen and no further prompt or schema adjustment was made
 
-\begin{table}[H]
-    \centering
-    \caption{Entity Extraction Performance}
-    \label{tab:entity_results}
-    \begin{tabularx}{\textwidth}{l l r r r}
-        \toprule
-        EPI & Reported matching approach & Precision & Recall & F1 \\
-        \midrule
-        \texttt{epi\_001} & Strict & 0 & 0 & 0 \\
-        \texttt{epi\_002} & Relaxed & 0 & 0 & 0 \\
-        \texttt{epi\_003} & Relaxed & 0.865 & 0.774 & 0.817 \\
-        \texttt{epi\_004} & Cosine & 0.894 & 0.800 & 0.845 \\
-        \texttt{epi\_005} & Cosine & 0.930 & 0.736 & 0.821 \\
-        \texttt{epi\_006} & Cosine + relation order invariance & 0.930 & 0.736 & 0.821 \\
-        \texttt{epi\_007} & Cosine + relation order invariance & 0.918 & 0.762 & 0.833 \\
-        \texttt{epi\_008} & Cosine + relation order invariance & 0.901 & 0.765 & 0.828 \\
-        \texttt{epi\_009} & Cosine + relation order invariance & 0.935 & 0.761 & 0.839 \\
-        \texttt{epi\_010} & Cosine + relation order invariance & 0.941 & 0.754 & 0.837 \\
-        \texttt{epi\_011} & Cosine + relation order invariance & 0.932 & 0.738 & 0.824 \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+Figure~\ref{fig:epi_performance} in Section~\pref \ shows the entity and relation precision, recall, and F1 across all \glspl{epi} measured on the BioRED development split, after being refined on the training split, allowing performance to be tracked across sequential extraction pipeline refinements. On the basis of primarily F1, and secondarily precision and recall, \texttt{epi\_007}, \texttt{epi\_008}, and \texttt{epi\_009} were selected for further comparison.
 
-\begin{table}[H]
-    \centering
-    \caption{Relation Extraction Performance}
-    \label{tab:relation_results}
-    \begin{tabularx}{\textwidth}{l l r r r}
-        \toprule
-        EPI & Reported matching approach & Precision & Recall & F1 \\
-        \midrule
-        \texttt{epi\_001} & Strict & 0 & 0 & 0 \\
-        \texttt{epi\_002} & Relaxed & 0 & 0 & 0 \\
-        \texttt{epi\_003} & Relaxed & 0.192 & 0.189 & 0.190 \\
-        \texttt{epi\_004} & Cosine & 0.423 & 0.416 & 0.420 \\
-        \texttt{epi\_005} & Cosine & 0.392 & 0.419 & 0.405 \\
-        \texttt{epi\_006} & Cosine + relation order invariance & 0.478 & 0.511 & 0.494 \\
-        \texttt{epi\_007} & Cosine + relation order invariance & 0.495 & 0.524 & 0.509 \\
-        \texttt{epi\_008} & Cosine + relation order invariance & 0.487 & 0.516 & 0.501 \\
-        \texttt{epi\_009} & Cosine + relation order invariance & 0.502 & 0.516 & 0.509 \\
-        \texttt{epi\_010} & Cosine + relation order invariance & 0.501 & 0.488 & 0.494 \\
-        \texttt{epi\_011} & Cosine + relation order invariance & 0.501 & 0.456 & 0.478 \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+Figure~\ref{fig:top3_epi_relation_performance} (Section~\pref) compares these three selected \glspl{epi} directly on relation precision, recall, and F1, again, evaluated on the unseen BioRED development split. Final selection between the three candidates was mainly based on relation F1, as relation extraction was the main target of refinement at this stage of development. \texttt{epi\_009} was selected as it exhibited the highest F1 and precision, while narrowly underperforming compared to \texttt{epi\_007} on recall. It should be noted that while \texttt{epi\_009} marginally outperformed its competitors on balance, the differences in extraction performance for all three performance metrics were near negligible.
+
+No further prompt, schema, or evaluation changes were made to the selected \gls{epi} following this comparison. The resulting configuration was therefore frozen and used without modification for the final BioRED benchmark evaluation and extraction of the \gls{cbc}.
 
 \subsection{Final Pipeline}
 \label{subsec:meth:final_pipeline}
+The final extraction pipeline configuration selected through the process above is summarised in Table~\ref{tab:final_epi_config}
+
+\begin{table}[H]
+    \centering
+    \caption{Final Extraction Pipeline Configuration}
+    \label{tab:final_epi_config}
+    \begin{tabularx}{\textwidth}{l X}
+        \toprule
+        Component & Final configuration \\
+        \midrule
+        \gls{epi} & \texttt{epi\_009} \\
+        Prompt version & \texttt{v6} (Suppression of background knowledge, unsupported extraction inference suppression) \\
+        Evaluation version & \texttt{v4} (Cosine-based, relation order invariant) \\
+        \gls{llm} & \texttt{gpt-5.6-luna} \\
+        Few-shot examples & 3 fixed BioRED training examples \\
+        Entity schema & BioRED six entity types (Table~\ref{tab:permitted_entity_and_relation_types}) \\
+        Relation schema & BioRED eight relation types (Table~\ref{tab:permitted_entity_and_relation_types}) \\
+        Output format & JSON object \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 \section{Contemporary Knowledge Graph Construction}
 \label{sec:meth:contemporary_kg_construction}
