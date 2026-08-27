@@ -5,41 +5,51 @@
     "notes": "Baseline extraction benchmark - does not follow BioRED annotation schema."
   },
   "epi_002": {
-    "prompt_version": "v2",
+    "prompt_version": "v1",
     "eval_version": "v2",
-    "notes": "Implemented BioRED extraction guidelines and entity and relation type rules & added relaxed matching + new prompt."
+    "notes": "Implemented relaxed matching evaluation"
   },
   "epi_003": {
-    "prompt_version": "v3",
-    "eval_version": "v3",
-    "notes": "Implements few-shot prompting & added cosine matching + new prompt."
+    "prompt_version": "v2",
+    "eval_version": "v2",
+    "notes": "Implemented BioRED extraction guidelines and entity and relation type rules."
   },
   "epi_004": {
-    "prompt_version": "v3",
-    "eval_version": "v4",
-    "notes": "Relationship matching now order-invariant across strict/relaxed/cosine (same prompt)."
+    "prompt_version": "v2",
+    "eval_version": "v3",
+    "notes": "Implemented cosine matching."
   },
   "epi_005": {
+    "prompt_version": "v3",
+    "eval_version": "v3",
+    "notes": "Implemented few-shot prompting."
+  },
+  "epi_006": {
+    "prompt_version": "v3",
+    "eval_version": "v4",
+    "notes": "Implemented relation order-invariance across strict/relaxed/cosine."
+  },
+  "epi_007": {
     "prompt_version": "v4",
     "eval_version": "v4",
     "notes": "Refined prompt to avoid use of background biomedical knowledge, co-occurence rules & included explicit formatting."
   },
-  "epi_006": {
+  "epi_008": {
     "prompt_version": "v5",
     "eval_version": "v4",
     "notes": "Refined prompt for explicit prevention of unsupported specific relationship inference."
   },
-  "epi_007": {
+  "epi_009": {
     "prompt_version": "v6",
     "eval_version": "v4",
     "notes": "Stricter relation evidence requirements to reduce over-extraction."
   },
-  "epi_008": {
+  "epi_010": {
     "prompt_version": "v7",
     "eval_version": "v4",
     "notes": "Precision-focused conservative extraction to reduce over-extraction."
   },
-  "epi_009": {
+  "epi_011": {
     "prompt_version": "v8",
     "eval_version": "v4",
     "notes": "Targeted suppression of residual relation over-extraction through entity-pair evidence constraints."

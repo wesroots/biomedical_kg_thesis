@@ -25,7 +25,7 @@ EPI_RESULTS_DIR = Path("../../data/results/epis/biored_dev")
 FIGURE_DIR = Path("../../img/dev_analysis")
 
 
-def load_metrics(results_dir: Path = EPI_RESULTS_DIR, n_epis: int = 9) -> dict:
+def load_metrics(results_dir: Path = EPI_RESULTS_DIR, n_epis: int = 11) -> dict:
     """Load the `metrics` block from every epi_{n:03d}.json in `results_dir`."""
     metrics = {}
     for i in range(1, n_epis + 1):

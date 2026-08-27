@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  27 AUG 2026 08:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  27 AUG 2026 08:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -953,37 +953,37 @@ Underfull \hbox (badness 10000) in alignment at lines 161--161
  []
 
 [30]
-Underfull \hbox (badness 3735) in paragraph at lines 202--202
+Underfull \hbox (badness 3735) in paragraph at lines 204--204
 []|\OT1/ntxtlf/m/n/12 (+20) Prompt un-changed ---
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 []|\OT1/ntxtlf/m/n/12 (+20) Added tar-geted sup-
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 202--202
+Underfull \hbox (badness 1033) in paragraph at lines 204--204
 []|\OT1/ntxtlf/m/n/12 (+20) Added ex-plicit in-struc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 []|\OT1/ntxtlf/m/n/12 (+20) Added precision-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 \OT1/ntxtlf/m/n/12 (+20) focussed con-ser-va-tive
  []
 
 [31] [32]
-Underfull \hbox (badness 10000) in alignment at lines 230--230
+Underfull \hbox (badness 10000) in alignment at lines 234--234
 [][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 251--251
+Underfull \hbox (badness 10000) in alignment at lines 257--257
 [][][][][] 
  []
 
@@ -1053,9 +1053,9 @@ Here is how much of TeX's memory you used:
  49295 multiletter control sequences out of 15000+600000
  697510 words of font info for 409 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,10n,117p,2543b,1683s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,11n,117p,2543b,1683s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txmiaX.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (68 pages, 415942 bytes).
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (68 pages, 416445 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
