@@ -41,7 +41,7 @@
   },
   "epi_009": {
     "prompt_version": "v6",
-    "eval_version": "v5",
+    "eval_version": "v4",
     "notes": "Stricter relation evidence requirements to reduce over-extraction."
   },
   "epi_010": {

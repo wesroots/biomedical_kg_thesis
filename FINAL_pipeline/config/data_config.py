@@ -8,7 +8,7 @@ DATA_CONFIG = {
             "ner": "../data/processed/biored/br_test_entities.csv",
             "re": "../data/processed/biored/br_test_entity_relations.csv"
         },
-        "log_directory": "../data/results/final/"
+        "output_directory": "../data/results/final/biored_test/"
     },
     "contemporary": {
         "abstracts": {
@@ -16,9 +16,13 @@ DATA_CONFIG = {
             "abstracts_eval": "../data/processed/contemporary/cbc_downsampled_abstracts.csv"
         },
         "ground_truths": {
-            "ner": "../data/processed/contemporary/cbc_ner.csv",
-            "re": "../data/processed/contemporary/cbc_er.csv"
+            "ner": "../data/processed/contemporary/cbc_ner_gt.csv",
+            "re": "../data/processed/contemporary/cbc_re_gt.csv"
         },
-        "log_directory": "../data/results/final/"
+        "output_directory": "../data/results/final/contemporary/"
     }
 }
+
+FEW_SHOT_PATH = "../data/few_shot/few_shot_block.txt"
+
+BIORED_GUIDELINES_PATH = "../data/processed/biored/guidelines.txt"
