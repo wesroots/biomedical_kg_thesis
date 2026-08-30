@@ -149,13 +149,13 @@ The official BioRED annotation guidelines \cite{luo2022_biored}, retrieved from 
         Entity types & Relation Types \\
         \midrule
         ChemicalEntity & Association \\
-        DiseaseOrPhenotypic Feature & Bind \\
+        DiseaseOrPhenotypicFeature & Bind \\
         GeneOrGeneProduct & Comparison \\
         SequenceVariant & Conversion \\
         OrganismTaxon & Cotreatment \\
         CellLine & Drug\_Interaction \\
-         & Negative\_Correlation \\
          & Positive\_Correlation \\
+         & Negative\_Correlation \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -279,7 +279,7 @@ No further prompt, schema, or evaluation changes were made to the selected \gls{
 
 \subsection{Final Pipeline}
 \label{subsec:meth:final_pipeline}
-The final extraction pipeline configuration selected through the process above is summarised in Table~\ref{tab:final_epi_config}
+The final extraction pipeline configuration selected through the process above is summarised in Table~\ref{tab:final_epi_config}. This configuration therefore represents the final extraction system evaluated in all subsequent experiments reported in this thesis.
 
 \begin{table}[H]
     \centering
@@ -303,6 +303,7 @@ The final extraction pipeline configuration selected through the process above i
 
 \section{Contemporary Knowledge Graph Construction}
 \label{sec:meth:contemporary_kg_construction}
+
 
 \subsection{Contemporary Corpus Extraction}
 \label{subsec:meth:contemporary_corpus_extraction}

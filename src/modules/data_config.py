@@ -23,6 +23,7 @@ DATA_CONFIG = {
         "name": "biored_test",
         "paths": {
             "abstracts": "../../data/processed/biored/br_test.csv",
+            "eval_set": "../../data/processed/biored/br_test.csv",
             "ground_truths": "../../data/processed/biored/br_test_entity_relations.csv",
             "entities_ground_truths": "../../data/processed/biored/br_test_entities.csv",
             "epi_dir": "../../data/results/epis/biored_test"
@@ -30,11 +31,12 @@ DATA_CONFIG = {
         "sample_size": None,
     },
     "contemporary": {
-        "name": "contemporary",
+        "name": "contemporary_corpus",
         "paths": {
             "abstracts": "../../data/processed/contemporary/contemporary_corpus.csv",
-            "ground_truths": "", # <--- NEEDS FIXING
-            "entities_ground_truths": "", # <--- NEEDS FIXING
+            "eval_set": "../../data/processed/contempoary/cbc_downsampled_abstracts.csv",
+            "ground_truths": "../../data/processed/contemporary/cbc_re_gt.csv",
+            "entities_ground_truths": "../../data/processed/contemporary/cbc_ner_gt.csv",
             "epi_dir": "../../data/results/epis/contemporary"
         },
         "sample_size": None,

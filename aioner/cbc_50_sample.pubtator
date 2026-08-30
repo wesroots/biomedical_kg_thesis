@@ -1,0 +1,1403 @@
+42625765|t|Molecular Detection of Virulence Genes and Multi-drug Resistance Patterns in <i>Streptococcus Agalactiae</i> in Clinical Bovine Mastitis: Tehran and Alborz Provinces, Iran.
+42625765|a|<i>Streptococcus agalactiae</i> is one of the important causes of mastitis in cows. The ability of <i>S. agalactiae</i> to cause disease depends on the production of a large number of virulence factors encoded by different genes. The overuse of antibiotics to treat mastitis can lead to antibiotic resistance. This research was conducted to detect selected virulence genes and assess the antibiotic resistance of <i>S. agalactiae</i>. A total of 30 bacteria that isolated from clinical cases of mastitis and characterized as <i>S. agalactiae</i> by conventional cultural methods was collected from veterinary diagnostic laboratories. Then, these isolates undergo further characterization by detecting virulence genes by molecular methods and antibiotic resistance by disc diffusion method. Of these, 24 samples were confirmed as <i>S. agalactiae</i> through the detection of the two <i>16S-23S rRNA</i> genes. The disk diffusion method, using a panel of 10 antimicrobial agents, showed a large number of strains resistant simultaneously to six antibiotics. Five virulence genes <i>bac</i>, <i>bca</i>, <i>cylE</i>, <i>hylB</i>, and <i>cfb</i> were screened by polymerase chain reaction (PCR). The <i>cfb</i> and <i>hylB</i> genes were found in 95.83 % of the isolates,while the <i>cylE</i> gene was detected in 29.16% of the isolates. The <i>bca</i> and <i>bac</i> genes were not detected in any of the isolates. The absence of <i>bac</i> and <i>bca</i> genes suggests that they likely have minimal impact on the pathogenesis of <i>S. agalactiae</i> mastitis in dairy cows, while the <i>hylB</i> and <i>cfb</i> genes play a crucial role in this condition. The results presented here are one of the first molecular data concerning these five virulence genes in <i>S. agalactiae</i> isolates causing bovine mastitis in the Tehran and Alborz provinces, providing a foundation for the development of diagnostic, preventive, and therapeutic methods.
+42625765	80	104	Streptococcus Agalactiae	Species
+42625765	121	136	Bovine Mastitis	Disease
+42625765	176	200	Streptococcus agalactiae	Species
+42625765	239	247	mastitis	Disease
+42625765	251	255	cows	Species
+42625765	275	288	S. agalactiae	Species
+42625765	439	447	mastitis	Disease
+42625765	589	602	S. agalactiae	Species
+42625765	622	630	bacteria	Species
+42625765	668	676	mastitis	Disease
+42625765	701	714	S. agalactiae	Species
+42625765	1005	1018	S. agalactiae	Species
+42625765	1604	1607	bac	Gene
+42625765	1705	1718	S. agalactiae	Disease
+42625765	1723	1731	mastitis	Disease
+42625765	1741	1745	cows	Species
+42625765	1936	1949	S. agalactiae	Species
+42625765	1971	1986	bovine mastitis	Disease
+
+42621305|t|N6-methyladenosine-modified circLPAR3 drives docetaxel resistance in prostate cancer by suppressing ferroptosis through the PCBP2/CHAC1 axis.
+42621305|a|Epigenetic mechanisms represented by N6-methyladenosine (m<sup>6</sup>A) modifications and circular RNAs (circRNAs) regulate chemotherapy resistance in prostate cancer (PCa). Here, we stuided the role of m<sup>6</sup>A-modified circLPAR3 in assisting docetaxel (DTX) resistance in PCa and the mechanism of its regulatory function. The expression of circLPAR3 was higher in all three drug-resistant cell lines than in the corresponding parental cell lines and was mainly localized in the cytoplasm. The m<sup>6</sup>A modification and stability enhancement of circLPAR3 by the METTL3/IGF2BP2 axis was primarily determined by expression assays, stability assays, and mass spectrometry. Functionally, circLPAR3 reduced the sensitivity of PCa cells to DTX and promoted PCa proliferation in a DTX environment. In addition, circLPAR3 reduced cytotoxicity by inhibiting the DTX-induced ferroptosis effect. Mechanistically, circLPAR3 downregulated the expression of CHAC1, an emerging driver of ferroptosis. PCBP2 was identified as a mediating RNA-binding protein between circLPAR3 and CHAC1. On the one hand, it shares a very high binding phase with circLPAR3 without interfering with each other's expression; on the other hand, it increases mRNA stability by binding to the 3' UTR of CHAC1, which is interfered by circLPAR3. In conclusion, m<sup>6</sup>A-modified circLPAR3 inhibits CHAC1 expression by competitively binding to PCBP2, ultimately conferring docetaxel resistance to PCa.
+42621305	0	18	N6-methyladenosine	Chemical
+42621305	28	37	circLPAR3	Gene
+42621305	45	54	docetaxel	Chemical
+42621305	69	84	prostate cancer	Disease
+42621305	124	129	PCBP2	Gene
+42621305	130	135	CHAC1	Gene
+42621305	179	197	N6-methyladenosine	Chemical
+42621305	294	309	prostate cancer	Disease
+42621305	311	314	PCa	Disease
+42621305	370	379	circLPAR3	Gene
+42621305	393	402	docetaxel	Chemical
+42621305	404	407	DTX	Chemical
+42621305	423	426	PCa	Disease
+42621305	491	500	circLPAR3	Gene
+42621305	701	710	circLPAR3	Gene
+42621305	718	724	METTL3	Gene
+42621305	725	732	IGF2BP2	Gene
+42621305	840	849	circLPAR3	Gene
+42621305	877	880	PCa	Disease
+42621305	890	893	DTX	Chemical
+42621305	907	910	PCa	Disease
+42621305	930	933	DTX	Chemical
+42621305	960	969	circLPAR3	Gene
+42621305	978	990	cytotoxicity	Disease
+42621305	1009	1012	DTX	Chemical
+42621305	1058	1067	circLPAR3	Gene
+42621305	1100	1105	CHAC1	Gene
+42621305	1142	1147	PCBP2	Gene
+42621305	1206	1215	circLPAR3	Gene
+42621305	1220	1225	CHAC1	Gene
+42621305	1285	1294	circLPAR3	Gene
+42621305	1420	1425	CHAC1	Gene
+42621305	1450	1459	circLPAR3	Gene
+42621305	1476	1481	m<sup	Variant
+42621305	1482	1488	6</sup	Variant
+42621305	1489	1490	A	Variant
+42621305	1500	1509	circLPAR3	Gene
+42621305	1519	1524	CHAC1	Gene
+42621305	1564	1569	PCBP2	Gene
+42621305	1593	1602	docetaxel	Chemical
+42621305	1617	1620	PCa	Disease
+
+42632605|t|Benzene Metabolite-Targeted Gene ATF7IP2 Drives Glutamate Metabolic Reprogramming to Promote Acute Myeloid Leukemia Initiation.
+42632605|a|Benzene exposure is a recognized environmental risk factor for acute myeloid leukemia (AML). This study aimed to identify key drivers of benzene-associated AML and elucidate its pathogenic mechanisms. Candidate genes were screened by integrating two-sample Mendelian randomization (MR), transcriptomics, and single-cell sequencing data. Their biological functions were validated using functional experiments and metabolomics, and the efficacy of targeted interventions was assessed using in vivo and in vitro models. Integrated analysis identified 138 genes associated with AML, among which ATF7IP2 was a reliable prognostic biomarker and independent risk factor. Benzene significantly upregulated ATF7IP2 expression in a dose-dependent manner. Mechanistically, ATF7IP2 is a key regulator of glutamate metabolism; knockdown of ATF7IP2 reduces intracellular glutamate/glutamine levels, thereby impairing cell viability and inducing cell cycle arrest, while exogenous glutamate can prevent these effects. scRNA-seq and trajectory analysis showed that in a benzene-associated microenvironment, ATF7IP2 drives the malignant differentiation of hematopoietic stem cells (HSCs) into a leukemia precursor stem cell (pre-LSC) subset. The peptidomimetic inhibitor TCMCB07, targeting this axis, inhibited leukemia cell proliferation, delayed disease progression, and prolonged mouse survival. Our results indicate that ATF7IP2 is a key transcriptional metabolic hub that mediates benzene-induced AML by reprogramming glutamate metabolism and driving the conversion of HSCs to pre-LSCs.
+42632605	0	7	Benzene	Chemical
+42632605	33	40	ATF7IP2	Gene
+42632605	48	57	Glutamate	Chemical
+42632605	93	115	Acute Myeloid Leukemia	Disease
+42632605	128	135	Benzene	Chemical
+42632605	191	213	acute myeloid leukemia	Disease
+42632605	215	218	AML	Disease
+42632605	265	272	benzene	Chemical
+42632605	284	287	AML	Disease
+42632605	702	705	AML	Disease
+42632605	719	726	ATF7IP2	Gene
+42632605	792	799	Benzene	Chemical
+42632605	826	833	ATF7IP2	Gene
+42632605	890	897	ATF7IP2	Gene
+42632605	920	929	glutamate	Chemical
+42632605	955	962	ATF7IP2	Gene
+42632605	985	994	glutamate	Chemical
+42632605	995	1004	glutamine	Chemical
+42632605	1094	1103	glutamate	Chemical
+42632605	1182	1189	benzene	Chemical
+42632605	1219	1226	ATF7IP2	Gene
+42632605	1306	1314	leukemia	Disease
+42632605	1382	1389	TCMCB07	Chemical
+42632605	1422	1430	leukemia	Disease
+42632605	1494	1499	mouse	Species
+42632605	1536	1543	ATF7IP2	Gene
+42632605	1597	1604	benzene	Chemical
+42632605	1613	1616	AML	Disease
+42632605	1634	1643	glutamate	Chemical
+
+41415885|t|R183Q GNAQ Sturge-Weber syndrome Leptomeningeal and Cerebrovascular Developmental Mouse Model.
+41415885|a|Sturge-Weber syndrome (SWS), a rare neurovascular malformation disorder, is usually caused by the R183Q GNAQ somatic mosaic mutation enriched in brain endothelial cells. A developmental mouse model of SWS brain involvement is needed to investigate mutation impact upon brain vascular development and to facilitate preclinical drug studies. A new Tet-ON R183Q GNAQ transgenic mouse line was paired with rtTA tet transactivator mice under the <i>Tie2</i> promoter to generate mice expressing endothelial R183Q GNAQ in the presence of doxycycline. Litters were perfused at P14-17; half received a sub-seizure dose (1.5 mg/kg; i.p.) of kainate an hour before perfusion. A subset were perfused with Evans blue. Fixed mouse brains were stained with X-gal, DAPI, and antibodies for Gαq, Tie2, phosphorylated-S6, and claudin-5. Images were scored for vessel staining intensity. X-gal staining was seen only in mutant mice; leptomeningeal endothelial X-gal staining was more frequent in kainate-treated mice (<i>p</i> < 0.001). When perfused with Evans blue, only mutant brains showed severe staining (<i>p</i> = 0.028). Median phosphorylated-S6 vessel scores were significantly higher in the leptomeninges of mutant mice (<i>p</i> = 0.035). Mutant cortical microvessels demonstrated discontinuous claudin-5 and phosphorylated-S6 staining as well as increased vessel length in kainate-treated mice (<i>p</i> = 0.024). The new R183Q GNAQ Tet-ON developmental mouse brain model of SWS demonstrates endothelial expression of mutant Gαq associated with blood brain barrier breakdown, altered vascular mTOR activity, and abnormal cortical microvessel structure. This new translational model can be used to develop new drug targets and treatments for SWS.
+41415885	0	5	R183Q	Variant
+41415885	6	10	GNAQ	Gene
+41415885	11	32	Sturge-Weber syndrome	Disease
+41415885	82	87	Mouse	Species
+41415885	95	116	Sturge-Weber syndrome	Disease
+41415885	118	121	SWS	Disease
+41415885	131	166	neurovascular malformation disorder	Disease
+41415885	193	198	R183Q	Variant
+41415885	199	203	GNAQ	Gene
+41415885	281	286	mouse	Species
+41415885	296	299	SWS	Disease
+41415885	441	447	Tet-ON	Chemical
+41415885	448	458	R183Q GNAQ	Variant
+41415885	470	475	mouse	Species
+41415885	497	501	rtTA	Chemical
+41415885	521	525	mice	Species
+41415885	569	573	mice	Species
+41415885	597	607	R183Q GNAQ	Variant
+41415885	627	638	doxycycline	Chemical
+41415885	693	700	seizure	Disease
+41415885	727	734	kainate	Chemical
+41415885	789	799	Evans blue	Chemical
+41415885	807	812	mouse	Species
+41415885	845	849	DAPI	Chemical
+41415885	870	873	Gαq	Gene
+41415885	875	879	Tie2	Gene
+41415885	881	898	phosphorylated-S6	Gene
+41415885	904	913	claudin-5	Gene
+41415885	965	970	X-gal	Chemical
+41415885	1004	1008	mice	Species
+41415885	1037	1042	X-gal	Chemical
+41415885	1073	1080	kainate	Chemical
+41415885	1089	1093	mice	Species
+41415885	1133	1143	Evans blue	Chemical
+41415885	1214	1228	phosphorylated	Gene
+41415885	1229	1231	S6	Gene
+41415885	1303	1307	mice	Species
+41415885	1384	1393	claudin-5	Gene
+41415885	1398	1415	phosphorylated-S6	Gene
+41415885	1463	1470	kainate	Chemical
+41415885	1479	1483	mice	Species
+41415885	1512	1517	R183Q	Variant
+41415885	1518	1522	GNAQ	Chemical
+41415885	1523	1529	Tet-ON	Chemical
+41415885	1544	1549	mouse	Species
+41415885	1565	1568	SWS	Disease
+41415885	1615	1618	Gαq	Gene
+41415885	1683	1687	mTOR	Gene
+41415885	1831	1834	SWS	Disease
+
+42376533|t|Aggressive basal cell carcinoma in a non-facial location in a cat: Perineural and lymphatic invasion with metastasis.
+42376533|a|Basal cell carcinomas (BCCs) in cats are generally regarded as benign skin tumors with low metastatic potential. However, rare cases of aggressive behavior and metastasis, primarily in the context of facial lesions, have been reported. A 12-year-old neutered male Scottish Fold cat presented with a chronic, non-healing ulcer on the left hock. The initial excision lacked a histopathological diagnosis, and the lesion recurred. Biopsy of the lesion confirmed basal cell carcinoma. Despite limb amputation with clear margins and no regional lymph node involvement, distant cutaneous nodules appeared 6 months later and were histologically confirmed as metastatic BCC with lymphatic and perineural invasion. Wide-margin resections and systemic chemotherapy with carboplatin were performed; however, further lesions developed, and the cat succumbed to progressive disease. This case highlights a rare and aggressive variant of feline BCC arising outside the head and neck region. The lesion demonstrated metastatic spread, perineural and lymphatic invasion, and a poor response to treatment. Early histopathological evaluation of chronic skin ulcers is essential, and recognition of aggressive subtypes may facilitate more effective clinical management.
+42376533	11	31	basal cell carcinoma	Disease
+42376533	62	65	cat	Species
+42376533	106	116	metastasis	Disease
+42376533	118	139	Basal cell carcinomas	Disease
+42376533	141	145	BCCs	Disease
+42376533	150	154	cats	Species
+42376533	181	199	benign skin tumors	Disease
+42376533	278	288	metastasis	Disease
+42376533	318	332	facial lesions	Disease
+42376533	391	395	Fold	Species
+42376533	396	399	cat	Species
+42376533	438	443	ulcer	Disease
+42376533	577	597	basal cell carcinoma	Disease
+42376533	780	783	BCC	Disease
+42376533	878	889	carboplatin	Chemical
+42376533	950	953	cat	Species
+42376533	1042	1048	feline	Species
+42376533	1049	1052	BCC	Disease
+42376533	1253	1264	skin ulcers	Disease
+
+42422171|t|Menaquinone-7 alleviates mitochondrial dysfunction and senescence in senile osteoporosis by targeting the PINK1-mediated mitophagy via PXR/ERK/CREB signaling pathway.
+42422171|a|Current therapeutic strategies for senile osteoporosis inadequately address its low-turnover pathology driven by mitochondrial dysfunction and cellular senescence. This study identifies menaquinone-7 (MK-7), a vitamin K<sub>2</sub> isoform, as a novel therapeutic agent targeting mitochondrial homeostasis in senile osteoporosis. Through RNA sequencing analysis and intramedullary adeno-associated virus (AAV)-based gene manipulation in aged mice, cellular communication network factor 2 (Ccn2) was identified as a critical mediator of MK-7's bone-protective effects. Biochemical and proteomic assays revealed that MK-7 binds to the nuclear receptor pregnane X receptor (PXR), activating the extracellular signal-regulated kinases 1/2 (ERK1/2)/cyclic AMP-responsive element-binding protein (CREB) signaling cascade to upregulate Ccn2 in senescent bone marrow mesenchymal stem cells (BMSCs). This pathway enhanced PTEN-induced kinase 1 (PINK1)/Parkin-mediated mitophagy, reducing mitochondrial DNA damage, reactive oxygen species (mtROS), and senescence-associated secretory phenotype (SASP), while restoring metabolic function. MK-7 redirected BMSC differentiation from adipogenic to osteogenic lineages, effectively mitigating age-related bone loss <i>in vivo</i>. Mechanistically, MK-7 stabilized PXR via direct interaction at the F285 residue, as confirmed by drug affinity responsive target stability (DARTS), cellular thermal shift assay (CETSA), and molecular docking. PXR activation further promoted ERK1/2/CREB-dependent Ccn2 expression, which orchestrated mitochondrial quality control and cellular energy metabolism. Our findings establish MK-7 as a dual-function agent that concurrently alleviates senescence and metabolic imbalance in bone tissue, offering a safe and targeted strategy for senile osteoporosis. This study provides critical insights into the pharmacological modulation of mitochondrial pathways and highlights MK-7's translational potential in geriatric bone health.
+42422171	0	13	Menaquinone-7	Chemical
+42422171	25	50	mitochondrial dysfunction	Disease
+42422171	76	88	osteoporosis	Disease
+42422171	106	111	PINK1	Gene
+42422171	135	138	PXR	Gene
+42422171	139	142	ERK	Gene
+42422171	143	147	CREB	Gene
+42422171	209	221	osteoporosis	Disease
+42422171	280	305	mitochondrial dysfunction	Disease
+42422171	353	366	menaquinone-7	Chemical
+42422171	368	372	MK-7	Chemical
+42422171	377	386	vitamin K	Chemical
+42422171	476	495	senile osteoporosis	Disease
+42422171	548	553	adeno	Species
+42422171	572	575	AAV	Species
+42422171	609	613	mice	Species
+42422171	615	654	cellular communication network factor 2	Gene
+42422171	656	660	Ccn2	Gene
+42422171	703	707	MK-7	Gene
+42422171	782	786	MK-7	Gene
+42422171	817	836	pregnane X receptor	Gene
+42422171	838	841	PXR	Gene
+42422171	859	901	extracellular signal-regulated kinases 1/2	Gene
+42422171	903	909	ERK1/2	Gene
+42422171	911	956	cyclic AMP-responsive element-binding protein	Gene
+42422171	958	962	CREB	Gene
+42422171	996	1000	Ccn2	Gene
+42422171	1080	1101	PTEN-induced kinase 1	Gene
+42422171	1103	1108	PINK1	Gene
+42422171	1110	1116	Parkin	Gene
+42422171	1181	1195	oxygen species	Chemical
+42422171	1295	1299	MK-7	Gene
+42422171	1407	1416	bone loss	Disease
+42422171	1450	1454	MK-7	Chemical
+42422171	1466	1469	PXR	Gene
+42422171	1642	1645	PXR	Gene
+42422171	1674	1680	ERK1/2	Gene
+42422171	1681	1685	CREB	Gene
+42422171	1696	1700	Ccn2	Gene
+42422171	1817	1821	MK-7	Gene
+42422171	1976	1988	osteoporosis	Disease
+42422171	2105	2109	MK-7	Gene
+
+42206121|t|Deciphering the Nanometabolomics Paradigm: Understanding the Role of Pathophysiology and Biomarkers in Predicting Oral Cancer.
+42206121|a|Oral cancer represents a significant global health burden, with its incidence steadily increasing over recent years. Despite advancements in treatment modalities, early diagnosis and effective therapeutic strategies remain elusive, necessitating innovative approaches. Metabolomics, a powerful analytical technique, offers insights into the metabolic alterations associated with oral cancer progression. By profiling metabolites, it enables the identification of biomarkers indicative of disease onset, progression, and response to treatment. Nanotechnology emerges as a promising ally in overcoming these limitations. Nanomaterials possess unique physicochemical properties that can be harnessed for targeted drug delivery, imaging, and sensing. In this context, our aim is to summarize implication of nanotechnology-integrated metabolomics as facilitators for the development of novel diagnostic platforms and therapeutics with enhanced specificity and efficacy. To address this, our objectives are segregated wherein the metabolomics profiling of biomarkers was investigated contributing to the diagnosis and prognosis of oral cancers. The implication of nanotechnology insights targeted molecular imaging, biomarker analysis and nano-omics technological adavancements assisting early prognosis of oral cancer. In summary, comprehensive literature review of exploring the metabolomic profiling coupled with nanomaterial-based intervention enables early detection of oral cancer with unprecedented sensitivity and specificity. This review comprehensively discusses recent advancements in metabolomic profiling and nanotechnology-based approaches for oral cancer diagnosis and treatment. Advanced technology and biological instruments present excellent prospects for metabolic profiling, enabling the identification of biomarkers for early identification, prognosis, and consequently planned and comprehensive therapy that would be most advantageous for the patients. Amalgamating the skills of physicians, researchers, and bioinformatics will undoubtedly aid in overcoming obstacles and enable patients with oral cancer to fully benefit from metabolism when receiving precision oncology treatment.
+42206121	114	125	Oral Cancer	Disease
+42206121	127	138	Oral cancer	Disease
+42206121	506	517	oral cancer	Disease
+42206121	1252	1264	oral cancers	Disease
+42206121	1428	1439	oral cancer	Disease
+42206121	1596	1607	oral cancer	Disease
+42206121	1779	1790	oral cancer	Disease
+42206121	2086	2094	patients	Species
+42206121	2223	2231	patients	Species
+42206121	2237	2248	oral cancer	Disease
+
+42212236|t|Identifying Relevant Covariates in RNA-seq Analysis by Pseudo-Variable Augmentation.
+42212236|a|RNA-sequencing (RNA-seq) technology allows for the identification of differentially expressed genes, which are genes whose mean transcript abundance levels vary across conditions. In practice, RNA-seq datasets often include covariates that are of primary interest in addition to a set of covariates that are subject to selection. Some of these covariates may be relevant to gene expression levels, while others may be irrelevant. Ignoring relevant covariates or attempting to adjust for the effect of irrelevant covariates can compromise the identification of differentially expressed genes. To address this issue, we propose a variable selection method that uses pseudo-variables to control the expected proportion of selected covariates that are irrelevant. Our method accurately selects relevant covariates while keeping the false selection rate below a specified level. We demonstrate that our method outperforms existing methods for detecting differentially expressed genes when working with available covariates. Our method is implemented in FSRAnalysisBS function of the R package csrnaseq, which is available at www.github.com/ntyet/csrnaseq. The analysis and simulation are available at www.github.com/ntyet/csrnaseq/tree/main/analysis. The online version contains supplementary material available at 10.1007/s13253-024-00665-3.
+
+41059450|t|Homozygous PGAP2 Mutation Causes Hyperphosphatasia with Mental Retardation Syndrome-3: Genetic and Clinical Evaluation of the Ultra-Rare Inherited Glycosylphosphatidylinositol Biosynthesis Defect.
+41059450|a|Inherited glycosylphosphatidylinositol biosynthesis defect is considered a subset of the congenital glycosylation disorder that results from mutations in the genes encoding proteins participating in glycosylphosphatidylinositol biosynthesis and modification. Glycosylphosphatidylinositol anchor proteins play important roles in numerous cellular processes including neurogenesis, cell adhesion, immune response, and signaling. Hyperphosphatasia with mental retardation syndrome-3 is one of the glycosylphosphatidylinositol anchor defects, characterized by moderate to severe intellectual disability, dysmorphic features, hypotonia, seizures, and persistent hyperphosphatasia. The aims of this study were to investigate the clinical implications of the <i>PGAP2</i> gene and identify the severe phenotype. A male patient with dysmorphic features, neurodevelopmental delay, seizures, hearing loss, Hirschsprung disease, central fever, and elevated alkaline phosphatase was included in the study. The magnetic resonance imaging showed cerebral atrophy and corpus callosum hypoplasia. The whole-exome sequencing analysis of the individual and Sanger sequencing were performed for segregation. Additionally, next-generation sequencing, whole transcriptome sequencing, and homology modeling and analysis were performed. Whole-exome sequencing revealed a homozygous c.651C>G (p.His217Gln) in the <i>PGAP2</i> gene. The Sanger sequencing confirmed the parents were heterozygous. There is no splicing variant detected by whole transcriptome sequencing. The AlphaFold model was interpreted hypothetically. It observed the substitution of histidine, with glutamine, and may affect the stability of protein. Homozygous PGAP2 mutations in the patient we reported in our study resulted in a severe clinical picture including severe developmental delay and intellectual disability, severe epilepsy, dysmorphic features, central fever, biochemical, hormonal, and immunological abnormalities. This patient would be the youngest case published in the literature. We showed that the instability of mutant PGAP2 protein that causes hyperphosphatasia with mental retardation syndrome-3 leads to more severe phenotypes.
+41059450	11	16	PGAP2	Gene
+41059450	33	85	Hyperphosphatasia with Mental Retardation Syndrome-3	Disease
+41059450	147	188	Glycosylphosphatidylinositol Biosynthesis	Chemical
+41059450	207	255	glycosylphosphatidylinositol biosynthesis defect	Disease
+41059450	286	319	congenital glycosylation disorder	Disease
+41059450	396	424	glycosylphosphatidylinositol	Chemical
+41059450	456	500	Glycosylphosphatidylinositol anchor proteins	Gene
+41059450	624	676	Hyperphosphatasia with mental retardation syndrome-3	Disease
+41059450	691	734	glycosylphosphatidylinositol anchor defects	Disease
+41059450	772	795	intellectual disability	Disease
+41059450	797	816	dysmorphic features	Disease
+41059450	818	827	hypotonia	Disease
+41059450	829	837	seizures	Disease
+41059450	854	871	hyperphosphatasia	Disease
+41059450	952	957	PGAP2	Gene
+41059450	1009	1016	patient	Species
+41059450	1022	1041	dysmorphic features	Disease
+41059450	1043	1067	neurodevelopmental delay	Disease
+41059450	1069	1077	seizures	Disease
+41059450	1079	1091	hearing loss	Disease
+41059450	1093	1113	Hirschsprung disease	Disease
+41059450	1123	1128	fever	Disease
+41059450	1143	1163	alkaline phosphatase	Gene
+41059450	1229	1245	cerebral atrophy	Disease
+41059450	1250	1276	corpus callosum hypoplasia	Disease
+41059450	1556	1564	c.651C>G	Variant
+41059450	1566	1577	p.His217Gln	Variant
+41059450	1589	1594	PGAP2	Gene
+41059450	1825	1850	histidine, with glutamine	Variant
+41059450	1904	1909	PGAP2	Gene
+41059450	1927	1934	patient	Species
+41059450	2015	2034	developmental delay	Disease
+41059450	2039	2062	intellectual disability	Disease
+41059450	2071	2079	epilepsy	Disease
+41059450	2081	2100	dysmorphic features	Disease
+41059450	2110	2115	fever	Disease
+41059450	2144	2171	immunological abnormalities	Disease
+41059450	2178	2185	patient	Species
+41059450	2283	2288	PGAP2	Gene
+41059450	2309	2361	hyperphosphatasia with mental retardation syndrome-3	Disease
+
+42239639|t|Chinese Urban Wastewater Surveillance System for Early Warning of Infectious Diseases: Implementation and Efficacy - January 2023-June 2025.
+42239639|a|Wastewater surveillance has emerged as a powerful tool for public health monitoring, particularly during disease outbreaks. This report documents China's pioneering establishment of the first nationwide comprehensive wastewater surveillance system with multi-scenario applications during the coronavirus disease 2019 (COVID-19) pandemic (January 2023-June 2025). The system integrated three components: national urban wastewater surveillance, inbound international aircraft wastewater surveillance, and pilot public health risk surveillance. This integrated framework demonstrated significant effectiveness in providing early warnings for COVID-19, polio, monkeypox, and other infectious disease outbreaks, while advancing variant tracking capabilities. These findings underscore the critical role of wastewater surveillance in augmenting existing public health infrastructure and improving outbreak detection capabilities. Implementing standardized protocols and developing collaborative networks will strengthen pandemic preparedness and enhance global public health resilience.
+42239639	66	85	Infectious Diseases	Disease
+42239639	433	457	coronavirus disease 2019	Disease
+42239639	459	467	COVID-19	Disease
+42239639	780	788	COVID-19	Disease
+42239639	790	795	polio	Disease
+42239639	797	806	monkeypox	Disease
+42239639	818	836	infectious disease	Disease
+42239639	1155	1163	pandemic	Disease
+
+40860264|t|Molecular docking and MD simulation approach to identify potential phytochemical lead molecule against triple negative breast cancer.
+40860264|a|Triple-negative breast cancers (TNBC) are defined as tumors that lack the expression of the estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2). It exhibits unique clinical and pathological features, demonstrates high aggressiveness, and has a relatively poor prognosis and clinical outcome. To identify a novel drug target protein against TNBC and potential phytochemical lead molecules against the identified target. In this study, we retrieved TNBC samples from NGS and microarray datasets in the Gene Expression Omnibus database. We employed a combination of differential gene expression studies, protein-protein interaction analysis, and network topology investigation to identify the target protein. Additionally, the molecular docking and molecular dynamics (MD) simulation studies followed by Molecular Mechanics with Generalised Born Surface Area salvation was used to identify potential lead molecule. The upregulated genes with LogFC > 1.25 and P-value < 0.05 from the TNBC gene expression dataset were identified. Androgen receptor (AR) was found to be an appropriate hub target in the protein-protein interaction network. Phytochemicals that inhibit breast cancer target were retrieved from the PubChem database and virtual screening was performed using PyRx against the AR protein. Thereby, the AR was found to be the target protein and 2-hydroxynaringenin was discovered to be a possible phytochemical lead molecule for combating TNBC. Moreover, the AR and the 2-hydroxynaringenin complex showed structural stability and higher binding affinity through molecular dynamics and MM-GBSA studies. AR was identified as a hub protein that is highly expressed in breast cancer and 2-hydroxynaringenin efficacy of counter TNBC requires further investigation both in vitro and in vivo.
+40860264	103	132	triple negative breast cancer	Disease
+40860264	134	164	Triple-negative breast cancers	Disease
+40860264	166	170	TNBC	Disease
+40860264	187	193	tumors	Disease
+40860264	226	243	estrogen receptor	Gene
+40860264	245	247	ER	Gene
+40860264	250	271	progesterone receptor	Gene
+40860264	273	275	PR	Gene
+40860264	282	322	human epidermal growth factor receptor 2	Gene
+40860264	324	328	HER2	Gene
+40860264	526	530	TNBC	Disease
+40860264	633	637	TNBC	Disease
+40860264	1166	1170	TNBC	Disease
+40860264	1212	1229	Androgen receptor	Gene
+40860264	1231	1233	AR	Gene
+40860264	1349	1362	breast cancer	Disease
+40860264	1470	1472	AR	Gene
+40860264	1495	1497	AR	Gene
+40860264	1537	1556	2-hydroxynaringenin	Chemical
+40860264	1631	1635	TNBC	Disease
+40860264	1651	1653	AR	Gene
+40860264	1662	1681	2-hydroxynaringenin	Chemical
+40860264	1794	1796	AR	Gene
+40860264	1857	1870	breast cancer	Disease
+40860264	1875	1894	2-hydroxynaringenin	Chemical
+40860264	1915	1919	TNBC	Disease
+
+42148001|t|Townes-Brocks Syndrome With Consistent Renal Hypodysplasia and Variable Extrarenal Features Across Three Generations of Serbian Family.
+42148001|a|Townes-Brocks syndrome (TBS) is a rare autosomal dominant disorder caused by pathogenic variants in <i>SALL1</i>, classically defined by dysplastic ears, anorectal malformations, and thumb anomalies. Renal involvement is a major determinant of prognosis. We report a Serbian family with multiple members with TBS and molecular confirmation of a SALL1 familial nonsense variant (c.1509C>A, p. Tyr503Ter). Detailed phenotypic data were obtained from paediatric and adult medical records. Seven affected patients across three generations exhibited a remarkably consistent renal phenotype characterized by bilateral renal Hypodysplasia and chronic kidney disease (CKD), contrasted by variable extrarenal features. The proband developed CKD progressing to end-stage renal disease (ESRD) in adolescence, requiring kidney transplantation. Her first male cousin (patient 2) presented with anal atresia, dysplastic ears, hypospadias, and congenital hypothyroidism, and currently has stable CKD stage II. Mother of patient 2 has CKD stage III with small hyperechogenic kidneys and proteinuria. The affected grandfather has ESRD and sensorineural hearing loss. Notably, none of the affected individuals fulfilled the complete classical triad of TBS. This family demonstrates intrafamilial phenotypic variability of TBS but with strikingly consistent renal involvement linked to a familial <i>SALL1</i> variant. TBS should be considered in patients with congenital anomalies of the kidney and Urinary tract (CAKUT) even in the absence of typical limb or anorectal anomalies. Early molecular diagnosis enables appropriate surveillance and timely management of progressive kidney disease.
+42148001	0	22	Townes-Brocks Syndrome	Disease
+42148001	39	58	Renal Hypodysplasia	Disease
+42148001	136	158	Townes-Brocks syndrome	Disease
+42148001	160	163	TBS	Disease
+42148001	175	202	autosomal dominant disorder	Disease
+42148001	239	244	SALL1	Gene
+42148001	273	288	dysplastic ears	Disease
+42148001	290	313	anorectal malformations	Disease
+42148001	319	334	thumb anomalies	Disease
+42148001	336	353	Renal involvement	Disease
+42148001	445	448	TBS	Disease
+42148001	481	486	SALL1	Gene
+42148001	514	523	c.1509C>A	Variant
+42148001	525	537	p. Tyr503Ter	Variant
+42148001	637	645	patients	Species
+42148001	738	767	bilateral renal Hypodysplasia	Disease
+42148001	772	794	chronic kidney disease	Disease
+42148001	796	799	CKD	Disease
+42148001	868	871	CKD	Disease
+42148001	887	910	end-stage renal disease	Disease
+42148001	912	916	ESRD	Disease
+42148001	991	998	patient	Species
+42148001	1017	1029	anal atresia	Disease
+42148001	1031	1046	dysplastic ears	Disease
+42148001	1048	1059	hypospadias	Disease
+42148001	1065	1090	congenital hypothyroidism	Disease
+42148001	1117	1129	CKD stage II	Disease
+42148001	1141	1148	patient	Species
+42148001	1155	1168	CKD stage III	Disease
+42148001	1207	1218	proteinuria	Disease
+42148001	1249	1253	ESRD	Disease
+42148001	1258	1284	sensorineural hearing loss	Disease
+42148001	1370	1373	TBS	Disease
+42148001	1440	1443	TBS	Disease
+42148001	1475	1492	renal involvement	Disease
+42148001	1517	1522	SALL1	Gene
+42148001	1536	1539	TBS	Disease
+42148001	1564	1572	patients	Species
+42148001	1578	1630	congenital anomalies of the kidney and Urinary tract	Disease
+42148001	1632	1637	CAKUT	Disease
+42148001	1678	1697	anorectal anomalies	Disease
+42148001	1795	1809	kidney disease	Disease
+
+41230208|t|Novel PIBF1 Pathogenic Variant in Three Siblings with Joubert Syndrome Type 33.
+41230208|a|Joubert syndrome type 33 (JBTS33) is a rare autosomal recessive disorder characterized by developmental delay, severe renal disease, hypotonia/ataxia, cerebellar vermian hypoplasia/aplasia, optic nerve atrophy, renal atrophy, and the "molar tooth sign" on imaging. Nearly 40 genes associated with Joubert syndrome have been identified, including CEP290, TMEM216, TMEM67, AHI1, and CC2D2A. We report a consanguineous family with JBTS33 diagnosed through whole-exome sequencing. A novel biallelic homozygous nonsense mutation (ENST00000326291.11: c.1231C>T; p.Arg411Ter) in progesterone-induced blocking factor 1 (PIBF1) was identified. Our study included 3 patients with the same homozygous mutation in <i>PIBF1,</i> which contributed to clinical features such as psychomotor issues, dysmorphic features, hypotonia/ataxia, kidney failure, and possibly seizures. All 3 patient seizures have been eliminated after phenobarbital administration. This mutation has not been reported in public databases. This study confirmed <i>PIBF1</i> as a disease-causing gene for JBTS33, expanding the molecular and clinical spectrum of JBTS. Our findings underscore the importance of identifying the genetic underpinnings and phenotypic expansions of <i>PIBF1</i> mutations. Enhanced diagnostic awareness can facilitate early intervention and management. Further research is required to elucidate the relationship between <i>PIBF1</i> mutations and associated clinical manifestations.
+41230208	6	11	PIBF1	Gene
+41230208	54	78	Joubert Syndrome Type 33	Disease
+41230208	80	104	Joubert syndrome type 33	Disease
+41230208	106	112	JBTS33	Disease
+41230208	124	152	autosomal recessive disorder	Disease
+41230208	170	189	developmental delay	Disease
+41230208	198	211	renal disease	Disease
+41230208	213	222	hypotonia	Disease
+41230208	223	229	ataxia	Disease
+41230208	231	260	cerebellar vermian hypoplasia	Disease
+41230208	261	268	aplasia	Disease
+41230208	270	289	optic nerve atrophy	Disease
+41230208	291	304	renal atrophy	Disease
+41230208	377	393	Joubert syndrome	Disease
+41230208	426	432	CEP290	Gene
+41230208	434	441	TMEM216	Gene
+41230208	443	449	TMEM67	Gene
+41230208	451	455	AHI1	Gene
+41230208	461	468	CC2D2A.	Gene
+41230208	508	514	JBTS33	Gene
+41230208	625	634	c.1231C>T	Variant
+41230208	636	647	p.Arg411Ter	Variant
+41230208	652	690	progesterone-induced blocking factor 1	Gene
+41230208	692	697	PIBF1	Gene
+41230208	736	744	patients	Species
+41230208	785	790	PIBF1	Gene
+41230208	855	861	issues	Disease
+41230208	863	882	dysmorphic features	Disease
+41230208	884	893	hypotonia	Disease
+41230208	894	900	ataxia	Disease
+41230208	902	916	kidney failure	Disease
+41230208	931	939	seizures	Disease
+41230208	947	954	patient	Species
+41230208	955	963	seizures	Disease
+41230208	991	1004	phenobarbital	Chemical
+41230208	1102	1107	PIBF1	Gene
+41230208	1142	1148	JBTS33	Gene
+41230208	1199	1203	JBTS	Disease
+41230208	1317	1322	PIBF1	Gene
+41230208	1488	1493	PIBF1	Gene
+
+42632907|t|Exploiting Multicomponent Reactions to Drive the Development of Novel Antitubercular Agents: An Overview.
+42632907|a|Tuberculosis (TB) remains a global epidemic, and Mycobacterium tuberculosis (Mtb), its etiological agent, continues to be the deadliest single infectious agent worldwide. Our inability to eradicate TB is strongly related to Mtb's ability to alternate between an active and latent disease state, and a lack of pharmacological agents that effectively target the heterogeneity of TB, which leads downstream to the emergence of drug resistance. The ongoing quest to discover novel effective chemical agents to improve anti-TB regimens remains a significant challenge. Multicomponent reactions (MCRs) have been shown to generate highly diverse chemical libraries in a time- and cost-efficient, sustainable manner, and thus have emerged as powerful tools to accelerate drug discovery and development. This review provides an overview of the chemical libraries of anti-TB agents developed by MCRs, highlighting the contributions of MCRs to advance anti-TB drug discovery through a medicinal chemistry approach.
+42632907	106	118	Tuberculosis	Disease
+42632907	120	122	TB	Disease
+42632907	155	181	Mycobacterium tuberculosis	Species
+42632907	183	186	Mtb	Species
+42632907	304	306	TB	Disease
+42632907	330	333	Mtb	Species
+42632907	483	485	TB	Disease
+42632907	625	627	TB	Disease
+42632907	968	970	TB	Disease
+42632907	1052	1054	TB	Disease
+
+40662146|t|Insights into the structure, function, and impact of <i>Candida albicans UPC2</i> gene on azole resistance; a mini-review.
+40662146|a|Candidiasis is a prevalent fungal infection caused by various species of <i>Candida</i>, especially, <i>C. albicans</i>. The emergence of resistance to azole medications, which are frequently prescribed for the treatment of <i>Candida</i> infections, presents a significant challenge in the management of these infections. The present mini-review summarizes findings from a comprehensive search of articles published between 1999 and 2024, retrieved from Scopus, PubMed, and Web of Science. Studies were selected using specific keywords based on relevance to <i>UPC2</i> gene functions, azole resistance mechanisms, and <i>C. albicans</i> biology. The <i>UPC2</i> gene has become crucial in regulating drug resistance in <i>C. albicans</i>. This gene encodes a zinc (II)-Cys (6) transcription factor involved in the biosynthesis of sterols and contributes to resistance against azole antifungal drugs. When exposed to azoles, <i>UPC2</i> in <i>C. albicans</i> enhances the expression of ergosterol biosynthesis genes, such as <i>ERG2</i> and <i>ERG11</i>. Increased expression of <i>ERG11</i> leads to reduced susceptibility to azoles by boosting the production of 14α-lanosterol demethylase, the primary target of these antifungal agents. Furthermore, <i>UPC2</i> regulates sterol uptake under anaerobic conditions and manages other adaptations to environmental changes, all of which contribute to azole resistance. Gaining insight into how the <i>UPC2</i> gene contributes to azole resistance is essential for the development of effective strategies in the antifungal drug development process.
+40662146	56	72	Candida albicans	Species
+40662146	73	77	UPC2	Gene
+40662146	90	95	azole	Chemical
+40662146	123	134	Candidiasis	Disease
+40662146	150	166	fungal infection	Disease
+40662146	199	206	Candida	Species
+40662146	227	238	C. albicans	Species
+40662146	275	292	azole medications	Chemical
+40662146	350	357	Candida	Species
+40662146	362	372	infections	Disease
+40662146	434	444	infections	Disease
+40662146	685	689	UPC2	Gene
+40662146	710	715	azole	Chemical
+40662146	746	757	C. albicans	Species
+40662146	778	782	UPC2	Gene
+40662146	847	858	C. albicans	Species
+40662146	884	922	zinc (II)-Cys (6) transcription factor	Gene
+40662146	955	962	sterols	Chemical
+40662146	1001	1006	azole	Chemical
+40662146	1041	1047	azoles	Chemical
+40662146	1052	1056	UPC2	Gene
+40662146	1067	1078	C. albicans	Species
+40662146	1110	1120	ergosterol	Chemical
+40662146	1152	1156	ERG2	Gene
+40662146	1168	1173	ERG11	Gene
+40662146	1206	1211	ERG11	Gene
+40662146	1251	1257	azoles	Chemical
+40662146	1288	1314	14α-lanosterol demethylase	Gene
+40662146	1379	1383	UPC2	Gene
+40662146	1398	1404	sterol	Chemical
+40662146	1522	1527	azole	Chemical
+40662146	1572	1576	UPC2	Gene
+40662146	1601	1606	azole	Chemical
+
+42582296|t|Longer healthy life, but for how many? A stochastic analysis of healthy lifespan inequality.
+42582296|a|Over the past 150 years, life expectancy doubled and healthy life expectancy increased. Expectations reveal nothing about variability, so we present a stochastic analysis to investigate changes over time, age and gender of variation, among individuals, in healthy lifespan, for different levels of country income. To complement health-adjusted life expectancy (HALE) data from the Global Burden of Disease Study, we use a stochastic model to compute the standard deviation of healthy life (SDHL). The model is a finite-state absorbing Markov chain with rewards. It includes stochastic survival, mortality, and loss of good health status. An individual surviving from one age to the next gains, as a "reward," a year of good health. This method provides all the moments of healthy longevity. The mean healthy longevity is exactly the HALE. As a measure of variation, here we focus on the standard deviation of healthy longevity. From 1990 to 2019, HALE increased, with greater increases at younger ages. At the same time, SDHL at younger ages decreased and at older ages increased. The most significant changes at birth occurred in low- and lower-middle-income countries. High- and upper-middle-income countries saw notable increases at old ages. Women generally have longer HALE and higher SDHL, but the overall HALE increase was greater for men. The reduction in SDHL over time suggests that more individuals benefit from increased longevity, particularly in low-income countries closing the gap with high-income countries. However, improvements in healthy survival at older ages appear unevenly distributed among individuals in high-income countries.
+42582296	491	498	Disease	Disease
+42582296	1040	1044	HALE	Disease
+42582296	1114	1118	SDHL	Gene
+42582296	1339	1344	Women	Species
+42582296	1435	1438	men	Species
+42582296	1457	1461	SDHL	Gene
+
+42633377|t|Risk factor assessment and molecular characterization of foot-and-mouth disease virus in buffaloes in Bangladesh.
+42633377|a|Foot-and-mouth disease (FMD) is a major infectious disease of cloven-hoofed animals that causes substantial economic losses. FMD in buffaloes was neglected in the surveillance program, therefore, this study aimed to identify and characterize the FMD virus (FMDV) and determine its associated risk factors in buffaloes in Bangladesh. A total of 150 tissue samples were purposively collected from 16 FMD-suspected buffalo farms, representing a study population of 501 buffaloes across three areas of Bangladesh. The samples were analyzed for FMDV and further tested for the serotypes (O, A, Asia 1) by RT-PCR test. The VP1 gene was sequenced and phylogenetic trees were studied. Epidemiological data were collected through a structured questionnaire. Logistic regression models were used to identify outbreak-associated risk factors. Overall, 29.94% (150/501) FMD prevalence and three serotypes, include O (n = 19), A (n = 7), and Asia 1(n = 4), were identified by RT-PCR. The case fatality, attack, and mortality rates of buffalo calves were 32.91%, 63.2%, and 20.8%, respectively. Potential risk factors identified for FMD in buffaloes including age (calves; AOR:14.07, 95%CI:6.37-31.07), grazing with cattle (yes; AOR:19.09, 95%CI:4.49-81.18), deworming practices (No, AOR:8.71, 95%CI:2.20-34.51), isolation shed (No; AOR:5.82, 95%CI:1.41-23.95), and grazing area (bush; AOR:20.78, 95%CI:5.07-85.12). Phylogenetic analysis of serotype O revealed a 95% sequence similarity with recent isolates from Bhutan and Nepal, while serotype A exhibited a 99% similarity with isolates from India and Bangladesh. Therefore, implementing appropriate control strategies is essential for reducing risk factors and minimizes the occurrence and spread of FMD.
+42633377	57	85	foot-and-mouth disease virus	Species
+42633377	89	98	buffaloes	Species
+42633377	114	136	Foot-and-mouth disease	Disease
+42633377	138	141	FMD	Disease
+42633377	154	172	infectious disease	Disease
+42633377	239	242	FMD	Disease
+42633377	246	255	buffaloes	Species
+42633377	360	369	FMD virus	Species
+42633377	371	375	FMDV	Species
+42633377	422	431	buffaloes	Species
+42633377	512	515	FMD	Disease
+42633377	526	533	buffalo	Species
+42633377	580	589	buffaloes	Species
+42633377	654	658	FMDV	Species
+42633377	731	734	VP1	Gene
+42633377	972	975	FMD	Species
+42633377	1135	1142	buffalo	Species
+42633377	1233	1236	FMD	Disease
+42633377	1240	1249	buffaloes	Species
+42633377	1316	1322	cattle	Species
+42633377	1541	1551	serotype O	Species
+42633377	1853	1856	FMD	Disease
+
+42633083|t|Next-Generation Sequencing (NGS) Utility in Advanced Solid Tumors in Low- and Middle-Income Country (LMIC) Setting.
+42633083|a|Introduction Advancements in DNA sequencing have revolutionized our understanding of cancer biology, enabling comprehensive analysis of genetic alterations driving tumorigenesis. Next-generation sequencing (NGS) is increasingly integrated into oncology practice to identify actionable mutations and personalize therapy. However, its clinical utility in low- and middle-income countries (LMICs), where access to sequencing technologies and targeted treatments remains limited, is not well established. Methods This was a retrospective, single-center cohort study involving adult patients with advanced metastatic solid tumors who underwent NGS testing using either tumor tissue or liquid biopsy (Illumina platform, 560-gene panel, 1000X coverage). The primary endpoint was to evaluate the proportion of patients who received NGS-guided targeted therapy. The secondary endpoint was progression-free survival (PFS) in patients treated based on NGS findings. Data analysis was performed using Microsoft Excel 2016 (Microsoft Corp., Redmond, WA, USA). Results Over an 18-month period (January 2021 to June 2022), 93 patients were included. Genomic alterations were detected in 45% (n=42) of patients. Among these, 33% (n=31) had a potentially actionable mutation with an available targeted therapy or clinical trial option. Despite this, only 19% (n=18) received NGS-directed treatment. Of these, 44% (n=8) achieved a PFS of six months or more. Conclusion NGS can identify clinically relevant mutations in a significant proportion of advanced cancer patients in LMIC settings. However, real-world application is hindered by limited access to targeted therapies and clinical trials. Strategies to improve access and infrastructure are essential to realize the full potential of precision oncology in these regions.
+42633083	53	65	Solid Tumors	Disease
+42633083	201	207	cancer	Disease
+42633083	694	702	patients	Species
+42633083	734	740	tumors	Disease
+42633083	780	785	tumor	Disease
+42633083	918	926	patients	Species
+42633083	1031	1039	patients	Species
+42633083	1227	1235	patients	Species
+42633083	1302	1310	patients	Species
+42633083	1654	1660	cancer	Disease
+42633083	1661	1669	patients	Species
+
+42633466|t|A single-stranded DNA virus replicates in the mitochondria of a marine oomycete.
+42633466|a|A virus with a circular single-stranded DNA genome, HthCRESSV1, was discovered in an oomycete, <i>Halophytophthora thermoambigua</i>, isolated from brackish waters off the Algarve coast in southern Portugal. Phylogenetic analyses place this virus outside of all currently classified families within the phylum <i>Cressdnaviricota</i>, suggesting it represents a distinct lineage. Cellular fractionation, mitochondrial marker co-enrichment, and Southern blot analyses indicate that HthCRESSV1 is associated with mitochondria and replicates episomally. The virus is stably transmitted through zoospores and is associated with a reduced host mycelial growth. Homologous sequences corresponding to both the replication-associated protein and a membrane-associated hypothetical protein were identified in the mitochondrial genomes of several oomycete species, suggesting recurrent endogenization of HthCRESSV1-like viruses in oomycete mitochondria. Together, these findings expand the known diversity of oomycete-associated DNA viruses, identify mitochondria as an unexpected niche for DNA virus replication, and highlight marine environments as underexplored reservoirs of DNA viruses in stramenopiles.
+42633466	133	143	HthCRESSV1	Gene
+42633466	179	209	Halophytophthora thermoambigua	Species
+42633466	562	572	HthCRESSV1	Gene
+42633466	975	985	HthCRESSV1	Species
+
+42630505|t|Stage-Specific Regulation of Ubiquitination Modifications and Prospects for Targeted Therapy in Triple-Negative Breast Cancer.
+42630505|a|Triple-negative breast cancer (TNBC) is an aggressive subtype of breast cancer characterized by poor clinical outcomes. Owing to the absence of estrogen receptors, progesterone receptors, and Human Epidermal Growth Factor Receptor 2 (HER2) expression, TNBC shows limited responsiveness to conventional endocrine and targeted therapies. This subtype exhibits strong heterogeneity, a high propensity for metastasis, and a tendency to develop acquired drug resistance. Its survival and progression largely rely on non-classical signaling pathways, including Epidermal growth factor receptor (EGFR), Phosphoinositide 3-kinase/Protein Kinase B (PI3K/AKT), and Notch, which collectively impose substantial challenges to clinical management. In recent years, protein post-translational modifications-particularly ubiquitination and ubiquitin-like modifications-have emerged as key mechanisms governing TNBC malignant progression. This review systematically summarizes the stage-specific regulatory roles of ubiquitination during TNBC initiation, progression, and therapeutic resistance. These mechanisms include modulation of tumor stemness, epithelial-mesenchymal transition, DNA damage repair, ferroptosis, and immune evasion through the regulation of critical proteins such as Toll-like receptor 4/Nuclear factor kappa-B (TLR4/NF-κB), Twist family bHLH transcription factor 1 (TWIST1), Poly (ADP-Ribose) Polymerase 1 (PARP1), Programmed death-ligand 1 (PD-L1), and Glutathione Peroxidase 4 (GPX4). In addition, ubiquitin-like modifications (including small ubiquitin-like modifier (SUMOylation), Neural precursor cell expressed developmentally downregulated protein 8 (NEDDylation), and Interferon-stimulated gene (ISGylation)) function synergistically in maintaining genome stability, transcriptional regulation, and immunological processes. Furthermore, this review highlights the translational potential of targeting ubiquitination pathways in TNBC, covering the applications, advantages, and limitations of immune checkpoint inhibitors, Poly ADP-ribose polymerase (PARP) inhibitors, antibody-drug conjugates, and combination treatment strategies. Finally, it outlines future research directions, such as developing a TNBC-specific ubiquitinome landscape, creating highly selective E3 ligase or deubiquitinase inhibitors, and integrating multi-omics with artificial intelligence technologies. These advances are expected to provide a theoretical foundation and translational insights for precision interventions targeting protein homeostasis in TNBC.
+42630505	96	125	Triple-Negative Breast Cancer	Disease
+42630505	127	156	Triple-negative breast cancer	Disease
+42630505	158	162	TNBC	Disease
+42630505	192	205	breast cancer	Disease
+42630505	271	289	estrogen receptors	Gene
+42630505	291	313	progesterone receptors	Gene
+42630505	319	359	Human Epidermal Growth Factor Receptor 2	Gene
+42630505	361	365	HER2	Gene
+42630505	379	383	TNBC	Disease
+42630505	529	539	metastasis	Disease
+42630505	682	714	Epidermal growth factor receptor	Gene
+42630505	716	720	EGFR	Gene
+42630505	723	748	Phosphoinositide 3-kinase	Gene
+42630505	749	765	Protein Kinase B	Gene
+42630505	767	771	PI3K	Gene
+42630505	772	775	AKT	Gene
+42630505	782	787	Notch	Gene
+42630505	952	961	ubiquitin	Gene
+42630505	1022	1026	TNBC	Disease
+42630505	1149	1153	TNBC	Disease
+42630505	1246	1251	tumor	Disease
+42630505	1400	1420	Toll-like receptor 4	Gene
+42630505	1421	1443	Nuclear factor kappa-B	Gene
+42630505	1445	1449	TLR4	Gene
+42630505	1450	1455	NF-κB	Gene
+42630505	1458	1498	Twist family bHLH transcription factor 1	Gene
+42630505	1500	1506	TWIST1	Gene
+42630505	1509	1539	Poly (ADP-Ribose) Polymerase 1	Gene
+42630505	1541	1546	PARP1	Gene
+42630505	1549	1574	Programmed death-ligand 1	Gene
+42630505	1576	1581	PD-L1	Gene
+42630505	1588	1612	Glutathione Peroxidase 4	Gene
+42630505	1614	1618	GPX4	Gene
+42630505	1634	1643	ubiquitin	Gene
+42630505	1674	1703	small ubiquitin-like modifier	Gene
+42630505	1719	1790	Neural precursor cell expressed developmentally downregulated protein 8	Gene
+42630505	1792	1803	NEDDylation	Gene
+42630505	1810	1836	Interferon-stimulated gene	Gene
+42630505	1838	1848	ISGylation	Gene
+42630505	2070	2074	TNBC	Disease
+42630505	2164	2190	Poly ADP-ribose polymerase	Gene
+42630505	2192	2196	PARP	Gene
+42630505	2344	2348	TNBC	Disease
+42630505	2408	2417	E3 ligase	Gene
+42630505	2671	2675	TNBC	Disease
+
+42500343|t|Assessment of Oxidative Stress Levels in Women with Different Phenotypes of Polycystic Ovary Syndrome and its Correlation with Lipid and Hormonal Profile.
+42500343|a|Polycystic ovary syndrome (PCOS) is an endocrine-metabolic disorder and one of the leading causes of infertility in women. The hallmarks of PCOS include polycystic ovaries, hyperandrogenism, and anovulation. Oxidative stress (OS) is blamed to be an intriguing factor in developing metabolic syndromes. The present study recruited 141 PCOS cases, and 137 control women to determine serum OS levels and their correlation with lipid and hormonal profile. Student's t-test, chi-square, Pearson correlation, multiple comparison analysis, and receiver operating characteristic (ROC) curve were used to calculate the significance of the study. PCOS women had significantly increased levels of triglycerides, VLDL, total testosterone, LH, MDA, TOS, and OSI (<i>p</i> < 0.05). Levels of TAC were significantly lower in cases and showed a negative correlation with lipid profile, WHR, and total testosterone, while LH had a positive correlation. A positive correlation of MDA, TOS, and OSI levels was observed with BMI, WHR, hyperandrogenism, and lipid profile. Among all 4 phenotypes of PCOS, phenotype C had the lowest OS, followed by phenotype D and then phenotypes A and B. The ROC curve demonstrated that MDA had statistically significant diagnostic efficiency with the cut-off value of 2.9 umol/L (<i>p</i> < 0.05). The present study concluded that PCOS women with ovulatory dysfunction had more OS, indicating the role of OS in anovulation. Hyperandrogenism, obesity, and dyslipidemia were significantly correlated with increased OS and reduced antioxidant levels, revealing the relationship between clinical features of PCOS and OS.
+42500343	41	46	Women	Species
+42500343	76	101	Polycystic Ovary Syndrome	Disease
+42500343	127	132	Lipid	Chemical
+42500343	137	145	Hormonal	Chemical
+42500343	155	180	Polycystic ovary syndrome	Disease
+42500343	182	186	PCOS	Disease
+42500343	194	222	endocrine-metabolic disorder	Disease
+42500343	256	267	infertility	Disease
+42500343	271	276	women	Species
+42500343	295	299	PCOS	Disease
+42500343	308	326	polycystic ovaries	Disease
+42500343	328	344	hyperandrogenism	Disease
+42500343	350	361	anovulation	Disease
+42500343	436	455	metabolic syndromes	Disease
+42500343	489	493	PCOS	Disease
+42500343	517	522	women	Species
+42500343	542	544	OS	Chemical
+42500343	579	584	lipid	Chemical
+42500343	792	796	PCOS	Disease
+42500343	797	802	women	Species
+42500343	841	854	triglycerides	Chemical
+42500343	868	880	testosterone	Chemical
+42500343	882	884	LH	Gene
+42500343	886	889	MDA	Chemical
+42500343	891	894	TOS	Chemical
+42500343	900	903	OSI	Chemical
+42500343	933	936	TAC	Chemical
+42500343	1010	1015	lipid	Chemical
+42500343	1040	1052	testosterone	Chemical
+42500343	1060	1062	LH	Gene
+42500343	1117	1120	MDA	Chemical
+42500343	1122	1125	TOS	Chemical
+42500343	1131	1134	OSI	Gene
+42500343	1170	1186	hyperandrogenism	Disease
+42500343	1192	1197	lipid	Chemical
+42500343	1233	1237	PCOS	Disease
+42500343	1355	1358	MDA	Chemical
+42500343	1500	1504	PCOS	Disease
+42500343	1505	1510	women	Species
+42500343	1547	1549	OS	Disease
+42500343	1574	1576	OS	Disease
+42500343	1580	1591	anovulation	Disease
+42500343	1593	1609	Hyperandrogenism	Disease
+42500343	1611	1618	obesity	Disease
+42500343	1624	1636	dyslipidemia	Disease
+42500343	1682	1684	OS	Disease
+42500343	1773	1777	PCOS	Disease
+42500343	1782	1784	OS	Disease
+
+42630256|t|Anticonvulsant effects, safety, and sex-dependent molecular signatures of cannabidiol treatment in a preclinical model of audiogenic epilepsy.
+42630256|a|Roughly one-third of patients with epilepsy remain drug resistant, underscoring the need for novel therapeutic strategies. Although cannabidiol (CBD) has recently been approved for specific epileptic encephalopathies, its anticonvulsant mechanisms and the influence of biological sex on treatment response remain incompletely understood. In this preclinical study, we evaluated the efficacy, tolerability, pharmacokinetics, and molecular effects of CBD in the GASH/Sal hamster, a genetic model of audiogenic generalized tonic-clonic seizures. Animals received intraperitoneal CBD (200 mg/kg) either acutely or chronically for 14 days. CBD concentrations were measured in serum and brain, while seizure severity, latency, and neuroethological parameters were assessed following acoustic seizure induction. Safety was evaluated through body weight, hematological, and biochemical analyses, and gene expression profiling was performed in the inferior colliculus, the primary epileptogenic focus. CBD achieved measurable systemic and brain exposure after both acute and chronic administration, despite substantial inter-individual variability and no significant sex differences in drug concentrations. CBD reduced audiogenic seizure severity in a time-dependent manner, with greater protection after chronic treatment. CBD also prolonged latency to seizure onset in both sexes (earlier in females). Although complete seizure suppression was more frequent in females than males (37.5% vs. 12.5% after chronic treatment), direct sex comparisons did not reach statistical significance. Notably, higher serum and brain CBD concentrations were associated with lower seizure severity. Chronic CBD administration was well tolerated in both sexes, affecting selected hematological parameters without altering body weight or liver function. Gene expression profiling revealed that transcriptional organization of the inferior colliculus was driven predominantly by biological sex rather than by seizure induction or CBD treatment. Marked sex-dependent differences were observed in serotonergic, endocannabinoid, purinergic, and Sigmar1-related neuroprotective pathways. Within this molecular context, seizure stimulation modulated <i>Trpv1</i> and <i>Slc29a1</i>, whereas chronic CBD induced pathway-specific, sex-dependent changes involving <i>5-Htr1a</i>, <i>Adora1</i>, and <i>Cnr1</i>, without eliciting widespread transcriptional remodeling. Collectively, these findings identify CBD as a well-tolerated anticonvulsant in the GASH/Sal model and suggest that pharmacokinetic exposure and the sex-specific molecular organization of the epileptogenic focus contribute to variability in treatment response, highlighting the importance of considering biological sex in cannabinoid-based epilepsy research.
+42630256	74	85	cannabidiol	Chemical
+42630256	122	141	audiogenic epilepsy	Disease
+42630256	164	172	patients	Species
+42630256	178	186	epilepsy	Disease
+42630256	275	286	cannabidiol	Chemical
+42630256	288	291	CBD	Chemical
+42630256	333	359	epileptic encephalopathies	Disease
+42630256	592	595	CBD	Chemical
+42630256	612	619	hamster	Species
+42630256	663	684	tonic-clonic seizures	Disease
+42630256	719	722	CBD	Chemical
+42630256	778	781	CBD	Chemical
+42630256	837	844	seizure	Disease
+42630256	929	936	seizure	Disease
+42630256	1136	1139	CBD	Chemical
+42630256	1341	1344	CBD	Chemical
+42630256	1353	1371	audiogenic seizure	Disease
+42630256	1458	1461	CBD	Chemical
+42630256	1488	1495	seizure	Disease
+42630256	1556	1563	seizure	Disease
+42630256	1754	1757	CBD	Chemical
+42630256	1800	1807	seizure	Disease
+42630256	1826	1829	CBD	Chemical
+42630256	2125	2132	seizure	Disease
+42630256	2146	2149	CBD	Chemical
+42630256	2225	2240	endocannabinoid	Chemical
+42630256	2258	2265	Sigmar1	Gene
+42630256	2331	2338	seizure	Disease
+42630256	2364	2369	Trpv1	Gene
+42630256	2381	2388	Slc29a1	Gene
+42630256	2410	2413	CBD	Chemical
+42630256	2477	2482	Htr1a	Gene
+42630256	2491	2497	Adora1	Gene
+42630256	2510	2514	Cnr1	Gene
+42630256	2615	2618	CBD	Chemical
+42630256	2666	2669	Sal	Chemical
+42630256	2899	2910	cannabinoid	Chemical
+42630256	2917	2925	epilepsy	Disease
+
+42633403|t|Systems-level analysis of 1,6-hexanediol stress response and tolerance engineering in <i>Escherichia coli</i>.
+42633403|a|1,6-Hexanediol (1,6-HDO) is an important chemical platform widely used in polymer and pharmaceutical industries, while its toxicity remains a major bottleneck limiting efficient microbial production. This study demonstrates that 1,6-HDO exhibited strong inhibitory effects on <i>Escherichia coli</i>, reducing the maximum OD<sub>600</sub> to approximately 50% of the control level under 10 g/L stress. Transcriptomic analysis was performed under 1,6-HDO stress, identifying 779 differentially expressed genes enriched in pathways related to energy metabolism, sulfur metabolism and amino acid metabolism. To systematically identify functional targets associated with tolerance, genome-wide screening using the ASKA overexpression library identified 93 tolerance-related genes that improved <i>E. coli</i> growth under 1,6-HDO stress by 0.06- to 3.17-fold. Notably, multiple targets were functionally associated with energy and amino acid metabolism, consistent with the transcriptomic analysis. Furthermore, co-expression of <i>rumA</i> and <i>yhbO</i> showed the greatest improvement in growth, reaching a biomass of 9.43 under 1,6-HDO stress, which was 2.61-fold higher than that of the control strain. Collectively, this study systematically elucidates the global stress response and identifies key determinants contributing to tolerance, providing valuable targets for developing robust microbial cell factories for efficient 1,6-HDO bioproduction.
+42633403	26	40	1,6-hexanediol	Chemical
+42633403	89	105	Escherichia coli	Species
+42633403	111	125	1,6-Hexanediol	Chemical
+42633403	127	134	1,6-HDO	Chemical
+42633403	185	192	polymer	Chemical
+42633403	234	242	toxicity	Disease
+42633403	340	347	1,6-HDO	Chemical
+42633403	390	406	Escherichia coli	Species
+42633403	557	564	1,6-HDO	Chemical
+42633403	671	677	sulfur	Chemical
+42633403	693	703	amino acid	Chemical
+42633403	904	911	E. coli	Species
+42633403	929	936	1,6-HDO	Chemical
+42633403	1240	1247	1,6-HDO	Chemical
+42633403	1541	1548	1,6-HDO	Chemical
+
+40949928|t|<i>MedGraphNet</i>: Leveraging Multi-Relational Graph Neural Networks and Text Knowledge for Biomedical Predictions.
+40949928|a|Genetic, molecular, and environmental factors influence diseases through complex interactions with genes, phenotypes, and drugs. Current methods often fail to integrate diverse multi-relational biological data meaningfully, limiting the discovery of novel risk genes and drugs. To address this, we present <i>MedGraphNet</i>, a multi-relational Graph Neural Network (GNN) model designed to infer relationships among drugs, genes, diseases, and phenotypes. <i>MedGraphNet</i> initializes nodes using informative embeddings from existing text knowledge, allowing for robust integration of various data types and improved generalizability. Our results demonstrate that <i>MedGraphNet</i> matches and often outperforms traditional single-relation approaches, particularly in scenarios with isolated or sparsely connected nodes. The model shows generalizability to external datasets, achieving high accuracy in identifying disease-gene associations and drug-phenotype relationships. Notably, <i>MedGraphNet</i> accurately inferred drug side effects without direct training on such data. Using Alzheimer's disease as a case study, <i>MedGraphNet</i> successfully identified relevant phenotypes, genes, and drugs, corroborated by existing literature. These findings demonstrate the potential of integrating multi-relational data with text knowledge to enhance biomedical predictions and drug repurposing for diseases. <i>MedGraphNet</i> code is available at https://github.com/vinash85/MedGraphNet.
+40949928	1205	1224	Alzheimer's disease	Disease
+
+42631261|t|A Novel Homozygous <i>ATP7B</i> Splice-Site Variant Causes Late-Onset Hepatic Wilson Disease.
+42631261|a|Wilson disease (WD) is a rare disorder that may be missed because of atypical presentations. We present a 47-year-old asymptomatic man who was incidentally discovered to have hepatic steatosis and cirrhosis without features of the metabolic syndrome and with normal physical examination and liver function tests. Very low ceruloplasmin and high urine copper prompted evaluation for WD. He had no Kayser-Fleischer rings. Genetic testing revealed a novel homozygous splice-site <i>ATP7B</i> variant (NM_000053.2:c.1707+2dupT p.(?)), the first reported case of homozygosity for this mutation. This case highlights the importance of considering WD in patients with unexplained hepatic steatosis and cryptogenic cirrhosis.
+42631261	22	27	ATP7B	Gene
+42631261	70	92	Hepatic Wilson Disease	Disease
+42631261	94	108	Wilson disease	Disease
+42631261	110	112	WD	Disease
+42631261	225	228	man	Species
+42631261	269	286	hepatic steatosis	Disease
+42631261	291	300	cirrhosis	Disease
+42631261	325	343	metabolic syndrome	Disease
+42631261	416	429	ceruloplasmin	Gene
+42631261	445	451	copper	Chemical
+42631261	476	478	WD	Disease
+42631261	490	506	Kayser-Fleischer	Disease
+42631261	573	578	ATP7B	Gene
+42631261	604	616	c.1707+2dupT	Variant
+42631261	617	622	p.(?)	Variant
+42631261	735	737	WD	Disease
+42631261	741	749	patients	Species
+42631261	767	784	hepatic steatosis	Disease
+42631261	789	810	cryptogenic cirrhosis	Disease
+
+42632595|t|Disease-Modifying Antirheumatic Drugs for Hand Osteoarthritis: A Systematic Review and Network Meta-analysis.
+42632595|a|To compare the symptomatic efficacy, safety, and exploratory structural evidence of disease-modifying antirheumatic drug therapies in patients with hand osteoarthritis, with particular attention to inflammatory and erosive phenotypes. We searched PubMed, Web of Science, Embase, the Cochrane Library, ClinicalTrials.gov, and the Chinese Clinical Trial Registry from inception to 12 March 2026 for randomized controlled trials evaluating disease-modifying antirheumatic drug therapies in hand osteoarthritis. Eligible trials included patients with general, inflammatory, erosive, or thumb-base hand osteoarthritis, while studies involving rheumatoid arthritis or other inflammatory arthritides were excluded. Interventions were classified as conventional synthetic or biologic disease-modifying antirheumatic drugs. Pain intensity and hand function were considered primary clinical outcomes. Inflammatory symptom-related outcomes, including swollen and painful joint counts and stiffness, were analysed separately. Treatment-emergent adverse events and serious adverse events were primary safety outcomes, while imaging and biomarker outcomes were treated as exploratory evidence related to potential structural disease modification. A frequentist network meta-analysis was performed. Continuous outcomes were summarized as standardized mean differences and dichotomous outcomes as odds ratios, both with 95% confidence intervals. Twelve randomized controlled trials involving 1317 participants and seven active disease-modifying antirheumatic drug therapies were included. Methotrexate and hydroxychloroquine were classified as conventional synthetic disease-modifying antirheumatic drugs, whereas adalimumab, etanercept, tocilizumab, lutikizumab, and otilimab were classified as biologic disease-modifying antirheumatic drugs. No eligible trial of a targeted synthetic disease-modifying antirheumatic drug was identified. For pain intensity outcomes, etanercept and tocilizumab were associated with lower long-term visual analogue scale pain than placebo, whereas no intervention showed consistent improvement in hand function. For inflammatory symptom-related outcomes, tocilizumab showed a short-term reduction in painful and swollen joint counts, and adalimumab reduced swollen joint counts in some analyses. However, these findings were outcome-specific, time-dependent, and largely based on sparse, placebo-centred networks. No clear differences were detected in overall treatment-emergent adverse events or serious adverse events, but safety evidence was limited by small sample sizes, short exposure durations, and inconsistent adverse-event reporting. Imaging and biomarker outcomes were heterogeneous and insufficient for quantitative synthesis across most endpoints. Current randomized evidence does not support the routine use of disease-modifying antirheumatic drugs for hand osteoarthritis. Selected biologic agents showed limited symptomatic signals, particularly in pain or inflammatory joint outcomes, but these findings should not be interpreted as evidence of disease modification. Structural and biomarker evidence remains exploratory and insufficient. Future trials should focus on phenotype-enriched hand osteoarthritis populations and use standardized clinical, imaging, biomarker, and safety outcomes. Level I, therapeutic studies. PROSPERO CRD420261353132.
+42632595	42	61	Hand Osteoarthritis	Disease
+42632595	244	252	patients	Species
+42632595	258	277	hand osteoarthritis	Disease
+42632595	308	320	inflammatory	Disease
+42632595	602	616	osteoarthritis	Disease
+42632595	643	651	patients	Species
+42632595	692	722	thumb-base hand osteoarthritis	Disease
+42632595	748	768	rheumatoid arthritis	Disease
+42632595	778	790	inflammatory	Disease
+42632595	791	802	arthritides	Disease
+42632595	925	929	Pain	Disease
+42632595	1062	1069	painful	Disease
+42632595	1087	1096	stiffness	Disease
+42632595	1683	1695	Methotrexate	Chemical
+42632595	1700	1718	hydroxychloroquine	Chemical
+42632595	1808	1818	adalimumab	Chemical
+42632595	1820	1830	etanercept	Chemical
+42632595	1832	1843	tocilizumab	Chemical
+42632595	1845	1856	lutikizumab	Chemical
+42632595	1862	1870	otilimab	Chemical
+42632595	2037	2041	pain	Disease
+42632595	2062	2072	etanercept	Chemical
+42632595	2077	2088	tocilizumab	Chemical
+42632595	2148	2152	pain	Disease
+42632595	2243	2255	inflammatory	Disease
+42632595	2282	2293	tocilizumab	Chemical
+42632595	2365	2375	adalimumab	Chemical
+42632595	2994	3013	hand osteoarthritis	Disease
+42632595	3092	3096	pain	Disease
+42632595	3100	3112	inflammatory	Disease
+42632595	3337	3351	osteoarthritis	Disease
+
+42633081|t|Multiomic Investigation of Shared Genetic Pathways in Paediatric Congenital Heart Disease and Neurodevelopmental Disorders.
+42633081|a|Recent medical advances have significantly improved the life expectancy of individuals with congenital heart disease (CHD); however, these children remain at increased risk of co-occurring neurodevelopmental disorders (NDD), such as attention-deficit/hyperactivity disorder and autism spectrum disorder. Although prenatal environmental factors, including placental dysfunction and altered oxygen levels in utero, as well as postnatal events such as cardiac surgery, may contribute to this increased risk, shared genetic factors may also underlie both conditions. Therefore, this study is aimed at investigating genomic, transcriptomic and epigenomic findings in patients with NDD and/or CHD using an integrative multiomic approach. A cohort of 14 trios and one duo was recruited: Two probands had both NDD and CHD, two had CHD only and 11 had NDD only. Blood samples were analysed using whole-genome sequencing, RNA sequencing and DNA methylation profiling. We identified one large deletion (~2.5 Mb) and seven likely pathogenic/pathogenic (LP/P) variants, including two in autosomal dominant genes relevant to the patients' phenotypes and five in autosomal recessive genes consistent with carrier status. This included a likely pathogenic de novo splice-disrupting variant in the chromatin remodelling gene <i>ARID1B</i>, validated by RNA sequencing. DNA methylation analysis revealed epigenetic differences between CHD and NDD patients, with CHD patients showing elevated biological age acceleration. Comparison with a reference cohort of 178 controls identified four probands with extreme methylation dysregulation, including the individual with the <i>ARID1B</i> variant. Overall, these findings highlight the diagnostic and mechanistic value of integrative multiomic profiling in paediatric developmental disease cohorts.
+42633081	65	89	Congenital Heart Disease	Disease
+42633081	94	122	Neurodevelopmental Disorders	Disease
+42633081	216	240	congenital heart disease	Disease
+42633081	242	245	CHD	Disease
+42633081	313	341	neurodevelopmental disorders	Disease
+42633081	343	346	NDD	Disease
+42633081	357	397	attention-deficit/hyperactivity disorder	Disease
+42633081	402	426	autism spectrum disorder	Disease
+42633081	479	488	placental	Disease
+42633081	513	519	oxygen	Chemical
+42633081	786	794	patients	Species
+42633081	800	803	NDD	Disease
+42633081	811	814	CHD	Disease
+42633081	926	929	NDD	Disease
+42633081	934	937	CHD	Disease
+42633081	947	950	CHD	Disease
+42633081	967	970	NDD	Disease
+42633081	1165	1169	LP/P	Disease
+42633081	1239	1247	patients	Species
+42633081	1435	1441	ARID1B	Gene
+42633081	1541	1544	CHD	Disease
+42633081	1549	1552	NDD	Disease
+42633081	1553	1561	patients	Species
+42633081	1568	1571	CHD	Disease
+42633081	1572	1580	patients	Species
+42633081	1780	1786	ARID1B	Gene
+42633081	1920	1941	developmental disease	Disease
+
+41451023|t|Exploring acenocoumarol and silodosin in non-small cell lung cancer: Insights into EGFR-linked signaling mechanisms.
+41451023|a|Non-small-cell lung cancer (NSCLC) is a highly morbid disease. Chemotherapy for NSCLC lacks specificity and efficacy mainly because of drug resistance. The current study aimed to explore computational tools to target allosteric epidermal growth factor receptor (EGFR) sites and screen for the top molecules <i>in vitro</i> and <i>in vivo</i> xenograft models. Molecular docking, virtual screening, and molecular dynamic studies revealed that acenocoumarol and silodosin are the top two allosteric EGFR inhibitors. They were further tested for cytotoxicity, apoptosis, cell cycle, and gene expression by qPCR, western blotting, A549 cell xenograft anti-proliferative activity, and tumor regression efficacy analysis. Acenocoumarol and silodosin exhibited cytotoxicity in A549 and IMR-90 cells at concentrations below 50 and 80 μM, respectively. Acenocoumarol and silodosin induced S-phase and G2/M-phase arrest in A549 cells in the cell cycle analysis. Both drugs showed early apoptosis at their IC <sub>50</sub> doses (acenocoumarol 50 μM and silodosin 25 μM). KRAS (Kirsten rat sarcoma viral oncogene homolog) and ERK2 (extracellular signal-regulated kinase 2) gene regulation in A549 cells was confirmed using qPCR. KRAS and ERK2 activities were quantified by western blot analysis. In the xenograft study, tumor size, body weight, and organ weight were significantly attenuated by the test drugs compared with the standard cisplatin. Immunoblotting and western blot results of the A549-xenograft tissue indicated downregulation of KRAS and ERK2. Furthermore, the test drugs have upregulated caspase-3 gene expression. The drugs acenocoumarol and silodosin downregulate KRAS and ERK2 in both A549 cell lines and Xenograft model. KRAS and ERK2 are components of EGFR-associated signaling pathways. Hence, acenocoumarol and silodosin can be further explored as repurposed candidates in future preclinical and clinical studies.
+41451023	10	23	acenocoumarol	Chemical
+41451023	28	37	silodosin	Chemical
+41451023	41	67	non-small cell lung cancer	Disease
+41451023	83	87	EGFR	Gene
+41451023	117	143	Non-small-cell lung cancer	Disease
+41451023	145	150	NSCLC	Disease
+41451023	197	202	NSCLC	Disease
+41451023	345	377	epidermal growth factor receptor	Gene
+41451023	379	383	EGFR	Gene
+41451023	559	572	acenocoumarol	Chemical
+41451023	577	586	silodosin	Chemical
+41451023	614	618	EGFR	Gene
+41451023	660	672	cytotoxicity	Disease
+41451023	744	748	A549	CellLine
+41451023	797	802	tumor	Disease
+41451023	833	846	Acenocoumarol	Chemical
+41451023	851	860	silodosin	Chemical
+41451023	871	883	cytotoxicity	Disease
+41451023	887	891	A549	CellLine
+41451023	896	902	IMR-90	CellLine
+41451023	961	974	Acenocoumarol	Chemical
+41451023	979	988	silodosin	Chemical
+41451023	1030	1034	A549	CellLine
+41451023	1136	1149	acenocoumarol	Chemical
+41451023	1160	1169	silodosin	Chemical
+41451023	1178	1182	KRAS	Gene
+41451023	1184	1226	Kirsten rat sarcoma viral oncogene homolog	Gene
+41451023	1232	1236	ERK2	Gene
+41451023	1238	1277	extracellular signal-regulated kinase 2	Gene
+41451023	1298	1302	A549	CellLine
+41451023	1335	1339	KRAS	Gene
+41451023	1344	1348	ERK2	Gene
+41451023	1426	1431	tumor	Disease
+41451023	1543	1552	cisplatin	Chemical
+41451023	1601	1605	A549	CellLine
+41451023	1651	1655	KRAS	Gene
+41451023	1660	1664	ERK2	Gene
+41451023	1711	1720	caspase-3	Gene
+41451023	1748	1761	acenocoumarol	Chemical
+41451023	1766	1775	silodosin	Chemical
+41451023	1789	1793	KRAS	Gene
+41451023	1798	1802	ERK2	Gene
+41451023	1811	1815	A549	CellLine
+41451023	1848	1852	KRAS	Gene
+41451023	1857	1861	ERK2	Gene
+41451023	1880	1884	EGFR	Gene
+41451023	1923	1936	acenocoumarol	Chemical
+41451023	1941	1950	silodosin	Chemical
+
+42625940|t|Isolation, Molecular Characterization, and Antibacterial Activity of Actinomycetes Associated With Horsemint (<i>Mentha longifolia</i>).
+42625940|a|Actinomycetes, renowned for their antibiotic-producing capabilities, represent a promising avenue for the discovery of novel antimicrobial agents, especially amid the global challenge of antibiotic resistance. This study explored the endophytic actinomycetes associated with horsemint (<i>Mentha longifolia</i>), a medicinal plant known for its antimicrobial properties, to uncover potential sources of novel antibiotics. Actinomycetes were isolated from horsemint samples collected in Ilam Province, Iran. Forty isolates were identified based on morphological and molecular analyses, including <i>16S rRNA</i> gene amplification. Antibacterial activity was evaluated against clinically relevant pathogens, including ESKAPE bacteria. Six isolates exhibited significant inhibitory effects, particularly against <i>Pseudomonas aeruginosa</i> and <i>Klebsiella pneumoniae</i>, with some also active against <i>Staphylococcus aureus</i>. Further analysis revealed the presence of biosynthetic gene clusters (BGCs), including non-ribosomal peptide synthetases (<i>NRPS</i>) and polyketide synthases (<i>PKS-I</i> and <i>PKS-II</i>), in several isolates. Notably, strains such as <i>T35</i> and <i>T37</i> harbored all three gene types and demonstrated broad-spectrum antibacterial activity. Strain <i>B22</i>, containing the <i>NRPS</i> gene, showed significant inhibition of both drug-resistant and drug-sensitive pathogens. However, some isolates with BGCs exhibited no antibacterial activity, suggesting that gene expression and metabolite production are influenced by regulatory or environmental factors. This study highlights the untapped potential of <i>M. longifolia</i>-associated Actinomycetes as a source of bioactive compounds. The discovery of strains with robust antibacterial activity underscores their value in addressing the urgent need for new antimicrobial agents, especially in combating antibiotic resistance. These findings also emphasize the importance of plant-microbe interactions in natural product biosynthesis. Future work should focus on optimizing conditions for activating silent gene clusters and further characterizing the therapeutic potential of these bioactive compounds.
+42625940	99	108	Horsemint	Species
+42625940	113	130	Mentha longifolia	Species
+42625940	412	421	horsemint	Species
+42625940	426	443	Mentha longifolia	Species
+42625940	592	601	horsemint	Species
+42625940	854	869	ESKAPE bacteria	Species
+42625940	950	972	Pseudomonas aeruginosa	Species
+42625940	984	1005	Klebsiella pneumoniae	Species
+42625940	1044	1065	Staphylococcus aureus	Species
+42625940	1221	1230	synthases	Gene
+42625940	1235	1240	PKS-I	Gene
+42625940	1255	1258	-II	Gene
+42625940	1586	1590	BGCs	Disease
+42625940	1792	1805	M. longifolia	Species
+
+42633474|t|When Hemiplegic Migraine Defies Expectations: Diagnostic Complexity in a Rare Genetic Disorder.
+42633474|a|Familial hemiplegic migraine (FHM) is a rare and complex inherited subtype of migraine with aura, characterised by migraine with a reversible motor aura, and may present with a wide spectrum of neurological symptoms, making diagnosis particularly challenging. We report a case of FHM presenting with prolonged hemiparesis, severe headache, altered consciousness, and fever. This constellation of symptoms initially suggested acute stroke, encephalitis, or status epilepticus. A precise clinical history and targeted genetic testing (CACNA1A, ATP1A2, SCN1A, and PRRT2) proved essential for establishing the diagnosis. This case highlights the wide phenotypic variability of FHM and the risk of misdiagnosis in emergency settings. Early recognition through careful clinical assessment and appropriate genetic testing enabled appropriate management and avoided unnecessary interventions.
+42633474	5	31	Hemiplegic Migraine Defies	Disease
+42633474	73	94	Rare Genetic Disorder	Disease
+42633474	96	124	Familial hemiplegic migraine	Disease
+42633474	126	129	FHM	Disease
+42633474	174	192	migraine with aura	Disease
+42633474	211	248	migraine with a reversible motor aura	Disease
+42633474	376	379	FHM	Disease
+42633474	406	417	hemiparesis	Disease
+42633474	426	434	headache	Disease
+42633474	436	457	altered consciousness	Disease
+42633474	463	468	fever	Disease
+42633474	521	533	acute stroke	Disease
+42633474	535	547	encephalitis	Disease
+42633474	552	570	status epilepticus	Disease
+42633474	629	636	CACNA1A	Gene
+42633474	638	644	ATP1A2	Gene
+42633474	646	651	SCN1A	Gene
+42633474	657	662	PRRT2	Gene
+42633474	769	772	FHM	Disease
+
+41834939|t|Secretion of IL-6 and TGF-β2 by Colon Cancer Cells May Promote Resistance to Chemotherapy.
+41834939|a|Colon rectal cancer still stands as the third most common form of cancer worldwide. 90% of colorectal cancer failure is attributed to the development of chemoresistance. In this study, we have investigated the influence of chemokine IL-6 and growth factor TGF-β2 on dox resistance development. HT-29 (benign, Duke's stage B, colon adenocarcinoma with smad4 mutation) and Colo205 (metastatic, Duke's stage C, colon adenocarcinoma with smad4 mutation) were treated with increasing concentrations of doxorubicin for 7-days to induce resistance in the presence or absence of TGF-β2 ligand. The media after each treatment was collected and the level of secretory IL-6 was evaluated through ELISA. The media was concentrated, and isoforms of TGF-β2 were immunoprecipitated. We report that over the 7-day treatment period, an increase in IL-6 expression was observed upon treatment and the expression pattern varied based on the cancer stage. Similarly, differently expressed glycosylated forms of TGF-β2 secretion was observed with Colo205 cells while only low glycosylated form was observed in HT-29 cell line. Further analysis into the molecular mechanism could shed light on the possible role of IL-6 and TGF-β2 secretion as molecular markers for resistance development in colon cancer cells.
+41834939	13	17	IL-6	Gene
+41834939	22	28	TGF-β2	Gene
+41834939	32	44	Colon Cancer	Disease
+41834939	91	110	Colon rectal cancer	Disease
+41834939	157	163	cancer	Disease
+41834939	182	199	colorectal cancer	Disease
+41834939	324	328	IL-6	Gene
+41834939	347	353	TGF-β2	Gene
+41834939	357	360	dox	Chemical
+41834939	385	390	HT-29	CellLine
+41834939	416	436	colon adenocarcinoma	Disease
+41834939	442	447	smad4	Gene
+41834939	462	469	Colo205	CellLine
+41834939	499	519	colon adenocarcinoma	Disease
+41834939	525	530	smad4	Gene
+41834939	588	599	doxorubicin	Chemical
+41834939	662	675	TGF-β2 ligand	Gene
+41834939	749	753	IL-6	Gene
+41834939	827	833	TGF-β2	Gene
+41834939	922	926	IL-6	Gene
+41834939	1013	1019	cancer	Disease
+41834939	1082	1088	TGF-β2	Gene
+41834939	1117	1124	Colo205	CellLine
+41834939	1180	1185	HT-29	CellLine
+41834939	1284	1288	IL-6	Gene
+41834939	1293	1299	TGF-β2	Gene
+41834939	1361	1373	colon cancer	Disease
+
+41834934|t|Association of rs12826786 and rs1899663, Long Non-coding RNA <i>HOTAIR</i> Polymorphic Variants, with Susceptibility to Rheumatoid Arthritis Disease.
+41834934|a|The most prevalent inflammatory arthropathy in the world is rheumatoid arthritis (RA). An essential part of the pathogenesis of RA involves autoimmune responses. Variants in lncRNAs may have an impact on the course and/or result of a disease and may have diagnostic or prognostic significance. Our study looked into the connection of rs12826786 and rs1899663 polymorphisms of <i>HOX antisense RNA (HOTAIR)</i> transcript with genetic susceptibility to RA. The study involved 300 participants in total, 150 of them were RA patients and the remaining 150 were healthy controls. Using tetra primer ARMS-PCR, the <i>HOTAIR</i> polymorphisms rs12826786 and rs1899663 were detected. More observations of the T allele of rs1899663 and the C allele of rs12826786 were made in the study group compared to the control group. The <i>HOTAIR</i> rs12826786 variant displayed a significant association with susceptibility to RA in both recessive (OR = 2.45, 95% CI = 1.47-4.09, <i>P</i> = 0.0004) and over-dominant (OR = 0.42, 95% CI = 0.26-0.68, <i>P</i> = 0.0003) models. In addition, the <i>HOTAIR</i> rs1899663 was shown to be linked to RA susceptibility in the co-dominant model (OR = 0.32, 95% CI = 0.17-0.61, <i>P</i> = 0.0004 for GG genotype), dominant model (OR = 0.48, 95% CI = 0.29-0.81, <i>P</i> = 0.005), and recessive model (OR = 0.43, 95% CI = 0.25-0.74, <i>P</i> = 0.001). The CT haplotype is linked to a greater risk of RA, whereas the CG haplotype confers protection against RA. We reported for the first time, <i>HOTAIR</i> rs12826786 and rs1899663 variants are associated with susceptibility to developing RA among the Iranian population. In addition, the CT and CG haplotypes were associated with the risk of RA. Further functional studies are needed to elucidate the role of these variations on <i>HOTAIR</i> expression.
+41834934	15	25	rs12826786	Variant
+41834934	30	39	rs1899663	Variant
+41834934	120	148	Rheumatoid Arthritis Disease	Disease
+41834934	169	193	inflammatory arthropathy	Disease
+41834934	210	230	rheumatoid arthritis	Disease
+41834934	232	234	RA	Disease
+41834934	669	671	RA	Disease
+41834934	672	680	patients	Species
+41834934	787	797	rs12826786	Variant
+41834934	802	811	rs1899663	Variant
+41834934	864	873	rs1899663	Variant
+41834934	894	904	rs12826786	Variant
+41834934	972	978	HOTAIR	Gene
+41834934	983	993	rs12826786	Variant
+41834934	1230	1236	HOTAIR	Gene
+41834934	1573	1575	RA	Disease
+41834934	1629	1631	RA	Disease
+41834934	1668	1674	HOTAIR	Gene
+41834934	1679	1689	rs12826786	Variant
+41834934	1694	1703	rs1899663	Variant
+41834934	1866	1868	RA	Disease
+41834934	1956	1962	HOTAIR	Gene
+
+42147992|t|Monogenic Findings in Early Pregnancy Loss: Whole-Exome Sequencing Study of Euploid Products of Conception.
+42147992|a|Early pregnancy loss (EPL), particularly when recurrent, represents a profoundly distressing experience for affected couples. Although chromosomal abnormalities are the most common cause of EPL, a substantial proportion of cases, especially those involving euploid embryos, remain unexplained. In this study, we investigated the potential contribution of rare monogenic variants to euploid EPL using whole-exome sequencing (WES). WES was performed on 66 euploid products of conceptions (POCs) from EPLs occurring before 12 gestational weeks. A molecular diagnosis with a high level of confidence, defined as the presence of pathogenic or likely pathogenic (P/LP) variant(s) consistent with the expected mode of inheritance, was established in 13/66 POCs (19.7%). These included one large 21q22.12-q22.3 duplication encompassing <i>DYRK1A</i> and <i>RUNX1</i>. P/LP small variants were detected in <i>CPLANE1</i>, <i>DHCR7</i>, <i>DSG2</i>, <i>DVL1</i>, <i>F5</i>, <i>NF1</i>, <i>RBM8A</i>, <i>SLC6A1</i>, and <i>VWF</i>, representing genes with variable degrees of prior association with developmental phenotypes and, in some cases, limited or no evidence for embryonic lethality. In an additional 9/66 POCs (13.6%), findings were suggestive but not conclusive for a monogenic contribution. These included four cases with compound heterozygosity involving a pathogenic variant and a variant of uncertain significance (VUS) in autosomal recessive genes (<i>GBA1</i>, <i>PAH</i>, <i>PKHD1</i>, and <i>RPGRIP1L</i>), as well as five cases harboring single heterozygous VUS in autosomal dominant genes (<i>MYH3</i>, <i>PRDM6</i>, <i>SCN5A</i>, <i>TBX18</i>, and <i>TSC1</i>). The pathogenic relevance of these variants remains uncertain, particularly in the absence of functional validation. The implicated genes were clustered in biological categories: 1) genes plausibly associated with prenatal or early embryonic lethality, 2) genes causing severe congenital disorders not typically considered embryonically lethal, and 3) genes linked to later-onset or susceptibility phenotypes. These observations are consistent with a spectrum model in which highly deleterious variants may act as primary drivers of embryonic demise, whereas variants with reduced penetrance, later-onset associations or uncertain significance may contribute in a multifactorial context, potentially interacting with additional genetic, maternal or environmental factors. In conclusion, our findings suggest that monogenic variants may contribute to a subset of euploid EPL cases, although the strength of evidence varies considerably across detected variants. The integration of WES into the evaluation of recurrent euploid pregnancy loss holds promise but should be interpreted with caution. Further studies incorporating functional analyses, larger cohorts, and parental data are needed to clarify causality and to define the clinical utility of such approaches in genetic counseling, recurrence-risk assessment, and reproductive planning.
+42147992	28	42	Pregnancy Loss	Disease
+42147992	108	113	Early	Disease
+42147992	114	128	pregnancy loss	Disease
+42147992	130	133	EPL	Disease
+42147992	243	268	chromosomal abnormalities	Disease
+42147992	298	301	EPL	Disease
+42147992	498	501	EPL	Disease
+42147992	606	610	EPLs	Disease
+42147992	939	945	DYRK1A	Gene
+42147992	957	962	RUNX1	Gene
+42147992	968	972	P/LP	Gene
+42147992	1008	1015	CPLANE1	Gene
+42147992	1024	1029	DHCR7	Gene
+42147992	1038	1042	DSG2	Gene
+42147992	1051	1055	DVL1	Gene
+42147992	1075	1078	NF1	Gene
+42147992	1087	1092	RBM8A	Gene
+42147992	1101	1107	SLC6A1	Gene
+42147992	1120	1123	VWF	Gene
+42147992	1268	1287	embryonic lethality	Disease
+42147992	1564	1568	GBA1	Gene
+42147992	1589	1594	PKHD1	Gene
+42147992	1607	1615	RPGRIP1L	Gene
+42147992	1710	1714	MYH3	Gene
+42147992	1723	1728	PRDM6	Gene
+42147992	1737	1742	SCN5A	Gene
+42147992	1751	1756	TBX18	Gene
+42147992	1769	1773	TSC1	Gene
+42147992	2011	2030	embryonic lethality	Disease
+42147992	2056	2076	congenital disorders	Disease
+42147992	2102	2122	embryonically lethal	Disease
+42147992	2649	2652	EPL	Disease
+42147992	2804	2818	pregnancy loss	Disease
+
+42500341|t|Association of <i>MT1A</i> rs11640851, rs8052394 and rs11076161 Polymorphisms with the Risk of Developing Breast Cancer: A Haplotype-Based Case-Control Study and in Silico Analysis.
+42500341|a|Metallothionein 1 A (MT1a) is involved in many pathological conditions associated with antioxidant defense and detoxification, including cancer. The aim of this study was to investigate the possible association of <i>MT1A</i> rs11640851, rs8052394, and rs11076161 single nucleotide polymorphisms (SNPs) with the risk of breast cancer (BC) and clinicopathological features. The study included 100 patients with BC and 100 healthy controls. We genotyped the <i>MT1A</i> SNPs using the polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP) and amplification refractory mutation system PCR (ARMS-PCR) techniques. The genotypic and allelic associations of <i>MT1A</i> SNPs with susceptibility to BC were assessed using logistic regression analysis under co-dominant, dominant, and recessive inheritance models. The combined effect of <i>MT1A</i> SNPs on the BC risk was determined using the haplotype analysis. In silico analysis was performed using the Polyphen-2 and RNAsnp online servers. The rs11640851 was found to be associated with a reduced risk of BC in all three inheritance models (<i>P</i> < 0.05). We also found that rs11640851 A allele has a protective effect against BC (OR: 4.81; 95% CI: 2.65-8.72; <i>P</i> < 0.0001). For rs8052394/rs11076161, carriers of AG/AA combined genotype had a 3.84-fold increased risk for developing BC. Also, the haplotypes CAC and CGA (rs1164085, rs8052394, rs11076161) were significantly associated with BC susceptibility. The rs11640851 was predicted to be detrimental using Polyphen-2 server. This study provides the first evidence that rs11640851 is significantly associated with a reduced risk of BC suggesting its protective role in the development of BC. Two haplotypes CAC and CGA were also identified as risk factors for BC. The online version contains supplementary material available at 10.1007/s12291-025-01323-2.
+42500341	18	22	MT1A	Gene
+42500341	27	37	rs11640851	Variant
+42500341	39	48	rs8052394	Variant
+42500341	53	63	rs11076161	Variant
+42500341	106	119	Breast Cancer	Disease
+42500341	182	197	Metallothionein	Gene
+42500341	399	403	MT1A	Gene
+42500341	408	418	rs11640851	Variant
+42500341	420	429	rs8052394	Variant
+42500341	435	445	rs11076161	Variant
+42500341	502	515	breast cancer	Disease
+42500341	517	519	BC	Disease
+42500341	578	586	patients	Species
+42500341	592	594	BC	Disease
+42500341	641	645	MT1A	Gene
+42500341	860	864	MT1A	Gene
+42500341	897	899	BC	Disease
+42500341	1038	1042	MT1A	Gene
+42500341	1059	1061	BC	Disease
+42500341	1197	1207	rs11640851	Variant
+42500341	1258	1260	BC	Disease
+42500341	1331	1341	rs11640851	Variant
+42500341	1383	1385	BC	Disease
+42500341	1440	1449	rs8052394	Variant
+42500341	1450	1460	rs11076161	Variant
+42500341	1544	1546	BC	Disease
+42500341	1582	1591	rs1164085	Variant
+42500341	1593	1602	rs8052394	Variant
+42500341	1604	1614	rs11076161	Variant
+42500341	1651	1653	BC	Disease
+42500341	1674	1684	rs11640851	Variant
+42500341	1786	1796	rs11640851	Variant
+42500341	1848	1850	BC	Disease
+42500341	1904	1906	BC	Disease
+42500341	1976	1978	BC	Disease
+
+42633120|t|Prevalence and antimicrobial resistance trends of ESKAPEE pathogens in clinical isolates from Hyderabad, Pakistan: a cross-sectional study.
+42633120|a|Antimicrobial resistance is a major global health threat that limits treatment options and increases morbidity and mortality. ESKAPEE pathogens are prioritized by the World Health Organization and the Centers for Disease Control and Prevention because of their role in nosocomial infections and their ability to evade antimicrobials. This study aimed to determine the prevalence and antimicrobial resistance patterns of ESKAPEE pathogens in Hyderabad, Pakistan. A cross-sectional study was conducted from August 2023 to August 2024 at the University of Sindh. A total of 1072 clinical specimens were processed for bacterial isolation, identification, and antimicrobial susceptibility testing following Clinical and Laboratory Standards Institute and European Committee on Antimicrobial Susceptibility Testing guidelines. Isolates were classified as multidrug-resistant, extensively drug-resistant, or possible pandrug-resistant using the Magiorakos et al. criteria and the Centers for Disease Control and Prevention/Infectious Diseases Society of America definitions. Among positive cultures, ESKAPEE pathogens accounted for 82.1% of isolates. <i>Escherichia coli</i> was the most prevalent (49.8%), followed by <i>Klebsiella pneumoniae</i> (13.2%), <i>Acinetobacter baumannii</i> (9.7%), <i>Pseudomonas aeruginosa</i> (9.3%), <i>Enterococcus</i> spp. (8.3%), <i>Staphylococcus aureus</i> (8.0%), and <i>Enterobacter</i> spp. (1.7%). High resistance was observed to β-lactams, cephalosporins, and fluoroquinolones. Carbapenem resistance ranged from 11.1% to 25.7% in <i>E. coli</i>, 29.0% to 39.5% in <i>K. pneumoniae</i>, 48.2% in <i>P. aeruginosa</i>, and 60.7% to 64.3% in <i>A. baumannii</i>. The high burden of multidrug-resistant and extensively drug-resistant ESKAPEE pathogens highlights the urgent need for strengthened antimicrobial stewardship, continuous surveillance, and rigorous infection-control strategies.
+42633120	50	67	ESKAPEE pathogens	Species
+42633120	266	283	ESKAPEE pathogens	Species
+42633120	409	430	nosocomial infections	Disease
+42633120	560	567	ESKAPEE	Species
+42633120	1156	1175	Infectious Diseases	Disease
+42633120	1233	1240	ESKAPEE	Species
+42633120	1287	1303	Escherichia coli	Species
+42633120	1355	1376	Klebsiella pneumoniae	Species
+42633120	1393	1416	Acinetobacter baumannii	Species
+42633120	1432	1454	Pseudomonas aeruginosa	Species
+42633120	1470	1482	Enterococcus	Species
+42633120	1503	1524	Staphylococcus aureus	Species
+42633120	1544	1556	Enterobacter	Species
+42633120	1606	1615	β-lactams	Chemical
+42633120	1617	1631	cephalosporins	Chemical
+42633120	1637	1653	fluoroquinolones	Chemical
+42633120	1655	1665	Carbapenem	Chemical
+42633120	1710	1717	E. coli	Species
+42633120	1744	1757	K. pneumoniae	Species
+42633120	1775	1788	P. aeruginosa	Species
+42633120	1819	1831	A. baumannii	Species
+42633120	1907	1924	ESKAPEE pathogens	Species
+42633120	2034	2043	infection	Disease
+
+42540124|t|Gastrointestinal Ascariasis: Unusual Presentation in 2 Cases.
+42540124|a|Ascariasis is a helminthic infection caused by the nematode <i>Ascaris lumbricoides</i> and remains the most prevalent helminth infection worldwide. Although typically asymptomatic or limited to intestinal symptoms, intestinal ascariasis can present unusually as demonstrated in these two cases. The first case involves a 73-year-old male who was being treated for non-steroidal anti-inflammatory drug (NSAID) - induced upper gastrointestinal bleeding (UGIB) and was incidentally found to harbor Ascaris worms in the duodenum during endoscopy. The second case describes a 63-year-old male with decompensated liver cirrhosis who began vomiting and passing large quantities of Ascaris worms while hospitalized. Both patients responded excellently to anthelminthic therapy. The first case highlights the need to consider ascariasis in the differential diagnosis of upper gastrointestinal bleeding, either as a primary cause or in conjunction with other causes of upper GI bleeding. The second case underscores the importance of considering biliary ascariasis or ascariasis co-infection in patients with liver cirrhosis. Ascariasis continues to pose a significant public health challenge. Effective preventive strategies such as improved sanitation, enhanced personal hygiene, and routine deworming programs are crucial for reducing the disease burden and averting potentially severe complications.
+42540124	0	27	Gastrointestinal Ascariasis	Disease
+42540124	62	72	Ascariasis	Disease
+42540124	78	98	helminthic infection	Disease
+42540124	125	145	Ascaris lumbricoides	Species
+42540124	181	199	helminth infection	Disease
+42540124	278	299	intestinal ascariasis	Disease
+42540124	427	463	non-steroidal anti-inflammatory drug	Chemical
+42540124	465	470	NSAID	Chemical
+42540124	482	513	upper gastrointestinal bleeding	Disease
+42540124	558	571	Ascaris worms	Species
+42540124	670	685	liver cirrhosis	Disease
+42540124	696	704	vomiting	Disease
+42540124	737	750	Ascaris worms	Species
+42540124	776	784	patients	Species
+42540124	810	823	anthelminthic	Chemical
+42540124	880	890	ascariasis	Disease
+42540124	924	955	upper gastrointestinal bleeding	Disease
+42540124	1022	1039	upper GI bleeding	Disease
+42540124	1099	1117	biliary ascariasis	Disease
+42540124	1121	1144	ascariasis co-infection	Disease
+42540124	1148	1156	patients	Species
+42540124	1162	1177	liver cirrhosis	Disease
+42540124	1179	1189	Ascariasis	Disease
+
+41283084|t|Decoding the Genetic Landscape of Postoperative Nausea and Vomiting in Cancer Surgery: A New Frontier in Personalized Medicine Driven by Genome-Wide Association Studies.
+41283084|a|Postoperative nausea and vomiting (PONV) is a common complication following surgery, especially among cancer patients. It affects comfort, extends hospital stays, and increases healthcare costs. Advances in genomic research present an opportunity to explore genetic predispositions to PONV, potentially enabling targeted interventions and improved management strategies. This review consolidates findings from genome-wide association studies (GWAS) to identify genetic links to PONV in cancer patients and evaluate their implications for personalized medicine. A thorough search of databases such as PubMed, Scopus, and Web of Science identified GWAS studies on genetic predispositions to PONV in cancer surgery patients up to August 25, 2024. Studies were selected based on inclusion criteria that required reporting genetic associations with PONV, and the findings were analyzed for commonalities and discrepancies. Significant <i>P</i>-values (10^ - 6 to 10^ - 9) were found for multiple SNPs linked to PONV susceptibility. Specifically, rs2776262 (chromosome 21, LOC100506403) showed a <i>P</i>-value of 8.533 × 10<sup>-9</sup> with an odds ratio (OR) of 2.00. The SNP rs12609817 (chromosome 19, ZNF845) had a <i>P</i>-value of 1.055 × 10⁻<sup>9</sup> and an OR of 4.00, indicating a strong gene expression impact. Additionally, rs921634 (chromosome 7, PKD1L1) had a <i>P</i>-value of 1.393 × 10⁻<sup>9</sup> and an OR of 9.00, suggesting a significant association with polycystic kidney disease. Protective SNPs such as rs1927382 in FGF14 and rs1333114 in PTPRD were also identified, highlighting risk mitigation opportunities. GWAS studies have identified key SNPs associated with PONV in cancer surgery, including ZNF845 rs12609817, PKD1L1 rs921634, and CLDN14 rs2071049, as well as protective variants like FGF14 rs1927382 and PTPRD rs1333114. These insights advance our understanding of the genetic factors that influence PONV risk, supporting better prediction and management strategies. This research lays the groundwork for personalized treatments to improve patient outcomes in the perioperative setting. Further exploration of these SNPs and their biological mechanisms could enhance PONV prevention strategies for cancer surgery patients.
+41283084	71	77	Cancer	Disease
+41283084	170	203	Postoperative nausea and vomiting	Disease
+41283084	205	209	PONV	Disease
+41283084	272	278	cancer	Disease
+41283084	279	287	patients	Species
+41283084	455	459	PONV	Disease
+41283084	648	652	PONV	Gene
+41283084	656	662	cancer	Disease
+41283084	663	671	patients	Species
+41283084	859	863	PONV	Gene
+41283084	867	873	cancer	Disease
+41283084	882	890	patients	Species
+41283084	1014	1018	PONV	Gene
+41283084	1211	1220	rs2776262	Variant
+41283084	1237	1249	LOC100506403	Variant
+41283084	1343	1353	rs12609817	Variant
+41283084	1370	1376	ZNF845	Gene
+41283084	1503	1511	rs921634	Variant
+41283084	1527	1533	PKD1L1	Gene
+41283084	1695	1704	rs1927382	Variant
+41283084	1708	1713	FGF14	Gene
+41283084	1718	1727	rs1333114	Variant
+41283084	1731	1736	PTPRD	Gene
+41283084	1857	1861	PONV	Gene
+41283084	1865	1871	cancer	Disease
+41283084	1891	1897	ZNF845	Gene
+41283084	1898	1908	rs12609817	Variant
+41283084	1910	1916	PKD1L1	Gene
+41283084	1917	1925	rs921634	Variant
+41283084	1931	1937	CLDN14	Gene
+41283084	1938	1947	rs2071049	Variant
+41283084	1985	1990	FGF14	Gene
+41283084	1991	2000	rs1927382	Variant
+41283084	2005	2010	PTPRD	Gene
+41283084	2011	2020	rs1333114	Variant
+41283084	2101	2105	PONV	Disease
+41283084	2241	2248	patient	Species
+41283084	2368	2372	PONV	Gene
+41283084	2399	2405	cancer	Disease
+41283084	2414	2422	patients	Species
+
+42602331|t|H2AX phosphorylation driven by the SET-PP2A axis maintains glioma stem cell properties.
+42602331|a|Glioblastoma harbors a subpopulation of glioma stem cells (GSCs) that drive tumor relapse and invasion. Although GSC properties are known to be regulated by key transcription factors and chromatin remodeling, the mechanisms governing stemness-associated gene expression and the role of histone proteins in this process remain poorly understood. Here, we revealed that GSCs possessed an increased level of histone variant H2AX and phosphorylated H2AX at Ser 139 (γH2AX). CRISPR-Cas9-mediated deletion of H2AX demonstrated its critical role in maintaining GSC self-renewal, tumorigenicity, and the expression of multiple stemness-associated genes. Reintroduction of wild-type H2AX, but not the phosphorylation-deficient S139A mutant, restored GSC properties in H2AX-knockout cells, underscoring the importance of H2AX phosphorylation. We further identified that the elevated γH2AX levels in GSCs result from suppressed PP2A phosphatase activity, driven by increased expression of the SET oncoprotein. Pharmacological reactivation of PP2A effectively reduced γH2AX levels in GSCs. Collectively, our findings uncover a novel mechanism for GSC maintenance and highlight the SET-PP2A axis as a key regulator of γH2AX levels, offering a potential therapeutic target to disrupt GSC-driven tumor growth.
+42602331	0	4	H2AX	Gene
+42602331	35	38	SET	Gene
+42602331	39	43	PP2A	Gene
+42602331	59	65	glioma	Disease
+42602331	88	100	Glioblastoma	Disease
+42602331	128	134	glioma	Disease
+42602331	164	169	tumor	Disease
+42602331	456	460	GSCs	Disease
+42602331	509	513	H2AX	Gene
+42602331	533	537	H2AX	Gene
+42602331	550	555	γH2AX	Gene
+42602331	591	595	H2AX	Gene
+42602331	762	766	H2AX	Gene
+42602331	806	811	S139A	Variant
+42602331	847	851	H2AX	Gene
+42602331	899	903	H2AX	Gene
+42602331	961	966	γH2AX	Gene
+42602331	977	981	GSCs	Disease
+42602331	1005	1021	PP2A phosphatase	Gene
+42602331	1070	1085	SET oncoprotein	Gene
+42602331	1119	1123	PP2A	Gene
+42602331	1144	1149	γH2AX	Gene
+42602331	1160	1164	GSCs	Disease
+42602331	1223	1226	GSC	Disease
+42602331	1257	1260	SET	Gene
+42602331	1261	1265	PP2A	Gene
+42602331	1293	1298	γH2AX	Gene
+42602331	1358	1361	GSC	Disease
+42602331	1369	1374	tumor	Disease
+
+42633488|t|Leveraging network pharmacology in the treatment of asthma.
+42633488|a|Asthma, a chronic airway inflammatory disorder driven by multifaceted genetic, cellular and molecular interactions, remains inadequately managed by single-target therapies due to incomplete disease control and adverse effects; this review aimed to explore network pharmacology's role in elucidating multi-target mechanisms of phytotherapeutic agents for asthma, with a focus on integrating ADMET/DMPK profiling to predict clinical translatability and safety. We employed network pharmacology methodologies including target prediction (<i>e.g. via</i> PharmMapper, PubChem), protein-protein interaction network construction (STRING, Cytoscape), pathway enrichment analysis (KEGG, Reactome), molecular docking (AutoDock) and ADMET/DMPK modelling (SwissADME, pkCSM) to dissect multi-component herbal formulations, complemented by literature-mined experimental validations. Analyses identified key asthma-related targets (<i>e.g.</i> IL-17, TNF) and pathways (JAK-STAT, PI3K-AKT), revealing quercetin and kaempferol's multi-target efficacy in reducing airway inflammation and immune dysregulation; favourable ADMET profiles (high oral bioavailability, low toxicity) and DMPK parameters (metabolic stability <i>via</i> CYP inhibition) supported their therapeutic potential in herbal combinations. Network pharmacology, enhanced by ADMET/DMPK integration, advances a holistic understanding of herbal asthma treatments, promoting safe, multi-target drug development. Limitations include data gaps in multi-omics validation and herbal standardization, with future directions leveraging AI-driven predictions for personalized pharmacotherapy.
+42633488	52	58	asthma	Disease
+42633488	60	66	Asthma	Disease
+42633488	78	106	airway inflammatory disorder	Disease
+42633488	414	420	asthma	Disease
+42633488	954	960	asthma	Disease
+42633488	990	995	IL-17	Gene
+42633488	997	1000	TNF	Gene
+42633488	1016	1019	JAK	Gene
+42633488	1020	1024	STAT	Gene
+42633488	1026	1030	PI3K	Gene
+42633488	1031	1034	AKT	Gene
+42633488	1047	1056	quercetin	Chemical
+42633488	1061	1071	kaempferol	Chemical
+42633488	1108	1127	airway inflammation	Disease
+42633488	1132	1152	immune dysregulation	Disease
+42633488	1212	1220	toxicity	Disease
+42633488	1274	1277	CYP	Gene
+42633488	1447	1453	herbal	Chemical
+42633488	1454	1460	asthma	Disease
+
+42630617|t|Association of GH/<i>HaeIII</i> polymorphism with growth and developmental traits of Morkaraman sheep.
+42630617|a|This study investigated the impact of GH gene polymorphism in Morkaraman ewes on placental traits and lamb development characteristics across three years (2020-2022) at Atatürk University Sheep Farm, Erzurum. PCR-RFLP method with <i>HaeIII</i> endonuclease was used to identify GH gene polymorphism. Two genotypes were found in Morkaraman sheep: AA (50.40 %) and AB (49.60 %). Ewes with AA and AB genotypes showed birth weights of 4.32 and 4.43 kg, weaning weights of 14.32 and 15.42 kg, and daily gains of 209 and 223 g, respectively. While GH genotype did not significantly affect birth weight, it significantly influenced weaning weight ( <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi> <mo><</mo> <mn>0.01</mn></mrow> </math> ) and daily live weight gain ( <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi> <mo><</mo> <mn>0.05</mn></mrow> </math> ). Placental characteristics examined included placental weight, surface area, efficiency, total cotyledon numbers, cotyledon length and width, cotyledon efficiency, total cotyledon weight, and density. Genotype showed no significant effect on placental traits, but parity significantly affected placental area ( <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi> <mo><</mo> <mn>0.05</mn></mrow> </math> ). While lamb sex had no impact, delivery type significantly influenced placental weight ( <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi> <mo><</mo> <mn>0.05</mn></mrow> </math> ). Genotype showed highly significant effects ( <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi> <mo><</mo> <mn>0.01</mn></mrow> </math> ) on total cotyledon area, weight, and density among cotyledon characteristics. The present study found that Morkaraman ewes with the AB genotype of the GH gene revealed superior growth and placental characteristics, with their lambs also exhibiting enhanced growth traits. The results of the study indicate that beneficial genotypes can be identified from birth, thus leading to the development of improved breeding strategies.
+42630617	15	17	GH	Gene
+42630617	21	27	HaeIII	Gene
+42630617	96	101	sheep	Species
+42630617	141	143	GH	Gene
+42630617	176	180	ewes	Species
+42630617	381	383	GH	Gene
+42630617	442	447	sheep	Species
+42630617	645	647	GH	Gene
+42630617	1878	1882	ewes	Species
+42630617	1911	1913	GH	Gene
+
+42629135|t|Chemokine receptor CX3CR1 modulates microglial activity through Tau and amyloid-β interactions in Alzheimer's disease.
+42629135|a|Alzheimer's disease is one of the most prevalent forms of dementia characterized by neurocognitive decline. Key proteins involved in the progression of disease is amyloid-β and Tau. Abnormal accumulation of amyloid-β senile plaques and Tau neurofibrillary tangles are characteristic features of AD which drives synaptic dysfunction and leads to cognitive decline. Recent studies emphasizes the importance of G-protein coupled receptors in regulating microglial cells and has diverse functions in modulating AD, particularly in the clearance of these pathological proteins. Among these GPCRs, the chemokine receptor CX3CR1 has a critical role at the intersection of pathological proteins and microglial signalling. CX3CR1 receptor mediated signalling influences interaction between microglia and neuron mediating microglial uptake and processing of Aβ and Tau. Aging is also one of the risk factors of AD which alters CX3CR1 signalling, thereby exacerbating disease progression. This review highlights the multifaceted role of CX3CR1 in Tau and Aβ pathology and outlines its signalling mechanisms. Importantly, this review emphasizes the therapeutic potential of targeting the CX3CL1-CX3CR1 axis and involved in protein clearance and reduces neuroinflammation preserving synaptic function, offering a promising way to prevent AD.
+42629135	0	18	Chemokine receptor	Gene
+42629135	19	25	CX3CR1	Gene
+42629135	64	67	Tau	Gene
+42629135	72	81	amyloid-β	Gene
+42629135	98	117	Alzheimer's disease	Disease
+42629135	119	138	Alzheimer's disease	Disease
+42629135	177	185	dementia	Disease
+42629135	203	225	neurocognitive decline	Disease
+42629135	282	291	amyloid-β	Gene
+42629135	296	299	Tau	Gene
+42629135	326	335	amyloid-β	Gene
+42629135	355	374	Tau neurofibrillary	Gene
+42629135	414	416	AD	Disease
+42629135	430	450	synaptic dysfunction	Disease
+42629135	464	481	cognitive decline	Disease
+42629135	527	554	G-protein coupled receptors	Gene
+42629135	626	628	AD	Disease
+42629135	704	709	GPCRs	Gene
+42629135	715	733	chemokine receptor	Gene
+42629135	734	740	CX3CR1	Gene
+42629135	833	848	CX3CR1 receptor	Gene
+42629135	967	969	Aβ	Gene
+42629135	974	977	Tau	Gene
+42629135	1020	1022	AD	Disease
+42629135	1036	1042	CX3CR1	Gene
+42629135	1145	1151	CX3CR1	Gene
+42629135	1155	1158	Tau	Gene
+42629135	1163	1165	Aβ	Gene
+42629135	1295	1301	CX3CL1	Gene
+42629135	1302	1308	CX3CR1	Gene
+42629135	1360	1377	neuroinflammation	Disease
+42629135	1444	1446	AD	Disease
+
+42633029|t|Short-Term Intensive Insulin Therapy as a Remission Induction Strategy in Newly Diagnosed Type 2 Diabetes Mellitus: A Systematic Review.
+42633029|a|Type 2 diabetes mellitus (T2DM) is characterized by progressive β-cell dysfunction, insulin resistance, and glucotoxicity, some of which may remain reversible early in the disease course. Short-term intensive insulin therapy (SIIT) may rapidly normalize hyperglycemia and facilitate β-cell recovery in newly diagnosed T2DM. This systematic review evaluated the effects of SIIT on glycemic control, drug-free remission, β-cell function, durability, and safety. PubMed/MEDLINE, Scopus, and Web of Science were searched for English-language randomized controlled trials published during the five-year period ending in April 2026. Four trials met the eligibility criteria. Because interventions, remission definitions, maintenance strategies, and follow-up periods differed substantially, study-level effect estimates, 95% confidence intervals, and p values were synthesized without statistical pooling. SIIT consistently improved early glycemic control, β-cell function, and insulin sensitivity. In one 245-participant trial, medication-supported hemoglobin A1c (HbA1c) below 6.5% at three months was achieved by 78.7% of participants receiving SIIT plus metformin-pioglitazone versus 59.0% receiving SIIT alone (adjusted p < 0.05); however, 12-month drug-free remission rates were similar at 50.0% and 50.6%, respectively (p = 0.972). Another trial found that linagliptin-metformin maintenance after SIIT increased the adjusted odds of achieving HbA1c below 7.0% at 48 weeks (odds ratio 2.78, 95% confidence interval 1.37-5.65; p = 0.005), although this represented medication-supported glycemic control rather than remission. In a two-year trial, induction SIIT improved β-cell function and insulin sensitivity (all p ≤ 0.0004), but repeated intermittent SIIT did not improve the Insulin Secretion-Sensitivity Index-2 (adjusted difference -35, 95% confidence interval -66 to -3; p = 0.03). Severe hypoglycemia was not reported in trials providing detailed safety data, and transient weight gain was not consistently demonstrated. SIIT may therefore serve as a selective metabolic induction strategy in early T2DM, but durable remission remains uncertain and may depend on effective sequential treatment. Standardized remission definitions, validated response predictors, and longer comparative trials are required before routine implementation.
+42633029	90	114	Type 2 Diabetes Mellitus	Disease
+42633029	137	161	Type 2 diabetes mellitus	Disease
+42633029	163	167	T2DM	Disease
+42633029	221	239	insulin resistance	Disease
+42633029	245	258	glucotoxicity	Disease
+42633029	391	404	hyperglycemia	Disease
+42633029	455	459	T2DM	Disease
+42633029	509	513	SIIT	Chemical
+42633029	1109	1116	insulin	Gene
+42633029	1289	1298	metformin	Chemical
+42633029	1299	1311	pioglitazone	Chemical
+42633029	1495	1506	linagliptin	Chemical
+42633029	1507	1516	metformin	Chemical
+42633029	1827	1834	insulin	Gene
+42633029	1916	1923	Insulin	Gene
+42633029	2033	2045	hypoglycemia	Disease
+42633029	2119	2130	weight gain	Disease
+42633029	2166	2170	SIIT	Gene
+42633029	2244	2248	T2DM	Disease
+
+42633481|t|Bimetallic metal organic framework modified screen printed electrode for simultaneous voltammetric determination of calcium folinate and methotrexate.
+42633481|a|Calcium folinate (CFT) is a medication used as an antidote to methotrexate (MTT) and as a vitamin against anaemia. MTT is used to treat a variety of carcinomas, including acute lymphoblastic leukaemia, head and neck cancer, gastric cancer, breast cancer and choriocarcinoma. A nanocomposite made of Fe and Mg linked to a 1,4-benzene dicarboxylate ligand metal organic framework (FeMg-BDC MOF) was created for this investigation. Using field emission scanning electron microscopy, the morphology and structure of the Mg-BDC MOF were examined. Next, a screen-printed electrode modified with a synthetic nanocomposite (FeMg-BDC MOF/SPE) was used as the working electrode for voltammetric detection of CFT. The FeMg-BDC MOF/SPE demonstrated high electrocatalytic activity for CFT oxidation as compared to unmodified SPE. The limit of detection is 0.04 μM, and under ideal conditions, the oxidation peak currents of CFT show a linear relationship with its concentration in the range of 0.1 to 390.0 μM. Additionally, when MTT was present, the FeMg-BDC MOF/SPE demonstrated good activity toward CFT determination. The separation of the oxidation peak potentials (255 mV) indicates that differential pulse voltammetry can be used to detect these two medications simultaneously. The devised sensor's applicability was confirmed with outstanding results using CFT and MTT assays in pharmaceutical specimens and urine samples.
+42633481	11	16	metal	Chemical
+42633481	116	132	calcium folinate	Chemical
+42633481	137	149	methotrexate	Chemical
+42633481	151	167	Calcium folinate	Chemical
+42633481	169	172	CFT	Chemical
+42633481	213	225	methotrexate	Chemical
+42633481	227	230	MTT	Chemical
+42633481	257	264	anaemia	Disease
+42633481	266	269	MTT	Chemical
+42633481	300	310	carcinomas	Disease
+42633481	322	351	acute lymphoblastic leukaemia	Disease
+42633481	353	373	head and neck cancer	Disease
+42633481	375	389	gastric cancer	Disease
+42633481	391	404	breast cancer	Disease
+42633481	409	424	choriocarcinoma	Disease
+42633481	450	452	Fe	Chemical
+42633481	457	459	Mg	Chemical
+42633481	472	497	1,4-benzene dicarboxylate	Chemical
+42633481	505	528	metal organic framework	Chemical
+42633481	530	542	FeMg-BDC MOF	Chemical
+42633481	667	673	Mg-BDC	Chemical
+42633481	674	677	MOF	Chemical
+42633481	767	779	FeMg-BDC MOF	Chemical
+42633481	849	852	CFT	Chemical
+42633481	858	870	FeMg-BDC MOF	Chemical
+42633481	923	926	CFT	Chemical
+42633481	1062	1065	CFT	Chemical
+42633481	1168	1171	MTT	Chemical
+42633481	1189	1201	FeMg-BDC MOF	Chemical
+42633481	1240	1243	CFT	Chemical
+42633481	1502	1505	CFT	Chemical
+42633481	1510	1513	MTT	Chemical
+
+40881775|t|The Interface of Gene Editing with Regenerative Medicine.
+40881775|a|The potential of regenerative medicine in the clinical space is vast, given its ability to repair and replace damaged tissues, restore lost functions due to age or disease, and transform personalized therapy. Traditional regenerative medicine and tissue engineering strategies have created specialized tissues using progenitor cells and various biological stimuli. To date, there are many US Food and Drug Administration (FDA)-approved regenerative medicine therapies, such as those for wound healing and orthopedic injuries. Nonetheless, these therapies face challenges, including off-target effects, a lack of precision, and failure to target the disease or injury at its origin. In search of novel, precise, and efficient alternatives, the regenerative medicine landscape is shifting towards genome engineering technologies, particularly gene editing. Clustered regularly interspaced short palindromic repeats (CRISPR)-based gene editing systems enable precise knock-ins, knockouts, transcriptional activation and repression, as well as specific base conversions. This advancement has allowed researchers to treat genetic and degenerative diseases, control cell fate for highly regulated tissue repair, and enhance tissue functions. In this review, we explore the progress and future prospects of CRISPR technologies in regenerative medicine, focusing on how gene editing has led to advanced therapeutic applications and served as a versatile research tool for understanding tissue development and disease progression.
+40881775	563	582	orthopedic injuries	Disease
+40881775	1175	1208	genetic and degenerative diseases	Disease
+
+42548349|t|Tolerability and Safety of Nintedanib and Immunosuppression in Autoimmune Inflammatory Myopathy-Associated Progressive Pulmonary Fibrosis.
+42548349|a|Autoimmune-inflammatory myopathy-related interstitial lung diseases (AIM-ILDs) are often progressive and fibrotic. Given their rarity, little is known about the safety and tolerability of antifibrotic nintedanib in combination with immunosuppression in AIM-ILD. Is the addition of nintedanib to immunosuppression safe and tolerable in patients with AIM-ILD, and does nintedanib administration induce peripheral blood cell gene expression changes? This was a single-arm, open-label trial to assess safety and tolerability of nintedanib with immunosuppression. Patients with progressive, fibrotic AIM-ILD on background immunosuppression were given nintedanib for 24 weeks. The primary end point was the percentage of patients who took ≥ 90% study drug doses. The secondary end points included safety (adverse events) and efficacy (lung function) outcomes. Bulk RNA sequencing of peripheral blood was performed at baseline and each subsequent visit to examine gene expression. A total of 11 participants were enrolled; of these, 9 completed the study visits as per protocol. The trial was discontinued due to slow recruitment. Three participants (27%) took ≥ 90% doses of nintedanib. Drug compliance ranged from 27% to 95%. The most common adverse events were diarrhea, nausea/vomiting, and abdominal pain. There were no overall significant changes in lung function, or difference in gene expression in peripheral blood over time identified. Tolerability of combined nintedanib and immunosuppression in AIM-ILD appears challenging. Nintedanib treatment did not induce measurable gene expression changes in peripheral blood. However, the study's small sample size, compounded by recruitment difficulties leading to early discontinuation, restricts the robustness and generalizability of the findings. ClinicalTrials.gov; No.: NCT05335278; URL: www.clinicaltrials.gov.
+42548349	27	37	Nintedanib	Chemical
+42548349	42	59	Immunosuppression	Disease
+42548349	63	95	Autoimmune Inflammatory Myopathy	Disease
+42548349	119	137	Pulmonary Fibrosis	Disease
+42548349	139	206	Autoimmune-inflammatory myopathy-related interstitial lung diseases	Disease
+42548349	208	216	AIM-ILDs	Disease
+42548349	244	252	fibrotic	Disease
+42548349	340	350	nintedanib	Chemical
+42548349	392	399	AIM-ILD	Disease
+42548349	420	430	nintedanib	Chemical
+42548349	474	482	patients	Species
+42548349	488	495	AIM-ILD	Disease
+42548349	506	516	nintedanib	Chemical
+42548349	663	673	nintedanib	Chemical
+42548349	698	706	Patients	Species
+42548349	734	741	AIM-ILD	Disease
+42548349	785	795	nintedanib	Chemical
+42548349	854	862	patients	Species
+42548349	1308	1318	nintedanib	Chemical
+42548349	1396	1404	diarrhea	Disease
+42548349	1406	1421	nausea/vomiting	Disease
+42548349	1427	1441	abdominal pain	Disease
+42548349	1603	1613	nintedanib	Chemical
+42548349	1639	1646	AIM-ILD	Disease
+42548349	1668	1678	Nintedanib	Chemical
+42548349	1961	1972	NCT05335278	Variant
+
+42630837|t|The impact of SGLT2 inhibitors on uric acid levels in patients with heart failure with preserved ejection fraction: integration of mechanisms and clinical evidence.
+42630837|a|Hyperuricemia (HUA) is a prevalent comorbidity in patients with heart failure with preserved ejection fraction (HFpEF) and is closely associated with disease progression and adverse outcomes. Sodium-glucose cotransporter 2 (SGLT2) inhibitors can rapidly and sustainably reduce serum uric acid (SUA) levels and lower the incidence of HUA-related clinical events; however, their underlying mechanisms remain unclear. This study employed network pharmacology and molecular docking to systematically investigate the potential mechanisms of SGLT2 inhibitors in HFpEF patients with concomitant hyperuricemia, focusing on uric acid metabolism modulation and inflammation-related pathways. Additionally, a machine learning approach was applied to retrospectively analyze the effects of SGLT2 inhibitors on SUA levels, aiming to clarify the therapy's biological basis and clinical relevance. The SMILES structures of eleven SGLT2 inhibitors were retrieved from PubChem. Potential drug targets were predicted via the SwissTargetPrediction platform and intersected with HFpEF- and HUA-related targets obtained from OMIM and GeneCards to identify common targets. Protein-protein interaction (PPI) networks were constructed using STRING to identify hub genes, followed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses using DAVID. Molecular docking with AutoDock Vina assessed binding affinities. Clinical data of HFpEF patients were collected, and a classification model based on 34 clinical variables was developed using the FLAML automated machine learning framework to predict SGLT2 inhibitor treatment status and changes in SUA. Model interpretability and feature importance were performed using SHAP analysis. Eleven SGLT2 inhibitors acted on 32 targets associated with SUA reduction in HFpEF patients. Key pathways included tumor necrosis factor (TNF), advanced glycation end product-receptor for advanced glycation end product (AGE-RAGE), interleukin-17 (IL-17), and Kaposi's sarcoma-associated herpesvirus (KSHV) signaling. Molecular docking demonstrated favorable binding of SGLT2 inhibitors to core targets, including GAPDH, CASP3, ICAM1, ACE, DPP4, and AGTR1, with canagliflozin showing the strongest predicted binding affinity. Clinical data analyses identified uric acid and creatinine as the most important predictors in the machine learning model, reflecting their importance in model predictions. By integrating network pharmacology and retrospective clinical analysis, this study elucidates the potential uric acid-lowering mechanisms of SGLT2 inhibitors in HFpEF patients. The identified targets and pathways provide mechanistic insights into SGLT2 inhibitor pharmacology and support their therapeutic potential for managing hyperuricemia.
+42630837	14	30	SGLT2 inhibitors	Chemical
+42630837	34	43	uric acid	Chemical
+42630837	54	62	patients	Species
+42630837	68	81	heart failure	Disease
+42630837	165	178	Hyperuricemia	Disease
+42630837	180	183	HUA	Disease
+42630837	215	223	patients	Species
+42630837	229	242	heart failure	Disease
+42630837	277	282	HFpEF	Disease
+42630837	357	387	Sodium-glucose cotransporter 2	Chemical
+42630837	389	406	SGLT2) inhibitors	Gene
+42630837	448	457	uric acid	Chemical
+42630837	459	462	SUA	Chemical
+42630837	498	501	HUA	Disease
+42630837	701	717	SGLT2 inhibitors	Chemical
+42630837	721	726	HFpEF	Disease
+42630837	727	735	patients	Species
+42630837	753	766	hyperuricemia	Disease
+42630837	780	789	uric acid	Chemical
+42630837	816	828	inflammation	Disease
+42630837	943	959	SGLT2 inhibitors	Chemical
+42630837	963	966	SUA	Chemical
+42630837	1080	1096	SGLT2 inhibitors	Gene
+42630837	1224	1229	HFpEF	Disease
+42630837	1235	1238	HUA	Disease
+42630837	1610	1615	HFpEF	Disease
+42630837	1616	1624	patients	Species
+42630837	1777	1792	SGLT2 inhibitor	Chemical
+42630837	1919	1935	SGLT2 inhibitors	Chemical
+42630837	1972	1975	SUA	Chemical
+42630837	1989	1994	HFpEF	Disease
+42630837	1995	2003	patients	Species
+42630837	2027	2048	tumor necrosis factor	Gene
+42630837	2050	2053	TNF	Gene
+42630837	2056	2130	advanced glycation end product-receptor for advanced glycation end product	Gene
+42630837	2132	2135	AGE	Gene
+42630837	2136	2140	RAGE	Gene
+42630837	2143	2157	interleukin-17	Gene
+42630837	2159	2164	IL-17	Gene
+42630837	2171	2210	Kaposi's sarcoma-associated herpesvirus	Species
+42630837	2212	2216	KSHV	Species
+42630837	2281	2297	SGLT2 inhibitors	Gene
+42630837	2325	2330	GAPDH	Gene
+42630837	2332	2337	CASP3	Gene
+42630837	2339	2344	ICAM1	Gene
+42630837	2346	2349	ACE	Gene
+42630837	2351	2355	DPP4	Gene
+42630837	2361	2366	AGTR1	Gene
+42630837	2373	2386	canagliflozin	Chemical
+42630837	2471	2480	uric acid	Chemical
+42630837	2485	2495	creatinine	Chemical
+42630837	2719	2728	uric acid	Chemical
+42630837	2752	2768	SGLT2 inhibitors	Chemical
+42630837	2772	2777	HFpEF	Disease
+42630837	2778	2786	patients	Species
+42630837	2858	2873	SGLT2 inhibitor	Gene
+42630837	2940	2953	hyperuricemia	Disease
+
+42633066|t|Space radiation promotes clonal hematopoiesis and hematologic disease upon aging in a driver gene and sex-specific manner.
+42633066|a|The effects of space radiation on clonal hematopoiesis (CH) and its impact on long-term health outcomes are unknown. Using male and female murine models of <i>Trp53-</i>, <i>Ppm1d</i>-, and <i>Tet2</i>-mediated CH, we examined the effects of exposure to gamma radiation, simulated solar particle events, or simplified simulated galactic cosmic rays on the clonal expansion of mutant cells and long-term health outcomes. Radiation accelerated the expansion of <i>Trp53</i> and <i>Ppm1d</i>, but not <i>Tet2</i>, mutant clones. Over 18 months, male mice with <i>Trp53</i> mutant cells showed worse survival than controls, which was exacerbated following radiation exposure. The interaction between the mutation and radiation exposure was absent for the other driver genes and in female mice with <i>Trp53</i> mutations. Male mice with <i>Trp53</i> mutant cells exhibited evidence of hematologic disease and hematopoietic loss of the Y chromosome. Male astronauts with <i>TP53</i> clonal hematopoiesis may be at elevated risk of clone growth and hematologic disease following radiation exposure.
+42633066	50	69	hematologic disease	Disease
+42633066	179	181	CH	Disease
+42633066	262	268	murine	Species
+42633066	282	287	Trp53	Gene
+42633066	297	302	Ppm1d	Gene
+42633066	316	320	Tet2	Gene
+42633066	334	336	CH	Disease
+42633066	585	590	Trp53	Gene
+42633066	602	607	Ppm1d	Gene
+42633066	624	628	Tet2	Gene
+42633066	670	674	mice	Species
+42633066	683	688	Trp53	Gene
+42633066	907	911	mice	Species
+42633066	920	925	Trp53	Gene
+42633066	946	950	mice	Species
+42633066	959	964	Trp53	Gene
+42633066	1004	1023	hematologic disease	Disease
+42633066	1092	1096	TP53	Gene
+42633066	1166	1185	hematologic disease	Disease
+
+42633266|t|Inflammation-triggered sensing and miRNA immunotherapy with a wireless battery-free hydrogel bioelectronic patch.
+42633266|a|Early diagnosis and timely intervention are crucial for the management of periodontal diseases driven by immune dysregulation. However, <i>in situ</i> sensing and drug delivery in the oral cavity remain challenging due to biological disparities between electronic devices and oral tissues. Here, we report a flexible, battery-free and hydrogel-based bioelectronics that integrates biological functions and wireless signal transmission for periodontal inflammation monitoring and localized microRNA (miRNA) immunomodulation. The hydrogel, synthesized from gelatin with bioactive peptide sequences cleavable by matrix metalloproteinases, responds specifically to protease activity associated with periodontal disease progression. Its enzymatic degradation is wirelessly transduced into quantitative radio-frequency signals of local immune activity, while simultaneously triggering the release of embedded miRNAs as critical immune regulators. <i>In vitro</i> and animal validations demonstrated diagnostic accuracy and therapeutic efficacy, leading to suppression of the inflammatory response. The combination of biosensing, wireless feedback and miRNA-based immunotherapy provides a closed-loop, adaptable platform for personalized management of periodontal and other inflammation-related disorders.
+42633266	0	12	Inflammation	Disease
+42633266	84	92	hydrogel	Chemical
+42633266	188	208	periodontal diseases	Disease
+42633266	219	239	immune dysregulation	Disease
+42633266	449	457	hydrogel	Chemical
+42633266	553	577	periodontal inflammation	Disease
+42633266	669	676	gelatin	Chemical
+42633266	723	748	matrix metalloproteinases	Gene
+42633266	809	828	periodontal disease	Disease
+42633266	1183	1195	inflammatory	Disease
+42633266	1359	1393	periodontal and other inflammation	Disease
+
+42524382|t|Functional Varying-Index Coefficients Model for Dynamic Synergistic Gene-Environment Interactions.
+42524382|a|Human complex diseases are affected by both genetic and environmental factors. When multiple environmental risk factors are present, the interaction effect between a gene and the environmental mixture can be larger than the addition of individual interactions, resulting in the so-called synergistic gene-environment (G×E) interactions. Existing literature has shown the power of synergistic gene-environment interaction analysis with cross-sectional traits. In this work, we propose a functional varying index coefficient model for longitudinal traits together with multiple longitudinal environmental risk factors and assess how the genetic effects on a longitudinal disease trait are nonlinearly modified by a mixture of environmental influences. We derive an estimation procedure for the nonparametric functional varying index coefficients under the quadratic inference function and penalized spline framework. We evaluate some theoretical properties such as estimation consistency and asymptotic normality of the estimates. We further propose a hypothesis testing procedure to assess the significance of the synergistic G×E effect. The performance of the estimation and testing procedure is evaluated through Monte Carlo simulation studies. Finally, the utility of the method is illustrated by a real dataset from a pain sensitivity study in which SNP effects are nonlinearly modulated by a mixture of drug dosages and other environmental variables to affect patients' blood pressure and heart rate.
+42524382	99	104	Human	Species
+42524382	1420	1424	pain	Disease
+42524382	1563	1571	patients	Species
+
+40655353|t|Genomic Diversity and Antimicrobial Resistance of <i>Acinetobacter</i> sp.-A Pan Genome Analysis.
+40655353|a|<i>Acinetobacter baumannii</i> has been associated with severe clinically acquired infections. The prevalence of non-<i>A. baumannii</i>-linked diseases is now equivalent to that of <i>A. baumannii</i>-associated illnesses. Hence, this study intends to explore the genomic linkage of virulence and antibiotic resistance amongst the five <i>Acinetobacter</i> spp. (<i>A. baumannii</i>, <i>A</i>. <i>haemolyticus, A. johnsonni,</i> and <i>A. nosocomialis</i>) using pan genome analysis. The results revealed open pan genome in <i>Acinetobacter</i> sp. with increase in number of additional genes in pan genome. The resistance gene identifier revealed that <i>A. baumannii</i> was resistant to macrolides, fluoroquinolone, lincosamide, carbapenem, cephalosporin, tetracycline, rifamycin, diaminopyrimidine, phenicol antibiotics, and penem. Non-<i>A. baumannii sp. A. haemolyticus</i> had the Oxa beta lactamase gene (<i>Oxa</i>) with resistance to carbapenem, cephalosporin, penem. <i>A. johnsonii</i> had no perfect hits for resistance but showed weak similarity to <i>Oxa</i>. <i>A. nosocomialis</i> had resistance genes to fluoroquinoids. The prevalence of <i>Acinetobacter baumannii AbaQ</i> gene was found with <i>A. calcoaceticus</i> and <i>A. nosocomialis</i> sequences used in this study supporting the transformation of resistance genes between <i>Acinetobacter</i> sp. This comparative research underlines the need of differentiating between distinct <i>Acinetobacter</i> sp. infections with their genetic profile for accurate diagnosis and management based on their anti microbial resistance. The online version contains supplementary material available at 10.1007/s12088-024-01411-6.
+40655353	53	66	Acinetobacter	Species
+40655353	101	124	Acinetobacter baumannii	Species
+40655353	181	191	infections	Disease
+40655353	218	230	A. baumannii	Species
+40655353	283	295	A. baumannii	Species
+40655353	438	451	Acinetobacter	Species
+40655353	465	477	A. baumannii	Species
+40655353	486	487	A	Species
+40655353	496	508	haemolyticus	Species
+40655353	510	522	A. johnsonni	Species
+40655353	535	550	A. nosocomialis	Species
+40655353	626	639	Acinetobacter	Species
+40655353	755	767	A. baumannii	Species
+40655353	789	799	macrolides	Chemical
+40655353	801	816	fluoroquinolone	Chemical
+40655353	818	829	lincosamide	Chemical
+40655353	831	841	carbapenem	Chemical
+40655353	843	856	cephalosporin	Chemical
+40655353	858	870	tetracycline	Chemical
+40655353	872	881	rifamycin	Chemical
+40655353	883	900	diaminopyrimidine	Chemical
+40655353	902	910	phenicol	Chemical
+40655353	928	933	penem	Chemical
+40655353	942	957	A. baumannii sp	Species
+40655353	959	974	A. haemolyticus	Species
+40655353	987	1005	Oxa beta lactamase	Gene
+40655353	1015	1018	Oxa	Gene
+40655353	1043	1053	carbapenem	Chemical
+40655353	1055	1068	cephalosporin	Chemical
+40655353	1070	1075	penem	Chemical
+40655353	1080	1092	A. johnsonii	Species
+40655353	1165	1168	Oxa	Chemical
+40655353	1177	1192	A. nosocomialis	Species
+40655353	1221	1235	fluoroquinoids	Chemical
+40655353	1559	1572	Acinetobacter	Species
+40655353	1581	1591	infections	Disease
+

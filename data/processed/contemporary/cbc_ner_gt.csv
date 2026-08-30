@@ -1,0 +1,657 @@
+,pmid,text,entity_type,start,end
+1218,40655353,Acinetobacter baumannii,OrganismTaxon,101,124
+1219,40655353,infections,DiseaseOrPhenotypicFeature,181,191
+1220,40655353,A. baumannii,OrganismTaxon,218,230
+1224,40655353,Aceinetobacter baumannii,OrganismTaxon,486,487
+1226,40655353,A. johnsonni,OrganismTaxon,510,522
+1227,40655353,A. nosocomialis,OrganismTaxon,535,550
+1230,40655353,macrolides,ChemicalEntity,789,799
+1231,40655353,fluoroquinolone,ChemicalEntity,801,816
+1232,40655353,lincosamide,ChemicalEntity,818,829
+1233,40655353,carbapenem,ChemicalEntity,831,841
+1234,40655353,cephalosporin,ChemicalEntity,843,856
+1235,40655353,tetracycline,ChemicalEntity,858,870
+1236,40655353,rifamycin,ChemicalEntity,872,881
+1237,40655353,diaminopyrimidine,ChemicalEntity,883,900
+1238,40655353,phenicol,ChemicalEntity,902,910
+1239,40655353,penem,ChemicalEntity,928,933
+1241,40655353,A. haemolyticus,OrganismTaxon,959,974
+1242,40655353,Oxa beta lactamase,GeneOrGeneProduct,987,1005
+1243,40655353,Oxa,GeneOrGeneProduct,1015,1018
+1247,40655353,A. johnsonii,OrganismTaxon,1080,1092
+1250,40655353,fluoroquinoids,ChemicalEntity,1221,1235
+374,40662146,Candida albicans,OrganismTaxon,56,72
+375,40662146,UPC2,GeneOrGeneProduct,73,77
+376,40662146,azole,ChemicalEntity,90,95
+377,40662146,Candidiasis,DiseaseOrPhenotypicFeature,123,134
+378,40662146,fungal infection,DiseaseOrPhenotypicFeature,150,166
+379,40662146,Candida,OrganismTaxon,199,206
+380,40662146,C. albicans,OrganismTaxon,227,238
+381,40662146,azole medications,ChemicalEntity,275,292
+383,40662146,infections,DiseaseOrPhenotypicFeature,362,372
+390,40662146,zinc (II)-Cys (6) transcription factor,GeneOrGeneProduct,884,922
+391,40662146,sterols,ChemicalEntity,955,962
+393,40662146,azoles,ChemicalEntity,1041,1047
+396,40662146,ergosterol,ChemicalEntity,1110,1120
+397,40662146,ERG2,GeneOrGeneProduct,1152,1156
+398,40662146,ERG11,GeneOrGeneProduct,1168,1173
+401,40662146,14?-lanosterol demethylase,GeneOrGeneProduct,1288,1314
+403,40662146,sterol,ChemicalEntity,1398,1404
+256,40860264,triple negative breast cancer,DiseaseOrPhenotypicFeature,103,132
+257,40860264,Triple-negative breast cancers,DiseaseOrPhenotypicFeature,134,164
+258,40860264,TNBC,DiseaseOrPhenotypicFeature,166,170
+259,40860264,tumors,DiseaseOrPhenotypicFeature,187,193
+260,40860264,estrogen receptor,GeneOrGeneProduct,226,243
+261,40860264,ER,GeneOrGeneProduct,245,247
+262,40860264,progesterone receptor,GeneOrGeneProduct,250,271
+263,40860264,PR,GeneOrGeneProduct,273,275
+264,40860264,human epidermal growth factor receptor 2,GeneOrGeneProduct,282,322
+265,40860264,HER2,GeneOrGeneProduct,324,328
+269,40860264,Androgen receptor,GeneOrGeneProduct,1212,1229
+270,40860264,AR,GeneOrGeneProduct,1231,1233
+271,40860264,breast cancer,DiseaseOrPhenotypicFeature,1349,1362
+274,40860264,2-hydroxynaringenin,ChemicalEntity,1537,1556
+1099,40881775,orthopedic injuries,DiseaseOrPhenotypicFeature,563,582
+1100,40881775,genetic and degenerative diseases,DiseaseOrPhenotypicFeature,1175,1208
+596,40949928,Alzheimer's disease,DiseaseOrPhenotypicFeature,1205,1224
+208,41059450,PGAP2,GeneOrGeneProduct,11,16
+209,41059450,Hyperphosphatasia with Mental Retardation Syndrome-3,DiseaseOrPhenotypicFeature,33,85
+212,41059450,congenital glycosylation disorder,DiseaseOrPhenotypicFeature,286,319
+213,41059450,glycosylphosphatidylinositol,ChemicalEntity,396,424
+214,41059450,Glycosylphosphatidylinositol anchor proteins,GeneOrGeneProduct,456,500
+216,41059450,glycosylphosphatidylinositol anchor defects,DiseaseOrPhenotypicFeature,691,734
+217,41059450,intellectual disability,DiseaseOrPhenotypicFeature,772,795
+218,41059450,dysmorphic features,DiseaseOrPhenotypicFeature,797,816
+219,41059450,hypotonia,DiseaseOrPhenotypicFeature,818,827
+220,41059450,seizures,DiseaseOrPhenotypicFeature,829,837
+221,41059450,hyperphosphatasia,DiseaseOrPhenotypicFeature,854,871
+223,41059450,patient,OrganismTaxon,1009,1016
+225,41059450,neurodevelopmental delay,DiseaseOrPhenotypicFeature,1043,1067
+227,41059450,hearing loss,DiseaseOrPhenotypicFeature,1079,1091
+228,41059450,Hirschsprung disease,DiseaseOrPhenotypicFeature,1093,1113
+229,41059450,fever,DiseaseOrPhenotypicFeature,1123,1128
+230,41059450,alkaline phosphatase,GeneOrGeneProduct,1143,1163
+231,41059450,cerebral atrophy,DiseaseOrPhenotypicFeature,1229,1245
+232,41059450,corpus callosum hypoplasia,DiseaseOrPhenotypicFeature,1250,1276
+233,41059450,c.651C>G,SequenceVariant,1556,1564
+234,41059450,p.His217Gln,SequenceVariant,1566,1577
+236,41059450,histidine,SequenceVariant,1825,1850
+239,41059450,developmental delay,DiseaseOrPhenotypicFeature,2015,2034
+241,41059450,epilepsy,DiseaseOrPhenotypicFeature,2071,2079
+244,41059450,immunological abnormalities,DiseaseOrPhenotypicFeature,2144,2171
+324,41230208,PIBF1,GeneOrGeneProduct,6,11
+325,41230208,Joubert Syndrome Type 33,DiseaseOrPhenotypicFeature,54,78
+327,41230208,JBTS33,DiseaseOrPhenotypicFeature,106,112
+328,41230208,autosomal recessive disorder,DiseaseOrPhenotypicFeature,124,152
+329,41230208,developmental delay,DiseaseOrPhenotypicFeature,170,189
+330,41230208,renal disease,DiseaseOrPhenotypicFeature,198,211
+331,41230208,hypotonia,DiseaseOrPhenotypicFeature,213,222
+332,41230208,ataxia,DiseaseOrPhenotypicFeature,223,229
+333,41230208,cerebellar vermian hypoplasia,DiseaseOrPhenotypicFeature,231,260
+334,41230208,aplasia,DiseaseOrPhenotypicFeature,261,268
+335,41230208,optic nerve atrophy,DiseaseOrPhenotypicFeature,270,289
+336,41230208,renal atrophy,DiseaseOrPhenotypicFeature,291,304
+337,41230208,Joubert syndrome,DiseaseOrPhenotypicFeature,377,393
+338,41230208,CEP290,GeneOrGeneProduct,426,432
+339,41230208,TMEM216,GeneOrGeneProduct,434,441
+340,41230208,TMEM67,GeneOrGeneProduct,443,449
+341,41230208,AHI1,GeneOrGeneProduct,451,455
+342,41230208,CC2D2A.,GeneOrGeneProduct,461,468
+344,41230208,c.1231C>T,SequenceVariant,625,634
+345,41230208,p.Arg411Ter,SequenceVariant,636,647
+346,41230208,progesterone-induced blocking factor 1,GeneOrGeneProduct,652,690
+348,41230208,patients,OrganismTaxon,736,744
+351,41230208,dysmorphic features,DiseaseOrPhenotypicFeature,863,882
+354,41230208,kidney failure,DiseaseOrPhenotypicFeature,902,916
+355,41230208,seizures,DiseaseOrPhenotypicFeature,931,939
+356,41230208,patient,OrganismTaxon,947,954
+358,41230208,phenobarbital,ChemicalEntity,991,1004
+361,41230208,JBTS,DiseaseOrPhenotypicFeature,1199,1203
+918,41283084,Cancer,DiseaseOrPhenotypicFeature,71,77
+919,41283084,Postoperative nausea and vomiting,DiseaseOrPhenotypicFeature,170,203
+920,41283084,PONV,DiseaseOrPhenotypicFeature,205,209
+922,41283084,patients,OrganismTaxon,279,287
+931,41283084,rs2776262,SequenceVariant,1211,1220
+932,41283084,LOC100506403,GeneOrGeneProduct,1237,1249
+933,41283084,rs12609817,SequenceVariant,1343,1353
+934,41283084,ZNF845,GeneOrGeneProduct,1370,1376
+935,41283084,rs921634,SequenceVariant,1503,1511
+936,41283084,PKD1L1,GeneOrGeneProduct,1527,1533
+937,41283084,rs1927382,SequenceVariant,1695,1704
+938,41283084,FGF14,GeneOrGeneProduct,1708,1713
+939,41283084,rs1333114,SequenceVariant,1718,1727
+940,41283084,PTPRD,GeneOrGeneProduct,1731,1736
+947,41283084,CLDN14,GeneOrGeneProduct,1931,1937
+948,41283084,rs2071049,SequenceVariant,1938,1947
+954,41283084,patient,OrganismTaxon,2241,2248
+88,41415885,R183Q,SequenceVariant,0,5
+89,41415885,GNAQ,GeneOrGeneProduct,6,10
+90,41415885,Sturge-Weber syndrome,DiseaseOrPhenotypicFeature,11,32
+91,41415885,Mouse,OrganismTaxon,82,87
+93,41415885,SWS,DiseaseOrPhenotypicFeature,118,121
+94,41415885,neurovascular malformation disorder,DiseaseOrPhenotypicFeature,131,166
+102,41415885,rtTA,GeneOrGeneProduct,497,501
+103,41415885,mice,OrganismTaxon,521,525
+106,41415885,doxycycline,ChemicalEntity,627,638
+107,41415885,seizure,DiseaseOrPhenotypicFeature,693,700
+108,41415885,kainate,ChemicalEntity,727,734
+109,41415885,Evans blue,ChemicalEntity,789,799
+111,41415885,DAPI,ChemicalEntity,845,849
+112,41415885,G?q,GeneOrGeneProduct,870,873
+113,41415885,Tie2,GeneOrGeneProduct,875,879
+114,41415885,phosphorylated-S6,GeneOrGeneProduct,881,898
+115,41415885,claudin-5,GeneOrGeneProduct,904,913
+116,41415885,X-gal,ChemicalEntity,965,970
+123,41415885,S6,GeneOrGeneProduct,1229,1231
+135,41415885,mTOR,GeneOrGeneProduct,1683,1687
+674,41451023,acenocoumarol,ChemicalEntity,10,23
+675,41451023,silodosin,ChemicalEntity,28,37
+676,41451023,non-small cell lung cancer,DiseaseOrPhenotypicFeature,41,67
+677,41451023,EGFR,GeneOrGeneProduct,83,87
+678,41451023,Non-small-cell lung cancer,DiseaseOrPhenotypicFeature,117,143
+679,41451023,NSCLC,DiseaseOrPhenotypicFeature,145,150
+681,41451023,epidermal growth factor receptor,GeneOrGeneProduct,345,377
+686,41451023,cytotoxicity,DiseaseOrPhenotypicFeature,660,672
+687,41451023,A549,CellLine,744,748
+688,41451023,tumor,DiseaseOrPhenotypicFeature,797,802
+693,41451023,IMR-90,CellLine,896,902
+699,41451023,KRAS,GeneOrGeneProduct,1178,1182
+700,41451023,Kirsten rat sarcoma viral oncogene homolog,GeneOrGeneProduct,1184,1226
+701,41451023,ERK2,GeneOrGeneProduct,1232,1236
+702,41451023,extracellular signal-regulated kinase 2,GeneOrGeneProduct,1238,1277
+707,41451023,cisplatin,ChemicalEntity,1543,1552
+711,41451023,caspase-3,GeneOrGeneProduct,1711,1720
+782,41834934,rs12826786,SequenceVariant,15,25
+783,41834934,rs1899663,SequenceVariant,30,39
+784,41834934,Rheumatoid Arthritis Disease,DiseaseOrPhenotypicFeature,120,148
+785,41834934,inflammatory arthropathy,DiseaseOrPhenotypicFeature,169,193
+786,41834934,rheumatoid arthritis,DiseaseOrPhenotypicFeature,210,230
+787,41834934,RA,DiseaseOrPhenotypicFeature,232,234
+789,41834934,patients,OrganismTaxon,672,680
+794,41834934,HOTAIR,GeneOrGeneProduct,972,978
+755,41834939,IL-6,GeneOrGeneProduct,13,17
+756,41834939,TGF-?2,GeneOrGeneProduct,22,28
+757,41834939,Colon Cancer,DiseaseOrPhenotypicFeature,32,44
+758,41834939,Colon rectal cancer,DiseaseOrPhenotypicFeature,91,110
+759,41834939,cancer,DiseaseOrPhenotypicFeature,157,163
+760,41834939,colorectal cancer,DiseaseOrPhenotypicFeature,182,199
+763,41834939,dox,ChemicalEntity,357,360
+764,41834939,HT-29,CellLine,385,390
+765,41834939,colon adenocarcinoma,DiseaseOrPhenotypicFeature,416,436
+766,41834939,smad4,GeneOrGeneProduct,442,447
+767,41834939,Colo205,CellLine,462,469
+770,41834939,doxorubicin,ChemicalEntity,588,599
+771,41834939,TGF-?2 ligand,GeneOrGeneProduct,662,675
+804,42147992,Pregnancy Loss,DiseaseOrPhenotypicFeature,28,42
+805,42147992,Early pregnancy loss,DiseaseOrPhenotypicFeature,108,113
+807,42147992,EPL,DiseaseOrPhenotypicFeature,130,133
+808,42147992,chromosomal abnormalities,DiseaseOrPhenotypicFeature,243,268
+811,42147992,EPLs,DiseaseOrPhenotypicFeature,606,610
+812,42147992,DYRK1A,GeneOrGeneProduct,939,945
+813,42147992,RUNX1,GeneOrGeneProduct,957,962
+815,42147992,CPLANE1,GeneOrGeneProduct,1008,1015
+816,42147992,DHCR7,GeneOrGeneProduct,1024,1029
+817,42147992,DSG2,GeneOrGeneProduct,1038,1042
+818,42147992,DVL1,GeneOrGeneProduct,1051,1055
+819,42147992,NF1,GeneOrGeneProduct,1075,1078
+820,42147992,RBM8A,GeneOrGeneProduct,1087,1092
+821,42147992,SLC6A1,GeneOrGeneProduct,1101,1107
+822,42147992,VWF,GeneOrGeneProduct,1120,1123
+823,42147992,embryonic lethality,DiseaseOrPhenotypicFeature,1268,1287
+824,42147992,GBA1,GeneOrGeneProduct,1564,1568
+825,42147992,PKHD1,GeneOrGeneProduct,1589,1594
+826,42147992,RPGRIP1L,GeneOrGeneProduct,1607,1615
+827,42147992,MYH3,GeneOrGeneProduct,1710,1714
+828,42147992,PRDM6,GeneOrGeneProduct,1723,1728
+829,42147992,SCN5A,GeneOrGeneProduct,1737,1742
+830,42147992,TBX18,GeneOrGeneProduct,1751,1756
+831,42147992,TSC1,GeneOrGeneProduct,1769,1773
+833,42147992,congenital disorders,DiseaseOrPhenotypicFeature,2056,2076
+834,42147992,embryonically lethal,DiseaseOrPhenotypicFeature,2102,2122
+282,42148001,Townes-Brocks Syndrome,DiseaseOrPhenotypicFeature,0,22
+283,42148001,Renal Hypodysplasia,DiseaseOrPhenotypicFeature,39,58
+285,42148001,TBS,DiseaseOrPhenotypicFeature,160,163
+286,42148001,autosomal dominant disorder,DiseaseOrPhenotypicFeature,175,202
+287,42148001,SALL1,GeneOrGeneProduct,239,244
+288,42148001,dysplastic ears,DiseaseOrPhenotypicFeature,273,288
+289,42148001,anorectal malformations,DiseaseOrPhenotypicFeature,290,313
+290,42148001,thumb anomalies,DiseaseOrPhenotypicFeature,319,334
+291,42148001,Renal involvement,DiseaseOrPhenotypicFeature,336,353
+294,42148001,c.1509C>A,SequenceVariant,514,523
+295,42148001,p. Tyr503Ter,SequenceVariant,525,537
+296,42148001,patients,OrganismTaxon,637,645
+297,42148001,bilateral renal Hypodysplasia,DiseaseOrPhenotypicFeature,738,767
+298,42148001,chronic kidney disease,DiseaseOrPhenotypicFeature,772,794
+299,42148001,CKD,DiseaseOrPhenotypicFeature,796,799
+301,42148001,end-stage renal disease,DiseaseOrPhenotypicFeature,887,910
+302,42148001,ESRD,DiseaseOrPhenotypicFeature,912,916
+303,42148001,patient,OrganismTaxon,991,998
+304,42148001,anal atresia,DiseaseOrPhenotypicFeature,1017,1029
+306,42148001,hypospadias,DiseaseOrPhenotypicFeature,1048,1059
+307,42148001,congenital hypothyroidism,DiseaseOrPhenotypicFeature,1065,1090
+308,42148001,CKD stage II,DiseaseOrPhenotypicFeature,1117,1129
+310,42148001,CKD stage III,DiseaseOrPhenotypicFeature,1155,1168
+311,42148001,proteinuria,DiseaseOrPhenotypicFeature,1207,1218
+313,42148001,sensorineural hearing loss,DiseaseOrPhenotypicFeature,1258,1284
+320,42148001,congenital anomalies of the kidney and Urinary tract,DiseaseOrPhenotypicFeature,1578,1630
+321,42148001,CAKUT,DiseaseOrPhenotypicFeature,1632,1637
+322,42148001,anorectal anomalies,DiseaseOrPhenotypicFeature,1678,1697
+323,42148001,kidney disease,DiseaseOrPhenotypicFeature,1795,1809
+198,42206121,Oral Cancer,DiseaseOrPhenotypicFeature,114,125
+201,42206121,oral cancers,DiseaseOrPhenotypicFeature,1252,1264
+205,42206121,patients,OrganismTaxon,2086,2094
+248,42239639,Infectious Diseases,DiseaseOrPhenotypicFeature,66,85
+249,42239639,coronavirus disease 2019,DiseaseOrPhenotypicFeature,433,457
+250,42239639,COVID-19,DiseaseOrPhenotypicFeature,459,467
+252,42239639,polio,DiseaseOrPhenotypicFeature,790,795
+253,42239639,monkeypox,DiseaseOrPhenotypicFeature,797,806
+254,42239639,infectious disease,DiseaseOrPhenotypicFeature,818,836
+137,42376533,basal cell carcinoma,DiseaseOrPhenotypicFeature,11,31
+138,42376533,cat,OrganismTaxon,62,65
+139,42376533,metastasis,DiseaseOrPhenotypicFeature,106,116
+140,42376533,Basal cell carcinomas,DiseaseOrPhenotypicFeature,118,139
+141,42376533,BCCs,DiseaseOrPhenotypicFeature,141,145
+142,42376533,cats,OrganismTaxon,150,154
+143,42376533,benign skin tumors,DiseaseOrPhenotypicFeature,181,199
+145,42376533,facial lesions,DiseaseOrPhenotypicFeature,318,332
+148,42376533,ulcer,DiseaseOrPhenotypicFeature,438,443
+150,42376533,BCC,DiseaseOrPhenotypicFeature,780,783
+151,42376533,carboplatin,ChemicalEntity,878,889
+153,42376533,feline,OrganismTaxon,1042,1048
+155,42376533,skin ulcers,DiseaseOrPhenotypicFeature,1253,1264
+156,42422171,Menaquinone-7,ChemicalEntity,0,13
+157,42422171,mitochondrial dysfunction,DiseaseOrPhenotypicFeature,25,50
+158,42422171,osteoporosis,DiseaseOrPhenotypicFeature,76,88
+159,42422171,PINK1,GeneOrGeneProduct,106,111
+160,42422171,PXR,GeneOrGeneProduct,135,138
+161,42422171,ERK,GeneOrGeneProduct,139,142
+162,42422171,CREB,GeneOrGeneProduct,143,147
+166,42422171,MK-7,ChemicalEntity,368,372
+167,42422171,vitamin K,ChemicalEntity,377,386
+168,42422171,senile osteoporosis,DiseaseOrPhenotypicFeature,476,495
+169,42422171,adeno-associated virus,OrganismTaxon,548,553
+170,42422171,AAV,OrganismTaxon,572,575
+171,42422171,mice,OrganismTaxon,609,613
+172,42422171,cellular communication network factor 2,GeneOrGeneProduct,615,654
+173,42422171,Ccn2,GeneOrGeneProduct,656,660
+176,42422171,pregnane X receptor,GeneOrGeneProduct,817,836
+178,42422171,extracellular signal-regulated kinases 1/2,GeneOrGeneProduct,859,901
+179,42422171,ERK1/2,GeneOrGeneProduct,903,909
+180,42422171,cyclic AMP-responsive element-binding protein,GeneOrGeneProduct,911,956
+183,42422171,PTEN-induced kinase 1,GeneOrGeneProduct,1080,1101
+185,42422171,Parkin,GeneOrGeneProduct,1110,1116
+186,42422171,oxygen species,ChemicalEntity,1181,1195
+188,42422171,bone loss,DiseaseOrPhenotypicFeature,1407,1416
+837,42500341,MT1A,GeneOrGeneProduct,18,22
+838,42500341,rs11640851,SequenceVariant,27,37
+839,42500341,rs8052394,SequenceVariant,39,48
+840,42500341,rs11076161,SequenceVariant,53,63
+841,42500341,Breast Cancer,DiseaseOrPhenotypicFeature,106,119
+842,42500341,Metallothionein,GeneOrGeneProduct,182,197
+848,42500341,BC,DiseaseOrPhenotypicFeature,517,519
+849,42500341,patients,OrganismTaxon,578,586
+863,42500341,rs1164085,SequenceVariant,1582,1591
+495,42500343,Women,OrganismTaxon,41,46
+496,42500343,Polycystic Ovary Syndrome,DiseaseOrPhenotypicFeature,76,101
+497,42500343,Lipid,ChemicalEntity,127,132
+500,42500343,PCOS,DiseaseOrPhenotypicFeature,182,186
+501,42500343,endocrine-metabolic disorder,DiseaseOrPhenotypicFeature,194,222
+502,42500343,infertility,DiseaseOrPhenotypicFeature,256,267
+505,42500343,polycystic ovaries,DiseaseOrPhenotypicFeature,308,326
+506,42500343,hyperandrogenism,DiseaseOrPhenotypicFeature,328,344
+507,42500343,anovulation,DiseaseOrPhenotypicFeature,350,361
+508,42500343,metabolic syndromes,DiseaseOrPhenotypicFeature,436,455
+511,42500343,OS,DiseaseOrPhenotypicFeature,542,544
+515,42500343,triglycerides,ChemicalEntity,841,854
+516,42500343,testosterone,ChemicalEntity,868,880
+517,42500343,LH,GeneOrGeneProduct,882,884
+518,42500343,MDA,ChemicalEntity,886,889
+538,42500343,obesity,DiseaseOrPhenotypicFeature,1611,1618
+539,42500343,dyslipidemia,DiseaseOrPhenotypicFeature,1624,1636
+1214,42524382,Human,OrganismTaxon,99,104
+1215,42524382,pain,DiseaseOrPhenotypicFeature,1420,1424
+1216,42524382,patients,OrganismTaxon,1563,1571
+895,42540124,Gastrointestinal Ascariasis,DiseaseOrPhenotypicFeature,0,27
+896,42540124,Ascariasis,DiseaseOrPhenotypicFeature,62,72
+897,42540124,helminthic infection,DiseaseOrPhenotypicFeature,78,98
+898,42540124,Ascaris lumbricoides,OrganismTaxon,125,145
+899,42540124,helminth infection,DiseaseOrPhenotypicFeature,181,199
+900,42540124,intestinal ascariasis,DiseaseOrPhenotypicFeature,278,299
+901,42540124,non-steroidal anti-inflammatory drug,ChemicalEntity,427,463
+902,42540124,NSAID,ChemicalEntity,465,470
+903,42540124,upper gastrointestinal bleeding,DiseaseOrPhenotypicFeature,482,513
+904,42540124,Ascaris worms,OrganismTaxon,558,571
+905,42540124,liver cirrhosis,DiseaseOrPhenotypicFeature,670,685
+906,42540124,vomiting,DiseaseOrPhenotypicFeature,696,704
+908,42540124,patients,OrganismTaxon,776,784
+909,42540124,anthelminthic,ChemicalEntity,810,823
+912,42540124,upper GI bleeding,DiseaseOrPhenotypicFeature,1022,1039
+913,42540124,biliary ascariasis,DiseaseOrPhenotypicFeature,1099,1117
+914,42540124,ascariasis co-infection,DiseaseOrPhenotypicFeature,1121,1144
+1101,42548349,Nintedanib,ChemicalEntity,27,37
+1102,42548349,Immunosuppression,DiseaseOrPhenotypicFeature,42,59
+1103,42548349,Autoimmune Inflammatory Myopathy,DiseaseOrPhenotypicFeature,63,95
+1104,42548349,Pulmonary Fibrosis,DiseaseOrPhenotypicFeature,119,137
+1105,42548349,Autoimmune-inflammatory myopathy-related interstitial lung diseases,DiseaseOrPhenotypicFeature,139,206
+1106,42548349,AIM-ILDs,DiseaseOrPhenotypicFeature,208,216
+1109,42548349,AIM-ILD,DiseaseOrPhenotypicFeature,392,399
+1111,42548349,patients,OrganismTaxon,474,482
+1120,42548349,diarrhea,DiseaseOrPhenotypicFeature,1396,1404
+1121,42548349,nausea/vomiting,DiseaseOrPhenotypicFeature,1406,1421
+1122,42548349,abdominal pain,DiseaseOrPhenotypicFeature,1427,1441
+410,42582296,Women,OrganismTaxon,1339,1344
+411,42582296,men,OrganismTaxon,1435,1438
+958,42602331,H2AX,GeneOrGeneProduct,0,4
+959,42602331,SET,GeneOrGeneProduct,35,38
+960,42602331,PP2A,GeneOrGeneProduct,39,43
+961,42602331,glioma,DiseaseOrPhenotypicFeature,59,65
+962,42602331,Glioblastoma,DiseaseOrPhenotypicFeature,88,100
+964,42602331,tumor,DiseaseOrPhenotypicFeature,164,169
+968,42602331,?H2AX,GeneOrGeneProduct,550,555
+971,42602331,S139A,SequenceVariant,806,811
+976,42602331,PP2A phosphatase,GeneOrGeneProduct,1005,1021
+977,42602331,SET oncoprotein,GeneOrGeneProduct,1070,1085
+18,42621305,N6-methyladenosine,ChemicalEntity,0,18
+19,42621305,circLPAR3,GeneOrGeneProduct,28,37
+20,42621305,docetaxel,ChemicalEntity,45,54
+21,42621305,prostate cancer,DiseaseOrPhenotypicFeature,69,84
+22,42621305,PCBP2,GeneOrGeneProduct,124,129
+23,42621305,CHAC1,GeneOrGeneProduct,130,135
+26,42621305,PCa,DiseaseOrPhenotypicFeature,311,314
+29,42621305,DTX,ChemicalEntity,404,407
+33,42621305,METTL3,GeneOrGeneProduct,718,724
+34,42621305,IGF2BP2,GeneOrGeneProduct,725,732
+41,42621305,cytotoxicity,DiseaseOrPhenotypicFeature,978,990
+51,42621305,m6A,ChemicalEntity,1476,1481
+0,42625765,Streptococcus Agalactiae,OrganismTaxon,80,104
+1,42625765,Bovine Mastitis,DiseaseOrPhenotypicFeature,121,136
+3,42625765,mastitis,DiseaseOrPhenotypicFeature,239,247
+4,42625765,cows,OrganismTaxon,251,255
+8,42625765,bacteria,OrganismTaxon,622,630
+12,42625765,bac,GeneOrGeneProduct,1604,1607
+13,42625765,S. agalactiae,OrganismTaxon,1705,1718
+722,42625940,Horsemint,OrganismTaxon,99,108
+723,42625940,Mentha longifolia,OrganismTaxon,113,130
+727,42625940,ESKAPE bacteria,OrganismTaxon,854,869
+728,42625940,Pseudomonas aeruginosa,OrganismTaxon,950,972
+729,42625940,Klebsiella pneumoniae,OrganismTaxon,984,1005
+730,42625940,Staphylococcus aureus,OrganismTaxon,1044,1065
+731,42625940,synthases,GeneOrGeneProduct,1221,1230
+732,42625940,PKS-I,GeneOrGeneProduct,1235,1240
+733,42625940,PKS-II,GeneOrGeneProduct,1255,1258
+735,42625940,M. longifolia,OrganismTaxon,1792,1805
+1016,42629135,Chemokine receptor,GeneOrGeneProduct,0,18
+1017,42629135,CX3CR1,GeneOrGeneProduct,19,25
+1018,42629135,Tau,GeneOrGeneProduct,64,67
+1019,42629135,amyloid-?,GeneOrGeneProduct,72,81
+1020,42629135,Alzheimer's disease,DiseaseOrPhenotypicFeature,98,117
+1022,42629135,dementia,DiseaseOrPhenotypicFeature,177,185
+1023,42629135,neurocognitive decline,DiseaseOrPhenotypicFeature,203,225
+1028,42629135,AD,DiseaseOrPhenotypicFeature,414,416
+1029,42629135,synaptic dysfunction,DiseaseOrPhenotypicFeature,430,450
+1030,42629135,cognitive decline,DiseaseOrPhenotypicFeature,464,481
+1031,42629135,G-protein coupled receptors,GeneOrGeneProduct,527,554
+1033,42629135,GPCRs,GeneOrGeneProduct,704,709
+1036,42629135,CX3CR1 receptor,GeneOrGeneProduct,833,848
+1037,42629135,A?,GeneOrGeneProduct,967,969
+1044,42629135,CX3CL1,GeneOrGeneProduct,1295,1301
+1046,42629135,neuroinflammation,DiseaseOrPhenotypicFeature,1360,1377
+543,42630256,cannabidiol,ChemicalEntity,74,85
+544,42630256,audiogenic epilepsy,DiseaseOrPhenotypicFeature,122,141
+545,42630256,patients,OrganismTaxon,164,172
+546,42630256,epilepsy,DiseaseOrPhenotypicFeature,178,186
+548,42630256,CBD,ChemicalEntity,288,291
+549,42630256,epileptic encephalopathies,DiseaseOrPhenotypicFeature,333,359
+551,42630256,hamster,OrganismTaxon,612,619
+552,42630256,tonic-clonic seizures,DiseaseOrPhenotypicFeature,663,684
+555,42630256,seizure,DiseaseOrPhenotypicFeature,837,844
+559,42630256,audiogenic seizure,DiseaseOrPhenotypicFeature,1353,1371
+568,42630256,endocannabinoid,ChemicalEntity,2225,2240
+569,42630256,Sigmar1,GeneOrGeneProduct,2258,2265
+571,42630256,Trpv1,GeneOrGeneProduct,2364,2369
+572,42630256,Slc29a1,GeneOrGeneProduct,2381,2388
+574,42630256,Htr1a,GeneOrGeneProduct,2477,2482
+575,42630256,Adora1,GeneOrGeneProduct,2491,2497
+576,42630256,Cnr1,GeneOrGeneProduct,2510,2514
+578,42630256,Sal,ChemicalEntity,2666,2669
+579,42630256,cannabinoid,ChemicalEntity,2899,2910
+450,42630505,Triple-Negative Breast Cancer,DiseaseOrPhenotypicFeature,96,125
+452,42630505,TNBC,DiseaseOrPhenotypicFeature,158,162
+453,42630505,breast cancer,DiseaseOrPhenotypicFeature,192,205
+454,42630505,estrogen receptors,GeneOrGeneProduct,271,289
+455,42630505,progesterone receptors,GeneOrGeneProduct,291,313
+456,42630505,Human Epidermal Growth Factor Receptor 2,GeneOrGeneProduct,319,359
+457,42630505,HER2,GeneOrGeneProduct,361,365
+459,42630505,metastasis,DiseaseOrPhenotypicFeature,529,539
+460,42630505,Epidermal growth factor receptor,GeneOrGeneProduct,682,714
+461,42630505,EGFR,GeneOrGeneProduct,716,720
+462,42630505,Phosphoinositide 3-kinase,GeneOrGeneProduct,723,748
+463,42630505,Protein Kinase B,GeneOrGeneProduct,749,765
+464,42630505,PI3K,GeneOrGeneProduct,767,771
+465,42630505,AKT,GeneOrGeneProduct,772,775
+466,42630505,Notch,GeneOrGeneProduct,782,787
+467,42630505,ubiquitin,GeneOrGeneProduct,952,961
+470,42630505,tumor,DiseaseOrPhenotypicFeature,1246,1251
+471,42630505,Toll-like receptor 4,GeneOrGeneProduct,1400,1420
+472,42630505,Nuclear factor kappa-B,GeneOrGeneProduct,1421,1443
+473,42630505,TLR4,GeneOrGeneProduct,1445,1449
+474,42630505,NF-?B,GeneOrGeneProduct,1450,1455
+475,42630505,Twist family bHLH transcription factor 1,GeneOrGeneProduct,1458,1498
+476,42630505,TWIST1,GeneOrGeneProduct,1500,1506
+477,42630505,Poly (ADP-Ribose) Polymerase 1,GeneOrGeneProduct,1509,1539
+478,42630505,PARP1,GeneOrGeneProduct,1541,1546
+479,42630505,Programmed death-ligand 1,GeneOrGeneProduct,1549,1574
+480,42630505,PD-L1,GeneOrGeneProduct,1576,1581
+481,42630505,Glutathione Peroxidase 4,GeneOrGeneProduct,1588,1612
+482,42630505,GPX4,GeneOrGeneProduct,1614,1618
+484,42630505,small ubiquitin-like modifier,GeneOrGeneProduct,1674,1703
+485,42630505,Neural precursor cell expressed developmentally downregulated protein 8,GeneOrGeneProduct,1719,1790
+487,42630505,Interferon-stimulated gene,GeneOrGeneProduct,1810,1836
+490,42630505,Poly ADP-ribose polymerase,GeneOrGeneProduct,2164,2190
+491,42630505,PARP,GeneOrGeneProduct,2192,2196
+493,42630505,E3 ligase,GeneOrGeneProduct,2408,2417
+1006,42630617,GH,GeneOrGeneProduct,15,17
+1007,42630617,HaeIII,GeneOrGeneProduct,21,27
+1008,42630617,sheep,OrganismTaxon,96,101
+1010,42630617,ewes,OrganismTaxon,176,180
+1127,42630837,SGLT2 inhibitors,ChemicalEntity,14,30
+1128,42630837,uric acid,ChemicalEntity,34,43
+1129,42630837,patients,OrganismTaxon,54,62
+1130,42630837,heart failure,DiseaseOrPhenotypicFeature,68,81
+1131,42630837,Hyperuricemia,DiseaseOrPhenotypicFeature,165,178
+1132,42630837,HUA,DiseaseOrPhenotypicFeature,180,183
+1135,42630837,HFpEF,DiseaseOrPhenotypicFeature,277,282
+1136,42630837,Sodium-glucose cotransporter 2,GeneOrGeneProduct,357,387
+1139,42630837,SUA,ChemicalEntity,459,462
+1146,42630837,inflammation,DiseaseOrPhenotypicFeature,816,828
+1154,42630837,SGLT2 inhibitor,ChemicalEntity,1777,1792
+1159,42630837,tumor necrosis factor,GeneOrGeneProduct,2027,2048
+1160,42630837,TNF,GeneOrGeneProduct,2050,2053
+1162,42630837,AGE,ChemicalEntity,2132,2135
+1163,42630837,RAGE,GeneOrGeneProduct,2136,2140
+1164,42630837,interleukin-17,GeneOrGeneProduct,2143,2157
+1165,42630837,IL-17,GeneOrGeneProduct,2159,2164
+1166,42630837,Kaposi's sarcoma-associated herpesvirus,OrganismTaxon,2171,2210
+1167,42630837,KSHV,OrganismTaxon,2212,2216
+1169,42630837,GAPDH,GeneOrGeneProduct,2325,2330
+1170,42630837,CASP3,GeneOrGeneProduct,2332,2337
+1171,42630837,ICAM1,GeneOrGeneProduct,2339,2344
+1172,42630837,ACE,GeneOrGeneProduct,2346,2349
+1173,42630837,DPP4,GeneOrGeneProduct,2351,2355
+1174,42630837,AGTR1,GeneOrGeneProduct,2361,2366
+1175,42630837,canagliflozin,ChemicalEntity,2373,2386
+1177,42630837,creatinine,ChemicalEntity,2485,2495
+597,42631261,ATP7B,GeneOrGeneProduct,22,27
+598,42631261,Hepatic Wilson Disease,DiseaseOrPhenotypicFeature,70,92
+599,42631261,Wilson disease,DiseaseOrPhenotypicFeature,94,108
+600,42631261,WD,DiseaseOrPhenotypicFeature,110,112
+601,42631261,man,OrganismTaxon,225,228
+602,42631261,hepatic steatosis,DiseaseOrPhenotypicFeature,269,286
+603,42631261,cirrhosis,DiseaseOrPhenotypicFeature,291,300
+604,42631261,metabolic syndrome,DiseaseOrPhenotypicFeature,325,343
+605,42631261,ceruloplasmin,GeneOrGeneProduct,416,429
+606,42631261,copper,ChemicalEntity,445,451
+608,42631261,Kayser-Fleischer rings,DiseaseOrPhenotypicFeature,490,506
+610,42631261,c.1707+2dupT,SequenceVariant,604,616
+613,42631261,patients,OrganismTaxon,741,749
+615,42631261,cryptogenic cirrhosis,DiseaseOrPhenotypicFeature,789,810
+616,42632595,Hand Osteoarthritis,DiseaseOrPhenotypicFeature,42,61
+617,42632595,patients,OrganismTaxon,244,252
+620,42632595,osteoarthritis,DiseaseOrPhenotypicFeature,602,616
+622,42632595,thumb-base hand osteoarthritis,DiseaseOrPhenotypicFeature,692,722
+623,42632595,rheumatoid arthritis,DiseaseOrPhenotypicFeature,748,768
+625,42632595,arthritides,DiseaseOrPhenotypicFeature,791,802
+626,42632595,Pain,DiseaseOrPhenotypicFeature,925,929
+628,42632595,stiffness,DiseaseOrPhenotypicFeature,1087,1096
+629,42632595,Methotrexate,ChemicalEntity,1683,1695
+630,42632595,hydroxychloroquine,ChemicalEntity,1700,1718
+631,42632595,adalimumab,ChemicalEntity,1808,1818
+632,42632595,etanercept,ChemicalEntity,1820,1830
+633,42632595,tocilizumab,ChemicalEntity,1832,1843
+634,42632595,lutikizumab,ChemicalEntity,1845,1856
+635,42632595,otilimab,ChemicalEntity,1862,1870
+59,42632605,Benzene,ChemicalEntity,0,7
+60,42632605,ATF7IP2,GeneOrGeneProduct,33,40
+61,42632605,Glutamate,ChemicalEntity,48,57
+62,42632605,Acute Myeloid Leukemia,DiseaseOrPhenotypicFeature,93,115
+65,42632605,AML,DiseaseOrPhenotypicFeature,215,218
+76,42632605,glutamine,ChemicalEntity,995,1004
+80,42632605,leukemia,DiseaseOrPhenotypicFeature,1306,1314
+81,42632605,TCMCB07,ChemicalEntity,1382,1389
+83,42632605,mouse,OrganismTaxon,1494,1499
+364,42632907,Tuberculosis,DiseaseOrPhenotypicFeature,106,118
+365,42632907,TB,DiseaseOrPhenotypicFeature,120,122
+366,42632907,Mycobacterium tuberculosis,OrganismTaxon,155,181
+367,42632907,Mtb,OrganismTaxon,183,186
+1048,42633029,Type 2 Diabetes Mellitus,DiseaseOrPhenotypicFeature,90,114
+1050,42633029,T2DM,DiseaseOrPhenotypicFeature,163,167
+1051,42633029,insulin resistance,DiseaseOrPhenotypicFeature,221,239
+1052,42633029,glucotoxicity,DiseaseOrPhenotypicFeature,245,258
+1053,42633029,hyperglycemia,DiseaseOrPhenotypicFeature,391,404
+1056,42633029,insulin,GeneOrGeneProduct,1109,1116
+1057,42633029,metformin,ChemicalEntity,1289,1298
+1058,42633029,pioglitazone,ChemicalEntity,1299,1311
+1059,42633029,linagliptin,ChemicalEntity,1495,1506
+1063,42633029,hypoglycemia,DiseaseOrPhenotypicFeature,2033,2045
+1064,42633029,weight gain,DiseaseOrPhenotypicFeature,2119,2130
+1184,42633066,hematologic disease,DiseaseOrPhenotypicFeature,50,69
+1185,42633066,CH,DiseaseOrPhenotypicFeature,179,181
+1186,42633066,murine,OrganismTaxon,262,268
+1187,42633066,Trp53,GeneOrGeneProduct,282,287
+1188,42633066,Ppm1d,GeneOrGeneProduct,297,302
+1189,42633066,Tet2,GeneOrGeneProduct,316,320
+1194,42633066,mice,OrganismTaxon,670,674
+1201,42633066,TP53,GeneOrGeneProduct,1092,1096
+647,42633081,Congenital Heart Disease,DiseaseOrPhenotypicFeature,65,89
+648,42633081,Neurodevelopmental Disorders,DiseaseOrPhenotypicFeature,94,122
+650,42633081,CHD,DiseaseOrPhenotypicFeature,242,245
+652,42633081,NDD,DiseaseOrPhenotypicFeature,343,346
+653,42633081,attention-deficit/hyperactivity disorder,DiseaseOrPhenotypicFeature,357,397
+654,42633081,autism spectrum disorder,DiseaseOrPhenotypicFeature,402,426
+655,42633081,placental dysfunction,DiseaseOrPhenotypicFeature,479,488
+656,42633081,oxygen,ChemicalEntity,513,519
+657,42633081,patients,OrganismTaxon,786,794
+666,42633081,ARID1B,GeneOrGeneProduct,1435,1441
+673,42633081,developmental disease,DiseaseOrPhenotypicFeature,1920,1941
+435,42633083,Solid Tumors,DiseaseOrPhenotypicFeature,53,65
+436,42633083,cancer,DiseaseOrPhenotypicFeature,201,207
+437,42633083,patients,OrganismTaxon,694,702
+438,42633083,tumors,DiseaseOrPhenotypicFeature,734,740
+439,42633083,tumor,DiseaseOrPhenotypicFeature,780,785
+874,42633120,nosocomial infections,DiseaseOrPhenotypicFeature,409,430
+876,42633120,Infectious Diseases,DiseaseOrPhenotypicFeature,1156,1175
+878,42633120,Escherichia coli,OrganismTaxon,1287,1303
+879,42633120,Klebsiella pneumoniae,OrganismTaxon,1355,1376
+880,42633120,Acinetobacter baumannii,OrganismTaxon,1393,1416
+881,42633120,Pseudomonas aeruginosa,OrganismTaxon,1432,1454
+882,42633120,Enterococcus,OrganismTaxon,1470,1482
+883,42633120,Staphylococcus aureus,OrganismTaxon,1503,1524
+884,42633120,Enterobacter,OrganismTaxon,1544,1556
+885,42633120,?-lactams,ChemicalEntity,1606,1615
+886,42633120,cephalosporins,ChemicalEntity,1617,1631
+887,42633120,fluoroquinolones,ChemicalEntity,1637,1653
+888,42633120,Carbapenem,ChemicalEntity,1655,1665
+889,42633120,E. coli,OrganismTaxon,1710,1717
+890,42633120,K. pneumoniae,OrganismTaxon,1744,1757
+891,42633120,P. aeruginosa,OrganismTaxon,1775,1788
+892,42633120,A. baumannii,OrganismTaxon,1819,1831
+894,42633120,infection,DiseaseOrPhenotypicFeature,2034,2043
+1203,42633266,Inflammation,DiseaseOrPhenotypicFeature,0,12
+1204,42633266,hydrogel,ChemicalEntity,84,92
+1205,42633266,periodontal diseases,DiseaseOrPhenotypicFeature,188,208
+1206,42633266,immune dysregulation,DiseaseOrPhenotypicFeature,219,239
+1208,42633266,periodontal inflammation,DiseaseOrPhenotypicFeature,553,577
+1209,42633266,gelatin,ChemicalEntity,669,676
+1210,42633266,matrix metalloproteinases,GeneOrGeneProduct,723,748
+1211,42633266,periodontal disease,DiseaseOrPhenotypicFeature,809,828
+1213,42633266,periodontal and other inflammation,DiseaseOrPhenotypicFeature,1359,1393
+413,42633377,foot-and-mouth disease virus,OrganismTaxon,57,85
+414,42633377,buffaloes,OrganismTaxon,89,98
+415,42633377,Foot-and-mouth disease,DiseaseOrPhenotypicFeature,114,136
+416,42633377,FMD,DiseaseOrPhenotypicFeature,138,141
+417,42633377,infectious disease,DiseaseOrPhenotypicFeature,154,172
+421,42633377,FMDV,OrganismTaxon,371,375
+424,42633377,buffalo,OrganismTaxon,526,533
+427,42633377,VP1,GeneOrGeneProduct,731,734
+432,42633377,cattle,OrganismTaxon,1316,1322
+433,42633377,serotype O,OrganismTaxon,1541,1551
+581,42633403,"1,6-hexanediol",ChemicalEntity,26,40
+582,42633403,Escherichia coli,OrganismTaxon,89,105
+584,42633403,"1,6-HDO",ChemicalEntity,127,134
+585,42633403,polymer,ChemicalEntity,185,192
+586,42633403,toxicity,DiseaseOrPhenotypicFeature,234,242
+590,42633403,sulfur,ChemicalEntity,671,677
+591,42633403,amino acid,ChemicalEntity,693,703
+592,42633403,E. coli,OrganismTaxon,904,911
+446,42633466,HthCRESSV1,OrganismTaxon,133,143
+447,42633466,Halophytophthora thermoambigua,OrganismTaxon,179,209
+736,42633474,Hemiplegic Migraine,DiseaseOrPhenotypicFeature,5,31
+737,42633474,Rare Genetic Disorder,DiseaseOrPhenotypicFeature,73,94
+738,42633474,Familial hemiplegic migraine,DiseaseOrPhenotypicFeature,96,124
+739,42633474,FHM,DiseaseOrPhenotypicFeature,126,129
+740,42633474,migraine with aura,DiseaseOrPhenotypicFeature,174,192
+741,42633474,migraine with a reversible motor aura,DiseaseOrPhenotypicFeature,211,248
+743,42633474,hemiparesis,DiseaseOrPhenotypicFeature,406,417
+744,42633474,headache,DiseaseOrPhenotypicFeature,426,434
+745,42633474,altered consciousness,DiseaseOrPhenotypicFeature,436,457
+746,42633474,fever,DiseaseOrPhenotypicFeature,463,468
+747,42633474,acute stroke,DiseaseOrPhenotypicFeature,521,533
+748,42633474,encephalitis,DiseaseOrPhenotypicFeature,535,547
+749,42633474,status epilepticus,DiseaseOrPhenotypicFeature,552,570
+750,42633474,CACNA1A,GeneOrGeneProduct,629,636
+751,42633474,ATP1A2,GeneOrGeneProduct,638,644
+752,42633474,SCN1A,GeneOrGeneProduct,646,651
+753,42633474,PRRT2,GeneOrGeneProduct,657,662
+1067,42633481,metal,ChemicalEntity,11,16
+1068,42633481,calcium folinate,ChemicalEntity,116,132
+1069,42633481,methotrexate,ChemicalEntity,137,149
+1071,42633481,CFT,ChemicalEntity,169,172
+1073,42633481,MTT,ChemicalEntity,227,230
+1074,42633481,anaemia,DiseaseOrPhenotypicFeature,257,264
+1076,42633481,carcinomas,DiseaseOrPhenotypicFeature,300,310
+1077,42633481,acute lymphoblastic leukaemia,DiseaseOrPhenotypicFeature,322,351
+1078,42633481,head and neck cancer,DiseaseOrPhenotypicFeature,353,373
+1079,42633481,gastric cancer,DiseaseOrPhenotypicFeature,375,389
+1080,42633481,breast cancer,DiseaseOrPhenotypicFeature,391,404
+1081,42633481,choriocarcinoma,DiseaseOrPhenotypicFeature,409,424
+1082,42633481,Fe,ChemicalEntity,450,452
+1083,42633481,Mg,ChemicalEntity,457,459
+1084,42633481,"1,4-benzene dicarboxylate",ChemicalEntity,472,497
+1085,42633481,metal organic framework,ChemicalEntity,505,528
+1086,42633481,FeMg-BDC MOF,ChemicalEntity,530,542
+1087,42633481,Mg-BDC,ChemicalEntity,667,673
+1088,42633481,MOF,ChemicalEntity,674,677
+987,42633488,asthma,DiseaseOrPhenotypicFeature,52,58
+989,42633488,airway inflammatory disorder,DiseaseOrPhenotypicFeature,78,106
+992,42633488,IL-17,GeneOrGeneProduct,990,995
+993,42633488,TNF,GeneOrGeneProduct,997,1000
+994,42633488,JAK,GeneOrGeneProduct,1016,1019
+995,42633488,STAT,GeneOrGeneProduct,1020,1024
+996,42633488,PI3K,GeneOrGeneProduct,1026,1030
+997,42633488,AKT,GeneOrGeneProduct,1031,1034
+998,42633488,quercetin,ChemicalEntity,1047,1056
+999,42633488,kaempferol,ChemicalEntity,1061,1071
+1000,42633488,airway inflammation,DiseaseOrPhenotypicFeature,1108,1127
+1001,42633488,immune dysregulation,DiseaseOrPhenotypicFeature,1132,1152
+1002,42633488,toxicity,DiseaseOrPhenotypicFeature,1212,1220
+1003,42633488,CYP,GeneOrGeneProduct,1274,1277
