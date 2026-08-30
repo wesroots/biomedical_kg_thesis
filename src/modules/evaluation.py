@@ -106,6 +106,56 @@ def evaluation_v4(epi_dict, ground_truths):
         "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed, "cosine": relationship_metrics_cosine}
     }
 
+def evaluation_v5(epi_dict, ground_truths):
+    """
+    Like evaluation_v4, but epi_dict's predictions come from extraction run
+    on the FULL corpus. This filters predictions down to only the PMIDs in
+    ground_truths["eval_pmids"] before computing strict/relaxed/cosine --
+    i.e. "pull the extractions belonging to the downsampled/eval abstracts
+    out of the full-corpus run, then evaluate normally."
+
+    Requires ground_truths to include an "eval_pmids" key: a set of PMIDs
+    for the abstracts you actually have ground truth for (the full
+    biored_train set, or the downsampled CBC set). Add it wherever
+    ground_truths gets built, e.g.:
+        ground_truths["eval_pmids"] = set(pd.read_csv(eval_set_path)["pmid"])
+    """
+
+    eval_pmids = ground_truths["eval_pmids"]
+
+    ground_truths_entities = ground_truths["entities"]
+    ground_truths_relationships = ground_truths["relations"]
+
+    # Pull only the extractions belonging to eval_pmids out of the full-corpus predictions
+    predictions_entities = {e for e in epi_dict["predictions_entities"] if e[0] in eval_pmids}
+    predictions_relationships = {r for r in epi_dict["predictions_relationships"] if r[0] in eval_pmids}
+
+    # Everything below is identical to evaluation_v4, just on the filtered sets
+    entity_metrics_strict = compute_prf_strict(predictions_entities, ground_truths_entities)
+    entity_metrics_relaxed = compute_prf_relaxed(predictions_entities, ground_truths_entities, entity_match)
+
+    relationship_metrics_strict = compute_prf_relaxed(
+        predictions_relationships, ground_truths_relationships, relationship_match_strict_symmetric
+    )
+    relationship_metrics_relaxed = compute_prf_relaxed(
+        predictions_relationships, ground_truths_relationships, relationship_match_relaxed_symmetric
+    )
+
+    entity_embeddings = build_embedding_lookup(predictions_entities, ground_truths_entities, text_indices=[1])
+    relationship_embeddings = build_embedding_lookup(predictions_relationships, ground_truths_relationships, text_indices=[1, 3])
+
+    entity_metrics_cosine = compute_prf_cosine(
+        predictions_entities, ground_truths_entities, entity_match_cosine, entity_embeddings, COSINE_THRESHOLD
+    )
+    relationship_metrics_cosine = compute_prf_cosine(
+        predictions_relationships, ground_truths_relationships, relationship_match_cosine_symmetric, relationship_embeddings, COSINE_THRESHOLD
+    )
+
+    return {
+        "entity": {"strict": entity_metrics_strict, "relaxed": entity_metrics_relaxed, "cosine": entity_metrics_cosine},
+        "relation": {"strict": relationship_metrics_strict, "relaxed": relationship_metrics_relaxed, "cosine": relationship_metrics_cosine}
+    }
+
 
 def get_embedding_model():
     global _MODEL

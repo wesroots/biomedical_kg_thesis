@@ -1,7 +1,7 @@
 import json
 
 from parsing import parse_output
-from evaluation import evaluation_v1, evaluation_v2, evaluation_v3, evaluation_v4
+from evaluation import evaluation_v1, evaluation_v2, evaluation_v3, evaluation_v4, evaluation_v5
 from exporting import export_run
 from error_sampling import get_errors
 
@@ -9,7 +9,8 @@ EVALUATORS = {
     "v1": evaluation_v1,
     "v2": evaluation_v2,
     "v3": evaluation_v3,
-    "v4": evaluation_v4
+    "v4": evaluation_v4,
+    "v5": evaluation_v5,
 }
 
 EPI_TYPES = {
