@@ -1,348 +1,227 @@
-4.5 Pipeline Development
+4.6 Extraction Evaluation
 
 Purpose:
-Describe how the extraction pipeline was iteratively refined, how changes between EPIs were tracked and evaluated, and how the final EPI was selected. This section should explain the experimental development process rather than re-describing the extraction pipeline itself.
+Define exactly how the frozen final extraction pipeline was evaluated. Section 4.5 explains how the evaluation procedure evolved during development; Section 4.6 should instead specify the final evaluation procedure used to produce the reported BioRED and CBC results.
 
 The section should answer:
-“How did the pipeline evolve from the baseline configuration to the final selected configuration, and what evidence was used to make development and selection decisions?”
+“How were final entity and relation predictions compared against ground truth, and how was generalisation to the CBC assessed?”
 
-Recommended structure:
-
-4.5 Pipeline Development
-
-4.5.1 Extraction Pipeline Iterations
-
-4.5.2 Development and Model Selection
-
-4.5.3 Final Pipeline
-
-4.5 opening paragraph
+4.6 opening paragraph
 
 Purpose:
-Briefly introduce the iterative development strategy.
+Briefly establish the overall evaluation framework.
 
 Cover:
 
-State that development was organised into a sequence of Extraction Pipeline Iterations (EPIs).
-Each EPI represented a defined combination of:
-prompt version;
-evaluation version;
-any other relevant extraction/evaluation configuration.
-State that changes were introduced incrementally so that the effect of individual methodological changes could be observed.
-Explain that development used BioRED training data only, with the development split reserved for comparison of frozen candidate EPIs.
-Refer back to Section 4.1 for the broader train/dev/test separation rather than explaining it again.
-State that full EPI configurations and outputs were logged as described in Section 4.4.3.
+State that the final EPI selected in Section 4.5 was evaluated on the held-out BioRED test split.
+State that the same frozen EPI was subsequently evaluated against the manually annotated CBC evaluation subset.
+State that entity and relation performance were evaluated separately.
+State that precision, recall and F1 were the primary metrics.
+Define TP, FP and FN here if these definitions do not already appear sufficiently in the methodology.
+Include the precision, recall and F1 equations here if appropriate.
+Explicitly state that the BioRED test split was not used during pipeline development or EPI selection.
+State that the same final evaluation procedure was used for BioRED and CBC to permit direct comparison.
 
-Do not:
+Avoid:
 
-Re-explain the OpenAI model configuration.
-Reproduce prompts.
-Re-explain JSON parsing.
-Re-explain what BioRED is.
+Re-explaining why precision/recall/F1 are appropriate for biomedical IE if this is already established in the Literature Review.
+Repeating the EPI development process.
+Reporting the actual final results here.
 
-4.5.1 Extraction Pipeline Iterations
+4.6.1 Entity Evaluation
 
 Purpose:
-Document the sequence of methodological changes made during development.
-
-This is the best place for your EPI configuration table.
-
-Recommended table:
-
-EPI | Prompt version | Evaluation version | Main change / purpose
-
-For example:
-
-epi_001 | v1 | v1 | Initial baseline
-epi_002 | v2 | v1 | Added BioRED schema guidance
-epi_003 | v3 | v2 | Added few-shot prompting
-...
-epi_009 | vX | vY | Final refinement
-
-Use your actual configuration history rather than these example descriptions.
-
-The “notes” column should be short and methodological. It should answer:
-“What changed relative to the previous relevant EPI?”
-
-Avoid putting performance results in the notes column unless a result directly motivated the next iteration.
-
-For example, better:
-“Added explicit grounding instructions to discourage unsupported relations.”
-
-Rather than:
-“Relation F1 dropped to 0.48.”
-
-The latter belongs in the development discussion/results.
-
-Explain that not every new EPI necessarily changed both prompt and evaluation logic. Some iterations may hold extraction outputs constant while changing only the evaluation approach. This is particularly important because Section 4.4.3 already explains that stored outputs were reused where the prompt/extraction configuration itself had not changed.
-
-A short paragraph after the table can identify the broad development phases, for example:
-
-baseline extraction;
-BioRED schema alignment;
-few-shot prompting;
-relaxed evaluation;
-cosine-based matching;
-relation-specific prompt refinement;
-grounding / unsupported-relation refinement.
-
-This will make the sequence easier to understand than narrating nine EPIs one by one in full prose.
-
-Evaluation logic: strict -> relaxed -> cosine
-
-Yes, this absolutely belongs in 4.5.1, because the evaluation policy itself changed during iterative development.
-
-However, distinguish between:
-
-Section 4.5: why and when the evaluation logic changed during development;
-Section 4.7: exact formal definitions and implementation of strict, relaxed, and cosine evaluation.
-
-In 4.5, explain the development story.
-
-Something like:
-
-Initial EPIs were assessed using strict matching, requiring exact agreement between predicted and ground-truth entity representations. Inspection of resulting errors showed that some predictions represented the correct biomedical concept but differed in span boundaries or synonymous wording, meaning strict matching could classify semantically correct predictions as errors.
-
-This motivated introduction of relaxed matching.
-
-Then explain why relaxed matching was still insufficient:
-
-rule-based relaxation can capture boundary overlap or predefined equivalence;
-it cannot reliably identify semantically equivalent expressions with substantially different surface forms.
-
-This then motivated cosine similarity matching using your embedding model and threshold.
-
-The progression is therefore:
-
-strict matching
--> identify boundary/synonym artefacts
--> relaxed matching
--> remaining semantic-equivalence problem
--> cosine similarity matching
-
-That is a strong methodological development narrative because the evaluation changes are not arbitrary; they arose from observed limitations of the previous evaluation method.
-
-Do not fully define formulas/threshold calculation here if 4.7 will do that.
-
-Error sampling
-
-I would include it, but only briefly.
-
-The attached error distributions are useful because they demonstrate that your changes were driven by actual error inspection rather than only watching aggregate F1.
-
-You do not need to include all three error-distribution figures in the main methodology.
-
-Instead explain the procedure:
-
-At selected development points, a sample of FP and FN relation errors was manually inspected.
-Errors were assigned to predefined categories.
-Example FP categories included:
-unsupported relation;
-wrong relation type;
-entity boundary/synonym mismatch;
-duplicate/coreference;
-evaluation artefact.
-FN categories included:
-missing relation;
-evaluation artefact.
-These distributions were used diagnostically to identify whether poor measured performance reflected extraction failure, evaluation mismatch, or prompt behaviour.
-
-The figures you attached show why this was useful:
-
-unsupported relations remain a major FP category;
-boundary/synonym mismatches are prominent in earlier/mid-stage sampling;
-a substantial number of apparent FNs were evaluation artefacts;
-missing relations remain the dominant genuine FN category.
-
-That directly supports two major refinements:
-
-improving grounding / reducing unsupported relation extraction;
-improving evaluation from strict/relaxed matching toward semantic cosine matching.
-
-If space is tight, I would not put all three figures in the main report. Instead:
-
-describe the sampling method in 4.5.1;
-perhaps include one representative error-distribution figure if it materially explains an important refinement;
-place the remaining error-analysis plots in an appendix, or use them later in Results/Discussion.
-
-The methodology needs to explain that error sampling occurred. It does not need to visually document every sample.
-
-4.5.2 Development and Model Selection
-
-Purpose:
-Explain how frozen candidate EPIs were compared and how the final EPI was selected.
-
-This is exactly where your two performance figures belong.
-
-First figure:
-The line chart showing precision, recall, and F1 across all EPIs for entities and relations.
-
-Use it to show the overall development trajectory.
-
-The important narrative from the chart is:
-
-very large improvement from the baseline to the early refined configurations;
-entity performance becomes comparatively strong and then broadly plateaus;
-relation performance remains substantially lower than entity performance;
-later EPIs produce smaller, incremental changes rather than the major gains seen early in development.
-
-Do not overanalyse every point here. The figure is mainly there to show development progression.
-
-The vertical lines marking important methodological changes are useful if they correspond to specific transitions such as:
-
-introduction of few-shot prompting;
-change to cosine evaluation;
-important prompt revisions.
-
-Explain those markers in the figure caption or surrounding text.
-
-Second figure:
-The bar chart comparing the top candidate EPIs.
-
-This fits particularly well in 4.5.2 because it narrows the comparison to the configurations considered for final selection.
-
-Your chart compares epi_005, epi_006, and epi_007 using relation precision, recall, and F1.
-
-That is sensible because relation extraction appears to be the limiting component of the system, whereas entity extraction is already comparatively strong.
-
-You should explicitly justify why relation performance played a major role in selection.
-
-For example:
-
-“Because entity-level performance had largely plateaued across the leading configurations, final selection placed greater emphasis on relation-level F1, while ensuring that entity performance remained stable.”
-
-That is a defensible selection principle.
-
-Do not simply say:
-“EPI X had the highest score so it was selected.”
-
-Explain the selection criterion:
-
-primary metric;
-whether entity performance was also considered;
-whether precision/recall balance mattered;
-whether error analysis influenced the decision.
-
-If two EPIs are extremely close, acknowledge that rather than pretending there is a huge difference.
-
-Also distinguish:
-
-training-set development performance;
-development-set candidate comparison.
-
-The final selection must be based on the held-out BioRED development split according to the design you described earlier.
-
-If the attached line chart is based on training-set development performance, label it clearly as such.
-
-Then the top-candidate comparison should ideally show the development-set comparison if that is the actual basis of final selection.
-
-This distinction is important.
-
-Suggested 4.5.2 flow:
-
-Paragraph 1:
-
-Explain when development stopped.
-State that candidate configurations were frozen once iterative gains had plateaued / predefined development was complete.
-
-Paragraph 2:
-
-Introduce the all-EPI performance figure.
-Explain broad development trajectory.
-
-Paragraph 3:
-
-State which configurations were retained as candidate final EPIs and why.
-
-Paragraph 4:
-
-Introduce the top-candidate comparison figure.
-Explain final selection criterion.
-State which EPI was selected.
-
-Paragraph 5:
-
-Confirm that no further changes were made after selection before BioRED test/CBC evaluation.
-
-4.5.3 Final Pipeline
-
-Yes — I agree with you. This should be short.
-
-Purpose:
-Freeze the methodological state of the system before final evaluation.
-
-Probably around 150–250 words plus possibly a compact configuration table.
+Define exactly how predicted entities were matched against ground-truth entities.
 
 Cover:
 
-Name of selected EPI.
-Prompt version.
-Evaluation version.
-Model.
-Few-shot configuration.
-Final entity and relation schema.
-Final matching/evaluation policy used during development if relevant.
-State explicitly that this configuration was frozen.
-State that no subsequent prompt/schema changes were made after selection.
-State that the same frozen extraction configuration was subsequently used for:
-final BioRED test evaluation;
-CBC extraction;
-CBC generalisation evaluation;
-downstream NEN/KG construction.
+State that entity predictions were compared against ground-truth annotations within the same PMID/document.
+Define the fields required for an entity match.
+State whether entity type must always agree.
+Explain the final hierarchical matching procedure.
 
-You could use a tiny summary table:
+If the final procedure is strict -> relaxed -> cosine, describe it explicitly:
 
-Component | Final configuration
+Strict matching
+Define exactly what constitutes a strict match.
+For example, predicted and ground-truth entity strings/spans must agree exactly and their entity types must match.
+Mention any preprocessing applied before comparison, such as case normalisation, only if actually implemented.
+Relaxed matching
+Define precisely what your relaxed matching logic does.
+Explain which differences it allows compared with strict matching.
+Examples could include span/boundary differences or other lexical variations, but only describe rules actually present in your implementation.
+Do not simply call it “relaxed matching” without defining the implementation.
+Cosine similarity matching
+State that entities remaining unmatched after strict and relaxed comparison were compared semantically using vector embeddings.
+Name the embedding model actually used.
+State that embeddings were generated for the predicted and ground-truth entity strings.
+State that cosine similarity was calculated between the representations.
+Give the cosine similarity equation if useful.
+State the final similarity threshold.
+Explain how that threshold was selected.
+State whether matching remained constrained to entities of the same BioRED entity type.
+Explain how the best candidate was selected where multiple ground-truth entities exceeded the threshold.
 
-EPI | epi_XXX
-Prompt version | vX
-Evaluation version | vX
-LLM | gpt-5.6-luna
-Few-shot examples | 3 fixed BioRED training examples
-Entity schema | BioRED six types
-Relation schema | BioRED eight types
-Output | JSON entities + relationships
+Important:
+Explain how one-to-one matching was enforced. A single ground-truth entity should not be counted as a TP for multiple predictions. State how matched entities were removed from further consideration or otherwise marked as already matched if that reflects your implementation.
 
-Then perhaps one final sentence:
+Then explain:
 
-“This configuration therefore represents the final extraction system evaluated in all subsequent experiments.”
+Matched predictions were counted as TPs.
+Unmatched predictions were FPs.
+Unmatched ground-truth entities were FNs.
+These counts were used to calculate entity precision, recall and F1.
 
-Do not:
+Relationship to Section 4.5:
+Do not repeat why strict matching was found insufficient or how error sampling motivated cosine matching. That development history belongs in 4.5. Here, simply define the final procedure.
 
-repeat the whole prompt;
-repeat model API details;
-repeat how parsing works;
-repeat the full EPI history;
-include test-set results here.
+4.6.2 Relation Evaluation
 
-The test-set performance belongs in Results / 4.7 methodology only insofar as you explain how it will be evaluated.
+Purpose:
+Define exactly how predicted relations were compared against BioRED/CBC ground-truth relations.
 
-Important distinction between the three subsections
+Begin by defining the relation representation:
+(source entity, relation type, target entity)
 
-4.5.1 Extraction Pipeline Iterations:
-“What changes were made during development, and why?”
+Explain that relation correctness therefore depends on both the relation label and its entity arguments.
 
-4.5.2 Development and Model Selection:
-“How did performance evolve, which candidate EPIs were compared, and how was the final one chosen?”
+Cover:
 
-4.5.3 Final Pipeline:
-“What exact configuration was frozen and carried forward?”
+Relations were compared only within the same PMID/document.
+Source and target entities were matched using the entity-matching procedure defined in Section 4.6.1.
+Avoid repeating the complete strict/relaxed/cosine procedure; cross-reference 4.6.1 instead.
+State that the predicted relation type must correspond to the ground-truth relation type.
+Therefore, correctly identifying the two entities but assigning the wrong relation class does not constitute a correct relation prediction.
 
-That is a very natural structure for what you have actually done.
+Relation order invariance:
+This requires explicit explanation because it forms part of your final evaluation configuration.
 
-My recommendation on the figures
+Cover:
 
-Main body:
+State which relation types were treated as symmetric/order-invariant.
+Explain that, for those relations, reversing source and target did not cause an otherwise correct prediction to be marked incorrect.
+Give one simple example if useful:
+(A, Association, B) is equivalent to (B, Association, A)
+If only selected relation classes are order-invariant, list them.
+State that directional relation classes retained source-target ordering.
+Do not imply that every BioRED relation is symmetric unless that is genuinely what your final implementation does.
 
-EPI performance line chart: yes.
-Top-three candidate bar chart: yes.
+Define relation TP/FP/FN:
 
-Error distributions:
+TP: a predicted relation for which both entity arguments and the relation type match an unmatched ground-truth relation.
+FP: a predicted relation with no corresponding ground-truth relation.
+FN: a ground-truth relation for which no corresponding prediction was identified.
+Explain one-to-one matching if implemented so the same ground-truth relation cannot satisfy multiple predictions.
 
-mention the error-sampling procedure in 4.5.1;
-include at most one representative plot in the main methodology if it directly motivates a major change;
-otherwise move the detailed error plots to an appendix or Results/Discussion.
+Then state that relation precision, recall and F1 were calculated independently of entity-level metrics.
 
-The two performance figures tell the main experimental-development story much more efficiently than three additional error-category figures.
+If your relation evaluation requires both endpoints to have been extracted correctly before a relation can match, make this explicit. This helps explain why relation performance can be lower than entity performance.
 
-Overall, Section 4.5 is likely to be one of the more important methodology sections because this is where your project stops looking like “I wrote a prompt and ran GPT” and starts looking like a controlled iterative development experiment. The combination of a configuration table, explicit evaluation evolution, targeted error analysis, and held-out EPI selection gives you a strong methodological narrative.
+4.6.3 Generalisation Evaluation
+
+Purpose:
+Explain how the frozen extraction pipeline was evaluated on the contemporary corpus and compared with BioRED.
+
+This section should be relatively short because it should reuse the procedures already defined in 4.6.1 and 4.6.2.
+
+Cover:
+
+State that the final frozen EPI was applied to the CBC.
+State that evaluation was performed against the manually annotated CBC ground-truth subset described in Section 4.2.2.
+State the number of abstracts/documents included in this evaluation subset.
+Refer back to Section 4.2.2 for the annotation and sampling procedure rather than repeating it.
+
+Most importantly, state that no CBC-specific refinement occurred before evaluation:
+
+Same LLM/model.
+Same final prompt.
+Same few-shot examples.
+Same extraction schema.
+Same structured-output procedure.
+Same parsing logic.
+No prompt optimisation using CBC ground truth.
+
+Explain that this preserves the CBC as an out-of-distribution/generalisation evaluation rather than another development dataset.
+
+Evaluation procedure:
+
+Entity predictions were evaluated using the procedure from Section 4.6.1.
+Relation predictions were evaluated using the procedure from Section 4.6.2.
+Precision, recall and F1 were therefore directly comparable between the BioRED test evaluation and CBC evaluation.
+
+Comparison:
+
+Compare BioRED test entity precision, recall and F1 against CBC entity precision, recall and F1.
+Separately compare BioRED test relation precision, recall and F1 against CBC relation precision, recall and F1.
+If useful, calculate absolute changes in each metric between corpora.
+For example:
+Delta F1 = F1_CBC - F1_BioRED
+Only include this equation if you actually report the change numerically later.
+
+Interpretation:
+
+Describe lower CBC performance as evidence of reduced generalisation to the contemporary corpus.
+Avoid claiming that any reduction was caused exclusively by temporal distribution shift, because BioRED and CBC also differ in corpus construction, annotation and potentially entity/relation distributions.
+Detailed explanation of why performance changed belongs in Results/Discussion rather than Methodology.
+
+Error sampling:
+
+Do not put the detailed error-sampling analysis in Section 4.6 if you have already used it in Section 4.5.
+
+Its methodological role was developmental:
+error inspection -> identify weaknesses -> modify prompt/evaluation -> new EPI.
+
+Therefore:
+
+Briefly describe the sampling procedure in 4.5.
+Use the error plots there or move detailed plots to an appendix.
+Do not repeat them in 4.6.
+
+Figures:
+
+No EPI-development figures are necessary in 4.6.
+
+The line chart showing EPI progression and the candidate-EPI bar chart belong in 4.5.2 because they concern development and selection.
+
+Section 4.6 primarily needs text, equations and potentially a small table summarising the final evaluation criteria.
+
+Possible evaluation summary table:
+
+Level | Matching requirements | Metrics
+
+Entity | Same document + entity type + hierarchical strict/relaxed/cosine match | Precision, Recall, F1
+
+Relation | Same document + matched source and target + correct relation type + applicable direction rules | Precision, Recall, F1
+
+Generalisation | Identical entity/relation evaluation applied to CBC ground truth | Precision, Recall, F1 and change from BioRED
+
+Expected length:
+
+4.6 opening: approximately 100–150 words.
+
+4.6.1 Entity Evaluation: approximately 300–500 words.
+
+4.6.2 Relation Evaluation: approximately 300–500 words.
+
+4.6.3 Generalisation Evaluation: approximately 250–400 words.
+
+Total: roughly 1,000–1,400 words.
+
+Important subsequent structural change:
+
+Your Contemporary Knowledge Graph Construction section should now follow:
+
+4.7 Contemporary Knowledge Graph Construction
+4.7.1 Contemporary Corpus Extraction
+4.7.2 Entity Normalisation
+4.7.3 Ontology-Guided Semantic Validation
+4.7.4 Graph Construction
+
+This reflects the final pipeline:
+
+CBC extraction
+-> Entity normalisation
+-> Semantic/ontology-guided validation
+-> KG construction
+
+rather than constructing the graph before validation.

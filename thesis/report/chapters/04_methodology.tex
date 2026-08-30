@@ -301,9 +301,43 @@ The final extraction pipeline configuration selected through the process above i
     \end{tabularx}
 \end{table}
 
+\section{Extraction Evaluation}
+\label{sec:meth:evaluation}
+The final \gls{epi} selected in Section~\ref{sec:meth:pipeline_development} was evaluated using a single evaluation pipeline, applied without modification to both the held-out BioRED test split and the \gls{cbc}. This pipeline used the same prompt, extraction logic, and evaluation configuration for both datasets, differing only in which abstracts were passed to the pipeline and which \glspl{pmid} were included when evaluating extraction performance. In both cases, extraction was first performed over every abstract, then extractions were restricted to a defined set of \glspl{pmid} before being compared against ground truth. For the BioRED test evaluation, this evaluation subset was identical to the full test split as all abstracts in the BioRED test set had existing ground truth annotations. For the \gls{cbc}, extraction was instead performed over the full 282-abstract corpus while the evaluation subset was restricted to the 50 abstracts that had been randomly sampled from the full \gls{cbc} dataset and manually annotated for both \gls{ner} and \gls{re} ground truths. Predictions from the remaining, unannotated \gls{cbc} abstracts were excluded from evaluation. Consistent with the development process, entity and relation performance were evaluated separately, with precision, recall, and F1 as the primary performance metrics.
+
+\[
+\begin{aligned}
+\text{Precision} &= \frac{TP}{(TP + FP)}
+\\
+\text{Recall} &= \frac{TP}{(TP + FN)}
+\\
+\text{F1} &= 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{aligned}
+\]
+
+\subsection{Entity Evaluation}
+\label{subsec:meth:entity_evaluation}
+
+\subsection{Relation Evaluation}
+\label{subsec:meth:relation_evaluation}
+
+\subsection{CBC Manual Annotation}
+\label{subsec:meth:cbc_manual_annotation}
+% Include:
+% Choice of using PubTator2/Central yet it was replaced by PubTator3
+% Subsequent choice of using PubTator 3 for BioRED similarity (as it was built on BioREX)
+% PubTator3 lagging behind new literature - most extracted abstracts were from earlier years in CBC year range
+% Using AIONER in separate local repository, using it to extract entities -> span boundaries, typing, exclusion, etc was conducted -> excel data validatin was used for strict dropdowns to reduce human error with string representations
+% For each abstract, the abstract text was manually looked up and reviewed given extractions for missing extractions or errors
+% From finalised CBC NER dataset, relation extraction was used
+% Excel data validation was used in excel to mitigate human error from typing -> XLOOKUP to all NER spans
+% This formed ground truth
+
+\subsection{Generalisation Evaluation}
+\label{subsec:meth:generalisation_evaluation}
+
 \section{Contemporary Knowledge Graph Construction}
 \label{sec:meth:contemporary_kg_construction}
-
 
 \subsection{Contemporary Corpus Extraction}
 \label{subsec:meth:contemporary_corpus_extraction}
@@ -313,21 +347,6 @@ The final extraction pipeline configuration selected through the process above i
 
 \subsection{Ontology-Based Validation}
 \label{subsec:meth:ontology_based_validation}
-
-\section{Evaluation}
-\label{sec:meth:evaluation}
-
-\subsection{Entity Evaluation}
-\label{subsec:meth:entity_evaluation}
-
-\subsection{Relation Evaluation}
-\label{subsec:meth:relation_evaluation}
-
-\subsection{Generalisation Evaluation}
-\label{subsec:meth:generalisation_evaluation}
-
-\subsection{Knowledge Graph Evaluation}
-\label{subsec:meth:knowledge_graph_evaluation}
 
 \section{Cost Analysis}
 \label{sec:meth:cost_analysis}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  27 AUG 2026 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  30 AUG 2026 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -978,7 +978,7 @@ File: ../../../img/error_analysis/biored_train/epi_009.png Graphic file (type pn
 <use ../../../img/error_analysis/biored_train/epi_009.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_009.png  used on input line 265.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
- [35] [36 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_009.png>]) [37]
+ [35] [36 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_009.png>] [37]) [38]
 \openout2 = `chapters/05_results.aux'.
 
  (chapters/05_results.tex
@@ -993,28 +993,39 @@ Underfull \hbox (badness 10000) in alignment at lines 45--45
 [][][][][] 
  []
 
-<../../../img/dev_analysis/epi_performance.png, id=142, 794.97pt x 650.43pt>
+<../../../img/dev_analysis/epi_performance.png, id=145, 794.97pt x 650.43pt>
 File: ../../../img/dev_analysis/epi_performance.png Graphic file (type png)
 <use ../../../img/dev_analysis/epi_performance.png>
 Package pdftex.def Info: ../../../img/dev_analysis/epi_performance.png  used on input line 50.
 (pdftex.def)             Requested size: 380.69788pt x 311.48827pt.
-[38
+[39
 
 
 
 
 ]
-<../../../img/dev_analysis/top3_relation_f1.png, id=146, 650.43pt x 433.62pt>
+<../../../img/dev_analysis/top3_relation_f1.png, id=149, 650.43pt x 433.62pt>
 File: ../../../img/dev_analysis/top3_relation_f1.png Graphic file (type png)
 <use ../../../img/dev_analysis/top3_relation_f1.png>
 Package pdftex.def Info: ../../../img/dev_analysis/top3_relation_f1.png  used on input line 57.
 (pdftex.def)             Requested size: 380.69788pt x 253.80232pt.
-) [39 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/epi_performance.png>] [40 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/top3_relation_f1.png>]
+ [40 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/epi_performance.png>]
+<../../../img/generalisation_evaluation/entity_generalisation.png, id=154, 578.16pt x 361.35pt>
+File: ../../../img/generalisation_evaluation/entity_generalisation.png Graphic file (type png)
+<use ../../../img/generalisation_evaluation/entity_generalisation.png>
+Package pdftex.def Info: ../../../img/generalisation_evaluation/entity_generalisation.png  used on input line 64.
+(pdftex.def)             Requested size: 380.69788pt x 237.93484pt.
+<../../../img/generalisation_evaluation/relation_generalisation.png, id=155, 578.16pt x 361.35pt>
+File: ../../../img/generalisation_evaluation/relation_generalisation.png Graphic file (type png)
+<use ../../../img/generalisation_evaluation/relation_generalisation.png>
+Package pdftex.def Info: ../../../img/generalisation_evaluation/relation_generalisation.png  used on input line 71.
+(pdftex.def)             Requested size: 380.69788pt x 237.93484pt.
+) [41 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/top3_relation_f1.png> <e:/Users/wesle/biomedical_kg_thesis/img/generalisation_evaluation/entity_generalisation.png>] [42 <e:/Users/wesle/biomedical_kg_thesis/img/generalisation_evaluation/relation_generalisation.png>]
 \openout2 = `chapters/06_discussion.aux'.
 
  (chapters/06_discussion.tex
 Chapter 6.
-) [41
+) [43
 
 
 
@@ -1024,7 +1035,7 @@ Chapter 6.
 
  (chapters/07_conclusion.tex
 Chapter 7.
-) [42
+) [44
 
 
 
@@ -1038,11 +1049,11 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
- [43
+ [45
 
 
 
-{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [44]) [45]
+{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [46]) [47]
 \openout2 = `chapters/08_appendices.aux'.
 
  (chapters/08_appendices.tex
@@ -1051,24 +1062,24 @@ LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 10.95pt on input line 3.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 20.
-[46
+[48
 
 
-] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59]
+] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61]
 Appendix B.
-[60
+[62
 
-] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]
+] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77]
 Appendix C.
-<../../../img/error_analysis/biored_train/epi_003.png, id=268, 867.24pt x 361.35pt>
+<../../../img/error_analysis/biored_train/epi_003.png, id=278, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_003.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_003.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_003.png  used on input line 1024.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
-[76
+[78
 
 ]
-<../../../img/error_analysis/biored_train/epi_006.png, id=272, 867.24pt x 361.35pt>
+<../../../img/error_analysis/biored_train/epi_006.png, id=283, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_006.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_006.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_006.png  used on input line 1030.
@@ -1077,13 +1088,13 @@ File: ../../../img/error_analysis/biored_train/epi_009.png Graphic file (type pn
 <use ../../../img/error_analysis/biored_train/epi_009.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_009.png  used on input line 1036.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
- [77 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_003.png> <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_006.png>]
-<../../../img/error_analysis/biored_train/epi_011.png, id=278, 867.24pt x 361.35pt>
+ [79 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_003.png> <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_006.png>]
+<../../../img/error_analysis/biored_train/epi_011.png, id=289, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_011.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_011.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_011.png  used on input line 1042.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
-) [78 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_011.png>] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_abstract.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/07_conclusion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/08_appendices.aux))
+) [80 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_011.png>] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_abstract.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/07_conclusion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/08_appendices.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1094,17 +1105,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21191 strings out of 467870
- 388784 string characters out of 5435190
- 1289303 words of memory out of 5000000
- 49348 multiletter control sequences out of 15000+600000
+ 21209 strings out of 467870
+ 389899 string characters out of 5435190
+ 1289357 words of memory out of 5000000
+ 49366 multiletter control sequences out of 15000+600000
  697510 words of font info for 409 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,11n,117p,2543b,1683s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txmiaX.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (79 pages, 806234 bytes).
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (81 pages, 874026 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
+ 337 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 68644 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 68654 words of extra memory for PDF output out of 74296 (max. 10000000)
 
