@@ -159,16 +159,7 @@ def bootstrap_ci(per_pmid_counts, n_boot=2000, ci=0.95, random_state=42):
 
 
 def evaluate_extractions(predictions_entities, predictions_relationships, ground_truths, n_boot=2000, ci=0.95, random_state=42):
-    """
-    Main entry point for the final pipeline.
 
-    predictions_entities / predictions_relationships: full-corpus prediction
-        sets of tuples (pmid, text, type) / (pmid, source, relation, target).
-    ground_truths: dict from get_gt_dict(...) -- must include "eval_pmids".
-
-    Filters predictions to eval_pmids, computes cosine precision/recall/F1,
-    and a 95% bootstrap CI for both entities and relations.
-    """
     eval_pmids = ground_truths["eval_pmids"]
     ground_truths_entities = ground_truths["ner"]
     ground_truths_relationships = ground_truths["re"]

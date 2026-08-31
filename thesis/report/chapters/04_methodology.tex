@@ -1,4 +1,5 @@
 \chapter{Methodology}
+\label{chap:methodology}
 
 \section{Research Design}
 \label{sec:meth:research_design}
@@ -302,8 +303,8 @@ The final extraction pipeline configuration selected through the process above i
 \end{table}
 
 \section{Extraction Evaluation}
-\label{sec:meth:evaluation}
-The final \gls{epi} selected in Section~\ref{sec:meth:pipeline_development} was evaluated using a single evaluation pipeline, applied without modification to both the held-out BioRED test split and the \gls{cbc}. This pipeline used the same prompt, extraction logic, and evaluation configuration for both datasets, differing only in which abstracts were passed to the pipeline and which \glspl{pmid} were included when evaluating extraction performance. In both cases, extraction was first performed over every abstract, then extractions were restricted to a defined set of \glspl{pmid} before being compared against ground truth. For the BioRED test evaluation, this evaluation subset was identical to the full test split as all abstracts in the BioRED test set had existing ground truth annotations. For the \gls{cbc}, extraction was instead performed over the full 282-abstract corpus while the evaluation subset was restricted to the 50 abstracts that had been randomly sampled from the full \gls{cbc} dataset and manually annotated for both \gls{ner} and \gls{re} ground truths. Predictions from the remaining, unannotated \gls{cbc} abstracts were excluded from evaluation. Consistent with the development process, entity and relation performance were evaluated separately, with precision, recall, and F1 as the primary performance metrics.
+\label{sec:meth:extraction_evaluation}
+The final \gls{epi} selected in Section~\ref{sec:meth:pipeline_development} was evaluated using a single evaluation pipeline, applied without modification to both the held-out BioRED test split and the \gls{cbc}. This pipeline used the same prompt, extraction logic, and evaluation configuration for both datasets, differing only in which abstracts were passed to the pipeline and which \glspl{pmid} were included when evaluating extraction performance. In both cases, extraction was first performed over every abstract, then extractions were restricted to a defined set of \glspl{pmid} before being compared against ground truth. For the BioRED test evaluation, this evaluation subset was identical to the full test split as all abstracts in the BioRED test set had existing ground truth annotations. For the \gls{cbc}, extraction was instead performed over the full 282-abstract corpus while the evaluation subset was restricted to the 50 abstracts that had been randomly sampled from the full \gls{cbc} dataset and manually annotated for both \gls{ner} and \gls{re} ground truths. Predictions from the remaining, unannotated \gls{cbc} abstracts were excluded from evaluation. Consistent with the development process, entity and relation performance were evaluated separately, with precision, recall, and F1 as the primary performance metrics:
 
 \[
 \begin{aligned}
@@ -315,11 +316,59 @@ The final \gls{epi} selected in Section~\ref{sec:meth:pipeline_development} was 
 \end{aligned}
 \]
 
+\vspace{1em}
+
+\noindent where a \gls{tp} is an extracted entity or relation matched to a ground truth annotation under the matching approach mentioned previously, an \gls{fp} is a predicted item that did not match with any of the abstract's ground truths, and an \gls{fn} is a ground truth annotation that was not extracted by the model. For both the BioRED test split and \gls{cbc} dataset, point estimates were calculated, including a 95\% confidence interval from bootstrap sampling of document level \gls{tp}/\gls{fp}/\gls{fn} counts with a resampling size of 2,000. As the same matching procedure, embedding model, cosine similarity threshold, and bootstrap sampling approach was used for both datasets, entity and relation results are directly comparable between them.
+
 \subsection{Entity Evaluation}
 \label{subsec:meth:entity_evaluation}
+Within the evaluation dataset described above, predicted entities were compared against ground truth entity annotations only within the same document by \gls{pmid}. Each entity was represented as a \texttt{(PMID, text span, entity type)} tuple, with text stripped of whitespace and converted to lowercase before comparison. A predicted entity type could only match a ground truth annotation only if both the \gls{pmid} and entity type matched exactly.
+
+For entities that satisfied these criteria, text span similarity was assessed using vector embedding based evaluation. Both the predicted and all candidate match ground truth text spans were encoded using the \texttt{pritamdeka/S-PubMedBert-MS-MARCO} sentence-embedding model, a PubMedBERT-based model tuned for biomedical sentence similarity. Matches were then validated using cosine similarity:
+
+\[
+\cos(\mathbf{u}, \mathbf{v})
+=
+\frac{(\mathbf{u} \cdot \mathbf{v})}
+{(\lVert \mathbf{u} \rVert \lVert \mathbf{v} \rVert)}.
+\]
+
+A predicted entity was considered a match for a candidate ground-truth entity if this similarity was greater or equal to the predefined threshold of 0.85.
+
+% Cosine similarity reasoning
+
+One-to-one matching was followed for each abstract--title pair where for each predicted entity, every remaining candidate unmatched ground-truth entity was considered, and the prediction was matched to the ground truth annotation that gave the greatest cosine similarity greater than or equal to the threshold. Subsequently, this ground truth entry was removed from matching future predictions. Matched predictions were counted as \glspl{tp}, predicted entities that did not match a ground truth as \glspl{fp}, and ground truth entities that were unmatched after the abstract's matching step were counted as \glspl{fn}. These counts formed the basis of precision, recall, and F1.
 
 \subsection{Relation Evaluation}
 \label{subsec:meth:relation_evaluation}
+Each predicted and ground truth relation was represented as a \texttt{PMID, entity\_1, relation, entity\_2} tuple, again compared to extractions of the same paper by \gls{pmid} and within the evaluation subset. Relation correctness depended on both the exact relation label and on both entity spans. For example, correctly identifying two correct entity spans, but with an incorrect relation, did not count as a match. As the extracted relation label had to be exactly the same string representation as its corresponding ground truth, no similarity-based evaluation was applied to the relation label itself. Consistent with the entity evaluation, both predicted relation entities were matched against candidate ground truths using the same PubMedBERT vector embeddings and cosine threshold of 0.85 defined in Section~\ref{subsec:meth:entity_evaluation}.
+
+As mentioned in Section~\ref{subsec:meth:extraction_pipeline_iterations} and highlighted in Table~\ref{tab:epi_summary}, final relation matching was order-invariant and applied for all relation types, where a predicted relation and ground truth pair was recorded as a match if either the predicted relation matched its corresponding ground truth entities in either the same or reversed order. Formally, for a predicted relation $(e_1, r, e_2)$ and ground truth relation $(g_1, r, g_2)$, a match was recorded when either $e_1=g_1$ and $e_2=g_2$ or $e_1=g_2$ and $e_2=g_1$.
+
+\vspace{0.75em}
+\newcommand{\triple}[3]{(\text{#1},\, \text{#2},\, \text{#3})}
+
+\noindent\textbf{Before relation order invariance:}
+\vspace{0.25em}
+\[
+\triple{warfarin}{Positive\_Correlation}{ICH}
+\;\neq\;
+\triple{ICH}{Positive\_Correlation}{warfarin}
+\]
+
+\vspace{0.75em}
+
+\noindent\textbf{After relation order invariance:}
+\vspace{0.25em}
+\[
+\triple{warfarin}{Positive\_Correlation}{ICH}
+\;\equiv\;
+\triple{ICH}{Positive\_Correlation}{warfarin}
+\]
+
+\noindent Before relation order invariance was implemented, relations were manually reviewed for directionality. None of the eight relation labels were considered unidirectional, thus relation matching was treated as order-invariant for all relation types.
+
+Consistent with entity matching, one-to-one matching was enforced per document, with each predicted relation being matched with the highest-scoring unmatched candidate ground truth relation meeting the criteria described in Section~\ref{subsec:meth:entity_evaluation}. Again, matched predictions were counted as \glspl{tp}, unmatched predictions as \glspl{fp}, and unmatched ground truth relations as \glspl{fn}, from which precision, recall, and F1 were also computed. As a relation match requires both entity spans and the relation label to be extracted correctly, relation extraction was overall a more demanding matching criteria than entity extraction. This may partly be why relation extraction performance was consistently poorer than that of entity extraction.
 
 \subsection{CBC Manual Annotation}
 \label{subsec:meth:cbc_manual_annotation}
@@ -333,20 +382,105 @@ The final \gls{epi} selected in Section~\ref{sec:meth:pipeline_development} was 
 % Excel data validation was used in excel to mitigate human error from typing -> XLOOKUP to all NER spans
 % This formed ground truth
 
+Given the complexity of biomedical abstracts and the authors lack of biomedical expertise, and time constraints, it was decided that fully manual annotation of the \gls{cbc} abstracts downsample was infeasible.
+
+During construction, the original BioRED dataset used a semi-automated approach, whereby entity annotations were initially generated using PubTator Central, a biomedical \gls{re} service \cite{wei2019pubtator}, and subsequently reviewed and corrected by expert human annotators. Consistent with the original BioRED ground truth annotation construction, the same approach was adopted for the \gls{cbc}, using automated entity extraction as an initial annotation layer followed by manual verification and correction.
+
+Automatic pre-annotation of the \gls{cbc}'s 50 downsampled abstracts initially considered using PubTator Central, and subsequently PubTator3, \gls{ncbi}'s enhanced successor to their PubTator Central service \cite{wei2024pubtator}, given its underlying BioREx extraction model shares its training foundations with BioRED's own entity and relation schema, making it a suitable candidate to uphold consistency between BioRED-based development and \gls{cbc} evaluation ground truth schema. However, as PubTator3 exists as a biomedical entity extraction service that returns entities from a comprehensive database, rather than an on-demand \gls{api}-accessible extraction pipeline, it lagged behind the most recent biomedical literature. This was demonstrated during initial attempted entity pre-annotation as annotations were disproportionately concentrated in the earlier years of the \gls{cbc}'s 2024-2026 publication range, rather than evenly distributed across it. To overcome this, \gls{ncbi}'s \gls{aioner} model \cite{luo2023aioner}, the underlying model used for PubTator3 entity recognition, was used.
+
+The 50 downsampled abstracts were first exported into a PubTator file, allowing for direct input to \gls{aioner}. The \gls{aioner} model was then used to perform automatic entity recognition over these abstracts, producing candidate entity pre-annotations together with their span boundaries and entity types. \gls{aioner}'s native entity labels did not exactly match the six BioRED entity types, for example, \texttt{Chemical} rather than BioRED's \texttt{ChemicalEntity}, and \texttt{Variant} rather than BioRED's \texttt{SequenceVariant}, and were therefore mapped onto the corresponding BioRED entity types during manual review.
+
+Additional manual checks and inspection was conducted: for each abstract, the original abstract text was read directly against the \gls{aioner}'s pre-annotations to validate or map entity type, identify missing entities, correct incorrect span boundaries --- such as \texttt{adeno} instead of the correct \texttt{adeno-associated virus}, and remove incorrectly extracted pre-annotations. To reduce human error arising from manually correcting entity types, Microsoft Excel data validation was used to enforce fixed selection, rather than free-text entry. This process produced the finalised \gls{cbc} \gls{ner} ground truth.
+
+Relation annotation was then conducted using this finalised entity set. As with entity annotation, Excel data validation was used to reduce human error, in this case using an Excel lookup function referencing the finalised list of \gls{ner} spans, ensuring that every entity referenced in a relation corresponded exactly to an already-validated entity text span, rather than an incorrectly manually typed version. As with manual \gls{cbc} \gls{ner} annotation construction, the original abstract text was inspected in order to identify any possible entity relations explicitly supported by the abstract text. This produced the finalised \gls{cbc} \gls{re} ground truth.
+
+Both resulting datasets were structured in the same tabular format as the corresponding BioRED data splits, given in Tables~\ref{tab:cbc_manual_ner} and \ref{tab:cbc_manual_re} below. This meant that existing extraction parsing and evaluation logic described previously required no modification for \gls{cbc} \gls{ner} and \gls{re} extraction and subsequent evaluation.
+
+\begin{table}[H]
+    \centering
+    \caption{Extract of the manually annotated \gls{cbc} named entity recognition ground truth format.}
+    \label{tab:cbc_manual_ner}
+    \begin{tabularx}{\textwidth}{l l l}
+        \toprule
+        PMID & Text Span & Entity Type \\
+        \midrule
+        40655353 & Acinetobacter baumannii & OrganismTaxon \\
+        40655353 & infections & DiseaseOrPhenotypicFeature \\
+        40655353 & macrolides & ChemicalEntity \\
+        \dots & \dots & \dots \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Extract of the manually annotated \gls{cbc} relation extraction ground truth format.}
+    \label{tab:cbc_manual_re}
+
+    \begin{tabularx}{\textwidth}{l l X X l X}
+        \toprule
+        PMID & Entity 1 & Type 1 & Relation & Entity 2 & Type 2 \\
+        \midrule
+        40655353 & Oxa &
+        \makecell[l]{GeneOr\\GeneProduct} &
+        \makecell[l]{Negative\_\\Correlation} &
+        carbapenem &
+        \makecell[l]{Chemical\\Entity} \\
+
+        40655353 & Oxa &
+        \makecell[l]{GeneOr\\GeneProduct} &
+        \makecell[l]{Negative\_\\Correlation} &
+        cephalosporin &
+        \makecell[l]{Chemical\\Entity} \\
+
+        40655353 & Oxa &
+        \makecell[l]{GeneOr\\GeneProduct} &
+        \makecell[l]{Negative\_\\Correlation} &
+        penem &
+        \makecell[l]{Chemical\\Entity} \\
+
+        \ldots & \ldots & \ldots & \ldots & \ldots & \ldots \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
 \subsection{Generalisation Evaluation}
 \label{subsec:meth:generalisation_evaluation}
+As described above, for the \gls{cbc}, evaluation was restricted to predictions from the 50 abstracts comprising the manually annotated \gls{cbc} ground truth subset, using the procedures defined in Sections~\ref{subsec:meth:entity_evaluation} and \ref{subsec:meth:relation_evaluation}, allowing entity and relation precision, recall, and F1 to be evaluated on \gls{cbc} extractions and compared directly against the corresponding BioRed test set results.
+
+Lower measured performance o the \gls{cbc} relative to the BioRED test split is interpreted as possible evidence of reduced generalisation to contemporary, independently and automatically sampled biomedical literature. This shift should not be attributed solely to a temporal shift in the data, as the two corpora also differ in construction, sampling, and, most significantly, annotation procedure. Further discussion of possible performance difference is given in Chapters~\ref{chap:results} and \ref{chap:discussion}.
+
+The manual error-sampling procedure used to explore extraction and evaluation behaviour during development described in \ref{subsec:meth:extraction_pipeline_iterations} was also repeated on the \gls{cbc}, with further discussion included in Section~\pref. \dep
+
+Table~\ref{tab:final_evaluation_summary} summarises the evaluation procedure for both the \gls{cbc} and BioRED test split, and the final generalisation approach.
+
+\begin{table}[H]
+    \centering
+    \caption{Final Evaluation Summary}
+    \label{tab:final_evaluation_summary}
+    \begin{tabularx}{\textwidth}{l X X}
+        \toprule
+        Evaluation Type & Matching requirements & Metrics \\
+        \midrule
+        Entity & Same document exact entity type match, entity span cosine similarity $\geq$ 85, one-to-one matching & Precision, Recall, F1 (95\% bootstrap CI) \\
+        Precision & Same document exact relation type match, entity span cosine similarity $\geq$ 85, order invariance, one-to-one matching & Precision, Recall, F1 (95\% bootstrap CI) \\
+        Generalisation & Identical evaluation procedure applied to \gls{cbc} extractions, restricted to the manually annotated \gls{cbc} subset ($n=50$ of 282) & Precision, Recall, F1 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 \section{Contemporary Knowledge Graph Construction}
 \label{sec:meth:contemporary_kg_construction}
 
-\subsection{Contemporary Corpus Extraction}
-\label{subsec:meth:contemporary_corpus_extraction}
 
-\subsection{Graph Construction}
-\label{subsec:meth:graph_construction}
+\subsection{Named Entity Normalisation}
+\label{subsec:meth:named_entity_normalisation}
 
 \subsection{Ontology-Based Validation}
 \label{subsec:meth:ontology_based_validation}
+
+\subsection{Graph Construction}
+\label{subsec:meth:graph_construction}
 
 \section{Cost Analysis}
 \label{sec:meth:cost_analysis}

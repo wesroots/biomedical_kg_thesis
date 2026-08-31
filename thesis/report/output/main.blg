@@ -22,45 +22,45 @@ Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: chapters/08_appendices.aux
 Database file #1: bibliography.bib
 Warning--can't use both volume and number fields in krallinger2017overview
-You've used 30 entries,
+You've used 33 entries,
             1791 wiz_defined-function locations,
-            630 strings with 10651 characters,
-and the built_in function-call counts, 8271 in all, are:
-= -- 685
-> -- 459
+            648 strings with 11355 characters,
+and the built_in function-call counts, 9196 in all, are:
+= -- 757
+> -- 525
 < -- 11
-+ -- 164
-- -- 134
-* -- 607
-:= -- 1305
-add.period$ -- 91
-call.type$ -- 30
-change.case$ -- 30
++ -- 187
+- -- 154
+* -- 698
+:= -- 1461
+add.period$ -- 100
+call.type$ -- 33
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 373
-empty$ -- 742
-format.name$ -- 134
-if$ -- 1846
+cite$ -- 34
+duplicate$ -- 400
+empty$ -- 818
+format.name$ -- 154
+if$ -- 2036
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 30
-newline$ -- 153
-num.names$ -- 30
-pop$ -- 73
+int.to.str$ -- 33
+missing$ -- 33
+newline$ -- 168
+num.names$ -- 33
+pop$ -- 76
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 210
+skip$ -- 219
 stack$ -- 0
-substring$ -- 527
-swap$ -- 125
+substring$ -- 610
+swap$ -- 128
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 73
-width$ -- 32
-write$ -- 333
+while$ -- 81
+width$ -- 35
+write$ -- 366
 (There was 1 warning)

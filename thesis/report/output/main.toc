@@ -44,27 +44,27 @@
 \contentsline {subsection}{\numberline {4.5.3}Final Pipeline}{37}{}%
 \contentsline {section}{\numberline {4.6}Extraction Evaluation}{37}{}%
 \contentsline {subsection}{\numberline {4.6.1}Entity Evaluation}{38}{}%
-\contentsline {subsection}{\numberline {4.6.2}Relation Evaluation}{38}{}%
-\contentsline {subsection}{\numberline {4.6.3}CBC Manual Annotation}{38}{}%
-\contentsline {subsection}{\numberline {4.6.4}Generalisation Evaluation}{38}{}%
-\contentsline {section}{\numberline {4.7}Contemporary Knowledge Graph Construction}{38}{}%
-\contentsline {subsection}{\numberline {4.7.1}Contemporary Corpus Extraction}{38}{}%
-\contentsline {subsection}{\numberline {4.7.2}Graph Construction}{38}{}%
-\contentsline {subsection}{\numberline {4.7.3}Ontology-Based Validation}{38}{}%
-\contentsline {section}{\numberline {4.8}Cost Analysis}{38}{}%
-\contentsline {chapter}{\numberline {5}Results}{39}{}%
-\contentsline {chapter}{\numberline {6}Discussion}{43}{}%
-\contentsline {chapter}{\numberline {7}Conclusion}{44}{}%
-\contentsline {chapter}{\numberline {A}Filtered BioRED Annotation Guidelines Used For Prompting}{48}{}%
-\contentsline {chapter}{\numberline {B}Extraction Prompts}{62}{}%
-\contentsline {section}{\numberline {B.1}Prompt Version 1}{62}{}%
-\contentsline {section}{\numberline {B.2}Prompt Version 2}{63}{}%
-\contentsline {section}{\numberline {B.3}Prompt Version 3}{64}{}%
-\contentsline {section}{\numberline {B.4}Prompt Version 4}{65}{}%
-\contentsline {section}{\numberline {B.5}Prompt Version 5}{67}{}%
-\contentsline {section}{\numberline {B.6}Prompt Version 6}{69}{}%
-\contentsline {section}{\numberline {B.7}Prompt Version 7}{72}{}%
-\contentsline {section}{\numberline {B.8}Prompt Version 8}{74}{}%
-\contentsline {chapter}{\numberline {C}EPI Error Analysis}{78}{}%
-\contentsline {section}{\numberline {C.1}Error Categorisation Prompt}{78}{}%
-\contentsline {section}{\numberline {C.2}EPI Error Distribution Figures}{79}{}%
+\contentsline {subsection}{\numberline {4.6.2}Relation Evaluation}{39}{}%
+\contentsline {subsection}{\numberline {4.6.3}CBC Manual Annotation}{40}{}%
+\contentsline {subsection}{\numberline {4.6.4}Generalisation Evaluation}{42}{}%
+\contentsline {section}{\numberline {4.7}Contemporary Knowledge Graph Construction}{43}{}%
+\contentsline {subsection}{\numberline {4.7.1}Named Entity Normalisation}{43}{}%
+\contentsline {subsection}{\numberline {4.7.2}Ontology-Based Validation}{43}{}%
+\contentsline {subsection}{\numberline {4.7.3}Graph Construction}{43}{}%
+\contentsline {section}{\numberline {4.8}Cost Analysis}{43}{}%
+\contentsline {chapter}{\numberline {5}Results}{44}{}%
+\contentsline {chapter}{\numberline {6}Discussion}{48}{}%
+\contentsline {chapter}{\numberline {7}Conclusion}{49}{}%
+\contentsline {chapter}{\numberline {A}Filtered BioRED Annotation Guidelines Used For Prompting}{54}{}%
+\contentsline {chapter}{\numberline {B}Extraction Prompts}{68}{}%
+\contentsline {section}{\numberline {B.1}Prompt Version 1}{68}{}%
+\contentsline {section}{\numberline {B.2}Prompt Version 2}{69}{}%
+\contentsline {section}{\numberline {B.3}Prompt Version 3}{70}{}%
+\contentsline {section}{\numberline {B.4}Prompt Version 4}{71}{}%
+\contentsline {section}{\numberline {B.5}Prompt Version 5}{73}{}%
+\contentsline {section}{\numberline {B.6}Prompt Version 6}{75}{}%
+\contentsline {section}{\numberline {B.7}Prompt Version 7}{78}{}%
+\contentsline {section}{\numberline {B.8}Prompt Version 8}{80}{}%
+\contentsline {chapter}{\numberline {C}EPI Error Analysis}{84}{}%
+\contentsline {section}{\numberline {C.1}Error Categorisation Prompt}{84}{}%
+\contentsline {section}{\numberline {C.2}EPI Error Distribution Figures}{85}{}%

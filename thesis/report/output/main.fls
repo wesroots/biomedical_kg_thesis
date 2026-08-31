@@ -155,6 +155,8 @@ INPUT D:\MikTeX\tex\latex\caption\ltcaption.sty
 INPUT D:\MikTeX\tex\latex\caption\ltcaption.sty
 INPUT D:\MikTeX\tex\latex\seqsplit\seqsplit.sty
 INPUT D:\MikTeX\tex\latex\seqsplit\seqsplit.sty
+INPUT D:\MikTeX\tex\latex\makecell\makecell.sty
+INPUT D:\MikTeX\tex\latex\makecell\makecell.sty
 INPUT D:\MikTeX\tex\latex\listings\listings.sty
 INPUT D:\MikTeX\tex\latex\listings\listings.sty
 INPUT D:\MikTeX\tex\latex\listings\lstpatch.sty
@@ -394,6 +396,13 @@ INPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\..\..\..\img\erro
 INPUT e:\Users\wesle\biomedical_kg_thesis\img\error_analysis\biored_train\epi_009.png
 INPUT e:\Users\wesle\biomedical_kg_thesis\img\error_analysis\biored_train\epi_009.png
 INPUT e:\Users\wesle\biomedical_kg_thesis\img\error_analysis\biored_train\epi_009.png
+INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-ot1.tfm
+INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-ot1.tfm
+INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-ot1.tfm
+INPUT D:\MikTeX\fonts\vf\public\newtx\ntx-Bold-tlf-ot1.vf
+INPUT D:\MikTeX\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
+INPUT D:\MikTeX\fonts\tfm\public\newtx\txmiaX.tfm
+INPUT D:\MikTeX\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
 INPUT .\chapters\05_results.tex
 INPUT .\chapters\05_results.tex
 OUTPUT e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters\05_results.aux

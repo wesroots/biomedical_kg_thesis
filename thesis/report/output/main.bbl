@@ -191,4 +191,24 @@ Fangyu Liu, Ehsan Shareghi, Zaiqiao Meng, Marco Basaldella, and Nigel Collier.
   chapter of the association for computational linguistics: human language
   technologies}, pages 4228--4238, 2021.
 
+\bibitem{wei2019pubtator}
+Chih-Hsuan Wei, Alexis Allot, Robert Leaman, and Zhiyong Lu.
+\newblock Pubtator central: automated concept annotation for biomedical full
+  text articles.
+\newblock {\em Nucleic acids research}, 47(W1):W587--W593, 2019.
+
+\bibitem{wei2024pubtator}
+Chih-Hsuan Wei, Alexis Allot, Po-Ting Lai, Robert Leaman, Shubo Tian, Ling Luo,
+  Qiao Jin, Zhizheng Wang, Qingyu Chen, and Zhiyong Lu.
+\newblock Pubtator 3.0: an ai-powered literature resource for unlocking
+  biomedical knowledge.
+\newblock {\em Nucleic Acids Research}, 52(W1):W540--W546, 2024.
+
+\bibitem{luo2023aioner}
+Ling Luo, Chih-Hsuan Wei, Po-Ting Lai, Robert Leaman, Qingyu Chen, and Zhiyong
+  Lu.
+\newblock Aioner: all-in-one scheme-based biomedical named entity recognition
+  using deep learning.
+\newblock {\em Bioinformatics}, 39(5):btad310, 2023.
+
 \end{thebibliography}
