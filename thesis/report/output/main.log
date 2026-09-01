@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  31 AUG 2026 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.17)  1 SEP 2026 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -921,135 +921,170 @@ Underfull \hbox (badness 10000) in alignment at lines 65--65
 [][] 
  []
 
-[25] [26]
+[25] [26] [27]
 
 pdfTeX warning: pdflatex (file ../img/system_architecture.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<../img/system_architecture.pdf, id=93, 421.575pt x 406.3983pt>
+<../img/system_architecture.pdf, id=96, 421.575pt x 406.3983pt>
 File: ../img/system_architecture.pdf Graphic file (type pdf)
 <use ../img/system_architecture.pdf>
-Package pdftex.def Info: ../img/system_architecture.pdf  used on input line 95.
+Package pdftex.def Info: ../img/system_architecture.pdf  used on input line 97.
 (pdftex.def)             Requested size: 380.69788pt x 367.00151pt.
 
-LaTeX Warning: Reference `sec:meth:evaluation' on page 27 undefined on input line 96.
+LaTeX Warning: Reference `sec:meth:evaluation' on page 28 undefined on input line 98.
 
 
-LaTeX Warning: Reference `sec:meth:evaluation' on page 27 undefined on input line 96.
+LaTeX Warning: Reference `sec:meth:evaluation' on page 28 undefined on input line 98.
 
-[27] [28 <../img/system_architecture.pdf>]
-LaTeX Font Info:    Trying to load font information for OMS+ntxtlf on input line 108.
-LaTeX Font Info:    No file OMSntxtlf.fd. on input line 108.
+[28 <../img/system_architecture.pdf>]
+LaTeX Font Info:    Trying to load font information for OMS+ntxtlf on input line 110.
+LaTeX Font Info:    No file OMSntxtlf.fd. on input line 110.
 
 
 LaTeX Font Warning: Font shape `OMS/ntxtlf/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 108.
+(Font)              for symbol `textbraceleft' on input line 110.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 131--131
+Underfull \hbox (badness 10000) in alignment at lines 133--133
 [][] 
  []
 
 [29]
-LaTeX Font Info:    Trying to load font information for OMS+ntxtt on input line 142.
-LaTeX Font Info:    No file OMSntxtt.fd. on input line 142.
+LaTeX Font Info:    Trying to load font information for OMS+ntxtt on input line 144.
+LaTeX Font Info:    No file OMSntxtt.fd. on input line 144.
 
 
 LaTeX Font Warning: Font shape `OMS/ntxtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 142.
+(Font)              for symbol `textbraceleft' on input line 144.
 
 [30]
-Underfull \hbox (badness 10000) in alignment at lines 161--161
+Underfull \hbox (badness 10000) in alignment at lines 163--163
 [][] 
  []
 
 [31]
-Underfull \hbox (badness 1226) in paragraph at lines 204--204
+Underfull \hbox (badness 1226) in paragraph at lines 206--206
 \OT1/ntxtlf/m/n/12 (+20) back-ground biomed-i-cal
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 204--204
+Underfull \hbox (badness 2837) in paragraph at lines 206--206
 []|\OT1/ntxtlf/m/n/12 (+20) Explicit precision-over-
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 204--204
+Underfull \hbox (badness 1371) in paragraph at lines 206--206
 []|\OT1/ntxtlf/m/n/12 (+20) Precision-focussed con-
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 204--204
+Underfull \hbox (badness 1092) in paragraph at lines 206--206
 \OT1/ntxtlf/m/n/12 (+20) ser-va-tive ex-trac-tion in-
  []
 
 [32]
 
-LaTeX Warning: Reference `sec:meth:evaluation' on page 33 undefined on input line 209.
+LaTeX Warning: Reference `sec:meth:evaluation' on page 33 undefined on input line 211.
 
 [33] [34]
 <../../../img/error_analysis/biored_train/epi_009.png, id=129, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_009.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_009.png>
-Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_009.png  used on input line 266.
+Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_009.png  used on input line 268.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
  [35] [36 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_009.png>] [37]
-Overfull \hbox (36.07124pt too wide) in paragraph at lines 327--328
+Overfull \hbox (36.07124pt too wide) in paragraph at lines 329--330
 \OT1/ntxtlf/m/n/12 (-20) ground truth text spans were en-coded us-ing the \OT1/ntxtt/m/n/12 pritamdeka/S-PubMedBert-MS-MARCO
  []
 
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 12.0pt on input line 330.
+(Font)              scaled to size 12.0pt on input line 332.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 8.8pt on input line 330.
+(Font)              scaled to size 8.8pt on input line 332.
 LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 6.6pt on input line 330.
+(Font)              scaled to size 6.6pt on input line 332.
 [38]
-Overfull \hbox (4.98691pt too wide) detected at line 357
+Overfull \hbox (4.98691pt too wide) detected at line 359
 \LMS/ntxsy/m/n/12 ¹[]\OML/ntxmi/m/it/12 ;  [];  []\LMS/ntxsy/m/n/12 º  \U/ntxmia/m/it/12 <  \LMS/ntxsy/m/n/12 ¹[]\OML/ntxmi/m/it/12 ;  [];  []\LMS/ntxsy/m/n/12 º
  []
 
 
-Overfull \hbox (4.98691pt too wide) detected at line 367
+Overfull \hbox (4.98691pt too wide) detected at line 369
 \LMS/ntxsy/m/n/12 ¹[]\OML/ntxmi/m/it/12 ;  [];  []\LMS/ntxsy/m/n/12 º  ^^Q  ¹[]\OML/ntxmi/m/it/12 ;  [];  []\LMS/ntxsy/m/n/12 º
  []
 
 [39] [40]
-Underfull \hbox (badness 10000) in alignment at lines 412--412
+Underfull \hbox (badness 10000) in alignment at lines 414--414
 [][][] 
  []
 
 
-Overfull \hbox (11.05275pt too wide) in paragraph at lines 444--444
+Overfull \hbox (11.05275pt too wide) in paragraph at lines 446--446
 |[][]
  []
 
 
-Overfull \hbox (3.36073pt too wide) in paragraph at lines 444--444
+Overfull \hbox (3.36073pt too wide) in paragraph at lines 446--446
 |[][]
  []
 
 
-Overfull \hbox (11.05275pt too wide) in paragraph at lines 444--444
+Overfull \hbox (11.05275pt too wide) in paragraph at lines 446--446
 |[][]
  []
 
 
-Overfull \hbox (3.36073pt too wide) in paragraph at lines 444--444
+Overfull \hbox (3.36073pt too wide) in paragraph at lines 446--446
 |[][]
  []
 
 
-Overfull \hbox (11.05275pt too wide) in paragraph at lines 444--444
+Overfull \hbox (11.05275pt too wide) in paragraph at lines 446--446
 |[][]
  []
 
 
-Overfull \hbox (3.36073pt too wide) in paragraph at lines 444--444
+Overfull \hbox (3.36073pt too wide) in paragraph at lines 446--446
 |[][]
  []
 
-[41]) [42] [43]
+[41] [42] [43]
+Underfull \hbox (badness 1496) in paragraph at lines 506--506
+[]|\OT1/ntxtlf/m/n/12 (+20) NCBI E-utilities API
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 506--506
+[]|\OT1/ntxtlf/m/n/12 (+20) NCBI E-utilities API
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
+[]|\OT1/ntxtt/m/n/12 DiseaseOr
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 506--506
+[]|\OT1/ntxtlf/m/n/12 (+20) NCBI E-utilities API
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 506--506
+[]|\OT1/ntxtlf/m/n/12 (+20) NCBI E-utilities API
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
+[]|\OT1/ntxtlf/m/n/12 (+20) NCBI Cel-losaurus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
+[]|\OT1/ntxtlf/m/n/12 (+20) NCBI E-utilities
+ []
+
+) [44]
 \openout2 = `chapters/05_results.aux'.
 
  (chapters/05_results.tex
@@ -1064,39 +1099,39 @@ Underfull \hbox (badness 10000) in alignment at lines 47--47
 [][][][][] 
  []
 
-<../../../img/dev_analysis/epi_performance.png, id=161, 794.97pt x 650.43pt>
+<../../../img/dev_analysis/epi_performance.png, id=164, 794.97pt x 650.43pt>
 File: ../../../img/dev_analysis/epi_performance.png Graphic file (type png)
 <use ../../../img/dev_analysis/epi_performance.png>
 Package pdftex.def Info: ../../../img/dev_analysis/epi_performance.png  used on input line 52.
 (pdftex.def)             Requested size: 380.69788pt x 311.48827pt.
-[44
+[45
 
 
 
 
 ]
-<../../../img/dev_analysis/top3_relation_f1.png, id=165, 650.43pt x 433.62pt>
+<../../../img/dev_analysis/top3_relation_f1.png, id=168, 650.43pt x 433.62pt>
 File: ../../../img/dev_analysis/top3_relation_f1.png Graphic file (type png)
 <use ../../../img/dev_analysis/top3_relation_f1.png>
 Package pdftex.def Info: ../../../img/dev_analysis/top3_relation_f1.png  used on input line 59.
 (pdftex.def)             Requested size: 380.69788pt x 253.80232pt.
- [45 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/epi_performance.png>]
-<../../../img/generalisation_evaluation/entity_generalisation.png, id=170, 578.16pt x 361.35pt>
+ [46 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/epi_performance.png>]
+<../../../img/generalisation_evaluation/entity_generalisation.png, id=173, 578.16pt x 361.35pt>
 File: ../../../img/generalisation_evaluation/entity_generalisation.png Graphic file (type png)
 <use ../../../img/generalisation_evaluation/entity_generalisation.png>
 Package pdftex.def Info: ../../../img/generalisation_evaluation/entity_generalisation.png  used on input line 66.
 (pdftex.def)             Requested size: 380.69788pt x 237.93484pt.
-<../../../img/generalisation_evaluation/relation_generalisation.png, id=171, 578.16pt x 361.35pt>
+<../../../img/generalisation_evaluation/relation_generalisation.png, id=174, 578.16pt x 361.35pt>
 File: ../../../img/generalisation_evaluation/relation_generalisation.png Graphic file (type png)
 <use ../../../img/generalisation_evaluation/relation_generalisation.png>
 Package pdftex.def Info: ../../../img/generalisation_evaluation/relation_generalisation.png  used on input line 73.
 (pdftex.def)             Requested size: 380.69788pt x 237.93484pt.
-) [46 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/top3_relation_f1.png> <e:/Users/wesle/biomedical_kg_thesis/img/generalisation_evaluation/entity_generalisation.png>] [47 <e:/Users/wesle/biomedical_kg_thesis/img/generalisation_evaluation/relation_generalisation.png>]
+) [47 <e:/Users/wesle/biomedical_kg_thesis/img/dev_analysis/top3_relation_f1.png> <e:/Users/wesle/biomedical_kg_thesis/img/generalisation_evaluation/entity_generalisation.png>] [48 <e:/Users/wesle/biomedical_kg_thesis/img/generalisation_evaluation/relation_generalisation.png>]
 \openout2 = `chapters/06_discussion.aux'.
 
  (chapters/06_discussion.tex
 Chapter 6.
-) [48
+) [49
 
 
 
@@ -1106,7 +1141,7 @@ Chapter 6.
 
  (chapters/07_conclusion.tex
 Chapter 7.
-) [49
+) [50
 
 
 
@@ -1120,11 +1155,11 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
- [50
+ [51
 
 
 
-{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [51] [52]) [53]
+{D:/MikTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [52] [53]) [54]
 \openout2 = `chapters/08_appendices.aux'.
 
  (chapters/08_appendices.tex
@@ -1133,24 +1168,24 @@ LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 10.95pt on input line 3.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 20.
-[54
+[55
 
 
-] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67]
+] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68]
 Appendix B.
-[68
+[69
 
-] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83]
+] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84]
 Appendix C.
-<../../../img/error_analysis/biored_train/epi_003.png, id=297, 867.24pt x 361.35pt>
+<../../../img/error_analysis/biored_train/epi_003.png, id=301, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_003.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_003.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_003.png  used on input line 1024.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
-[84
+[85
 
 ]
-<../../../img/error_analysis/biored_train/epi_006.png, id=302, 867.24pt x 361.35pt>
+<../../../img/error_analysis/biored_train/epi_006.png, id=305, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_006.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_006.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_006.png  used on input line 1030.
@@ -1159,13 +1194,13 @@ File: ../../../img/error_analysis/biored_train/epi_009.png Graphic file (type pn
 <use ../../../img/error_analysis/biored_train/epi_009.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_009.png  used on input line 1036.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
- [85 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_003.png> <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_006.png>]
-<../../../img/error_analysis/biored_train/epi_011.png, id=308, 867.24pt x 361.35pt>
+ [86 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_003.png> <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_006.png>]
+<../../../img/error_analysis/biored_train/epi_011.png, id=311, 867.24pt x 361.35pt>
 File: ../../../img/error_analysis/biored_train/epi_011.png Graphic file (type png)
 <use ../../../img/error_analysis/biored_train/epi_011.png>
 Package pdftex.def Info: ../../../img/error_analysis/biored_train/epi_011.png  used on input line 1042.
 (pdftex.def)             Requested size: 380.69788pt x 158.62506pt.
-) [86 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_011.png>] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_abstract.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/07_conclusion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/08_appendices.aux))
+) [87 <e:/Users/wesle/biomedical_kg_thesis/img/error_analysis/biored_train/epi_011.png>] (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.aux (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/01_abstract.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/02_introduction.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/03_literature_review.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/04_methodology.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/05_results.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/06_discussion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/07_conclusion.aux) (e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\chapters/08_appendices.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1179,17 +1214,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21432 strings out of 467870
- 392845 string characters out of 5435190
- 1293368 words of memory out of 5000000
- 49571 multiletter control sequences out of 15000+600000
- 701401 words of font info for 421 fonts, out of 8000000 for 9000
+ 21429 strings out of 467870
+ 392825 string characters out of 5435190
+ 1293396 words of memory out of 5000000
+ 49572 multiletter control sequences out of 15000+600000
+ 701171 words of font info for 418 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,18n,117p,2543b,1683s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MikTeX/fonts/type1/public/newtx/NewTXMI.pfb><D:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTeX/fonts/type1/public/tex-gyre/qtmr.pfb><D:/MikTeX/fonts/type1/public/newtx/txmiaX.pfb><D:/MikTeX/fonts/type1/public/newtx/txsys.pfb><D:/MikTeX/fonts/type1/public/txfonts/txtt.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmb.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmr.pfb><D:/MikTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (87 pages, 893369 bytes).
+Output written on e:\Users\wesle\biomedical_kg_thesis\thesis\report\output\main.pdf (88 pages, 897436 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
+ 359 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  74286 words of extra memory for PDF output out of 74296 (max. 10000000)
 

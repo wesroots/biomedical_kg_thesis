@@ -49,22 +49,22 @@
 \contentsline {subsection}{\numberline {4.6.4}Generalisation Evaluation}{42}{}%
 \contentsline {section}{\numberline {4.7}Contemporary Knowledge Graph Construction}{43}{}%
 \contentsline {subsection}{\numberline {4.7.1}Named Entity Normalisation}{43}{}%
-\contentsline {subsection}{\numberline {4.7.2}Ontology-Based Validation}{43}{}%
-\contentsline {subsection}{\numberline {4.7.3}Graph Construction}{43}{}%
-\contentsline {section}{\numberline {4.8}Cost Analysis}{43}{}%
-\contentsline {chapter}{\numberline {5}Results}{44}{}%
-\contentsline {chapter}{\numberline {6}Discussion}{48}{}%
-\contentsline {chapter}{\numberline {7}Conclusion}{49}{}%
-\contentsline {chapter}{\numberline {A}Filtered BioRED Annotation Guidelines Used For Prompting}{54}{}%
-\contentsline {chapter}{\numberline {B}Extraction Prompts}{68}{}%
-\contentsline {section}{\numberline {B.1}Prompt Version 1}{68}{}%
-\contentsline {section}{\numberline {B.2}Prompt Version 2}{69}{}%
-\contentsline {section}{\numberline {B.3}Prompt Version 3}{70}{}%
-\contentsline {section}{\numberline {B.4}Prompt Version 4}{71}{}%
-\contentsline {section}{\numberline {B.5}Prompt Version 5}{73}{}%
-\contentsline {section}{\numberline {B.6}Prompt Version 6}{75}{}%
-\contentsline {section}{\numberline {B.7}Prompt Version 7}{78}{}%
-\contentsline {section}{\numberline {B.8}Prompt Version 8}{80}{}%
-\contentsline {chapter}{\numberline {C}EPI Error Analysis}{84}{}%
-\contentsline {section}{\numberline {C.1}Error Categorisation Prompt}{84}{}%
-\contentsline {section}{\numberline {C.2}EPI Error Distribution Figures}{85}{}%
+\contentsline {subsection}{\numberline {4.7.2}Ontology-Based Validation}{44}{}%
+\contentsline {subsection}{\numberline {4.7.3}Graph Construction}{44}{}%
+\contentsline {section}{\numberline {4.8}Cost Analysis}{44}{}%
+\contentsline {chapter}{\numberline {5}Results}{45}{}%
+\contentsline {chapter}{\numberline {6}Discussion}{49}{}%
+\contentsline {chapter}{\numberline {7}Conclusion}{50}{}%
+\contentsline {chapter}{\numberline {A}Filtered BioRED Annotation Guidelines Used For Prompting}{55}{}%
+\contentsline {chapter}{\numberline {B}Extraction Prompts}{69}{}%
+\contentsline {section}{\numberline {B.1}Prompt Version 1}{69}{}%
+\contentsline {section}{\numberline {B.2}Prompt Version 2}{70}{}%
+\contentsline {section}{\numberline {B.3}Prompt Version 3}{71}{}%
+\contentsline {section}{\numberline {B.4}Prompt Version 4}{72}{}%
+\contentsline {section}{\numberline {B.5}Prompt Version 5}{74}{}%
+\contentsline {section}{\numberline {B.6}Prompt Version 6}{76}{}%
+\contentsline {section}{\numberline {B.7}Prompt Version 7}{79}{}%
+\contentsline {section}{\numberline {B.8}Prompt Version 8}{81}{}%
+\contentsline {chapter}{\numberline {C}EPI Error Analysis}{85}{}%
+\contentsline {section}{\numberline {C.1}Error Categorisation Prompt}{85}{}%
+\contentsline {section}{\numberline {C.2}EPI Error Distribution Figures}{86}{}%

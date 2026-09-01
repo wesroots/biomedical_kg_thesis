@@ -1,23 +1,23 @@
 ERROR_CATEGORIES = {
     "1": {
-        "name": "Wrong relation type",
-        "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+        "name": "Wrong type",
+        "description": "The correct entity/entity pair is identified, but the predicted type (entity type, or relation type) differs from the BioRED ground truth."
     },
     "2": {
         "name": "Duplicate/coreference",
         "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
     },
     "3": {
-        "name": "Unsupported relation",
-        "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+        "name": "Unsupported prediction",
+        "description": "The predicted entity or relation is not supported by the abstract or BioRED annotation policy."
     },
     "4": {
         "name": "Entity boundary/synonyms mismatch",
         "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
     },
     "5": {
-        "name": "Missing relation",
-        "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+        "name": "Missing prediction",
+        "description": "A BioRED ground-truth entity or relation is supported by the abstract but was not extracted by the system."
     },
     "6": {
         "name": "Evaluation artefact",

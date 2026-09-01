@@ -86,6 +86,8 @@ The processed datasets discussed in Section~\ref{subsec:meth:data_preparation} f
 
 % UPDATE THIS PARAGRAPH:
 % "It says SapBERT embeds the mention and retrieves its nearest neighbour from “UMLS concept vector embeddings”. If you're now doing UMLS API candidate retrieval → SapBERT reranking of those candidates, that paragraph will need updating once you've actually implemented 4.6. This is important, but there is no reason to fix it before writing 4.5."
+
+\dep %- fix the following. this was not what was done
 Extracted entity mentions then underwent entity normalisation, mapping each mention to its corresponding \gls{cui} in the \gls{umls}, using SapBERT \cite{liu2021sapbert} to encode each mention and retrieve its nearest neighbour among \gls{umls} concept vector embeddings by cosine similarity, before undergoing ontology-based validation, described in Section~\ref{subsec:meth:ontology_based_validation}. The resulting normalised, validated entities and relations were subsequently converted into nodes and edges and assembled into the final \gls{kg}.
 
 The same extraction architecture was used across both BioRED and the \gls{cbc}, differing only in the input data supplied and presence of gold-standard annotations, with BioRED additionally providing ground truth against which extraction-level performance could be measured, and the \gls{cbc} providing only a manually annotated subset for this purpose, as described in Section~\ref{subsec:meth:contemporary_biomedical_corpus}. Although the pipeline's specific configuration changed across the \gls{epi} development process, the overall architecture described above remained consistent throughout.
@@ -270,7 +272,7 @@ These category distributions were used diagnostically, precision, recall, and F1
 
 \subsection{Development and Model Selection}
 \label{subsec:meth:development_and_model_selection}
-Iterative \gls{epi} development against the BioRED training split contiued until further prompt or evaluation refinements produced only marginal changes in extraction performance metrics. At this point, all candidate \gls{epi} configurations were frozen and no further prompt or schema adjustment was made
+Iterative \gls{epi} development against the BioRED training split contiued until further prompt or evaluation refinements produced only marginal changes in extraction performance metrics. At this point, all candidate \gls{epi} configurations were frozen and no further prompt or schema adjustment was made.
 
 Figure~\ref{fig:epi_performance} in Section~\pref \ shows the entity and relation precision, recall, and F1 across all \glspl{epi} measured on the BioRED development split, after being refined on the training split, allowing performance to be tracked across sequential extraction pipeline refinements. On the basis of primarily F1, and secondarily precision and recall, \texttt{epi\_007}, \texttt{epi\_008}, and \texttt{epi\_009} were selected for further comparison.
 
@@ -450,7 +452,9 @@ As described above, for the \gls{cbc}, evaluation was restricted to predictions 
 
 Lower measured performance o the \gls{cbc} relative to the BioRED test split is interpreted as possible evidence of reduced generalisation to contemporary, independently and automatically sampled biomedical literature. This shift should not be attributed solely to a temporal shift in the data, as the two corpora also differ in construction, sampling, and, most significantly, annotation procedure. Further discussion of possible performance difference is given in Chapters~\ref{chap:results} and \ref{chap:discussion}.
 
-The manual error-sampling procedure used to explore extraction and evaluation behaviour during development described in \ref{subsec:meth:extraction_pipeline_iterations} was also repeated on the \gls{cbc}, with further discussion included in Section~\pref. \dep
+% The manual error-sampling procedure used to explore extraction and evaluation behaviour during development described in \ref{subsec:meth:extraction_pipeline_iterations} was also repeated on the \gls{cbc}, with further discussion included in Section~\pref. \dep
+
+Unlike the relation-focussed analysis during development, the \gls{llm}-based \gls{cbc} error analysis additionally extended to entity \glspl{fp} and \glspl{fn}, sampled and categorised using the same seven error categories (Table~\ref{tab:error_categories}), allowing entity and relation error distributions to be analysed side by side for extraction evaluation. As during development, up to 50 \gls{fp} and 50 \gls{fn} errors were randomly sampled using a fixed random seed, this time for both entities and relations. Each sampled error was categorised automatically using the same \gls{llm}-based categorisation process described in Section~\ref{subsec:meth:extraction_pipeline_iterations}, given the incorrect extraction --- comprising text span and entity type, and its corresponding paper's abstract text, title text, and ground truth annotations to provide context. The resulting category distributions were visualised, providing insight for assessing whether any performance degradation of \gls{cbc} extractions reflected genuine extraction failure or evaluation artefacts.
 
 Table~\ref{tab:final_evaluation_summary} summarises the evaluation procedure for both the \gls{cbc} and BioRED test split, and the final generalisation approach.
 
@@ -462,8 +466,8 @@ Table~\ref{tab:final_evaluation_summary} summarises the evaluation procedure for
         \toprule
         Evaluation Type & Matching requirements & Metrics \\
         \midrule
-        Entity & Same document exact entity type match, entity span cosine similarity $\geq$ 85, one-to-one matching & Precision, Recall, F1 (95\% bootstrap CI) \\
-        Precision & Same document exact relation type match, entity span cosine similarity $\geq$ 85, order invariance, one-to-one matching & Precision, Recall, F1 (95\% bootstrap CI) \\
+        Entity & Same document exact entity type match, entity span cosine similarity $\geq$ 0.85, one-to-one matching & Precision, Recall, F1 (95\% bootstrap CI) \\
+        Precision & Same document exact relation type match, entity span cosine similarity $\geq$ 0.85, order invariance, one-to-one matching & Precision, Recall, F1 (95\% bootstrap CI) \\
         Generalisation & Identical evaluation procedure applied to \gls{cbc} extractions, restricted to the manually annotated \gls{cbc} subset ($n=50$ of 282) & Precision, Recall, F1 \\
         \bottomrule
     \end{tabularx}
@@ -472,9 +476,37 @@ Table~\ref{tab:final_evaluation_summary} summarises the evaluation procedure for
 \section{Contemporary Knowledge Graph Construction}
 \label{sec:meth:contemporary_kg_construction}
 
-
 \subsection{Named Entity Normalisation}
 \label{subsec:meth:named_entity_normalisation}
+Following extraction, entity mentions produced by the final \gls{epi} (Section~\ref{subsec:meth:final_pipeline}) from the \gls{cbc} were passed through Named Entity Normalisation \gls{nen}, converting each free-text mention and its entity type into a standardised concept identifier drawn from the biomedical terminology resources used by the BioRED dataset, prior to ontology-based validation (Section~\ref{subsec:meth:ontology_based_validation}). The extraction stage represents each entity only as a text span and an entity type, with no associated identifier. \gls{nen} normalises the entity mentions so that the difference text representations of the same biomedical concept, such as synonyms, abbreviations, or alternate terminology, are consolidated into a single identifier, and therefore a single final graph node in the resulting Knowledge Graph \gls{kg}.
+
+\gls{nen} was applied only to extracted entities that were included in at least one predicted relation, rather than to every entity extracted by the pipeline. Entities that were extracted but never appeared in an extracted relation triple would only form isolated orphan nodes --- nodes that are not linked by edges to any other node. Therefore, normalisation of these entities was decided unnecessary use of any terminology resource \glspl{api}.
+
+For each target abstract, every unique \texttt{(PMID, entity text span)} pair appearing at least once in any relation was identified from the extraction pipeline's \gls{cbc} stored predictions. Each mention was then matched to its corresponding entity prediction to extract its entity type, which determined the appropriate terminology resource for entity normalisation. The entire set of \texttt{(text span, entity type)} pairs was then stripped of any duplicates across abstracts, so that extractions of the same entity--type pair across abstracts was normalised once, instead of multiple times.
+
+The Unified Medical Language System \gls{umls} Metathesaurus was considered as the primary terminology resource. However, the decision was made to instead access several type-appropriate biomedical resources, as the \gls{umls} Metathesaurus required a licenced account for full access \dep. The terminology resources used are summarised in Table~\pref.
+
+\noindent \pref
+
+\begin{table}[H]
+    \centering
+    \caption{Entity Type--Normalisation Resource Mapping}
+    \label{tab:entity_type_normalisation_resource_mapping}
+    \begin{tabularx}{\textwidth}{X X X}
+        \toprule
+        BioRED entity type & Normalisation resource & Access method \\
+        \midrule
+        \texttt{GeneOrGeneEntity} & \gls{ncbi} Gene & \gls{ncbi} E-utilities \gls{api} (\texttt{db=gene}) \\
+        \texttt{ChemicalEntity} & MeSH & \gls{ncbi} E-utilities \gls{api} (\texttt{db=mesh}) \\
+        \texttt{DiseaseOr} \texttt{PhenotypicFeature} & MeSH & \gls{ncbi} E-utilities \gls{api} (\texttt{db=mesh}) \\
+        \texttt{OrganismTaxon} & \gls{ncbi} Taxonomy & \gls{ncbi} E-utilities \gls{api} (\texttt{db=taxonomy}) \\
+        \texttt{CellLine} & Cellosaurus & \gls{ncbi} Cellosaurus REST \gls{api} \\
+        \texttt{SequenceVariant} & dbSNP / \gls{ncbi} Variation Services & \gls{ncbi} E-utilities \gls{api}/Variation Services \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+% "This approach was chosen specifically to avoid..."
 
 \subsection{Ontology-Based Validation}
 \label{subsec:meth:ontology_based_validation}

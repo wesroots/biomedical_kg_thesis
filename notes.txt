@@ -1,227 +1,175 @@
-4.6 Extraction Evaluation
+SECTION 4.7: CONTEMPORARY KNOWLEDGE GRAPH CONSTRUCTION
+
+SUBSECTION: Named Entity Normalisation
 
 Purpose:
-Define exactly how the frozen final extraction pipeline was evaluated. Section 4.5 explains how the evaluation procedure evolved during development; Section 4.6 should instead specify the final evaluation procedure used to produce the reported BioRED and CBC results.
+Describe how entity mentions extracted from the CBC were converted from surface-form strings into standardised biomedical concepts before ontology-based validation and graph construction.
 
-The section should answer:
-“How were final entity and relation predictions compared against ground truth, and how was generalisation to the CBC assessed?”
+This subsection should answer:
+“How were the raw entity mentions produced by the final extraction pipeline mapped to canonical biomedical concepts and identifiers suitable for use as KG nodes?”
 
-4.6 opening paragraph
+Important:
+Describe the NEN procedure that was actually implemented. Do not introduce or justify an alternative procedure here. The notes below are intended as a structural guide for writing up the implemented process.
 
-Purpose:
-Briefly establish the overall evaluation framework.
+Opening paragraph:
 
-Cover:
+Briefly explain where NEN occurs in the implemented pipeline.
+State that NEN was applied to entities extracted from the CBC by the frozen final EPI.
+Explain that the extraction stage initially represents entities using their textual mentions and assigned entity types.
+State that NEN converts these extracted mentions into standardised biomedical concepts/identifiers.
+Explain the immediate purpose for KG construction: different surface forms referring to the same underlying biomedical concept should resolve to a common node rather than producing duplicate nodes.
+Refer back to the Literature Review discussion of NEN rather than re-explaining the general theory or importance of entity normalisation.
 
-State that the final EPI selected in Section 4.5 was evaluated on the held-out BioRED test split.
-State that the same frozen EPI was subsequently evaluated against the manually annotated CBC evaluation subset.
-State that entity and relation performance were evaluated separately.
-State that precision, recall and F1 were the primary metrics.
-Define TP, FP and FN here if these definitions do not already appear sufficiently in the methodology.
-Include the precision, recall and F1 equations here if appropriate.
-Explicitly state that the BioRED test split was not used during pipeline development or EPI selection.
-State that the same final evaluation procedure was used for BioRED and CBC to permit direct comparison.
+Input to NEN:
+
+Describe exactly what information from the extraction output was passed into the NEN process.
+State which fields were used, such as entity mention, extracted entity type and PMID/document identifier, according to the actual implementation.
+Explain whether normalisation operated on every extracted entity occurrence or on unique entity/type combinations.
+If repeated mentions were normalised once and subsequently reused/cached, state this.
+Explain how the relationship between the original extracted mention and its normalised representation was retained.
+Make clear that relations were not independently normalised as textual objects; instead, their source and target entities could subsequently be resolved through the normalised entity records.
+
+Terminology resource:
+
+Identify UMLS and the specific UMLS component/resource used.
+State how UMLS was accessed in the implementation.
+State which UMLS release/version was used if this was fixed or recorded.
+Explain what information was retrieved from UMLS that was relevant to normalisation, such as candidate concepts, CUIs, preferred names and alternative terms/synonyms, according to the actual implementation.
+Be terminologically precise: do not describe the UMLS Metathesaurus as a single ontology.
+Briefly justify UMLS as the normalisation resource in terms of its integration of biomedical terminology and concept identifiers.
+Avoid repeating the broader discussion of biomedical ontologies/vocabularies from the Literature Review.
+
+Candidate generation:
+
+Describe exactly how candidate UMLS concepts were obtained for each extracted entity.
+State the query/search procedure actually used.
+State how many candidates were retained, if a fixed number was used.
+State whether any filtering occurred before candidate ranking.
+If extracted BioRED entity type was used during candidate retrieval/filtering, explain exactly how.
+If it was not used at this stage, do not imply that it was; semantic-type checking may instead belong to the following ontology-validation subsection.
+Explain what happened where UMLS returned no suitable candidates.
+
+Candidate comparison/ranking:
+
+Describe the implemented method used to determine which candidate concept best represented the extracted mention.
+Identify the embedding model actually used.
+State what text was embedded on the extracted-entity side.
+State what candidate representations were embedded, such as preferred names and/or synonyms, according to the actual implementation.
+Explain how cosine similarity was used to compare these representations.
+If multiple synonyms belonged to a single candidate CUI, explain exactly how their similarity scores were combined or selected.
+State how the final candidate CUI was selected from the candidate set.
+Include the cosine similarity equation only if useful and not unnecessarily repetitive with Section 4.6. If the same equation has already been formally defined there, cross-reference it instead.
+
+Acceptance threshold:
+
+State whether a minimum similarity threshold was required before assigning a CUI.
+Give the threshold actually used.
+Explain how the threshold was selected or calibrated.
+Clearly distinguish the NEN threshold from the cosine threshold used for extraction evaluation if they are different.
+Explain what happened when the highest-scoring candidate failed to meet the threshold.
+Avoid forcing every extracted entity onto a UMLS concept if the implementation allows an unresolved outcome.
+
+Normalisation output:
+Clearly define what the NEN stage produced.
+
+For example, depending on the actual implementation, the resulting record may contain:
+
+original extracted mention;
+extracted entity type;
+assigned CUI;
+preferred/canonical UMLS name;
+selected candidate/synonym;
+similarity score;
+PMID/provenance;
+normalisation status.
+
+A small table showing the output schema would work well here.
+
+An illustrative example can also be useful:
+
+Raw extracted mention
+-> candidate comparison
+-> selected canonical concept
+-> CUI
+
+Use one real example from the CBC if available rather than inventing one.
+
+Handling unresolved entities:
+
+State how entities for which no acceptable normalisation was identified were represented.
+Explain whether they were retained as unresolved entities, excluded from subsequent KG construction, manually inspected, or handled in another way.
+State what happened to relations containing an unresolved source or target entity, if this decision was made during NEN.
+If relation handling actually occurs during graph construction rather than NEN, defer it to Section 4.7.3 instead.
+
+Connection to relations and KG construction:
+End the subsection by briefly explaining how the normalised entity records feed downstream processing.
+
+The important conceptual link is:
+
+raw relation:
+(source mention, relation type, target mention)
+
+normalised entity mapping:
+mention -> canonical concept/CUI
+
+=
+
+KG-ready relation:
+(source concept/CUI, relation type, target concept/CUI)
+
+Explain that this permits synonymous or alternative mentions mapped to the same biomedical concept to contribute relationships to the same eventual graph node.
+
+Do not describe the actual NetworkX construction here. Save node creation, edge creation, duplicate consolidation, provenance attributes and GraphML export for Graph Construction.
+
+Relationship with ontology-based validation:
+Keep the boundary between this subsection and the next one very clear.
+
+Named Entity Normalisation asks:
+“What standard biomedical concept does this extracted mention correspond to?”
+
+Ontology-Based Validation asks:
+“Is the resulting normalised concept semantically compatible with the extraction/schema?”
+
+Therefore, this subsection should finish once a candidate concept/CUI has been assigned or the entity has been marked unresolved.
+
+Do not pre-emptively explain the complete semantic-type validation procedure here unless semantic information was directly required as part of the implemented NEN algorithm. If it was, describe only its role in normalisation and leave the broader validation logic for the following subsection.
+
+Reproducibility details worth including if applicable:
+
+UMLS release/version.
+API/resource accessed.
+Candidate count.
+Embedding model/version.
+Cosine similarity threshold.
+Candidate/synonym scoring rule.
+Caching/deduplication procedure.
+Handling of failed API requests.
+Handling of no-result queries.
+Handling of below-threshold matches.
+Fields stored in the resulting normalisation table.
 
 Avoid:
 
-Re-explaining why precision/recall/F1 are appropriate for biomedical IE if this is already established in the Literature Review.
-Repeating the EPI development process.
-Reporting the actual final results here.
+Re-explaining what NEN is at literature-review depth.
+Re-explaining why KGs require canonical entities.
+Discussing BioRED extraction evaluation.
+Discussing strict/relaxed/cosine evaluation matching from Section 4.6 except where contrasting it with the separate NEN similarity procedure.
+Describing UMLS as a single ontology.
+Explaining ontology-based validation in detail.
+Describing NetworkX or GraphML.
+Reporting NEN success rates/results unless needed to describe the methodology; those belong in Results.
 
-4.6.1 Entity Evaluation
+Suggested writing order:
 
-Purpose:
-Define exactly how predicted entities were matched against ground-truth entities.
-
-Cover:
-
-State that entity predictions were compared against ground-truth annotations within the same PMID/document.
-Define the fields required for an entity match.
-State whether entity type must always agree.
-Explain the final hierarchical matching procedure.
-
-If the final procedure is strict -> relaxed -> cosine, describe it explicitly:
-
-Strict matching
-Define exactly what constitutes a strict match.
-For example, predicted and ground-truth entity strings/spans must agree exactly and their entity types must match.
-Mention any preprocessing applied before comparison, such as case normalisation, only if actually implemented.
-Relaxed matching
-Define precisely what your relaxed matching logic does.
-Explain which differences it allows compared with strict matching.
-Examples could include span/boundary differences or other lexical variations, but only describe rules actually present in your implementation.
-Do not simply call it “relaxed matching” without defining the implementation.
-Cosine similarity matching
-State that entities remaining unmatched after strict and relaxed comparison were compared semantically using vector embeddings.
-Name the embedding model actually used.
-State that embeddings were generated for the predicted and ground-truth entity strings.
-State that cosine similarity was calculated between the representations.
-Give the cosine similarity equation if useful.
-State the final similarity threshold.
-Explain how that threshold was selected.
-State whether matching remained constrained to entities of the same BioRED entity type.
-Explain how the best candidate was selected where multiple ground-truth entities exceeded the threshold.
-
-Important:
-Explain how one-to-one matching was enforced. A single ground-truth entity should not be counted as a TP for multiple predictions. State how matched entities were removed from further consideration or otherwise marked as already matched if that reflects your implementation.
-
-Then explain:
-
-Matched predictions were counted as TPs.
-Unmatched predictions were FPs.
-Unmatched ground-truth entities were FNs.
-These counts were used to calculate entity precision, recall and F1.
-
-Relationship to Section 4.5:
-Do not repeat why strict matching was found insufficient or how error sampling motivated cosine matching. That development history belongs in 4.5. Here, simply define the final procedure.
-
-4.6.2 Relation Evaluation
-
-Purpose:
-Define exactly how predicted relations were compared against BioRED/CBC ground-truth relations.
-
-Begin by defining the relation representation:
-(source entity, relation type, target entity)
-
-Explain that relation correctness therefore depends on both the relation label and its entity arguments.
-
-Cover:
-
-Relations were compared only within the same PMID/document.
-Source and target entities were matched using the entity-matching procedure defined in Section 4.6.1.
-Avoid repeating the complete strict/relaxed/cosine procedure; cross-reference 4.6.1 instead.
-State that the predicted relation type must correspond to the ground-truth relation type.
-Therefore, correctly identifying the two entities but assigning the wrong relation class does not constitute a correct relation prediction.
-
-Relation order invariance:
-This requires explicit explanation because it forms part of your final evaluation configuration.
-
-Cover:
-
-State which relation types were treated as symmetric/order-invariant.
-Explain that, for those relations, reversing source and target did not cause an otherwise correct prediction to be marked incorrect.
-Give one simple example if useful:
-(A, Association, B) is equivalent to (B, Association, A)
-If only selected relation classes are order-invariant, list them.
-State that directional relation classes retained source-target ordering.
-Do not imply that every BioRED relation is symmetric unless that is genuinely what your final implementation does.
-
-Define relation TP/FP/FN:
-
-TP: a predicted relation for which both entity arguments and the relation type match an unmatched ground-truth relation.
-FP: a predicted relation with no corresponding ground-truth relation.
-FN: a ground-truth relation for which no corresponding prediction was identified.
-Explain one-to-one matching if implemented so the same ground-truth relation cannot satisfy multiple predictions.
-
-Then state that relation precision, recall and F1 were calculated independently of entity-level metrics.
-
-If your relation evaluation requires both endpoints to have been extracted correctly before a relation can match, make this explicit. This helps explain why relation performance can be lower than entity performance.
-
-4.6.3 Generalisation Evaluation
-
-Purpose:
-Explain how the frozen extraction pipeline was evaluated on the contemporary corpus and compared with BioRED.
-
-This section should be relatively short because it should reuse the procedures already defined in 4.6.1 and 4.6.2.
-
-Cover:
-
-State that the final frozen EPI was applied to the CBC.
-State that evaluation was performed against the manually annotated CBC ground-truth subset described in Section 4.2.2.
-State the number of abstracts/documents included in this evaluation subset.
-Refer back to Section 4.2.2 for the annotation and sampling procedure rather than repeating it.
-
-Most importantly, state that no CBC-specific refinement occurred before evaluation:
-
-Same LLM/model.
-Same final prompt.
-Same few-shot examples.
-Same extraction schema.
-Same structured-output procedure.
-Same parsing logic.
-No prompt optimisation using CBC ground truth.
-
-Explain that this preserves the CBC as an out-of-distribution/generalisation evaluation rather than another development dataset.
-
-Evaluation procedure:
-
-Entity predictions were evaluated using the procedure from Section 4.6.1.
-Relation predictions were evaluated using the procedure from Section 4.6.2.
-Precision, recall and F1 were therefore directly comparable between the BioRED test evaluation and CBC evaluation.
-
-Comparison:
-
-Compare BioRED test entity precision, recall and F1 against CBC entity precision, recall and F1.
-Separately compare BioRED test relation precision, recall and F1 against CBC relation precision, recall and F1.
-If useful, calculate absolute changes in each metric between corpora.
-For example:
-Delta F1 = F1_CBC - F1_BioRED
-Only include this equation if you actually report the change numerically later.
-
-Interpretation:
-
-Describe lower CBC performance as evidence of reduced generalisation to the contemporary corpus.
-Avoid claiming that any reduction was caused exclusively by temporal distribution shift, because BioRED and CBC also differ in corpus construction, annotation and potentially entity/relation distributions.
-Detailed explanation of why performance changed belongs in Results/Discussion rather than Methodology.
-
-Error sampling:
-
-Do not put the detailed error-sampling analysis in Section 4.6 if you have already used it in Section 4.5.
-
-Its methodological role was developmental:
-error inspection -> identify weaknesses -> modify prompt/evaluation -> new EPI.
-
-Therefore:
-
-Briefly describe the sampling procedure in 4.5.
-Use the error plots there or move detailed plots to an appendix.
-Do not repeat them in 4.6.
-
-Figures:
-
-No EPI-development figures are necessary in 4.6.
-
-The line chart showing EPI progression and the candidate-EPI bar chart belong in 4.5.2 because they concern development and selection.
-
-Section 4.6 primarily needs text, equations and potentially a small table summarising the final evaluation criteria.
-
-Possible evaluation summary table:
-
-Level | Matching requirements | Metrics
-
-Entity | Same document + entity type + hierarchical strict/relaxed/cosine match | Precision, Recall, F1
-
-Relation | Same document + matched source and target + correct relation type + applicable direction rules | Precision, Recall, F1
-
-Generalisation | Identical entity/relation evaluation applied to CBC ground truth | Precision, Recall, F1 and change from BioRED
+Position and purpose of NEN in the CBC pipeline.
+Input extracted entity representation.
+UMLS resource/access.
+Candidate retrieval.
+Candidate comparison/ranking.
+Acceptance/rejection procedure.
+Output normalisation record.
+Handling of unresolved entities.
+Short transition explaining how the resulting mappings feed ontology validation and eventual KG construction.
 
 Expected length:
-
-4.6 opening: approximately 100–150 words.
-
-4.6.1 Entity Evaluation: approximately 300–500 words.
-
-4.6.2 Relation Evaluation: approximately 300–500 words.
-
-4.6.3 Generalisation Evaluation: approximately 250–400 words.
-
-Total: roughly 1,000–1,400 words.
-
-Important subsequent structural change:
-
-Your Contemporary Knowledge Graph Construction section should now follow:
-
-4.7 Contemporary Knowledge Graph Construction
-4.7.1 Contemporary Corpus Extraction
-4.7.2 Entity Normalisation
-4.7.3 Ontology-Guided Semantic Validation
-4.7.4 Graph Construction
-
-This reflects the final pipeline:
-
-CBC extraction
--> Entity normalisation
--> Semantic/ontology-guided validation
--> KG construction
-
-rather than constructing the graph before validation.
+Approximately 600–900 words should be sufficient. The implementation details matter here, but there is no need to turn it into another literature review. The strongest version of this subsection will read primarily as a reproducible description of exactly what the code did.

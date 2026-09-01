@@ -164,8 +164,8 @@
       "target": "cone dystrophy"
     },
     "category": {
-      "name": "Wrong relation type",
-      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
     }
   },
   {
@@ -671,8 +671,8 @@
       "target": "ribavirin"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -684,8 +684,8 @@
       "target": "mitochondrial antiviral-signaling protein"
     },
     "category": {
-      "name": "Missing relation",
-      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
     }
   },
   {
@@ -697,8 +697,8 @@
       "target": "v1763m"
     },
     "category": {
-      "name": "Missing relation",
-      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
     }
   },
   {
@@ -710,8 +710,8 @@
       "target": "clathrin"
     },
     "category": {
-      "name": "Missing relation",
-      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
     }
   },
   {
@@ -723,8 +723,8 @@
       "target": "ifit2"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -840,8 +840,8 @@
       "target": "vascular complication"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -905,8 +905,8 @@
       "target": "respiratory syncytial viral infection"
     },
     "category": {
-      "name": "Wrong relation type",
-      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -957,8 +957,8 @@
       "target": "m204v"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -970,8 +970,8 @@
       "target": "actin"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -996,8 +996,8 @@
       "target": "malignancy"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -1022,8 +1022,8 @@
       "target": "alcohol"
     },
     "category": {
-      "name": "Missing relation",
-      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
     }
   },
   {
@@ -1165,8 +1165,8 @@
       "target": "lgl2"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -1178,8 +1178,8 @@
       "target": "interleukin 6"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -1191,8 +1191,8 @@
       "target": "trfp"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -1204,8 +1204,8 @@
       "target": "doxorubicinol"
     },
     "category": {
-      "name": "Evaluation artefact",
-      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
     }
   },
   {
@@ -1269,8 +1269,8 @@
       "target": "butyrylcholinesterases"
     },
     "category": {
-      "name": "Missing relation",
-      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
     }
   },
   {
@@ -1295,8 +1295,8 @@
       "target": "cyclin-dependent kinase 4"
     },
     "category": {
-      "name": "Missing relation",
-      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
     }
   }
 ]
