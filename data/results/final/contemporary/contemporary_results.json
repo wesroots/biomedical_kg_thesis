@@ -1,25 +1,25 @@
 {
   "entity": {
     "point_estimate": {
-      "precision": 0.8779599271402551,
-      "recall": 0.7347560975609756,
-      "f1": 0.8,
-      "tp": 482,
-      "fp": 67,
-      "fn": 174
+      "precision": 0.8761384335154827,
+      "recall": 0.7332317073170732,
+      "f1": 0.7983402489626557,
+      "tp": 481,
+      "fp": 68,
+      "fn": 175
     },
     "ci": {
       "precision": [
-        0.8209934987606796,
-        0.9250504177470469
+        0.8222611210851786,
+        0.9242447480944412
       ],
       "recall": [
-        0.6905068272771994,
-        0.7750690473411911
+        0.6890230119525427,
+        0.7740917461314453
       ],
       "f1": [
-        0.7615113466976385,
-        0.8333365910867866
+        0.761242872952944,
+        0.8317191137228185
       ]
     },
     "n_boot": 2000,
@@ -36,19 +36,6790 @@
     },
     "ci": {
       "precision": [
-        0.2937030859049208,
-        0.47528643972644663
+        0.2972227310892298,
+        0.4766500818037158
       ],
       "recall": [
-        0.6719556051587302,
-        0.8800125786163522
+        0.6742524707996407,
+        0.8839821115752593
       ],
       "f1": [
-        0.4135418894830659,
-        0.6053564140182894
+        0.4169575777934251,
+        0.6090609327847359
       ]
     },
     "n_boot": 2000,
     "n_pmids": 42
+  },
+  "entity_matches": {
+    "42633474": {
+      "tp": [
+        [
+          42633474,
+          "fhm",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "acute stroke",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "scn1a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633474,
+          "altered consciousness",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "prrt2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633474,
+          "atp1a2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633474,
+          "severe headache",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "encephalitis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "hemiplegic migraine",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "migraine with aura",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "hemiparesis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "fever",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "cacna1a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633474,
+          "familial hemiplegic migraine",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "status epilepticus",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42633474,
+          "migraine with a reversible motor aura",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633474,
+          "rare genetic disorder",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42633481": {
+      "tp": [
+        [
+          42633481,
+          "acute lymphoblastic leukaemia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "femg-bdc mof",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "fe",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "choriocarcinoma",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "1,4-benzene dicarboxylate",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "carcinomas",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "mtt",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "cft",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "methotrexate",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "calcium folinate",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "anaemia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "gastric cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "head and neck cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "breast cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633481,
+          "mg",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42633481,
+          "mg-bdc",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "metal",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "metal organic framework",
+          "ChemicalEntity"
+        ],
+        [
+          42633481,
+          "mof",
+          "ChemicalEntity"
+        ]
+      ]
+    },
+    "41283084": {
+      "tp": [
+        [
+          41283084,
+          "fgf14",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41283084,
+          "postoperative nausea and vomiting",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41283084,
+          "rs1927382",
+          "SequenceVariant"
+        ],
+        [
+          41283084,
+          "ptprd",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41283084,
+          "ponv",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41283084,
+          "loc100506403",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41283084,
+          "cldn14",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41283084,
+          "pkd1l1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41283084,
+          "rs12609817",
+          "SequenceVariant"
+        ],
+        [
+          41283084,
+          "znf845",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41283084,
+          "rs1333114",
+          "SequenceVariant"
+        ],
+        [
+          41283084,
+          "rs921634",
+          "SequenceVariant"
+        ],
+        [
+          41283084,
+          "cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41283084,
+          "rs2776262",
+          "SequenceVariant"
+        ],
+        [
+          41283084,
+          "rs2071049",
+          "SequenceVariant"
+        ]
+      ],
+      "fp": [
+        [
+          41283084,
+          "polycystic kidney disease",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          41283084,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          41283084,
+          "patient",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "41451023": {
+      "tp": [
+        [
+          41451023,
+          "acenocoumarol",
+          "ChemicalEntity"
+        ],
+        [
+          41451023,
+          "nsclc",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41451023,
+          "imr-90",
+          "CellLine"
+        ],
+        [
+          41451023,
+          "erk2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "kirsten rat sarcoma viral oncogene homolog",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "non-small-cell lung cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41451023,
+          "epidermal growth factor receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "egfr",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "caspase-3",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "kras",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "silodosin",
+          "ChemicalEntity"
+        ],
+        [
+          41451023,
+          "a549",
+          "CellLine"
+        ],
+        [
+          41451023,
+          "extracellular signal-regulated kinase 2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41451023,
+          "cisplatin",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          41451023,
+          "cytotoxicity",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41451023,
+          "non-small cell lung cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41451023,
+          "tumor",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42633488": {
+      "tp": [
+        [
+          42633488,
+          "airway inflammation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633488,
+          "cyp",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633488,
+          "tnf",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633488,
+          "kaempferol",
+          "ChemicalEntity"
+        ],
+        [
+          42633488,
+          "quercetin",
+          "ChemicalEntity"
+        ],
+        [
+          42633488,
+          "il-17",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633488,
+          "asthma",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42633488,
+          "toxicity",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633488,
+          "akt",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633488,
+          "immune dysregulation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633488,
+          "airway inflammatory disorder",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633488,
+          "stat",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633488,
+          "pi3k",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633488,
+          "jak",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42629135": {
+      "tp": [
+        [
+          42629135,
+          "synaptic dysfunction",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "dementia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "ad",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "cx3cr1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "cognitive decline",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "neurofibrillary tangles",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "alzheimer's disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "tau",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "neurocognitive decline",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "cx3cl1",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          42629135,
+          "a\u03b2",
+          "ChemicalEntity"
+        ],
+        [
+          42629135,
+          "amyloid-\u03b2",
+          "ChemicalEntity"
+        ],
+        [
+          42629135,
+          "neuroinflammation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42629135,
+          "senile plaques",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          42629135,
+          "amyloid-?",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "gpcrs",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "a?",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "cx3cr1 receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "g-protein coupled receptors",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42629135,
+          "chemokine receptor",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42582296": {
+      "tp": [],
+      "fp": [],
+      "fn": [
+        [
+          42582296,
+          "men",
+          "OrganismTaxon"
+        ],
+        [
+          42582296,
+          "women",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42633266": {
+      "tp": [
+        [
+          42633266,
+          "microrna",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633266,
+          "periodontal diseases",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [
+        [
+          42633266,
+          "mirna",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633266,
+          "matrix metalloproteinases",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fn": [
+        [
+          42633266,
+          "immune dysregulation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633266,
+          "inflammation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633266,
+          "periodontal and other inflammation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633266,
+          "gelatin",
+          "ChemicalEntity"
+        ],
+        [
+          42633266,
+          "hydrogel",
+          "ChemicalEntity"
+        ],
+        [
+          42633266,
+          "periodontal disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633266,
+          "periodontal inflammation",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42633029": {
+      "tp": [
+        [
+          42633029,
+          "\u03b2-cell dysfunction",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633029,
+          "glucotoxicity",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633029,
+          "hba1c",
+          "ChemicalEntity"
+        ],
+        [
+          42633029,
+          "t2dm",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633029,
+          "metformin-pioglitazone",
+          "ChemicalEntity"
+        ],
+        [
+          42633029,
+          "type 2 diabetes mellitus",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633029,
+          "linagliptin-metformin",
+          "ChemicalEntity"
+        ],
+        [
+          42633029,
+          "weight gain",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633029,
+          "insulin resistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633029,
+          "hypoglycemia",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [
+        [
+          42633029,
+          "insulin",
+          "ChemicalEntity"
+        ],
+        [
+          42633029,
+          "hemoglobin a1c",
+          "ChemicalEntity"
+        ],
+        [
+          42633029,
+          "hyperglycemia",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          42633029,
+          "insulin",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42376533": {
+      "tp": [
+        [
+          42376533,
+          "bccs",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "basal cell carcinomas",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "bcc",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "basal cell carcinoma",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "cat",
+          "OrganismTaxon"
+        ],
+        [
+          42376533,
+          "carboplatin",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42376533,
+          "benign skin tumors",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "cats",
+          "OrganismTaxon"
+        ],
+        [
+          42376533,
+          "ulcer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "facial lesions",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "metastasis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42376533,
+          "feline",
+          "OrganismTaxon"
+        ],
+        [
+          42376533,
+          "skin ulcers",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42602331": {
+      "tp": [
+        [
+          42602331,
+          "s139a",
+          "SequenceVariant"
+        ],
+        [
+          42602331,
+          "pp2a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42602331,
+          "set",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42602331,
+          "\u03b3h2ax",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42602331,
+          "glioblastoma",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42602331,
+          "h2ax",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          42602331,
+          "glioma stem cells",
+          "CellLine"
+        ]
+      ],
+      "fn": [
+        [
+          42602331,
+          "pp2a phosphatase",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42602331,
+          "set oncoprotein",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42602331,
+          "tumor",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42602331,
+          "glioma",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42540124": {
+      "tp": [
+        [
+          42540124,
+          "vomiting",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "nsaid",
+          "ChemicalEntity"
+        ],
+        [
+          42540124,
+          "ugib",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "ascariasis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "non-steroidal anti-inflammatory drug",
+          "ChemicalEntity"
+        ],
+        [
+          42540124,
+          "ascaris lumbricoides",
+          "OrganismTaxon"
+        ],
+        [
+          42540124,
+          "upper gastrointestinal bleeding",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "ascaris",
+          "OrganismTaxon"
+        ],
+        [
+          42540124,
+          "liver cirrhosis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "anthelminthic therapy",
+          "ChemicalEntity"
+        ],
+        [
+          42540124,
+          "intestinal ascariasis",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42540124,
+          "ascariasis co-infection",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "biliary ascariasis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "gastrointestinal ascariasis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "helminthic infection",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "helminth infection",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42540124,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42631261": {
+      "tp": [
+        [
+          42631261,
+          "kayser-fleischer rings",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42631261,
+          "copper",
+          "ChemicalEntity"
+        ],
+        [
+          42631261,
+          "hepatic steatosis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42631261,
+          "ceruloplasmin",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42631261,
+          "wilson disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42631261,
+          "wd",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42631261,
+          "metabolic syndrome",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42631261,
+          "atp7b",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42631261,
+          "nm_000053.2:c.1707+2dupt",
+          "SequenceVariant"
+        ],
+        [
+          42631261,
+          "cirrhosis",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42631261,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          42631261,
+          "man",
+          "OrganismTaxon"
+        ],
+        [
+          42631261,
+          "hepatic wilson disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42631261,
+          "cryptogenic cirrhosis",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "40860264": {
+      "tp": [
+        [
+          40860264,
+          "progesterone receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "her2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "triple negative breast cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40860264,
+          "estrogen receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "2-hydroxynaringenin",
+          "ChemicalEntity"
+        ],
+        [
+          40860264,
+          "breast cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40860264,
+          "pr",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "tnbc",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40860264,
+          "human epidermal growth factor receptor 2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "er",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "ar",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "androgen receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40860264,
+          "triple-negative breast cancers",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          40860264,
+          "tumors",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42630505": {
+      "tp": [
+        [
+          42630505,
+          "notch",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "human epidermal growth factor receptor 2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "epidermal growth factor receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "egfr",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "poly (adp-ribose) polymerase 1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "pd-l1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "gpx4",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "tlr4/nf-\u03bab",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "her2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "estrogen receptors",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "metastasis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630505,
+          "pi3k/akt",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "glutathione peroxidase 4",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "programmed death-ligand 1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "parp1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "twist1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "toll-like receptor 4/nuclear factor kappa-b",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "phosphoinositide 3-kinase/protein kinase b",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630505,
+          "twist family bhlh transcription factor 1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "triple-negative breast cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630505,
+          "progesterone receptors",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          42630505,
+          "parp inhibitors",
+          "ChemicalEntity"
+        ],
+        [
+          42630505,
+          "immune checkpoint inhibitors",
+          "ChemicalEntity"
+        ],
+        [
+          42630505,
+          "antibody-drug conjugates",
+          "ChemicalEntity"
+        ]
+      ],
+      "fn": [
+        [
+          42630505,
+          "ubiquitin",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "poly adp-ribose polymerase",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "protein kinase b",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "neural precursor cell expressed developmentally downregulated protein 8",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "nf-?b",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "parp",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "tumor",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630505,
+          "akt",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "breast cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630505,
+          "small ubiquitin-like modifier",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "e3 ligase",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "toll-like receptor 4",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630505,
+          "interferon-stimulated gene",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42633066": {
+      "tp": [
+        [
+          42633066,
+          "hematologic disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633066,
+          "murine",
+          "OrganismTaxon"
+        ],
+        [
+          42633066,
+          "ch",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633066,
+          "tp53",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633066,
+          "tet2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633066,
+          "mice",
+          "OrganismTaxon"
+        ],
+        [
+          42633066,
+          "ppm1d",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633066,
+          "trp53",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          42633066,
+          "clonal hematopoiesis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633066,
+          "loss of the y chromosome",
+          "SequenceVariant"
+        ]
+      ],
+      "fn": []
+    },
+    "40881775": {
+      "tp": [],
+      "fp": [],
+      "fn": [
+        [
+          40881775,
+          "genetic and degenerative diseases",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40881775,
+          "orthopedic injuries",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42630256": {
+      "tp": [
+        [
+          42630256,
+          "slc29a1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630256,
+          "cnr1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630256,
+          "5-htr1a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630256,
+          "audiogenic generalized tonic-clonic seizures",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630256,
+          "adora1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630256,
+          "epileptic encephalopathies",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630256,
+          "trpv1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630256,
+          "gash/sal hamster",
+          "OrganismTaxon"
+        ],
+        [
+          42630256,
+          "cbd",
+          "ChemicalEntity"
+        ],
+        [
+          42630256,
+          "seizure severity",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630256,
+          "epilepsy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630256,
+          "sigmar1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630256,
+          "cannabidiol",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42630256,
+          "endocannabinoid",
+          "ChemicalEntity"
+        ],
+        [
+          42630256,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          42630256,
+          "audiogenic epilepsy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630256,
+          "cannabinoid",
+          "ChemicalEntity"
+        ],
+        [
+          42630256,
+          "sal",
+          "ChemicalEntity"
+        ],
+        [
+          42630256,
+          "tonic-clonic seizures",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42633081": {
+      "tp": [
+        [
+          42633081,
+          "autism spectrum disorder",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "ndd",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "chd",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "attention-deficit/hyperactivity disorder",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "congenital heart disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "neurodevelopmental disorders",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "arid1b",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          42633081,
+          "likely pathogenic de novo splice-disrupting variant",
+          "SequenceVariant"
+        ],
+        [
+          42633081,
+          "large deletion (~2.5 mb)",
+          "SequenceVariant"
+        ]
+      ],
+      "fn": [
+        [
+          42633081,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          42633081,
+          "oxygen",
+          "ChemicalEntity"
+        ],
+        [
+          42633081,
+          "developmental disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633081,
+          "placental dysfunction",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42621305": {
+      "tp": [
+        [
+          42621305,
+          "docetaxel",
+          "ChemicalEntity"
+        ],
+        [
+          42621305,
+          "chac1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42621305,
+          "prostate cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42621305,
+          "circlpar3",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42621305,
+          "igf2bp2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42621305,
+          "m<sup>6</sup>a",
+          "ChemicalEntity"
+        ],
+        [
+          42621305,
+          "dtx",
+          "ChemicalEntity"
+        ],
+        [
+          42621305,
+          "mettl3",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42621305,
+          "pca",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42621305,
+          "pcbp2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42621305,
+          "n6-methyladenosine",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [
+        [
+          42621305,
+          "ferroptosis",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          42621305,
+          "cytotoxicity",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "41059450": {
+      "tp": [
+        [
+          41059450,
+          "developmental delay",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "substitution of histidine, with glutamine",
+          "SequenceVariant"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "dysmorphic features",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "hearing loss",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "hypotonia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "hirschsprung disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "alkaline phosphatase",
+          "ChemicalEntity"
+        ],
+        [
+          41059450,
+          "cerebral atrophy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "neurodevelopmental delay",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "glycosylphosphatidylinositol biosynthesis defect",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "seizures",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41059450,
+          "intellectual disability",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "p.his217gln",
+          "SequenceVariant"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "corpus callosum hypoplasia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "c.651c>g",
+          "SequenceVariant"
+        ],
+        [
+          41059450,
+          "epilepsy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "central fever",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          41059450,
+          "glycosylphosphatidylinositol anchor proteins",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41059450,
+          "congenital glycosylation disorder",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "patient",
+          "OrganismTaxon"
+        ],
+        [
+          41059450,
+          "immunological abnormalities",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41059450,
+          "alkaline phosphatase",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42633083": {
+      "tp": [
+        [
+          42633083,
+          "solid tumors",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633083,
+          "cancer",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42633083,
+          "tumors",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633083,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          42633083,
+          "tumor",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42548349": {
+      "tp": [
+        [
+          42548349,
+          "diarrhea",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "abdominal pain",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "autoimmune-inflammatory myopathy-related interstitial lung diseases",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "aim-ilds",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "nintedanib",
+          "ChemicalEntity"
+        ],
+        [
+          42548349,
+          "nausea/vomiting",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42548349,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          42548349,
+          "aim-ild",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "pulmonary fibrosis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "autoimmune inflammatory myopathy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42548349,
+          "immunosuppression",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "41230208": {
+      "tp": [
+        [
+          41230208,
+          "pibf1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "SequenceVariant"
+        ],
+        [
+          41230208,
+          "dysmorphic features",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "progesterone-induced blocking factor 1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41230208,
+          "p.arg411ter",
+          "SequenceVariant"
+        ],
+        [
+          41230208,
+          "tmem67",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41230208,
+          "optic nerve atrophy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "seizures",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "cc2d2a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41230208,
+          "phenobarbital",
+          "ChemicalEntity"
+        ],
+        [
+          41230208,
+          "renal disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "kidney failure",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "developmental delay",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "hypotonia/ataxia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "cep290",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41230208,
+          "renal atrophy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "cerebellar vermian hypoplasia/aplasia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "jbts33",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "tmem216",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41230208,
+          "ahi1",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          41230208,
+          "molar tooth sign",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "psychomotor issues",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          41230208,
+          "autosomal recessive disorder",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "ataxia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "joubert syndrome",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "patient",
+          "OrganismTaxon"
+        ],
+        [
+          41230208,
+          "jbts",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "aplasia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41230208,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "40662146": {
+      "tp": [
+        [
+          40662146,
+          "azole resistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40662146,
+          "erg11",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40662146,
+          "c. albicans",
+          "OrganismTaxon"
+        ],
+        [
+          40662146,
+          "ergosterol",
+          "ChemicalEntity"
+        ],
+        [
+          40662146,
+          "azole medications",
+          "ChemicalEntity"
+        ],
+        [
+          40662146,
+          "erg2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40662146,
+          "upc2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40662146,
+          "candida albicans",
+          "OrganismTaxon"
+        ],
+        [
+          40662146,
+          "azoles",
+          "ChemicalEntity"
+        ],
+        [
+          40662146,
+          "zinc",
+          "ChemicalEntity"
+        ],
+        [
+          40662146,
+          "candidiasis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40662146,
+          "14\u03b1-lanosterol demethylase",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40662146,
+          "azole antifungal drugs",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          40662146,
+          "zinc (ii)-cys (6) transcription factor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40662146,
+          "sterols",
+          "ChemicalEntity"
+        ],
+        [
+          40662146,
+          "infections",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40662146,
+          "candida",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42632595": {
+      "tp": [
+        [
+          42632595,
+          "tocilizumab",
+          "ChemicalEntity"
+        ],
+        [
+          42632595,
+          "rheumatoid arthritis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632595,
+          "methotrexate",
+          "ChemicalEntity"
+        ],
+        [
+          42632595,
+          "adalimumab",
+          "ChemicalEntity"
+        ],
+        [
+          42632595,
+          "inflammatory arthritides",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632595,
+          "hand osteoarthritis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632595,
+          "hydroxychloroquine",
+          "ChemicalEntity"
+        ],
+        [
+          42632595,
+          "etanercept",
+          "ChemicalEntity"
+        ],
+        [
+          42632595,
+          "lutikizumab",
+          "ChemicalEntity"
+        ],
+        [
+          42632595,
+          "otilimab",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42632595,
+          "osteoarthritis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632595,
+          "patients",
+          "OrganismTaxon"
+        ],
+        [
+          42632595,
+          "pain",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632595,
+          "stiffness",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632595,
+          "thumb-base hand osteoarthritis",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42625940": {
+      "tp": [
+        [
+          42625940,
+          "mentha longifolia",
+          "OrganismTaxon"
+        ],
+        [
+          42625940,
+          "staphylococcus aureus",
+          "OrganismTaxon"
+        ],
+        [
+          42625940,
+          "klebsiella pneumoniae",
+          "OrganismTaxon"
+        ],
+        [
+          42625940,
+          "pseudomonas aeruginosa",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42625940,
+          "pks-i",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625940,
+          "eskape bacteria",
+          "OrganismTaxon"
+        ],
+        [
+          42625940,
+          "pks-ii",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625940,
+          "synthases",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625940,
+          "m. longifolia",
+          "OrganismTaxon"
+        ],
+        [
+          42625940,
+          "horsemint",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42239639": {
+      "tp": [
+        [
+          42239639,
+          "coronavirus disease 2019",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42239639,
+          "polio",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42239639,
+          "covid-19",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42239639,
+          "monkeypox",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42239639,
+          "infectious disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42239639,
+          "infectious diseases",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42147992": {
+      "tp": [
+        [
+          42147992,
+          "dsg2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "tsc1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "gba1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "myh3",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "tbx18",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "dyrk1a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "nf1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "pah",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "dhcr7",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "early pregnancy loss",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "rbm8a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "prdm6",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "vwf",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "runx1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "epl",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "pregnancy loss",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "rpgrip1l",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "dvl1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "cplane1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "pkhd1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "scn5a",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [
+        [
+          42147992,
+          "slc6a1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "f5",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42147992,
+          "21q22.12-q22.3 duplication",
+          "SequenceVariant"
+        ]
+      ],
+      "fn": [
+        [
+          42147992,
+          "embryonically lethal",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "embryonic lethality",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "congenital disorders",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "chromosomal abnormalities",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42147992,
+          "epls",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42422171": {
+      "tp": [
+        [
+          42422171,
+          "mitochondrial dysfunction",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "pink1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "pxr",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "senile osteoporosis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "parkin",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "cellular communication network factor 2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "ccn2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "creb",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "menaquinone-7",
+          "ChemicalEntity"
+        ],
+        [
+          42422171,
+          "pten-induced kinase 1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "vitamin k2",
+          "ChemicalEntity"
+        ],
+        [
+          42422171,
+          "age-related bone loss",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "mice",
+          "OrganismTaxon"
+        ],
+        [
+          42422171,
+          "erk1/2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "extracellular signal-regulated kinases 1/2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "pregnane x receptor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "cyclic amp-responsive element-binding protein",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [
+        [
+          42422171,
+          "mitochondrial dna damage",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "sasp",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "senescence-associated secretory phenotype",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "cellular senescence",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          42422171,
+          "aav",
+          "OrganismTaxon"
+        ],
+        [
+          42422171,
+          "adeno-associated virus",
+          "OrganismTaxon"
+        ],
+        [
+          42422171,
+          "erk",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42422171,
+          "osteoporosis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42422171,
+          "oxygen species",
+          "ChemicalEntity"
+        ]
+      ]
+    },
+    "42632605": {
+      "tp": [
+        [
+          42632605,
+          "aml",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632605,
+          "atf7ip2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42632605,
+          "benzene",
+          "ChemicalEntity"
+        ],
+        [
+          42632605,
+          "glutamate/glutamine",
+          "ChemicalEntity"
+        ],
+        [
+          42632605,
+          "tcmcb07",
+          "ChemicalEntity"
+        ],
+        [
+          42632605,
+          "mouse",
+          "OrganismTaxon"
+        ],
+        [
+          42632605,
+          "glutamate",
+          "ChemicalEntity"
+        ],
+        [
+          42632605,
+          "acute myeloid leukemia",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42632605,
+          "leukemia",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "42633120": {
+      "tp": [
+        [
+          42633120,
+          "staphylococcus aureus",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "\u03b2-lactams",
+          "ChemicalEntity"
+        ],
+        [
+          42633120,
+          "multidrug-resistant",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633120,
+          "enterobacter",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "p. aeruginosa",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "fluoroquinolones",
+          "ChemicalEntity"
+        ],
+        [
+          42633120,
+          "nosocomial infections",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633120,
+          "e. coli",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "pseudomonas aeruginosa",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "antimicrobial resistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633120,
+          "carbapenem",
+          "ChemicalEntity"
+        ],
+        [
+          42633120,
+          "klebsiella pneumoniae",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "escherichia coli",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "k. pneumoniae",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "cephalosporins",
+          "ChemicalEntity"
+        ],
+        [
+          42633120,
+          "a. baumannii",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "acinetobacter baumannii",
+          "OrganismTaxon"
+        ],
+        [
+          42633120,
+          "enterococcus",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [
+        [
+          42633120,
+          "extensively drug-resistant",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633120,
+          "possible pandrug-resistant",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": []
+    },
+    "42148001": {
+      "tp": [
+        [
+          42148001,
+          "proteinuria",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "anal atresia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "renal hypodysplasia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "ckd",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "sensorineural hearing loss",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "end-stage renal disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "hypospadias",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "SequenceVariant"
+        ],
+        [
+          42148001,
+          "thumb anomalies",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "sall1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42148001,
+          "p. tyr503ter",
+          "SequenceVariant"
+        ],
+        [
+          42148001,
+          "congenital hypothyroidism",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "esrd",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "chronic kidney disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "tbs",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "anorectal malformations",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "dysplastic ears",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "congenital anomalies of the kidney and urinary tract",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "cakut",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42148001,
+          "patient",
+          "OrganismTaxon"
+        ],
+        [
+          42148001,
+          "bilateral renal hypodysplasia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "anorectal anomalies",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "ckd stage iii",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "kidney disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "ckd stage ii",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "renal involvement",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "autosomal dominant disorder",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42148001,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42633377": {
+      "tp": [
+        [
+          42633377,
+          "foot-and-mouth disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633377,
+          "fmdv",
+          "OrganismTaxon"
+        ],
+        [
+          42633377,
+          "vp1 gene",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633377,
+          "buffaloes",
+          "OrganismTaxon"
+        ],
+        [
+          42633377,
+          "fmd",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633377,
+          "fmd virus",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42633377,
+          "buffalo",
+          "OrganismTaxon"
+        ],
+        [
+          42633377,
+          "serotype o",
+          "OrganismTaxon"
+        ],
+        [
+          42633377,
+          "infectious disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633377,
+          "cattle",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "40949928": {
+      "tp": [
+        [
+          40949928,
+          "alzheimer's disease",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": []
+    },
+    "42206121": {
+      "tp": [
+        [
+          42206121,
+          "oral cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42206121,
+          "oral cancers",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42206121,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42630837": {
+      "tp": [
+        [
+          42630837,
+          "casp3",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "sglt2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "ace",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "sua",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "sodium-glucose cotransporter 2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "creatinine",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "gapdh",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "interleukin-17",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "uric acid",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "kaposi's sarcoma-associated herpesvirus",
+          "OrganismTaxon"
+        ],
+        [
+          42630837,
+          "icam1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "tumor necrosis factor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "hfpef",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630837,
+          "il-17",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "dpp4",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "tnf",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "hyperuricemia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630837,
+          "kshv",
+          "OrganismTaxon"
+        ],
+        [
+          42630837,
+          "agtr1",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630837,
+          "heart failure with preserved ejection fraction",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630837,
+          "hua",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42630837,
+          "inflammation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630837,
+          "age",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitor",
+          "ChemicalEntity"
+        ],
+        [
+          42630837,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "41834934": {
+      "tp": [
+        [
+          41834934,
+          "ct haplotype",
+          "SequenceVariant"
+        ],
+        [
+          41834934,
+          "rheumatoid arthritis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834934,
+          "rs1899663",
+          "SequenceVariant"
+        ],
+        [
+          41834934,
+          "hotair",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41834934,
+          "ra",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [
+        [
+          41834934,
+          "hox antisense rna",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41834934,
+          "rs12826786",
+          "SequenceVariant"
+        ],
+        [
+          41834934,
+          "cg haplotype",
+          "SequenceVariant"
+        ]
+      ],
+      "fn": [
+        [
+          41834934,
+          "inflammatory arthropathy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834934,
+          "rheumatoid arthritis disease",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834934,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42633403": {
+      "tp": [
+        [
+          42633403,
+          "1,6-hexanediol",
+          "ChemicalEntity"
+        ],
+        [
+          42633403,
+          "escherichia coli",
+          "OrganismTaxon"
+        ],
+        [
+          42633403,
+          "e. coli",
+          "OrganismTaxon"
+        ],
+        [
+          42633403,
+          "1,6-hdo",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [
+        [
+          42633403,
+          "yhbo",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42633403,
+          "ruma",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fn": [
+        [
+          42633403,
+          "amino acid",
+          "ChemicalEntity"
+        ],
+        [
+          42633403,
+          "toxicity",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42633403,
+          "sulfur",
+          "ChemicalEntity"
+        ],
+        [
+          42633403,
+          "polymer",
+          "ChemicalEntity"
+        ]
+      ]
+    },
+    "41834939": {
+      "tp": [
+        [
+          41834939,
+          "colon adenocarcinoma",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834939,
+          "dox",
+          "ChemicalEntity"
+        ],
+        [
+          41834939,
+          "resistance to chemotherapy",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834939,
+          "smad4",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41834939,
+          "il-6",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41834939,
+          "chemoresistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834939,
+          "ht-29",
+          "CellLine"
+        ],
+        [
+          41834939,
+          "colo205",
+          "CellLine"
+        ],
+        [
+          41834939,
+          "colorectal cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834939,
+          "colon rectal cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41834939,
+          "doxorubicin",
+          "ChemicalEntity"
+        ],
+        [
+          41834939,
+          "tgf-\u03b22",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          41834939,
+          "tgf-?2 ligand",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42632907": {
+      "tp": [
+        [
+          42632907,
+          "tuberculosis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632907,
+          "tb",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632907,
+          "mtb",
+          "OrganismTaxon"
+        ],
+        [
+          42632907,
+          "mycobacterium tuberculosis",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [
+        [
+          42632907,
+          "drug resistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42632907,
+          "anti-tb agents",
+          "ChemicalEntity"
+        ]
+      ],
+      "fn": []
+    },
+    "41415885": {
+      "tp": [
+        [
+          41415885,
+          "doxycycline",
+          "ChemicalEntity"
+        ],
+        [
+          41415885,
+          "mtor",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "sturge-weber syndrome",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41415885,
+          "gnaq",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "r183q",
+          "SequenceVariant"
+        ],
+        [
+          41415885,
+          "abnormal cortical microvessel structure",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41415885,
+          "tie2",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "sws",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41415885,
+          "mice",
+          "OrganismTaxon"
+        ],
+        [
+          41415885,
+          "claudin-5",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "mouse",
+          "OrganismTaxon"
+        ],
+        [
+          41415885,
+          "g\u03b1q",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "kainate",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [
+        [
+          41415885,
+          "blood brain barrier breakdown",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          41415885,
+          "dapi",
+          "ChemicalEntity"
+        ],
+        [
+          41415885,
+          "phosphorylated-s6",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "x-gal",
+          "ChemicalEntity"
+        ],
+        [
+          41415885,
+          "seizure",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          41415885,
+          "rtta",
+          "GeneOrGeneProduct"
+        ],
+        [
+          41415885,
+          "evans blue",
+          "ChemicalEntity"
+        ],
+        [
+          41415885,
+          "s6",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42630617": {
+      "tp": [
+        [
+          42630617,
+          "gh",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630617,
+          "morkaraman sheep",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [
+        [
+          42630617,
+          "placental weight",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "placental traits",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "birth weights",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "placental area",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "total cotyledon area",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "daily gains",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "haeiii",
+          "ChemicalEntity"
+        ],
+        [
+          42630617,
+          "total cotyledon weight",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "aa",
+          "SequenceVariant"
+        ],
+        [
+          42630617,
+          "ab",
+          "SequenceVariant"
+        ],
+        [
+          42630617,
+          "density",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42630617,
+          "weaning weights",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          42630617,
+          "haeiii",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42630617,
+          "ewes",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42524382": {
+      "tp": [
+        [
+          42524382,
+          "human",
+          "OrganismTaxon"
+        ],
+        [
+          42524382,
+          "pain sensitivity",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fp": [
+        [
+          42524382,
+          "heart rate",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42524382,
+          "snp",
+          "SequenceVariant"
+        ],
+        [
+          42524382,
+          "blood pressure",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          42524382,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42625765": {
+      "tp": [
+        [
+          42625765,
+          "mastitis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42625765,
+          "bca",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625765,
+          "s. agalactiae",
+          "OrganismTaxon"
+        ],
+        [
+          42625765,
+          "streptococcus agalactiae",
+          "OrganismTaxon"
+        ],
+        [
+          42625765,
+          "cows",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [
+        [
+          42625765,
+          "cyle",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625765,
+          "bac",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625765,
+          "16s-23s rrna",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625765,
+          "cfb",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42625765,
+          "hylb",
+          "GeneOrGeneProduct"
+        ]
+      ],
+      "fn": [
+        [
+          42625765,
+          "bovine mastitis",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42625765,
+          "bacteria",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42500341": {
+      "tp": [
+        [
+          42500341,
+          "bc",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500341,
+          "cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500341,
+          "rs8052394",
+          "SequenceVariant"
+        ],
+        [
+          42500341,
+          "metallothionein 1 a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42500341,
+          "mt1a",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42500341,
+          "ag/aa",
+          "SequenceVariant"
+        ],
+        [
+          42500341,
+          "rs11076161",
+          "SequenceVariant"
+        ],
+        [
+          42500341,
+          "rs1164085",
+          "SequenceVariant"
+        ]
+      ],
+      "fp": [
+        [
+          42500341,
+          "cga",
+          "SequenceVariant"
+        ],
+        [
+          42500341,
+          "cac",
+          "SequenceVariant"
+        ],
+        [
+          42500341,
+          "breast cancer",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500341,
+          "rs11640851",
+          "SequenceVariant"
+        ]
+      ],
+      "fn": [
+        [
+          42500341,
+          "patients",
+          "OrganismTaxon"
+        ]
+      ]
+    },
+    "42500343": {
+      "tp": [
+        [
+          42500343,
+          "total testosterone",
+          "ChemicalEntity"
+        ],
+        [
+          42500343,
+          "polycystic ovary syndrome",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "dyslipidemia",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "anovulation",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "hyperandrogenism",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "triglycerides",
+          "ChemicalEntity"
+        ],
+        [
+          42500343,
+          "polycystic ovaries",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "os",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "oxidative stress",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "pcos",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "obesity",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "mda",
+          "ChemicalEntity"
+        ],
+        [
+          42500343,
+          "lh",
+          "ChemicalEntity"
+        ]
+      ],
+      "fp": [
+        [
+          42500343,
+          "infertility",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "vldl",
+          "ChemicalEntity"
+        ]
+      ],
+      "fn": [
+        [
+          42500343,
+          "women",
+          "OrganismTaxon"
+        ],
+        [
+          42500343,
+          "lh",
+          "GeneOrGeneProduct"
+        ],
+        [
+          42500343,
+          "metabolic syndromes",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          42500343,
+          "endocrine-metabolic disorder",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ]
+    },
+    "40655353": {
+      "tp": [
+        [
+          40655353,
+          "antibiotic resistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40655353,
+          "rifamycin",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "a. nosocomialis",
+          "OrganismTaxon"
+        ],
+        [
+          40655353,
+          "oxa",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40655353,
+          "cephalosporin",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "carbapenem",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "acinetobacter baumannii",
+          "OrganismTaxon"
+        ],
+        [
+          40655353,
+          "phenicol antibiotics",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "lincosamide",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "fluoroquinoids",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "diaminopyrimidine",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "penem",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "a. baumannii",
+          "OrganismTaxon"
+        ],
+        [
+          40655353,
+          "macrolides",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "tetracycline",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "a. haemolyticus",
+          "OrganismTaxon"
+        ],
+        [
+          40655353,
+          "a. johnsonni",
+          "OrganismTaxon"
+        ],
+        [
+          40655353,
+          "fluoroquinolone",
+          "ChemicalEntity"
+        ],
+        [
+          40655353,
+          "a. calcoaceticus",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [
+        [
+          40655353,
+          "abaq",
+          "GeneOrGeneProduct"
+        ],
+        [
+          40655353,
+          "antimicrobial resistance",
+          "DiseaseOrPhenotypicFeature"
+        ],
+        [
+          40655353,
+          "clinically acquired infections",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": [
+        [
+          40655353,
+          "a. johnsonii",
+          "OrganismTaxon"
+        ],
+        [
+          40655353,
+          "oxa beta lactamase",
+          "GeneOrGeneProduct"
+        ]
+      ]
+    },
+    "42633466": {
+      "tp": [
+        [
+          42633466,
+          "hthcressv1",
+          "OrganismTaxon"
+        ],
+        [
+          42633466,
+          "halophytophthora thermoambigua",
+          "OrganismTaxon"
+        ]
+      ],
+      "fp": [
+        [
+          42633466,
+          "reduced host mycelial growth",
+          "DiseaseOrPhenotypicFeature"
+        ]
+      ],
+      "fn": []
+    }
+  },
+  "relation_matches": {
+    "41230208": {
+      "tp": [
+        [
+          41230208,
+          "tmem216",
+          "Association",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "cep290",
+          "Association",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "phenobarbital",
+          "Negative_Correlation",
+          "seizures"
+        ],
+        [
+          41230208,
+          "tmem67",
+          "Association",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "Positive_Correlation",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "cc2d2a",
+          "Association",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "pibf1",
+          "Association",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "ahi1",
+          "Association",
+          "joubert syndrome type 33"
+        ]
+      ],
+      "fp": [
+        [
+          41230208,
+          "c.1231c>t",
+          "Positive_Correlation",
+          "kidney failure"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "renal disease"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "Association",
+          "pibf1"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "molar tooth sign"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "developmental delay"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "Positive_Correlation",
+          "hypotonia/ataxia"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "cerebellar vermian hypoplasia/aplasia"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "Positive_Correlation",
+          "seizures"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "optic nerve atrophy"
+        ],
+        [
+          41230208,
+          "p.arg411ter",
+          "Association",
+          "pibf1"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "Positive_Correlation",
+          "psychomotor issues"
+        ],
+        [
+          41230208,
+          "p.arg411ter",
+          "Positive_Correlation",
+          "joubert syndrome type 33"
+        ],
+        [
+          41230208,
+          "c.1231c>t",
+          "Positive_Correlation",
+          "dysmorphic features"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "renal atrophy"
+        ],
+        [
+          41230208,
+          "joubert syndrome type 33",
+          "Association",
+          "hypotonia/ataxia"
+        ]
+      ],
+      "fn": []
+    },
+    "40662146": {
+      "tp": [
+        [
+          40662146,
+          "azole medications",
+          "Negative_Correlation",
+          "candidiasis"
+        ],
+        [
+          40662146,
+          "upc2",
+          "Association",
+          "ergosterol"
+        ],
+        [
+          40662146,
+          "upc2",
+          "Positive_Correlation",
+          "erg11"
+        ],
+        [
+          40662146,
+          "azoles",
+          "Association",
+          "azole resistance"
+        ],
+        [
+          40662146,
+          "upc2",
+          "Positive_Correlation",
+          "erg2"
+        ],
+        [
+          40662146,
+          "erg11",
+          "Negative_Correlation",
+          "azoles"
+        ]
+      ],
+      "fp": [
+        [
+          40662146,
+          "erg11",
+          "Positive_Correlation",
+          "azole resistance"
+        ],
+        [
+          40662146,
+          "upc2",
+          "Positive_Correlation",
+          "azole resistance"
+        ],
+        [
+          40662146,
+          "erg11",
+          "Association",
+          "14\u03b1-lanosterol demethylase"
+        ]
+      ],
+      "fn": [
+        [
+          40662146,
+          "upc2",
+          "Negative_Correlation",
+          "azole"
+        ]
+      ]
+    },
+    "42633474": {
+      "tp": [],
+      "fp": [
+        [
+          42633474,
+          "cacna1a",
+          "Association",
+          "familial hemiplegic migraine"
+        ],
+        [
+          42633474,
+          "prrt2",
+          "Association",
+          "familial hemiplegic migraine"
+        ],
+        [
+          42633474,
+          "scn1a",
+          "Association",
+          "familial hemiplegic migraine"
+        ],
+        [
+          42633474,
+          "atp1a2",
+          "Association",
+          "familial hemiplegic migraine"
+        ]
+      ],
+      "fn": []
+    },
+    "42633481": {
+      "tp": [
+        [
+          42633481,
+          "mtt",
+          "Negative_Correlation",
+          "carcinomas"
+        ],
+        [
+          42633481,
+          "mtt",
+          "Negative_Correlation",
+          "acute lymphoblastic leukaemia"
+        ],
+        [
+          42633481,
+          "mtt",
+          "Negative_Correlation",
+          "head and neck cancer"
+        ],
+        [
+          42633481,
+          "mtt",
+          "Negative_Correlation",
+          "choriocarcinoma"
+        ],
+        [
+          42633481,
+          "mtt",
+          "Negative_Correlation",
+          "breast cancer"
+        ],
+        [
+          42633481,
+          "mtt",
+          "Negative_Correlation",
+          "gastric cancer"
+        ]
+      ],
+      "fp": [
+        [
+          42633481,
+          "cft",
+          "Association",
+          "mtt"
+        ],
+        [
+          42633481,
+          "cft",
+          "Negative_Correlation",
+          "anaemia"
+        ]
+      ],
+      "fn": [
+        [
+          42633481,
+          "calcium folinate",
+          "Drug_Interaction",
+          "methotrexate"
+        ],
+        [
+          42633481,
+          "calcium folinate",
+          "Negative_Correlation",
+          "anaemia"
+        ]
+      ]
+    },
+    "41283084": {
+      "tp": [
+        [
+          41283084,
+          "znf845",
+          "Association",
+          "ponv"
+        ],
+        [
+          41283084,
+          "rs921634",
+          "Positive_Correlation",
+          "ponv"
+        ],
+        [
+          41283084,
+          "rs12609817",
+          "Positive_Correlation",
+          "ponv"
+        ],
+        [
+          41283084,
+          "rs1333114",
+          "Negative_Correlation",
+          "ponv"
+        ],
+        [
+          41283084,
+          "rs1927382",
+          "Negative_Correlation",
+          "ponv"
+        ],
+        [
+          41283084,
+          "rs2776262",
+          "Positive_Correlation",
+          "ponv"
+        ]
+      ],
+      "fp": [
+        [
+          41283084,
+          "rs2071049",
+          "Association",
+          "ponv"
+        ],
+        [
+          41283084,
+          "ptprd",
+          "Association",
+          "ponv"
+        ],
+        [
+          41283084,
+          "loc100506403",
+          "Association",
+          "ponv"
+        ],
+        [
+          41283084,
+          "cldn14",
+          "Association",
+          "ponv"
+        ],
+        [
+          41283084,
+          "rs921634",
+          "Association",
+          "polycystic kidney disease"
+        ],
+        [
+          41283084,
+          "pkd1l1",
+          "Association",
+          "ponv"
+        ],
+        [
+          41283084,
+          "fgf14",
+          "Association",
+          "ponv"
+        ]
+      ],
+      "fn": []
+    },
+    "42629135": {
+      "tp": [
+        [
+          42629135,
+          "alzheimer's disease",
+          "Association",
+          "dementia"
+        ],
+        [
+          42629135,
+          "cx3cr1",
+          "Association",
+          "amyloid-\u03b2"
+        ],
+        [
+          42629135,
+          "cx3cl1",
+          "Association",
+          "cx3cr1"
+        ],
+        [
+          42629135,
+          "cx3cr1",
+          "Association",
+          "tau"
+        ],
+        [
+          42629135,
+          "tau",
+          "Positive_Correlation",
+          "synaptic dysfunction"
+        ],
+        [
+          42629135,
+          "amyloid-\u03b2",
+          "Positive_Correlation",
+          "synaptic dysfunction"
+        ]
+      ],
+      "fp": [
+        [
+          42629135,
+          "amyloid-\u03b2",
+          "Association",
+          "tau"
+        ],
+        [
+          42629135,
+          "tau",
+          "Association",
+          "alzheimer's disease"
+        ],
+        [
+          42629135,
+          "tau",
+          "Association",
+          "neurofibrillary tangles"
+        ],
+        [
+          42629135,
+          "synaptic dysfunction",
+          "Positive_Correlation",
+          "cognitive decline"
+        ],
+        [
+          42629135,
+          "amyloid-\u03b2",
+          "Association",
+          "alzheimer's disease"
+        ],
+        [
+          42629135,
+          "alzheimer's disease",
+          "Association",
+          "neurocognitive decline"
+        ],
+        [
+          42629135,
+          "cx3cr1",
+          "Association",
+          "alzheimer's disease"
+        ],
+        [
+          42629135,
+          "amyloid-\u03b2",
+          "Association",
+          "senile plaques"
+        ]
+      ],
+      "fn": [
+        [
+          42629135,
+          "amyloid-?",
+          "Positive_Correlation",
+          "cognitive decline"
+        ],
+        [
+          42629135,
+          "tau",
+          "Positive_Correlation",
+          "cognitive decline"
+        ],
+        [
+          42629135,
+          "tau",
+          "Positive_Correlation",
+          "ad"
+        ],
+        [
+          42629135,
+          "amyloid-?",
+          "Positive_Correlation",
+          "ad"
+        ]
+      ]
+    },
+    "41451023": {
+      "tp": [
+        [
+          41451023,
+          "silodosin",
+          "Negative_Correlation",
+          "egfr"
+        ],
+        [
+          41451023,
+          "silodosin",
+          "Negative_Correlation",
+          "erk2"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Positive_Correlation",
+          "caspase-3"
+        ],
+        [
+          41451023,
+          "silodosin",
+          "Negative_Correlation",
+          "kras"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Negative_Correlation",
+          "egfr"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Negative_Correlation",
+          "erk2"
+        ],
+        [
+          41451023,
+          "cisplatin",
+          "Negative_Correlation",
+          "non-small-cell lung cancer"
+        ],
+        [
+          41451023,
+          "kras",
+          "Association",
+          "egfr"
+        ],
+        [
+          41451023,
+          "silodosin",
+          "Positive_Correlation",
+          "caspase-3"
+        ],
+        [
+          41451023,
+          "erk2",
+          "Association",
+          "egfr"
+        ],
+        [
+          41451023,
+          "silodosin",
+          "Comparison",
+          "cisplatin"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Negative_Correlation",
+          "kras"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Negative_Correlation",
+          "non-small-cell lung cancer"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Comparison",
+          "cisplatin"
+        ]
+      ],
+      "fp": [
+        [
+          41451023,
+          "silodosin",
+          "Negative_Correlation",
+          "non-small-cell lung cancer"
+        ]
+      ],
+      "fn": [
+        [
+          41451023,
+          "silodosin",
+          "Positive_Correlation",
+          "cytotoxicity"
+        ],
+        [
+          41451023,
+          "acenocoumarol",
+          "Positive_Correlation",
+          "cytotoxicity"
+        ],
+        [
+          41451023,
+          "egfr",
+          "Association",
+          "nsclc"
+        ]
+      ]
+    },
+    "42633488": {
+      "tp": [
+        [
+          42633488,
+          "kaempferol",
+          "Negative_Correlation",
+          "airway inflammation"
+        ],
+        [
+          42633488,
+          "kaempferol",
+          "Negative_Correlation",
+          "asthma"
+        ],
+        [
+          42633488,
+          "tnf",
+          "Association",
+          "asthma"
+        ],
+        [
+          42633488,
+          "il-17",
+          "Association",
+          "asthma"
+        ],
+        [
+          42633488,
+          "quercetin",
+          "Negative_Correlation",
+          "airway inflammation"
+        ],
+        [
+          42633488,
+          "quercetin",
+          "Negative_Correlation",
+          "asthma"
+        ]
+      ],
+      "fp": [
+        [
+          42633488,
+          "quercetin",
+          "Negative_Correlation",
+          "cyp"
+        ],
+        [
+          42633488,
+          "kaempferol",
+          "Negative_Correlation",
+          "cyp"
+        ]
+      ],
+      "fn": []
+    },
+    "42632595": {
+      "tp": [
+        [
+          42632595,
+          "adalimumab",
+          "Negative_Correlation",
+          "hand osteoarthritis"
+        ],
+        [
+          42632595,
+          "tocilizumab",
+          "Negative_Correlation",
+          "hand osteoarthritis"
+        ]
+      ],
+      "fp": [
+        [
+          42632595,
+          "etanercept",
+          "Negative_Correlation",
+          "hand osteoarthritis"
+        ]
+      ],
+      "fn": []
+    },
+    "42147992": {
+      "tp": [
+        [
+          42147992,
+          "scn5a",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "prdm6",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "runx1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "dvl1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "nf1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "slc6a1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "cplane1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "dhcr7",
+          "Association",
+          "early pregnancy loss"
+        ]
+      ],
+      "fp": [
+        [
+          42147992,
+          "rpgrip1l",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "tbx18",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "rbm8a",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "pah",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "vwf",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "dyrk1a",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "tsc1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "pkhd1",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "f5",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "myh3",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "dsg2",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "21q22.12-q22.3 duplication",
+          "Association",
+          "early pregnancy loss"
+        ],
+        [
+          42147992,
+          "gba1",
+          "Association",
+          "early pregnancy loss"
+        ]
+      ],
+      "fn": []
+    },
+    "42633081": {
+      "tp": [],
+      "fp": [
+        [
+          42633081,
+          "likely pathogenic de novo splice-disrupting variant",
+          "Association",
+          "arid1b"
+        ],
+        [
+          42633081,
+          "congenital heart disease",
+          "Association",
+          "neurodevelopmental disorders"
+        ],
+        [
+          42633081,
+          "chd",
+          "Association",
+          "ndd"
+        ]
+      ],
+      "fn": []
+    },
+    "42422171": {
+      "tp": [
+        [
+          42422171,
+          "mk-7",
+          "Positive_Correlation",
+          "erk1/2"
+        ],
+        [
+          42422171,
+          "creb",
+          "Positive_Correlation",
+          "ccn2"
+        ],
+        [
+          42422171,
+          "ccn2",
+          "Positive_Correlation",
+          "pink1"
+        ],
+        [
+          42422171,
+          "erk1/2",
+          "Positive_Correlation",
+          "ccn2"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Negative_Correlation",
+          "age-related bone loss"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Negative_Correlation",
+          "senile osteoporosis"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Bind",
+          "pxr"
+        ]
+      ],
+      "fp": [
+        [
+          42422171,
+          "parkin",
+          "Negative_Correlation",
+          "sasp"
+        ],
+        [
+          42422171,
+          "pxr",
+          "Positive_Correlation",
+          "erk1/2"
+        ],
+        [
+          42422171,
+          "ccn2",
+          "Association",
+          "senile osteoporosis"
+        ],
+        [
+          42422171,
+          "pink1",
+          "Negative_Correlation",
+          "mitochondrial dna damage"
+        ],
+        [
+          42422171,
+          "parkin",
+          "Negative_Correlation",
+          "cellular senescence"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Positive_Correlation",
+          "creb"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Positive_Correlation",
+          "ccn2"
+        ],
+        [
+          42422171,
+          "parkin",
+          "Negative_Correlation",
+          "mitochondrial dna damage"
+        ],
+        [
+          42422171,
+          "ccn2",
+          "Positive_Correlation",
+          "parkin"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Negative_Correlation",
+          "mitochondrial dysfunction"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Positive_Correlation",
+          "pxr"
+        ],
+        [
+          42422171,
+          "pxr",
+          "Positive_Correlation",
+          "ccn2"
+        ],
+        [
+          42422171,
+          "erk1/2",
+          "Positive_Correlation",
+          "creb"
+        ],
+        [
+          42422171,
+          "pink1",
+          "Negative_Correlation",
+          "sasp"
+        ],
+        [
+          42422171,
+          "mk-7",
+          "Negative_Correlation",
+          "cellular senescence"
+        ],
+        [
+          42422171,
+          "pink1",
+          "Negative_Correlation",
+          "cellular senescence"
+        ]
+      ],
+      "fn": [
+        [
+          42422171,
+          "mk-7",
+          "Negative_Correlation",
+          "oxygen species"
+        ]
+      ]
+    },
+    "42632605": {
+      "tp": [
+        [
+          42632605,
+          "atf7ip2",
+          "Positive_Correlation",
+          "glutamate/glutamine"
+        ],
+        [
+          42632605,
+          "benzene",
+          "Positive_Correlation",
+          "atf7ip2"
+        ],
+        [
+          42632605,
+          "benzene",
+          "Positive_Correlation",
+          "aml"
+        ],
+        [
+          42632605,
+          "tcmcb07",
+          "Negative_Correlation",
+          "aml"
+        ],
+        [
+          42632605,
+          "atf7ip2",
+          "Positive_Correlation",
+          "aml"
+        ]
+      ],
+      "fp": [],
+      "fn": [
+        [
+          42632605,
+          "atf7ip2",
+          "Positive_Correlation",
+          "glutamate"
+        ]
+      ]
+    },
+    "42633120": {
+      "tp": [],
+      "fp": [
+        [
+          42633120,
+          "carbapenem",
+          "Negative_Correlation",
+          "k. pneumoniae"
+        ],
+        [
+          42633120,
+          "carbapenem",
+          "Negative_Correlation",
+          "a. baumannii"
+        ],
+        [
+          42633120,
+          "carbapenem",
+          "Negative_Correlation",
+          "p. aeruginosa"
+        ],
+        [
+          42633120,
+          "carbapenem",
+          "Negative_Correlation",
+          "e. coli"
+        ]
+      ],
+      "fn": []
+    },
+    "42633377": {
+      "tp": [],
+      "fp": [
+        [
+          42633377,
+          "buffaloes",
+          "Association",
+          "foot-and-mouth disease"
+        ],
+        [
+          42633377,
+          "vp1 gene",
+          "Association",
+          "fmdv"
+        ],
+        [
+          42633377,
+          "fmdv",
+          "Association",
+          "foot-and-mouth disease"
+        ]
+      ],
+      "fn": []
+    },
+    "42148001": {
+      "tp": [],
+      "fp": [
+        [
+          42148001,
+          "sall1",
+          "Association",
+          "townes-brocks syndrome"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "anorectal malformations"
+        ],
+        [
+          42148001,
+          "p. tyr503ter",
+          "Association",
+          "renal hypodysplasia"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Association",
+          "sall1"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Association",
+          "chronic kidney disease"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "end-stage renal disease"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Cause",
+          "townes-brocks syndrome"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "hypospadias"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "proteinuria"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Association",
+          "renal hypodysplasia"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "anal atresia"
+        ],
+        [
+          42148001,
+          "p. tyr503ter",
+          "Association",
+          "sall1"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "dysplastic ears"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "chronic kidney disease"
+        ],
+        [
+          42148001,
+          "p. tyr503ter",
+          "Association",
+          "chronic kidney disease"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "congenital hypothyroidism"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "renal hypodysplasia"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "sensorineural hearing loss"
+        ],
+        [
+          42148001,
+          "townes-brocks syndrome",
+          "Association",
+          "thumb anomalies"
+        ],
+        [
+          42148001,
+          "p. tyr503ter",
+          "Cause",
+          "townes-brocks syndrome"
+        ]
+      ],
+      "fn": [
+        [
+          42148001,
+          "sall1",
+          "Association",
+          "esrd"
+        ],
+        [
+          42148001,
+          "sall1",
+          "Association",
+          "bilateral renal hypodysplasia"
+        ],
+        [
+          42148001,
+          "sall1",
+          "Association",
+          "ckd"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Positive_Correlation",
+          "esrd"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Positive_Correlation",
+          "bilateral renal hypodysplasia"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Positive_Correlation",
+          "ckd"
+        ],
+        [
+          42148001,
+          "sall1",
+          "Association",
+          "tbs"
+        ],
+        [
+          42148001,
+          "c.1509c>a",
+          "Positive_Correlation",
+          "tbs"
+        ]
+      ]
+    },
+    "42633466": {
+      "tp": [],
+      "fp": [
+        [
+          42633466,
+          "hthcressv1",
+          "Association",
+          "reduced host mycelial growth"
+        ],
+        [
+          42633466,
+          "hthcressv1",
+          "Association",
+          "halophytophthora thermoambigua"
+        ]
+      ],
+      "fn": []
+    },
+    "40655353": {
+      "tp": [
+        [
+          40655353,
+          "oxa",
+          "Negative_Correlation",
+          "cephalosporin"
+        ],
+        [
+          40655353,
+          "oxa",
+          "Negative_Correlation",
+          "carbapenem"
+        ],
+        [
+          40655353,
+          "oxa",
+          "Negative_Correlation",
+          "penem"
+        ]
+      ],
+      "fp": [
+        [
+          40655353,
+          "abaq",
+          "Association",
+          "a. nosocomialis"
+        ],
+        [
+          40655353,
+          "abaq",
+          "Association",
+          "a. calcoaceticus"
+        ],
+        [
+          40655353,
+          "acinetobacter baumannii",
+          "Association",
+          "clinically acquired infections"
+        ],
+        [
+          40655353,
+          "a. johnsonni",
+          "Association",
+          "oxa"
+        ],
+        [
+          40655353,
+          "a. haemolyticus",
+          "Association",
+          "oxa"
+        ]
+      ],
+      "fn": []
+    },
+    "42633266": {
+      "tp": [
+        [
+          42633266,
+          "matrix metalloproteinases",
+          "Association",
+          "periodontal diseases"
+        ]
+      ],
+      "fp": [
+        [
+          42633266,
+          "mirna",
+          "Negative_Correlation",
+          "periodontal diseases"
+        ]
+      ],
+      "fn": []
+    },
+    "42630837": {
+      "tp": [
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Negative_Correlation",
+          "sua"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Bind",
+          "gapdh"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "Bind",
+          "dpp4"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Bind",
+          "dpp4"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Bind",
+          "agtr1"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "Bind",
+          "agtr1"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Negative_Correlation",
+          "hyperuricemia"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Bind",
+          "icam1"
+        ]
+      ],
+      "fp": [
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Negative_Correlation",
+          "hua"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "Bind",
+          "icam1"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Negative_Correlation",
+          "uric acid"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "Bind",
+          "gapdh"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Bind",
+          "casp3"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "Bind",
+          "casp3"
+        ],
+        [
+          42630837,
+          "sglt2 inhibitors",
+          "Bind",
+          "ace"
+        ],
+        [
+          42630837,
+          "canagliflozin",
+          "Bind",
+          "ace"
+        ]
+      ],
+      "fn": []
+    },
+    "41834934": {
+      "tp": [
+        [
+          41834934,
+          "hotair",
+          "Association",
+          "ra"
+        ]
+      ],
+      "fp": [
+        [
+          41834934,
+          "ct haplotype",
+          "Positive_Correlation",
+          "ra"
+        ],
+        [
+          41834934,
+          "rs12826786",
+          "Positive_Correlation",
+          "ra"
+        ],
+        [
+          41834934,
+          "rs1899663",
+          "Positive_Correlation",
+          "ra"
+        ],
+        [
+          41834934,
+          "cg haplotype",
+          "Negative_Correlation",
+          "ra"
+        ]
+      ],
+      "fn": [
+        [
+          41834934,
+          "rs1899663",
+          "Association",
+          "ra"
+        ],
+        [
+          41834934,
+          "rs12826786",
+          "Association",
+          "ra"
+        ]
+      ]
+    },
+    "41834939": {
+      "tp": [
+        [
+          41834939,
+          "doxorubicin",
+          "Positive_Correlation",
+          "il-6"
+        ],
+        [
+          41834939,
+          "doxorubicin",
+          "Association",
+          "tgf-\u03b22"
+        ]
+      ],
+      "fp": [
+        [
+          41834939,
+          "colorectal cancer",
+          "Association",
+          "chemoresistance"
+        ],
+        [
+          41834939,
+          "tgf-\u03b22",
+          "Positive_Correlation",
+          "chemoresistance"
+        ],
+        [
+          41834939,
+          "doxorubicin",
+          "Positive_Correlation",
+          "chemoresistance"
+        ],
+        [
+          41834939,
+          "dox",
+          "Positive_Correlation",
+          "chemoresistance"
+        ],
+        [
+          41834939,
+          "il-6",
+          "Positive_Correlation",
+          "chemoresistance"
+        ],
+        [
+          41834939,
+          "smad4",
+          "Association",
+          "colon adenocarcinoma"
+        ]
+      ],
+      "fn": []
+    },
+    "42633403": {
+      "tp": [],
+      "fp": [
+        [
+          42633403,
+          "ruma",
+          "Positive_Correlation",
+          "1,6-hdo"
+        ],
+        [
+          42633403,
+          "ruma",
+          "Association",
+          "escherichia coli"
+        ],
+        [
+          42633403,
+          "yhbo",
+          "Positive_Correlation",
+          "1,6-hdo"
+        ],
+        [
+          42633403,
+          "ruma",
+          "Positive_Correlation",
+          "yhbo"
+        ],
+        [
+          42633403,
+          "1,6-hdo",
+          "Association",
+          "e. coli"
+        ],
+        [
+          42633403,
+          "yhbo",
+          "Association",
+          "escherichia coli"
+        ]
+      ],
+      "fn": [
+        [
+          42633403,
+          "1,6-hexanediol",
+          "Positive_Correlation",
+          "toxicity"
+        ]
+      ]
+    },
+    "42633029": {
+      "tp": [
+        [
+          42633029,
+          "insulin",
+          "Negative_Correlation",
+          "type 2 diabetes mellitus"
+        ]
+      ],
+      "fp": [
+        [
+          42633029,
+          "type 2 diabetes mellitus",
+          "Association",
+          "hyperglycemia"
+        ],
+        [
+          42633029,
+          "type 2 diabetes mellitus",
+          "Association",
+          "glucotoxicity"
+        ],
+        [
+          42633029,
+          "metformin-pioglitazone",
+          "Negative_Correlation",
+          "hba1c"
+        ],
+        [
+          42633029,
+          "insulin",
+          "Negative_Correlation",
+          "hyperglycemia"
+        ],
+        [
+          42633029,
+          "metformin-pioglitazone",
+          "Negative_Correlation",
+          "type 2 diabetes mellitus"
+        ],
+        [
+          42633029,
+          "type 2 diabetes mellitus",
+          "Association",
+          "\u03b2-cell dysfunction"
+        ],
+        [
+          42633029,
+          "linagliptin-metformin",
+          "Negative_Correlation",
+          "hba1c"
+        ],
+        [
+          42633029,
+          "type 2 diabetes mellitus",
+          "Association",
+          "insulin resistance"
+        ],
+        [
+          42633029,
+          "linagliptin-metformin",
+          "Negative_Correlation",
+          "type 2 diabetes mellitus"
+        ]
+      ],
+      "fn": [
+        [
+          42633029,
+          "metformin",
+          "Cotreatment",
+          "pioglitazone"
+        ],
+        [
+          42633029,
+          "linagliptin",
+          "Cotreatment",
+          "metformin"
+        ]
+      ]
+    },
+    "42632907": {
+      "tp": [],
+      "fp": [
+        [
+          42632907,
+          "anti-tb agents",
+          "Negative_Correlation",
+          "tuberculosis"
+        ],
+        [
+          42632907,
+          "mycobacterium tuberculosis",
+          "Association",
+          "tuberculosis"
+        ],
+        [
+          42632907,
+          "tuberculosis",
+          "Association",
+          "drug resistance"
+        ],
+        [
+          42632907,
+          "mtb",
+          "Association",
+          "tb"
+        ]
+      ],
+      "fn": []
+    },
+    "41415885": {
+      "tp": [
+        [
+          41415885,
+          "gnaq",
+          "Association",
+          "sturge-weber syndrome"
+        ],
+        [
+          41415885,
+          "g\u03b1q",
+          "Association",
+          "mtor"
+        ]
+      ],
+      "fp": [
+        [
+          41415885,
+          "g\u03b1q",
+          "Association",
+          "blood brain barrier breakdown"
+        ],
+        [
+          41415885,
+          "r183q",
+          "Association",
+          "sturge-weber syndrome"
+        ],
+        [
+          41415885,
+          "r183q",
+          "Association",
+          "gnaq"
+        ],
+        [
+          41415885,
+          "g\u03b1q",
+          "Association",
+          "abnormal cortical microvessel structure"
+        ]
+      ],
+      "fn": [
+        [
+          41415885,
+          "r183q",
+          "Positive_Correlation",
+          "sturge-weber syndrome"
+        ],
+        [
+          41415885,
+          "gnaq",
+          "Positive_Correlation",
+          "phosphorylated-s6"
+        ],
+        [
+          41415885,
+          "doxycycline",
+          "Positive_Correlation",
+          "gnaq"
+        ]
+      ]
+    },
+    "42376533": {
+      "tp": [
+        [
+          42376533,
+          "carboplatin",
+          "Negative_Correlation",
+          "basal cell carcinoma"
+        ]
+      ],
+      "fp": [
+        [
+          42376533,
+          "cat",
+          "Association",
+          "basal cell carcinoma"
+        ]
+      ],
+      "fn": []
+    },
+    "42630617": {
+      "tp": [],
+      "fp": [
+        [
+          42630617,
+          "ab",
+          "Positive_Correlation",
+          "daily gains"
+        ],
+        [
+          42630617,
+          "ab",
+          "Positive_Correlation",
+          "weaning weights"
+        ],
+        [
+          42630617,
+          "gh",
+          "Association",
+          "ab"
+        ],
+        [
+          42630617,
+          "ab",
+          "Positive_Correlation",
+          "density"
+        ],
+        [
+          42630617,
+          "ab",
+          "Positive_Correlation",
+          "total cotyledon area"
+        ],
+        [
+          42630617,
+          "ab",
+          "Positive_Correlation",
+          "total cotyledon weight"
+        ],
+        [
+          42630617,
+          "gh",
+          "Association",
+          "aa"
+        ]
+      ],
+      "fn": []
+    },
+    "42602331": {
+      "tp": [
+        [
+          42602331,
+          "pp2a",
+          "Negative_Correlation",
+          "\u03b3h2ax"
+        ],
+        [
+          42602331,
+          "set",
+          "Negative_Correlation",
+          "pp2a"
+        ],
+        [
+          42602331,
+          "set",
+          "Positive_Correlation",
+          "\u03b3h2ax"
+        ]
+      ],
+      "fp": [
+        [
+          42602331,
+          "h2ax",
+          "Positive_Correlation",
+          "glioma stem cells"
+        ],
+        [
+          42602331,
+          "glioma stem cells",
+          "Association",
+          "glioblastoma"
+        ],
+        [
+          42602331,
+          "h2ax",
+          "Association",
+          "\u03b3h2ax"
+        ],
+        [
+          42602331,
+          "s139a",
+          "Negative_Correlation",
+          "glioma stem cells"
+        ]
+      ],
+      "fn": []
+    },
+    "42540124": {
+      "tp": [
+        [
+          42540124,
+          "nsaid",
+          "Positive_Correlation",
+          "ugib"
+        ],
+        [
+          42540124,
+          "anthelminthic therapy",
+          "Negative_Correlation",
+          "ascariasis"
+        ]
+      ],
+      "fp": [
+        [
+          42540124,
+          "ascariasis",
+          "Association",
+          "upper gastrointestinal bleeding"
+        ],
+        [
+          42540124,
+          "ascariasis",
+          "Association",
+          "liver cirrhosis"
+        ],
+        [
+          42540124,
+          "non-steroidal anti-inflammatory drug",
+          "Positive_Correlation",
+          "upper gastrointestinal bleeding"
+        ]
+      ],
+      "fn": []
+    },
+    "42631261": {
+      "tp": [
+        [
+          42631261,
+          "wilson disease",
+          "Association",
+          "cirrhosis"
+        ]
+      ],
+      "fp": [
+        [
+          42631261,
+          "wilson disease",
+          "Association",
+          "hepatic steatosis"
+        ],
+        [
+          42631261,
+          "nm_000053.2:c.1707+2dupt",
+          "Association",
+          "wilson disease"
+        ],
+        [
+          42631261,
+          "wilson disease",
+          "Negative_Correlation",
+          "ceruloplasmin"
+        ],
+        [
+          42631261,
+          "wilson disease",
+          "Positive_Correlation",
+          "copper"
+        ],
+        [
+          42631261,
+          "atp7b",
+          "Association",
+          "nm_000053.2:c.1707+2dupt"
+        ],
+        [
+          42631261,
+          "atp7b",
+          "Association",
+          "wilson disease"
+        ]
+      ],
+      "fn": [
+        [
+          42631261,
+          "c.1707+2dupt",
+          "Positive_Correlation",
+          "wilson disease"
+        ]
+      ]
+    },
+    "42524382": {
+      "tp": [],
+      "fp": [
+        [
+          42524382,
+          "snp",
+          "Association",
+          "heart rate"
+        ],
+        [
+          42524382,
+          "snp",
+          "Association",
+          "blood pressure"
+        ]
+      ],
+      "fn": []
+    },
+    "42625765": {
+      "tp": [],
+      "fp": [
+        [
+          42625765,
+          "streptococcus agalactiae",
+          "Association",
+          "mastitis"
+        ],
+        [
+          42625765,
+          "cfb",
+          "Association",
+          "mastitis"
+        ],
+        [
+          42625765,
+          "s. agalactiae",
+          "Association",
+          "mastitis"
+        ],
+        [
+          42625765,
+          "hylb",
+          "Association",
+          "mastitis"
+        ]
+      ],
+      "fn": []
+    },
+    "40860264": {
+      "tp": [
+        [
+          40860264,
+          "progesterone receptor",
+          "Negative_Correlation",
+          "triple-negative breast cancers"
+        ],
+        [
+          40860264,
+          "human epidermal growth factor receptor 2",
+          "Negative_Correlation",
+          "triple-negative breast cancers"
+        ],
+        [
+          40860264,
+          "estrogen receptor",
+          "Negative_Correlation",
+          "triple-negative breast cancers"
+        ],
+        [
+          40860264,
+          "her2",
+          "Negative_Correlation",
+          "tnbc"
+        ],
+        [
+          40860264,
+          "ar",
+          "Bind",
+          "2-hydroxynaringenin"
+        ],
+        [
+          40860264,
+          "ar",
+          "Association",
+          "tnbc"
+        ],
+        [
+          40860264,
+          "ar",
+          "Positive_Correlation",
+          "breast cancer"
+        ]
+      ],
+      "fp": [
+        [
+          40860264,
+          "pr",
+          "Negative_Correlation",
+          "tnbc"
+        ],
+        [
+          40860264,
+          "er",
+          "Negative_Correlation",
+          "tnbc"
+        ]
+      ],
+      "fn": []
+    },
+    "42630505": {
+      "tp": [
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "pd-l1"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "egfr"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "notch"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "progesterone receptors"
+        ],
+        [
+          42630505,
+          "antibody-drug conjugates",
+          "Negative_Correlation",
+          "tnbc"
+        ],
+        [
+          42630505,
+          "parp inhibitors",
+          "Negative_Correlation",
+          "tnbc"
+        ]
+      ],
+      "fp": [
+        [
+          42630505,
+          "immune checkpoint inhibitors",
+          "Negative_Correlation",
+          "tnbc"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "tlr4/nf-\u03bab"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "estrogen receptors"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "twist1"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "her2"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "parp1"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "metastasis"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "pi3k/akt"
+        ],
+        [
+          42630505,
+          "tnbc",
+          "Association",
+          "gpx4"
+        ]
+      ],
+      "fn": [
+        [
+          42630505,
+          "tnbc",
+          "Negative_Correlation",
+          "estrogen receptors"
+        ]
+      ]
+    },
+    "42633066": {
+      "tp": [
+        [
+          42633066,
+          "tet2",
+          "Association",
+          "clonal hematopoiesis"
+        ],
+        [
+          42633066,
+          "trp53",
+          "Association",
+          "clonal hematopoiesis"
+        ],
+        [
+          42633066,
+          "trp53",
+          "Association",
+          "hematologic disease"
+        ]
+      ],
+      "fp": [
+        [
+          42633066,
+          "ppm1d",
+          "Association",
+          "clonal hematopoiesis"
+        ],
+        [
+          42633066,
+          "tp53",
+          "Association",
+          "clonal hematopoiesis"
+        ],
+        [
+          42633066,
+          "tp53",
+          "Positive_Correlation",
+          "hematologic disease"
+        ]
+      ],
+      "fn": [
+        [
+          42633066,
+          "trp53",
+          "Association",
+          "ch"
+        ],
+        [
+          42633066,
+          "ppm1d",
+          "Association",
+          "ch"
+        ]
+      ]
+    },
+    "42630256": {
+      "tp": [
+        [
+          42630256,
+          "cbd",
+          "Association",
+          "cnr1"
+        ],
+        [
+          42630256,
+          "cbd",
+          "Negative_Correlation",
+          "epileptic encephalopathies"
+        ],
+        [
+          42630256,
+          "cbd",
+          "Negative_Correlation",
+          "audiogenic generalized tonic-clonic seizures"
+        ],
+        [
+          42630256,
+          "cbd",
+          "Negative_Correlation",
+          "seizure severity"
+        ],
+        [
+          42630256,
+          "slc29a1",
+          "Association",
+          "audiogenic generalized tonic-clonic seizures"
+        ],
+        [
+          42630256,
+          "cbd",
+          "Association",
+          "adora1"
+        ],
+        [
+          42630256,
+          "cbd",
+          "Association",
+          "5-htr1a"
+        ],
+        [
+          42630256,
+          "trpv1",
+          "Association",
+          "audiogenic generalized tonic-clonic seizures"
+        ]
+      ],
+      "fp": [
+        [
+          42630256,
+          "cbd",
+          "Negative_Correlation",
+          "epilepsy"
+        ]
+      ],
+      "fn": []
+    },
+    "42500341": {
+      "tp": [
+        [
+          42500341,
+          "mt1a",
+          "Association",
+          "breast cancer"
+        ],
+        [
+          42500341,
+          "rs11640851",
+          "Negative_Correlation",
+          "bc"
+        ]
+      ],
+      "fp": [
+        [
+          42500341,
+          "cga",
+          "Positive_Correlation",
+          "bc"
+        ],
+        [
+          42500341,
+          "rs11076161",
+          "Positive_Correlation",
+          "breast cancer"
+        ],
+        [
+          42500341,
+          "mt1a",
+          "Association",
+          "cancer"
+        ],
+        [
+          42500341,
+          "ag/aa",
+          "Positive_Correlation",
+          "breast cancer"
+        ],
+        [
+          42500341,
+          "rs8052394",
+          "Positive_Correlation",
+          "breast cancer"
+        ],
+        [
+          42500341,
+          "rs11640851",
+          "Negative_Correlation",
+          "breast cancer"
+        ],
+        [
+          42500341,
+          "cac",
+          "Positive_Correlation",
+          "bc"
+        ]
+      ],
+      "fn": []
+    },
+    "42500343": {
+      "tp": [
+        [
+          42500343,
+          "mda",
+          "Positive_Correlation",
+          "dyslipidemia"
+        ],
+        [
+          42500343,
+          "oxidative stress",
+          "Positive_Correlation",
+          "hyperandrogenism"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Positive_Correlation",
+          "vldl"
+        ],
+        [
+          42500343,
+          "oxidative stress",
+          "Positive_Correlation",
+          "obesity"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Positive_Correlation",
+          "triglycerides"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Positive_Correlation",
+          "mda"
+        ]
+      ],
+      "fp": [
+        [
+          42500343,
+          "pcos",
+          "Association",
+          "hyperandrogenism"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Association",
+          "polycystic ovaries"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Association",
+          "anovulation"
+        ],
+        [
+          42500343,
+          "mda",
+          "Positive_Correlation",
+          "hyperandrogenism"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Positive_Correlation",
+          "lh"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Association",
+          "infertility"
+        ],
+        [
+          42500343,
+          "oxidative stress",
+          "Positive_Correlation",
+          "dyslipidemia"
+        ],
+        [
+          42500343,
+          "os",
+          "Association",
+          "anovulation"
+        ],
+        [
+          42500343,
+          "pcos",
+          "Positive_Correlation",
+          "total testosterone"
+        ],
+        [
+          42500343,
+          "mda",
+          "Positive_Correlation",
+          "obesity"
+        ]
+      ],
+      "fn": []
+    },
+    "42621305": {
+      "tp": [
+        [
+          42621305,
+          "pcbp2",
+          "Positive_Correlation",
+          "chac1"
+        ],
+        [
+          42621305,
+          "circlpar3",
+          "Negative_Correlation",
+          "chac1"
+        ],
+        [
+          42621305,
+          "circlpar3",
+          "Negative_Correlation",
+          "dtx"
+        ],
+        [
+          42621305,
+          "m<sup>6</sup>a",
+          "Association",
+          "circlpar3"
+        ],
+        [
+          42621305,
+          "pcbp2",
+          "Bind",
+          "circlpar3"
+        ],
+        [
+          42621305,
+          "mettl3",
+          "Association",
+          "circlpar3"
+        ],
+        [
+          42621305,
+          "pcbp2",
+          "Bind",
+          "chac1"
+        ]
+      ],
+      "fp": [
+        [
+          42621305,
+          "circlpar3",
+          "Negative_Correlation",
+          "ferroptosis"
+        ],
+        [
+          42621305,
+          "docetaxel",
+          "Positive_Correlation",
+          "ferroptosis"
+        ],
+        [
+          42621305,
+          "circlpar3",
+          "Association",
+          "pca"
+        ],
+        [
+          42621305,
+          "dtx",
+          "Positive_Correlation",
+          "ferroptosis"
+        ],
+        [
+          42621305,
+          "n6-methyladenosine",
+          "Association",
+          "circlpar3"
+        ],
+        [
+          42621305,
+          "chac1",
+          "Positive_Correlation",
+          "ferroptosis"
+        ],
+        [
+          42621305,
+          "igf2bp2",
+          "Positive_Correlation",
+          "circlpar3"
+        ]
+      ],
+      "fn": [
+        [
+          42621305,
+          "igf2bp2",
+          "Association",
+          "circlpar3"
+        ]
+      ]
+    },
+    "41059450": {
+      "tp": [
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "hypotonia"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "hyperphosphatasia with mental retardation syndrome-3"
+        ]
+      ],
+      "fp": [
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "p.his217gln"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "c.651c>g"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "hyperphosphatasia"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "hirschsprung disease"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "intellectual disability"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "seizures"
+        ],
+        [
+          41059450,
+          "p.his217gln",
+          "Cause",
+          "hyperphosphatasia with mental retardation syndrome-3"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "cerebral atrophy"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "corpus callosum hypoplasia"
+        ],
+        [
+          41059450,
+          "alkaline phosphatase",
+          "Positive_Correlation",
+          "hyperphosphatasia with mental retardation syndrome-3"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "neurodevelopmental delay"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "dysmorphic features"
+        ],
+        [
+          41059450,
+          "c.651c>g",
+          "Cause",
+          "hyperphosphatasia with mental retardation syndrome-3"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "hearing loss"
+        ],
+        [
+          41059450,
+          "hyperphosphatasia with mental retardation syndrome-3",
+          "Association",
+          "central fever"
+        ]
+      ],
+      "fn": [
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "fever"
+        ],
+        [
+          41059450,
+          "c.651c>g",
+          "Positive_Correlation",
+          "hyperphosphatasia with mental retardation syndrome-3"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "immunological abnormalities"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "intellectual disability"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "developmental delay"
+        ],
+        [
+          41059450,
+          "pgap2",
+          "Association",
+          "dysmorphic features"
+        ]
+      ]
+    },
+    "42548349": {
+      "tp": [
+        [
+          42548349,
+          "nintedanib",
+          "Positive_Correlation",
+          "diarrhea"
+        ],
+        [
+          42548349,
+          "nintedanib",
+          "Positive_Correlation",
+          "nausea/vomiting"
+        ],
+        [
+          42548349,
+          "nintedanib",
+          "Positive_Correlation",
+          "abdominal pain"
+        ],
+        [
+          42548349,
+          "nintedanib",
+          "Negative_Correlation",
+          "autoimmune-inflammatory myopathy-related interstitial lung diseases"
+        ]
+      ],
+      "fp": [],
+      "fn": []
+    }
   }
 }

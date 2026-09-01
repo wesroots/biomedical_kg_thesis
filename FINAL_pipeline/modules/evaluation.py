@@ -95,17 +95,23 @@ def _group_by_pmid(items):
     return grouped
 
 
-def per_pmid_counts_cosine(predictions, ground_truth, match_fn, embeddings, threshold=COSINE_THRESHOLD):
+def per_pmid_matches_cosine(predictions, ground_truth, match_fn, embeddings, threshold=COSINE_THRESHOLD):
+    """
+    Same greedy per-PMID matching as per_pmid_counts_cosine, but keeps the
+    actual matched/unmatched tuples (not just their counts) so callers can
+    inspect or export the specific TP/FP/FN items -- e.g. for error analysis
+    without re-running extraction or embedding.
+    """
     pred_by_pmid = _group_by_pmid(predictions)
     gt_by_pmid = _group_by_pmid(ground_truth)
     all_pmids = set(pred_by_pmid) | set(gt_by_pmid)
 
-    counts = {}
+    matches = {}
     for pmid in all_pmids:
         p = pred_by_pmid.get(pmid, [])
         g = gt_by_pmid.get(pmid, [])
         matched_gt = set()
-        tp = 0
+        tp_items, fp_items = [], []
         for pred_item in p:
             best_score, best_g = -1, None
             for gt_item in g:
@@ -116,9 +122,25 @@ def per_pmid_counts_cosine(predictions, ground_truth, match_fn, embeddings, thre
                     best_score, best_g = score, gt_item
             if best_g is not None:
                 matched_gt.add(best_g)
-                tp += 1
-        counts[pmid] = {"tp": tp, "fp": len(p) - tp, "fn": len(g) - len(matched_gt)}
-    return counts
+                tp_items.append(pred_item)
+            else:
+                fp_items.append(pred_item)
+        fn_items = [gt_item for gt_item in g if gt_item not in matched_gt]
+        matches[pmid] = {"tp": tp_items, "fp": fp_items, "fn": fn_items}
+    return matches
+
+
+def matches_to_counts(matches):
+    """Collapse item-level matches down to counts, for bootstrap_ci/counts_to_prf."""
+    return {
+        pmid: {"tp": len(m["tp"]), "fp": len(m["fp"]), "fn": len(m["fn"])}
+        for pmid, m in matches.items()
+    }
+
+
+def per_pmid_counts_cosine(predictions, ground_truth, match_fn, embeddings, threshold=COSINE_THRESHOLD):
+    """Backward-compatible counts-only wrapper around per_pmid_matches_cosine."""
+    return matches_to_counts(per_pmid_matches_cosine(predictions, ground_truth, match_fn, embeddings, threshold))
 
 
 def counts_to_prf(counts_list):
@@ -170,15 +192,22 @@ def evaluate_extractions(predictions_entities, predictions_relationships, ground
     entity_embeddings = build_embedding_lookup(filtered_entities, ground_truths_entities, text_indices=[1])
     relationship_embeddings = build_embedding_lookup(filtered_relationships, ground_truths_relationships, text_indices=[1, 3])
 
-    entity_counts = per_pmid_counts_cosine(
+    entity_matches = per_pmid_matches_cosine(
         filtered_entities, ground_truths_entities, entity_match_cosine, entity_embeddings, COSINE_THRESHOLD
     )
-    relation_counts = per_pmid_counts_cosine(
+    relation_matches = per_pmid_matches_cosine(
         filtered_relationships, ground_truths_relationships,
         relationship_match_cosine_symmetric, relationship_embeddings, COSINE_THRESHOLD
     )
 
+    entity_counts = matches_to_counts(entity_matches)
+    relation_counts = matches_to_counts(relation_matches)
+
     return {
         "entity": bootstrap_ci(entity_counts, n_boot=n_boot, ci=ci, random_state=random_state),
         "relation": bootstrap_ci(relation_counts, n_boot=n_boot, ci=ci, random_state=random_state),
+        # item-level TP/FP/FN per PMID -- only covers eval_pmids (the PMIDs
+        # with ground truth), same scope as the metrics above
+        "entity_matches": entity_matches,
+        "relation_matches": relation_matches,
     }

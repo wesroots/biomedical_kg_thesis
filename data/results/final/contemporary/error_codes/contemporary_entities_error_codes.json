@@ -1,0 +1,1202 @@
+[
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633066,
+      "text": "clonal hematopoiesis",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42629135,
+      "text": "neuroinflammation",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42632907,
+      "text": "drug resistance",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41834934,
+      "text": "rs12826786",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633120,
+      "text": "extensively drug-resistant",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633029,
+      "text": "hemoglobin a1c",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "ab",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633266,
+      "text": "matrix metalloproteinases",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "daily gains",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500341,
+      "text": "rs11640851",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42625765,
+      "text": "hylb",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633403,
+      "text": "ruma",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633266,
+      "text": "mirna",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41415885,
+      "text": "blood brain barrier breakdown",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "text": "cellular senescence",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42629135,
+      "text": "amyloid-\u03b2",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42629135,
+      "text": "a\u03b2",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42625765,
+      "text": "16s-23s rrna",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630505,
+      "text": "antibody-drug conjugates",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633466,
+      "text": "reduced host mycelial growth",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41834934,
+      "text": "cg haplotype",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "placental weight",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42524382,
+      "text": "snp",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 40655353,
+      "text": "antimicrobial resistance",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630505,
+      "text": "immune checkpoint inhibitors",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "placental area",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42625765,
+      "text": "cfb",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "text": "senescence-associated secretory phenotype",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "density",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500343,
+      "text": "vldl",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42625765,
+      "text": "bac",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633081,
+      "text": "large deletion (~2.5 mb)",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41283084,
+      "text": "polycystic kidney disease",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42602331,
+      "text": "glioma stem cells",
+      "type": "CellLine"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42625765,
+      "text": "cyle",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42147992,
+      "text": "slc6a1",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42632907,
+      "text": "anti-tb agents",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42629135,
+      "text": "senile plaques",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500341,
+      "text": "breast cancer",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "text": "mitochondrial dna damage",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "total cotyledon area",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 40655353,
+      "text": "clinically acquired infections",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42524382,
+      "text": "blood pressure",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500341,
+      "text": "cac",
+      "type": "SequenceVariant"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "birth weights",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630505,
+      "text": "parp inhibitors",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42147992,
+      "text": "f5",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41230208,
+      "text": "molar tooth sign",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500343,
+      "text": "infertility",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "text": "total cotyledon weight",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630617,
+      "text": "haeiii",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633266,
+      "text": "periodontal and other inflammation",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41283084,
+      "text": "patients",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 40881775,
+      "text": "orthopedic injuries",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630505,
+      "text": "tumor",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630505,
+      "text": "poly adp-ribose polymerase",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42376533,
+      "text": "cats",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633266,
+      "text": "immune dysregulation",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633377,
+      "text": "buffalo",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "text": "g-protein coupled receptors",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633403,
+      "text": "amino acid",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42632595,
+      "text": "pain",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41451023,
+      "text": "cytotoxicity",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41283084,
+      "text": "patient",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "text": "chemokine receptor",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 40860264,
+      "text": "tumors",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630505,
+      "text": "neural precursor cell expressed developmentally downregulated protein 8",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42632605,
+      "text": "leukemia",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633403,
+      "text": "polymer",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42500343,
+      "text": "endocrine-metabolic disorder",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42206121,
+      "text": "patients",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42540124,
+      "text": "patients",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42625765,
+      "text": "bovine mastitis",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42632595,
+      "text": "patients",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630505,
+      "text": "ubiquitin",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42625940,
+      "text": "synthases",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630256,
+      "text": "endocannabinoid",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633474,
+      "text": "rare genetic disorder",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42376533,
+      "text": "skin ulcers",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 40655353,
+      "text": "oxa beta lactamase",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633083,
+      "text": "tumors",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41834934,
+      "text": "inflammatory arthropathy",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42376533,
+      "text": "feline",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41415885,
+      "text": "seizure",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "text": "alkaline phosphatase",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42625765,
+      "text": "bacteria",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41415885,
+      "text": "rtta",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41230208,
+      "text": "joubert syndrome",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42582296,
+      "text": "men",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42548349,
+      "text": "aim-ild",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633083,
+      "text": "patients",
+      "type": "OrganismTaxon"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630505,
+      "text": "toll-like receptor 4",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633488,
+      "text": "toxicity",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42239639,
+      "text": "infectious disease",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Duplicate/coreference",
+      "description": "The error results from duplicate entity mentions, abbreviations, aliases, or coreferential mentions of the same underlying entity."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633266,
+      "text": "periodontal disease",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41230208,
+      "text": "ataxia",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "text": "a?",
+      "type": "GeneOrGeneProduct"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630256,
+      "text": "sal",
+      "type": "ChemicalEntity"
+    },
+    "category": {
+      "name": "Other/unclear",
+      "description": "The primary cause cannot be confidently assigned to any other category."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42632595,
+      "text": "osteoarthritis",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633081,
+      "text": "placental dysfunction",
+      "type": "DiseaseOrPhenotypicFeature"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 28684635,
+      "source": "rs11708067-a",
+      "relation": "Association",
+      "target": "adcy5"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 21126715,
+      "source": "783insg",
+      "relation": "Cause",
+      "target": "cgl"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 21219851,
+      "source": "col3a1",
+      "relation": "Association",
+      "target": "ehlers-danlos syndrome, vascular type"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 17935240,
+      "source": "heterozygous ag-deletion at nucleotide 652 and 653",
+      "relation": "Association",
+      "target": "xlrp"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16112787,
+      "source": "vcm",
+      "relation": "Negative_Correlation",
+      "target": "superoxide dismutase"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 17059986,
+      "source": "c.2633+1g>c",
+      "relation": "Association",
+      "target": "slc12a3"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 15459975,
+      "source": "p.pro27profsx54",
+      "relation": "Association",
+      "target": "ssh1"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 24840785,
+      "source": "aconitine",
+      "relation": "Positive_Correlation",
+      "target": "p38"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 17935240,
+      "source": "a g.orf15 + 652-653delag",
+      "relation": "Association",
+      "target": "xlrp"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 21126715,
+      "source": "cgl2",
+      "relation": "Comparison",
+      "target": "cgl1"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 25006961,
+      "source": "pkc-alpha",
+      "relation": "Positive_Correlation",
+      "target": "polyuria"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 23069675,
+      "source": "np1",
+      "relation": "Positive_Correlation",
+      "target": "cell death"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 21405999,
+      "source": "c.-17t>c",
+      "relation": "Association",
+      "target": "cone dystrophy"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 19789368,
+      "source": "vdr",
+      "relation": "Association",
+      "target": "colorectal cancers"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16844102,
+      "source": "dfo",
+      "relation": "Negative_Correlation",
+      "target": "neurotoxicity"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 25277705,
+      "source": "mavs",
+      "relation": "Positive_Correlation",
+      "target": "ccl3"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16970763,
+      "source": "ndp",
+      "relation": "Association",
+      "target": "familial exudative vitreoretinopathy"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16970763,
+      "source": "norrie disease",
+      "relation": "Association",
+      "target": "deafness"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 21126715,
+      "source": "cgl",
+      "relation": "Association",
+      "target": "hepatomegaly"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 26449539,
+      "source": "ppara",
+      "relation": "Negative_Correlation",
+      "target": "cx3cl1"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 27464336,
+      "source": "alcohol",
+      "relation": "Positive_Correlation",
+      "target": "tnf-alpha"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 15824163,
+      "source": "braf haplotype",
+      "relation": "Association",
+      "target": "melanoma"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 15036754,
+      "source": "dizocilpine maleate",
+      "relation": "Bind",
+      "target": "nmda-receptor"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16970763,
+      "source": "ndp",
+      "relation": "Association",
+      "target": "leu103val"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16046395,
+      "source": "opioid drugs",
+      "relation": "Bind",
+      "target": "oprm1"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16840830,
+      "source": "a to g transition at codon 557 (aag-->gag)",
+      "relation": "Association",
+      "target": "men1 gene"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 27993978,
+      "source": "cenph",
+      "relation": "Positive_Correlation",
+      "target": "g2/m transition"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 28684635,
+      "source": "adcy5",
+      "relation": "Positive_Correlation",
+      "target": "insulin"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 19207031,
+      "source": "growth hormone",
+      "relation": "Negative_Correlation",
+      "target": "gh-deficiency"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 25277705,
+      "source": "mavs",
+      "relation": "Positive_Correlation",
+      "target": "il-6"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 2491010,
+      "source": "dmd",
+      "relation": "Association",
+      "target": "becker muscular dystrophy"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 25277705,
+      "source": "rsv",
+      "relation": "Positive_Correlation",
+      "target": "scgf-b"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16844102,
+      "source": "alpha-tc",
+      "relation": "Negative_Correlation",
+      "target": "neurotoxicity"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16112787,
+      "source": "erdosteine",
+      "relation": "Negative_Correlation",
+      "target": "nephrotoxicity"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 24442316,
+      "source": "cmcs",
+      "relation": "Negative_Correlation",
+      "target": "peroxidative injury"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 22369755,
+      "source": "rslurp-1",
+      "relation": "Positive_Correlation",
+      "target": "casp8"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 16186368,
+      "source": "cyp4v2",
+      "relation": "Association",
+      "target": "s482x"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 17003923,
+      "source": "fsap marburg i",
+      "relation": "Association",
+      "target": "venous and arterial thromboembolism"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 24442316,
+      "source": "cmcs",
+      "relation": "Negative_Correlation",
+      "target": "vcam-1"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 19484664,
+      "source": "dd",
+      "relation": "Association",
+      "target": "asthmatic episode exacerbations"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 19207031,
+      "source": "rs1019731",
+      "relation": "Association",
+      "target": "igf-1-sds"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 26110643,
+      "source": "grip1",
+      "relation": "Association",
+      "target": "danio rerio"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 19484664,
+      "source": "dd",
+      "relation": "Positive_Correlation",
+      "target": "asthma"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 26449539,
+      "source": "ppara",
+      "relation": "Negative_Correlation",
+      "target": "ifit1"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 15818664,
+      "source": "ankh",
+      "relation": "Association",
+      "target": "type x collagen"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 26110643,
+      "source": "nrg2a",
+      "relation": "Association",
+      "target": "danio rerio"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 18457324,
+      "source": "v244",
+      "relation": "Positive_Correlation",
+      "target": "doxorubicinol"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 21126715,
+      "source": "cgl",
+      "relation": "Association",
+      "target": "hepatic steatosis"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 19394258,
+      "source": "c.444-62c>a",
+      "relation": "Positive_Correlation",
+      "target": "deoxyguanosine kinase (dgk) deficiency"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 22369755,
+      "source": "rslurp-1",
+      "relation": "Positive_Correlation",
+      "target": "cdkn3"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 26847345,
+      "source": "transgelin",
+      "relation": "Positive_Correlation",
+      "target": "cytoskeletal proteins"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 21879313,
+      "source": "lipid",
+      "relation": "Association",
+      "target": "ribavirin"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 25277705,
+      "source": "il-1b",
+      "relation": "Association",
+      "target": "mitochondrial antiviral-signaling protein"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 15485686,
+      "source": "tachycardia",
+      "relation": "Positive_Correlation",
+      "target": "v1763m"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27798239,
+      "source": "phosphatidylinositol 4-kinase iib",
+      "relation": "Association",
+      "target": "clathrin"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 26449539,
+      "source": "interferon g",
+      "relation": "Positive_Correlation",
+      "target": "ifit2"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27959387,
+      "source": "serpina3",
+      "relation": "Association",
+      "target": "malignancy"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 24840785,
+      "source": "na(+)",
+      "relation": "Association",
+      "target": "cardiotoxicity"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 17003923,
+      "source": "venous and arterial thromboembolism",
+      "relation": "Association",
+      "target": "tissue factor pathway inhibitor"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 19789368,
+      "source": "vitamin d receptor",
+      "relation": "Positive_Correlation",
+      "target": "colorectal cancer"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 21684788,
+      "source": "1.44-mb contiguous gene deletion",
+      "relation": "Positive_Correlation",
+      "target": "sjogren-larsson syndrome"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27959387,
+      "source": "hla",
+      "relation": "Association",
+      "target": "malignancy"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27798239,
+      "source": "phosphatidylinositol 4-kinase iib",
+      "relation": "Association",
+      "target": "rab8"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 18457324,
+      "source": "carbonyl reductase 3",
+      "relation": "Association",
+      "target": "doxorubicinol"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 17166870,
+      "source": "endoglin",
+      "relation": "Association",
+      "target": "vascular complication"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 26110643,
+      "source": "skin disorders",
+      "relation": "Association",
+      "target": "msxc"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 16629641,
+      "source": "viramidine",
+      "relation": "Association",
+      "target": "chronic infection with hepatitis c virus"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27798239,
+      "source": "phosphatidylinositol 4-phosphate",
+      "relation": "Association",
+      "target": "membrane type i matrix metalloproteinase"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 24442316,
+      "source": "liver injured",
+      "relation": "Association",
+      "target": "matrix metalloproteinase-2 and 9"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 25277705,
+      "source": "leukemia inhibitory factor",
+      "relation": "Association",
+      "target": "respiratory syncytial viral infection"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 21219851,
+      "source": "ehlers-danlos syndrome, vascular type",
+      "relation": "Positive_Correlation",
+      "target": "rs1801184"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 20648600,
+      "source": "co-infected with hiv and hepatitis b",
+      "relation": "Association",
+      "target": "precore"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 16844102,
+      "source": "glutathione",
+      "relation": "Negative_Correlation",
+      "target": "methamphetamine"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 20648600,
+      "source": "v173l",
+      "relation": "Association",
+      "target": "m204v"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27798239,
+      "source": "phosphatidylinositol 4-kinase iib",
+      "relation": "Association",
+      "target": "actin"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 16844102,
+      "source": "deferoxamine",
+      "relation": "Positive_Correlation",
+      "target": "serotonin"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27959387,
+      "source": "interferon",
+      "relation": "Association",
+      "target": "malignancy"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 19276632,
+      "source": "cleft palate",
+      "relation": "Association",
+      "target": "foxf2"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27959387,
+      "source": "oct4",
+      "relation": "Positive_Correlation",
+      "target": "alcohol"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 15036754,
+      "source": "acetylcholinesterases",
+      "relation": "Association",
+      "target": "acetylcholine"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 16844102,
+      "source": "alpha-tocopherol",
+      "relation": "Association",
+      "target": "reactive oxygen species"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 25277705,
+      "source": "stem cell growth factor beta",
+      "relation": "Association",
+      "target": "infection"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 18507837,
+      "source": "c6ofr49",
+      "relation": "Association",
+      "target": "breast cancer"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 15820770,
+      "source": "vitamin d-binding protein",
+      "relation": "Association",
+      "target": "ia-2"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 20705401,
+      "source": "5-ht6 receptor antagonist",
+      "relation": "Association",
+      "target": "schizophrenia"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 19276632,
+      "source": "c.1272c>t",
+      "relation": "Association",
+      "target": "cleft palate"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 28846666,
+      "source": "gestational diabetes mellitus",
+      "relation": "Association",
+      "target": "rbp-4"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 26937641,
+      "source": "liver injury and fibrogenesis",
+      "relation": "Association",
+      "target": "serum amyloid a"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 15036754,
+      "source": "pralidoxime-2-chloride",
+      "relation": "Cotreatment",
+      "target": "n(6)-cyclopentyl adenosine"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 26110643,
+      "source": "tumor",
+      "relation": "Negative_Correlation",
+      "target": "lgl2"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 28846666,
+      "source": "inflammation",
+      "relation": "Association",
+      "target": "interleukin 6"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 18507837,
+      "source": "ccnd3",
+      "relation": "Association",
+      "target": "trfp"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 18457324,
+      "source": "cardiotoxic",
+      "relation": "Positive_Correlation",
+      "target": "doxorubicinol"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 16428827,
+      "source": "choline acetyltransferase",
+      "relation": "Association",
+      "target": "alzheimer's disease"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 28846666,
+      "source": "gestational diabetes mellitus",
+      "relation": "Association",
+      "target": "irs-1"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 27959387,
+      "source": "samd9",
+      "relation": "Association",
+      "target": "malignancy"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 22369755,
+      "source": "carcinogenic",
+      "relation": "Association",
+      "target": "egf"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 15036754,
+      "source": "soman",
+      "relation": "Negative_Correlation",
+      "target": "butyrylcholinesterases"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 20648600,
+      "source": "m204v",
+      "relation": "Association",
+      "target": "viremia"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 28481876,
+      "source": "miniature chromosome maintenance 8",
+      "relation": "Association",
+      "target": "cyclin-dependent kinase 4"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  }
+]

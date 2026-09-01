@@ -1,0 +1,1159 @@
+[
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42540124,
+      "source": "ascariasis",
+      "relation": "Association",
+      "target": "upper gastrointestinal bleeding"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41283084,
+      "source": "rs921634",
+      "relation": "Association",
+      "target": "polycystic kidney disease"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41230208,
+      "source": "joubert syndrome type 33",
+      "relation": "Association",
+      "target": "cerebellar vermian hypoplasia/aplasia"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633066,
+      "source": "ppm1d",
+      "relation": "Association",
+      "target": "clonal hematopoiesis"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "source": "pxr",
+      "relation": "Positive_Correlation",
+      "target": "ccn2"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "source": "pink1",
+      "relation": "Negative_Correlation",
+      "target": "mitochondrial dna damage"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633081,
+      "source": "congenital heart disease",
+      "relation": "Association",
+      "target": "neurodevelopmental disorders"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42629135,
+      "source": "amyloid-\u03b2",
+      "relation": "Association",
+      "target": "alzheimer's disease"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630505,
+      "source": "tnbc",
+      "relation": "Association",
+      "target": "gpx4"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41283084,
+      "source": "loc100506403",
+      "relation": "Association",
+      "target": "ponv"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42524382,
+      "source": "snp",
+      "relation": "Association",
+      "target": "blood pressure"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41059450,
+      "source": "hyperphosphatasia with mental retardation syndrome-3",
+      "relation": "Association",
+      "target": "dysmorphic features"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633029,
+      "source": "type 2 diabetes mellitus",
+      "relation": "Association",
+      "target": "\u03b2-cell dysfunction"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633481,
+      "source": "cft",
+      "relation": "Association",
+      "target": "mtt"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42376533,
+      "source": "cat",
+      "relation": "Association",
+      "target": "basal cell carcinoma"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 40655353,
+      "source": "a. haemolyticus",
+      "relation": "Association",
+      "target": "oxa"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41230208,
+      "source": "joubert syndrome type 33",
+      "relation": "Association",
+      "target": "optic nerve atrophy"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41230208,
+      "source": "c.1231c>t",
+      "relation": "Positive_Correlation",
+      "target": "seizures"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633481,
+      "source": "cft",
+      "relation": "Negative_Correlation",
+      "target": "anaemia"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42147992,
+      "source": "gba1",
+      "relation": "Association",
+      "target": "early pregnancy loss"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "source": "parkin",
+      "relation": "Negative_Correlation",
+      "target": "sasp"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633403,
+      "source": "ruma",
+      "relation": "Association",
+      "target": "escherichia coli"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630617,
+      "source": "gh",
+      "relation": "Association",
+      "target": "ab"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41059450,
+      "source": "c.651c>g",
+      "relation": "Cause",
+      "target": "hyperphosphatasia with mental retardation syndrome-3"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42632907,
+      "source": "anti-tb agents",
+      "relation": "Negative_Correlation",
+      "target": "tuberculosis"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42147992,
+      "source": "pkhd1",
+      "relation": "Association",
+      "target": "early pregnancy loss"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630505,
+      "source": "tnbc",
+      "relation": "Association",
+      "target": "twist1"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42631261,
+      "source": "wilson disease",
+      "relation": "Association",
+      "target": "hepatic steatosis"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 40860264,
+      "source": "er",
+      "relation": "Negative_Correlation",
+      "target": "tnbc"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41059450,
+      "source": "hyperphosphatasia with mental retardation syndrome-3",
+      "relation": "Association",
+      "target": "hyperphosphatasia"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 40655353,
+      "source": "a. johnsonni",
+      "relation": "Association",
+      "target": "oxa"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633081,
+      "source": "likely pathogenic de novo splice-disrupting variant",
+      "relation": "Association",
+      "target": "arid1b"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42630837,
+      "source": "sglt2 inhibitors",
+      "relation": "Bind",
+      "target": "casp3"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41415885,
+      "source": "g\u03b1q",
+      "relation": "Association",
+      "target": "abnormal cortical microvessel structure"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42422171,
+      "source": "erk1/2",
+      "relation": "Positive_Correlation",
+      "target": "creb"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41230208,
+      "source": "joubert syndrome type 33",
+      "relation": "Association",
+      "target": "renal disease"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500341,
+      "source": "rs11076161",
+      "relation": "Positive_Correlation",
+      "target": "breast cancer"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42633488,
+      "source": "quercetin",
+      "relation": "Negative_Correlation",
+      "target": "cyp"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 40860264,
+      "source": "pr",
+      "relation": "Negative_Correlation",
+      "target": "tnbc"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42621305,
+      "source": "igf2bp2",
+      "relation": "Positive_Correlation",
+      "target": "circlpar3"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42148001,
+      "source": "townes-brocks syndrome",
+      "relation": "Association",
+      "target": "end-stage renal disease"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42500341,
+      "source": "rs8052394",
+      "relation": "Positive_Correlation",
+      "target": "breast cancer"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41451023,
+      "source": "silodosin",
+      "relation": "Negative_Correlation",
+      "target": "non-small-cell lung cancer"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42621305,
+      "source": "circlpar3",
+      "relation": "Association",
+      "target": "pca"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42148001,
+      "source": "c.1509c>a",
+      "relation": "Association",
+      "target": "chronic kidney disease"
+    },
+    "category": {
+      "name": "Wrong relation type",
+      "description": "The correct entity pair is identified, but the predicted relation type differs from the BioRED ground truth."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41059450,
+      "source": "hyperphosphatasia with mental retardation syndrome-3",
+      "relation": "Association",
+      "target": "seizures"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42621305,
+      "source": "dtx",
+      "relation": "Positive_Correlation",
+      "target": "ferroptosis"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42148001,
+      "source": "townes-brocks syndrome",
+      "relation": "Association",
+      "target": "congenital hypothyroidism"
+    },
+    "category": {
+      "name": "Unsupported relation",
+      "description": "The predicted relation is not supported by the abstract or BioRED annotation policy."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 41283084,
+      "source": "rs2071049",
+      "relation": "Association",
+      "target": "ponv"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fp",
+    "error": {
+      "pmid": 42148001,
+      "source": "c.1509c>a",
+      "relation": "Association",
+      "target": "renal hypodysplasia"
+    },
+    "category": {
+      "name": "Entity boundary/synonyms mismatch",
+      "description": "The prediction and ground truth refer to the same underlying entity, but differ in span, wording, abbreviation, or synonym representation."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 40662146,
+      "source": "upc2",
+      "relation": "Negative_Correlation",
+      "target": "azole"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633481,
+      "source": "calcium folinate",
+      "relation": "Drug_Interaction",
+      "target": "methotrexate"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633481,
+      "source": "calcium folinate",
+      "relation": "Negative_Correlation",
+      "target": "anaemia"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "source": "amyloid-?",
+      "relation": "Positive_Correlation",
+      "target": "cognitive decline"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "source": "tau",
+      "relation": "Positive_Correlation",
+      "target": "cognitive decline"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "source": "tau",
+      "relation": "Positive_Correlation",
+      "target": "ad"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42629135,
+      "source": "amyloid-?",
+      "relation": "Positive_Correlation",
+      "target": "ad"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41451023,
+      "source": "silodosin",
+      "relation": "Positive_Correlation",
+      "target": "cytotoxicity"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41451023,
+      "source": "acenocoumarol",
+      "relation": "Positive_Correlation",
+      "target": "cytotoxicity"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41451023,
+      "source": "egfr",
+      "relation": "Association",
+      "target": "nsclc"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42422171,
+      "source": "mk-7",
+      "relation": "Negative_Correlation",
+      "target": "oxygen species"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42632605,
+      "source": "atf7ip2",
+      "relation": "Positive_Correlation",
+      "target": "glutamate"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "sall1",
+      "relation": "Association",
+      "target": "esrd"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "sall1",
+      "relation": "Association",
+      "target": "bilateral renal hypodysplasia"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "sall1",
+      "relation": "Association",
+      "target": "ckd"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "c.1509c>a",
+      "relation": "Positive_Correlation",
+      "target": "esrd"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "c.1509c>a",
+      "relation": "Positive_Correlation",
+      "target": "bilateral renal hypodysplasia"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "c.1509c>a",
+      "relation": "Positive_Correlation",
+      "target": "ckd"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "sall1",
+      "relation": "Association",
+      "target": "tbs"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42148001,
+      "source": "c.1509c>a",
+      "relation": "Positive_Correlation",
+      "target": "tbs"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41834934,
+      "source": "rs1899663",
+      "relation": "Association",
+      "target": "ra"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41834934,
+      "source": "rs12826786",
+      "relation": "Association",
+      "target": "ra"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633403,
+      "source": "1,6-hexanediol",
+      "relation": "Positive_Correlation",
+      "target": "toxicity"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633029,
+      "source": "metformin",
+      "relation": "Cotreatment",
+      "target": "pioglitazone"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633029,
+      "source": "linagliptin",
+      "relation": "Cotreatment",
+      "target": "metformin"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41415885,
+      "source": "r183q",
+      "relation": "Positive_Correlation",
+      "target": "sturge-weber syndrome"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41415885,
+      "source": "gnaq",
+      "relation": "Positive_Correlation",
+      "target": "phosphorylated-s6"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41415885,
+      "source": "doxycycline",
+      "relation": "Positive_Correlation",
+      "target": "gnaq"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42631261,
+      "source": "c.1707+2dupt",
+      "relation": "Positive_Correlation",
+      "target": "wilson disease"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42630505,
+      "source": "tnbc",
+      "relation": "Negative_Correlation",
+      "target": "estrogen receptors"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633066,
+      "source": "trp53",
+      "relation": "Association",
+      "target": "ch"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42633066,
+      "source": "ppm1d",
+      "relation": "Association",
+      "target": "ch"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 42621305,
+      "source": "igf2bp2",
+      "relation": "Association",
+      "target": "circlpar3"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "source": "pgap2",
+      "relation": "Association",
+      "target": "fever"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "source": "c.651c>g",
+      "relation": "Positive_Correlation",
+      "target": "hyperphosphatasia with mental retardation syndrome-3"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "source": "pgap2",
+      "relation": "Association",
+      "target": "immunological abnormalities"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "source": "pgap2",
+      "relation": "Association",
+      "target": "intellectual disability"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "source": "pgap2",
+      "relation": "Association",
+      "target": "developmental delay"
+    },
+    "category": {
+      "name": "Missing relation",
+      "description": "A BioRED ground-truth relation is supported by the abstract but was not extracted by the system."
+    }
+  },
+  {
+    "error_type": "fn",
+    "error": {
+      "pmid": 41059450,
+      "source": "pgap2",
+      "relation": "Association",
+      "target": "dysmorphic features"
+    },
+    "category": {
+      "name": "Evaluation artefact",
+      "description": "The prediction is substantively compatible with the ground truth, but is counted as an error because of the evaluation or matching procedure."
+    }
+  }
+]
